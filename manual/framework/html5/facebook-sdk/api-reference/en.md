@@ -8,7 +8,7 @@ This document provides the API details for the Facebook SDK for Cocos2d-JS.
 |Name|Description|
 |----|-----------|
 |[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of plugin. Required before doing anything else.|
-|[destroyInstance](./destroy-instance)|Destroy the instance of plugin.|
+|[destroyInstance](./destroy-instance.md)|Destroy the instance of plugin.|
 
 ##User APIs
 
@@ -43,4 +43,4 @@ This document provides the API details for the Facebook SDK for Cocos2d-JS.
 |Name|Description|
 |----|-----------|
 |[publishInstall](./publish-install.md)|Send an install message to Facebook.|
-|[logEvent](./logevent.md)|Log an app event with the specified name, supplied value, and set of parameters.|
+|[logEvent](./log-event.md)|Log an app event with the specified name, supplied value, and set of parameters.|
