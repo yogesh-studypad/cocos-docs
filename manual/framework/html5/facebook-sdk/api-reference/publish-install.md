@@ -1,4 +1,4 @@
-#publishInstall
+#activateApp
 
 Send an install message to Facebook, for use with our [mobile app install ads](https://developers.facebook.com/docs/tutorials/mobile-app-ads/), whose documentation you should consult for details.
 
@@ -6,5 +6,5 @@ Send an install message to Facebook, for use with our [mobile app install ads](h
 
 ```javascript
 //assume facebook is the instance of FacebookAgent
-facebook.publishInstall();
+facebook.activateApp();
 ```

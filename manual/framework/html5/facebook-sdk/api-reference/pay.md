@@ -10,7 +10,7 @@ plugin.FacebookAgent.prototype.pay = function(params, callback){}
 |Name|Description|
 |----|-----------|
 |params|The parameters as mentioned in Facebook Payments doc. |
-|callback|Callback for receiving the result, if errorCode equals plugin.FacebookAgent.CodeSucceed, then the function call is returned successfully, developer can retrieve the result message or json string from the message|
+|callback|Callback for receiving the result, if errorCode equals plugin.FacebookAgent.CODE_SUCCEED, then the function call is returned successfully, developer can retrieve the result message or json string from the message|
 
 params contents:
 
@@ -30,7 +30,7 @@ params contents:
 facebook.pay({
         product: 'https://www.cocos2d-x.org/demo/facebooktest/pay/item1.html'
     }, function(code, response){
-    if(code == plugin.FacebookAgent.CodeSucceed && response['status'] === 'completed'){
+    if(code == plugin.FacebookAgent.CODE_SUCCEED && response['status'] === 'completed'){
         cc.log("Success: " + response['amount'] + response['currency']);
     }else{
         cc.log("Abnormal: " + response['status']);

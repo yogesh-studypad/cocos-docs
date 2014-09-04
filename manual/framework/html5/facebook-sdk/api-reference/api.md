@@ -11,24 +11,24 @@ plugin.FacebookAgent.prototype.request = function(path, method, params, callback
 |Name|Description|
 |----|-----------|
 |path|Open Graph API interface path|
-|method|HTTP method to send the request. Possible values are `plugin.FacebookAgent.HttpMethod.Get`, `plugin.FacebookAgent.HttpMethod.Post`, `plugin.FacebookAgent.HttpMethod.Delete`.|
+|method|HTTP method to send the request. Possible values are `plugin.FacebookAgent.HttpMethod.GET`, `plugin.FacebookAgent.HttpMethod.POST`, `plugin.FacebookAgent.HttpMethod.DELETE`.|
 |params|[Optional]The parameter for the request, parameters vary greatly for different interface, please refer to [Graph API Reference](https://developers.facebook.com/docs/graph-api/reference/)|
-|callback|Callback for receiving the result, if errorCode equals plugin.FacebookAgent.CodeSucceed, then the function call is returned successfully, developer can retrieve the result json Object|
+|callback|Callback for receiving the result, if errorCode equals plugin.FacebookAgent.CODE_SUCCEED, then the function call is returned successfully, developer can retrieve the result json Object|
 
 ##Example
 
 ```javascript
 
 facebook.request("/me", plugin.FacebookAgent.HttpMethod.Get, function (type, msg) {
-    if (type == plugin.FacebookAgent.CodeSucceed) {
+    if (type == plugin.FacebookAgent.CODE_SUCCEED) {
         cc.log(msg["id"]);
     } else {
         cc.log(msg["error_message"]);
     }
 });
 
-facebook.request("/me/photos", plugin.FacebookAgent.HttpMethod.Post, {"url": "http://files.cocos2d-x.org/images/orgsite/logo.png"}, function (type, msg) {
-    if (type == plugin.FacebookAgent.CodeSucceed) {
+facebook.request("/me/photos", plugin.FacebookAgent.HttpMethod.POST, {"url": "http://files.cocos2d-x.org/images/orgsite/logo.png"}, function (type, msg) {
+    if (type == plugin.FacebookAgent.CODE_SUCCEED) {
         cc.log("post_id: " + msg["post_id"]);
     }
 });
