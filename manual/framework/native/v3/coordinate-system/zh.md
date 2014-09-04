@@ -149,16 +149,16 @@ Touch position是屏幕坐标系中的点，OpenGL position是Cocos2d-x用到的
 此外，关于世界坐标系和本地坐标系的相互转换，在Node中定义了以下四个常用的坐标变换的相关方法。
 
 ```
-	// 把基于当前节点的本地坐标系下的坐标转换到世界坐标系中
+	// 把世界坐标转换到当前节点的本地坐标系中
 	Point convertToNodeSpace(const Point& worldPoint) const;
     
-    // 把世界坐标转换到当前节点的本地坐标系中
+    // 把基于当前节点的本地坐标系下的坐标转换到世界坐标系中
     Point convertToWorldSpace(const Point& nodePoint) const;
     
     // 基于Anchor Point把基于当前节点的本地坐标系下的坐标转换到世界坐标系中
     Point convertToNodeSpaceAR(const Point& worldPoint) const;
     
-    基于Anchor Point把世界坐标转换到当前节点的本地坐标系中
+    // 基于Anchor Point把世界坐标转换到当前节点的本地坐标系中
     Point convertToWorldSpaceAR(const Point& nodePoint) const;
 ```
 
