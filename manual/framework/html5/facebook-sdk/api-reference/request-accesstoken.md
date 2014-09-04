@@ -1,6 +1,6 @@
 #requestAccessToken
 
-Retrieve the user access token, user must be logged in first.
+Get the access token granted to your application by current user.
 
 ##Parameters
 

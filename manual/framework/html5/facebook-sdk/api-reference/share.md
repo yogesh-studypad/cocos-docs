@@ -1,6 +1,8 @@
 #share
 
-Share a message to your Facebook, on iOS or Android, if user have installed Facebook app on his device, this function will open Facebook app to finish the share process, otherwise it will open a web view dialog to share a message. If anything goes wrong, the callback will be invoked with error.
+On iOS or Android, if the user has installed Facebook native app on his/her device, triggers Share dialog, otherwise it falls back to trigger a web dialog. Please refer to [Sharing in iOS](https://developers.facebook.com/docs/ios/share) and [Sharing in Android](https://developers.facebook.com/docs/android/share) for more details. 
+
+On Web, it triggers Share Dialog. Please refer to [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
 
 ##Parameters
 

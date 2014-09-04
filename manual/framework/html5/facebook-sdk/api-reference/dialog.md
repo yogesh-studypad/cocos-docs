@@ -1,6 +1,11 @@
 #dialog
 
-Share something or send something as message to your friend, if user have installed Facebook app or Facebook Messenger app on his device, this function will open the application to finish the share process, otherwise it will try to open a web view dialog to share or send the message. If anything goes wrong, the callback will be invoked with error.
+Share a link, a structured [Open Graph](https://developers.facebook.com/products/open-graph) story, or one or more photos from your app to the user’s timeline and their friends’ newsfeed. 
+
+On iOS or Android, if the user has installed Facebook native app on his/her device, it triggers Share Dialog. Your app does not have to be using Facebook Login for people to be able to share via the Share Dialog. If the user does not have Facebook native app installed on his/her device, it falls back to trigger a web dialog. Please refer to [Sharing in iOS](https://developers.facebook.com/docs/ios/share) and [Sharing in Android](https://developers.facebook.com/docs/android/share) for more details. 
+
+On Web, it can only share a link or a structured Open Graph story and it triggers Share Dialog. Please refer to [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
+
 
 ##Parameters
 

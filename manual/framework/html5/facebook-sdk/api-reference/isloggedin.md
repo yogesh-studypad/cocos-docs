@@ -1,6 +1,6 @@
 #isLoggedIn
 
-Check whether user have been logged in to Facebook.
+Check whether a user is currently logged in and has authorized your app.
 
 ##Parameters
 

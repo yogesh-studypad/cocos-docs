@@ -1,25 +1,27 @@
 #login
 
-Prompts the user to authorize your application using the [Login Dialog](https://developers.facebook.com/docs/facebook-login/) appropriate to the platform.
+Prompts the user to authorize your application or to grant additional authorization using the [Login Dialog](https://developers.facebook.com/docs/facebook-login/) appropriate to the platform.
 
 ##Parameters
 
 ```javascript
-plugin.FacebookAgent.prototype.login = function(callback){}
+plugin.FacebookAgent.prototype.login = function(permissions, callback){}
 ```
 
 |Name|Type|Description|
 |----|----|-----------|
-|callback|Function|This callback will be passed a result code and a response object. If login succeed, the result code will be `plugin.FacebookAgent.CodeSucceed`, and the response object contains the access token.|
+|permissions|Array|[Optional] A list of Facebook permissions requested from the user.|
+|callback|Function|This callback will be passed a result code and a response object. If login succeed, the result code will be `plugin.FacebookAgent.CodeSucceed`, and the response object contains the access token and permissions.|
 
 ##Examples
 
 ```javascript
 //assume facebook is the instance of FacebookAgent
-facebook.login(function(code, response){
+facebook.login(["create_event", "create_note", "manage_pages", "publish_actions"], function(code, response){
     if(code == plugin.FacebookAgent.CodeSucceed){
         cc.log("login succeed");
-        cc.log("AccessToken: " + response["accessToken"])
+        cc.log("AccessToken: " + response["accessToken"]);
+        cc.log("permissions: " + response["permissions"]);
     }else{
         cc.log("login failed");
     }
