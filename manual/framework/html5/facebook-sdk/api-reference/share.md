@@ -13,7 +13,7 @@ plugin.FacebookAgent.prototype.share = function(info, callback){}
 |Name|Type|Description|
 |----|----|-----------|
 |info|Object|The content to be shared. It should have `description`, `title`, `link` and `imageUrl`.|
-|callback|Function|Callback for receiving the result, if result code equals `plugin.FacebookAgent.CodeSucceed`, then the function call is returned successfully, developer can retrieve the result message or json Object from the message.|
+|callback|Function|Callback for receiving the result, if result code equals `plugin.FacebookAgent.CODE_SUCCEED`, then the function call is returned successfully, developer can retrieve the result message or json Object from the message.|
 
 ##Example
 
@@ -26,7 +26,7 @@ var info = {
 };
 
 facebook.share(info, function(code, response){
-    if(code == plugin.FacebookAgent.CodeSucceed){
+    if(code == plugin.FacebookAgent.CODE_SUCCEED){
         cc.log("share succeed");
     }
 });

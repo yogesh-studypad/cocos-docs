@@ -10,14 +10,14 @@ plugin.FacebookAgent.prototype.logout = function(callback){}
 
 |Name|Type|Description|
 |----|----|-----------|
-|callback|Function|This callback will be passed a result code, and a response object. If logout succeed, the result code will be `plugin.FacebookAgent.CodeSucceed`.|
+|callback|Function|This callback will be passed a result code, and a response object. If logout succeed, the result code will be `plugin.FacebookAgent.CODE_SUCCEED`.|
 
 ##Example
 
 ```javascript
 //assume facebook is the instance of FacebookAgent
 facebook.logout(function(code, response){
-    if(code == plugin.FacebookAgent.CodeSucceed){ //logout succeed
+    if(code == plugin.FacebookAgent.CODE_SUCCEED){ //logout succeed
         cc.log("logout succeed");
     }
 });

@@ -15,7 +15,7 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
 |Name|Type|Description|
 |----|----|-----------|
 |info|Object|The content to be shared. It should have `dialog`, and some other properties. The dialog property determine the type of Facebook dialog you want to trigger.|
-|callback|Function|Callback for receiving the result, if result code equals `plugin.FacebookAgent.CodeSucceed`, then the function call is returned successfully, developer can retrieve the result message or json Object from the message.|
+|callback|Function|Callback for receiving the result, if result code equals `plugin.FacebookAgent.CODE_SUCCEED`, then the function call is returned successfully, developer can retrieve the result message or json Object from the message.|
 
 The `dialog` property of info can be one of these:
 
@@ -62,7 +62,7 @@ var info = {
     "imageUrl": "http://files.cocos2d-x.org/images/orgsite/logo.png"
 };
 facebook.dialog(map, function (code, response) {
-    if(code == plugin.FacebookAgent.CodeSucceed){
+    if(code == plugin.FacebookAgent.CODE_SUCCEED){
         //success
     }
 });

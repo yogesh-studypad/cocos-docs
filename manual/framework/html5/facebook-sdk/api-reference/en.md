@@ -53,7 +53,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 
 |Name|Description|
 |----|-----------|
-|[publishInstall](./publish-install.md)|Report an install, for integration with [Mobile Install Ads](https://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
+|[activateApp](./publish-install.md)|Report an install, for integration with [Mobile Install Ads](https://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
 |[logEvent](./log-event.md)|Publish an app event, for deeper integration with [Mobile Install Ads](https://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
 
 ##Facebook SDK Beta Features
@@ -75,5 +75,5 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |AppRequest|√|√|√|
 |API|√|√|√|
 |Pay|×|×|√|
-|PublishInstall|√|√|×|
+|activateApp|√|√|×|
 |LogEvent|√|√|×|

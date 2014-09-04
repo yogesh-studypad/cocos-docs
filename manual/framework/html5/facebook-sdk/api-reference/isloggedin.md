@@ -10,14 +10,14 @@ plugin.FacebookAgent.prototype.isLoggedIn = function(callback){}
 
 |Name|Type|Description|
 |----|----|-----------|
-|callback|Function|The callback will be passed a result code and a response object. Result code will be `plugin.FacebookAgent.CodeSucceed` if check succeed, and response object will has a boolean type property `isLoggedIn`.|
+|callback|Function|The callback will be passed a result code and a response object. Result code will be `plugin.FacebookAgent.CODE_SUCCEED` if check succeed, and response object will has a boolean type property `isLoggedIn`.|
 
 ##Example
 
 ```javascript
 //assume facebook is the instance of FacebookAgent
 facebook.isLoggedIn(function(code, response){
-    if(code == plugin.FacebookAgent.CodeSucceed){
+    if(code == plugin.FacebookAgent.CODE_SUCCEED){
         cc.log("isLoggedIn : " + response["isLoggedIn"])
     }
 });
