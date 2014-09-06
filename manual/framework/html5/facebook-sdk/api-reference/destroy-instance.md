@@ -1,10 +1,9 @@
-#destroyInstance
+#.destroyInstance()
 
-Destroy the instance of FacebookAgent and release memory. This method should be invoked when you don't need use Facebook APIs.
+Destroy the instance of FacebookAgent and release memory. This method should be invoked when you don't need the Facebook SDK any more.
 
 ##Example
 
 ```javascript
-//assume facebook is the instance of FacebookAgent
-facebook.destroyInstance();
+plugin.FacebookAgent.destroyInstance();
 ```
