@@ -54,8 +54,8 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
     |Name|Type|Required|Description|
     |----|----|--------|-----------|
     |action_type|String|Yes|Open Graph Action type|
-    |preview_property|String|Yes|Open Graph Object type|
-    |others|Various|Yes|Other parameters for the Open Graph story|
+    |preview_property|String|No|Open Graph Object type|
+    |others|Various|No|Other parameters for the Open Graph story|
 
 ##Callback function and response object
 
