@@ -1,7 +1,7 @@
 # Cocos Studio
 
 - 开始
-   - [CocoStudio介绍](../../manual/studio/start/about_cocostudio/zh.md)
+   - [Cocos Studio介绍](../../manual/studio/start/about_cocostudio/zh.md)
    - [Mac 安装](../../manual/studio/start/mac_install/zh.md)
    - [版本特性](../../manual/studio/start/version_feature/zh.md)
 - 界面
@@ -45,10 +45,3 @@
 - [使用Code IDE制作可以真机调试的ipa](../../manual/code-ide/package-ios-runtime/zh.md)
 - [Lua Runtime 绑定自定义类](../../manual/code-ide/binding-custom-class-to-lua/zh.md)
 - [Js Runtime 绑定自定义类](../../manual/code-ide/binding-custom-class-to-js/en.md)
-
-# 其他工具
-- [CocosBuilder](../../manual/framework/native/v2/tools-and-editors/cocosbuilder/zh.md)
-- [Cocos2d-x纹理动作及关数等编辑器](../../manual/framework/native/v2/tools-and-editors/editors-for-cocos2d-x-texturetilemapparticleactionlevel-etc/zh.md)
-- [TexturePacker](../../manual/framework/native/v2/tools-and-editors/texturepacker/zh.md)
-	- [Cocos2d-x里如何用TexturePacker和像素格式来优化spritesheet](../../tutorial/framework/native/how-to-use-texturepacker-to-optimize-the-spritesheet/zh.md)
-	- [如何在cocos2d里面使用动画和spritesheet](../../tutorial/framework/native/how-to-use-animations-and-spritesheets/zh.md)
