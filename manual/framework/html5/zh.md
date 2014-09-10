@@ -11,9 +11,9 @@ Cocos2d-JS为不同平台提供了统一的开发体验，无论你为web还是�
 ## 下载与API索引
 
 - [Cocos2d-JS github仓库](http://github.com/cocos2d/cocos2d-js/)
-- [Cocos2d-JS官方下载链接](http://www.cocos2d-x.org/download)
+- [Cocos2d-JS官方下载链接](http://cn.cocos2d-x.org/download)
 - [在线API索引](http://www.cocos2d-x.org/wiki/Reference)
-- [下载API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3rc2-API.zip)
+- [下载API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-rc3-API.zip)
 - [在线测试例](http://cocos2d-x.org/js-tests/)
 
 ## 主要特性
@@ -53,9 +53,9 @@ Cocos2d-JS为不同平台提供了统一的开发体验，无论你为web还是�
    
 ## 文档
 
-- [Cocos2d-JS v3.0 RC2发布说明](./release-notes/v3.0rc2/release-note/zh.md)
-- [Cocos2d-JS v3.0 RC2改动列表](./release-notes/v3.0rc2/changelog/en.md)
-- [Cocos2d-JS v3.0 RC2升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
+- [Cocos2d-JS v3.0 RC3发布说明](./release-notes/v3.0rc3/release-note/zh.md)
+- [Cocos2d-JS v3.0 RC3改动列表](./release-notes/v3.0rc3/changelog/en.md)
+- [Cocos2d-JS v3.0 RC3升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
 
 - 综述
 	- [Cocos2d-JS 2.x新手入门](./v2/getting-started_with-cocos2d-html5/zh.md)
@@ -69,18 +69,18 @@ Cocos2d-JS为不同平台提供了统一的开发体验，无论你为web还是�
     
 - 用Cocos2d-JS 来写一个跑酷游戏(Cocos2d-JS v3.0)
 	- [1. 建立Cocos2d-JS开发环境](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/zh.md)
-	- [2. 你好Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
-	- [3. 建立第一个游戏场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
-	- [4. 设计实现主场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/en.md)
-	- [5. 让角色运行动画](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/en.md)
-	- [6. 在游戏中加入Chipmunk物理引擎](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/en.md)
-	- [7. 使用瓦片地图和相机](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/en.md)
-	- [8. 增加金币和障碍物](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/en.md)
-	- [9. 游戏结束逻辑](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
-	- [10. 添加游戏音频](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
+	- [2. 你好Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/zh.md)
+	- [3. 建立第一个游戏场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/zh.md)
+	- [4. 设计实现主场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/zh.md)
+	- [5. 让角色运行动画](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/zh.md)
+	- [6. 在游戏中加入Chipmunk物理引擎](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/zh.md)
+	- [7. 使用瓦片地图和相机](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/zh.md)
+	- [8. 增加金币和障碍物](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/zh.md)
+	- [9. 游戏结束逻辑](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/zh.md)
+	- [10. 添加游戏音频](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/zh.md)
 
 - Cocos2d-html5 v3.0的新功能
-    - [使用cocos console管理工程](./v2/cocos-console/zh.md)
+    - [使用Cocos Console管理工程](./v2/cocos-console/zh.md)
     - [资源管理器](./v3/assets-manager/zh.md)
     - [事件管理器](./v3/eventManager/zh.md)
     - [属性风格API](./v3/getter-setter-api/zh.md)
@@ -112,3 +112,8 @@ Cocos2d-JS为不同平台提供了统一的开发体验，无论你为web还是�
     - [Plugin-x的框架](./jsb/plugin-x/plugin-x-architecture/zh.md)
     - [如何为Android开发自己的Plugin](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
     - [使用iOS支付插件](./jsb/plugin-x/ios-iap/zh.md)
+    - Facebook SDK Beta for Cocos2d-JS
+        - [Facebook SDK Beta API Reference](./facebook-sdk/api-reference/zh.md)
+        - [Android平台上如何集成Facebook SDK Beta for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-android/zh.md)
+        - [iOS平台上如何集成Facebook SDK Beta for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-ios/zh.md)
+        - [Web平台上如何集成Facebook SDK Beta for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-web/zh.md)

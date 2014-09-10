@@ -10,7 +10,7 @@ session机制是一种服务器端的机制，服务器使用一种类似于散�
 
 session，简而言之就是在服务器上保存用户操作的历史信息。服务器使用session id来标识session，session id由服务器负责产生，保证随机性与唯一性，相当于一个随机密钥，避免在握手或传输中暴露用户真实密码。但该方式下，仍然需要将发送请求的客户端与session进行对应，所以可以借助cookie机制来获取客户端的标识（即session id），也可以通过GET方式将id提交给服务器。
 
-* session的原理图
+* session的原理图：
 
 	![](res/session.png)
 
@@ -92,7 +92,7 @@ cocos new HelloWorld -p com.your_company.HelloWorld -l cpp
 按照上面的操作，我们新建了一个Cocos2d-x v3.x的HelloWorld工程。
 
 工程创建好后，让我们来完成httpClient的post请求玩家登陆，和每日登陆领取金币奖励的客户端网络处理。
- 在上一节[如何使用httpClient](http://cn.cocos2d-x.org/tutorial/show?id=777)中已经介绍了httpClient的用法。 下面我们直接进入正题，开始编写代码
+ 在上一节[如何使用httpClient](../httpclient/zh.md)中已经介绍了httpClient的用法。 下面我们直接进入正题，开始编写代码
 
 首先，在HelloWorldScene.cpp文件中加入下面的实现。
 引入头文件和命名空间
