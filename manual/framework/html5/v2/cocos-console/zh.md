@@ -4,7 +4,7 @@
 
 Cocos2d console是一个可以为Cocos2d-html5和Cocos2d-JSBingding极大简化游戏创建和环境配置过程的工具。
 
-在Cocos2d-JS v3.0 alpha版中，由于重构了大量以前C++风格的API并为Javascript开发者提供了很友好的API设计，JSB的API也如此改造以保证Html5和JSB之间的代码共享，详细信息请参见[发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0a/release-note/en)。更重要的是，我们将Cocos2d-html5和Cocos2d-JSBinding合并为一个仓库：[Cocos2d-JS](https://github.com/cocos2d/cocos2d-js)。所以只要开发者使用JS开发游戏，那么不论游戏会发布到哪个平台，都可以使用Cocos2d-JS来进行开发。
+在Cocos2d-JS v3.0 alpha版中，由于重构了大量以前C++风格的API并为Javascript开发者提供了很友好的API设计，JSB的API也如此改造以保证Html5和JSB之间的代码共享，详细信息请参见[发布说明](../../release-notes/v3.0a/release-note/zh.md)。更重要的是，我们将Cocos2d-html5和Cocos2d-JSBinding合并为一个仓库：[Cocos2d-JS](https://github.com/cocos2d/cocos2d-js)。所以只要开发者使用JS开发游戏，那么不论游戏会发布到哪个平台，都可以使用Cocos2d-JS来进行开发。
 
 ##终端脚本工具
 
