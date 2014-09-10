@@ -42,7 +42,7 @@ For JSB build, there are some restrictions :
 
 Read more about all the features and bug fixes
 
-- [Cocos2d-JS v3.0 changelog](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc3/changelog/en)
+- [Cocos2d-JS v3.0 changelog](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0/changelog/en)
 - [Cocos2d-JS v3.0 upgrade guide](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/en)
 
 ## About Cocos2d family
