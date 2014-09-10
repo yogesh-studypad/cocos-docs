@@ -2,7 +2,7 @@
 
 ## 图标
 
-![](res/scroolview.png)
+![](res/scrollview.png)
 
 ## 描述
 
