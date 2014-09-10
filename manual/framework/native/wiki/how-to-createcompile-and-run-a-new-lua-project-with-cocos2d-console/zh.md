@@ -1,4 +1,4 @@
-#如何使用cocos2d console创建、编译、运行一个Lua工程
+#如何使用Cocos2d console创建、编译、运行一个Lua工程
 
 ##Console 工具
 
