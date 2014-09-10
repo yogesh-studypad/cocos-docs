@@ -19,7 +19,7 @@ plugin.FacebookAgent.prototype.request = function(path, method, params, callback
 
 ```javascript
 
-facebook.request("/me", plugin.FacebookAgent.HttpMethod.Get, function (type, msg) {
+facebook.request("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, msg) {
     if (type == plugin.FacebookAgent.CODE_SUCCEED) {
         cc.log(msg["id"]);
     } else {
