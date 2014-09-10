@@ -1,4 +1,4 @@
-#logEvent
+#.logEvent(eventName, valueToSum, parameters)
 
 Publishes an [App Event](https://developers.facebook.com/docs/ios/app-events/).
 
@@ -10,11 +10,11 @@ App events allow you to measure the effectiveness of your Facebook mobile app ad
 plugin.FacebookAgent.prototype.logEvent = function(eventName, valueToSum, parameters){}
 ```
 
-|Name|Description|
-|----|-----------|
-|eventName|EventName used to denote the event.|
-|valueToSum|[optional] A value to associate with the event which will be summed up in Insights for across all instances of the event, so that average values can be determined, etc.|
-|parameters|[optional] A Bundle of parameters to log with the event.|
+|Name|Type|Required|Description|
+|----|----|--------|-----------|
+|eventName|Enum|Yes|EventName used to denote the event.|
+|valueToSum|Number|No|A value to associate with the event which will be summed up in Insights for across all instances of the event, so that average values can be determined, etc.|
+|parameters||No|A Bundle of parameters to log with the event.|
 
 Predefined events in `plugin.FacebookAgent.AppEvent`:
 

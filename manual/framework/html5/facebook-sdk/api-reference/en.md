@@ -12,6 +12,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 ##API list
 
 ###FacebookAgent class
+
 `plugin.FacebookAgent` is a singleton class which encapsulated all APIs of Facebook SDK Beta for Cocos2d-JS, if you want to use it, you need to retrieve its instance firstly.
 
 |Name|Description|
@@ -23,7 +24,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 
 |Name|Description|
 |----|-----------|
-|[login](./login.md)|Ask a user to authorize your app, or to grant additional authorization.|
+|[login](./login.md)|Ask a user to authorize your app, or to grant additional authorizations.|
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
 |[requestAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
@@ -34,7 +35,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |Name|Description|
 |----|-----------|
 |[share](./share.md)|Post a status update on Facebook.|
-|[dialog](./dialog.md)|Trigger the Facebook Dialog for sharing or sending message.|
+|[dialog](./dialog-share.md) (for sharing)|Trigger the Facebook Dialog for sharing.|
+|[dialog](./dialog-message.md) (for sending messages)|Trigger the Facebook Dialog for sending messages.|
 |[appRequest](./appRequest.md)|Prompts the user to send [app requests](https://developers.facebook.com/docs/reference/dialogs/requests/), short messages between users.|
 
 ###Graph API
@@ -67,11 +69,11 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |GetPermissionList|√|√|√|
 |Share|√|√|√|
 |dialog - share_link|√|√|√|
-|dialog - share_open_graph|√|√|√|
 |dialog - share_photo|√|√|×|
+|dialog - share_open_graph|√|√|√|
 |dialog - message_link|√|√|√|
-|dialog - message_open_graph|√|√|×|
 |dialog - message_photo|√|√|×|
+|dialog - message_open_graph|√|√|×|
 |AppRequest|√|√|√|
 |API|√|√|√|
 |Pay|×|×|√|
