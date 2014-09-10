@@ -2,15 +2,15 @@
 
 <img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
 
-Cocos2d-JS is Cocos2d-x engine's JavaScript version which includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It supports full Cocos2d-x features with a set of simplified JavaScript friendly APIs.
+Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It supports full Cocos2d-x features with a set of simplified JavaScript friendly APIs.
 
-Cocos2d-JS provides a consistent development experience for whichever platform you want to distribute to, both web and native. "Code once, run everywhere" is incredibly easy and natural in Cocos2d-JS. With one single JavaScript code base, you can run your game on both web browsers and native platforms including Mac OS, Windows, iOS and Android. This will bring your game great opportunities in almost all channels of distribution. On the other hand, if you are only interested in casual games on the web, you can embed directly in your web page the Cocos2d-JS Express Version which is extremely easy to use and light as a feather.
+Cocos2d-JS provides a consistent development experience for whichever platform you want to distribute to, no matter web and native. "Code once, run everywhere" is incredibly easy and natural in Cocos2d-JS. With one single JavaScript code base, you can run your game on all web browsers and native platforms including Mac OS, Windows, iOS and Android. This will bring your game great opportunities in almost all channels of distribution. On the other hand, if you are only interested in casual games on the web, you can embed directly in your web page the Cocos2d-JS Express Version which is extremely easy to use and light as a feather.
 
-Furthermore, JavaScript friendly APIs make your game development experience a breeze, easy to code, test and distribute. In the meantime, Cocos2d-JS v3.0 is very powerful along with all the cool features: Editors Support, Assets Manager, Object Pool, JS to Objective-C/JAVA reflection, etc.
+Furthermore, JavaScript friendly APIs make your game development experience a breeze - easy to code, test and distribute. In the meantime, Cocos2d-JS v3.0 is super powerful along with all these cool new features: Editors Support, Assets Manager, Object Pool, JS to Objective-C/JAVA reflection, etc.
 
 ## Workflows
 
-- Cross platforms developers can use Cocos Console to create projects, boost their development with web version engine and deploy games on all native platforms and all browsers with Cocos Console.
+- Cross platforms developers can use Cocos Console to create projects, boost their development with web version engine and deploy games onto all native platforms and all browsers with Cocos Console.
 
 - Casual web game developers can download the Express Version and start to develop just like using other web frameworks (e.g. jQuery).
 
@@ -18,10 +18,10 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 
 * Unified Cocos2d-JS APIs for web engine and native engine.
 * JavaScript style API refactorations: new construction, property APIs, simplified action APIs.
-* Added new event manager, all kinds of objects can observe events via cc.eventManager with all types of event listener.
 * Added assets manager to support assets hot update.
-* Supported JavaScript to JAVA/Objective-C reflection.
-* Supported Spine animations.
+* Added new event manager to allow all kinds of objects to observe events via cc.eventManager with all types of event listener.
+* Added JavaScript to JAVA/Objective-C reflection support.
+* Added Spine animations support.
 
 ## Notice
 
@@ -51,7 +51,7 @@ Read more about all the features and bug fixes
 - Cocos2d-JS v3.0 is compatible with Cocos Code IDE v1.0.0 RC2+
 - Cocos2d-JS v3.0 is compatible with Cocos Studio v1.2 - v1.5.0.1
 
-If you met any problems, please ask for help from the community : 
+With any problems you might have, our communities are happy to help:
 
 - [Online forum](http://discuss.cocos2d-x.org/category/javascript)
 - [Document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
