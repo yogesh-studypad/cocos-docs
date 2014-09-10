@@ -2,7 +2,7 @@
 
 <img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
 
-Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It supports cross-browser and cross-platform with full Cocos2d-x features and simplified JavaScript friendly APIs.
+Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It equips your game with cross-browser and cross-platform abilities, accompanied by full Cocos2d-x features and simplified JavaScript friendly APIs.
 
 Cocos2d-JS reinvented workflows for all platforms in v3.0, it provides a consistent development experience for whichever platform you want to distribute to, no matter web and native. "Code once, run everywhere" is incredibly easy and natural in Cocos2d-JS. With one single JavaScript code base, you can run your game on all web browsers and native platforms including Mac OS, Windows, iOS and Android. This will bring your game great opportunities in almost all channels of distribution. On the other hand, if you are only interested in casual games on the web, you can embed directly in your web page the Cocos2d-JS Express Version which is extremely easy to use and light as a feather.
 
@@ -18,7 +18,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 
 * Unified Cocos2d-JS APIs for web engine and native engine.
 * JavaScript style API refactorations: new construction, property APIs, simplified action APIs.
-* Added assets manager to support assets hot update.
+* Added assets manager to support assets and scripts hot update.
 * Added new event manager to allow all kinds of objects to observe events via cc.eventManager with all types of event listener.
 * Added JavaScript to JAVA/Objective-C reflection support.
 * Added Spine animations support.
