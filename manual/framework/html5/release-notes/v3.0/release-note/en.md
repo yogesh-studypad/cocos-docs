@@ -14,6 +14,8 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 
 - Casual web game developers can download the Express Version and start to develop just like using other web frameworks (e.g. jQuery).
 
+![](./workflows.jpg)
+
 ## Highlights
 
 * One code base, run everywhere with unified Cocos2d-JS API.

@@ -14,6 +14,8 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 - Web端轻度休闲游戏开发者可以直接下载单文件的Cocos2d-JS Express Version，嵌入Web页面中，像使用jQuery那样进行开发。
 
+![](./workflows.jpg)
+
 ## 核心特性
 
 * 统一了Web引擎和JSB引擎的API，保障“一次开发，全平台运行”的极致开发体验。
