@@ -4,7 +4,7 @@
 
 Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x JavaScript Bindings。它支持Cocos2d-x的所有核心特性并提供更简单易用的JavaScript风格API，并且天然支持原生、浏览器跨平台应用。
 
-在3.0版中，Cocos2d-JS完成了不同平台工作流的彻底整合，为不同平台提供了统一的开发体验。无论开发web应用还是原生应用，都可以便捷地采用Cocos2d-JS实现“一次开发，全平台运行”。采用Cocos2d-JS开发的同一套JavaScript游戏代码，可以同时运行在Mac OS X, Windows, iOS, Android等原生平台、以及所有现代浏览器上，这将使得我们的开发者轻松覆盖几乎所有发行渠道，带来前所未有的机遇。另一方面，若开发者只想开发一款Web轻度休闲游戏，Cocos2d-JS也专门为此类游戏定制了Express Version，直接将Cocos2d-JS Express Version集成到页面中即可使用。
+在3.0版中，Cocos2d-JS完成了不同平台工作流的彻底整合，为不同平台提供了统一的开发体验。无论开发web应用还是原生应用，都可以便捷地采用Cocos2d-JS实现“一次开发，全平台运行”。采用Cocos2d-JS开发的同一套JavaScript游戏代码，可以同时运行在Mac OS X, Windows, iOS, Android等原生平台、以及所有现代浏览器上，这将使得我们的开发者轻松覆盖几乎所有发行渠道，带来前所未有的机遇。另一方面，若开发者只想开发一款Web轻度休闲游戏，Cocos2d-JS也专门为此类游戏定制了Lite Version，直接将Cocos2d-JS Lite Version集成到页面中即可使用。
 
 作为工作流整合后的第一个版本，Cocos2d-JS v3.0兼具了简单和强大：新的JavaScript风格API使得编码，测试和发布环节都变得异常轻松简单；同时v3.0还提供了诸多强大的新特性，比如Spine动画支持，支持热更新的资源管理器，对象缓冲池，JS到Objective-C/JAVA反射等等。
 
@@ -12,13 +12,13 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 - 跨平台游戏开发者可以使用Cocos Console来创建项目，用Web引擎加速游戏开发，最终用Cocos Console将游戏发布到所有原生平台和Web平台。
 
-- Web端轻度休闲游戏开发者可以直接下载单文件的Cocos2d-JS Express Version，嵌入Web页面中，像使用jQuery那样进行开发。
+- Web端轻度休闲游戏开发者可以直接下载单文件的Cocos2d-JS Lite Version，嵌入Web页面中，像使用jQuery那样进行开发。
 
 ## 下载与API索引
 
 - [Cocos2d-JS github仓库](http://github.com/cocos2d/cocos2d-js/)
 - [Cocos2d-JS Full Version下载链接](http://cn.cocos2d-x.org/download)
-- [Cocos2d-JS Express Version下载链接](http://www.cocos2d-x.org/filecenter/jsbuilder)
+- [Cocos2d-JS Lite Version下载链接](http://www.cocos2d-x.org/filecenter/jsbuilder)
 - [在线API索引](http://www.cocos2d-x.org/wiki/Reference)
 - [下载API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
 - [在线测试例](http://cocos2d-x.org/js-tests/)
