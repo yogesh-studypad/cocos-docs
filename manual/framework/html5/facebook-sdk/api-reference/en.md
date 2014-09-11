@@ -24,7 +24,6 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
 |[dialog](./dialog-share.md) (for sharing)|Trigger the Facebook Dialog for sharing.|
 |[dialog](./dialog-message.md) (for sending messages)|Trigger the Facebook Dialog for sending messages.|
-|[dialog](./dialog.md)|Trigger the dialog for one-to-many sharing on Facebook or trigger the dialog for sending message to friends.|
 |[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
 
 ###Auth and Session Methods
