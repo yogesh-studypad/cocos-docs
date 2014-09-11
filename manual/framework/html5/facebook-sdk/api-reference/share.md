@@ -14,7 +14,6 @@ plugin.FacebookAgent.prototype.share = function(info, callback){}
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-<<<<<<< HEAD
 |info|Object|Yes|The content to be shared.|
 |callback|Function|No|This callback will be invoked with a result code and a response object or an error message.|
 
@@ -30,26 +29,13 @@ plugin.FacebookAgent.prototype.share = function(info, callback){}
 ##Callback function and response object
 
 The callback function definition is showing below, if the sharing action succeed, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the `response` parameter.
-=======
-|callback|Function|Yes|Callback function containing a result code and a JSON response.|
 
-
-##Callback function
->>>>>>> 47ac730af560bd1017ff8bad0981569954f58687
 
 ```javascript
 var callback = function (code, response) {}
 ```
-
-<<<<<<< HEAD
 Meanwhile, the response object is only available when the sharing action succeed, here is an example:
 
-```javascript
-// The response object 
-{
-    // The id of the post which have been shared
-    "post_id" : "12345678"
-=======
 If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the form below,
 ```javascript
 {
@@ -63,7 +49,6 @@ If the sharing fails, `code` is error code (refer to link here ???) and `respons
 ```javascript
 {
     "error" : "FBErrorDialogInvalidShareParameters"
->>>>>>> 47ac730af560bd1017ff8bad0981569954f58687
 }
 ```
 
