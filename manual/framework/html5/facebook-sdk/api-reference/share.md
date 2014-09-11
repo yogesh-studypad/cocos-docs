@@ -1,8 +1,10 @@
 #.share(info, callback)
 
-On iOS or Android, if the user has installed Facebook native app on his/her device, this function triggers Share Dialog in the native app, otherwise it falls back automatically to trigger a web dialog in your own app. Please refer to [Sharing in iOS](https://developers.facebook.com/docs/ios/share) and [Sharing in Android](https://developers.facebook.com/docs/android/share) for more details. Note that your app does not have to be using Facebook Login for people to be able to share via the Share Dialog.
+Allow people to update their status from your app.
 
-On Web, it triggers Share Dialog. Please refer to [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
+On iOS or Android, if the person has installed the native Facebook for iOS app or the native Facebook for Android app in the device, this method does an app switch to the native Facebook for iOS app or the native Facebook for Android app installed in the device, from which the person shares the content. Then it returns to your app once people have shared. Note that your app does not have to be using Facebook Login for people to be able to share via the Share Dialog. Otherwise, if the person does not have the native Facebook for iOS app or the native Facebook for Android app installed in the device, the method automatically falls back to the Feed Dialog (a web dialog that doesn't need the native Facebook for iOS app or the native Facebook for Android app installed). Please visit [Sharing in iOS](http://developers.facebook.com/docs/ios/share) and [Sharing in Android](http://developers.facebook.com/docs/android/share) for more details.
+
+On Web, it triggers a Share Dialog through Javascript. Please visit [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
 
 ##Parameters
 
@@ -12,6 +14,7 @@ plugin.FacebookAgent.prototype.share = function(info, callback){}
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
+<<<<<<< HEAD
 |info|Object|Yes|The content to be shared.|
 |callback|Function|No|This callback will be invoked with a result code and a response object or an error message.|
 
@@ -27,11 +30,18 @@ plugin.FacebookAgent.prototype.share = function(info, callback){}
 ##Callback function and response object
 
 The callback function definition is showing below, if the sharing action succeed, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the `response` parameter.
+=======
+|callback|Function|Yes|Callback function containing a result code and a JSON response.|
+
+
+##Callback function
+>>>>>>> 47ac730af560bd1017ff8bad0981569954f58687
 
 ```javascript
 var callback = function (code, response) {}
 ```
 
+<<<<<<< HEAD
 Meanwhile, the response object is only available when the sharing action succeed, here is an example:
 
 ```javascript
@@ -39,6 +49,21 @@ Meanwhile, the response object is only available when the sharing action succeed
 {
     // The id of the post which have been shared
     "post_id" : "12345678"
+=======
+If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the form below,
+```javascript
+{
+    // The id of the post which has been shared
+    "post_id" : "1697818070_220407711431887"
+}
+```
+
+If the sharing fails, `code` is error code (refer to link here ???) and `response` is a JSON containing error message as the form below,
+
+```javascript
+{
+    "error" : "FBErrorDialogInvalidShareParameters"
+>>>>>>> 47ac730af560bd1017ff8bad0981569954f58687
 }
 ```
 
@@ -59,6 +84,6 @@ facebook.share(info, function(code, response){
         cc.log("share succeed");
     } else {
         cc.log("Sharing failed, error #" + code + ": " + response);
-    }
+    }       
 });
 ```

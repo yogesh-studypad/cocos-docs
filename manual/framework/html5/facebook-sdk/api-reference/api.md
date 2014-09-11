@@ -1,6 +1,6 @@
 #.api(path, method, params, callback)
 
-Makes a call to the [Facebook Graph API](https://developers.facebook.com/docs/reference/api/) find out about the user, or take action on the user's behalf. This will almost always be used once a user is logged in and an access token has been granted. The permissions encoded by the access token determine which Graph API calls will be available.
+Makes a call to the [Facebook Graph API](http://developers.facebook.com/docs/reference/api/) to get data, or take action on a user's behalf. This will almost always be used once a user is logged in, and an access token has been granted; the [permissions](https://developers.facebook.com/docs/facebook-login/permissions/) encoded by the access token determine which Graph API calls will be available.
 
 ##Parameters
 
