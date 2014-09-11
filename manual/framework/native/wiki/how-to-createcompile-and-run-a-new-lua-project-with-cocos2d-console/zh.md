@@ -1,4 +1,4 @@
-#如何使用cocos2d console创建、编译、运行一个Lua工程
+#如何使用Cocos2d console创建、编译、运行一个Lua工程
 
 ##Console 工具
 
@@ -35,7 +35,7 @@ export JAVA_HOME=/usr/local/jdk1.7.0_51
 
 ##创建一个新工程
 
-你可以使用如下命令容易的创建一个新的cocos2d-x Lua 工程。
+你可以使用如下命令容易的创建一个新的Cocos2d-x Lua 工程。
 
 ```
 cocos new projectName -l lua

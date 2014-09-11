@@ -2,18 +2,26 @@
 
 <img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
 
-Cocos2d-JS is Cocos2d-x engine's javascript version which include Cocos2d-html5 and Cocos2d-x JSBinding. It support full Cocos2d-x features with a set of simplified javascript friendly APIs.
+Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It equips your game with cross-browser and cross-platform abilities, accompanied by full Cocos2d-x features and simplified JavaScript friendly APIs.
 
-Cocos2d-JS provides a consistent development experience for whichever platform you want to distribute to, both web and native. "Code once, run everywhere" is incredibly easy and natural in Cocos2d-JS. With one single javascript code base, you can run your game on both web browsers and native platform including Mac OS, Windows, iOS, Android. This will bring your game great opportunities in almost all canals of distribution.
+Cocos2d-JS reinvented workflows for all platforms in v3.0, it provides a consistent development experience for whichever platform you want to distribute to, no matter web and native. "Code once, run everywhere" is incredibly easy and natural in Cocos2d-JS. With one single JavaScript code base, you can run your game on all web browsers and native platforms including Mac OS, Windows, iOS and Android. This will bring your game great opportunities in almost all channels of distribution. On the other hand, if you are only interested in casual games on the web, you can embed directly in your web page the Cocos2d-JS Express Version which is extremely easy to use and light as a feather.
 
-Furthermore, javascript friendly API makes your game development experience a breeze, easy to code, test and distribute. Cocos2d-JS also offers Cocos Console, a script tool, to simplify the creation of projects and let you start coding right away. You can use it to create a new project and publish it to android, iOS, Mac OS or web.
+Furthermore, JavaScript friendly APIs make your game development experience a breeze - easy to code, test and distribute. In the meantime, Cocos2d-JS v3.0 is super powerful along with all these cool new features: Editors Support, Assets Manager, Object Pool, JS to Objective-C/JAVA reflection, etc.
+
+## Workflows
+
+- Cross platforms developers can use Cocos Console to create projects, boost their development with web version engine and deploy games onto all native platforms and all browsers with Cocos Console.
+
+- Casual web game developers can download the Express Version and start to develop just like using other web frameworks (e.g. jQuery).
 
 ## Download and API reference
 
-- [Cocos2d-JS github repo](http://github.com/cocos2d/cocos2d-js/)
-- [Cocos2d-JS release](http://www.cocos2d-x.org/download)
+- [Cocos2d-JS github repository](http://github.com/cocos2d/cocos2d-js/)
+- [Cocos2d-JS Full Version Download](http://www.cocos2d-x.org/download)
+- [Cocos2d-JS Express Version](http://www.cocos2d-x.org/filecenter/jsbuilder)
 - [Online API reference](http://www.cocos2d-x.org/wiki/Reference)
-- [Downloadable API reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-beta-API.zip)
+- [Downloadable API reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## Main features
 
@@ -27,6 +35,7 @@ Furthermore, javascript friendly API makes your game development experience a br
     * Composable actions: Sequence, Spawn, Repeat, Reverse
     * Ease Actions: Exp, Sin, Cubic, Elastic, etc.
     * Misc actions: CallFunc, OrbitCamera, Follow, Tween
+* Assets manager (hot update)
 * Basic menus and buttons
 * Integrated with physics engines: Chipmunk and Box2d
 * Particle system
@@ -51,13 +60,15 @@ Furthermore, javascript friendly API makes your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.0 beta](./release-notes/v3.0b/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.0 beta](./release-notes/v3.0b/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.0 beta](./release-notes/v3.0a/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.0](./release-notes/v3.0/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.0](./release-notes/v3.0/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.0](./release-notes/v3.0rc0/upgrade-guide/en.md)
+
 - Startup
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
-    - [Resolution Policy Design for Cocos2d-html5](./v2/resolution-policy-design/en.md)
+    - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes](./release-notes/en.md)
+    
 - Pakour Game with Cocos2d-JS v3.0
     - [1. Setup Development Environment](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
 	- [2. Hello World Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
@@ -77,12 +88,15 @@ Furthermore, javascript friendly API makes your game development experience a br
     - [New property API](./v3/getter-setter-api/en.md)
     - [Game creation](./v3/cc-game/en.md)
     - [Construction and inheritance](./v3/inheritance/en.md)
-    - [Simplified action APIs](./v3/cc-actions/en) 
+    - [Simplified action APIs](./v3/cc-actions/en.md)
+    - [Objects Pool](./v3/cc-pool/en.md)
+    - [Bake Layer](./v3/bake-layer/en.md)
+    - [Reflection from Javascript to JAVA](./v3/reflection/en.md)
+    - [Reflection from Javascript to Objective-C](./v3/reflection-oc/en.md)
     - [Cocos2d-html5 modulization](./v3/moduleconfig-json/en.md)
     - [Pure configuration file](./v3/project-json/en.md)
     - [Basic data refactoration](./v3/basic-data/en.md)
     - [Singleton objects refactoration](./v3/singleton-objs/en.md)
-    - [Unified create functions](./v3/create-api/en.md)
     - [Loading resource with cc.loader](./v3/cc-loader/en.md)
     - [System information in cc.sys](./v3/cc-sys/en.md)
     - [Path management with cc.path](./v3/cc-path/en.md)
@@ -92,4 +106,16 @@ Furthermore, javascript friendly API makes your game development experience a br
     - [About cc.FileUtils](./v3/cc-fileutils/en.md)
     - [About cc.log](./v3/cc-log/en.md)
     - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
-    - Bake Layer (./v3/bakeLayer/en.md)
+    
+- Facebook SDK Beta for Cocos2d-JS
+    - [Facebook SDK Beta API Reference](./facebook-sdk/api-reference/en.md)
+    - [Integrate the Facebook SDK Beta for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
+    - [Integrate the Facebook SDK Beta for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
+    - [Integrate the Facebook SDK Beta for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
+    
+- Advanced topics
+    - [How to use extensions in JSB(Chinese version)](./jsb/jsb-extension/zh.md)
+    - [How to use Plugin-x on Android](./jsb/plugin-x/how-to-use-plugin-x-on-android/en.md)
+    - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)
+    - [How to write your own Plugin for Android](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
+    - [Use iOS IAP Plugin](./jsb/plugin-x/ios-iap/en.md)

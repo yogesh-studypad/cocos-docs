@@ -62,25 +62,28 @@
 		- [use webbroswer to integrate Alipay on Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
 		- [integrate third SDK in Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-thirdSDK/en.md)
 	- Cocos2d-html5
-        - [Highlighted release note of Cocos2d-JS v3.0 beta](../manual/framework/html5/release-notes/v3.0b/release-note/en.md)
-        - [Changelog of Cocos2d-JS v3.0 beta](../manual/framework/html5/release-notes/v3.0b/changelog/en.md)
-        - [Upgrade guide to Cocos2d-JS v3.0 beta](../manual/framework/html5/release-notes/v3.0a/upgrade-guide/en.md)
+        - [Highlighted release note of Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0/release-note/en.md)
+        - [Changelog of Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0/changelog/en.md)
+        - [Upgrade guide to Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/en.md)
+        
 		- Startup
-            - [About Cocos2d-html5](../manual/framework/html5/en.md)
-			- [Why use Cocos2d-html5 for Game Development](../manual/framework/html5/v2/cocosh5-advantages/en.md)
-			- [Resolution Policy Design for Cocos2d-html5](../manual/framework/html5/v2/resolution-policy-design/en.md)
+            - [About Cocos2d-JS](../manual/framework/html5/en.md)
+			- [Why use Cocos2d-JS for Game Development](../manual/framework/html5/v2/cocosh5-advantages/en.md)
+			- [Resolution Policy Design for Cocos2d-JS](../manual/framework/html5/v2/resolution-policy-design/en.md)
             - [History release notes](../manual/framework/html5/release-notes/en.md)
-            - [Plugin-x architecture](../manual/framework/html5/v3/plugin-x/plugin-x-architecture/en.md)
-            - [How to use plugin-x on android](../manual/framework/html5/v3/plugin-x/how-to-use-plugin-x-on-android/en.md)
-            - [How to write your own plugin](../manual/framework/html5/v3/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
+            
         - New features and API changes in version 3.0:
-            - [New Actions API](../manual/framework/html5/v3/cc-actions/en.md)
             - [New workflow with cocos console](../manual/framework/html5/v2/cocos-console/en.md)
             - [Assets manager](../manual/framework/html5/v3/assets-manager/en.md)
             - [New event manager](../manual/framework/html5/v3/eventManager/en.md)
             - [New property API](../manual/framework/html5/v3/getter-setter-api/en.md)
             - [Game creation](../manual/framework/html5/v3/cc-game/en.md)
             - [Construction and inheritance](../manual/framework/html5/v3/inheritance/en.md)
+            - [Simplified action APIs](../manual/framework/html5/v3/cc-actions/en.md)
+            - [Object Pool](../manual/framework/html5/v3/cc-pool/en.md)
+            - [Bake Layer](../manual/framework/html5/v3/bake-layer/en.md)
+            - [Reflection from Javascript to JAVA](../manual/framework/html5/v3/reflection/en.md)
+            - [Reflection from Javascript to Objective-C](../manual/framework/html5/v3/reflection-oc/en.md)
             - [Cocos2d-html5 modulization](../manual/framework/html5/v3/moduleconfig-json/en.md)
             - [Pure configuration file](../manual/framework/html5/v3/project-json/en.md)
             - [Basic data refactoration](../manual/framework/html5/v3/basic-data/en.md)
@@ -95,8 +98,20 @@
             - [About cc.FileUtils](../manual/framework/html5/v3/cc-fileutils/en.md)
             - [About cc.log](../manual/framework/html5/v3/cc-log/en.md)
             - [Other change from v2.2.2 to v3.0](../manual/framework/html5/v3/more-change-from-v2-to-v3/en.md)
-            - Bake Node (In progress)
-            - [Simplified action APIs](http://cocos2d-x.org/docs/manual/framework/html5/v3/cc-actions/en)
+        
+        - Facebook SDK Beta for Cocos2d-JS
+            - [Facebook SDK Beta API Reference](../manual/framework/html5/facebook-sdk/api-reference/en.md)
+            - [Integrate the Facebook SDK Beta for Cocos2d-JS on Android](../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/en.md)
+            - [Integrate the Facebook SDK Beta for Cocos2d-JS on iOS](../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/en.md)
+            - [Integrate the Facebook SDK Beta for Cocos2d-JS on Web](../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/en.md)
+    
+        - Advanced topics
+            - [How to use extensions in JSB(Chinese version)](../manual/framework/html5/jsb/jsb-extension/zh.md)
+            - [How to use Plugin-x on Android](../manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-android/en.md)
+            - [Plugin-x architecture](../manual/framework/html5/jsb/plugin-x/plugin-x-architecture/en.md)
+            - [How to write your own Plugin for Android](../manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
+            - [Use iOS IAP Plugin](../manual/framework/html5/jsb/plugin-x/ios-iap/en.md)
+
 - Studio
 - Tutorials
 	- [Build a Game with CocoStudio](../tutorial/studio/parkour-game-with-cocostudio/en.md)
@@ -129,6 +144,6 @@
         
 - Cocos Code IDE
     - Custom runtime
-        - [How to bind a custom class to lua runtime](../manual/studio/cocos-code-ide/binding-custom-class-to-lua/en.md)
-        - [How to bind a custom class to js runtime](../manual/studio/cocos-code-ide/binding-custom-class-to-js/en.md)
+        - [How to bind a custom class to lua runtime](../manual/code-ide/binding-custom-class-to-lua/en.md)
+        - [How to bind a custom class to js runtime](../manual/code-ide/binding-custom-class-to-js/en.md)
         
