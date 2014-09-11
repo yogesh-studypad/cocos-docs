@@ -52,4 +52,5 @@ facebook.request("/me/photos", plugin.FacebookAgent.HttpMethod.POST, {"url": "ht
         cc.log("Graph API request failed, error #" + code + ": " + response);
     }
 });
+
 ```
