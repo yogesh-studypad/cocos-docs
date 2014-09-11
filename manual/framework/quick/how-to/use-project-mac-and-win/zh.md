@@ -1,5 +1,5 @@
 
-### 如何使用 mac 工程
+### 如何使用 Mac 工程
 
 1.  用 Xcode 打开 mac 工程后，选择菜单 Product -> Scheme -> 你的项目名字
 2.  选择菜单 Product -> Scheme -> Edit Scheme，打开 Scheme 对话框
