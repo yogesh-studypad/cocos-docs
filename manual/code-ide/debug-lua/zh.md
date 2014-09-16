@@ -96,18 +96,4 @@ end
 + ![](./res/lua_remote_android_debug.png)
 + 点击 **Debug** 按钮
 
-### 如何调试 C++ 代码
-从 1.0.0-rc1 版本开始，支持使用 XCode/Visual Studio 调试 C++ 代码的同时使用 Cocos Code IDE 调试 C++ 代码。
-
-以调试 Mac 为例：
-
-+ 如果你还没有 C++ 代码，那么需要先添加（右击工程，Cocos Tools->Add Native Codes Support...）
-+ 使用 XCode 打开 `frameworks/runtime-src/proj.ios_mac` 工程，并启动调试
-+ 回到 Cocos Code IDE，打开 "Debug Configuration" 页面，选择 **Remote Debug** 单选项
-+ platfrom 选择 “Mac”
-+ **Target IP** 填写 "127.0.0.1"
-+ **Host IP** 选择 "127.0.0.1"
-+ ![](./res/lua_remote_mac_debug.png)
-+ 点击 **Debug** 按钮
-
 [How To Install IPA]:http://www.solutionanalysts.com/blog/how-install-ipa-file-iphone-ipod-ipad-using-itunes-mac-windows
