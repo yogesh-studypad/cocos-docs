@@ -2,7 +2,7 @@
 
 Cocos2d-JS是Cocos2d-x的Javascript版本，融合了Cocos2d-html5和Cocos2d-x JSBinding。它支持Cocos2d-x的所有特性并提供更简单易用的Javascript风格API。
 
-使用Cocos2d-html5，我们可以很方便用Javascript来开发游戏。然后通过Cocos2d-x JSBinding的方式可以将游戏编译到手机上。 下面就来介绍如何打包Cocos2d-JS的项目。
+使用Cocos2d-JS，我们可以很方便用Javascript来开发游戏。然后通过Cocos2d-x JSBinding的方式可以将游戏编译到手机上。 下面就来介绍如何打包Cocos2d-JS的项目。
 
 ##环境要求
 * Python 2.7
@@ -14,8 +14,8 @@ Cocos2d-JS是Cocos2d-x的Javascript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 ##环境搭建
 
-* 下载[Cocos2d-JS v3.0RC1](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.0-rc1.zip)
-* 解压cocos2d-js-v3.0-rc1.zip，终端进入cocos2d-js-v3.0-rc1目录，执行命令`./setup.py`
+* 下载[Cocos2d-JS v3.0 Final](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.0.zip)
+* 解压cocos2d-js-v3.0.zip，终端进入cocos2d-js-v3.0目录，执行命令`./setup.py`
 
 * 执行`source /Users/zeroyang/.bash_profile`命令，加入环境变量。
 
@@ -28,9 +28,9 @@ Cocos2d-JS是Cocos2d-x的Javascript版本，融合了Cocos2d-html5和Cocos2d-x J
 我们先来创建一个Cocos2d-JS的CocosJSGame工程。然后对CocosJSGame进行打包。
 
 ```
-IvenYangtekiMacBook-Pro-2:cocos2d-js-v3.0-alpha2 zeroyang$ cocos new CocosJSGame -l js
+IvenYangtekiMacBook-Pro-2:cocos2d-js-v3.0 zeroyang$ cocos new CocosJSGame -l js
 Runing command: new
-> Copy template into /Users/zeroyang/Documents/work/cocos2d-js-v3.0-alpha2/CocosJSGame
+> Copy template into /Users/zeroyang/Documents/work/cocos2d-js-v3.0/CocosJSGame
 > Copying cocos2d-html5 files...
 > Copying files from template directory...
 > Copying directory from cocos root directory...
@@ -40,7 +40,7 @@ Runing command: new
 > Replace the project package name from 'org.cocos2dx.hellojavascript' to 'org.cocos2dx.hellojavascript'
 ```
 
-上面的操作创建了一个基于cocos2d-js-v3.0-alpha2的CocosJSGame工程。下面我们来学习如何打包。
+上面的操作创建了一个基于cocos2d-js-v3.0的CocosJSGame工程。下面我们来学习如何打包。
 
 ###生成JSC(字节码)
 
