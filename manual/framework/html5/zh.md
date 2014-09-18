@@ -65,6 +65,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 - [Cocos2d-JS v3.0升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
 
 - 综述
+    - [Lite Version工作流](./v3/lite-version/en.md)
 	- [Cocos2d-JS 2.x新手入门](./v2/getting-started_with-cocos2d-html5/zh.md)
 	- [历史发布说明](./release-notes/zh.md)
 	

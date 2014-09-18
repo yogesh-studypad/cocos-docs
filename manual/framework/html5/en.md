@@ -65,6 +65,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 - [Upgrade guide to Cocos2d-JS v3.0](./release-notes/v3.0rc0/upgrade-guide/en.md)
 
 - Startup
+    - [Lite Version workflow](./v3/lite-version/en.md)
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes](./release-notes/en.md)
