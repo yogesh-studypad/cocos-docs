@@ -2,9 +2,9 @@
 
 Cocos2d-JS为纯Web开发者提供了特别定制的一套更友好的工作流，对于这些开发者来说，如果Cocos2d-JS可以像其他Web框架一样用单个文件被引入到用户页面中并可以直接使用的话，会更符合他们的开发习惯。而Cocos2d-JS引擎包看上去对于Web开发者来说实在是太庞大和复杂了，对于Web开发者来说，就好像被扔进了一个巨大的迷宫，完全不知道从哪下手。这甚至会给开发者一种错误的认知："Cocos2d-JS是一个非常重的引擎，不适合做Web游戏开发。"
 
-实际上，在Cocos2d-JS的Web引擎实现模块化之后，可以非常优美得做到既强大又轻量。
+实际上，在Cocos2d-JS的Web引擎实现模块化之后，可以非常优美得做到既强大又轻量。也正是以上原因，促使我们推出了Lite Version以及专为Lite Version定制的工作流供纯Web开发者使用。
 
-这篇文档中，我们会介绍如何下载并使用Cocos2d-JS Lite Version。
+这一章节中，我们会介绍Cocos2d-JS Lite Version的工作流。
 
 ## 下载Cocos2d-JS Lite Version
 
@@ -30,7 +30,7 @@ Cocos2d-JS为纯Web开发者提供了特别定制的一套更友好的工作流�
 
 你有可能下载了下面三个版本中的一个：
 
-- **Cocos2d-JS Full Version**: 完整版引擎包含Cocos2d-JS引擎的所有功能特性以及所有扩展，使用这个版本可以帮助你发掘Cocos2d-JS令人惊艳的创造力和可能性。你可以从[官方文档首页](http://www.cocos2d-x.org/docs/manual/framework/html5/en)中查看Cocos2d-JS所支持的特性列表。
+- **Cocos2d-JS Full Version**: 完整版引擎包含Cocos2d-JS引擎的所有功能特性以及所有扩展，使用这个版本可以帮助你发掘Cocos2d-JS令人惊艳的创造力和可能性。你可以从[官方文档首页](http://www.cocos2d-x.org/docs/manual/framework/html5/zh)中查看Cocos2d-JS所支持的特性列表。
 
 - **Cocos2d-JS Lite Version**: 精简版本只包含Cocos2d-JS的核心特性，它的优势是稳定，轻量，简单易用。它所包含的特性列表如下：
     + Canvas渲染器 (不支持WebGL)
@@ -90,3 +90,7 @@ window.onload = function(){
 "Failed to load resource: the server responded with a status of 404 (Not Found)"，提示`project.json`文件找不到
 
 这是正常现象，并不是问题，你可以忽略它。或者可以添加一个空的`project.json`文件来避免这个错误报告。
+
+## 下一步
+
+这一章节中讲述的主要是适合纯Web开发者所使用的工作流，如果你想更完整得体验Cocos2d-JS的强大跨平台能力，我们在下一章节将讲述如何使用Cocos2d-JS完整包来开发跨浏览器以及原生平台的跨端游戏。
