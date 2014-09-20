@@ -63,8 +63,8 @@
 		- [Windows Phone 8에서 웹브라우져를 사용해서 Alipay 통합](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
     	- [Windows Phone 8에서 써드파티 SDK 통합](../manual/framework/native/v2/sdk-integration/wp8-thirdSDK/en.md)
 	- Cocos2d-html5
-		- [Cocos2d-JS v3.0 RC2 릴리스 노트](../manual/framework/html5/release-notes/v3.0rc2/release-note/ko.md)
-        - [Cocos2d-JS v3.0 RC2 체인지 로그](../manual/framework/html5/release-notes/v3.0rc2/changelog/ko.md)
+		- [Cocos2d-JS v3.0 파이널 릴리스 노트](../manual/framework/html5/release-notes/v3.0/release-note/ko.md)
+        - [Cocos2d-JS v3.0 파이널 체인지 로그](../manual/framework/html5/release-notes/v3.0/changelog/ko.md)
         - [Cocos2d-JS v3.0 RC0 업그레이드 가이드](../manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/ko.md)
         
 	    - 시작하기
@@ -143,4 +143,4 @@
 - Cocos Code IDE
     - 커스텀 클래스 바인딩
         - [LUA 런타임에 C++ 커스텀 클래스를 바인딩하는 법](../manual/code-ide/binding-custom-class-to-lua/ko.md)
-        - [자바스크립트 런타임에 C++ 커스텀 클래스를 바인딩하는 법](../manual/code-ide/binding-custom-class-to-js/ko.md)		
+        - [자바스크립트 런타임에 C++ 커스텀 클래스를 바인딩하는 법](../manual/code-ide/binding-custom-class-to-js/ko.md)
