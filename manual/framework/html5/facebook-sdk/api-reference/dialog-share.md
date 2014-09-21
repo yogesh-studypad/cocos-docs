@@ -1,10 +1,10 @@
-#.dialog(info, callback) (for sharing)
+#.dialog(info, callback) - for sharing
 
-Share a link, a structured [Open Graph](https://developers.facebook.com/products/open-graph) story or a photo from your app to the user’s timeline and their friends’ newsfeed. 
+Allow people to share a link, a structured [Open Graph](https://developers.facebook.com/products/open-graph) story or a photo from your app. 
 
-On iOS or Android, if the user has installed Facebook native app on his/her device, it triggers Share Dialog in the native app. If the user does not have Facebook native app installed on his/her device, it falls back automatically to trigger a web dialog. Please refer to [Sharing in iOS](https://developers.facebook.com/docs/ios/share) and [Sharing in Android](https://developers.facebook.com/docs/android/share) for more details. Note that your app does not have to be using Facebook Login for people to be able to share via the Share Dialog.
+On iOS or Android, if the person has installed the native Facebook for iOS app or the native Facebook for Android app in the device, this method does an app switch to the native Facebook for iOS app or the native Facebook for Android app installed in the device, from which the person shares the content. Then it returns to your app once people have shared. Please note that your app does not have to be using Facebook Login for people to be able to share via the Share Dialog. Otherwise, if the person does not have the native Facebook for iOS app or the native Facebook for Android app installed in the device, the method automatically falls back to the Feed Dialog (a web dialog that doesn't need the native Facebook for iOS app or the native Facebook for Android app installed). Please visit [Sharing in iOS](http://developers.facebook.com/docs/ios/share) and [Sharing in Android](http://developers.facebook.com/docs/android/share) for more details.
 
-On Web, it can only share a link or a structured Open Graph story with web Share Dialog. Please refer to [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
+On Web, it triggers a Share Dialog through Javascript. Please note that you can only share a link or a structured Open Graph story with Share Dialog on web. Please visit [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
 
 ##Parameters
 
@@ -14,34 +14,35 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-|info|Object|Yes|The content to be shared.|
-|callback|Function|No|This callback will be invoked with a result code and a response object or an error message.|
+|info|Object|Yes|The object to contain the details for the sharing.|
+|callback|Function|Yes|Callback function containing a result code and a JSON response.|
 
-####`info` content:
+####Properties of `info` object:
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-|dialog|String|Yes|The property determine the type of Facebook dialog you want to trigger.|
-|Additional properties|Various|Yes|Additional properties varie for each share dialog type, see detailed list below.|
+|dialog|String|Yes|This property determines the share dialog type that you want to trigger.|
+|Additional properties|Various|Yes|Additional properties are based on the share dialog type you use. See details below.|
 
-####The share dialog type can be one of these:
+####Share dialog types:
 
 |Value|Dialog type|
 |-----|-----------|
-|share_link|Share a link to Facebook using Share Dialog|
-|share_photo|Share an image to Facebook using Share Dialog|
-|share_open_graph|Share an Open Graph story to Facebook using Share Dialog|
+|share_link|Share a link|
+|share_photo|Share a photo|
+|share_open_graph|Share a structured Open Graph story|
 
-####Additional properties of `info` object for each share dialog type:
+####Additional properties of `info` object based on each share dialog type:
 
 1. share_link
 
     |Name|Type|Required|Description|
     |----|----|--------|-----------|
-    |link|String|Yes|The link's url|
-    |title|String|No|The link's title|
-    |imageUrl|String|No|The image for the link|
-    |description|String|No|The link's description|
+    |link|String|Yes|The URL of the item to be shared.|
+    |title|String|No|The title of the item to be shared.|
+    |caption|String|No|The subtitle of the item to be shared.|
+    |imageUrl|String|No|The URL of the image of the item to be shared.|
+    |description|String|No|the description of the item to be shared.|
 
 2. share_photo
 
@@ -57,45 +58,27 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
     |preview_property|String|No|Open Graph Object type|
     |others|Various|No|Other parameters for the Open Graph story|
 
-##Callback function and response object
-
-The callback function definition is showing below, if the sharing action succeed, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the `response` parameter.
+##Callback function
 
 ```javascript
 var callback = function (code, response) {}
 ```
 
-Meanwhile, the response object is only available when the sharing action succeed, examples are showing below for each share dialog type:
+If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the form below,
+```javascript
+{
+    // The id of the post which has been shared
+    "post_id" : "1697818070_220407711431887"
+}
+```
 
-1. share_link
+If the sharing fails, `code` is error code (refer to link here ???) and `response` is a JSON containing error message as the form below,
 
-    ```javascript
-    // The response object 
-    {
-        // The id of the post which have been shared
-        "post_id" : "12345678"
-    }
-    ```
-    
-2. share_photo
-
-    ```javascript
-    // The response object 
-    {
-        // The id of the post which have been shared
-        "post_id" : "12345678"
-    }
-    ```
-    
-3. share_open_graph
-
-    ```javascript
-    // The response object 
-    {
-        // The id of the post which have been shared
-        "post_id" : "12345678"
-    }
-    ```
+```javascript
+{
+    "error" : "FBErrorDialogInvalidShareParameters"
+}
+```
 
 ##Example
 
@@ -109,6 +92,8 @@ Meanwhile, the response object is only available when the sharing action succeed
         "link": "http://www.cocos2d-x.org",
         "imageUrl": "http://files.cocos2d-x.org/images/orgsite/logo.png"
     };
+    
+    var facebook = plugin.FacebookAgent.getInstance();
     facebook.dialog(info, function (code, response) {
         if(code == plugin.FacebookAgent.CODE_SUCCEED){
             // Succeed
@@ -125,6 +110,8 @@ Meanwhile, the response object is only available when the sharing action succeed
         "dialog": "share_photo",
         "photo": "/User/XXX/Documents/a.png"
     };
+    
+    var facebook = plugin.FacebookAgent.getInstance();
     facebook.dialog(info, function (code, response) {
         if(code == plugin.FacebookAgent.CODE_SUCCEED){
             // Succeed
@@ -146,6 +133,8 @@ Meanwhile, the response object is only available when the sharing action succeed
         "url": "http://cocos2d-x.org/docs/manual/framework/html5/en",
         "description": "cocos document"
     };
+    
+    var facebook = plugin.FacebookAgent.getInstance();
     facebook.dialog(info, function (code, response) {
         if(code == plugin.FacebookAgent.CODE_SUCCEED){
             // Succeed
