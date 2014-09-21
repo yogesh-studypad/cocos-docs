@@ -23,8 +23,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[destroyInstance](./destroy-instance.md)|Destroy the instance of `plugin.FacebookAgent`.|
 |[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
 |[share](./share.md)|Post a status update on Facebook.|
-|[dialog](./dialog-share.md) (for sharing)|Trigger the Facebook Dialog for sharing.|
-|[dialog](./dialog-message.md) (for sending messages)|Trigger the Facebook Dialog for sending messages.|
+|[dialog](./dialog-share.md) (for sharing)|Trigger the dialog for one-to-many sharing on Facebook. |
+|[dialog](./dialog-message.md) (for sending messages)|Trigger the dialog for sending messages to friends.|
 |[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
 
 ###Auth and Session Methods
@@ -42,8 +42,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |Name|Description|
 |----|-----------|
 |[pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/docs/concepts/payments/). _Desktop only_.|
-|[activateApp](./publish-install.md)|Report an install, for integration with [Mobile Install Ads](http://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
-|[logEvent](./log-event.md)|Publish an app event, for deeper integration with [Mobile Install Ads](http://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
+|[activateApp](./publish-install.md)|Report the launch of the app, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
+|[logEvent](./log-event.md)|Publish an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
 ##Facebook SDK Beta Features
 
@@ -64,5 +64,5 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |requestAccessToken|√|√|√|
 |getPermissionList|√|√|√|
 |pay|×|×|√|
-|activateApp|√|√|×|
-|logEvent|√|√|×|
+|activateApp|√|√|√|
+|logEvent|√|√|√|
