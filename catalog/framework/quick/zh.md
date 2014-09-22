@@ -9,7 +9,7 @@
 - [使用Code IDE 调度 Quick 工程](../../../manual/framework/quick/V3/how-to/use-codeide/zh.md)
 - [用 CCSLoader 读取 Cocs Studio 输出场景/UI文件](../../../manual/framework/quick/V3/how-to/use-ccsloader/zh.md)
 - [在 Windows Phone 8 中运行 quick](../../../manual/framework/quick/V3/how-to/run-on-wp8/zh.md)
-- [编译 player 执行文件](../../../manual/framework/quick/V3/how-to/compile-player/zh.md)
+- [编译 Player 执行文件](../../../manual/framework/quick/V3/how-to/compile-player/zh.md)
 - [编译 Android 工程](../../../manual/framework/quick/V3/how-to/compile-android/zh.md)
 - [升级到 Quick-Cocos2d-x 3.2](../../../manual/framework/quick/V3/how-to/upgrade/zh.md)
 
