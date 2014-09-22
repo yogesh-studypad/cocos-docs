@@ -36,9 +36,9 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[login](./login.md)|Ask a user to authorize your app, or to grant additional authorizations.|
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
-|[getUserId](./request-accesstoken.md)|Get the Facebook user ID of the currently logged in user.|
+|[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
 |[getAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
-|[getPermissionList](./get-permission-list.md)|Get the access token granted to your application by current user.|
+|[getPermissionList](./get-permission-list.md)|Get the permissions granted to your application by current user.|
 
 ###Auxiliary Methods
 
@@ -53,18 +53,19 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|
 |api|√|√|√|
-|share|√|√|√|
-|dialog - share_link|√|√|√|
-|dialog - share_photo|√|√|×|
-|dialog - share_open_graph|√|√|√|
-|dialog - message_link|√|√|√|
-|dialog - message_photo|√|√|×|
-|dialog - message_open_graph|√|√|×|
+|shareDialog - link|√|√|√|
+|shareDialog - open_graph|√|√|√|
+|shareDialog - photo|√|√|×|
+|messageDialog - link|√|√|√|
+|messageDialog - open_graph|√|√|×|
+|messageDialog - photo|√|√|×|
+|feedDialog|√|√|√|
 |appRequest|√|√|√|
 |login|√|√|√|
 |logout|√|√|√|
 |isLoggedIn|√|√|√|
-|requestAccessToken|√|√|√|
+|getUserId|√|√|√|
+|getAccessToken|√|√|√|
 |getPermissionList|√|√|√|
 |pay|×|×|√|
 |activateApp|√|√|√|
