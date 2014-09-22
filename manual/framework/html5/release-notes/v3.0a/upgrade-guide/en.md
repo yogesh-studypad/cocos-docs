@@ -7,7 +7,7 @@
 
 	All events(mouse, touch, keyboard, accelerometer, custom) should be dispatched by cc.eventManager in v3.0
 
-	More information about cc.eventManager is in this [documentation](../../../v3.0/eventManager/en.md)
+	More information about cc.eventManager is in this [documentation](../../../v3/eventManager/en.md)
 
 	If you want to give us some suggest, please comment in this [topic](http://www.cocos2d-x.org/forums/19/topics/45954)
 
