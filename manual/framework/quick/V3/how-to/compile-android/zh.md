@@ -230,8 +230,8 @@ build_apk 支持下列参数：
 
 要启用这个功能，开发者需要打开项目中的 `proj.android/jni/Application.mk` 文件，然后将不需要的模块值改为 `0`。
 
-| MACRO                  | 体积   | 默认开关 | 功能 |
-|------------------------|---------------- |
+| MACRO                  | 体积    | 默认开关 | 功能  |
+|------------------------|--------|-----|----------|
 |CC_USE_CURL             | 1259KB | OFF | 使用 CURL 库提供 HTTP 网络功能。但 quick 在 Android 下使用 Android 系统的 Java 接口提供 HTTP 网络功能，所以 CURL 默认已经关闭。 |
 |CC_USE_TIFF             |  514KB |  ON | 使用 TIFF 图像格式。 |
 |CC_USE_WEBP             |  208KB |  ON | 使用 WebP 图像格式。 |
