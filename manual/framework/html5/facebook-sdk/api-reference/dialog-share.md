@@ -1,4 +1,4 @@
-#.dialog(info, callback) - for sharing
+#.shareDialog(info, callback)
 
 Allow people to share a link, a structured [Open Graph](https://developers.facebook.com/products/open-graph) story or a photo from your app. 
 
@@ -28,13 +28,13 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
 
 |Value|Dialog type|
 |-----|-----------|
-|share_link|Share a link|
-|share_photo|Share a photo|
-|share_open_graph|Share a structured Open Graph story|
+|link|Share a link|
+|photo|Share a photo|
+|open_graph|Share a structured Open Graph story|
 
 ####Additional properties of `info` object based on each share dialog type:
 
-1. share_link
+1. link
 
     |Name|Type|Required|Description|
     |----|----|--------|-----------|
@@ -44,19 +44,15 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
     |imageUrl|String|No|The URL of the image of the item to be shared.|
     |description|String|No|the description of the item to be shared.|
 
-2. share_photo
+2. photo
 
     |Name|Type|Required|Description|
     |----|----|--------|-----------|
     |photo|String|Yes|The path of the photo|
 
-3. share_open_graph
+3. open_graph
 
-    |Name|Type|Required|Description|
-    |----|----|--------|-----------|
-    |action_type|String|Yes|Open Graph Action type|
-    |preview_property|String|No|Open Graph Object type|
-    |others|Various|No|Other parameters for the Open Graph story|
+Coming soon...
 
 ##Callback function
 
@@ -82,11 +78,11 @@ If the sharing fails, `code` is error code (refer to link here ???) and `respons
 
 ##Example
 
-1. share_link
+1. share a link
 
     ```javascript
     var info = {
-        "dialog": "share_link",
+        "dialog": "link",
         "description": "Cocos2d-x is a great game engine",
         "title": "Cocos2d-x",
         "link": "http://www.cocos2d-x.org",
@@ -103,11 +99,11 @@ If the sharing fails, `code` is error code (refer to link here ???) and `respons
     });
     ```
     
-2. share_photo
+2. share a photo
 
     ```javascript
     var info = {
-        "dialog": "share_photo",
+        "dialog": "photo",
         "photo": "/User/XXX/Documents/a.png"
     };
     
@@ -121,11 +117,11 @@ If the sharing fails, `code` is error code (refer to link here ???) and `respons
     });
     ```
     
-3. share_open_graph
+3. share an Open Graph story
 
     ```javascript
     var info = {
-        "dialog": "share_open_graph",
+        "dialog": "open_graph",
         "action_type": "cocostestmyfc:share",
         "preview_property": "cocos_document",
         "title": "Cocos2d-JS Game Engine",
