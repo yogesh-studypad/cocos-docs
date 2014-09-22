@@ -1,12 +1,13 @@
-#Implement Game Over Logic and More
+#实现游戏结束逻辑等
 
-##Introduction
-In this tutorial, we'll implement out game over logic, updating HUD and a simple gesture recognizer.
-With out any further ado, let's dive into the tutorial.
+#介绍
+在这篇教程中，我们将完成我们的游戏结束逻辑，更新HUD，并实现一个简单的手势识别器。
 
-##Update Game HUD
-###Update Player Running Meters
-At first, let's add a *updateMeter* method into the StatusLayer Class:
+废话不多说，让我们开始吧。
+
+##更新游戏HUD
+###更新玩家奔跑的距离
+首先，让我们在StatusLayer类中加入一个*updateMeter*方法：
 
 ```
     updateMeter:function (px) {
@@ -14,13 +15,13 @@ At first, let's add a *updateMeter* method into the StatusLayer Class:
     }
 ```
 
-This method constantly change the value of *labelMeter*. Here we use *parseInt* function to convert the result into a integer value.
+这个方法不断地改变*labelMeter*的值。我们使用*parseInt*函数来将结果转化为一个整型数据。
 
-The argument *px* stands for pixel, so every 10 px is one meter.
+参数*px*代表像素，所以10个像素对应1米。
 
-Now, we should call this method in each frame.
+显然的，我们应该在每一帧中都调用这个方法。
 
-Open AnimationLayer.js and add the following code at the beginning of *update* function:
+打开AnimationLayer.js，在*update*方法的最前面加上如下几行代码：
 
 ```
         // update meter
@@ -28,10 +29,10 @@ Open AnimationLayer.js and add the following code at the beginning of *update* f
         statusLayer.updateMeter(this.sprite.getPositionX() - g_runnerStartX);
 ```
 
-###Update Coin Count
-When the player collect a coin, we should update the coin indicator.
+###更新金币数
+当玩家获得了一个金币时，我们需要更新金币数显示器。
 
-At first, let's add a *addCoin* method in StatusLayer:
+首先，让我们在StatusLayer中增加一个*addCoin*方法：
 
 ```
     addCoin:function (num) {
@@ -40,34 +41,34 @@ At first, let's add a *addCoin* method in StatusLayer:
     },
 ```
 
-When the player collide with the coin, we should call this method.
+当玩家碰撞到金币时，我们将调用这个方法。
 
-Now it's time to implement it.
+接下来我们就来实现它。
 
-Open *PlayScene.js* and add the following code at the end of *colisionCoinBegin* method:
+打开*PlayScene.js*，在*colisionCoinBegin*方法的最后加上如下几行代码：
 
 ```
         var statusLayer = this.getChildByTag(TagOfLayer.Status);
         statusLayer.addCoin(1);
 ```
 
-Every time the player collides with the coin, the *colisionCoinBegin* method will be called and our coin count will be increase by one.
+这样每次玩家碰撞到金币时，*colisionCoinBegin*方法就会被调用，金币计数器就会自动加1。
 
-Save all files and git it a try:)
+保存文件，运行一下试试:)
 
-Here is the screenshot:
+截图如下：
 
 ![updatehud](res/updatehud.png)
 
-##Add Game Over Logic into the Game
-###Design and Implement the Game Over Layer
-In order to keep things simple, we just add a menu item at the center of our game over layer.
+##在游戏中加入游戏结束逻辑
+###设计并实现游戏结束层
+为了使事情尽可能简单，我们只在游戏结束层的中间放置一个菜单。
 
-When you click the *restart* menu, the game will restart again.
+当你点击了*restart*菜单时，游戏就会重新开始。
 
-So the design is very trivial, let's implement it.
+所以这个设计还是很简单的，让我们来完成它。
 
-Here is the whole implementation of *GameOverLayer.js*:
+这里是*GameOverLayer.js*的全部内容：
 
 ```
 var GameOverLayer = cc.LayerColor.extend({
@@ -97,11 +98,11 @@ var GameOverLayer = cc.LayerColor.extend({
 });
 ```
 
-Here we used two sprite named *s_restart_n* and *s_restart_s* to create our restart menu item.
+这里我们用了两个sprite，*s_restart_n*和*s_restart_s*，来创建我们的restart菜单项。
 
-So we should add the resource file into the *res* directory and define the resources path.
+因此我们需要将这些资源文件加入*res*目录中，并定义资源路径。
 
-Open *resource.js* and add the following code lines:
+打开*resource.js*，添加如下几行代码：
 
 ```
     restart_n_png : "res/restart_n.png",
@@ -112,14 +113,14 @@ Open *resource.js* and add the following code lines:
     res.restart_s_png
 ```
 
-The code of *init* method is self-explanation. But you should pay attention to the callback *onRestart* method.
+*init*方法的代码很容易理解，但你需要注意*onRestart*这个回调函数。
 
-We have called the *resume* function of cc.Director. Why should be do this? Because we call *pause* method when the player die.
+我们调用了cc.Director中的*resume*方法。为什么要这样做呢？因为当玩家死亡时我们会调用*pause*方法。
 
-###Game Over When The Player Collide with a Rock
-Now, let's display the game over layer when the player collide with the rock.
+###当玩家撞到障碍物时，游戏结束
+现在，让我们实现一下当玩家撞到障碍物时，显示游戏结束层。
 
-Open *PlayScene* and add the following code lines at the end of *collisionRockBegin* method:
+打开*PlayScene*，在*collisionRockBegin*方法的最后加上如下几行代码：
 
 ```
   collisionRockBegin:function (arbiter, space) {
@@ -129,24 +130,23 @@ Open *PlayScene* and add the following code lines at the end of *collisionRockBe
     },
 ```
 
-Yeah, it's done. Now run the game again.
+好的，完成了。让我们再跑一下程序试试看。
 
-Here is the final screenshot:
+这是最终的效果图：
 
 ![gameover](res/gameover.png)
 
 
-##Implement Your Own Simple Gesture Recognizer
-At this section, we will design a very simple gesture recognizer.
+##构造你自己的手势识别器
+这一节中，我们将构造一个简单的手势识别器。
 
-When we swipe our finger on the screen from bottom to up, the recognizer will detect it.
+当我们用手指从屏幕下端划到上端时，识别器能够检测到它。
 
-The algorithm for detecting the swipe gesture is very straightforward. When the touch begin event is detected, we store the first
-touch point in the array. When the touch moves event is detected, we append the touch point at the end of point array.
+检测手势的算法很直观。当检测到触控开始时，我们将第一个触控点的坐标存入数组，当检测到触控移动时，我们将触控点的坐标存入数组的末尾。
 
-We can simply compare the difference of x axis or y axis of two adjacent point to determine the swipe direction.
+这样我们只需要比较一下相邻两点的x和y坐标就能计算出划动的方向了。
 
-Here is the code snippets to do the magic:
+代码如下：
 
 ```
 function Point(x, y)
@@ -221,30 +221,30 @@ SimpleRecognizer.prototype.getPoints = function() {
 }
 ```
 
-After the gesture is detected, we can call *endPoint* of the SimpleRecognizer to get the final result.
+当手势被成功识别后，我们可以调用SimpleRecognizer中的*endPoint*方法来得到最终的结果。
 
-Currently it supports four simple types: up, down, left and right. You can extend your own more complex one.
+目前为止只支持四种简单的类型：上，下，左，右。你可以自行扩展。
 
-##Handling Touch Event, Player Jumping Animation and Logic
-###Add Jumping Animation of the Player
-In order to implement the jumping animation, we should prepare our game arts first. Here we have done it for you.
+##处理触控事件，玩家跳跃逻辑及动画
+###添加玩家的跳跃动画
+为了实现跳跃动画，我们先要做一些准备工作，这里我们已经为你做好了。
 
-You can download the whole project from the *Summary* section and copy&paste the running.plist and running.png file into the *res* directory.
+你可以从*总结*版块下载整个工程文件，将running.plist和running.png复制&粘贴进*res*目录。
 
-When the game starts, the player will be running infinite until him collide with the rock. We want to let the player jump by swiping upwards.
+当游戏开始后，玩家将不停地奔跑，直到撞上障碍物。我们希望能通过向上划动来使玩家跳跃。
 
-Thus we can play the game a little bit longer.
+这样或许每一局的游戏时间可以长一点。
 
-When the player jumps up or jumps down, we need to play corresponding animations.
+当玩家向上跳或是向下落时，我们需要播放相应的动画。
 
-So at first, let's add two more animation action member variables into the AnimationLayer:
+所以我们第一步要做的，就是在AnimationLayer中添加两个animation action：
 
 ```
 jumpUpAction:null,
 jumpDownAction:null,
 ```
 
-And then let's add a new method named *initAction*:
+然后新建一个名为*initAction*的函数：
 
 ```
   initAction:function () {
@@ -287,9 +287,9 @@ And then let's add a new method named *initAction*:
     },
 ```
 
-In this function, we have initialized all the animations of the players.
+在这个函数中，我们初始化了玩家所有的动画。
 
-At lasts, let's remove the initialize code of runningAction we did before in the *init* function and call *initAction* method instead.
+最后，让我们把之前在*init*函数中写的runningAction的初始化代码删掉，然后调用*initAction*方法。
 
 ```
 //init  actions
@@ -305,10 +305,10 @@ this.initAction();
 //        this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
 ```
 
-###Handling Touch Event
-Now it's time to handle touch event. At first, we should enable touch handling of the AnimationLayer.
+###处理触控事件
+是时候处理触控事件了。首先，我们先要开启AnimationLayer的触控。
 
-Add the following code snippets at the end of *init* method:
+将下面这几行代码插入*init*方法的末尾：
 
 ```
  cc.eventManager.addListener({
@@ -320,9 +320,9 @@ Add the following code snippets at the end of *init* method:
         }, this)
 ```
 
-These two code lines can activate the touch dispatching function.
+这几行代码能够开启触控调度功能。
 
-Now let's add three callbacks we needed to handle our touch event:
+为了处理触控事件，需要添加三个回调函数:
 
 ```
  onTouchBegan:function(touch, event) {
@@ -349,15 +349,14 @@ Now let's add three callbacks we needed to handle our touch event:
     },
 ```
 
-When you touch the screen the *onTouchBegan* method will be called. When you hold your finger and move it around, the *onTouchMoved* method will
-be called. When you release your finger, the *onTouchEnded* method will be called.
+当你触控屏幕时，*onTouchBegan*方法会被调用。当你手指按住屏幕并拖动时，*onTouchMoved*方法会被调用。当你抬起手指时，*onTouchEnded*方法会被调用。
 
-Here we have used our simple gesture recognizer to detect the "swipe out" gesture.
+这里我们用自己构建的识别器来识别这些动作。
 
-###Wrap them all
-Now it's time to wrap them all.
+###把所有的东西拼起来
+是时候把所有的东西拼起来了。
 
-At first, add the following enumerations in the beginning of the AnimationLayer:
+首先，在AnimationLayer的开头加入如下枚举：
 
 ```
 // define enum for runner status
@@ -369,22 +368,22 @@ if(typeof RunnerStat == "undefined") {
 };
 ```
 
-We use these enums to represent different state of the player.
+我们用这些枚举来表示玩家的不同状态。
 
-Then we should add another two member variables in the AnimationLayer:
+接下来我们需要在AnimationLayer加入另外两个变量：
 
 ```
  recognizer:null,
  stat:RunnerStat.running,// init with running status
 ```
 
-And init the recognizer at the end of *init* method:
+在*init*方法的最后初始化识别器：
 
 ```
  this.recognizer = new SimpleRecognizer();
 ```
 
-At last, we should implement our jump method:
+最后，完成我们的jump方法：
 
 ```
  jump:function () {
@@ -398,7 +397,7 @@ At last, we should implement our jump method:
     },
 ```
 
-And also we should tie these things up int the *update* function:
+在*update*方法中将他们拼凑起来：
 
 ```
 //in the update method of AnimationLayer
@@ -419,7 +418,7 @@ And also we should tie these things up int the *update* function:
         }
 ```
 
-One more word, don't forget the cleanup stuff. We should release the created actions when the AnimationLayer exit.
+别忘了清理工作，在AnimationLayer销毁时我们需要释放已创建的action。
 
 ```
     onExit:function() {
@@ -430,20 +429,20 @@ One more word, don't forget the cleanup stuff. We should release the created act
     },
 ```
 
-You may also want to check whether all the created js files are loaded in *cocos2d.js* file or not.
+你可能还会想确认下是否创建的js文件都已在*cocos2d.js*文件中被装载。
 
-##Summary
-Congratulations! You have finished another epic tutorial again.
+##总结
+恭喜，你离成功又近了一步！
 
-Let's see what we have done in this tutorial.
+让我们回顾一下这篇教程的内容。
 
-At first, we have learned how to update our game hud elements.
+首先，我们学会了怎么更新游戏hud元素。
 
-Then we added the game over logic.
+然后我们加入了游戏结束逻辑。
 
-At last, we have created a simple gesture recognizer to handle the controlling of our hero's jumping action.
+最后，我们创建了一个简单的手势识别，用来处理玩家的跳跃动作。
 
-You can download the final project from [here](res/Parkour.zip).
+你可以从[这里](res/Parkour.zip)下载最终的代码。
 
-##Where to go from here?
-In the next tutorial, we will cover the final bolts and nuts of the parkour game. Keep tuning!
+##下一步
+在下一篇教程中， 我们将完成跑酷游戏最后的部分，敬请期待！
