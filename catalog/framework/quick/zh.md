@@ -17,7 +17,7 @@
 - [创建新项目](../../../manual/framework/quick/how-to/get_started_create_new_project/zh.md)
 - [使用Mac工程和win32工程](../../../manual/framework/quick/how-to/use-project-mac-and-win/zh.md)
 
-###后期开发和第三方集成
+##后期开发和第三方集成
 - [在Quick中集成第三方SDK](../../../manual/framework/quick/how-to/integration_third_party_sdk/zh.md)
 - [升级到 2.2.3](../../../manual/framework/quick/how-to/upgrade-to-2_2_3/zh.md)
 - [Quick事件参考](../../../manual/framework/quick/reference/events-in-quick/zh.md)
