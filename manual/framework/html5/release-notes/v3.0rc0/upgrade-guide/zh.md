@@ -6,7 +6,7 @@
 
 ## 1. cc.Layer的静态缓存功能
 
-在RC0中，你可以将一个图层静态缓存起来，这将极大得减少该图层的绘制数，使你的游戏更加高效，当然，请只缓存那些不经常更新的图层，否则缓存将消耗更大。
+在v3.0中，你可以将一个图层静态缓存起来，这将极大得减少该图层的绘制数，使你的游戏更加高效，当然，请只缓存那些不经常更新的图层，否则缓存将消耗更大。
 
 ```
 var layer = new cc.Layer();
@@ -21,7 +21,7 @@ layer.unbake();
 
 ## 2. 对象缓冲池：`cc.pool`
 
-一个通用的对象缓冲池实现被添加到了RC0中：`cc.pool`，当你的游戏中有需要大规模创建或重用的对象的时候，缓冲池可以帮助你显著改善运行的效率。
+一个通用的对象缓冲池实现被添加到了v3.0中：`cc.pool`，当你的游戏中有需要大规模创建或重用的对象的时候，缓冲池可以帮助你显著改善运行的效率。
 
 一些常见的应用场景：
     - 游戏中的子弹（生命周期短，大规模创建和重用，对其他对象没有非常大的影响）
@@ -47,7 +47,7 @@ cc.pool.getFromPool(cc.Sprite, "a.png");
 
 ## 3. 新的缓动动作
 
-我们在3.0 RC0中添加了一系列方便的缓动动作供大家使用：
+我们在v3.0中添加了一系列方便的缓动动作供大家使用：
 
 ```
 cc.easeBezierAction(p0, p1, p2, p3) // JSB暂不支持
@@ -68,7 +68,7 @@ cc.easeCubicActionOut()
 cc.easeCubicActionInOut()
 ```
 
-重提一下缓动动作在3.0中的使用方式，直接调用目标action的`easing`函数：`action.easing(cc.easeQuadraticActionIn())`。
+重提一下缓动动作在v3.0中的使用方式，直接调用目标action的`easing`函数：`action.easing(cc.easeQuadraticActionIn())`。
 
 ## 4. jsb命名空间
 
@@ -90,9 +90,9 @@ jsb.fileUtils.setSearchResolutionsOrder(orders)
 jsb.fileUtils.addSearchResolutionsOrder(order)
 ```
 
-## 5. ccui.Widget
+## 5. ccui
 
-ccui.Widget的边界获取函数按照-x的函数名重命名了
+### 5.1 ccui.Widget的边界获取函数按照-x的函数名重命名
 
 ```
 getLeftInParent     -->     getLeftBoundary
@@ -101,7 +101,28 @@ getRightInParent    -->     getRightBoundary
 getTopInParent      -->     getTopBoundary
 ```
 
+### 5.2 添加`getContentSize`和`setContentSize`函数
+
 我们还添加了`getContentSize`和`setContentSize`给`ccui.Widget`，这样在大小的存取上`ccui.Widget`就和`cc.Node`共享同样的API了。
+
+```
+// 新增
+ccui.Widget#getContentSize
+ccui.Widget#setContentSize
+```
+
+### 5.3 重命名所有`addEventListenerXXX`函数
+
+ccui中所有`addEventListenerXXX`都被重命名为`addEventListener`以保障更好的开发体验，以下是具体修改列表
+
+```
+ccui.CheckBox#addEventListenerCheckBox      --> ccui.CheckBox#addEventListener
+ccui.Slider#addEventListenerSlider          --> ccui.Slider#addEventListener
+ccui.TextField#addEventListenerTextField    --> ccui.TextField#addEventListener
+ccui.PageView#addEventListenerPageView      --> ccui.PageView#addEventListener
+ccui.ScrollView#addEventListenerScrollView  --> ccui.ScrollView#addEventListener
+ccui.ListView#addEventListenerListView      --> ccui.ListView#addEventListener
+```
 
 ## 6. 其他API改动
 
@@ -121,21 +142,21 @@ cc.log("%s : %d", str, number);
 
 ### 6.3 资源管理器
 
-在RC0中，你可以使用`cc.AssetsManager`的`downloadFailedAssets`函数重启未成功下载的资源，3.0 RC0中的资源管理器还支持了非常多优秀的特性，详情请参见新的[资源管理器文档](../../../v3/assets-manager/zh.md)
+在v3.0中，你可以使用`cc.AssetsManager`的`downloadFailedAssets`函数重启未成功下载的资源，v3.0中的资源管理器还支持了非常多优秀的特性，详情请参见新的[资源管理器文档](../../../v3/assets-manager/zh.md)
 
-### 6.4 仿射变换工具函数 **[RC2新改动]**
+### 6.4 仿射变换工具函数
 
 为了符合引擎整体的命名风格，所有函数都必须小写字母开头，我们将放射变换函数重命名为这种形式，下面是API改动列表：
 
 ```
 cc.AffineTransformMake              ->  cc.affineTransformMake
 cc.PointApplyAffineTransform        ->  cc.pointApplyAffineTransform
-cc._PointApplyAffineTransform       ->  cc._pointApplyAffineTransform
+cc.\_PointApplyAffineTransform       ->  cc._pointApplyAffineTransform
 cc.SizeApplyAffineTransform         ->  cc.sizeApplyAffineTransform
 cc.AffineTransformMakeIdentity      ->  cc.affineTransformMakeIdentity
 cc.AffineTransformIdentity          ->  cc.affineTransformIdentity
 cc.RectApplyAffineTransform	        ->  cc.rectApplyAffineTransform
-cc._RectApplyAffineTransformIn      ->  cc._rectApplyAffineTransformIn
+cc.\_RectApplyAffineTransformIn      ->  cc._rectApplyAffineTransformIn
 cc.AffineTransformTranslate         ->  cc.affineTransformTranslate
 cc.AffineTransformScale             ->  cc.affineTransformScale
 cc.AffineTransformRotate            ->  cc.affineTransformRotate
@@ -144,7 +165,7 @@ cc.AffineTransformEqualToTransform  ->  cc.affineTransformEqualToTransform
 cc.AffineTransformInvert            ->  cc.affineTransformInvert
 ```
 
-### 6.5 cc.RenderTexture **[RC2新改动]**
+### 6.5 cc.RenderTexture
 
 ```
 cc.RenderTexture.beginWithClear(r, g, b, a, depthValue, stencilValue)
@@ -152,15 +173,15 @@ cc.RenderTexture.beginWithClear(r, g, b, a, depthValue, stencilValue)
 
 `cc.RenderTexture`的`beginWithClear`函数不再支持浮点颜色值作为参数，与引擎中其他API一样接受0-255的整型颜色值作为`r`, `g`, `b`, `a`的参数值。
 
-### 6.6 cc.sys.platform **[RC2新改动]**
+### 6.6 cc.sys.platform
 
 添加获取平台的API：`cc.sys.platform`。
 
-### 6.7 [JSB]console.log **[RC2新改动]**
+### 6.7 [JSB]console.log
 
 绑定`console.log`。
 
-### 6.8 cc.formatStr **[RC3新改动]**
+### 6.8 cc.formatStr
 
 增加格式化字符串函数`cc.formatStr`，使用方法： 
 
@@ -168,11 +189,33 @@ cc.RenderTexture.beginWithClear(r, g, b, a, depthValue, stencilValue)
 cc.formatStr("a: %d, b: %b", a, b);
 ```
 
-### 6.9 修改部分函数名以适应引擎命名风格 **[RC3新改动]**
+同时，所有log函数也支持格式化字符串作为参数：
+
+```
+cc.log(message, ...)
+cc.assert(condition, message, ...)
+cc.warn(message, ...)
+cc.error(message, ...)
+```
+
+### 6.9 修改部分函数名以适应引擎命名风格
 
 ```
 cc.pool.hasObj                  -> cc.pool.hasObject
 cc.pool.removeObj               -> cc.pool.removeObject
 cc.textureCache.textureForKey   -> cc.textureCache.getTextureForKey
 cc.TMXTilemap#propertiesForGID  -> cc.TMXTilemap#getPropertiesForGID
+```
+
+### 6.10 添加设备的目标像素密度控制函数
+
+```
+// 添加API
+cc.DENSITYDPI_DEVICE = "device-dpi";
+cc.DENSITYDPI_HIGH = "high-dpi";
+cc.DENSITYDPI_MEDIUM = "medium-dpi";
+cc.DENSITYDPI_LOW = "low-dpi";
+
+cc.view.setTargetDensityDPI(targetDensityDPI)
+cc.view.getTargetDensityDPI()
 ```

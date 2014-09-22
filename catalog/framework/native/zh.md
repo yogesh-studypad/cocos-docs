@@ -28,7 +28,7 @@
 - 其他
 	- [如何在Tizen平台中运行HelloWorld及测试项目](../../../manual/framework/native/v2/getting-started/setting-up-development-environments/tizen-environment-setup/zh.md)
 	- [如何在黑莓平板系统中运行HelloWorld及测试项目](../../../manual/framework/native/v2/getting-started/setting-up-development-environments/blackberry-environment-setup/how-to-run-helloworld-and-tests-on-blackberry-tablet-OS/zh.md)
-	- [CCConsole](../../../manual/framework/native/v3/CCConsole/zh.md)
+	- [Cocos2d-x Console](../../../manual/framework/native/v3/CCConsole/zh.md)
 
 ## 基础概念
 - [导演，场景，层，以及精灵](../../../manual/framework/native/v3/basic-concepts/zh.md)

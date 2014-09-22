@@ -12,68 +12,57 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 ##API list
 
 ###FacebookAgent class
-`plugin.FacebookAgent` is a singleton class which encapsulated all APIs of Facebook SDK Beta for Cocos2d-JS, if you want to use it, you need to retrieve its instance firstly.
+
+`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook SDK Beta for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
+
+###Core Methods
 
 |Name|Description|
 |----|-----------|
-|[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of plugin. Required before doing anything else.|
-|[destroyInstance](./destroy-instance.md)|Destroy the instance of plugin.|
+|[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of `plugin.FacebookAgent`. Required before doing anything else.|
+|[destroyInstance](./destroy-instance.md)|Destroy the instance of `plugin.FacebookAgent`.|
+|[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
+|[share](./share.md)|Post a status update on Facebook.|
+|[dialog](./dialog-share.md) (for sharing)|Trigger the dialog for one-to-many sharing on Facebook. |
+|[dialog](./dialog-message.md) (for sending messages)|Trigger the dialog for sending messages to friends.|
+|[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
 
-###Login
+###Auth and Session Methods
 
 |Name|Description|
 |----|-----------|
-|[login](./login.md)|Ask a user to authorize your app, or to grant additional authorization.|
+|[login](./login.md)|Ask a user to authorize your app, or to grant additional authorizations.|
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
 |[requestAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
-|[getPermissionList](./get-permission-list.md)|Get permissions of current AccessToken.|
-
-###Sharing
-
-|Name|Description|
-|----|-----------|
-|[share](./share.md)|Post a status update on Facebook.|
-|[dialog](./dialog.md)|Trigger the Facebook Dialog for sharing or sending message.|
-|[appRequest](./appRequest.md)|Prompts the user to send [app requests](https://developers.facebook.com/docs/reference/dialogs/requests/), short messages between users.|
-
-###Graph API
-
-|Name|Description|
-|----|-----------|
-|[api](./api.md)|Call the Facebook Graph API to find out about the user or act on his/her behalf.Please refer to [Facebook Graph API Doc](https://developers.facebook.com/docs/graph-api) for details about Graph API.|
-
-###Payments
-
-|Name|Description|
-|----|-----------|
-|[pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](https://developers.facebook.com/docs/concepts/payments/). _Desktop only_.|
+|[getPermissionList](./get-permission-list.md)|Get the access token granted to your application by current user.|
 
 ###Auxiliary Methods
 
 |Name|Description|
 |----|-----------|
-|[activateApp](./publish-install.md)|Report an install, for integration with [Mobile Install Ads](https://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
-|[logEvent](./log-event.md)|Publish an app event, for deeper integration with [Mobile Install Ads](https://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
+|[pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/docs/concepts/payments/). _Desktop only_.|
+|[activateApp](./publish-install.md)|Report the launch of the app, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
+|[logEvent](./log-event.md)|Publish an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
 ##Facebook SDK Beta Features
 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|
-|Login|√|√|√|
-|Logout|√|√|√|
-|IsLoggedIn|√|√|√|
-|RequestAccessToken|√|√|√|
-|GetPermissionList|√|√|√|
-|Share|√|√|√|
+|api|√|√|√|
+|share|√|√|√|
 |dialog - share_link|√|√|√|
-|dialog - share_open_graph|√|√|√|
 |dialog - share_photo|√|√|×|
+|dialog - share_open_graph|√|√|√|
 |dialog - message_link|√|√|√|
-|dialog - message_open_graph|√|√|×|
 |dialog - message_photo|√|√|×|
-|AppRequest|√|√|√|
-|API|√|√|√|
-|Pay|×|×|√|
-|activateApp|√|√|×|
-|LogEvent|√|√|×|
+|dialog - message_open_graph|√|√|×|
+|appRequest|√|√|√|
+|login|√|√|√|
+|logout|√|√|√|
+|isLoggedIn|√|√|√|
+|requestAccessToken|√|√|√|
+|getPermissionList|√|√|√|
+|pay|×|×|√|
+|activateApp|√|√|√|
+|logEvent|√|√|√|

@@ -1,3 +1,13 @@
+Cocos Code IDE 1.0.0-rc2
+
+	[NEW] JDK integration
+	[NEW] Big improvements in JavaScript code Auto-complete
+	[NEW] Lua API reference document integration
+	[NEW] Lua code Auto-complete feature enhancement
+	[NEW] Auto Update support
+	
+	[FIX] Crash when coding
+
 Cocos Code IDE 1.0.0-rc1
 
 	[NEW] Support remote debug
@@ -6,7 +16,7 @@ Cocos Code IDE 1.0.0-rc1
 	[NEW] Create project with existing code and resource
 	[NEW] Code Auto-complete feature enhancement
 	
-	[FIX] "Run in browser" display
+	[FIX] "Run in browser" button show incorrectly
 	[FIX] Some other bugs
 
 Cocos Code IDE 1.0.0-rc0

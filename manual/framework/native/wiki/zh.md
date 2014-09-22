@@ -1,6 +1,6 @@
-# [Cocos2d-x](./cocos2d-x/zh.md)
+# Cocos2d-x
 
-## [开始使用Cocos2d-x](./getting-started-cocos2d-x/zh.md)
+## 开始使用Cocos2d-x
 
 - [C++编程规范](./cpp-coding-style/zh.md)
 - [如何开始一个新的Cocos2d-x游戏](./how-to-start-a-new-cocos2d-x-game/zh.md)
@@ -117,7 +117,7 @@
 - [如何使用 bindings-generator 自动生成 lua绑定](./how-to-use-bindings-generator/zh.md)
 - [Lua 绑定的文件结构](./folder-structure-of-lua-binding/zh.md)
 - [如何运行Lua的例子](./how-to-run-lua-samples/zh.md)
-- [如何使用cocos2d console创建、编译、运行一个Lua工程](./how-to-createcompile-and-run-a-new-lua-project-with-cocos2d-console/zh.md) 
+- [如何使用Cocos2d console创建、编译、运行一个Lua工程](./how-to-createcompile-and-run-a-new-lua-project-with-cocos2d-console/zh.md) 
 
 ## How to教程
 
@@ -125,7 +125,7 @@
 - [如何创建精灵(Sprites) ](./how-to-create-sprites/zh.md)
 - [如何创建一个指示器(HUD)](./how-to-create-a-hud/zh.md)
 
-# [Cocos2d-js](./cocos2d-js/zh.md)
+# Cocos2d-js
 
 - [Cocos2d-js的文件结构](./folder-structure-of-cocos2d-js/zh.md)
 - [Cocos2d-js特性](./features-of-cocos2d-js/zh.md)

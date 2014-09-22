@@ -29,7 +29,7 @@ IDE 配置
 1. 新建一个名为 CocosLuaGame 的 Cocos Lua 工程
 2. 点击工具栏上的 debug 按钮
 + ![](./res/lua_debug_button.png)
-3. 默认情况下脚本会运行在我们提供的 mac 版本预编译 runtime 上。为了简单起见，我们不对默认值进行任何改动。如果你想要在其他我们支持的目标平台上调试程序，可参考[在其它目标平台上调试](#在其它目标平台上调试)
+3. 默认情况下脚本会运行在我们提供的 mac 版本预编译 runtime 上。为了简单起见，我们不对默认值进行任何改动。如果你想要在其他我们支持的目标平台上调试程序，可参考**在其它目标平台上调试**
 
 如何调试
 ===
@@ -94,20 +94,6 @@ end
 + platform 选择 "Android"
 + 将设备的 ip 地址填写在 **Device IP** 上并在**Host IP**上选择 mac 机器使用的 ip 地址， 请确保设备ip和mac机器的ip能相互访问
 + ![](./res/lua_remote_android_debug.png)
-+ 点击 **Debug** 按钮
-
-### 如何调试 C++ 代码
-从 1.0.0-rc1 版本开始，支持使用 XCode/Visual Studio 调试 C++ 代码的同时使用 Cocos Code IDE 调试 C++ 代码。
-
-以调试 Mac 为例：
-
-+ 如果你还没有 C++ 代码，那么需要先添加（右击工程，Cocos Tools->Add Native Codes Support...）
-+ 使用 XCode 打开 `frameworks/runtime-src/proj.ios_mac` 工程，并启动调试
-+ 回到 Cocos Code IDE，打开 "Debug Configuration" 页面，选择 **Remote Debug** 单选项
-+ platfrom 选择 “Mac”
-+ **Target IP** 填写 "127.0.0.1"
-+ **Host IP** 选择 "127.0.0.1"
-+ ![](./res/lua_remote_mac_debug.png)
 + 点击 **Debug** 按钮
 
 [How To Install IPA]:http://www.solutionanalysts.com/blog/how-install-ipa-file-iphone-ipod-ipad-using-itunes-mac-windows
