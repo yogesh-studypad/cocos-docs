@@ -22,9 +22,11 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of `plugin.FacebookAgent`. Required before doing anything else.|
 |[destroyInstance](./destroy-instance.md)|Destroy the instance of `plugin.FacebookAgent`.|
 |[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
-|[share](./share.md)|Post a status update on Facebook.|
-|[dialog](./dialog-share.md) (for sharing)|Trigger the dialog for one-to-many sharing on Facebook. |
-|[dialog](./dialog-message.md) (for sending messages)|Trigger the dialog for sending messages to friends.|
+|[shareDialog](./dialog-share.md)|Trigger the share dialog for one-to-many sharing on Facebook. |
+|[canPresentShareDialog](./dialog-can-share.md)|Check whether it can trigger the share dialog for one-to-many sharing on Facebook. |
+|[messageDialog](./dialog-message.md)|Trigger the message dialog for sending messages to friends.|
+|[canPresentMessageDialog](./dialog-can-message.md)|Check whether it can trigger the message dialog for sending messages to friends.|
+|[feedDialog](./dialog-feed.md)|Trigger the web feed dialog for one-to-many sharing on Facebook. |
 |[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
 
 ###Auth and Session Methods
@@ -34,7 +36,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[login](./login.md)|Ask a user to authorize your app, or to grant additional authorizations.|
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
-|[requestAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
+|[getUserId](./request-accesstoken.md)|Get the Facebook user ID of the currently logged in user.|
+|[getAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
 |[getPermissionList](./get-permission-list.md)|Get the access token granted to your application by current user.|
 
 ###Auxiliary Methods
