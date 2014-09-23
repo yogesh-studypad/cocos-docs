@@ -71,3 +71,4 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |pay|×|×|√|
 |activateApp|√|√|√|
 |logEvent|√|√|√|
+|logPurchase|√|√|√|
