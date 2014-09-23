@@ -68,7 +68,7 @@ Please also be noted that all files in the HelloWorld project should be put onto
 - [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
 - [Document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
 - [Github repository](https://github.com/cocos2d/cocos2d-js)
-- [Online forum](http://discuss.cocos2d-x.org/category/javascript)
+- [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
 - [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## About Closure Compiler
