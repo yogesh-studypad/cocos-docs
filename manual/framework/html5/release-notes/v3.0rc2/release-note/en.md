@@ -49,7 +49,7 @@ Read more about all the features and bug fixes
 
 If you met any problems, please ask for help from the community : 
 
-- [Online forum](http://discuss.cocos2d-x.org/category/javascript)
+- [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
 - [Document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
 
 For JSB build, there are some restrictions :

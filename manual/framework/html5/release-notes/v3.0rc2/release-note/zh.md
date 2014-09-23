@@ -50,7 +50,7 @@ Cocos2d-JS为不同平台提供了统一的开发体验，无论你为web还是�
 
 如果遇到任何问题，你都可以向Cocos2d-JS开发者社区寻求帮助： 
 
-- [官方论坛](http://discuss.cocos2d-x.org/category/javascript)
+- [官方论坛](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
 - [文档目录](http://cocos2d-x.org/docs/manual/framework/html5/zh)
 
 关于JSB编译环境，还有一些限制条件需要满足：
