@@ -44,8 +44,9 @@ Cocos2d-JS最引以为傲的能力就是完美的一次开发，全平台部署�
 
 ##2. 安装Cocos Console
 
-前文提到Cocos2d-JS的API简化和统一
-下载完成后，请在控制台中运行setup.py（windows平台用户可能需要先安装[python 2.7](https://www.python.org/downloads/release/python-278/)），这个脚本会添加cocos命令及它依赖的环境变量，在安装过程中，你可能需要提供你的NDK，Android SDK和ANT目录。请注意，如果是升级引擎，同样需要重新运行最新版本的setup.py，以保证cocos命令的引用是最新引擎的。
+前文提到Cocos2d-JS的API简化和统一，另一方面，我们还通过Cocos Console工具统一了不同平台下的工作流，下面将介绍如何安装和使用Cocos Console完成从工程创建到发布的工作流。
+
+引擎包下载完成后，请在控制台中运行setup.py（windows平台用户可能需要先安装[python 2.7](https://www.python.org/downloads/release/python-278/)），这个脚本会添加cocos命令及它依赖的环境变量，在安装过程中，你可能需要提供你的NDK，Android SDK和ANT目录。请注意，如果是升级引擎，同样需要重新运行最新版本的setup.py，以保证cocos命令的引用是最新引擎的。
 
 一些有用的链接和安装指引：
 
@@ -56,7 +57,7 @@ Cocos2d-JS最引以为傲的能力就是完美的一次开发，全平台部署�
 
     - [下载Ant](http://ant.apache.org/)。
     - 将Ant解压到你指定的文件夹。
-    - 设置JAVA_HOME环境变量到你的Java路径，ANT_HOME到刚刚解压的文件夹，再将${ANT_HOME}/bin (Unix)或%ANT_HOME%/bin (Windows)加入到PATH中。
+    - 设置JAVA\_HOME环境变量到你的Java路径，ANT_HOME到刚刚解压的文件夹，再将${ANT\_HOME}/bin (Unix)或%ANT\_HOME%/bin (Windows)加入到PATH中。
     
     ```
     // Example: 在命令行中运行或添加到.bash_profile(Mac)

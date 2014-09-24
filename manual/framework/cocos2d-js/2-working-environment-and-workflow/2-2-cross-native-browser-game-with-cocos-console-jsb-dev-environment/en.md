@@ -1,155 +1,165 @@
 # 2.2 Cross native / browser game with Cocos Console (JSB dev environment)
 
-Cocos2d-JS最引以为傲的能力就是完美的一次开发，全平台部署得能力。得益于3.0版中Web引擎和Native引擎的整合，Cocos2d-JS为Web和各原生平台开发提供了一套统一的工作流，开发者只需要关注自己的JavaScript代码，我们提供了Cocos Console工具帮助用户管理开发以及发布的流程。
+The best thing about Cocos2d-JS is its perfect multi-platform ability: one code base really runs everywhere with Cocos2d-JS v3.0. In this first version of Cocos2d-JS, we have merged the web engine (Cocos2d-html5) and the native engine (Cocos2d-x JavaScript Bindings) together, so that we can provide a unified workflow for all platforms. With Cocos2d-JS, developers can focus on the JavaScript codes, the Cocos Console tool will help you to manager the project creation and publish process.
 
-**Cocos2d-JS v3.0框架**：
+**Cocos2d-JS v3.0 Framework Structure**:
 
 ![](./Cocos2d-JS-Structure.jpg)
 
-从这张架构图中可以看出，Cocos2d-JS对Web平台的支持主要是通过Web引擎Cocos2d-html5做到的，而对Native平台的支持是以Cocos2d-x为核心，通过SpiderMonkey这个JavaScript编译器来执行JavaScript代码，并通过JavaScript绑定技术将其API映射到Cocos2d-x的API上。这两方面的技术从引擎的v2.x时代就已经成熟了，而Cocos2d-JS v3.0首次将两者整合到一起，统一并简化它们的API，真正做到一套代码，全平台运行。这也就是图中的Cocos2d-JS API层，不同平台，不同设备之间的差异被透明化，开发者开发跨平台游戏自然也变得前所未有得简单。
+As we can see from the structure graph, Cocos2d-JS supports web platform via the web engine Cocos2d-html5, and the native platforms support is based on Cocos2d-x with JavaScript Binding technology. JavaScript Bindings use SpiderMonkey as JavaScript runtime engine and as a bridge to map Cocos2d-x's APIs to JavaScript APIs. Both web and native solutions were already verified by many games in 2.x versions, but this is the first time these two solutions are truly combined, unified and simplified. The Cocos2d-JS API level shown in the structure plays the real magic, it unified and simplified two base engine's APIs so that the differences of different platforms and different devices are transparent for developers. All this leads to the same goal: Make multiplatform development incredibly easy!
 
-**Cocos2d-JS引擎所支持的平台包括**：
+**All platforms supported by Cocos2d-JS**：
 
-- 桌面浏览器（Chrome, Safari, Firefox, Opera, IE9+）
-- 移动浏览器（Android, iOS）
+- Desktop Browsers（Chrome, Safari, Firefox, Opera, IE9+）
+- Mobile Browsers（Android, iOS）
 - iOS
 - Android
 - Mac OS X
 - Windows
 
-##1. 下载引擎包
+##1. Download Cocos2d-JS Engine Package
 
-请前往[引擎下载页面](http://www.cocos2d-x.org/download)下载最新的引擎包。下载完成后包内容如下所示：
+Please go to the [download page](http://www.cocos2d-x.org/download) to download the latest version. The package content is showing below:
 
-|目录或文件名|内容简介|
+|Directory or file|Content description|
 |----------|-------|
-|build                  |包含测试例和MoonWarriors示例的Xcode工程以及Visual Studio工程|
-|docs                   |包含JavaScript代码风格规范，当前发布说明和当前版本升级指南|
-|frameworks             |包含Web引擎以及Native引擎|
-| - cocos2d-html5       |Web引擎|
-| - js-bindings         |Cocos2d-x引擎以及JSB框架|
-|samples                |示例项目文件夹|
-| - js-moonwarriors     |MoonWarriors示例项目|
-| - js-tests            |测试例项目|
-|templates              |Cocos Console使用的模版|
-|tools                  |工具文件夹|
-| - bindings-generator  |JSB自动绑定生成工具|
-| - cocos2d-console     |Cocos Console工具|
-| - tojs                |JSB自动绑定配置文件以及生成脚本|
-|AUTHORS                |作者目录，包含所有给Cocos2d-JS项目贡献代码的开发者|
-|CHANGELOG              |所有历史版本详细改动列表|
-|LICENSE                |Cocos2d-JS许可协议|
-|README.md              |Cocos2d-JS项目简介|
-|setup.py               |Cocos Console的安装脚本|
+|build                  |Include test cases and Moon Warriors sample's Xcode project and Visual Studio project|
+|docs                   |Include JavaScript coding style guide, latest release note and upgrade guide|
+|frameworks             |Include the web engine and the native engine|
+| - cocos2d-html5       |Web engine|
+| - js-bindings         |Cocos2d-x engine with JavaScript Bindings|
+|samples                |Samples folder|
+| - js-moonwarriors     |MoonWarriors sample game|
+| - js-tests            |Cocos2d-JS test cases|
+|templates              |Templates for Cocos Console|
+|tools                  |Tools folder|
+| - bindings-generator  |Automatic bindings generator tool|
+| - cocos2d-console     |Cocos Console tool|
+| - tojs                |Automatic JavaScript bindings configuration files and generation script|
+|AUTHORS                |Authors list, including all contributors on github repository|
+|CHANGELOG              |Change logs through all old versions|
+|LICENSE                |Cocos2d-JS license|
+|README.md              |Cocos2d-JS project introduction|
+|setup.py               |Cocos Console's installation script|
 
-##2. 安装Cocos Console
+##2. Install Cocos Console
 
-前文提到Cocos2d-JS的API简化和统一
-下载完成后，请在控制台中运行setup.py（windows平台用户可能需要先安装[python 2.7](https://www.python.org/downloads/release/python-278/)），这个脚本会添加cocos命令及它依赖的环境变量，在安装过程中，你可能需要提供你的NDK，Android SDK和ANT目录。请注意，如果是升级引擎，同样需要重新运行最新版本的setup.py，以保证cocos命令的引用是最新引擎的。
+We mentioned previously the unification and simplification of Cocos2d-JS's APIs, on the other hand, we have unified also the workflow for different platforms. Next up, we will introduce you how to use Cocos Console from project creation to publish.
 
-一些有用的链接和安装指引：
+After download the engine package, you can install Cocos Console by executing setup.py (Windows user may need to install [python 2.7](https://www.python.org/downloads/release/python-278/) first). This script will setup the `cocos` command and all its dependencies, during the installation, you need to provide your NDK root path, Android SDK path for Android compilation and ANT path for web source compilation. Please note that you need to re-execute setup.py while you upgrade the engine to make sure it's referencing to the newest engine.
+
+Some useful links and installation tips:
 
 * [Python 2.7.6](https://www.python.org/download/releases/2.7.6/)
 * [Android SDK](https://developer.android.com/sdk/index.html?hl=sk)
 * [NDK](https://developer.android.com/tools/sdk/ndk/index.html)
-* Ant下载与安装：
+* Download and install Ant：
 
-    - [下载Ant](http://ant.apache.org/)。
-    - 将Ant解压到你指定的文件夹。
-    - 设置JAVA_HOME环境变量到你的Java路径，ANT_HOME到刚刚解压的文件夹，再将${ANT_HOME}/bin (Unix)或%ANT_HOME%/bin (Windows)加入到PATH中。
+    - [Download Ant](http://ant.apache.org/).
+    - Decompress Ant to a destination folder.
+    - Set the Java path as JAVA\_HOME environment variable, the Ant destination folder as ANT\_HOME environment variable. Then add ${ANT\_HOME}/bin (Unix) or %ANT\_HOME%/bin (Windows) to your system path.
     
     ```
-    // Example: 在命令行中运行或添加到.bash_profile(Mac)
+    // Example: execute in terminal or add them to .bash_profile(Mac)
     export ANT_ROOT=/usr/local/ant/bin
     export JAVA_HOME=/usr/local/jdk1.7.0_51
     ```
 
-##3. 工程创建
+##3. Project creation
 
-使用Cocos Console创建工程非常简单，安装完cocos命令之后，只需要在需要创建工程的目标目录下打开终端或命令行工具，输入下面的命令即可：
+It's very simple to create a project using Cocos Console, after installation of `cocos` command, you can go to you project's destination folder and open the terminal/command line tool, then execute the following command:
 
 ```
 cocos new -l js ProjectName
 ```
 
-创建成功之后就会在目标目录下发现ProjectName文件夹，这个工程将可以被发布到所有支持的平台。新创建工程的目录结构与引擎包有一些区别，下面是详细的列表介绍：
+If the creation succeed, you will find ProjectName folder under the destination folder, this project can be published to all supported platform. The newly created folder structure is different with the engine folder, here is a list of content and descriptions:
 
-|目录或文件名|内容简介|
+|Directory or file|Content description|
 |----------|-------|
-|frameworks             |包含Web引擎以及Native引擎|
-| - cocos2d-html5       |Web引擎|
-| - js-bindings         |Cocos2d-x引擎以及JSB框架|
-| - runtime-src         |项目的各平台工程文件，包含iOS/MacOSX/Android/Windows|
-|res                    |项目资源文件夹，应该用来存储所有图片，音频，字体，动画等资源|
-|src                    |项目脚本文件夹，应该用来存储游戏的所有JavaScript代码|
-|publish                |该目录初始状态下不存在，当工程以发布模式打包后，会创建该文件夹并保存对应平台的发布包|
-|runtime                |该目录用来存储调试模式打包的工程执行文件|
-|tools                  |工具文件夹|
-| - bindings-generator  |JSB自动绑定生成工具|
-| - tojs                |JSB自动绑定配置文件以及生成脚本|
-|index.html             |Web工程的主页面，通过本地服务器访问这个页面即可看到游戏效果|
-|main.js                |游戏入口文件，其中包含游戏初始化代码以及启动代码|
-|project.json           |工程配置文件，详细配置方法可参考main.js中的注释|
+|frameworks             |Include the web engine and the native engine|
+| - cocos2d-html5       |Web engine|
+| - js-bindings         |Cocos2d-x engine with JavaScript Bindings|
+| - runtime-src         |Project folders for all native platforms, including iOS/MacOSX/Android/Windows|
+|res                    |The projects resources folder, should be used to save all images, audios, fonts, animations, etc|
+|src                    |The projects scripts folder, should be used to save all JavaScript codes for your game|
+|publish                |Initially not exist, when you publish your project under release mode, it will be created and contain the publish package|
+|runtime                |This folder contains all runtime executables packaged under debug mode|
+|tools                  |Tools folder|
+| - bindings-generator  |Automatic bindings generator tool|
+| - tojs                |Automatic JavaScript bindings configuration files and generation script|
+|index.html             |Main web page for the project, it can be accessed via a web server and shows the game in action|
+|main.js                |Entrance script for the game logic, contains initialization code|
+|project.json           |Project's configuration file, detailed descriptions can be found in main.js|
 
-##4. 快速开发能力
+##4. Fast development ability
 
-具体的Cocos2d-JS API使用以及开发技巧并不在本章的讨论范围内，但在本章工作流的讨论中需要提到的是，Web平台支持给Cocos2d-JS带来了非常优秀的快速原型和快速开发能力。
+Concrete APIs of Cocos2d-JS and their usage will not be discussed in this chapiter. However it's very important to mention that web platform support is not only a distribution channel for Cocos2d-JS, but also an important and useful tool for developers to make prototypes and to boost their development. 
 
-我们建议开发者在原型阶段甚至开发阶段使用Web平台进行游戏逻辑调试的原因有下面几点：
+The reasons that we suggest developers to use web platform during prototyping and development are the following:
 
-- 点击即玩，不需要编译，并且修改代码后只需要刷新页面即可看到效果。
-- 浏览器强大的JavaScript调试工具，可以参考[Google Chrome DevTools简介](https://developer.chrome.com/devtools)，它可以帮助开发者快速定位和解决问题。同时也解决了Xcode和Visual Studio等IDE无法调试JavaScript脚本代码的问题。
-- 更符合JavaScirpt开发人员的习惯。
+- Click to play, no need to wait for compiling, you can see the result of your changes with a simple page reload.
+- Browser's great JavaScript debug tool, you can refer to [Google Chrome DevTools Introduction](https://developer.chrome.com/devtools). It can help developers to quickly location and solve issues, it also solved the problem that native IDEs can not debug JavaScript code.
+- This approach suits better JavaScript developers.
 
-##5. Native平台编译
+##5. Native platform compilation
 
 ###5.1 Cocos Console
 
-在Web平台调试完成之后，如果开发者需要将游戏发布到原生平台，那么还需要针对相应平台进行编译调试工作。Cocos Console再次提供了非常便捷并且统一的编译能力，使用`cocos compile`命令即可将工程编译到不同平台：
+After finishing the development and debug on web platform, if developers want to test or publish their games on native platforms, then you will need to compile your project onto these platforms. Again, Cocos Console provided a very easy-to-use compilation command: `cocos compile`.
 
 ```
-// 在项目目录下打开终端并执行
-// -p指示目标平台，包括web，ios，mac，android，win32，每次编译请选择其中之一
+// Open the terminal or command line tool under the project's folder
+// -p specify the targeted platform, it can be one of web, ios, mac, android, win32
 cocos compile -p web|ios|mac|android|win32
 
-// 除此之外，还可以选择编译模式：-m debug|release，web平台还可以添加--advanced来使用Closure Compiler的高级混淆功能对代码进行混淆
+// Besides, you can choose the publish mode with -m option and its value:  debug or release
+// Under web platform, you can also add --advanced option to use Closure Compiler's advanced mode to compress and obfuscate your JavaScript scripts
 cocos compile -p android -m release
 cocos compile -p web -m release --advanced
 
-// 将compile命令替换为run即可在模拟器或真机上运行游戏
+// Replace compile command with run to execute the published executable on real devices or simulators
 cocos run -p web
 cocos run -p ios
 ```
 
-关于Cocos Console更详细的使用方式，请参考[Cocos Console文档](http://cocos2d-x.org/wiki/Cocos2d-console)。
+More details about Cocos Console can be found in the [Cocos Console documentation](http://cocos2d-x.org/wiki/Cocos2d-console).
 
-###5.2 使用各平台IDE编译
+###5.2 Use IDE to compile the project
 
-在`frameworks/runtime-src/`目录下，开发者可以找到各平台的工程文件，包括：
+Under `frameworks/runtime-src/` folder, you can found project files of some platforms, including:
 
-- proj.ios_mac：可用于Xcode的iOS和Mac OS X项目文件夹
-- proj.win32：可用于Visual Studio的Windows项目文件夹
-- proj.android：可用于Eclipse的Android项目文件夹
+- proj.ios_mac: Xcode project for iOS and Mac OS X
+- proj.win32：Visual Studio project for Windows
+- proj.android：Eclipse project for Android
 
-##6. 项目发布
+##6. Project publishing
 
-###6.1 Native平台发布
+###6.1 Native platform publishing
 
 - Mac / Win32
 
-    直接运行`cocos compile -p mac|win32 -m release`即可打包出发布包，运行成功后可以在`publish/`目录下找到。
+    Execute this command can publish your project for Mac or Windows, you can found the executables under `publish` folder.
+
+    ```
+    cocos compile -p mac|win32 -m release
+    ```
 
 - iOS
 
-    运行`cocos compile -p ios -m release --sign-identity "iPhone Distribution:xxxxxxxx"`使用你自己的发布签名来打包出发布包，结果同样可以在`publish/`目录下找到。
+    Execute this command can publish your project for iOS, specify your own code signing identity with `--sign-identity` option, you can also found the result under `publish/` folder.
+
+    ```
+    cocos compile -p ios -m release --sign-identity "iPhone Distribution:xxxxxxxx"
+    ```
 
 - Android
     
-    1. 运行`cocos compile -p ios -m release --ndk-mode release`打包出apk包。
-    2. 在`publish/`目录下找到打包出的apk，使用jarsigner工具对该apk添加签名，具体步骤见[Google官方文档](http://developer.android.com/tools/publishing/app-signing.html)。
+    1. Execute the command `cocos compile -p ios -m release --ndk-mode release` to package an apk file.
+    2. Find the apk file under `publish/` folder, then use jarsigner tool to sign the apk with your own android key store, detailed steps can be found in [Google's official document](http://developer.android.com/tools/publishing/app-signing.html)。
 
-###6.2 Web平台发布
+###6.2 Web platform publishing
 
-运行`cocos compile -p web -m release`既可在`publish/`目录下生成独立的发布文件夹，将该文件夹部署到你的服务器上，用户即可访问。
+Execute `cocos compile -p web -m release` will publish your project under `publish/` folder, you can deploy this individual folder on your web server, then it can be visited.
 
-命令中添加`--advance`可以开启closure compiler工具高级压缩功能，该模式对代码有一定要求，如果发现打包之后无法正常运行请参考[Closure Compiler Advanced Compilation文档](https://developers.google.com/closure/compiler/docs/api-tutorial3)。
+As mentioned before, add `--advance` option in the publish command can activate closure compiler's advanced compressing mode, you can benefit a higher compression ratio and even better performance. But it has some requirement in your code, if you found your game have issues with advanced mode, please refer to the [Closure Compiler Advanced Compilation Document](https://developers.google.com/closure/compiler/docs/api-tutorial3) for suggestions and solution.
