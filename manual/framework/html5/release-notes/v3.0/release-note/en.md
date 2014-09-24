@@ -55,7 +55,7 @@ Read more about all the features and bug fixes
 
 With any problems you might have, our communities are happy to help:
 
-- [Online forum](http://discuss.cocos2d-x.org/category/javascript)
+- [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
 - [Document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
 - [Github repository](https://github.com/cocos2d/cocos2d-js)
 

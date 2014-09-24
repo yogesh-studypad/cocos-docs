@@ -55,7 +55,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 如果遇到任何问题，你都可以向Cocos2d-JS开发者社区寻求帮助： 
 
-- [官方论坛](http://discuss.cocos2d-x.org/category/javascript)
+- [官方论坛](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
 - [文档目录](http://cocos2d-x.org/docs/manual/framework/html5/zh)
 - [Github仓库地址](https://github.com/cocos2d/cocos2d-js)
 
