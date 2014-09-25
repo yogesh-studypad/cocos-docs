@@ -47,7 +47,7 @@ Cocos2d-JS는 웹과 네이티브, 어떤 플랫폼으로 배포하는가에 상
 
 만약 문제점이 발생하면 커뮤니티를 통해 도움을 요청하세요 :
 
-- [온라인 포럼](http://discuss.cocos2d-x.org/category/javascript)
+- [온라인 포럼](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
 - [관련 문서들](http://cocos2d-x.org/docs/manual/framework/html5/en)
 
 JSB 빌드 필요사항 :
