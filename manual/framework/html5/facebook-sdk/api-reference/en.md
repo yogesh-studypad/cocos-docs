@@ -22,11 +22,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of `plugin.FacebookAgent`. Required before doing anything else.|
 |[destroyInstance](./destroy-instance.md)|Destroy the instance of `plugin.FacebookAgent`.|
 |[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
-|[shareDialog](./dialog-share.md)|Trigger the share dialog for one-to-many sharing on Facebook. |
-|[canPresentShareDialog](./dialog-can-share.md)|Check whether it can trigger the share dialog for one-to-many sharing on Facebook. |
-|[messageDialog](./dialog-message.md)|Trigger the message dialog for sending messages to friends.|
-|[canPresentMessageDialog](./dialog-can-message.md)|Check whether it can trigger the message dialog for sending messages to friends.|
-|[feedDialog](./dialog-feed.md)|Trigger the web feed dialog for one-to-many sharing on Facebook. |
+|[dialog](./dialog.md)|Trigger the dialog for one-to-many sharing on Facebook or sending messages to your friends. |
+|[canPresentDialog](./can-present-dialog.md)|Check whether it can trigger the dialog for one-to-many sharing on Facebook or sending messages to your friends. |
 |[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
 
 ###Auth and Session Methods
@@ -37,7 +34,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
 |[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
-|[getAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
+|[getAccessToken](./get-accesstoken.md)|Get the access token granted to your application by current user.|
 |[getPermissionList](./get-permission-list.md)|Get the permissions granted to your application by current user.|
 
 ###Auxiliary Methods
@@ -54,13 +51,13 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|
 |api|√|√|√|
-|shareDialog - link|√|√|√|
-|shareDialog - open_graph|√|√|√|
-|shareDialog - photo|√|√|×|
-|messageDialog - link|√|√|√|
-|messageDialog - open_graph|√|√|×|
-|messageDialog - photo|√|√|×|
-|feedDialog|√|√|√|
+|dialog - share_link|√|√|√|
+|dialog - share_open_graph|√|√|√|
+|dialog - share_photo|√|√|×|
+|dialog - message_link|√|√|√|
+|dialog - message_open_graph|√|√|×|
+|dialog - message_photo|√|√|×|
+|dialog - feed_dialog|√|√|√|
 |appRequest|√|√|√|
 |login|√|√|√|
 |logout|√|√|√|
