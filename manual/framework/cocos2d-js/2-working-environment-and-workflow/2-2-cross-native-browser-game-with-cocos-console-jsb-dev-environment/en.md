@@ -99,7 +99,7 @@ Concrete APIs of Cocos2d-JS and their usage will not be discussed in this chapit
 The reasons that we suggest developers to use web platform during prototyping and development are the following:
 
 - Click to play, no need to wait for compiling, you can see the result of your changes with a simple page reload.
-- Browser's great JavaScript debug tool, you can refer to [Google Chrome DevTools Introduction](https://developer.chrome.com/devtools). It can help developers to quickly location and solve issues, it also solved the problem that native IDEs can not debug JavaScript code.
+- Browser's great JavaScript debug tool, you can refer to [Google Chrome DevTools Introduction](https://developer.chrome.com/devtools). It can help developers to quickly locate and solve issues, it also solved the problem that native IDEs can not debug JavaScript code.
 - This approach suits better JavaScript developers.
 
 ##5. Native platform compilation
@@ -155,7 +155,7 @@ Under `frameworks/runtime-src/` folder, you can found project files of some plat
 
 - Android
     
-    1. Execute the command `cocos compile -p ios -m release --ndk-mode release` to package an apk file.
+    1. Execute the command `cocos compile -p android -m release --ndk-mode release` to package an apk file.
     2. Find the apk file under `publish/` folder, then use jarsigner tool to sign the apk with your own android key store, detailed steps can be found in [Google's official document](http://developer.android.com/tools/publishing/app-signing.html)。
 
 ###6.2 Web platform publishing

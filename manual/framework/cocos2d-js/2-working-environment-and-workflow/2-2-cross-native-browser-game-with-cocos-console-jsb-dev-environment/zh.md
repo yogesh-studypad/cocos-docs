@@ -145,7 +145,7 @@ cocos run -p ios
 
 ###6.3 Android平台发布
 
-1. 运行`cocos compile -p ios -m release --ndk-mode release`打包出apk包。
+1. 运行`cocos compile -p android -m release --ndk-mode release`打包出apk包。
 2. 在`publish/`目录下找到打包出的apk，使用jarsigner工具对该apk添加签名，具体步骤见[Google官方文档](http://developer.android.com/tools/publishing/app-signing.html)。
 
 ###6.4 Web平台发布

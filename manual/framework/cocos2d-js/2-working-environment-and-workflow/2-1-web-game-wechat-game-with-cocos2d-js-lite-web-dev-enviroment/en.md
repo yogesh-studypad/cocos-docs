@@ -1,4 +1,4 @@
-# 2.1 Web game / Wechat game with Cocos2d-JS Lite(Web dev environment)
+# 2.1 Web Game Workflow with Cocos2d-JS Lite (Web dev environment)
 
 Cocos2d-JS have designed a specific workflow for web developers, for these developers, it's much better to have a single file engine to be embeded like other web frameworks directly into their html page. What's more important, the Cocos2d-JS full package is too big and too complicated for web developers, it's like being thrown in a huge labyrinth. This will send our developers a mistaken message: "Cocos2d-JS is too heavy to develop web games."
 
