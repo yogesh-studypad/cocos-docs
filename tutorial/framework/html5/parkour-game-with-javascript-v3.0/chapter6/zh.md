@@ -156,7 +156,7 @@ PhysicsSprite是一个可重用的组件，它能够将cocos2d精灵和物理bod
 
 ### 调试和测试
 
-恭喜！你完成了的细节了。你可以在*Webstorm*里面按下*debug*按钮
+恭喜！你完成了的细节了。你可以在*Cocos Code IDE*里面按下*debug*按钮
 
 ![run](res/run.png)
 
