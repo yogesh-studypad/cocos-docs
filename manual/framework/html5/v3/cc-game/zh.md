@@ -7,7 +7,7 @@
 
 ## 使用
 
-首先在`index.html`中引入`xxx/cocos2d-html5/CCBoot.js`。
+首先在`index.html`中引入`xxx/frameworks/cocos2d-html5/CCBoot.js`。
 然后开始进行入口代码编写，一般放在`main.js`中。
 
 项目启动代码的编写较v2版本是大大的精简了，使用起来会更加舒服：
