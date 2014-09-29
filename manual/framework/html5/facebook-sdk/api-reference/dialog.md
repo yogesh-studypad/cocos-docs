@@ -278,14 +278,20 @@ On Web, you should always use the Share Dialog and the Feed Dialog for web has b
 
 ###Properties of `info` object:
 
-|Name|Type|Required|Description|
+|Name|Type|Description|Default|
 |----|----|--------|-----------|
-|link|String|Yes|The URL of the item to be shared.|
-|title|String|No|The title of the item to be shared.|
-|caption|String|No|The subtitle of the item to be shared.|
-|imageUrl|String|No|The URL of the image of the item to be shared.|
-|description|String|No|the description of the item to be shared.|
-    
+|toID|string|The Facebook user ID or username of the user on whose timeline the story should be posted|The current user|
+|link|string|The URL to which this post should link|The base URL of the posting application, as configured in the Developer App|
+|linkName|string|The name of the story, shown at the top and rendered as a hyperlink with href set to link|The app name, as configured in the Developer App|
+|linkCaption|string|A short description, rendered below linkName in the story|The app base URL|
+|linkDescription|string|A longer description, rendered as the main body of the story|None|
+|picture|string|The URL of a picture, in PNG of JPEG format, to display beside the story; see the Feed Dialog documentation for details|None|
+|mediaSource|string|The URL of audio or video content to display beside the story; see Feed Gaming documentation for details|None|
+|actionName|string|The text of the action link; see actionLink, below|None|
+|actionLink|string|A link rendered at the bottom of the story which can optionally have a different target than the main story link; see documentation|None|
+|reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
+|properties|Dictionary<string,string[]>|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
+
 ###Callback function
 
 ```javascript
