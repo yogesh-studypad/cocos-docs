@@ -46,21 +46,31 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 
 1. link
 
-    |Name|Type|Required|Description|
-    |----|----|--------|-----------|
-    |link|String|Yes|The URL of the item to be shared.|
-    |title|String|No|The title of the item to be shared.|
-    |caption|String|No|The subtitle of the item to be shared.|
-    |imageUrl|String|No|The URL of the image of the item to be shared.|
-    |description|String|No|the description of the item to be shared.|
+|Name|Type|Description|Default|
+|----|----|--------|-------|
+|to|string|The Facebook user ID or username of the user on whose timeline the story should be posted|The current user|
+|link|string|The URL to which this post should link|The base URL of the posting application, as configured in the Developer App|
+|name|string|The name of the story, shown at the top and rendered as a hyperlink with href set to link|The app name, as configured in the Developer App|
+|caption|string|A short description, rendered below linkName in the story|The app base URL|
+|description|string|A longer description, rendered as the main body of the story|None|
+|picture|string|The URL of a picture, in PNG of JPEG format, to display beside the story; see the Feed Dialog documentation for details|None|
+|mediaSource|string|The URL of audio or video content to display beside the story; see Feed Gaming documentation for details|None|
+|actionName|string|The text of the action link; see actionLink, below|None|
+|actionLink|string|A link rendered at the bottom of the story which can optionally have a different target than the main story link; see documentation|None|
+|reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
+|properties|Dictionary<string,string[]>|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
 
 2. photo
 
-    |Name|Type|Required|Description|
-    |----|----|--------|-----------|
-    |photo|String|Yes|The path of the photo|
+Please note that you can only share a photo with Share Dialog on iOS and Android. 
+
+|Name|Type|Required|Description|
+|----|----|--------|-----------|
+|photo|String|Yes|The path of the photo|
 
 3. open_graph
+
+Please note that you can only share a structured Open Graph story with Share Dialog on iOS and Android. 
 
 Coming soon...
 
@@ -170,21 +180,25 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 
 1. message_link
 
-    |Name|Type|Required|Description|
-    |----|----|--------|-----------|
-    |link|String|Yes|The URL of the item to be shared.|
-    |title|String|No|The title of the item to be shared.|
-    |caption|String|No|The subtitle of the item to be shared.|
-    |imageUrl|String|No|The URL of the image of the item to be shared.|
-    |description|String|No|the description of the item to be shared.|
+|Name|Type|Description|
+|----|----|--------|
+|link|string|the url we want to share.|
+|name|string|a title.|
+|caption|string|a subtitle.|
+|description|string|a snippet of text describing the content of the link.|
+|picture|string|the url of a thumbnail to associate with the post.|
 
 2. message_photo
 
-    |Name|Type|Required|Description|
-    |----|----|--------|-----------|
-    |photo|String|Yes|The path of the photo|
+Please note that you can only share photos with Message Dialog on iOS and Android. 
+
+|Name|Type|Required|Description|
+|----|----|--------|-----------|
+|photo|String|Yes|The path of the photo|
 
 3. message_open_graph
+
+Please note that you can only share a structured Open Graph story with Message Dialog on iOS and Android. 
 
 Coming soon...
 
@@ -274,23 +288,19 @@ The Feed dialog publishes posts to the Facebook newsfeed. The Feed dialog is a w
 
 On iOS or Android, since the Feed dialog opens a web page for sharing, it must start by asking people for their Facebook credentials in order to verify their identity, which disrupts the sharing flow. People are also asked to re-enter their credentials over time as their password changes. The Feed dialog does not support Open Graph and supports only the basic attachment model which includes a link, title/description text and an image. So we recommend that you use the Share Dialog and you implement the Feed Dialog as fallback for the cases where the Facebook for iOS app or the Facebook for Android app is not present or the Share Dialog is not supported (for example, due to an old version of the Facebook for iOS app or the Facebook for Android app being installed). As mentioned, the Feed dialog does not support publishing Open Graph stories, so if you're using the Feed Dialog as fallback for the Share Dialog when publishing an Open Graph story you will need to adapt the contents to post a link (optionally with an image and text) instead.
 
-On Web, you should always use the Share Dialog and the Feed Dialog for web has been deprecated in Facebook API Version 2.0.
+On Web, you should always use the Share Dialog and the Feed Dialog for web has already been deprecated since Facebook API Version 2.0.
 
 ###Properties of `info` object:
 
 |Name|Type|Description|Default|
 |----|----|--------|-----------|
-|toID|string|The Facebook user ID or username of the user on whose timeline the story should be posted|The current user|
+|dialog|String|You should use `feed_dialog`|None|
+|to|string|The Facebook user ID or username of the user on whose timeline the story should be posted|The current user|
 |link|string|The URL to which this post should link|The base URL of the posting application, as configured in the Developer App|
-|linkName|string|The name of the story, shown at the top and rendered as a hyperlink with href set to link|The app name, as configured in the Developer App|
-|linkCaption|string|A short description, rendered below linkName in the story|The app base URL|
-|linkDescription|string|A longer description, rendered as the main body of the story|None|
+|name|string|The name of the story, shown at the top and rendered as a hyperlink with href set to link|The app name, as configured in the Developer App|
+|caption|string|A short description, rendered below linkName in the story|The app base URL|
+|description|string|A longer description, rendered as the main body of the story|None|
 |picture|string|The URL of a picture, in PNG of JPEG format, to display beside the story; see the Feed Dialog documentation for details|None|
-|mediaSource|string|The URL of audio or video content to display beside the story; see Feed Gaming documentation for details|None|
-|actionName|string|The text of the action link; see actionLink, below|None|
-|actionLink|string|A link rendered at the bottom of the story which can optionally have a different target than the main story link; see documentation|None|
-|reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
-|properties|Dictionary<string,string[]>|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
 
 ###Callback function
 
@@ -319,10 +329,10 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 ```javascript
 var info = {
     "dialog": "feed_dialog",
-    "description": "Cocos2d-x is a great game engine",
-    "title": "Cocos2d-x",
     "link": "http://www.cocos2d-x.org",
-    "imageUrl": "http://files.cocos2d-x.org/images/orgsite/logo.png"
+    "name": "Cocos2d-x",
+    "description": "Cocos2d-x is a great game engine",
+    "picture": "http://files.cocos2d-x.org/images/orgsite/logo.png"
 };
 facebook.dialog(info, function (code, response) {
     if(code == plugin.FacebookAgent.CODE_SUCCEED){
