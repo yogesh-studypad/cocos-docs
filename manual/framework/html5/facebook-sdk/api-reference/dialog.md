@@ -69,7 +69,7 @@ Please note that you can only share a photo with Share Dialog on iOS and Android
 |photo|String|Yes|The path of the photo|
 
 
-3.`share_photo`
+3.`share_open_graph`
 
 Please note that you can only share a structured Open Graph story with Share Dialog on iOS and Android. 
 
@@ -232,10 +232,10 @@ If the messaging fails, `code` is error code and `response` is a JSON containing
     ```javascript
     var info = {
         "dialog": "message_link",
-        "description": "Cocos2d-x is a great game engine",
-        "title": "Cocos2d-x",
         "link": "http://www.cocos2d-x.org",
-        "imageUrl": "http://files.cocos2d-x.org/images/orgsite/logo.png"
+        "title": "Cocos2d-x",
+        "description": "Cocos2d-x is a great game engine",
+        "picture": "http://files.cocos2d-x.org/images/orgsite/logo.png"
     };
     facebook.dialog(info, function (code, response) {
         if(code == plugin.FacebookAgent.CODE_SUCCEED){
