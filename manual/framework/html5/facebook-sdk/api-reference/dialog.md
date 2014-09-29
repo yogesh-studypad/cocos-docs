@@ -73,7 +73,17 @@ Please note that you can only share a photo with Share Dialog on iOS and Android
 
 Please note that you can only share a structured Open Graph story with Share Dialog on iOS and Android. 
 
-Coming soon...
+// TODO: this is not done. Need improvement.
+
+|Name|Type|Description|
+|----|----|-----------|
+|object_type| | | 
+|title| | |
+|image | |
+|url | |
+|description | |
+|previewPropertyName | |
+|action_type | |
 
 ###Callback function
 
@@ -104,10 +114,10 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
     ```javascript
     var info = {
         "dialog": "share_link",
-        "description": "Cocos2d-x is a great game engine",
-        "title": "Cocos2d-x",
         "link": "http://www.cocos2d-x.org",
-        "imageUrl": "http://files.cocos2d-x.org/images/orgsite/logo.png"
+        "name": "Cocos2d-x",
+        "description": "Cocos2d-x is a great game engine",
+        "picture": "http://files.cocos2d-x.org/images/orgsite/logo.png"
     };
     
     var facebook = plugin.FacebookAgent.getInstance();
@@ -143,12 +153,13 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
     ```javascript
     var info = {
         "dialog": "share_open_graph",
-        "action_type": "cocostestmyfc:share",
-        "preview_property": "cocos_document",
+        "object_type": "cocostestmyfc:cocos_document", 
         "title": "Cocos2d-JS Game Engine",
         "image": "http://files.cocos2d-x.org/images/orgsite/logo.png",
         "url": "http://cocos2d-x.org/docs/manual/framework/html5/en",
         "description": "cocos document"
+        "preview_property_name": "cocos_document",
+        "action_type": "cocostestmyfc:share",
     };
     
     var facebook = plugin.FacebookAgent.getInstance();
@@ -201,7 +212,17 @@ Please note that you can only share photos with Message Dialog on iOS and Androi
 
 Please note that you can only share a structured Open Graph story with Message Dialog on iOS and Android. 
 
-Coming soon...
+// TODO: this is not done. Need improvement.
+
+|Name|Type|Description|
+|----|----|-----------|
+|object_type| | | 
+|title| | |
+|image | |
+|url | |
+|description | |
+|previewPropertyName | |
+|action_type | |
 
 ###Callback function
 
@@ -209,15 +230,7 @@ Coming soon...
 var callback = function (code, response) {}
 ```
 
-If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `???` as the form below,
-```javascript
-{
-    // The id of the post which has been shared
-    //TODO
-}
-```
-
-If the messaging fails, `code` is error code and `response` is a JSON containing error message as the form below,
+If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the messaging fails, `code` is error code and `response` is a JSON containing error message as the form below,
 
 ```javascript
 {
@@ -267,12 +280,13 @@ If the messaging fails, `code` is error code and `response` is a JSON containing
     ```javascript
     var info = {
         "dialog": "message_open_graph",
-        "action_type": "cocostestmyfc:share",
-        "preview_property": "cocos_document",
+        "object_type": "cocostestmyfc:cocos_document", 
         "title": "Cocos2d-JS Game Engine",
         "image": "http://files.cocos2d-x.org/images/orgsite/logo.png",
         "url": "http://cocos2d-x.org/docs/manual/framework/html5/en",
         "description": "cocos document"
+        "preview_property_name": "cocos_document",
+        "action_type": "cocostestmyfc:share",
     };
     facebook.dialog(info, function (code, response) {
         if(code == plugin.FacebookAgent.CODE_SUCCEED){
