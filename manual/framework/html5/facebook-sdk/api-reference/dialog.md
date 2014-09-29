@@ -14,15 +14,15 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-|info|Object|Yes|The object to contain the details of the sharing.|
-|callback|Function|No|Callback function containing a result code and a JSON response.|
+|info|object|Yes|The object to contain the details of the sharing.|
+|callback|function|No|Callback function containing a result code and a JSON response.|
 
 ###Properties of `info` object:
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-|dialog|String|Yes|This property determines the share dialog type that you want to trigger.|
-|Additional properties|Various|Yes|Additional properties are based on the share dialog type you use. See details below.|
+|dialog|string|Yes|This property determines the share dialog type that you want to trigger.|
+|other properties|various|Yes|Additional properties are based on the share dialog type you use. See details below.|
 
 
 ##Share Dialog
@@ -58,7 +58,7 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 |action_name|string|The text of the action link; see actionLink, below|None|
 |action_link|string|A link rendered at the bottom of the story which can optionally have a different target than the main story link; see documentation|None|
 |reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
-|properties|Object|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
+|properties|object|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
 
 2.`share_photo`
 
@@ -310,7 +310,7 @@ On Web, you should always use the Share Dialog and the Feed Dialog for web has a
 
 |Name|Type|Description|Default|
 |----|----|--------|-----------|
-|dialog|String|You should use `feed_dialog`|None|
+|dialog|string|You should use `feed_dialog`|None|
 |to|string|The Facebook user ID or username of the user on whose timeline the story should be posted|The current user|
 |link|string|The URL to which this post should link|The base URL of the posting application, as configured in the Developer App|
 |name|string|The name of the story, shown at the top and rendered as a hyperlink with href set to link|The app name, as configured in the Developer App|
