@@ -4,7 +4,7 @@ This method is used to trigger different forms of Facebook created UI dialogs. T
 
 - The Share Dialog for one-to-many sharing on Facebook.
 - The Message Dialog for sending messages to friends.
-- The Feed Dialog is a web-based dialog for sharing that works on all devices, even if people don't have the Facebook for iOS app or Facebook for Android app installed, at the expense of an optimum experience for people using your apps (compared to the Share Dialog). 
+- The Feed Dialog, which is a web-based dialog for sharing that works on all devices, even if people don't have the Facebook for iOS app or Facebook for Android app installed, at the expense of an optimum experience for people using your apps (compared to the Share Dialog). 
 
 ##Parameters
 
@@ -54,19 +54,19 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 |caption|string|A short description, rendered below linkName in the story|The app base URL|
 |description|string|A longer description, rendered as the main body of the story|None|
 |picture|string|The URL of a picture, in PNG of JPEG format, to display beside the story; see the Feed Dialog documentation for details|None|
-|mediaSource|string|The URL of audio or video content to display beside the story; see Feed Gaming documentation for details|None|
-|actionName|string|The text of the action link; see actionLink, below|None|
-|actionLink|string|A link rendered at the bottom of the story which can optionally have a different target than the main story link; see documentation|None|
+|media_source|string|The URL of audio or video content to display beside the story; see Feed Gaming documentation for details|None|
+|action_name|string|The text of the action link; see actionLink, below|None|
+|action_link|string|A link rendered at the bottom of the story which can optionally have a different target than the main story link; see documentation|None|
 |reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
-|properties|Dictionary<string,string[]>|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
+|properties|Object|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
 
 2.`share_photo`
 
 Please note that you can only share a photo with Share Dialog on iOS and Android. 
 
-|Name|Type|Required|Description|
-|----|----|--------|-----------|
-|photo|String|Yes|The path of the photo|
+|Name|Type|Description|
+|----|----|-----------|
+|photo|string|The path of the photo|
 
 
 3.`share_open_graph`
@@ -77,13 +77,14 @@ Please note that you can only share a structured Open Graph story with Share Dia
 
 |Name|Type|Description|
 |----|----|-----------|
-|object_type| | | 
-|title| | |
-|image | |
-|url | |
-|description | |
-|previewPropertyName | |
-|action_type | |
+|object_type|string| | 
+|title|string| |
+|image|string| |
+|url|string| |
+|description|string| |
+|preview_property_name|string| |
+|action_type|string| |
+
 
 ###Callback function
 
@@ -204,9 +205,9 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 
 Please note that you can only share photos with Message Dialog on iOS and Android. 
 
-|Name|Type|Required|Description|
-|----|----|--------|-----------|
-|photo|String|Yes|The path of the photo|
+|Name|Type|Description|
+|----|----|-----------|
+|photo|string|The path of the photo|
 
 3.`message_open_graph`
 
@@ -216,13 +217,13 @@ Please note that you can only share a structured Open Graph story with Message D
 
 |Name|Type|Description|
 |----|----|-----------|
-|object_type| | | 
-|title| | |
-|image | |
-|url | |
-|description | |
-|previewPropertyName | |
-|action_type | |
+|object_type|string| | 
+|title|string| |
+|image|string| |
+|url|string| |
+|description|string| |
+|preview_property_name|string| |
+|action_type|string| |
 
 ###Callback function
 
