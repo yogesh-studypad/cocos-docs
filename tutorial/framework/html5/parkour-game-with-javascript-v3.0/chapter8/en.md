@@ -141,7 +141,7 @@ Here we have added additional init code. We added a array named *objects* and in
 ```
     // create sprite sheet
         cc.spriteFrameCache.addSpriteFrames(res.background_plist);
-        this.spriteSheet = cc.SpriteBatchNode.create(res.background_png);
+        this.spriteSheet = new cc.SpriteBatchNode(res.background_png);
         this.addChild(this.spriteSheet);
 ```
 
@@ -286,10 +286,10 @@ var Coin = cc.Class.extend({
             animFrames.push(frame);
         }
 
-        var animation = cc.Animation.create(animFrames, 0.2);
-        var action = cc.RepeatForever.create(cc.Animate.create(animation));
+        var animation = new cc.Animation(animFrames, 0.2);
+        var action = new cc.RepeatForever(new cc.Animate(animation));
 
-        this.sprite = cc.PhysicsSprite.create("#coin0.png");
+        this.sprite = new cc.PhysicsSprite("#coin0.png");
 
         // init physics
         var radius = 0.95 * this.sprite.getContentSize().width / 2;
@@ -364,7 +364,7 @@ var Rock = cc.Class.extend({
     ctor:function (spriteSheet, space, posX) {
         this.space = space;
 
-        this.sprite = cc.PhysicsSprite.create("#rock.png");
+        this.sprite = new cc.PhysicsSprite("#rock.png");
         var body = new cp.StaticBody();
         body.setPos(cc.p(posX, this.sprite.getContentSize().height / 2 + g_groundHight));
         this.sprite.setBody(body);

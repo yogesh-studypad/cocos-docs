@@ -83,11 +83,11 @@ var GameOverLayer = cc.LayerColor.extend({
 
         var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
         cc.MenuItemFont.setFontSize(30);
-        var menuItemRestart = cc.MenuItemSprite.create(
-            cc.Sprite.create(s_restart_n),
-            cc.Sprite.create(s_restart_s),
+        var menuItemRestart = new cc.MenuItemSprite(
+            new cc.Sprite(s_restart_n),
+            new cc.Sprite(s_restart_s),
             this.onRestart, this);
-        var menu = cc.Menu.create(menuItemRestart);
+        var menu = new cc.Menu(menuItemRestart);
         menu.setPosition(centerPos);
         this.addChild(menu);
     },
@@ -257,8 +257,8 @@ jumpDownAction:null,
             animFrames.push(frame);
         }
 
-        var animation = cc.Animation.create(animFrames, 0.1);
-        this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
+        var animation = new cc.Animation(animFrames, 0.1);
+        this.runningAction = new cc.RepeatForever(new cc.Animate(animation));
         this.runningAction.retain();
 
         // init jumpUpAction
@@ -269,8 +269,8 @@ jumpDownAction:null,
             animFrames.push(frame);
         }
 
-        animation = cc.Animation.create(animFrames, 0.2);
-        this.jumpUpAction = cc.Animate.create(animation);
+        animation = new cc.Animation(animFrames, 0.2);
+        this.jumpUpAction = new cc.Animate(animation);
         this.jumpUpAction.retain();
 
         // init jumpDownAction
@@ -281,8 +281,8 @@ jumpDownAction:null,
             animFrames.push(frame);
         }
 
-        animation = cc.Animation.create(animFrames, 0.3);
-        this.jumpDownAction = cc.Animate.create(animation);
+        animation = new cc.Animation(animFrames, 0.3);
+        this.jumpDownAction = new cc.Animate(animation);
         this.jumpDownAction.retain();
     },
 ```
@@ -301,8 +301,8 @@ this.initAction();
 //            var frame = cc.spriteFrameCache.getSpriteFrame(str);
 //            animFrames.push(frame);
 //        }
-//        var animation = cc.Animation.create(animFrames, 0.1);
-//        this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
+//        var animation = new cc.Animation(animFrames, 0.1);
+//        this.runningAction = new cc.RepeatForever(new cc.Animate(animation));
 ```
 
 ###处理触控事件

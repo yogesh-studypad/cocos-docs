@@ -16,7 +16,7 @@ var MenuLayer = cc.Layer.extend({
         var centerpos = cc.p(winsize.width / 2, winsize.height / 2);
 
         //4. create a background image and set it's position at the center of the screen
-        var spritebg = cc.Sprite.create(res.helloBG_png);
+        var spritebg = new cc.Sprite(res.helloBG_png);
         spritebg.setPosition(centerpos);
         this.addChild(spritebg);
 
@@ -24,11 +24,11 @@ var MenuLayer = cc.Layer.extend({
         cc.MenuItemFont.setFontSize(60);
 
         //6.create a menu and assign onPlay event callback to it
-        var menuItemPlay= cc.MenuItemSprite.create(
-            cc.Sprite.create(res.start_n_png), // normal state image
-            cc.Sprite.create(res.start_s_png), //select state image
+        var menuItemPlay= new cc.MenuItemSprite(
+    		new cc.Sprite(res.start_n_png), // normal state image
+    		new cc.Sprite(res.start_s_png), //select state image
             this.onPlay, this);
-        var menu = cc.Menu.create(menuItemPlay);  //7. create the menu
+        var menu = new cc.Menu(menuItemPlay);  //7. create the menu
         menu.setPosition(centerpos);
         this.addChild(menu);
     },

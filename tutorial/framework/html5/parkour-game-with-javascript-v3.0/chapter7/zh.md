@@ -37,9 +37,9 @@ var res = {
     PlayBG_png  : "res/PlayBG.png",
     runner_png  : "res/running.png",
     runner_plist : "res/running.plist",
-    map_png: "map.png",
-    map00_tmx: "map00.tmx",
-    map01_tmx: "map01.tmx"
+    map_png: "res/map.png",
+    map00_tmx: "res/map00.tmx",
+    map01_tmx: "res/map01.tmx"
 };
 
 var g_resources = [
@@ -64,7 +64,7 @@ var g_resources = [
 在*AnimationLayer.js*的ctor方法中添加下面的代码：
 
 ```
-this._debugNode = cc.PhysicsDebugNode.create(this.space);
+this._debugNode = new cc.PhysicsDebugNode(this.space);
 // Parallax ratio and offset
 this.addChild(this._debugNode, 10);
 ```
@@ -100,7 +100,7 @@ mapIndex:0,
 //        var winSize = cc.Director.getInstance().getWinSize();
 //
 //        var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
-//        var spriteBG = cc.Sprite.create(s_PlayBG);
+//        var spriteBG = new cc.Sprite(s_PlayBG);
 //        spriteBG.setPosition(centerPos);
 //        this.addChild(spriteBG);
 ```
@@ -108,10 +108,10 @@ mapIndex:0,
 最后，我们将要添加新的代码片段来创建tiledmap 背景。
 
 ```
-this.map00 = cc.TMXTiledMap.create(res.map00_tmx);
+this.map00 = new cc.TMXTiledMap(res.map00_tmx);
 this.addChild(this.map00);
 this.mapWidth = this.map00.getContentSize().width;
-this.map01 = cc.TMXTiledMap.create(res.map01_tmx);
+this.map01 = new cc.TMXTiledMap(res.map01_tmx);
 this.map01.setPosition(cc.p(this.mapWidth, 0));
 this.addChild(this.map01);
 ```
@@ -205,7 +205,7 @@ getEyeX:function () {
     onEnter:function () {
         this._super();
         this.initPhysics();
-        this.gameLayer = cc.Layer.create();
+        this.gameLayer = new cc.Layer();
 
         //add Background layer and Animation layer to gameLayer
         this.gameLayer.addChild(new BackgroundLayer(), 0, TagOfLayer.background);

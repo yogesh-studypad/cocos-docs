@@ -77,11 +77,11 @@
     
     var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
     cc.MenuItemFont.setFontSize(30);
-    var menuItemRestart = cc.MenuItemSprite.create(
-    cc.Sprite.create(s_restart_n),
-    cc.Sprite.create(s_restart_s),
+    var menuItemRestart = new cc.MenuItemSprite(
+    new cc.Sprite(s_restart_n),
+    new cc.Sprite(s_restart_s),
     this.onRestart, this);
-    var menu = cc.Menu.create(menuItemRestart);
+    var menu = new cc.Menu(menuItemRestart);
     menu.setPosition(centerPos);
     this.addChild(menu);
     },
