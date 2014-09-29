@@ -10,14 +10,14 @@ plugin.FacebookAgent.prototype.request = function(path, method, params, callback
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-|path|String|Yes|Open Graph API interface path|
-|method|String|Yes|HTTP method to send the request. Possible values are `plugin.FacebookAgent.HttpMethod.GET`, `plugin.FacebookAgent.HttpMethod.POST`, `plugin.FacebookAgent.HttpMethod.DELETE`.|
-|params|Object|No|The parameter for the request, parameters vary greatly for different interface, please refer to [Graph API Reference](https://developers.facebook.com/docs/graph-api/reference/)|
-|callback|Function|No|This callback will be invoked with a result code and a response object or an error message.|
+|endpoint|String|Yes|The Graph API endpoint to call|
+|method|`plugin.FacebookAgent.HttpMethod`|Yes|The|HTTP method to use in the call, one of `plugin.FacebookAgent.HttpMethod.GET`, `plugin.FacebookAgent.HttpMethod.POST`, `plugin.FacebookAgent.HttpMethod.DELETE`.|
+|params|Object|No|The key/value pairs to be passed to the endpoint as arguments. For details of arguments for each endpoint, please refer to [Graph API Reference](https://developers.facebook.com/docs/graph-api/reference/)|
+|callback|Function|No|Callback function containing a result code and a JSON response.|
 
 ##Callback function and response object
 
-The callback function definition is showing below, if the Graph API request gets a response, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the `response` parameter.
+The callback function definition is showing below, if the app request sent successfully, the result code will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the response parameter.
 
 ```javascript
 var callback = function (code, response) {}
@@ -36,7 +36,7 @@ Meanwhile, the response object is only available when a response is returned, he
 
 ```javascript
 // Retrieve user's id
-facebook.request("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
+facebook.api("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
     if (type == plugin.FacebookAgent.CODE_SUCCEED) {
         cc.log(response["id"]);
     } else {
@@ -45,7 +45,7 @@ facebook.request("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, res
 });
 
 // Send a photo to user's photo album
-facebook.request("/me/photos", plugin.FacebookAgent.HttpMethod.POST, {"url": "http://files.cocos2d-x.org/images/orgsite/logo.png"}, function (type, response) {
+facebook.api("/me/photos", plugin.FacebookAgent.HttpMethod.POST, {"url": "http://files.cocos2d-x.org/images/orgsite/logo.png"}, function (type, response) {
     if (type == plugin.FacebookAgent.CODE_SUCCEED) {
         cc.log("post_id: " + response["post_id"]);
     } else {
