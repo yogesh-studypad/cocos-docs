@@ -44,7 +44,7 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 
 ###Additional properties of `info` object based on each Share Dialog type:
 
-1. link
+1.`share_link`
 
 |Name|Type|Description|Default|
 |----|----|--------|-------|
@@ -60,7 +60,7 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 |reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
 |properties|Dictionary<string,string[]>|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
 
-2. photo
+2.`share_photo`
 
 Please note that you can only share a photo with Share Dialog on iOS and Android. 
 
@@ -68,7 +68,8 @@ Please note that you can only share a photo with Share Dialog on iOS and Android
 |----|----|--------|-----------|
 |photo|String|Yes|The path of the photo|
 
-3. open_graph
+
+3.`share_photo`
 
 Please note that you can only share a structured Open Graph story with Share Dialog on iOS and Android. 
 
@@ -178,7 +179,7 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 
 ###Additional properties of `info` object for each message dialog type:
 
-1. message_link
+1.`message_link`
 
 |Name|Type|Description|
 |----|----|--------|
@@ -188,7 +189,7 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 |description|string|a snippet of text describing the content of the link.|
 |picture|string|the url of a thumbnail to associate with the post.|
 
-2. message_photo
+2.`message_photo`
 
 Please note that you can only share photos with Message Dialog on iOS and Android. 
 
@@ -196,7 +197,7 @@ Please note that you can only share photos with Message Dialog on iOS and Androi
 |----|----|--------|-----------|
 |photo|String|Yes|The path of the photo|
 
-3. message_open_graph
+3.`message_open_graph`
 
 Please note that you can only share a structured Open Graph story with Message Dialog on iOS and Android. 
 
@@ -226,7 +227,7 @@ If the messaging fails, `code` is error code and `response` is a JSON containing
 
 ##Example
 
-1. message_link
+1. message a link
 
     ```javascript
     var info = {
@@ -245,7 +246,7 @@ If the messaging fails, `code` is error code and `response` is a JSON containing
     });
     ```
     
-2. message_photo
+2. message a photo
 
     ```javascript
     var info = {
@@ -261,7 +262,7 @@ If the messaging fails, `code` is error code and `response` is a JSON containing
     });
     ```
     
-3. message_open_graph
+3. message an Open Graph story
 
     ```javascript
     var info = {
