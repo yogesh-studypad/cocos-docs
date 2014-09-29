@@ -35,7 +35,9 @@ Meanwhile, the response object is only available when a response is returned, he
 ##Example
 
 ```javascript
-// Retrieve user's id
+var facebook = plugin.FacebookAgent.getInstance();
+
+// Retrieve user id
 facebook.api("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
     if (type == plugin.FacebookAgent.CODE_SUCCEED) {
         cc.log(response["id"]);
