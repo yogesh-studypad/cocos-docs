@@ -2,7 +2,8 @@
 
 This method triggers Requests Dialog, which is invoked in-game via the Facebook SDK on iOS, Android and Canvas. Requests can contain a user-facing message as plain text, which is passed as a parameter when invoking the dialog, or they can contain specific information including in-game items and explicit calls to action. Requests give players a mechanism for inviting their friends to play a game. Requests are sent by a player to one or more specific friends, and always carry a call-to-action that the sender wants the recipient to complete. Recipients can choose to accept the request, or they can choose to ignore or decline it.
 
-More details in the doc [Requests](http://developers.facebook.com/docs/reference/dialogs/requests/). NOTE: Request Dialog in Cocos SDK does not support [Frictionless Requests](http://developers.facebook.com/docs/games/requests/#frictionless-requests) for now. 
+For more details, please refer to doc [Requests](http://developers.facebook.com/docs/reference/dialogs/requests/).
+NOTE: Request Dialog in Cocos SDK does not support [Frictionless Requests](http://developers.facebook.com/docs/games/requests/#frictionless-requests) for now. 
 
 ##Parameters
 
