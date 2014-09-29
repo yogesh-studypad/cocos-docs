@@ -57,7 +57,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |dialog - message_link|√|√|√|
 |dialog - message_open_graph|√|√|×|
 |dialog - message_photo|√|√|×|
-|dialog - web_dialog|√|√|√|
+|dialog - feed_dialog|√|√|×|
 |appRequest|√|√|√|
 |login|√|√|√|
 |logout|√|√|√|
