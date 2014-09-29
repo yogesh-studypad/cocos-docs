@@ -22,9 +22,9 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of `plugin.FacebookAgent`. Required before doing anything else.|
 |[destroyInstance](./destroy-instance.md)|Destroy the instance of `plugin.FacebookAgent`.|
 |[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
-|[dialog](./dialog.md)|Trigger the dialog for one-to-many sharing on Facebook or sending messages to your friends. |
-|[canPresentDialog](./can-present-dialog.md)|Check whether it can trigger the dialog for one-to-many sharing on Facebook or sending messages to your friends. |
-|[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
+|[dialog](./dialog.md)|Trigger different forms of Facebook created UI dialogs, such as the Share Dialog for one-to-many sharing on Facebook, or the Message Dialog for sending messages to friends. |
+|[canPresentDialog](./can-present-dialog.md)|Check whether it can trigger a particular form of Facebook created UI dialog based on the current user's device environment.|
+|[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog to send a request to one or more of friends from a game.|
 
 ###Auth and Session Methods
 
@@ -57,7 +57,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |dialog - message_link|√|√|√|
 |dialog - message_open_graph|√|√|×|
 |dialog - message_photo|√|√|×|
-|dialog - feed_dialog|√|√|√|
+|dialog - web_dialog|√|√|√|
 |appRequest|√|√|√|
 |login|√|√|√|
 |logout|√|√|√|
