@@ -2,17 +2,17 @@
 
 <img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
 
-[Cocos2d-JS](https://github.com/cocos2d/cocos2d-js) is the one game engine for web games and native games, and it is open-source, free-of-charge, user-friendly, and provides multi-platform support. Cocos2d-JS makes 2D game programming easier and faster. It clarifies the key components of 2D game programming with  easy-to-learn, easy-to-use API, which makes it an outstanding framework compared to others.
+[Cocos2d-JS](https://github.com/cocos2d/cocos2d-js) is the one open source game engine for web games and native games, and it is high performance, user-friendly, and provides multi-platform support, includes web, android, iOS, WP8, Mac, Windows, etc. Cocos2d-JS makes 2D game programming easier and faster. It clarifies the key components of 2D game programming with easy-to-learn, easy-to-use API, which makes it an outstanding framework compared to others.
 
-Cocos2d-JS is the HTML5 version of Cocos2d-x, includes Cocos2d-html5 and Cocos2d-x JavaScript Binding (JSB). The focus of Cocos2d-JS development is bridging Cocos2d between browsers and native applications. On top of the framework provided by Cocos2d-JS, one can write games in JavaScript and have the game run on browsers that supports HTML5 base on Cocos2d-html5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x JSB. Thus Cocos2d-JS games can therefore run using "Cocos2d JavaScript Binding" on Cocos2d-x without or with very little modification.
+Cocos2d-JS is the HTML5 version of Cocos2d-x, includes [Cocos2d-html5](https://github.com/cocos2d/cocos2d-html5) and Cocos2d-x JavaScript Binding (JSB). On top of the framework provided by Cocos2d-JS, one can write games in JavaScript and have the game run on browsers that supports HTML5 base on Cocos2d-html5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x JSB. Thus Cocos2d-JS games can therefore run using "Cocos2d JavaScript Binding" on Cocos2d-x without or with very little modification.
      
 ### 1.1.1 History
 
 With the rise of Android in 2010, the Cocos2d-x team branched out Cocos2d-x from Cocos2d-iphone not only to focuses on Android platform, but also to targets cross-platform ability as well. In 2011, Google sponsored the Cocos2d-x team to port Cocos2d-x to Cocos2d-html5, which focuses on HTML5-ready browsers, Web App. 
 
-[Cocos2d-html5](https://github.com/cocos2d/cocos2d-html5) project was started from Jan. 29 2012, and released first stable version v2.0 in Aug. 2012. Meanwhile, Zygna was helping Cocos2d-x team to develop the Cocos2d-x JSB solution to extern Cocos2d-html5's native platform abilility. The first coordinated releasing of Cocos2d family was released on Dec. 4 2012, thenceforth games which developed base on Cocos2d-html5 can be run on web and native platforms. 
+Cocos2d-html5 project was started from Jan. 29 2012, and released first stable version v2.0 base on Cocos2d-x v2.0 in Aug. 2012. Meanwhile, Zygna was helping Cocos2d-x team to develop the Cocos2d-x JSB solution to extern Cocos2d-html5's native platform abilility. The first coordinated releasing of Cocos2d family was released on Dec. 4 2012, thenceforth games which developed base on Cocos2d-html5 can be run on web and native platforms. 
 
-Cocos2d-html5 and Cocos2d-x JSB were combined and upgraded to Cocos2d-JS in Mar. 2014, and released the first statble version v3.0 on Sep.12 2014. In Cocos2d-JS v3.0, it reinvented workflows for all platforms, provides a consistent development experience for whichever platform you want to distribute to, no matter web and native.
+Cocos2d-html5 and Cocos2d-x JSB were combined and upgraded to Cocos2d-JS in Mar. 2014, and released the first statble version v3.0 on Sep.12 2014. In Cocos2d-JS v3.0, it reinvented workflows for all platforms, provides a consistent development experience for whichever platform you want to distribute to, no matter web and native. Cocos2d-JS v3.0 is super powerful along with all these cool new features: Editors Support, Assets Manager, Object Pool, JS to Objective-C/JAVA reflection, etc.
 
 ### 1.1.2 Cocos2d-html5 and Cocos2d-x JSB
 
@@ -30,7 +30,7 @@ JavaScript code is interpreted by SpiderMonkey, Mozilla’s JavaScript virtual m
 
 ### 1.1.3 Position in Cocos2d family
 
-Compared to other Cocos2d branch, Cocos2d-JS is focusing on Cross FULL platfroms includes web and native.
+Compared to other Cocos2d branch, Cocos2d-JS is focusing on Cross FULL platfroms includes web games and native games.
 
 HTML5 games are becoming more and more important in the mobile gaming industry. There are already countless numbers of casual and social games available in HTML5. 
 
@@ -38,6 +38,6 @@ Though Cocos2d-x is a popoluar cross-platform game framework, it is not accessib
 
 Cocos2d-html5 brings an easy-to-learn, easy-to-use API style to the HTML5 gaming world, and with full features, high performance, real-time updating, click-to-play without the need for installations, and efficient development cycles.
 
-Thanks to Cocos2d-x JSB, Cocos2d-JS provides a consistent development experience for whichever platform you want to distribute to, both web and native.
+Thanks to Cocos2d-x JSB, Cocos2d-JS provides a consistent development experience for whichever platform you want to distribute to, both web and native. This will bring your game great opportunities in almost all channels of distribution. 
 
  						
