@@ -2,9 +2,9 @@
 
 <img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
 
-[Cocos2d-JS](https://github.com/cocos2d/cocos2d-js) is the one solution for web games and native games, and it is open-source, free-of-charge, user-friendly, and provides multi-platform support. Cocos2d-JS makes 2D game programming easier and faster. It clarifies the key components of 2D game programming with  easy-to-learn, easy-to-use API, which makes it an outstanding framework compared to others.
+[Cocos2d-JS](https://github.com/cocos2d/cocos2d-js) is the one game engine for web games and native games, and it is open-source, free-of-charge, user-friendly, and provides multi-platform support. Cocos2d-JS makes 2D game programming easier and faster. It clarifies the key components of 2D game programming with  easy-to-learn, easy-to-use API, which makes it an outstanding framework compared to others.
 
-It is the HTML5 version of Cocos2d-x, includes Cocos2d-html5 and Cocos2d-x JavaScript Binding (JSB). The focus of Cocos2d-JS development is bridging Cocos2d between browsers and native applications. On top of the framework provided by Cocos2d-JS, one can write games in JavaScript and have the game run on browsers that supports HTML5 base on Cocos2d-html5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x JSB. Thus Cocos2d-JS games can therefore run using "Cocos2d JavaScript Binding" on Cocos2d-x without or with very little modification.
+Cocos2d-JS is the HTML5 version of Cocos2d-x, includes Cocos2d-html5 and Cocos2d-x JavaScript Binding (JSB). The focus of Cocos2d-JS development is bridging Cocos2d between browsers and native applications. On top of the framework provided by Cocos2d-JS, one can write games in JavaScript and have the game run on browsers that supports HTML5 base on Cocos2d-html5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x JSB. Thus Cocos2d-JS games can therefore run using "Cocos2d JavaScript Binding" on Cocos2d-x without or with very little modification.
      
 ### 1.1.1 History
 
