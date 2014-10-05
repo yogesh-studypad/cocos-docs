@@ -78,8 +78,8 @@
     var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
     cc.MenuItemFont.setFontSize(30);
     var menuItemRestart = new cc.MenuItemSprite(
-    new cc.Sprite(s_restart_n),
-    new cc.Sprite(s_restart_s),
+    new cc.Sprite(res.restart_n_png),
+    new cc.Sprite(res.restart_s_png),
     this.onRestart, this);
     var menu = new cc.Menu(menuItemRestart);
     menu.setPosition(centerPos);
