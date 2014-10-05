@@ -72,7 +72,7 @@
     this.init();
     },
     init:function () {
-    this._super(cc.c4b(0, 0, 0, 180));
+    this._super(cc.color(0, 0, 0, 180));
     var winSize = cc.director.getWinSize();
     
     var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
