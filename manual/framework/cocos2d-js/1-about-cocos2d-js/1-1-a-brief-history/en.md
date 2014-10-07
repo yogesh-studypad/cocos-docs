@@ -5,6 +5,16 @@
 [Cocos2d-JS](https://github.com/cocos2d/cocos2d-js) is the one open source game engine for web games and native games, and it is high performance, user-friendly, and provides multi-platform support, includes web, android, iOS, WP8, Mac, Windows, etc. Cocos2d-JS makes 2D game programming easier and faster. It clarifies the key components of 2D game programming with easy-to-learn, easy-to-use API, which makes it an outstanding framework compared to others.
 
 Cocos2d-JS is the HTML5 version of Cocos2d-x, includes [Cocos2d-html5](https://github.com/cocos2d/cocos2d-html5) and Cocos2d-x JavaScript Binding (JSB). On top of the framework provided by Cocos2d-JS, one can write games in JavaScript and have the game run on browsers that supports HTML5 base on Cocos2d-html5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x JSB. Thus Cocos2d-JS games can therefore run using "Cocos2d JavaScript Binding" on Cocos2d-x without or with very little modification.
+
+#### Why choose Cocos2d-JS
+Why would you want to choose Cocos2d-JS over other available game engines?
+
+* Modern JS API 
+* FULL platform without plugin, code once, run everywhere - web, desktop, mobile and console
+* Capability to test and debug your game on the browsers and then push it to web, mobile or console target
+* A vast API of functionality including sprites, actions, animations, particles, transitions, timers, events (touch, keyboard, accelerometer, mouse), sound, file IO, persistence, skeletal animations
+* High performance, proven and reliable
+
      
 ### 1.1.1 History
 
@@ -16,7 +26,7 @@ Cocos2d-html5 and Cocos2d-x JSB were combined and upgraded to Cocos2d-JS in Mar.
 
 ### 1.1.2 Cocos2d-html5 and Cocos2d-x JSB
 
-From the foregoing introduction, Cocos2d-JS includes Cocs2d-html5 and Cocos2d-x JSB which have the same set COMPLETELY COMPATIABLE of Javascript API. So, Cocos2d-JS project can be easily run on HTML5-ready browsers.
+From the foregoing introduction, Cocos2d-html5 it is one important module of Cocs2d-JS, and it is a pure HTML5 game engine, which base on Canvas/WebGL and 100% compitable with HTML5. So, Cocos2d-JS project can be easily run on HTML5-ready browsers.
 
 If you are only interested in casual games on the web, you can embed directly in your web page the Cocos2d-JS Lite Version which is extremely easy to use and light as a feather.
 
@@ -27,6 +37,7 @@ Cocos2d-x JSB for C/C++ is the wrapper code that sits between the native code an
 JavaScript code is interpreted by SpiderMonkey, Mozilla’s JavaScript virtual machine (VM). The JavaScript VM is extended by JSB to support Cocos2d-x types, structures, and objects.
 SpiderMonkey is Mozilla's open source JavaScript engine written in C/C++, and it can be linked into any C++ program, not just web browsers.
 C++ code accesses SpiderMonkey via the JSAPI. The JSAPI provides functions for setting up the JavaScript runtime, compiling and executing scripts, creating and examining JavaScript data structures, handling errors, enabling security checks, and debugging scripts. This technology is used for rapid game development and game prototyping.
+
 
 ### 1.1.3 Position in Cocos2d family
 
