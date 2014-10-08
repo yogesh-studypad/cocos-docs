@@ -16,24 +16,29 @@ plugin.FacebookAgent.prototype.appRequest = function(info, callback){}
 |info|Object|Yes|The object to contain the details of the request.|
 |callback|Function|No|Callback function containing a result code and a JSON response.|
 
-####`info` content:
+###`info` content:
 
 It supports all the parameters listed in [Dialog Parameters Section](http://developers.facebook.com/docs/games/requests/#params) in the doc.
 
-##Callback function and response object
+###Callback function
 
-The callback function definition is showing below, if the app request sent successfully, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the `response` parameter.
+If the sender sends any requests, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON dictionary with two properties, _request_ (a _string_ containing the Request ID assigned by Facebook) and _to_ (an array of _string_, each element being the Facebook ID of one of the selected recipients). If the sender doesn't send any requests, `response` will instead be _null_. The example of `response` is as below:
 
 ```javascript
-var callback = function (code, response) {}
+{
+    "request": "420211088059698",
+    "to": [
+        "100002669403922",
+        "100000048490273"
+    ]
+}
 ```
 
-Meanwhile, the response object is only available when the app request sent successfully, here is an example:
+If there is some error, `code` is error code and `response` is a JSON containing error message as the example below,
 
 ```javascript
-// The response object 
 {
-    // TODO
+    //TODO
 }
 ```
 
@@ -49,7 +54,7 @@ facebook.appRequest(info, function (code, msg) {
     if(code == plugin.FacebookAgent.CODE_SUCCEED){
         //succeed
     } else {
-        cc.log("Request send failed, error #" + code + ": " + response);
+        cc.log("Sending request failed, error #" + code + ": " + response);
     }
 });
 ```
