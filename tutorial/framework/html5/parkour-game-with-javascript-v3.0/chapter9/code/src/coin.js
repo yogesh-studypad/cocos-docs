@@ -26,10 +26,10 @@ var Coin = cc.Class.extend({
             animFrames.push(frame);
         }
 
-        var animation = cc.Animation.create(animFrames, 0.2);
-        var action = cc.RepeatForever.create(cc.Animate.create(animation));
+        var animation = new cc.Animation(animFrames, 0.2);
+        var action = new cc.RepeatForever(new cc.Animate(animation));
 
-        this.sprite = cc.PhysicsSprite.create("#coin0.png");
+        this.sprite = new cc.PhysicsSprite("#coin0.png");
 
         // init physics
         var radius = 0.95 * this.sprite.getContentSize().width / 2;

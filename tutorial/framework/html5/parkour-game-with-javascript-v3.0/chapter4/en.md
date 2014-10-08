@@ -128,7 +128,7 @@ var BackgroundLayer = cc.Layer.extend({
 
         //create the background image and position it at the center of screen
         var centerPos = cc.p(winsize.width / 2, winsize.height / 2);
-        var spriteBG = cc.Sprite.create(res.PlayBG_png);
+        var spriteBG = new cc.Sprite(res.PlayBG_png);
         spriteBG.setPosition(centerPos);
         this.addChild(spriteBG);
     }
@@ -154,12 +154,12 @@ var AnimationLayer = cc.Layer.extend({
         this._super();
 
         //create the hero sprite
-        var spriteRunner = cc.Sprite.create(res.runner_png);
+        var spriteRunner = new cc.Sprite(res.runner_png);
         spriteRunner.attr({x: 80, y: 85});
 
         //create the move action
-        var actionTo = cc.MoveTo.create(2, cc.p(300, 85));
-        spriteRunner.runAction(cc.Sequence.create(actionTo));
+        var actionTo = new cc.MoveTo(2, cc.p(300, 85));
+        spriteRunner.runAction(new cc.Sequence(actionTo));
         this.addChild(spriteRunner);
     }
 });
@@ -187,18 +187,18 @@ var StatusLayer = cc.Layer.extend({
 
         var winsize = cc.director.getWinSize();
 
-        this.labelCoin = cc.LabelTTF.create("Coins:0", "Helvetica", 20);
+        this.labelCoin = new cc.LabelTTF("Coins:0", "Helvetica", 20);
         this.labelCoin.setColor(cc.color(0,0,0));//black color
         this.labelCoin.setPosition(cc.p(70, winsize.height - 20));
         this.addChild(this.labelCoin);
 
-        this.labelMeter = cc.LabelTTF.create("0M", "Helvetica", 20);
+        this.labelMeter = new cc.LabelTTF("0M", "Helvetica", 20);
         this.labelMeter.setPosition(cc.p(winsize.width - 70, winsize.height - 20));
         this.addChild(this.labelMeter);
     }
 });
 ```
-We can use **cc.LabelTTF.create** for creating a text label. The first param is the displayed texts, the second param is the Font Family and the third param is the Font size. We can also use **setColor** member function of LabelTTF to set the color of labels. The **cc.c3(0,0,0)** represent black color.
+We can use **new cc.LabelTTF** for creating a text label. The first param is the displayed texts, the second param is the Font Family and the third param is the Font size. We can also use **setColor** member function of LabelTTF to set the color of labels. The **cc.c3(0,0,0)** represent black color.
 
 
 ## Summary 
