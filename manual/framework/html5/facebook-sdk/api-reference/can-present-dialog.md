@@ -10,7 +10,7 @@ If it is capable, it returns _true_, otherwise it returns _false_.
 ##Parameters
 
 ```javascript
-plugin.FacebookAgent.prototype.dialog = function(info){}
+plugin.FacebookAgent.prototype.dialog = function(dialog){}
 ```
 
 |Name|Type|Required|Description|
