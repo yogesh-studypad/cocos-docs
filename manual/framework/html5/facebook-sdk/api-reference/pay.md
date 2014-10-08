@@ -40,7 +40,7 @@ On success, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JS
 }
 ```
 
-If the payment failed, `code` is error code and `response` is a JSON containing error message as the form below,
+If the payment failed, `code` is error code and `response` is a JSON containing error message as the example below,
 
 ```javascript
 {
