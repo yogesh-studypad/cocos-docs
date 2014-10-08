@@ -44,6 +44,7 @@ var info = {
     "message": "Cocos2d-JS is a great game engine",
     "title": "Cocos2d-JS"
 };
+var facebook = plugin.FacebookAgent.getInstance();
 facebook.appRequest(info, function (code, msg) {
     if(code == plugin.FacebookAgent.CODE_SUCCEED){
         //succeed
