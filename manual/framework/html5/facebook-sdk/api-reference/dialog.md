@@ -92,7 +92,7 @@ Please note that you can only share a structured Open Graph story with Share Dia
 var callback = function (code, response) {}
 ```
 
-If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the form below,
+If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the example below,
 ```javascript
 {
     // The id of the post which has been shared
@@ -100,7 +100,7 @@ If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `resp
 }
 ```
 
-If the sharing fails, `code` is error code and `response` is a JSON containing error message as the form below,
+If the sharing fails, `code` is error code and `response` is a JSON containing error message as the example below,
 
 ```javascript
 {
@@ -231,7 +231,7 @@ Please note that you can only share a structured Open Graph story with Message D
 var callback = function (code, response) {}
 ```
 
-If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the messaging fails, `code` is error code and `response` is a JSON containing error message as the form below,
+If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the messaging fails, `code` is error code and `response` is a JSON containing error message as the example below,
 
 ```javascript
 {
@@ -324,7 +324,7 @@ On Web, you should always use the Share Dialog and the Feed Dialog for web has a
 var callback = function (code, response) {}
 ```
 
-If sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `???` as the form below,
+If sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `???` as the example below,
 ```javascript
 {
     // The id of the post which has been shared
@@ -332,7 +332,7 @@ If sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response
 }
 ```
 
-If the sharing fails, `code` is error code and `response` is a JSON containing error message as the form below,
+If the sharing fails, `code` is error code and `response` is a JSON containing error message as the example below,
 
 ```javascript
 {
