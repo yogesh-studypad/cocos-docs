@@ -1,8 +1,8 @@
-#Cocos2d-html5 v3.0中的单例对象
+#Cocos2d-JS v3.0中的单例对象
 
 ##为何将单例模式移除
 
-在Cocos2d-html5 v3.0之前，所有API几乎都是从Cocos2d-x中移植过来的，这是Cocos2d生态圈统一性的重要一环。可惜的是，这种统一性也在很大程度上限制了Cocos2d-html5的发展，有一些在C++中非常有意义的涉及搬到Html5平台后却使得Cocos2d-html5变得臃肿。所以在3.0版中，我们决定将一些API改造成更适合javascript开发人员的API。这篇文档中将要展示的是单例类的改造。拿`cc.SpriteFrameCache`为例：
+在Cocos2d-JS v3.0之前，所有API几乎都是从Cocos2d-x中移植过来的，这是Cocos2d生态圈统一性的重要一环。可惜的是，这种统一性也在很大程度上限制了Cocos2d-html5的发展，有一些在C++中非常有意义的涉及搬到Html5平台后却使得Cocos2d-html5变得臃肿。所以在3.0版中，我们决定将一些API改造成更适合JavaScript开发人员的API。这篇文档中将要展示的是单例类的改造。拿`cc.SpriteFrameCache`为例：
 
 ```
 // 在2.2.2版中，如果我们想通过cc.SpriteFrameCache来创建帧图像，再通过帧图像来创建Sprite
@@ -20,7 +20,7 @@ cc.s_sharedSpriteFrameCache.addSpriteFrames(s_boxs_plist);
 var myCache = new cc.SpriteFrameCache();
 ```
 
-因此，我们决定Cocos2d-html5 v3.0的首要任务就是提供一套更精简更符合javascript代码风格的API，这也是重构单例类的好机会。
+因此，我们决定Cocos2d-JS v3.0的首要任务就是提供一套更精简更符合JavaScript代码风格的API，这也是重构单例类的好机会。
 
 ##重构列表
 
@@ -86,7 +86,7 @@ cc.PlistParser.getInstance()        --> cc.plistParser
 
 请留意所有单例对象都是以首字母小写来命名的，这是为了区分一个变量名代表的是类还是对象。
 
-另外，`cc.EGLView`是最早在Cocos2d-iPhone中被定义的，所以它的名字来源于iOS中的OpenGL ES视图的名字。但是在Cocos2d-html5中，它仅仅是游戏的视图，可以是webGL视图但同时也可能是Canvas视图，所以我们决定将它重命名为`cc.view`。
+另外，`cc.EGLView`是最早在Cocos2d-iPhone中被定义的，所以它的名字来源于iOS中的OpenGL ES视图的名字。但是在Cocos2d-JS中，它仅仅是游戏的视图，可以是WebGL或OpenGL视图但同时也可能是Canvas视图，所以我们决定将它重命名为`cc.view`。
 
 ##结果
 
@@ -98,4 +98,4 @@ var boxFrame = cc.spriteFrameCache.getSpriteFrame("box_normal_00.png");
 var sprite = cc.Sprite.createWithSpriteFrame(boxFrame);
 ```
 
-我们衷心希望这种新的API风格可以让javascript开发者们开发起来更加得心应手。
+我们衷心希望这种新的API风格可以让JavaScript开发者们开发起来更加得心应手。

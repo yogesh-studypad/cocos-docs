@@ -1,19 +1,19 @@
-New property API in Cocos2d-html5 v3.0
+New property API in Cocos2d-JS v3.0
 ======================================
 
 1. The new style
 ----------------
 
-Let's directly take an example to show you what will be available in Cocos2d-html5 v3.0:
+Let's directly take an example to show you what will be available in Cocos2d-JS v3.0:
 
 | Old API       				| New API                            |
-|:----------------------------:|:----------------------------------:|
+|:-----------------------------:|:----------------------------------:|
 | node.setPosition(x, y);		| node.x = x; node.y = y;            |
 | node.setRotation(r);			| node.rotation = r;                 |
 
 So as you can see in the table, functions invocation are replaced with properties modification. In version 3.0, not only `x`, `y` and `rotation`, almost all properties of your node can be accessed like this. The properties list can be found in the end of this documentation.
 
-Thanks to Javascript [getter and setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters), we can define getter function and setter function to a property. That's how we defined our old functions for getter/setter of new properties. For example, `node.x = x;` actually invoked `setPositionX` function with the new x value, so don't be afraid of the simplified APIs, it's equivalent to the old function calls.
+Thanks to JavaScript [getter and setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters), we can define getter function and setter function to a property. That's how we defined our old functions for getter/setter of new properties. For example, `node.x = x;` actually invoked `setPositionX` function with the new x value, so don't be afraid of the simplified APIs, it's equivalent to the old function calls.
 
 To define your own getter setter function for a property of an object, you can just use this line of code:
 
@@ -23,7 +23,7 @@ cc.defineGetterSetter(object, "propertyName", getterFunc, setterFunc);
 
 Then each time you do `var a = object.propertyName;`, this retrieve the value of propertyName via `getterFunc`, and each time you want to modify the value: `object.propertyName = newvalue;` this pass the new value to `setterFunc` and try to modify its value.
 
-As for the name of the properties, we proposed names close to CSS style which is very familiar to javascript developers.
+As for the name of the properties, we proposed names close to CSS style which is very familiar to JavaScript developers.
 
 
 2. `attr` function of cc.Node
@@ -51,9 +51,9 @@ It support not only all properties available in the list of the end, but also yo
 
 Why we want to do such a enormous change to our stable API? I think the obvious answer is already in the previous examples: The new API is far easier to code than the old API.
 
-But what we really want to change, is not just the simplicity. Cocos2d-html5 has been complained for a long time by web developers about how difficult it is to learn and use. After compared with other html5 game engines, we found our engine is not designed for javascript developers. And indeed, the API of Cocos2d-html5 has always been the same with Cocos2d-x which serves C++ developers, and the original Cocos2d-iPhone also leaves its objective-C style API everywhere in the engine. Obviously, those APIs, which have been ported to Cocos2d-html5, are sometimes very strange for javascript developers.
+But what we really want to change, is not just the simplicity. Cocos2d-JS has been complained for a long time by web developers about how difficult it is to learn and use. After compared with other html5 game engines, we found our engine is not designed for JavaScript developers. And indeed, the API of Cocos2d-JS has always been the same with Cocos2d-x which serves C++ developers, and the original Cocos2d-iPhone also leaves its objective-C style API everywhere in the engine. Obviously, those APIs, which have been ported to Cocos2d-JS, are sometimes very strange for JavaScript developers.
 
-So the main task of version 3.0 is to propose a fully refactored javascript style API to our user, and we are willing to take such a huge risk to change everything and 'reboot' Cocos2d-html5.
+So the main task of version 3.0 is to propose a fully refactored JavaScript style API to our user, and we are willing to take such a huge risk to change everything and 'reboot' Cocos2d-JS.
 
 Back to properties, cc.Node and all its descendant classes are refactored with properties instead of `getXXX()` and `setXXX(value)` functions. There are also some property style API provided in a few other classes. All properties and related classes will be listed at the end of this document.
 
