@@ -12,7 +12,7 @@ plugin.FacebookAgent.prototype.logEvent = function(eventName, valueToSum, parame
 |----|----|--------|-----------|
 |eventName|Enum in `plugin.FacebookAgent.AppEvent`|Yes|The name of the event to log|
 |valueToSum|float|No|An number representing some value to be summed when reported|
-|parameters|Dictionary<string, object>|No|Any parameters needed to describe the event|
+|parameters|Dictionary|No|Any parameters needed to describe the event|
 
 Predefined _eventName_ in `plugin.FacebookAgent.AppEvent`:
 
