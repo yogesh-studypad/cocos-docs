@@ -42,7 +42,7 @@ For example, this sprite has an anchorPoint of cc.p(0, 0) and a position of cc.p
 
 ```
  // create sprite 
-    var sprite = cc.Sprite.create ( "bottomleft.png" ) ; 
+    var sprite = new cc.Sprite ( "bottomleft.png" ) ; 
     sprite.attr({
             x: 0,
             y: 0,
@@ -60,7 +60,7 @@ Example of running the cc.MoveBy action:
 
 ```
 // Move a sprite 50 pixels to the right, and 10 pixels to the top over 2 seconds.
-sprite.runAction(cc.MoveBy.create(2, cc.p(50, 10)));
+sprite.runAction(new cc.MoveBy(2, cc.p(50, 10)));
 ```
 
 ### Animation
@@ -70,17 +70,17 @@ More details about Animation are in [here](http://cocos2d-x.org/wiki/Animations)
 Example of playing animation:
 
 ```
- var animation = cc.Animation.create ( ) ;
+ var animation = new cc.Animation ( ) ;
  
  for ( var i = 1 ; i < 15 ; i ++ ) {         
  	var frameName = "res/Images/grossini_dance_" + ( ( i < 10 ) ? ( "0" + i ) : i ) + ".png" ; 
-	animation. addSpriteFrameWithFile ( frameName ) ;
+	animation.addSpriteFrameWithFile ( frameName ) ;
  }
  
  animation.setDelayPerUnit ( 2.8 / 14 ) ; 
  animation.setRestoreOriginalFrame ( true ) ; 
- var action = cc.Animate.create ( animation ) ; 
- sprite. runAction ( cc.Sequence.create( action, action. reverse ( ) ) ) ;
+ var action = new cc.Animate ( animation ) ; 
+ sprite.runAction ( new cc.Sequence( action, action.reverse ( ) ) ) ;
  
 ```
 ### Scheduler and Timer Callback
@@ -198,7 +198,7 @@ var MenuLayer = cc.Layer.extend({
         var centerpos = cc.p(winsize.width / 2, winsize.height / 2);
 
         //4. create a background image and set it's position at the center of the screen
-        var spritebg = cc.Sprite.create(res.helloBG_png);
+        var spritebg = new cc.Sprite(res.helloBG_png);
         spritebg.setPosition(centerpos);
         this.addChild(spritebg);
 
@@ -206,11 +206,11 @@ var MenuLayer = cc.Layer.extend({
         cc.MenuItemFont.setFontSize(60);
 
         //6.create a menu and assign onPlay event callback to it
-        var menuItemPlay= cc.MenuItemSprite.create(
-            cc.Sprite.create(res.start_n_png), // normal state image
-            cc.Sprite.create(res.start_s_png), //select state image
+        var menuItemPlay = new cc.MenuItemSprite(
+            new cc.Sprite(res.start_n_png), // normal state image
+            new cc.Sprite(res.start_s_png), //select state image
             this.onPlay, this);
-        var menu = cc.Menu.create(menuItemPlay);  //7. create the menu
+        var menu = new cc.Menu(menuItemPlay);  //7. create the menu
         menu.setPosition(centerpos);
         this.addChild(menu);
     },

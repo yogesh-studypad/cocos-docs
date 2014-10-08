@@ -67,7 +67,7 @@
     
 然后，我们用下面的内容替换玩家的创建方法：
 
-    this.sprite = cc.Sprite.create("#runner0.png");
+    this.sprite = new cc.Sprite("#runner0.png");
 
 我们可以用下面的代码很轻松的创建一个动画：
 
@@ -82,10 +82,10 @@
     animFrames.push(frame);
     }
 	//3.用精灵帧数组和一定的时间间隔创建一个动画
-    var animation = cc.Animation.create(animFrames, 0.1);
+    var animation = new cc.Animation(animFrames, 0.1);
     
 	//4.用一个重复持续动作封装这个精灵动作
-    this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
+    this.runningAction = new cc.RepeatForever(new cc.Animate(animation));
 
 这个动画是用精灵表中一系列小的图片（从runner0.png到runner7.png）构造出来的。
 
@@ -119,7 +119,7 @@
     
     // create sprite sheet
     cc.spriteFrameCache.addSpriteFrames(res.runner_plist);
-    this.spriteSheet = cc.SpriteBatchNode.create(res.runner_png);
+    this.spriteSheet = new cc.SpriteBatchNode(res.runner_png);
     this.addChild(this.spriteSheet);
     
     
@@ -131,9 +131,9 @@
     animFrames.push(frame);
     }
     
-    var animation = cc.Animation.create(animFrames, 0.1);
-    this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
-    this.sprite = cc.Sprite.create("#runner0.png");
+    var animation = new cc.Animation(animFrames, 0.1);
+    this.runningAction = new cc.RepeatForever(new cc.Animate(animation));
+    this.sprite = new cc.Sprite("#runner0.png");
     this.sprite.attr({x:80, y:85});
     this.sprite.runAction(this.runningAction);
     this.spriteSheet.addChild(this.sprite);
