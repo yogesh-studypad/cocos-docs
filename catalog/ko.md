@@ -99,7 +99,7 @@
             - [Simplified action APIs](http://cocos2d-x.org/docs/manual/framework/html5/v3/cc-actions/en)
             
         - Cocos2d-JS의 페이스북 SDK
-            - [페이스북 SDK API 레퍼런스](../manual/framework/html5/facebook-sdk/api-reference/en.md)
+            - [페이스북 SDK API 레퍼런스](../manual/framework/html5/facebook-sdk/api-reference/ko.md)
             - [안드로이드에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/en.md)
             - [iOS에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/en.md)
             - [웹에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/en.md)
