@@ -13,15 +13,15 @@ plugin.FacebookAgent.prototype.login = function(permissions, callback){}
 |permissions|Array of strings|No|A list of Facebook permissions to request from the user.|
 |callback|Function|No|Callback function containing a result code and a JSON response.|
 
-##Callback function and response object
-
-The callback function definition is showing below, if the app request sent successfully, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED` and `response` will contain access token and permissions granted; otherwise, it will indicate the error code with an error message as the `response` parameter.
+###Callback function
 
 ```javascript
 var callback = function (code, response) {}
 ```
 
-When login succeeded, here is the example of the `response` object:
+If login succeeds, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED` and `response` will contain access token and permissions granted; otherwise, it will indicate the error code with an error message as the `response` parameter.
+
+When login succeeds, here is the example of the `response` object:
 
 ```javascript
 // The response object 
