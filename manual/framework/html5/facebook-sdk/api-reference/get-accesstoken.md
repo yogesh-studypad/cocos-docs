@@ -1,4 +1,4 @@
-#.getAccessToken(callback)
+#.getAccessToken()
 
 Returns the [access token](http://developers.facebook.com/docs/facebook-login/access-tokens/) granted to your app when the user most recently authorized it; otherwise, an empty string.
 
