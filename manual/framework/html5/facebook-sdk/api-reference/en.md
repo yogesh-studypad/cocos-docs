@@ -35,7 +35,6 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
 |[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
 |[getAccessToken](./get-accesstoken.md)|Get the access token granted to your application by current user.|
-|[getPermissionList](./get-permission-list.md)|Get the permissions granted to your application by current user.|
 
 ###Auxiliary Methods
 
@@ -64,7 +63,6 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |isLoggedIn|√|√|√|
 |getUserId|√|√|√|
 |getAccessToken|√|√|√|
-|getPermissionList|√|√|√|
 |pay|×|×|√|
 |activateApp|√|√|√|
 |logEvent|√|√|√|
