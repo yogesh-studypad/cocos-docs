@@ -19,7 +19,7 @@ plugin.FacebookAgent.prototype.login = function(permissions, callback){}
 var callback = function (code, response) {}
 ```
 
-If login succeeds, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED` and `response` will contain access token and permissions granted; otherwise, it will indicate the error code with an error message as the `response` parameter.
+If login succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` contains access token and permissions granted; otherwise, `code` is the error code and `response` is a JSON containing error message.
 
 When login succeeds, here is the example of the `response` object:
 
