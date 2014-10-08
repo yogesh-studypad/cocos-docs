@@ -1,8 +1,8 @@
-#Cocos2d-html5 2.2.2的屏幕适配方案
+#Cocos2d-JS的屏幕适配方案
 
 ##关于屏幕适配
 
-作为WEB开发者，相信大家都经历过跨平台多分辨率适配的痛。对于如何将网页的内容适配到不同尺寸的浏览器窗口，Responsive Design是目前非常热门的解决方案。可惜它不适用于Canvas中的游戏内容，所以Cocos2d-html5为游戏开发者提供了Resolution Policy解决方案。现在，在最新的2.2.2版本中，我们对它进行了重构，将它从Cocos2d-x的移植，变成了现在这样更适合网页游戏开发者的独特Resolution Policy解决方案。
+作为WEB开发者，相信大家都经历过跨平台多分辨率适配的痛。对于如何将网页的内容适配到不同尺寸的浏览器窗口，Responsive Design是目前非常热门的解决方案。可惜它不适用于Canvas中的游戏内容，所以Cocos2d-JS为游戏开发者提供了Resolution Policy解决方案。在3.0中，我们对它进行了重构，将它从Cocos2d-x的移植，变成了现在这样更适合网页游戏开发者的独特Resolution Policy解决方案。
 
 ![Bad](./res/bad.jpg)
 这样的结果肯定不是我们想看到的...
@@ -28,7 +28,7 @@
 >
 	cc.EGLView.getInstance().setResolutionPolicy(cc.RESOLUTION_POLICY.NO_BORDER);
 
-2.2.2版中的重构主要是基于WEB端游戏与原生游戏的区别所设计。原生游戏中游戏总是使用全部屏幕空间，但是在WEB端你的网页中也许除了游戏还有别的视觉或文字元素，或者也许你需要给你的游戏设计一个漂亮的边框。所以Cocos2d-html5引擎的适配方案会默认适配游戏Canvas元素的父节点，如果你希望游戏场景适配浏览器屏幕，那么只需要将Canvas直接放置到body下就可以了：
+2.2.2版中的重构主要是基于WEB端游戏与原生游戏的区别所设计。原生游戏中游戏总是使用全部屏幕空间，但是在WEB端你的网页中也许除了游戏还有别的视觉或文字元素，或者也许你需要给你的游戏设计一个漂亮的边框。所以Cocos2d-JS引擎的适配方案会默认适配游戏Canvas元素的父节点，如果你希望游戏场景适配浏览器屏幕，那么只需要将Canvas直接放置到body下就可以了：
 
 >
 	<body>
@@ -54,9 +54,9 @@
 
 [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode)是浏览器允许WEB页面在获得用户全屏幕的一个新的制定中的API。
 
-Cocos2d-html5在移动端浏览器中会尝试自动进入全屏幕来给用户更好的游戏体验（需要指出并不是所有浏览器都支持这个API）。
+Cocos2d-JS在移动端浏览器中会尝试自动进入全屏幕来给用户更好的游戏体验（需要指出并不是所有浏览器都支持这个API）。
 
-另一方面，桌面端几乎所有现代浏览器都支持Fullscreen API，如果你希望使用这个API，Cocos2d-html5也简化了它的使用方式：
+另一方面，桌面端几乎所有现代浏览器都支持Fullscreen API，如果你希望使用这个API，Cocos2d-JS也简化了它的使用方式：
 
 * 尝试进入全屏模式（需要用户交互）: `cc.Screen.getInstance().requestFullScreen();`
 * 检测是否处于全屏模式: `cc.Screen.getInstance().fullScreen();`
@@ -84,7 +84,7 @@ Cocos2d-html5在移动端浏览器中会尝试自动进入全屏幕来给用户�
 
 ####2. 游戏容器 Container
 
-在Cocos2d-html5的初始化进程中，引擎会自动将你的Canvas元素放置到一个DIV容器中，而这个容器会被加入到Canvas的原始父节点（游戏外框）中。这个游戏容器是实现屏幕适配方案的重要辅助元素，你可以通过`cc.container`来访问它。
+在Cocos2d-JS的初始化进程中，引擎会自动将你的Canvas元素放置到一个DIV容器中，而这个容器会被加入到Canvas的原始父节点（游戏外框）中。这个游戏容器是实现屏幕适配方案的重要辅助元素，你可以通过`cc.container`来访问它。
 
 ####3. 游戏世界 Content
 
@@ -105,7 +105,7 @@ Cocos2d-html5在移动端浏览器中会尝试自动进入全屏幕来给用户�
 
 ##系统预设适配模式
 
-在Cocos2d-html5 2.2.2中预设了5种适配模式，继承自2.2.1版本并使用新的架构重写，下面将图解每种适配模式的行为。图中红色方框指示的是游戏世界的边界，而绿色方框指示的是Canvas元素的边界。
+在Cocos2d-JS中预设了5种适配模式，继承自旧版本并使用新的架构重写，下面将图解每种适配模式的行为。图中红色方框指示的是游戏世界的边界，而绿色方框指示的是Canvas元素的边界。
 
 所有适配模式都是由一个容器适配策略搭配一个内容适配策略所组成的，括号中显示的是每个模式的构成方式。
 

@@ -1,4 +1,4 @@
-# Cocos2d-html5 v3.0 beta 中新的Action API #
+# Cocos2d-JS v3.0的新Action API #
 
 ## 新增action中的方法 ##
 
