@@ -45,7 +45,7 @@ Cocos2d坐标系的特点是：
 
 ### 忽略锚点
 
-`cc.Node`还拥有`ignoreAnchor`属性，默认值为`false`，即使用锚点来定位。若改变其取值为`true`，则在定位和仿射变换时忽略锚点，始终认为锚点(0,0)。
+`cc.Node`还拥有`ignoreAnchor`属性，默认值为`false`，即使用锚点来定位。若改变其取值为`true`，则在定位和仿射变换时忽略锚点，始终认为锚点为(0,0)。
 
 
 ## 4.3.3 Z值
@@ -92,35 +92,35 @@ Cocos2d坐标系的特点是：
 
 1. `convertToNodeSpace`：将世界坐标转换为本地坐标系中的坐标
 
-比如在判断触点时，由于`cc.eventManager`触点事件回调中的触点都是世界坐标，此时转换为本地坐标就会更容易判断触点是否位于节点内部。
+    比如在判断触点时，由于`cc.eventManager`触点事件回调中的触点都是世界坐标，此时转换为本地坐标就会更容易判断触点是否位于节点内部。
 
-举个例子，在下图中，node1和node2都是场景根节点的子结点，node1的位置是(20,40)，锚点是(0,0)，node2的位置是(-5,-20)，锚点是(1,1)。
+    举个例子，在下图中，node1和node2都是场景根节点的子结点，node1的位置是(20,40)，锚点是(0,0)，node2的位置是(-5,-20)，锚点是(1,1)。
 
-![](convertToNodeSpace.jpg)
+    ![](convertToNodeSpace.jpg)
 
-如果想要获得node2在node1本地坐标系中的位置，我们使用下面代码：
+    如果想要获得node2在node1本地坐标系中的位置，我们使用下面代码：
 
-```
-var point = node1.convertToNodeSpace(node2.getPosition());
-```
+    ```
+    var point = node1.convertToNodeSpace(node2.getPosition());
+    ```
 
-就可以将node2的世界坐标转换为node1本地坐标系中的坐标，其结果是point等于(-25,-60)。
+    就可以将node2的世界坐标转换为node1本地坐标系中的坐标，其结果是point等于(-25,-60)。
 
 2. `convertToWorldSpace`：将本地坐标转换为世界坐标系中的坐标
 
-在做碰撞检测时，时常会遇到不同图层的节点之间需要做碰撞检测，那么节点之间的坐标比较就一定要在同一个坐标系中做比较，此时将不同图层的节点的本地坐标系位置转换为世界坐标就会非常利于比较。
+    在做碰撞检测时，时常会遇到不同图层的节点之间需要做碰撞检测，那么节点之间的坐标比较就一定要在同一个坐标系中做比较，此时将不同图层的节点的本地坐标系位置转换为世界坐标就会非常利于比较。
 
-在下图的例子中（请忽略node2），node1是根节点的子结点，它的位置是(20,40)，锚点是(0,0)。node2\_是node1的子结点，node2\_的位置是(-5,-20)，锚点是(1,1)。
+    在下图的例子中（请忽略node2），node1是根节点的子结点，它的位置是(20,40)，锚点是(0,0)。node2\_是node1的子结点，node2\_的位置是(-5,-20)，锚点是(1,1)。
 
-![](convertToWorldSpace.jpg)
+    ![](convertToWorldSpace.jpg)
 
-想要获得node1的子结点node2_在世界坐标系中的坐标，我们可以使用下面的代码：
+    想要获得node1的子结点node2_在世界坐标系中的坐标，我们可以使用下面的代码：
 
-```
-var point = node1.convertToWorldSpace(node2_.getPosition());
-```
+    ```
+    var point = node1.convertToWorldSpace(node2_.getPosition());
+    ```
 
-就可以将node2\_在node1本地坐标系中的坐标转换为世界坐标，其结果是point等于(15,20)。
+    就可以将node2\_在node1本地坐标系中的坐标转换为世界坐标，其结果是point等于(15,20)。
 
 3. `convertToNodeSpaceAR`：将世界坐标转换为本地坐标系中相对于锚点的坐标
 
