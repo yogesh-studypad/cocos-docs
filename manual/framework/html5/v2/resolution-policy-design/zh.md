@@ -46,19 +46,19 @@ cc.view.setResolutionPolicy(cc.RESOLUTION_POLICY.NO_BORDER);
 
 ####3. 监听浏览器窗口大小变化事件
 
-新的适配方案允许在浏览器大小变化的时候自动重新尝试适配。比如说，当用户拖拽来改变浏览器大小，或者更有用的情况，当他们转动自己手机方向的时候。游戏中任意时刻都可以开启这种行为，只需要调用cc.EGLView的`resizeWithBrowserSize`函数：
+新的适配方案允许在浏览器大小变化的时候自动重新尝试适配。比如说，当用户拖拽来改变浏览器大小，或者更有用的情况，当他们转动自己手机方向的时候。游戏中任意时刻都可以开启这种行为，只需要调用`cc.view`的`resizeWithBrowserSize`函数：
 
 ```
-    cc.view.resizeWithBrowserSize(true);
+cc.view.resizeWithBrowserSize(true);
 ```
 
-为了更灵活得应对变化，我们为cc.view提供了一个新的函数，你可以通过`setResizeCallback`函数注册一个回调函数来监听浏览器窗口大小变化事件：
+为了更灵活得应对变化，我们为`cc.view`提供了一个新的函数，你可以通过`setResizeCallback`函数注册一个回调函数来监听浏览器窗口大小变化事件：
 
 ```
-    cc.view.setResizeCallback(function() {
-        // 做任何你所需要的游戏内容层面的适配操作
-        // 比如说，你可以针对用户的移动设备方向来决定所要应用的适配模式
-    });
+cc.view.setResizeCallback(function() {
+    // 做任何你所需要的游戏内容层面的适配操作
+    // 比如说，你可以针对用户的移动设备方向来决定所要应用的适配模式
+});
 ```
 
 ####4. Fullscreen API
@@ -164,7 +164,7 @@ FIXED\_WIDTH模式会横向放大游戏世界以适应外框的宽度，纵向�
 
 ```
     var policy = new cc.ResolutionPolicy(cc.ContainerStrategy.PROPORTION\_TO\_FRAME, cc.ContentStrategy.EXACT\_FIT);
-    cc.EGLView.getInstance().setDesignResolutionSize(320, 480, policy);
+    cc.view.setDesignResolutionSize(320, 480, policy);
 ```
 
 上面这个示例的适配模式将与SHOW\_ALL模式的表现完全相同。
@@ -220,13 +220,13 @@ var policy = new cc.ResolutionPolicy(new MyContainerStg(), new MyContentStg());
 cc.view.setDesignResolutionSize(320, 480, policy);
 ```
 
-如果你想了解更多关于屏幕适配策略的信息，你可以查看Cocos2d-JS的Web引擎中CCEGLView.js的源码：`frameworks/cocos2d-html5/cocos2d/core/platform/CCEGLView.js`
+如果你想了解更多关于屏幕适配策略的信息，你可以查看Cocos2d-JS的Web引擎中CCEGLView.js的源码：`frameworks/cocos2d-html5/cocos2d/core/platform/CCEGLView.js`。
 
 
 ## Web引擎与原生引擎的差异
 
-在原生引擎中，由于应用总是占据整个游戏窗口或在移动端占用全屏幕空间，我们沿用了Cocos2d-x中的屏幕适配方案，`cc.view`中的API一致，但是不提供Web引擎中的高级适配功能，下面是不支持的特性列表：
+在原生引擎中，由于应用总是占据整个游戏窗口或在移动端占用全屏幕空间，我们沿用了Cocos2d-x中的屏幕适配方案，`cc.view`中的API一致，但是不提供Web引擎中的高级适配功能，下面是区别列表：
 
-- 只提供默认的5中适配策略。
+- 原生引擎只提供默认的5中适配策略。
 - 容器适配策略和内容适配策略在原生引擎中都不存在，不能够自由组合。
 - 不能够通过继承实现用户容器适配策略和内容适配策略。

@@ -1,8 +1,8 @@
-# 4.3 Cocos2d-JS的屏幕适配方案
+# 4.4 Cocos2d-JS的屏幕适配方案
 
 Cocos2d-JS中的屏幕适配模式在Web引擎中和原生引擎中的差异比较大，但是API还是统一一致的。本章主要内容以Web引擎中的屏幕适配策略为核心来讨论，原生引擎中行为的不一致性将在本章最后详细介绍。
 
-##4.3.1 关于Web引擎屏幕适配
+##4.4.1 关于Web引擎屏幕适配
 
 作为游戏开发者，相信大家都经历过跨平台多分辨率适配的痛。对于如何将网页的内容适配到不同尺寸的浏览器窗口，基于CSS3的Responsive Design是目前非常热门的解决方案。可惜它不适用于Canvas中的游戏内容，也不适用于解决原生平台，所以Cocos2d引擎为游戏开发者提供了屏幕适配策略（Resolution Policy）解决方案。在Cocos2d-JS中，我们对它进行了重构，将它从Cocos2d-x的移植，变成了现在这样更适合网页游戏开发者的独特屏幕适配策略解决方案。
 
@@ -14,7 +14,7 @@ Cocos2d-JS中的屏幕适配模式在Web引擎中和原生引擎中的差异比�
 
 现在就来看看使用屏幕适配策略有多简单。
 
-##4.3.2 使用方式
+##4.4.2 使用方式
 
 ####1. 设置屏幕适配策略（Resolution Policy）
 
@@ -46,19 +46,19 @@ cc.view.setResolutionPolicy(cc.RESOLUTION_POLICY.NO_BORDER);
 
 ####3. 监听浏览器窗口大小变化事件
 
-新的适配方案允许在浏览器大小变化的时候自动重新尝试适配。比如说，当用户拖拽来改变浏览器大小，或者更有用的情况，当他们转动自己手机方向的时候。游戏中任意时刻都可以开启这种行为，只需要调用cc.EGLView的`resizeWithBrowserSize`函数：
+新的适配方案允许在浏览器大小变化的时候自动重新尝试适配。比如说，当用户拖拽来改变浏览器大小，或者更有用的情况，当他们转动自己手机方向的时候。游戏中任意时刻都可以开启这种行为，只需要调用`cc.view`的`resizeWithBrowserSize`函数：
 
 ```
-    cc.view.resizeWithBrowserSize(true);
+cc.view.resizeWithBrowserSize(true);
 ```
 
-为了更灵活得应对变化，我们为cc.view提供了一个新的函数，你可以通过`setResizeCallback`函数注册一个回调函数来监听浏览器窗口大小变化事件：
+为了更灵活得应对变化，我们为`cc.view`提供了一个新的函数，你可以通过`setResizeCallback`函数注册一个回调函数来监听浏览器窗口大小变化事件：
 
 ```
-    cc.view.setResizeCallback(function() {
-        // 做任何你所需要的游戏内容层面的适配操作
-        // 比如说，你可以针对用户的移动设备方向来决定所要应用的适配模式
-    });
+cc.view.setResizeCallback(function() {
+    // 做任何你所需要的游戏内容层面的适配操作
+    // 比如说，你可以针对用户的移动设备方向来决定所要应用的适配模式
+});
 ```
 
 ####4. Fullscreen API
@@ -74,7 +74,7 @@ Cocos2d-JS在移动端浏览器中会尝试自动进入全屏幕来给用户更�
 * 退出全屏模式: `cc.screen.exitFullScreen();`
 
 
-##4.3.3 重要概念
+##4.4.3 重要概念
 
 ####1. 游戏外框 Frame
 
@@ -102,7 +102,7 @@ Cocos2d-JS在移动端浏览器中会尝试自动进入全屏幕来给用户更�
 内容适配策略负责将游戏世界放缩以适应游戏容器，同时也会计算并设置视窗。
 
 
-##4.3.4 系统预设适配模式
+##4.4.4 系统预设适配模式
 
 在Cocos2d-JS中预设了5种适配模式，下面将图解每种适配模式的行为。图中红色方框指示的是游戏世界的边界，而绿色方框指示的是Canvas元素的边界。
 
@@ -142,7 +142,7 @@ FIXED\_WIDTH模式会横向放大游戏世界以适应外框的宽度，纵向�
 
 在这个模式下，与NO\_BORDER模式的区别是此时游戏世界坐标系和大小等同于Canvas坐标系。
 
-##开发者自定义适配模式
+##4.4.5 开发者自定义适配模式
 
 ####1. 用系统预设策略来构建适配模式
 
@@ -164,7 +164,7 @@ FIXED\_WIDTH模式会横向放大游戏世界以适应外框的宽度，纵向�
 
 ```
     var policy = new cc.ResolutionPolicy(cc.ContainerStrategy.PROPORTION\_TO\_FRAME, cc.ContentStrategy.EXACT\_FIT);
-    cc.EGLView.getInstance().setDesignResolutionSize(320, 480, policy);
+    cc.view.setDesignResolutionSize(320, 480, policy);
 ```
 
 上面这个示例的适配模式将与SHOW\_ALL模式的表现完全相同。
@@ -220,13 +220,13 @@ var policy = new cc.ResolutionPolicy(new MyContainerStg(), new MyContentStg());
 cc.view.setDesignResolutionSize(320, 480, policy);
 ```
 
-如果你想了解更多关于屏幕适配策略的信息，你可以查看Cocos2d-JS的Web引擎中CCEGLView.js的源码：`frameworks/cocos2d-html5/cocos2d/core/platform/CCEGLView.js`
+如果你想了解更多关于屏幕适配策略的信息，你可以查看Cocos2d-JS的Web引擎中CCEGLView.js的源码：`frameworks/cocos2d-html5/cocos2d/core/platform/CCEGLView.js`。
 
 
-##4.3.5 Web引擎与原生引擎的差异
+##4.4.6 Web引擎与原生引擎的差异
 
-在原生引擎中，由于应用总是占据整个游戏窗口或在移动端占用全屏幕空间，我们沿用了Cocos2d-x中的屏幕适配方案，`cc.view`中的API一致，但是不提供Web引擎中的高级适配功能，下面是不支持的特性列表：
+在原生引擎中，由于应用总是占据整个游戏窗口或在移动端占用全屏幕空间，我们沿用了Cocos2d-x中的屏幕适配方案，`cc.view`中的API一致，但是不提供Web引擎中的高级适配功能，下面是区别列表：
 
-- 只提供默认的5中适配策略。
+- 原生引擎只提供默认的5中适配策略。
 - 容器适配策略和内容适配策略在原生引擎中都不存在，不能够自由组合。
 - 不能够通过继承实现用户容器适配策略和内容适配策略。
