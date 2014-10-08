@@ -15,15 +15,13 @@ plugin.FacebookAgent.prototype.request = function(path, method, params, callback
 |params|Object|No|The key/value pairs to be passed to the endpoint as arguments. For details of arguments for each endpoint, please refer to [Graph API Reference](https://developers.facebook.com/docs/graph-api/reference/)|
 |callback|Function|No|Callback function containing a result code and a JSON response.|
 
-##Callback function and response object
-
-The callback function definition is showing below, if the app request sent successfully, the result code will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the response parameter.
+##Callback function
 
 ```javascript
 var callback = function (code, response) {}
 ```
 
-Meanwhile, the response object is only available when a response is returned, here is an example:
+If the API call is successful, `code` is `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, `code` is error code and `response` is a JSON containing error message as the example below,
 
 ```javascript
 // The response object 
