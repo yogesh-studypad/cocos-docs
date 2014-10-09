@@ -62,7 +62,7 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 
 2.`share_photo`
 
-Please note that you can only share a photo with Share Dialog on iOS and Android. 
+Please note that you can only share one photo with Share Dialog on iOS and Android. 
 
 |Name|Type|Description|
 |----|----|-----------|
@@ -203,7 +203,7 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 
 2.`message_photo`
 
-Please note that you can only share photos with Message Dialog on iOS and Android. 
+Please note that you can only message one photo with Message Dialog on iOS and Android. 
 
 |Name|Type|Description|
 |----|----|-----------|
