@@ -12,12 +12,17 @@ Facebook SDK Beta for Cocos2d-JS在iOS平台上使用Facebook iOS SDK作为其�
 
 打开我们创建好的iOS工程（我们假设我们新建的工程叫做myProject，下同），我们可以在`myProject/frameworks/runtime-src/proj.ios_mac/`路径下找到我们新建的iOS工程。
 
-1. 添加Facebook iOS SDK：我们需要将`myProject/frameworks/js-bindings/cocos2d-x/plugin/plugins/proj.ios/sdk/`路径下的FacebookSDK.framework加入到`Link Binary With Libraries`中：点击工程，`target`->`myProject IOS`->`Build Phases`->`Link Binary With Libraries`。点击`+`将FacebookSDK.framework加入其中。
+1. 添加Facebook iOS SDK：我们需要将`myProject/frameworks/js-bindings/cocos2d-x/plugin/plugins/proj.ios/sdk/`路径下的FacebookSDK.framework加入到`Link Binary With Libraries`中：点击工程，`target`->`myProject IOS`->`Build Phases`->`Link Binary With Libraries`。点击`+`将弹出添加子窗口，点击子窗口中的`Add Other...`按钮，找到FacebookSDK.framework加入其中。
 
-2. 按照Facebook官方文档的要求，在Xcode工程下ios的Info.plist文件中添加你的Facebook应用的`FacebookAppID` `FacebookDisplayName` `URL types`，具体格式参考图片。<br/><br/>
-![](images/info.png)
+![](images/add_facebook_framework.jpg)
 
-3. 在Info.plist中添加`PluginShare`->`ShareFacebook`与`PluginUser`->`UserFacebook`两个条目，效果参考上图。
+2. 按照Facebook官方文档的要求，在Xcode工程下ios的Info.plist文件中添加你的Facebook应用的`FacebookAppID` `FacebookDisplayName` `URL types`，具体格式参考图片。
+
+![](images/modify_info_plist.png)
+
+3. 打开`myProject`工程中的`myProject iOS`目标，打开`Build Settings`页面，然后搜索`Other Linker Flags`，并在其中添加`-ObjC`链接标志。
+
+![](images/linker_flag.jpg)
 
 4. 找到`ios/AppController.mm`，并在当中加入Facebook iOS SDK需要的代码：
 
@@ -27,7 +32,7 @@ Facebook SDK Beta for Cocos2d-JS在iOS平台上使用Facebook iOS SDK作为其�
 	#import <FacebookSDK/FacebookSDK.h>
 	```
 
-- 在`AppController.mm`添加如下方法
+- 在`AppController.mm`的`@implementation`中添加如下方法
 
 	```
 	- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
@@ -61,6 +66,8 @@ Facebook SDK Beta for Cocos2d-JS在iOS平台上使用Facebook iOS SDK作为其�
 
 1. 添加jsb_pluginx.js (`myProject/frameworks/js-bindings/cocos2d-x/plugin/jsbindings/script`目录下) 到`myProject`工程中，并确保它在`Build Phases`的`Copy Bundle Resources`列表中.
 
+![](images/jsb_pluginx_js.jpg)
+
 2. 找到Classes文件夹，并在`AppDelegate.cpp`文件中加入与Plugin-x相关的头文件，在此我们需要加入两个头文件，`jsb_cocos2dx_pluginx_auto.hpp`和`jsb_pluginx_extension_registration.h` 代码如下所示：
 
     ```
@@ -70,14 +77,32 @@ Facebook SDK Beta for Cocos2d-JS在iOS平台上使用Facebook iOS SDK作为其�
 	#endif
     ```
 
-3. 同样的，在`AppDelegate.cpp`的`AppDelegate::applicationDidFinishLaunching`函数中添加绑定函数的注册，如下所示
+3. 同样的，在`AppDelegate.cpp`的`AppDelegate::applicationDidFinishLaunching`函数中添加绑定函数的注册，如下所示（请注意代码添加的位置）：
 
     ```
-	#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-		sc->addRegisterCallback(register_all_pluginx_protocols);
-		sc->addRegisterCallback(register_pluginx_js_extensions);
-	#endif
+    bool AppDelegate::applicationDidFinishLaunching()
+	{
+	    ...
+
+	    ScriptingCore* sc = ScriptingCore::getInstance();
+
+	    ...
+
+	    // Add these lines before sc->start()
+		#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+			sc->addRegisterCallback(register_all_pluginx_protocols);
+			sc->addRegisterCallback(register_pluginx_js_extensions);
+		#endif
+
+		sc->start();    
+	    
+	    ...
+
+	    return true;
+	}
     ```
+
+![](images/jsb_registration.jpg)
 
 自此，我们的Plugin-x工程引入就做完了，如果你想了解更多Plugin-x的配置，请参考[Plugin-x架构](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/plugin-x-architecture/zh)和[如何使用Plugin-x iOS篇](link)。
 
