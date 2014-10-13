@@ -6,7 +6,21 @@ So we provided you Facebook SDK Beta for Cocos2d-JS so that your Facebook Game c
 
 For integrating Facebook SDK Beta for Cocos2d-JS, please follow the steps below:
 
-## 1. Integrate Facebook Javascript SDK
+## 1. Create an application on Facebook
+
+Click Apps->Add a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Website platform, enter the app name and create your own app.
+
+![](./1.PNG)
+![](./1_2en.PNG)
+
+Now we can see its App ID at the dashboard page.
+
+![](./2.PNG)
+
+At the app's Setting page, click "add platform", choose "Website". If you use Cocos-Console to run your game， you can input the address
+![](./2_2.PNG)
+
+## 2. Integrate Facebook Javascript SDK
 
 There are two ways for doing this:
 
@@ -23,16 +37,16 @@ cc.loader.loadJs("", [
     
 - There is another easy option, you can directly include Facebook SDK Beta module in `project.json`, the name for this module is `plugin-facebook`. In this way, the engine will load the dependency files in engine loading process, but this will extend loading time. So, the choice is yours.
 
-## 2. Config Facebook parameters in project.json
+## 3. Config Facebook parameters in project.json
 
-You need to add all Facebook App related information in `project.json`:
+You need to add all Facebook App related information in `project.json`， the property of appid need add Your application id provided by Facebook:
 
 ```
 {
-    "module" : ["cocos2d", "extensions", "external", "plugin-facebook"],
+    "module" : ["cocos2d", "pluginx", "plugin-facebook"],
     "plugin" : {
-        “facebook”: {
-            "appId" : "", // Your application id provided by Facebook
+        "facebook": {
+            "appId" : "", 
             "xfbml" : true,
             "version" : "v2.0"
         }
@@ -40,6 +54,6 @@ You need to add all Facebook App related information in `project.json`:
 }
 ```
 
-## How to Use Facebook SDK Beta
+## 4. How to Use Facebook SDK Beta
 
 About how to use Facebook API please reference to [Facebook SDK Beta for Cocos2d-JS](../api-reference/en.md)

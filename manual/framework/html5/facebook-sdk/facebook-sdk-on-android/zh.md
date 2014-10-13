@@ -6,9 +6,10 @@
 
 ##在Facebook上创建应用
 
-在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Create a New app, 输入应用名，创建自己的新应用。
+在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择android平台， 输入应用名，创建自己的新应用。
 
 ![](./1.PNG)
+![](./1_2.PNG)
 
 然后在新创建的app的dashboard页面我们就可以看到它的App ID了。
 
@@ -76,7 +77,7 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 }
 ```
 
-**step5**:在frameworks/runtime-src/proj.android/classes/AppDelegate.cpp中添加：
+**step5**:在frameworks/runtime-src/Classes/AppDelegate.cpp中添加如下代码，需要注意代码位置：
 
 ```
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -86,12 +87,21 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-	//...
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    sc->addRegisterCallback(register_all_pluginx_protocols);
-    sc->addRegisterCallback(register_pluginx_js_extensions);
-#endif
-	//...
+    ScriptingCore* sc = ScriptingCore::getInstance();
+
+    ...
+
+    // Add these lines before sc->start()
+	#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+		sc->addRegisterCallback(register_all_pluginx_protocols);
+		sc->addRegisterCallback(register_pluginx_js_extensions);
+	#endif
+
+	sc->start();    
+    
+    ...
+
+    return true;
 }
 ```
 
