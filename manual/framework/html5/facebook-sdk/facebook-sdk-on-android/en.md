@@ -1,12 +1,12 @@
 #Integrate the Facebook SDK Beta for Cocos2d-JS on Android
 
-This doc walks you through the integration of Facebook SDK Beta for Cocos2d-JS, including creating app, configuring SDK settings and apk packaging.
+This doc walks you through the integration of Facebook SDK Beta for Cocos2d-JS on Android, including creating app, configuring SDK settings and apk packaging.
 
 **Notice**: This doc only works with Facebook SDK Beta and later versions. If you are using ther Facebook SDK Alpha (Released with Cocos2d-JS v3.0 RC2), Please refer to [Facebook SDK Alpha Integration Document](../facebook-sdk-on-android/rc2_en.md)
 
-##Create an application on Facebook
+##Create a Facebook App
 
-Please refer to [Step 5. Create a Facebook App - Getting Started with the Facebook SDK for Android](https://developers.facebook.com/docs/android/getting-started/#create-app) to create a Facebook App with Android platform.
+Please refer to [Step 5. Create a Facebook App - Getting Started with the Facebook SDK for Android](http://developers.facebook.com/docs/android/getting-started/#create-app) to create a Facebook App with Android platform.
 
 ##Add Facebook SDK Beta to A Cocos2d-JS Project
 
