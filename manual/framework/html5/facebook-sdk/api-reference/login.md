@@ -1,6 +1,6 @@
 #.login(permissions, callback)
 
-Prompts the user to authorize your application or to grant additional authorizations using the [Login Dialog](https://developers.facebook.com/docs/facebook-login/) appropriate to the platform.
+Prompts the user to authorize your application using the [Login Dialog](http://developers.facebook.com/docs/facebook-login/) appropriate to the platform. If the user is already logged in and has authorized your application, checks whether all [permissions](http://developers.facebook.com/docs/reference/login/#permissions) in the `permissions` parameter have been granted, and if not, prompts the user for any that are newly requested. Usually, you'll call it once to ask the user for authentication, then again to request additional permissions as required.
 
 ##Parameters
 
@@ -10,18 +10,18 @@ plugin.FacebookAgent.prototype.login = function(permissions, callback){}
 
 |Name|Type|Required|Description|
 |----|----|--------|-----------|
-|permissions|Array|No|A list of Facebook permissions to acquire from the user.|
-|callback|Function|No|The callback will be invoked with a result code and a response object or an error message.|
+|permissions|Array of strings|No|A list of Facebook permissions to request from the user.|
+|callback|Function|No|Callback function containing a result code and a JSON response.|
 
-##Callback function and response object
-
-The callback function definition is showing below, if login succeed, the result `code` will be `plugin.FacebookAgent.CODE_SUCCEED`, otherwise, it will indicate the error code with an error message as the `response` parameter.
+###Callback function
 
 ```javascript
 var callback = function (code, response) {}
 ```
 
-Meanwhile, the response object is only available when user succeed to login, here is an example:
+If login succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` contains access token and permissions granted; otherwise, `code` is the error code and `response` is a JSON containing error message.
+
+When login succeeds, here is the example of the `response` object:
 
 ```javascript
 // The response object 
@@ -39,10 +39,10 @@ Meanwhile, the response object is only available when user succeed to login, her
 ##Examples
 
 ```javascript
-// Assuming that facebook is the instance of FacebookAgent
+var facebook = plugin.FacebookAgent.getInstance();
 facebook.login(["create_event", "create_note", "manage_pages", "publish_actions"], function(code, response){
     if(code == plugin.FacebookAgent.CODE_SUCCEED){
-        cc.log("login succeed");
+        cc.log("login succeeded");
         cc.log("AccessToken: " + response["accessToken"]);
         var permissions = response["permissions"];
         var str = "Permissions: ";
