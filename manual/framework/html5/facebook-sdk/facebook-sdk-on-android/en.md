@@ -6,9 +6,10 @@ This document will walk you through the integration of Facebook SDK Beta for Coc
 
 ##Create an application on Facebook
 
-Click Apps->Create a New app at [Facebook Developers Page](https://developers.facebook.com/), enter the app name and create your own app.
+Click Apps->Create a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Android platform, enter the app name and create your own app.
 
-![](./1_en.png)
+![](./1.PNG)
+![](./1_2en.PNG)
 
 Now we can see its App ID at the dashboard page.
 
@@ -77,7 +78,7 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 }
 ```
 
-**step5**: Add to `frameworks/runtime-src/proj.android/classes/AppDelegate.cpp`:
+**step5**: Add to `frameworks/runtime-src/Classes/AppDelegate.cpp`:
 
 ```
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -92,6 +93,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     sc->addRegisterCallback(register_all_pluginx_protocols);
     sc->addRegisterCallback(register_pluginx_js_extensions);
 #endif
+    // need to add the code before JavascriptJavaBridge
 	//...
 }
 ```

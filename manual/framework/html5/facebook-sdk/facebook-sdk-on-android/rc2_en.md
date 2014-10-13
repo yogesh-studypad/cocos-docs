@@ -7,9 +7,10 @@ This document will walk you through the integration of Facebook SDK Alpha for Co
 ##Create an application on Facebook
 
 
-Click Apps->Create a New app at [Facebook Developers Page](https://developers.facebook.com/), enter the app name and create your own app.
+Click Apps->Create a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Android platform, enter the app name and create your own app.
 
-![](./1_en.png)
+![](./1.PNG)
+![](./1_2en.PNG)
 
 Now we can see its App ID at the dashboard page.
 

@@ -6,9 +6,10 @@
 
 ##在Facebook上创建应用
 
-在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Create a New app, 输入应用名，创建自己的新应用。
+在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择android平台， 输入应用名，创建自己的新应用。
 
 ![](./1.PNG)
+![](./1_2.PNG)
 
 然后在新创建的app的dashboard页面我们就可以看到它的App ID了。
 
@@ -76,7 +77,7 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 }
 ```
 
-**step5**:在frameworks/runtime-src/proj.android/classes/AppDelegate.cpp中添加：
+**step5**:在frameworks/runtime-src/Classes/AppDelegate.cpp中添加：
 
 ```
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -91,6 +92,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     sc->addRegisterCallback(register_all_pluginx_protocols);
     sc->addRegisterCallback(register_pluginx_js_extensions);
 #endif
+    // 注意需要在 添加在 注册 JavascriptJavaBridge 之前
 	//...
 }
 ```
