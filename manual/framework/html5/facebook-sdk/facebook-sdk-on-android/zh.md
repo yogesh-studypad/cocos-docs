@@ -1,6 +1,6 @@
-#Android平台上如何集成Facebook SDK Beta for Cocos2d-JS
+#Android平台上如何集成Facebook SDK for Cocos2d-JS
 
-这篇文档展示如何在Android平台快速地开始使用Facebook SDK Beta for Cocos2d-JS，从创建app，配置SDK到最后的打包成apk。
+这篇文档展示如何在Android平台快速地开始使用Facebook SDK for Cocos2d-JS，从创建app，配置SDK到最后的打包成apk。
 
 **注意**: 这篇文档适用于Facebook SDK Beta及以上版本。如果你使用的是Alpha版（随v3.0 RC2发布）请参见[Alpha版集成文档](../facebook-sdk-on-android/rc2_zh.md)
 
@@ -35,9 +35,9 @@ keytool -exportcert -alias <RELEASE_KEY_ALIAS> -keystore <RELEASE_KEY_PATH> | op
 
 这样就完成了Facebook App的创建。
 
-##添加Facebook SDK Beta到我们的Cocos2d-JS工程
+##添加Facebook SDK到我们的Cocos2d-JS工程
 
-使用cocos命名行工具创建js工程。然后需要对Android工程做一些修改才可以在js代码中使用Facebook SDK Beta。
+使用cocos命名行工具创建js工程。然后需要对Android工程做一些修改才可以在js代码中使用Facebook SDK。
 
 **step1**：在frameworks/runtime-src/proj.android/res/values/strings.xml添加app name和app id：
 
@@ -170,11 +170,11 @@ public class AppActivity extends Cocos2dxActivity {
 }
 ```
 
-这样就完成了工程的配置，可以开始使用我们的Facebook SDK Beta来编写支持Facebook的应用了
+这样就完成了工程的配置，可以开始使用我们的Facebook SDK来编写支持Facebook的应用了
 
 ## 如何使用FacebookSDK
 
-如何使用Facebook API 请参考 [Facebook SDK Beta for Cocos2d-JS](../api-reference/en.md)
+如何使用Facebook API 请参考 [Facebook SDK for Cocos2d-JS](../api-reference/en.md)
 
 ## 将项目打包成APK
 

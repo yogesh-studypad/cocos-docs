@@ -1,9 +1,9 @@
-#Web平台上如何集成Facebook SDK Beta for Cocos2d-JS
+#Web平台上如何集成Facebook SDK for Cocos2d-JS
 
-Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供了Facebook SDK Beta for Cocos2d-JS插件。
-使用Cocos2d-JS的Facebook SDK Beta可以使你的游戏无缝的衔接Android以及iOS平台，你的所有Facebook功能模块可以不修改一行代码就直接运行，使得一份代码能够完整的运行在不同的平台之上。
+Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供了Facebook SDK for Cocos2d-JS插件。
+使用Cocos2d-JS的Facebook SDK可以使你的游戏无缝的衔接Android以及iOS平台，你的所有Facebook功能模块可以不修改一行代码就直接运行，使得一份代码能够完整的运行在不同的平台之上。
 
-那么Web端怎么使用Facebook SDK Beta for Cocos2d-JS呢？
+那么Web端怎么使用Facebook SDK for Cocos2d-JS呢？
 
 ##1、在Facebook上创建应用
 在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择 网址 平台， 输入应用名，创建自己的新应用。
@@ -19,11 +19,11 @@ Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供
 
 ![](./2_2.PNG)
 
-## 2. 然后在页面要先引入Facebook SDK Beta
+## 2. 然后在页面要先引入Facebook SDK
 
-可以有两种方式引入Facebook SDK Beta的依赖：
+可以有两种方式引入Facebook SDK的依赖：
 
-- 开发者可以在`frameworks/cocos2d-html5/extenrnal`文件夹下找到所有的Facebook SDK Beta的依赖文件，使用下面的代码完成手动加载Facebook SDK Beta（注意JS文件顺序）：
+- 开发者可以在`frameworks/cocos2d-html5/extenrnal`文件夹下找到所有的Facebook SDK的依赖文件，使用下面的代码完成手动加载Facebook SDK（注意JS文件顺序）：
 
 ```
 cc.loader.loadJs("", [
@@ -53,6 +53,6 @@ cc.loader.loadJs("", [
 }
 ```
 
-## 4. 如何使用Facebook SDK Beta
+## 4. 如何使用Facebook SDK
 
-关于如何使用Facebook API 请参考 [Facebook SDK Beta for Cocos2d-JS](../api-reference/zh.md)
+关于如何使用Facebook API 请参考 [Facebook SDK for Cocos2d-JS](../api-reference/zh.md)
