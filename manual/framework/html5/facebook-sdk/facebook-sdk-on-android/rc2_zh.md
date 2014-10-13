@@ -6,9 +6,10 @@
 
 ##在Facebook上创建应用
 
-在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Create a New app, 输入应用名，创建自己的新应用。
+在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择android平台， 输入应用名，创建自己的新应用。
 
 ![](./1.PNG)
+![](./1_2.PNG)
 
 然后在新创建的app的dashboard页面我们就可以看到它的App ID了。
 
