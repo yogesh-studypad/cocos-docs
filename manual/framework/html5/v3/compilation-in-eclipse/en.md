@@ -7,10 +7,10 @@ This document will show you how to compile a Cocos2d-JS Android project in eclip
 - NDK r9d
 - python 2.7
 
-##create a Project
+##Create a Project
 As we always did, just run `cocos new MyGame -l js -d ~/workspace` in terminal.
 
-##import the project in eclipse
+##Import the project in eclipse
 Open your eclipse in ADT bundle. click File->new->other, and select `Android Project from Existing Code`.
 
 ![](./res/1.png)
@@ -21,7 +21,7 @@ Then you will see the two projects have been imported.
 
 ![](./res/2.png)
 
-##setup a NDK builder in eclipse
+##Setup a NDK builder in eclipse
 We need a native builder to compile the C++ code before we generate the apk. Right click on `MyGame` and select `Properties`.
 
 ![](./res/3.png)
@@ -51,6 +51,6 @@ Switch to Environment tab, click `New...`, add `NDK_ROOT` here.
 
 Now we are finished to setup the Native builder, click OK.
 
-##run
+##Run
 
 Just clean & run as usual. The needed resources will be copied to assets folder, native code will be compiled as you can see in console, and finally generate the apk.
