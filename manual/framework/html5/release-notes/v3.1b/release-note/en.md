@@ -18,8 +18,8 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 
 ## Highlights
 
-* Refactoration of the web engine with new renderer architecture, the new renderer has bring a great performance boost on Web engine, yet it hasn't been fully optimized. The next step is to focus on the optimization.
-* Released Facebook SDK for Cocos2d-JS Beta2, its API have been significantly improved and stablized. API reference document have been greatly improved also.
+* Refactorization of the web engine with new renderer architecture, the new renderer has brought a great performance boost on Web engine, yet it hasn't been fully optimized. The next step is to focus on the optimization.
+* Released Facebook SDK for Cocos2d-JS Beta2, its API have been significantly improved and stablized. API reference document have also been greatly improved.
 * Upgraded MoonWarriors sample game with brand new graphical assets.
 * Automatically enabled WebGL on iOS 8 safari, the performance is incredibly enhanced compare to Canvas render mode.
 * Upgraded chipmunk to the newest version and improved bindings for chipmunk.

@@ -60,9 +60,9 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.0](./release-notes/v3.0/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.0](./release-notes/v3.0/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.0](./release-notes/v3.0rc0/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.1 Beta](./release-notes/v3.1b/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.1 Beta](./release-notes/v3.1b/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.1 Beta](./release-notes/v3.0rc0/upgrade-guide/en.md)
 
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
@@ -70,7 +70,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes](./release-notes/en.md)
     
-- Pakour Game with Cocos2d-JS v3.0
+- Pakour Game with Cocos2d-JS v3.x
     - [1. Setup Development Environment](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
 	- [2. Hello World Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
 	- [3. Make your First Game Scene](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
@@ -82,7 +82,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 	- [9. Add Game Over Logic And More](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
     - [10. Add Audio Effect into Parkour Game](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
         
-- New features and API changes in version 3.0:
+- New features and API changes in version 3.x:
     - [New workflow with cocos console](./v2/cocos-console/en.md)
     - [Assets manager](./v3/assets-manager/en.md)
     - [New event manager](./v3/eventManager/en.md)
@@ -108,11 +108,11 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [About cc.log](./v3/cc-log/en.md)
     - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
     
-- Facebook SDK Beta for Cocos2d-JS
-    - [Facebook SDK Beta API Reference](./facebook-sdk/api-reference/en.md)
-    - [Integrate the Facebook SDK Beta for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
-    - [Integrate the Facebook SDK Beta for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
-    - [Integrate the Facebook SDK Beta for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
+- Facebook SDK Beta2 for Cocos2d-JS
+    - [Facebook SDK Beta2 API Reference](./facebook-sdk/api-reference/en.md)
+    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
+    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
+    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
     
 - Advanced topics
     - [How to use extensions in JSB(Chinese version)](./jsb/jsb-extension/zh.md)
