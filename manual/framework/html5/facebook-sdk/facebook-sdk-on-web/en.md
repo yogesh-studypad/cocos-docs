@@ -1,30 +1,16 @@
 #Integrate Facebook SDK Beta for Cocos2d-JS on Web
 
-Facebook have provided its official Javascript SDK, so what's meaning of providing another one in Cocos2d-JS? It's because Cocos2d-JS is cross platform, and our mobile solution should work perfectly on Web, iOS and Android. But if you use Facebook Javascript SDK with Cocos2d-JS on Web, then when you port you game to iOS or Android, you will need to rewrite all code using Facebook API with native code. Sometimes, it's just a mission impossible.
+This doc walks you through the integration of Facebook SDK Beta for Cocos2d-JS on Web.
 
-So we provided you Facebook SDK Beta for Cocos2d-JS so that your Facebook Game can cross platform without modifing any code.
+Although Facebook has [Facebook SDK for Javascript](http://developers.facebook.com/docs/javascript), if your game has both mobile version and web version, we highly recommend you to use this SDK for the web version because you can use the same code of Facebook integration for both mobile and web without writing them separately for each platform. 
 
-For integrating Facebook SDK Beta for Cocos2d-JS, please follow the steps below:
+**step1**: Create your Facebook App on Canvas as described in [Getting Started with Canvas](http://developers.facebook.com/docs/games/canvas/). Add the URL to the web host for your sample under the "Canvas URL" and "Secure Canvas URL" section.
 
-## 1. Create an application on Facebook
-
-Click Apps->Add a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Website platform, enter the app name and create your own app.
-
-![](./1.PNG)
-![](./1_2en.PNG)
-
-Now we can see its App ID at the dashboard page.
-
-![](./2.PNG)
-
-At the app's Setting page, click "add platform", choose "Website". If you use Cocos-Console to run your game， you can input the address
-![](./2_2.PNG)
-
-## 2. Integrate Facebook Javascript SDK
+**step2**: Integrate Facebook SDK for Javascript
 
 There are two ways for doing this:
 
-- Developers can found all dependencies files in `frameworks/cocos2d-html5/extenrnal` folder, You can load all dependencies manually like this：
+- Option 1: you can find all the files under `frameworks/cocos2d-html5/extenrnal` folder. Then you can load all dependencies manually as below：
     
 ```
 cc.loader.loadJs("", [
@@ -35,18 +21,16 @@ cc.loader.loadJs("", [
 });
 ```
     
-- There is another easy option, you can directly include Facebook SDK Beta module in `project.json`, the name for this module is `plugin-facebook`. In this way, the engine will load the dependency files in engine loading process, but this will extend loading time. So, the choice is yours.
+- Option 2: you can directly include Facebook SDK Beta module in `project.json`, the name for this module is `plugin-facebook`. In this way, the engine loads the dependencies in engine's loading process, so it may cause the loading time to be longer.
 
-## 3. Config Facebook parameters in project.json
-
-You need to add all Facebook App related information in `project.json`， the property of appid need add Your application id provided by Facebook:
+**step3**: fill out the info of your Facebook App in `project.json` as below,
 
 ```
 {
-    "module" : ["cocos2d", "pluginx", "plugin-facebook"],
+    "module" : ["cocos2d", "extensions", "external", "plugin-facebook"],
     "plugin" : {
-        "facebook": {
-            "appId" : "", 
+        “facebook”: {
+            "appId" : "", // Your application id provided by Facebook
             "xfbml" : true,
             "version" : "v2.0"
         }
@@ -54,6 +38,8 @@ You need to add all Facebook App related information in `project.json`， the pr
 }
 ```
 
-## 4. How to Use Facebook SDK Beta
+You can visit [Quickstart: Facebook SDK for JavaScript](http://developers.facebook.com/docs/javascript/quickstart/) to learn more details. 
 
-About how to use Facebook API please reference to [Facebook SDK Beta for Cocos2d-JS](../api-reference/en.md)
+## How to Use Facebook SDK Beta
+
+Please visit [Facebook SDK Beta for Cocos2d-JS](../api-reference/en.md)
