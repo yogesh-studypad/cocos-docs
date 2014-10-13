@@ -77,7 +77,7 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 }
 ```
 
-**step5**:在frameworks/runtime-src/Classes/AppDelegate.cpp中添加：
+**step5**:在frameworks/runtime-src/Classes/AppDelegate.cpp中添加如下代码，需要注意代码位置：
 
 ```
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -87,13 +87,21 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-	//...
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    sc->addRegisterCallback(register_all_pluginx_protocols);
-    sc->addRegisterCallback(register_pluginx_js_extensions);
-#endif
-    // 注意需要在 添加在 注册 JavascriptJavaBridge 之前
-	//...
+    ScriptingCore* sc = ScriptingCore::getInstance();
+
+    ...
+
+    // Add these lines before sc->start()
+	#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+		sc->addRegisterCallback(register_all_pluginx_protocols);
+		sc->addRegisterCallback(register_pluginx_js_extensions);
+	#endif
+
+	sc->start();    
+    
+    ...
+
+    return true;
 }
 ```
 

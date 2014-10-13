@@ -78,7 +78,7 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 }
 ```
 
-**step5**: Add to `frameworks/runtime-src/Classes/AppDelegate.cpp`:
+**step5**: Add to `frameworks/runtime-src/Classes/AppDelegate.cpp` , as showing below, please pay attention to the location of the code:
 
 ```
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -88,13 +88,21 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-	//...
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    sc->addRegisterCallback(register_all_pluginx_protocols);
-    sc->addRegisterCallback(register_pluginx_js_extensions);
-#endif
-    // need to add the code before JavascriptJavaBridge
-	//...
+    ScriptingCore* sc = ScriptingCore::getInstance();
+
+    ...
+
+    // Add these lines before sc->start()
+	#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+		sc->addRegisterCallback(register_all_pluginx_protocols);
+		sc->addRegisterCallback(register_pluginx_js_extensions);
+	#endif
+
+	sc->start();    
+    
+    ...
+
+    return true;
 }
 ```
 
