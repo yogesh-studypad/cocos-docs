@@ -8,7 +8,7 @@ For integrating Facebook SDK Beta for Cocos2d-JS, please follow the steps below:
 
 ## 1. Create an application on Facebook
 
-Click Apps->Add a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Android platform, enter the app name and create your own app.
+Click Apps->Add a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Website platform, enter the app name and create your own app.
 
 ![](./1.PNG)
 ![](./1_2en.PNG)

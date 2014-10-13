@@ -6,7 +6,7 @@ Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供
 那么Web端怎么使用Facebook SDK Beta for Cocos2d-JS呢？
 
 ##1、在Facebook上创建应用
-在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择android平台， 输入应用名，创建自己的新应用。
+在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择 网址 平台， 输入应用名，创建自己的新应用。
 
 ![](./1.PNG)
 ![](./1_2.PNG)
