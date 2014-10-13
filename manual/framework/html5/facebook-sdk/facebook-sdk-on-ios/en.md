@@ -58,7 +58,9 @@ As `Facebook SDK Beta for Cocos2d-JS` is based on Plugin-x, we need to add Plugi
 
 2. Add PluginFacebook's Xcode project（under `myProject/frameworks/js-bindings/cocos2d-x/plugin/plugins/facebook/proj.ios`）into your Xcode project as a sub project: right click on `myProject`, then choose `addFiles to "myProject"` to add it or drag the PluginFacebook project directly under `myProject`.
 
-3. Add libraries into build phases: click on `myProject`, then `target`->`myProject IOS`->`Build Phases`, click `+` button of `Link Binary With Libraries` list to add `libPluginProtocol.a` and `libPluginFacebook.a`.
+3. Add libraries into build phases: click on `myProject`, then `target`->`myProject IOS`->`Build Phases`, click `+` button of `Target Dependencies` to add `PluginProtocol` and `PluginFacebook` targets, then click `+` button of `Link Binary With Libraries` list to add `libPluginProtocol.a` and `libPluginFacebook.a`.
+
+	![](images/add_project.jpg)
 
 ## Add Plugin-x for JSB
 

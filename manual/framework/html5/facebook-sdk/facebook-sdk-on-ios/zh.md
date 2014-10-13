@@ -58,7 +58,9 @@ Facebook SDK Beta for Cocos2d-JS在iOS平台上使用Facebook iOS SDK作为其�
 
 2. 将PluginFacebook的Xcode工程（`myProject/frameworks/js-bindings/cocos2d-x/plugin/plugins/facebook/proj.ios`路径下）引入到工程中，右击myProject工程，点击`addFiles to "myProject"`或者直接拖拽PluginFacebook的工程到"myProject"下。
 
-3. 将库文件添加到的Build Phases：点击工程，`target`->`myProject IOS`->`Build Phases`，在`Link Binary With Libraries`中添加`libPluginProtocol.a`和 `libPluginFacebook.a`。
+3. 将库文件添加到的Build Phases：点击工程，`target`->`myProject IOS`->`Build Phases`，在`Target Dependencies`中点加号添加`PluginProtocol`和`PluginFacebook`，并在`Link Binary With Libraries`中添加`libPluginProtocol.a`和 `libPluginFacebook.a`。
+
+	![](images/add_project.jpg)
 
 ## 添加Plugin-x的JSB绑定代码
 
