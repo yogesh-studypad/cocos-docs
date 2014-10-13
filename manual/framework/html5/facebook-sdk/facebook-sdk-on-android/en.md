@@ -6,7 +6,7 @@ This document will walk you through the integration of Facebook SDK Beta for Coc
 
 ##Create an application on Facebook
 
-Click Apps->Create a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Android platform, enter the app name and create your own app.
+Click Apps->Add a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Android platform, enter the app name and create your own app.
 
 ![](./1.PNG)
 ![](./1_2en.PNG)
