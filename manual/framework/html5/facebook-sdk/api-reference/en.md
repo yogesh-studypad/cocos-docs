@@ -36,6 +36,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
 |[getAccessToken](./get-accesstoken.md)|Get the access token granted to your application by current user.|
 
+*[colin] In the JS and Unity SDKs, we have user ID and access token as properties, rather than methods (see <https://developers.facebook.com/docs/unity/reference/current/Properties>). Can we harmonize this design with those by making them properties here? I believe that making isLoggedIn a method is defensible, but for consistency, could we consider changing it, too, to a property? Generally speaking, if something isn't a verb (like .logout()), and doesn't take arguments, we prefer to make it a property.*
+
 ###Auxiliary Methods
 
 |Name|Description|
@@ -44,6 +46,8 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[activateApp](./activate-app.md)|Report the launch of the app, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
+
+*[colin] .logPurchase(...) is probably a good idea to add to all of the other SDKs, as a convenience method for logEvent(FBAppEventNamePurchased,...). Good design! Do we want to namespace .pay(...) to clarify that it's canvas-only, the way we do in the Unity SDK? <https://developers.facebook.com/docs/unity/reference/current/FB.Canvas.Pay>*
 
 ##Facebook SDK Beta Features
 
@@ -67,3 +71,11 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |activateApp|√|√|√|
 |logEvent|√|√|√|
 |logPurchase|√|√|√|
+
+*[colin] Nits: Is there a reason that appRequest isn't listed as a dialog? Guessing that's just an oversight. Also, assuming that all the underscore_delimited names will become camelCased (unless this is the convention throughout Cocos).*
+
+*[colin] Is the design for the dialogs that there will be a single .dialog method, similar to the JS SDK's .ui(...) function, which takes a dialog name as one of its arguments? I recommend against that, as giving each dialog's invoking method a distinct signature will make it easier to catch errors at compile time, and is also more consistent with the existence of the .pay(...) method. We did this better when we designed the Unity SDK.*
+
+*[colin] If you want to have a Canvas::UI(...) method to wrap the .ui(...) function, for future-proofing, that's fine too. But make the specialized methods the preferred way to call the dialogs we know about.*
+
+*[colin] I would also try to combine share_link, share_open_graph, and share_photo into one function, if practical. Their separation is platform-specific, and our architecture should aim to hide per-platform details.*
