@@ -20,8 +20,8 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 
 * Refactorization of the web engine with new renderer architecture, the new renderer has brought a great performance boost on Web engine, yet it hasn't been fully optimized. The next step is to focus on the optimization.
 * Released Facebook SDK for Cocos2d-JS Beta2, its API have been significantly improved and stablized. API reference document have also been greatly improved.
-* Upgraded MoonWarriors sample game with brand new graphical assets.
 * Automatically enabled WebGL on iOS 8 safari, the performance is incredibly enhanced compare to Canvas render mode.
+* Upgraded MoonWarriors sample game with brand new graphical assets.
 * Upgraded chipmunk to the newest version and improved bindings for chipmunk.
 
 ## Notice
@@ -44,6 +44,16 @@ Read more about all the features and bug fixes
 
 - [Cocos2d-JS v3.1 Beta changelog](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1b/changelog/en)
 - [Cocos2d-JS v3.1 upgrade guide](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/en)
+
+## Upgrade your project from previous versions
+
+If you want to upgrade your game based on v3.0 previous version to the 3.1 Beta version, you should follow these steps:
+
+1. Download the Cocos2d-JS v3.1 Beta package.
+2. Upgrade cocos command with `setup.py`.
+3. Create a new project with `cocos new` command.
+4. Replace the "src", "res", "index.html", "project.json", "main.js" etc with your old project.
+5. Then you may need to refer to the upgrade guide to solve some API change issues.
 
 ## About Cocos2d family
 

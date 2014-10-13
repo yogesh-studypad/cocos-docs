@@ -31,6 +31,16 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 - [Android编译] NDK版本必须使用r9d
 - [iOS编译] Xcode版本必须在5.1.1以上
 
+## 从旧版本升级你的项目
+
+如果你想升级你使用旧版本（从v3.0 Alpha开始）创建的项目到v3.1 Beta，你需要执行以下步骤：
+
+1. 下载Cocos2d-JS v3.1引擎包。
+2. 执行引擎包中的`setup.py`更新你的cocos命令。
+3. 使用`cocos new`命令创建一个新的基于v3.1的项目。
+4. 从你的旧项目中拷贝"src"，"res"，"index.html"，"project.json"，"main.js"到第三步创建的新项目并覆盖。
+5. 最后你可能需要按照升级指南来升级你的项目以避免API不兼容的问题。
+
 ## 下载
 
 - [Cocos2d-JS v3.1 Beta](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.1-beta.zip)
