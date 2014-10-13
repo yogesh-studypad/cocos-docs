@@ -28,7 +28,7 @@
 
 ![](./res/3.png)
 
-在`Builders`设置中，点击``新建一个builder。在弹出对话框选择program，点击OK会看到下面的窗口。
+在`Builders`设置中，点击`New`新建一个builder。在弹出对话框选择program，点击OK会看到下面的窗口。
 
 ![](./res/4.png)
 
