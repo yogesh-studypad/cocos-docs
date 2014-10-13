@@ -1,53 +1,25 @@
 #Integrate the Facebook SDK Beta for Cocos2d-JS on Android
 
-This document will walk you through the integration of Facebook SDK Beta for Cocos2d-JS, from creating app, configuring SDK to the apk packing. 
+This doc walks you through the integration of Facebook SDK Beta for Cocos2d-JS, including creating app, configuring SDK settings and apk packaging.
 
-**Notice**: This document can only work with Facebook SDK Beta and later versions. If you are using ther Facebook SDK Alpha (Released with Cocos2d-JS v3.0 RC2), Please refer to [Facebook SDK Alpha Integration Document](../facebook-sdk-on-android/rc2_en.md)
+**Notice**: This doc only works with Facebook SDK Beta and later versions. If you are using ther Facebook SDK Alpha (Released with Cocos2d-JS v3.0 RC2), Please refer to [Facebook SDK Alpha Integration Document](../facebook-sdk-on-android/rc2_en.md)
 
 ##Create an application on Facebook
 
-Click Apps->Add a New app at [Facebook Developers Page](https://developers.facebook.com/), choose Android platform, enter the app name and create your own app.
-
-![](./1.PNG)
-![](./1_2en.PNG)
-
-Now we can see its App ID at the dashboard page.
-
-![](./2.PNG)
-
-At the app's Setting page, click "add platform", choose "Android", and enter the app's package name, MainActivity's class name and key hash.
-
-![](./3.PNG)
-
-You need keytool provided by JDK to generate key hash.
-
-On Mac OS X:
-```
-keytool -exportcert -alias <RELEASE_KEY_ALIAS> -keystore <RELEASE_KEY_PATH> | openssl sha1 -binary | openssl base64
-```
-
-On Windows：
-```
-keytool -exportcert -alias <RELEASE_KEY_ALIAS> -keystore <RELEASE_KEY_PATH> | openssl sha1 -binary | openssl base64
-```
-
-You need to type in the password you create with key.
-
-Now you are finished creating Facebook App.
-
+Please refer to [Step 5. Create a Facebook App - Getting Started with the Facebook SDK for Android](https://developers.facebook.com/docs/android/getting-started/#create-app) to create a Facebook App with Android platform.
 
 ##Add Facebook SDK Beta to A Cocos2d-JS Project
 
-Use Cocos command line tool to great a js project, and you need to make a few modifications to the Android project before you can use Facebook SDK Beta in js code.
+Use Cocos command line tool to generate a js project, and you need to make a few modifications to the Android project before you can use Facebook SDK Beta.
 
-**step1**: Add app name and app id to `frameworks/runtime-src/proj.android/res/values/strings.xml`:
+**step1**: Add app name and app id in `frameworks/runtime-src/proj.android/res/values/strings.xml`:
 
 ```
 <string name="app_name">cocos sample</string>
 <string name="app_id">1450063488603945</string>
 ```
 
-**step2**: Add the following informations to `frameworks/runtime-src/proj.android/AndroidManifest.xml`:
+**step2**: Add the following code snippet in `frameworks/runtime-src/proj.android/AndroidManifest.xml`:
 
 ```
 <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
@@ -58,14 +30,14 @@ Use Cocos command line tool to great a js project, and you need to make a few mo
           android:exported="true"/>
 ```
 
-**step3**: Add Plugin-x link lib to `frameworks/runtime-src/proj.android/jni/Android.mk`:
+**step3**: Add _Plugin-x link lib_ in `frameworks/runtime-src/proj.android/jni/Android.mk`:
 
 ```
 LOCAL_WHOLE_STATIC_LIBRARIES += jsb_pluginx_static
 $(call import-module,cocos2d-x/plugin/jsbindings)
 ```
 
-**step4**: Add to `frameworks/runtime-src/proj.android/jni/hellojavascript/main.cpp`:
+**step4**: Add the following code snippet in `frameworks/runtime-src/proj.android/jni/hellojavascript/main.cpp`:
 
 ```
 #include "PluginJniHelper.h"
@@ -78,7 +50,7 @@ void cocos_android_app_init (JNIEnv* env, jobject thiz) {
 }
 ```
 
-**step5**: Add to `frameworks/runtime-src/Classes/AppDelegate.cpp` , as showing below, please pay attention to the location of the code:
+**step5**: Add the following code snippet in `frameworks/runtime-src/Classes/AppDelegate.cpp`. **Notice**: Please pay attention to the location of the code.
 
 ```
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -106,7 +78,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 }
 ```
 
-**step6**: Add to `copy_resources` section of `frameworks/runtime-src/proj.android/build-cg.json`:
+**step6**: Add the following code snippet in `copy_resources` section of `frameworks/runtime-src/proj.android/build-cg.json`:
 
 ```
 {
@@ -127,13 +99,13 @@ bool AppDelegate::applicationDidFinishLaunching()
 }
 ```
 
-**step7**: Add the following code to `frameworks/runtime-src/proj.android/project.properties`:
+**step7**: Add the following code snippet in `frameworks/runtime-src/proj.android/project.properties`:
 
 ```
 android.library.reference.2=../../js-bindings/cocos2d-x/plugin/plugins/facebook/proj.android/DependProject
 ```
 
-**step8**: Add the following code to `frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java`:
+**step8**: Add the following code snippet in `frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java`:
 
 ```
 import org.cocos2dx.plugin.PluginWrapper;
@@ -171,18 +143,18 @@ public class AppActivity extends Cocos2dxActivity {
 }
 ```
 
-And now we are finished with the project configuration and ready to use the Facebook SDK Beta to write Facebook-supportive apps.
+Now we are done with the setup and are ready to use the Facebook SDK Beta.
 
-## How to Use FacebookSDK
+## How to Use Facebook SDK Beta
 
-About how to use Facebook API please reference to [Facebook SDK Beta for Cocos2d-JS](../api-reference/zh.md)
+Please visit [Facebook SDK Beta for Cocos2d-JS](../api-reference/en.md)
 
 ## Package your project into apk
 
-You can use Cocos2d-JS built in tool: Cocos Console to package your project to an apk file, type the following command in terminal or command line under your project folder:
+You can use Cocos2d-JS built-in tool - _Cocos Console_ to package your project into an apk file. Run the following commandline under your project folder:
 
 ```
 cocos compile -p android
 ```
 
-You can have more details in [Cocos Console Document](http://www.cocos2d-x.org/docs/manual/framework/html5/v2/cocos-console/zh)
+More details in [Cocos Console Document](http://www.cocos2d-x.org/docs/manual/framework/html5/v2/cocos-console/en)
