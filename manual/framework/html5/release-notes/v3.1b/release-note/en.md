@@ -58,7 +58,7 @@ If you want to upgrade your game based on v3.0 previous version to the 3.1 Beta 
 ## About Cocos2d family
 
 - Cocos2d-JS v3.1 Beta uses Cocos2d-x 3.2 final as base of JSB solution
-- Cocos2d-JS v3.1 Beta is compatible with Cocos Code IDE v1.0.0 RC2+
+- Cocos2d-JS v3.1 Beta is temporarily not compatible with Cocos Code IDE
 - Cocos2d-JS v3.1 Beta is compatible with Cocos Studio v1.2 - v1.5.0.1
 
 With any problems you might have, our communities are happy to help:

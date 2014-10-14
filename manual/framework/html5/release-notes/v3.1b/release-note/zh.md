@@ -58,7 +58,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 ## 关于Cocos2d家族
 
 - Cocos2d-JS v3.1 Beta使用Cocos2d-x 3.2正式版作为JSB的底层实现
-- Cocos2d-JS v3.1 Beta兼容Cocos Code IDE v1.0.0 RC2+
+- Cocos2d-JS v3.1 Beta暂不兼容Cocos Code IDE
 - Cocos2d-JS v3.1 Beta兼容Cocos Studio v1.2 - v1.5.0.1
 
 如果遇到任何问题，你都可以向Cocos2d-JS开发者社区寻求帮助： 
