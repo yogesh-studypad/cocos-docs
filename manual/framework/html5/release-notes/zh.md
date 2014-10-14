@@ -15,6 +15,7 @@
 - [Cocos2d-JS v3.0 RC2发布说明](v3.0rc2/release-note/zh.md)
 - [Cocos2d-JS v3.0 RC3发布说明](v3.0rc3/release-note/zh.md)
 - [Cocos2d-JS v3.0发布说明](v3.0/release-note/zh.md)
+- [Cocos2d-JS v3.1 Beta发布说明](v3.1b/release-note/zh.md)
 
 #Cocos2d-JS 更新日志
 
@@ -27,6 +28,7 @@
 - [Cocos2d-JS v3.0 RC2更新日志](v3.0rc2/changelog/en.md)
 - [Cocos2d-JS v3.0 RC3更新日志](v3.0rc3/changelog/en.md)
 - [Cocos2d-JS v3.0更新日志](v3.0/changelog/en.md)
+- [Cocos2d-JS v3.1 Beta更新日志](v3.1b/changelog/en.md)
 
 #Cocos2d-JS 升级指南
 

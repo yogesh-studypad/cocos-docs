@@ -1,19 +1,19 @@
-#Facebook SDK Beta for Cocos2d-JS API Reference
+#Facebook SDK Beta2 for Cocos2d-JS API Reference
 
 ##Getting start
 
-Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for Cocos2d-JS in your project. Firstly, please use Cocos Console to create a new project, then follow these documents for the integration:
+Before using Facebook SDK Beta2, you may need to integrate Facebook SDK Beta2 for Cocos2d-JS in your project. Firstly, please use Cocos Console to create a new project, then follow these documents for the integration:
 
 - [Cocos Console usage document](http://www.cocos2d-x.org/docs/manual/framework/html5/v2/cocos-console/en)
-- [Integrate the Facebook SDK Beta for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Integrate the Facebook SDK Beta for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Integrate the Facebook SDK Beta for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
 
 ##API list
 
 ###FacebookAgent class
 
-`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook SDK Beta for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
+`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook SDK Beta2 for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
 
 ###Core Methods
 
@@ -45,7 +45,7 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
-##Facebook SDK Beta Features
+##Facebook SDK Beta2 Features
 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|
