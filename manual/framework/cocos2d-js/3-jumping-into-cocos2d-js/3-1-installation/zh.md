@@ -39,7 +39,7 @@
 
 点击工具栏上的按钮
 
-![](res/run-inBrowser-btn.png)
+![](res/run-inbrowser-btn.png)
 
 运行截图：
 
