@@ -3,9 +3,8 @@
 Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供了Facebook SDK for Cocos2d-JS插件。
 使用Cocos2d-JS的Facebook SDK可以使你的游戏无缝的衔接Android以及iOS平台，你的所有Facebook功能模块可以不修改一行代码就直接运行，使得一份代码能够完整的运行在不同的平台之上。
 
-那么Web端怎么使用Facebook SDK for Cocos2d-JS呢？
+## 1. 在Facebook上创建应用
 
-##1、在Facebook上创建应用
 在[Facebook开发者页面](https://developers.facebook.com/)点击Apps->Add a New app, 选择 网址 平台， 输入应用名，创建自己的新应用。
 
 ![](./1.PNG)
@@ -19,7 +18,9 @@ Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供
 
 ![](./2_2.PNG)
 
-## 2. 然后在页面要先引入Facebook SDK
+具体细节请参考Facebook官方文档：[Getting Started with Canvas](http://developers.facebook.com/docs/games/canvas/)。
+
+## 2. 在页面中引入Facebook SDK
 
 可以有两种方式引入Facebook SDK的依赖：
 
@@ -34,11 +35,11 @@ cc.loader.loadJs("", [
 });
 ```
 
-- 或者也直接在project.json文件内modules字段里增加`plugin-facebook`，引擎将会自动加载文件，但是这样可能会造成游戏初始化速度变慢，大家根据自己实际情况做取舍吧。
+- 或者也直接在`project.json`文件内`modules`字段里增加`plugin-facebook`，引擎将会自动加载文件，但是这样可能会造成游戏初始化速度变慢，请大家根据自己实际情况做取舍。
 
-## 3. 加载完成之后，还必须要配置Facebook传入的参数
+## 3. 配置Facebook SDK参数
 
-还是在`project.json`文件内增加plugin字段,其中appid属性需要添加Facebook提供的应用id：
+在`project.json`文件内增加`plugin`字段,其中`appid`属性需要添加Facebook提供的应用id：
 
 ```
 {
@@ -53,6 +54,8 @@ cc.loader.loadJs("", [
 }
 ```
 
+更多细节请参考：[Quickstart: Facebook SDK for JavaScript](http://developers.facebook.com/docs/javascript/quickstart/)。 
+
 ## 4. 如何使用Facebook SDK
 
-关于如何使用Facebook API 请参考 [Facebook SDK for Cocos2d-JS](../api-reference/zh.md)
+关于如何使用Facebook API请参考[Facebook SDK for Cocos2d-JS API Reference](../api-reference/en.md)。
