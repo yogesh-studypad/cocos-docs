@@ -1,5 +1,5 @@
 # 2.3 使用Cocos Code IDE开发
----
+
 前面一个章节中开发者已经了解如何使用 Cocos Console 开发并发布 Web 和各原生平台应用，这里要给大家介绍的是图形化的工具 Cocos Code IDE。
 
 Cocos Code IDE 是基于 Eclipse 开发的产品，不仅封装了 Cocos Console 的绝大部分功能，简化了用户的操作，而且还提供JavaScript断点调试、代码热更新等开发者迫切需要的功能。

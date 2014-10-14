@@ -122,11 +122,3 @@ cc.LoaderScene.preload(preload_resources, function () {
 每个模块具体所依赖的文件可以参考`frameworks/cocos2d-html5/modulesConfig.json`。
 
 在project.json中配置modules字段可以为开发者的游戏选择依赖模块，好的模块配置可以帮助开发者显著降低游戏脚本的大小和游戏页面加载速度。当Cocos Console在调试模式下测试游戏的时候，仅会引入所需要的模块的脚本。在发布模式下编译生成的时候，将仅打包模块定义中定义包含的模块。
-
-##4.1.4 其他进阶开发技巧
-
-1. Xcode和Visual Studio工程
-
-在`frameworks/runtime-src/`下可以找到Xcode和Visual Studio工程。
-
-**TBD**
