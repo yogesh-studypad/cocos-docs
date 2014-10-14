@@ -12,15 +12,15 @@ Please refer to [Step 3. Obtain a Facebook App ID - Getting Started with the Fac
 
 **Step2**: Click on the project root, then `target`->`myProject IOS`->`Build Phases`->`Link Binary With Libraries`. Click `+` button to popup a sub window. Then click on `Add Other...` button in the sub window. Then find `FacebookSDK.framework` under `myProject/frameworks/js-bindings/cocos2d-x/plugin/plugins/proj.ios/sdk/` to add it.
 
-	![](images/add_facebook_framework.jpg)
+![](images/add_facebook_framework.jpg)
 
 **Step3**: Refer to [Step 4: Configure your Xcode Project - Getting Started with the Facebook iOS SDK](http://developers.facebook.com/docs/ios/getting-started/#configure) to add `FacebookAppID`, `FacebookDisplayName`, `URL types` in `Info.plist` file. You can find this file under `ios` folder of your Xcode project. You can see the result below:
 
-	![](images/modify_info_plist.jpg)
+![](images/modify_info_plist.jpg)
 
 **Step4**: Open target `myProject iOS` in the project root, open `Build Settings` page, then search for `Other Linker Flags`, and add `-ObjC` linker flag.
 
-	![](images/linker_flag.jpg)
+![](images/linker_flag.jpg)
 
 **Step5**: Find `ios/AppController.mm`, add necessary code for Facebook iOS SDK:
 
@@ -58,7 +58,7 @@ Because `Facebook SDK for Cocos2d-JS` is based on Plugin-x, you need to add Plug
 
 **Step3**: Click `myProject`, then `target`->`myProject IOS`->`Build Phases`. Then click `+` button of `Target Dependencies` to add `PluginProtocol` and `PluginFacebook` targets. Then click `+` button of `Link Binary With Libraries` list to add `libPluginProtocol.a` and `libPluginFacebook.a`.
 
-	![](images/add_project.jpg)
+![](images/add_project.jpg)
 
 ## Add Plugin-x for JSB
 
@@ -66,7 +66,7 @@ The next step is to include and register the Javascript bindings code in SpiderM
 
 **Step1**: Add jsb_pluginx.js (under `myProject/frameworks/js-bindings/cocos2d-x/plugin/jsbindings/script`) into `myProject`, and make sure it is listed in `Copy Bundle Resources` section under `Build Phases` tab.
 
-	![](images/jsb_pluginx_js.jpg)
+![](images/jsb_pluginx_js.jpg)
 
 **Step2**: Find `Classes` folder, add Javascript bindings related header files in `AppDelegate.cpp`, there are two header files: `jsb_cocos2dx_pluginx_auto.hpp` and `jsb_pluginx_extension_registration.h`.
 
@@ -102,7 +102,7 @@ The next step is to include and register the Javascript bindings code in SpiderM
 	}
     ```
 
-	![](images/jsb_registration.jpg)
+![](images/jsb_registration.jpg)
 
 Now we are done with the setup and are ready to use the Facebook SDK.
 
