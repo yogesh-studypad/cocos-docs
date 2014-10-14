@@ -14,7 +14,6 @@ Cocos2d-js中的精灵（Sprite）和其他游戏引擎中的精灵相似，它�
     	HelloWorld_png : "res/HelloWorld.png",
 	};
 	```
-	
 * 开打firstscene.js，在ctor函数中添加下面的代码。
 
 	```
