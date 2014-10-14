@@ -47,7 +47,9 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
-*[colin] .logPurchase(...) is probably a good idea to add to all of the other SDKs, as a convenience method for logEvent(FBAppEventNamePurchased,...). Good design! Do we want to namespace .pay(...) to clarify that it's canvas-only, the way we do in the Unity SDK? <https://developers.facebook.com/docs/unity/reference/current/FB.Canvas.Pay>*
+*[colin] .logPurchase(...) is probably a good idea to add to all of the other SDKs, as a convenience method for logEvent(FBAppEventNamePurchased,...). Good design!*
+
+*[colin] Do we want to namespace .pay(...) to clarify that it's canvas-only, the way we do in the Unity SDK? <https://developers.facebook.com/docs/unity/reference/current/FB.Canvas.Pay>*
 
 ##Facebook SDK Beta Features
 
