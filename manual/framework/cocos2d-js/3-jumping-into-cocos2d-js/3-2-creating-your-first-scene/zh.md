@@ -15,7 +15,6 @@
         "src/fristscene.js"
     ]
 	```
-
 * 打开fristscene.js文件，加入下面的场景创建代码。
 
 	```
@@ -45,7 +44,6 @@
 	
 	cc.Scene.extend是Cocos2d-js提供的Scene继承方法，这里重写onEnter方法，并在里面初始化自定义的FirstLayer。
 	同样的cc.Layer.extend用来继承Layer，在这个层里面，我们用cc.LabelTTF创建一字符串输添加到层。
-
 * 打开main.js，替换初始化场景的类为我们刚创建的FirstScene。
 
 	```
