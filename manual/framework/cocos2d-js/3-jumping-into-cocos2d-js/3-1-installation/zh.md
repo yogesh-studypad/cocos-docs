@@ -1,4 +1,4 @@
-# 搭建Cocos2d-js v3.x 开发环境
+# 3.1 搭建Cocos2d-js v3.x 开发环境
 
 ## 下载所需的软件包
 
@@ -39,7 +39,7 @@
 
 点击工具栏上的按钮
 
-![](res/run-inBrowser-btn.png)
+![](res/run-inbrowser-btn.png)
 
 运行截图：
 

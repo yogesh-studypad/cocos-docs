@@ -1,4 +1,4 @@
-# 创建第一个场景
+# 3.2 创建第一个场景
 
 场景（Scene）是Cocos2d-js引擎抽象的一个对象，用Cocos2d-js制作游戏就如同拍电影，事实上所有东西都必须放置到一个场景容器中才能最终被显示出来。游戏中我们通常需要构建不同的场景（至少一个），游戏里关卡、界面的切换其实就是一个一个场景的切换，就像在电影中变换舞台或场地一样。
 
@@ -15,7 +15,6 @@
         "src/fristscene.js"
     ]
 	```
-
 * 打开fristscene.js文件，加入下面的场景创建代码。
 
 	```
@@ -45,7 +44,6 @@
 	
 	cc.Scene.extend是Cocos2d-js提供的Scene继承方法，这里重写onEnter方法，并在里面初始化自定义的FirstLayer。
 	同样的cc.Layer.extend用来继承Layer，在这个层里面，我们用cc.LabelTTF创建一字符串输添加到层。
-
 * 打开main.js，替换初始化场景的类为我们刚创建的FirstScene。
 
 	```

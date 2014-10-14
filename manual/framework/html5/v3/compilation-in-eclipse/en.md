@@ -21,7 +21,7 @@ Then you will see the two projects have been imported.
 
 ![](./res/2.png)
 
-##Setup a NDK builder in eclipse
+##Setup an NDK builder in eclipse
 We need a native builder to compile the C++ code before we generate the apk. Right click on `MyGame` and select `Properties`.
 
 ![](./res/3.png)
@@ -47,6 +47,7 @@ Switch to Refresh tab , select `Refresh resources upon completion`.
 ![](./res/8.png)
 
 Switch to Environment tab, click `New...`, add `NDK_ROOT` here.
+
 ![](./res/9.png)
 
 Now we are finished to setup the Native builder, click OK.

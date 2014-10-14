@@ -1,5 +1,4 @@
 # 2.3 使用Cocos Code IDE开发
----
 
 前面一个章节中开发者已经了解如何使用 Cocos Console 开发并发布 Web 和各原生平台应用，这里要给大家介绍的是图形化的工具 Cocos Code IDE。
 
@@ -33,7 +32,6 @@ Cocos Code IDE 是基于 Eclipse 开发的产品，不仅封装了 Cocos Console
 上面创建出来的是一个非常简单的 Helloworld 工程，你只要点击 IDE 工具栏上的 Debug 或者 Run 按钮，无需编译任何 C++ 代码，就可以通过我们预编译的 Runtime 看到游戏的实际表现效果，而且还可以通过 Debug Configurations 按钮切换不同的目标平台。
 
 ## 关于Runtime
-
 ### 什么是 Runtime
 上文中提到了使用 Runtime 查看游戏的表现效果，可能开发者对这个新名词产生疑问：Runtime 是什么呢？
 
@@ -60,7 +58,6 @@ Cocos Code IDE 支持 JavaScript 语言的代码智能提示，体验愉悦的�
 当然，桌面版的性能总是比终端设备强，所以建议开发者尽量使用桌面版调试并修正问题。
 
 ## 项目发布
-
 ### iOS 发布
 只要在 Cocos Code IDE 中右击工程，在 Cocos Tools 中选择 Package to IPA for iOS...，就可以通过向导打包出可在苹果上架的 IPA 包了。
 

@@ -1,4 +1,4 @@
-# 添加内容到场景
+# 3.3 添加内容到场景
 
 在添加内容到场景前，我们需要先了解一下什么是精灵。
 
@@ -14,7 +14,6 @@ Cocos2d-js中的精灵（Sprite）和其他游戏引擎中的精灵相似，它�
     	HelloWorld_png : "res/HelloWorld.png",
 	};
 	```
-	
 * 开打firstscene.js，在ctor函数中添加下面的代码。
 
 	```
