@@ -17,7 +17,7 @@ Cocos Code IDE 是基于 Eclipse 开发的产品，不仅封装了 Cocos Console
 
     [Python 2.7.6](https://www.python.org/download/releases/2.7.6/)
   
-2. 请前往[cocos 下载页](http://www.cocos2d-x.org/download)下载 Cocos Code IDE；
+2. 请前往[cocos 下载页](http://cn.cocos2d-x.org/download/)下载 Cocos Code IDE；
 3. 另外一些打包 Android 应用需要用到的链接：
 
 	+ [Android SDK](https://developer.android.com/sdk/index.html?hl=sk)
