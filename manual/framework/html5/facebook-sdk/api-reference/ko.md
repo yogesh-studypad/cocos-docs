@@ -20,7 +20,7 @@
 |이름|설명|
 |---|---|
 |[getInstance](./get-instance_ko.md)|SDK를 초기화하고 `plugin.FacebookAgent`의 인스턴스를 반환합니다. 다른 것을 하기에 앞서 실행할 필요가 있습니다.|
-|[destroyInstance](./get-instance_ko.md)|`plugin.FacebookAgent`의 인스턴스를 파괴합니다.|
+|[destroyInstance](./destroy-instance_ko.md)|`plugin.FacebookAgent`의 인스턴스를 파괴합니다.|
 |[api](./api_ko).md)| 유저나 친구의 행동에 대해서 알아내기 위한 [Facebook Graph API](http://developers.facebook.com/docs/graph-api)를 호출합니다.|
 |[share](./share_ko.md)|페이스북에서의 상태 업데이트를 포스트합니다.|
 |[dialog](./dialog-share_ko.md) |공유를 위한 페이스북 다이얼로그를 작동합니다.|
