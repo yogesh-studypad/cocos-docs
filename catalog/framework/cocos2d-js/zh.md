@@ -13,7 +13,7 @@
 
 ## 3. 深入Cocos2d-JS
 
-- [3.1 搭建Cocos2d-js v3.x 开发环境](../../../manual/framework/cocos2d-js/3-jumping-into-cocos2d-js/3-1-installation/zh.md)
+- [3.1 搭建Cocos2d-JS v3.x 开发环境](../../../manual/framework/cocos2d-js/3-jumping-into-cocos2d-js/3-1-installation/zh.md)
 - [3.2 创建第一个场景](../../../manual/framework/cocos2d-js/3-jumping-into-cocos2d-js/3-2-creating-your-first-scene/zh.md)
 - [3.3 添加内容到场景](../../../manual/framework/cocos2d-js/3-jumping-into-cocos2d-js/3-3-adding-content-to-the-scene/zh.md)
 - [3.4 使用动作让场景活起来](../../../manual/framework/cocos2d-js/3-jumping-into-cocos2d-js/3-4-using-actions-to-animate-scenes/zh.md)
