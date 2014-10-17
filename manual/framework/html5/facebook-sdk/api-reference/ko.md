@@ -4,10 +4,10 @@
 
 페이스북 SDK 베타를 사용하기에 앞서 당신의 프로젝트에 Cocos2d-JS 페이스북 SDK 베타를 통합할 필요가 있습니다. 먼저 코코스 콘솔로 새로운 프로젝트를 만들고 다음의 문서에 따라 통합을 진행합니다:
 
-- [코코스 콘솔 사용 문서](http://www.cocos2d-x.org/docs/manual/framework/html5/v2/cocos-console/en)
-- [Cocos2d-JS 페이스북 SDK 베타를 안드로이드에서 사용하기](../facebook-sdk-on-android/en.md)
-- [Cocos2d-JS 페이스북 SDK 베타를 iOS에서 사용하기](../facebook-sdk-on-ios/en.md)
-- [Cocos2d-JS 페이스북 SDK 베타를 웹에서 사용하기](../facebook-sdk-on-web/en.md)
+- [코코스 콘솔 사용 문서](../../v2/cocos-console/ko.md)
+- [Cocos2d-JS 페이스북 SDK 베타를 안드로이드에서 사용하기](../facebook-sdk-on-android/ko.md)
+- [Cocos2d-JS 페이스북 SDK 베타를 iOS에서 사용하기](../facebook-sdk-on-ios/ko.md)
+- [Cocos2d-JS 페이스북 SDK 베타를 웹에서 사용하기](../facebook-sdk-on-web/ko.md)
 
 ##API 목록
 
@@ -21,7 +21,7 @@
 |---|---|
 |[getInstance](./get-instance_ko.md)|SDK를 초기화하고 `plugin.FacebookAgent`의 인스턴스를 반환합니다. 다른 것을 하기에 앞서 실행할 필요가 있습니다.|
 |[destroyInstance](./destroy-instance_ko.md)|`plugin.FacebookAgent`의 인스턴스를 파괴합니다.|
-|[api](./api_ko.md)| 유저나 친구의 행동에 대해서 알아내기 위한 [Facebook Graph API](http://developers.facebook.com/docs/graph-api)를 호출합니다.|
+|[api](./api_ko).md)| 유저나 친구의 행동에 대해서 알아내기 위한 [Facebook Graph API](http://developers.facebook.com/docs/graph-api)를 호출합니다.|
 |[share](./share_ko.md)|페이스북에서의 상태 업데이트를 포스트합니다.|
 |[dialog](./dialog-share_ko.md) |공유를 위한 페이스북 다이얼로그를 작동합니다.|
 |[dialog](./dialog-message_ko.md) |메시지를 보내기 위한 페이스북 다이얼로그를 작동합니다.|
