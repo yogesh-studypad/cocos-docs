@@ -38,13 +38,13 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 
 |Value|Dialog type|
 |-----|-----------|
-|share_link|Share a link|
-|share_photo|Share a photo|
-|share_open_graph|Share a structured Open Graph story|
+|shareLink|Share a link|
+|sharePhoto|Share a photo|
+|shareOpenGraph|Share a structured Open Graph story|
 
 ###Additional properties of `info` object based on each Share Dialog type:
 
-1.`share_link`
+1.`shareLink`
 
 |Name|Type|Description|Default|
 |----|----|--------|-------|
@@ -60,7 +60,7 @@ On Web, it triggers a Share Dialog through Javascript. Please note that you can 
 |reference|string|A name for the category of feed post, used in Facebook Insights to help you measure the performance of different types of post|None|
 |properties|object|Links which will be rendered at the bottom of the Feed story. Keys must be strings. Values can be either strings (in which case the story will have the key as text and the value as the link URL), or length-2 string arrays where the 0th value is the text and the 1st value the URL to link to.|None|
 
-2.`share_photo`
+2.`sharePhoto`
 
 Please note that you can only share one photo with Share Dialog on iOS and Android. 
 
@@ -69,7 +69,7 @@ Please note that you can only share one photo with Share Dialog on iOS and Andro
 |photo|string|The path of the photo|
 
 
-3.`share_open_graph`
+3.`shareOpenGraph`
 
 Please note that you can only share a structured Open Graph story with Share Dialog on iOS and Android. 
 
@@ -93,6 +93,7 @@ var callback = function (code, response) {}
 ```
 
 If the sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the example below,
+
 ```javascript
 {
     // The id of the post which has been shared
@@ -114,7 +115,7 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 
     ```javascript
     var info = {
-        "dialog": "share_link",
+        "dialog": "shareLink",
         "link": "http://www.cocos2d-x.org",
         "name": "Cocos2d-x",
         "description": "Cocos2d-x is a great game engine",
@@ -135,7 +136,7 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 
     ```javascript
     var info = {
-        "dialog": "share_photo",
+        "dialog": "sharePhoto",
         "photo": "/User/XXX/Documents/a.png"
     };
     
@@ -153,7 +154,7 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 
     ```javascript
     var info = {
-        "dialog": "share_open_graph",
+        "dialog": "shareOpenGraph",
         "object_type": "cocostestmyfc:cocos_document", 
         "title": "Cocos2d-JS Game Engine",
         "image": "http://files.cocos2d-x.org/images/orgsite/logo.png",
@@ -185,13 +186,13 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 
 |Value|Dialog type|
 |-----|-----------|
-|message_link|Message a link to friends|
-|message_photo|Message a photo to friends|
-|message_open_graph|Message an Open Graph story to friends|
+|messageLink|Message a link to friends|
+|messagePhoto|Message a photo to friends|
+|messageOpenGraph|Message an Open Graph story to friends|
 
 ###Additional properties of `info` object for each message dialog type:
 
-1.`message_link`
+1.`messageLink`
 
 |Name|Type|Description|
 |----|----|--------|
@@ -201,7 +202,7 @@ On Web, it can only message a link to the user's friends. Please refer to [Send 
 |description|string|a snippet of text describing the content of the link.|
 |picture|string|the url of a thumbnail to associate with the post.|
 
-2.`message_photo`
+2.`messagePhoto`
 
 Please note that you can only message one photo with Message Dialog on iOS and Android. 
 
@@ -209,7 +210,7 @@ Please note that you can only message one photo with Message Dialog on iOS and A
 |----|----|-----------|
 |photo|string|The path of the photo|
 
-3.`message_open_graph`
+3.`messageOpenGraph`
 
 Please note that you can only share a structured Open Graph story with Message Dialog on iOS and Android. 
 
@@ -245,7 +246,7 @@ If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the mes
 
     ```javascript
     var info = {
-        "dialog": "message_link",
+        "dialog": "messageLink",
         "link": "http://www.cocos2d-x.org",
         "title": "Cocos2d-x",
         "description": "Cocos2d-x is a great game engine",
@@ -264,7 +265,7 @@ If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the mes
 
     ```javascript
     var info = {
-        "dialog": "message_photo",
+        "dialog": "messagePhoto",
         "photo": "/User/XXX/Documents/a.png"
     };
     facebook.dialog(info, function (code, response) {
@@ -280,7 +281,7 @@ If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the mes
 
     ```javascript
     var info = {
-        "dialog": "message_open_graph",
+        "dialog": "messageOpenGraph",
         "object_type": "cocostestmyfc:cocos_document", 
         "title": "Cocos2d-JS Game Engine",
         "image": "http://files.cocos2d-x.org/images/orgsite/logo.png",
@@ -310,7 +311,7 @@ On Web, you should always use the Share Dialog and the Feed Dialog for web has a
 
 |Name|Type|Description|Default|
 |----|----|--------|-----------|
-|dialog|string|You should use `feed_dialog`|None|
+|dialog|string|You should use `feedDialog`|None|
 |to|string|The Facebook user ID or username of the user on whose timeline the story should be posted|The current user|
 |link|string|The URL to which this post should link|The base URL of the posting application, as configured in the Developer App|
 |name|string|The name of the story, shown at the top and rendered as a hyperlink with href set to link|The app name, as configured in the Developer App|
@@ -344,7 +345,7 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 
 ```javascript
 var info = {
-    "dialog": "feed_dialog",
+    "dialog": "feedDialog",
     "link": "http://www.cocos2d-x.org",
     "name": "Cocos2d-x",
     "description": "Cocos2d-x is a great game engine",
