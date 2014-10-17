@@ -76,3 +76,11 @@ There are two test cases which demostrate how to use the Facebook SDK.
 Besides the test cases in Cocos2d-JS package, we also have a Facebook Canvas App for you to test our Facebook SDK.
 
 [Facebook Canvas Test Case](https://apps.facebook.com/cocostestmyfc/)
+
+## The next step
+
+Next up, I believe you can not wait to create your own Facebook games, so please follow the integration guides to create your Cocos2d-JS project with Facebook SDK integrated.
+
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)

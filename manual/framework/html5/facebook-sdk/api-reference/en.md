@@ -10,7 +10,7 @@ Then you can follow these integration documents for integrating Facebook SDK in 
 - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
 - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
 
-Then you can check out the Facebook SDK test case, please follow [this document](../facebook-test-case/en.md) to know what's demonstrated in the test case.
+Next you may be interested in checking out the Facebook SDK test case and see all the functionalities in action, please follow [this document](../facebook-test-case/en.md) to know how to run it and what's demonstrated in the test case.
 
 We also invite you to explore other documents about Cocos2d-JS development.
 
