@@ -47,8 +47,7 @@ We also invite you to explore other documents about Cocos2d-JS development.
 
 |Name|Description|
 |----|-----------|
-|[canvas.pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/d
-ocs/concepts/payments/). _Desktop only_.|
+|[canvas.pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/docs/concepts/payments/). _Desktop only_.|
 |[activateApp](./activate-app.md)|Report the launch of the app, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
