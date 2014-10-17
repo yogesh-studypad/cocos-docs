@@ -113,6 +113,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
     - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
     - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
+    - [Facebook SDK Test Case](./facebook-sdk/facebook-test-case/en.md)
     
 - Advanced topics
     - [How to use extensions in JSB(Chinese version)](./jsb/jsb-extension/zh.md)
