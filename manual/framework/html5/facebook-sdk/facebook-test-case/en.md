@@ -13,7 +13,7 @@ First of all, you need the Cocos2d-JS engine package which can be downloaded [he
 - Follow the [Cross native / browser game with Cocos Console](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en) document to install the Cocos Console tool.
 - Open your terminal / command line tool, open the directory `samples/js-tests/`.
 - Run the following command : 
-    + `cocos run -p web` to run the test case on web.
+    + `cocos run -p web --port 8080` to run the test case on web.
     + `cocos run -p ios` to run the test case on an iOS simulator (Mac enviroment and Xcode required).
     + `cocos run -p android` to run the test case on an Android device or Android simulator.
 
@@ -70,6 +70,7 @@ There are two test cases which demostrate how to use the Facebook SDK.
     - [.activateApp()](../api-reference/activate-app.md)
     - [.logEvent(eventName, valueToSum, parameters)](../api-reference/log-event.md)
     - [.logPurchase(amount, currency, parameters)](../api-reference/log-purchase.md)
+    - [.canvas.pay(info, callback)](../api-reference/pay.md)
 
 ## Online test
 
