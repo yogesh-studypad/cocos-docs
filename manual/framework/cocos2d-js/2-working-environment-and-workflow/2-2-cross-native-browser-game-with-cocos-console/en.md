@@ -8,7 +8,7 @@ The best thing about Cocos2d-JS is its perfect multi-platform ability: one code 
 
 As we can see from the architecture of Cocos2d-JS, web based games make use of Cocos2d-html5 and native platforms are supported using Cocos2d-x's JavaScript Bindings (JSB). The JSB use SpiderMonkey as their runtime JavaScript engine and function as a bridge to map Cocos2d-x's API to the JavaScript API. Both the web and native solutions have already proven themselves in many games in the 2.x versions, but this is the first time these two solutions are truly combined, unified and simplified. The Cocos2d-JS API level shown in the architecture is where the real magic happens. It unifies and simplifies the two base engine's APIs so that the differences between platforms and devices are transparent for developers. All this leads to the same goal: Make multi-platform development incredibly easy!
 
-**All platforms supported by Cocos2d-JS**：
+**All platforms supported by Cocos2d-JS**:
 
 - Desktop Browsers（Chrome, Safari, Firefox, Opera, IE9+）
 - Mobile Browsers（Android, iOS）
@@ -51,7 +51,7 @@ Some useful links and installation tips:
 * [Python 2.7.6](https://www.python.org/download/releases/2.7.6/)
 * [Android SDK](https://developer.android.com/sdk/index.html?hl=sk)
 * [NDK](https://developer.android.com/tools/sdk/ndk/index.html)
-* Installing Ant：
+* Installing Ant:
 
     - [Download Ant](http://ant.apache.org/).
     - Decompress Ant to a folder.
@@ -127,9 +127,9 @@ More details about Cocos Console can be found in the [Cocos Console documentatio
 
 In the `frameworks/runtime-src/` folder, you can find project files for some platforms, including:
 
-- proj.ios_mac: Xcode project for iOS and Mac OS X
-- proj.win32： Visual Studio project for Windows
-- proj.android： Eclipse project for Android
+- proj.ios_mac : Xcode project for iOS and Mac OS X
+- proj.win32: Visual Studio project for Windows
+- proj.android: Eclipse project for Android
 
 ##6. Project publishing
 
