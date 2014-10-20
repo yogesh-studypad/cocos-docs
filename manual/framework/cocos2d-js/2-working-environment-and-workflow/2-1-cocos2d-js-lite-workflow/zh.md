@@ -8,7 +8,7 @@ Cocos2d-JS为纯Web开发者提供了特别定制的一套更友好的工作流�
 
 ## 下载Cocos2d-JS Lite Version
 
-请在[下载页面](http://cocos2d-x.org/filecenter/jsbuilder/)中下载最新版本的Lite Version引擎。
+请在[下载页面](http://cn.cocos2d-x.org/download/)中下载最新版本的Lite Version引擎。
 
 除了Lite Version以外你还可以选择下载完整版引擎或定制一个自己专属的引擎版本。
 

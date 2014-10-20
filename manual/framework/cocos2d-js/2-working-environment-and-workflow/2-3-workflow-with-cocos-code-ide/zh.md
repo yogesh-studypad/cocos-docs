@@ -1,5 +1,5 @@
 # 2.3 使用Cocos Code IDE开发
----
+
 前面一个章节中开发者已经了解如何使用 Cocos Console 开发并发布 Web 和各原生平台应用，这里要给大家介绍的是图形化的工具 Cocos Code IDE。
 
 Cocos Code IDE 是基于 Eclipse 开发的产品，不仅封装了 Cocos Console 的绝大部分功能，简化了用户的操作，而且还提供JavaScript断点调试、代码热更新等开发者迫切需要的功能。
@@ -17,7 +17,7 @@ Cocos Code IDE 是基于 Eclipse 开发的产品，不仅封装了 Cocos Console
 
     [Python 2.7.6](https://www.python.org/download/releases/2.7.6/)
   
-2. 请前往[cocos 下载页](http://www.cocos2d-x.org/download)下载 Cocos Code IDE；
+2. 请前往[cocos 下载页](http://cn.cocos2d-x.org/download/)下载 Cocos Code IDE；
 3. 另外一些打包 Android 应用需要用到的链接：
 
 	+ [Android SDK](https://developer.android.com/sdk/index.html?hl=sk)
