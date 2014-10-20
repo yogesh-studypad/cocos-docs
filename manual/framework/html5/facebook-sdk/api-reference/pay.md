@@ -1,11 +1,11 @@
-#.pay(info, callback)
+#.canvas.pay(info, callback)
 
 Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/docs/payments/). This wraps the JS SDK function FB.ui({method: "pay", action: "purchaseitem", ...), which you can find more details at [Pay Dialog](http://developers.facebook.com/docs/payments/reference/paydialog).
 
 ##Parameters
 
 ```javascript
-plugin.FacebookAgent.prototype.pay = function(info, callback){}
+plugin.FacebookAgent.prototype.canvas.pay = function(info, callback){}
 ```
 
 |Name|Type|Required|Description|
@@ -57,7 +57,7 @@ var info = {
 };
 
 var facebook = plugin.FacebookAgent.getInstance();
-facebook.pay(info, function(code, response){
+facebook.canvas.pay(info, function(code, response){
     if (code == plugin.FacebookAgent.CODE_SUCCEED){
         if (response['status'] === 'completed')
             cc.log("Payment succeeded: " + response['amount'] + response['currency']);
