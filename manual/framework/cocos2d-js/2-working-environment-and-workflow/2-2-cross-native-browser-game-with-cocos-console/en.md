@@ -127,7 +127,7 @@ More details about Cocos Console can be found in the [Cocos Console documentatio
 
 In the `frameworks/runtime-src/` folder, you can find project files for some platforms, including:
 
-- proj.ios_mac : Xcode project for iOS and Mac OS X
+- proj.ios_mac: Xcode project for iOS and Mac OS X
 - proj.win32: Visual Studio project for Windows
 - proj.android: Eclipse project for Android
 
