@@ -12,6 +12,7 @@ Here shows the general structure with an example of the config.json file.
 	
     "init_cfg":{
        "isLandscape": true,
+       "isWindowTop": false,
        "name": "HelloLua",
        "width": 960,
        "height": 640,
@@ -45,6 +46,12 @@ Here shows the general structure with an example of the config.json file.
 boolean
 
 Screen orientation, if true，the application orientation will be "landscape", otherwise it will be "portrait"
+
+####"isWindowTop"####
+
+boolean
+
+Keep window on top, if true，the application window will be kept on top
 
 ####"entry"####
 

@@ -7,41 +7,47 @@ Cocos Code IDE入门指南
 
 下载 Cocos Code IDE
 ----------
-| 平台        | 充分测试版本 | 下载地址 |
-| ----------- |:--------------:| ----------------------:|
-| Mac OS X      | 10.9 		| [Mac OS X 64][mac ide link] 
-| Windows       | Win7/Win8     | [Windows x86 64Bit(.zip)][windows ide 64 zip link], [Windows x86 64Bit(.exe)][windows ide 64 exe link], [Windows x86 32Bit(.zip)][windows ide 32 zip link],[Windows x86 32Bit(.exe)][windows ide 32 exe link]|
+Cocos Code IDE 只支持 Cocos2d-x 3.x/Cocos2d-js 3.x 引擎。
+
+----
+
+**Cocos2d-x 引擎和 Cocos Code IDE 版本兼容表：**
+
+| IDE版本\Cocos2d-x 版本 | 3.2 Final | 3.3 rc0 |
+| -------------------- |:----------:| :------:|
+| 1.0.0-Final 			| √ 		 | √       |
+| 1.0.0-RC2   			| √ 		 | x       |
+
+---
+**Cocos2d-js 引擎和 Cocos Code IDE 版本兼容表：**
+
+| IDE版本\Cocos2d-js 版本 | 3.0 Final | 3.1 Final |
+| -------------------- |:----------:| :------:|
+| 1.0.0-Final 			| √ 		 | √       |
+| 1.0.0-RC2   			| √ 		 | x       |
+
+请参考上表选择 Cocos Code IDE 和 Cocos2d-x/Cocos2d-js，并统一到 [Cocos 下载页][cocos download page] 下载。
 
 如何安装
 ------------
 
 ### 基本需求
 
-+ 安装 [Python 2.7.x][Python link]。
-+ 开发 Cocos2d-x Lua binding 游戏请下载 [Cocos2d-x 3.2 Final][Lua engine download link]
-+ 开发 Cocos2d-x JavaScript binding 游戏请下载 [Cocos2d-js 3.0 Final][JS engine download link]
-
-	**Note:**
-	+ **Cocos Code IDE 是基于Cocos2d-x 3.x/Cocos2d-js 3.x的引擎版本做的开发，其他版本的引擎在该版本的IDE上可能无法正常工作。当前IDE的版本(1.0.0-rc2)适用于最新的引擎版本(Cocos2d-x 3.2 Final 和 Cocos2d-js 3.0 Final)，并且向后兼容3.x的老版本引擎，所以为了更好的体验和使用IDE的新特性，请下载相应版本的引擎。**
-	
-	+ **引擎和所创建的工程所在的路径都不能包含非英文字符，即路径中不能包含中文。**
++ **[Windows 用户]** 安装 [Python 2.7.x][Python link]，需要 2.7.5 或以上版本，不支持 3.x 版本。
++ **Cocos Code IDE 安装路径不可以包含中文等非 ascii 值**
 	
 ### 额外需求
 
-* 如果要在 iOS Simulator 上调试，需要
+* 如果要在 iOS Simulator 上调试，需要安装 XCode 5.1 或以上版本
 
-    保证你的 Mac 上安装了 iOS Simulator
-
-* 如果你要在 android 设备上调试，需要
-
-    安装 [android sdk][Android SDK link]
+* 如果要在 android 设备上调试，需要安装 [Android SDK][Android SDK link]
 
 * 如果你想要定制自己的 runtime，你需要：
 
 	| 目标平台      | 工具 |
 	| ------------- |:----------------------------:|
-	| Mac OS X/iOS      | XCode 5.0或以上版本 		|
-	| Windows       | VS2012 |
+	| Mac OS X/iOS      | XCode 5.1或以上版本 		|
+	| Windows       | VS2012 或以上版本 |
 	| Android       | [Android SDK][Android SDK link], [NDK(**r9d版本**)][NDK link], [ANT][ANT link] |
 	
 已有的 Cocos2d 项目如何使用 Code IDE开发
@@ -57,15 +63,10 @@ Cocos Code IDE入门指南
 
 + [使用Code IDE调试Cocos2d-x Lua游戏](../debug-lua/zh.md)
 + [使用Code IDE调试Cocos2d-x JavaScript游戏](../debug-js/zh.md)
++ [如何同时调试脚本代码和C++代码](../how-to-debug-cpp/zh.md)
 
 [Android SDK link]: https://developer.android.com/sdk/index.html?hl=sk
 [NDK link]: https://developer.android.com/tools/sdk/ndk/
 [ANT link]: http://ant.apache.org/
 [Python link]: http://www.python.org/download
-[Lua engine download link]: http://www.cocos2d-x.org/filedown/cocos2d-x-3.2.zip
-[JS engine download link]: http://www.cocos2d-x.org/filedown/cocos2d-js-v3.0.zip
-[mac ide link]: http://www.cocos2d-x.org/filedown/cocos-code-ide-mac64-1.0.0-rc2.dmg
-[windows ide 64 zip link]: http://www.cocos2d-x.org/filedown/cocos-code-ide-win64-1.0.0-rc2.zip
-[windows ide 32 zip link]: http://www.cocos2d-x.org/filedown/cocos-code-ide-win32-1.0.0-rc2.zip
-[windows ide 64 exe link]: http://www.cocos2d-x.org/filedown/cocos-code-ide-win64-1.0.0-rc2.exe
-[windows ide 32 exe link]: http://www.cocos2d-x.org/filedown/cocos-code-ide-win32-1.0.0-rc2.exe
+[cocos download page]: http://download.cocos2d-x.org

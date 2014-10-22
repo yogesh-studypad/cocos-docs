@@ -1,3 +1,15 @@
+Cocos Code IDE 1.0.0-final
+
+	[NEW] Xcode 6 iOS simulator support
+	[NEW] Enable "Open Declaration" 
+	[NEW] Linking files/directories support
+	[NEW] New file uploading filter rules
+	[NEW] Quick-cocos2d-x support
+	
+	[FIX] Reducing load times
+	[FIX] PrbuiltRuntime.apk can't install to device on Windows
+	[FIX] Some other bugs
+
 Cocos Code IDE 1.0.0-rc2
 
 	[NEW] JDK integration
