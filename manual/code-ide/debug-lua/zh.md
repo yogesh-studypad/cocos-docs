@@ -72,7 +72,7 @@ end
 +  点击 **Debug** 按钮，预编译的 runtime 会被自动安装到模拟器中
 
 ### 在 iOS 设备上调试
-+ 首先，你需要一个 runtime IPA， 从 1.0.0-rc1 版本开始，你可以通过 Code IDE 自己编译一个，然后[安装IPA到设备中][How To Install IPA]
++ 首先，你需要一个 runtime IPA， 从 cocos2d-x 3.3 rc0 开始，创建工程的时候会给你准备一个 PrebuiltRuntimeLua.ipa，然后[安装IPA到设备中][How To Install IPA]
 + 在 iOS 设备上启动 runtime
 + 在 "Debug Configuration" 界面选择 **Remote Debug** 单选项
 + platform 选择 "iOS"
