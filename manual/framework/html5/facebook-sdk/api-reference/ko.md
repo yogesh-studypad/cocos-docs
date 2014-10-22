@@ -25,7 +25,7 @@
 |[share](./share_ko.md)|페이스북에서의 상태 업데이트를 포스트합니다.|
 |[dialog](./dialog-share_ko.md) |공유를 위한 페이스북 다이얼로그를 작동합니다.|
 |[dialog](./dialog-message_ko.md) |메시지를 보내기 위한 페이스북 다이얼로그를 작동합니다.|
-|[appRequest](./appRequest_ko.md)|1:1 공유를 위한 [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) 다이얼로그를 작동합니다.|
+|[appRequest](./app-request_ko.md)|1:1 공유를 위한 [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) 다이얼로그를 작동합니다.|
 
 ###Auth와 Session 메소드
 
