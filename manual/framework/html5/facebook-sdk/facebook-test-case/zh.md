@@ -1,10 +1,10 @@
-# 探索Cocos2d-JS上接入Facebook SDK
+# 探索Cocos2d-JS上接入Facebook Integration
 
 ## 全功能测试例项目
 
-为了让更多的游戏开发者更容易的使用Facebook SDK，我们提供了一个完整的测试例项目。其中涉及SDK中所有的API和演示了怎么正确的使用它们。
+为了让更多的游戏开发者更容易的使用Facebook Integration，我们提供了一个完整的测试例项目。其中涉及SDK中所有的API和演示了怎么正确的使用它们。
 
-如果目前还不熟悉 Facebook SDK for Cocos2d-JS，强烈建议你去查看 [Facebook SDK for Cocos2d-JS API Reference](../api-reference/zh.md)文档。
+如果目前还不熟悉 Facebook Integration for Cocos2d-JS，强烈建议你去查看 [Facebook Integration for Cocos2d-JS API Reference](../api-reference/zh.md)文档。
 
 ## 如何运行测试例项目
 
@@ -12,7 +12,7 @@
 - 根据[Cross native / browser game with Cocos Console](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en)文档安装Cocos Console工具。
 - 打开终端/命令行工具，进入`samples/js-tests/` 目录。
 - 执行以下命令：
-    + `cocos run -p web --port 8080`  在web上运行。
+    + `cocos run -p web --port 8080`  在web上运行。（设置端口为8080很重要）
     + `cocos run -p ios`  在IOS模拟器上运行（要求Mac环境和Xcode)。
     + `cocos run -p android` 在安卓设备或安卓模拟器上运行。
 
@@ -20,7 +20,7 @@
 
 运行测试例项目，你可以看到`Facebook SDK Test`的测试例列表。
 
-下面2个例子演示了如何使用Facebook SDK。
+下面2个例子演示了如何使用Facebook API
 
 1. 分享测试
 
@@ -43,7 +43,7 @@
 
     ![](user.jpg)
 
-    在第二个测试例页面中，你可以测试Facebook SDK的其他功能：
+    在第二个测试例页面中，你可以测试Facebook的API：
 
     - 登录或注销Facebook账户。
     - 获取用户id。
@@ -73,14 +73,14 @@
 
 ## 在线测试
 
-除了在Cocos2d-JS包里的测试，同时我们也为你提供了Facebook Canvas App来测试Facebook SDK。
+除了在Cocos2d-JS包里的测试，同时我们也为你提供了Facebook Canvas App来测试Facebook Integration for Cocos2d-JS。
 
 [Facebook Canvas Test Case](https://apps.facebook.com/cocostestmyfc/)
 
 ## 下一步
 
-接下来，相信你已经迫不及待地想去创建自己的Facebook游戏，那么根据集成指南去创建带有Facebook SDK的Cocos2d-JS项目吧。
+接下来，相信你已经迫不及待地想去创建自己的Facebook游戏，那么根据集成指南去创建支持Facebook的Cocos2d-JS项目吧。
 
-- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+- [Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/zh.md)
+- [Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/zh.md)
+- [Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/zh.md)

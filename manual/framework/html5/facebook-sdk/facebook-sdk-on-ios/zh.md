@@ -1,6 +1,6 @@
-#iOS平台上如何集成Facebook SDK for Cocos2d-JS
+#iOS平台上如何集成Facebook Integration for Cocos2d-JS
 
-这篇文当将展示如何在iOS中快速的使用Facebook SDK for Cocos2d-JS。
+这篇文当将展示如何在iOS中快速的使用Facebook Integration for Cocos2d-JS。
 
 ## 创建你的Facebook应用
 
@@ -50,7 +50,7 @@
 
 ## 在工程中添加Plugin-x和PluginFacebook的工程
 
-因为`Facebook SDK for Cocos2d-JS`对Plugin-x的依赖，你首先需要添加Plugin-x的工程：
+因为`Facebook Integration for Cocos2d-JS`对Plugin-x的依赖，你首先需要添加Plugin-x的工程：
 
 **Step1**: 右键点击myProject工程，点击`addFiles to "myProject"`或者直接拖拽`myProject/frameworks/js-bindings/cocos2d-x/plugin/protocols/proj.ios/PluginProtocol.xcodeproj`的工程到"myProject"下。
 
@@ -62,7 +62,7 @@
 
 ## 添加Plugin-x的JSB绑定代码
 
-在上面这些步骤之后，你现在就可以使用FacebookAgent类了，它包装了所有Facebook SDK的C++层API。为了这些API能够在Javascript层暴露出来，还有几个步骤要做，你需要在工程中包含Javascript绑定代码并将绑定代码注册到SpiderMonkey中。
+在上面这些步骤之后，你现在就可以使用FacebookAgent类了，它包装了所有Facebook Integration的C++层API。为了这些API能够在Javascript层暴露出来，还有几个步骤要做，你需要在工程中包含Javascript绑定代码并将绑定代码注册到SpiderMonkey中。
 
 **Step1**: 添加jsb_pluginx.js (`myProject/frameworks/js-bindings/cocos2d-x/plugin/jsbindings/script`目录下) 到`myProject`工程中，并确保它在`Build Phases`的`Copy Bundle Resources`列表中.
 
@@ -108,6 +108,6 @@
 
 如果你想了解更多Plugin-x的配置，请参考[Plugin-x架构](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/plugin-x-architecture/zh)和[如何使用Plugin-x iOS篇](link)。
 
-## 如何使用Facebook SDK
+## 如何使用Facebook API
 
-- 请参考[Facebook SDK for Cocos2d-JS API Reference](../api-reference/en.md)
+- 请参考[Facebook Integration for Cocos2d-JS API Reference](../api-reference/en.md)
