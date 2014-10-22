@@ -14,7 +14,7 @@ One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportun
 
 * Released Facebook Integration for Cocos2d-JS v1.0, its APIs have been significantly polished and stablized. Improved test cases for Facebook with more features demonstrated. Refer to the [API reference document](http://cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/api-reference/en) for more details.
 * Refactorization of the web engine with new renderer architecture, the new renderer has brought a great performance boost on Web engine.
-* Upgraded Cocos2d-x to v3.3 rc0.
+* Upgraded Cocos2d-x to v3.3rc0.
 * Supported Cocos Studio v2.0 including Timeline animation support and proto buffers format support for both web engine and JSB engine.
 * Automatically enabled WebGL on iOS 8 safari, the performance is incredibly enhanced compare to Canvas render mode.
 
@@ -32,6 +32,7 @@ For JSB build, there are some restrictions :
 
 - [Android build] NDK version must be r9d
 - [iOS build] Xcode version must be 5.1.1 +
+- [Web code obfuscation] JRE or JDK version must be 1.6 or 1.7
 
 ## Download
 
@@ -59,9 +60,9 @@ If you want to upgrade your game based on v3.0 previous version to the 3.1 versi
 
 ## About Cocos2d family
 
-- Cocos2d-JS v3.1 uses Cocos2d-x v3.3 RC0 as base of JSB solution
+- Cocos2d-JS v3.1 uses Cocos2d-x v3.3rc0 as base of JSB solution
 - Cocos2d-JS v3.1 is compatible with Cocos Code IDE v1.0
-- Cocos2d-JS v3.1 is compatible with Cocos Studio v1.2 - v1.5.0.1
+- Cocos2d-JS v3.1 is compatible with Cocos Studio v1.2 - v2.0
 
 With any problems you might have, our communities are happy to help:
 
