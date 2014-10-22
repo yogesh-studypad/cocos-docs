@@ -55,7 +55,7 @@
     - 向Facebook发送应用内付费日志。
     - 在Canvas App中调用Facebook购买方法。
 
-    最后四个测试只能在Facebook Canvas App中调用,现在你可以在[这里](https://apps.facebook.com/cocostestmyfc/)测试它们。
+    最后四个测试例只能在Facebook Canvas App中调用,现在你可以在[ on this test page](https://apps.facebook.com/cocostestmyfc/)测试它们。
 
     本页面所使用的API:
 
