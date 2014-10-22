@@ -18,7 +18,7 @@
 
 ## 探索Facebook测试例项目
 
-通过运行测试例项目，你可以看到`Facebook SDK Test`的测试例列表。
+运行测试例项目，你可以看到`Facebook SDK Test`的测试例列表。
 
 下面2个例子演示了如何使用Facebook SDK。
 
