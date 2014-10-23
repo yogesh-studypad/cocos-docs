@@ -5,7 +5,7 @@
 ##参数
 
 ```javascript
-plugin.FacebookAgent.prototype.login = function(callback){}
+plugin.FacebookAgent.prototype.logout = function(callback){}
 ```
 
 |名称|类型|是否必须|描述|
