@@ -37,11 +37,11 @@
 - 如果已有一个Lua工程，但不是Code IDE建立的，可以参考[《如何打开已有的Lua游戏工程？》]()这个文档。
   
 [select workspace img]: ./res/select_workspace.png
-[select welcome lua img]: ./select_welcome_lua.png
-[set lua engine img]: ./set_lua_engine.png
-[select new lua proj img]: ./select_new_lua_proj.png
-[create lua page1 img]: ./create_lua_page1.png
-[create lua page2 img]: ./create_lua_page2.png
-[create lua finish img]: ./create_lua_finish.png
-[run new game img]: ./run_new_game.png
-[lua working set img]: ./lua_working_set.png
+[select welcome lua img]: ./res/select_welcome_lua.jpg
+[set lua engine img]: ./res/set_lua_engine.jpg
+[select new lua proj img]: ./res/select_new_lua_proj.jpg
+[create lua page1 img]: ./res/create_lua_page1.jpg
+[create lua page2 img]: ./res/create_lua_page2.jpg
+[create lua finish img]: ./res/create_lua_finish.jpg
+[run new game img]: ./res/run_new_game.jpg
+[lua working set img]: ./res/lua_working_set.png
