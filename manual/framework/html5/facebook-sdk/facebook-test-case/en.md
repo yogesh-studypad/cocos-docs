@@ -82,6 +82,6 @@ Besides the test cases in Cocos2d-JS package, we also have a Facebook Canvas App
 
 Next up, I believe you can not wait to create your own Facebook games, so please follow the integration guides to create your Cocos2d-JS project with Facebook SDK integrated.
 
-- [Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+- [Setup Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Setup Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Setup Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)

@@ -108,7 +108,8 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
     
 - Facebook Integration for Cocos2d-JS
-    - [Facebook Integration API Reference](./facebook-sdk/api-reference/en.md)
+    - [Facebook Integration for Cocos2d-JS Overview](./facebook-sdk/en.md)
+    - [Facebook Integration for Cocos2d-JS API Reference](./facebook-sdk/api-reference/en.md)
     - [Facebook Integration for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
     - [Facebook Integration for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
     - [Facebook Integration for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)

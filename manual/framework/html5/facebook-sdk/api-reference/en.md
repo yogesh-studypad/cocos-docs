@@ -6,9 +6,9 @@ Before using Facebook Integration, you will need to know about Cocos2d-JS projec
 
 Then you can follow these integration documents for integrating Facebook in your Cocos2d-JS project:
 
-- [Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+- [Setup Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Setup Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Setup Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
 
 Next you may be interested in checking out the Facebook Integration test case and see all the functionalities in action, please follow [this document](../facebook-test-case/en.md) to know how to run it and what's demonstrated in the test case.
 
