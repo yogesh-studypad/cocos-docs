@@ -12,6 +12,7 @@ config.json文件结构
 	
     "init_cfg":{
        "isLandscape": true,
+       "isWindowTop": false,
        "name": "HelloLua",
        "width": 960,
        "height": 640,
@@ -43,6 +44,11 @@ config.json文件结构
 布尔类型
 
 横竖屏配置，如果为true为横屏，如果为false为竖屏
+
+####"isWindowTop"####
+布尔类型
+
+窗口置顶配置，如果为true则窗口默认置顶，反之默认不置顶
 
 ####"entry"####
 字符串类型
