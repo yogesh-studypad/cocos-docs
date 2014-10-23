@@ -1,8 +1,8 @@
-#Singleton objects in Cocos2d-html5 v3.0
+#Singleton objects in Cocos2d-JS v3.0
 
 ##The original intention
 
-Before version 3.0 of Cocos2d-html5, the whole API was ported from Cocos2d-x. Unfortunately, there are many designs very useful in C++ development but became somehow meaningless in javascript development. 
+Before version 3.0 of Cocos2d-JS, the whole API was ported from Cocos2d-x. Unfortunately, there are many designs very useful in C++ development but became somehow meaningless in JavaScript development. 
 
 The current singleton classes is one of such designs. Let's take cc.SpriteFrameCache as an example :
 
@@ -13,7 +13,7 @@ var boxFrame = cc.SpriteFrameCache.getInstance().getSpriteFrame("box_normal_00.p
 var sprite = cc.Sprite.createWithSpriteFrame(boxFrame);
 ```
 
-First of all, the line of code became very long and harder to read. Then no matter whether cc.SpriteFrameCache's singleton object is created or not, it will make a function call to retrieve the object. If developers doesn't pay attention to create a local object to cache the singleton object, when we create many sprites using sprite frames, the problem will become worse. At last, and most importantly, the singleton design pattern is meant to protect the singleton object and prevent users from creating their own instance of the singleton class. But we all know that's useless in javascript :
+First of all, the line of code became very long and harder to read. Then no matter whether cc.SpriteFrameCache's singleton object is created or not, it will make a function call to retrieve the object. If developers doesn't pay attention to create a local object to cache the singleton object, when we create many sprites using sprite frames, the problem will become worse. At last, and most importantly, the singleton design pattern is meant to protect the singleton object and prevent users from creating their own instance of the singleton class. But we all know that's useless in JavaScript :
 
 ```
 // We can easily find this singleton object in CCSpriteFrameCache.js
@@ -22,7 +22,7 @@ cc.s_sharedSpriteFrameCache.addSpriteFrames(s_boxs_plist);
 var myCache = new cc.SpriteFrameCache();
 ```
 
-As a result, when we decide that the main target of Cocos2d-html5 v3.0 is to provide more compact javascript style APIs, we think it's a good oppotunity to remove the complexity of singleton classes.
+As a result, when we decide that the main target of Cocos2d-JS v3.0 is to provide more compact JavaScript style APIs, we think it's a good oppotunity to remove the complexity of singleton classes.
 
 ##Change list
 
@@ -88,7 +88,7 @@ cc.PlistParser.getInstance()        --> cc.plistParser
 
 Note that all objects have been named with first character lowercase, it is for identify the difference between objects and classes.
 
-And another note for `cc.view`, as `cc.EGLView` was originally ported from Cocos2d-iPhone, so it took the name of iOS's openGL view. But in Cocos2d-html5, it is really just a view which could be a 2d canvas view or an webGL view for our game, so we decided to rename it to a simple `cc.view`.
+And another note for `cc.view`, as `cc.EGLView` was originally ported from Cocos2d-iPhone, so it took the name of iOS's openGL view. But in Cocos2d-html5, it is really just a view which could be a 2d canvas view or a GL view for our game, so we decided to rename it to a simple `cc.view`.
 
 ##The result
 
@@ -100,4 +100,4 @@ var boxFrame = cc.spriteFrameCache.getSpriteFrame("box_normal_00.png");
 var sprite = cc.Sprite.createWithSpriteFrame(boxFrame);
 ```
 
-Hope it make our developers feel better about using Cocos2d-html5.
+Hope it make our developers feel better about using Cocos2d-JS.

@@ -150,7 +150,7 @@ Here is the code to create the runner with PhysicsSprite:
 
 ```
         //1. create PhysicsSprite with a sprite frame name
-        this.sprite = cc.PhysicsSprite.create("#runner0.png");
+        this.sprite = new cc.PhysicsSprite("#runner0.png");
         var contentSize = this.sprite.getContentSize();
         // 2. init the runner physic body
         this.body = new cp.Body(1, cp.momentForBox(1, contentSize.width, contentSize.height));

@@ -1,38 +1,38 @@
-#Integrate Facebook SDK Beta for Cocos2d-JS on Web
+#Integrate Facebook SDK for Cocos2d-JS on Web
 
-Facebook have provided its official Javascript SDK, so what's meaning of providing another one in Cocos2d-JS? It's because Cocos2d-JS is cross platform, and our mobile solution should work perfectly on Web, iOS and Android. But if you use Facebook Javascript SDK with Cocos2d-JS on Web, then when you port you game to iOS or Android, you will need to rewrite all code using Facebook API with native code. Sometimes, it's just a mission impossible.
+This doc walks you through the integration of Facebook SDK Beta for Cocos2d-JS on Web.
 
-So we provided you Facebook SDK Beta for Cocos2d-JS so that your Facebook Game can cross platform without modifing any code.
+Although Facebook has [Facebook SDK for Javascript](http://developers.facebook.com/docs/javascript), if your game has both mobile version and web version, we highly recommend you to use this SDK for the web version because you can use the same code of Facebook integration for both mobile and web without writing them separately for each platform. 
 
-For integrating Facebook SDK Beta for Cocos2d-JS, please follow the steps below:
+**Step1**: Create your Facebook App on Canvas as described in [Getting Started with Canvas](http://developers.facebook.com/docs/games/canvas/). Add the URL to the web host for your sample under the "Canvas URL" and "Secure Canvas URL" section.
 
-## 1. Integrate Facebook Javascript SDK
+**Step2**: Integrate Facebook SDK for Javascript
 
 There are two ways for doing this:
 
-- Developers can found all dependencies files in `frameworks/cocos2d-html5/extenrnal` folder, You can load all dependencies manually like this：
+- Option 1: You can find the files under `frameworks/cocos2d-html5/extenrnal` folder. Then you can load all dependencies manually as below：
     
-```
-cc.loader.loadJs("", [
-    "external/pluginx/platform/facebook_sdk.js",
-    "external/pluginx/platform/facebook.js"
-], function(){
-    //do something
-});
-```
+    ```
+    cc.loader.loadJs("", [
+        "external/pluginx/platform/facebook_sdk.js",
+        "external/pluginx/platform/facebook.js"
+    ], function(){
+        //do something
+    });
+    ```
     
-- There is another easy option, you can directly include Facebook SDK Beta module in `project.json`, the name for this module is `plugin-facebook`. In this way, the engine will load the dependency files in engine loading process, but this will extend loading time. So, the choice is yours.
+- Option 2: You can directly include Facebook SDK module in `project.json`, the name for this module is `plugin-facebook`. In this way, the engine loads the dependencies in engine's loading process, so it may cause the loading time to be longer.
 
-## 2. Config Facebook parameters in project.json
+**Step3**: Config Facebook parameters in `project.json` as below
 
-You need to add all Facebook App related information in `project.json`:
+You need to add all Facebook App related information in `project.json`， the property of appid need add Your application id provided by Facebook:
 
 ```
 {
-    "module" : ["cocos2d", "extensions", "external", "plugin-facebook"],
+    "module" : ["cocos2d", "pluginx", "plugin-facebook"],
     "plugin" : {
-        “facebook”: {
-            "appId" : "", // Your application id provided by Facebook
+        "facebook": {
+            "appId" : "", 
             "xfbml" : true,
             "version" : "v2.0"
         }
@@ -40,6 +40,8 @@ You need to add all Facebook App related information in `project.json`:
 }
 ```
 
-## How to Use Facebook SDK Beta
+You can visit [Quickstart: Facebook SDK for JavaScript](http://developers.facebook.com/docs/javascript/quickstart/) to learn more details. 
 
-About how to use Facebook API please reference to [Facebook SDK Beta for Cocos2d-JS](../api-reference/en.md)
+**Step4**: How to Use Facebook SDK
+
+Please visit [Facebook SDK for Cocos2d-JS API Reference](../api-reference/en.md).

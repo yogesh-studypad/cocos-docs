@@ -37,9 +37,9 @@ var res = {
     PlayBG_png  : "res/PlayBG.png",
     runner_png  : "res/running.png",
     runner_plist : "res/running.plist",
-    map_png: "map.png",
-    map00_tmx: "map00.tmx",
-    map01_tmx: "map01.tmx"
+    map_png: "res/map.png",
+    map00_tmx: "res/map00.tmx",
+    map01_tmx: "res/map01.tmx"
 };
 
 var g_resources = [
@@ -64,7 +64,7 @@ If we are doing Chipmunk physics, you'd better to enable debug drawing. So the d
 Add the following code into *AnimationLayer.js* 's ctor function:
 
 ```
-this._debugNode = cc.PhysicsDebugNode.create(this.space);
+this._debugNode = new cc.PhysicsDebugNode(this.space);
 // Parallax ratio and offset
 this.addChild(this._debugNode, 10);
 ```
@@ -113,7 +113,7 @@ The we should delete the old code we needed to create the static background.
 //        var winSize = cc.Director.getInstance().getWinSize();
 //
 //        var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
-//        var spriteBG = cc.Sprite.create(s_PlayBG);
+//        var spriteBG = new cc.Sprite(s_PlayBG);
 //        spriteBG.setPosition(centerPos);
 //        this.addChild(spriteBG);
 ```
@@ -121,10 +121,10 @@ The we should delete the old code we needed to create the static background.
 At last, we will add the new code snippets to create the tiled map background.
 
 ```
-this.map00 = cc.TMXTiledMap.create(res.map00_tmx);
+this.map00 = new cc.TMXTiledMap(res.map00_tmx);
 this.addChild(this.map00);
 this.mapWidth = this.map00.getContentSize().width;
-this.map01 = cc.TMXTiledMap.create(res.map01_tmx);
+this.map01 = new cc.TMXTiledMap(res.map01_tmx);
 this.map01.setPosition(cc.p(this.mapWidth, 0));
 this.addChild(this.map01);
 ```
@@ -219,7 +219,7 @@ Modify the *onEnter* method of PlayScene to add **tag** of layers, and add backg
     onEnter:function () {
         this._super();
         this.initPhysics();
-        this.gameLayer = cc.Layer.create();
+        this.gameLayer = new cc.Layer();
 
         //add Background layer and Animation layer to gameLayer
         this.gameLayer.addChild(new BackgroundLayer(), 0, TagOfLayer.background);

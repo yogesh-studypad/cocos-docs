@@ -18,7 +18,7 @@ var PlayScene = cc.Scene.extend({
         this._super();
         this.initPhysics();
 
-        this.gameLayer = cc.Layer.create();
+        this.gameLayer = new cc.Layer();
 
         //add three layer in the right order
         this.gameLayer.addChild(new BackgroundLayer(), 0, TagOfLayer.background);

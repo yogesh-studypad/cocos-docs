@@ -20,18 +20,18 @@ var BackgroundLayer = cc.Layer.extend({
     init:function () {
         this._super();
 
-        this.map00 = cc.TMXTiledMap.create(res.map00_tmx);
+        this.map00 = new cc.TMXTiledMap(res.map00_tmx);
         this.addChild(this.map00);
 
         this.mapWidth = this.map00.getContentSize().width;
 
-        this.map01 = cc.TMXTiledMap.create(res.map01_tmx);
+        this.map01 = new cc.TMXTiledMap(res.map01_tmx);
         this.map01.setPosition(cc.p(this.mapWidth, 0));
         this.addChild(this.map01);
 
         // create sprite sheet
         cc.spriteFrameCache.addSpriteFrames(res.background_plist);
-        this.spriteSheet = cc.SpriteBatchNode.create(res.background_png);
+        this.spriteSheet = new cc.SpriteBatchNode(res.background_png);
         this.addChild(this.spriteSheet);
 
 

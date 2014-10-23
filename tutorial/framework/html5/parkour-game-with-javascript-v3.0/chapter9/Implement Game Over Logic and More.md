@@ -72,16 +72,16 @@
     this.init();
     },
     init:function () {
-    this._super(cc.c4b(0, 0, 0, 180));
+    this._super(cc.color(0, 0, 0, 180));
     var winSize = cc.director.getWinSize();
     
     var centerPos = cc.p(winSize.width / 2, winSize.height / 2);
     cc.MenuItemFont.setFontSize(30);
-    var menuItemRestart = cc.MenuItemSprite.create(
-    cc.Sprite.create(s_restart_n),
-    cc.Sprite.create(s_restart_s),
+    var menuItemRestart = new cc.MenuItemSprite(
+    new cc.Sprite(res.restart_n_png),
+    new cc.Sprite(res.restart_s_png),
     this.onRestart, this);
-    var menu = cc.Menu.create(menuItemRestart);
+    var menu = new cc.Menu(menuItemRestart);
     menu.setPosition(centerPos);
     this.addChild(menu);
     },

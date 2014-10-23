@@ -130,7 +130,7 @@ var BackgroundLayer = cc.Layer.extend({
 
         //create the background image and position it at the center of screen
         var centerPos = cc.p(winsize.width / 2, winsize.height / 2);
-        var spriteBG = cc.Sprite.create(res.PlayBG_png);
+        var spriteBG = new cc.Sprite(res.PlayBG_png);
         spriteBG.setPosition(centerPos);
         this.addChild(spriteBG);
     }
@@ -157,12 +157,12 @@ var AnimationLayer = cc.Layer.extend({
         this._super();
 
         //create the hero sprite
-        var spriteRunner = cc.Sprite.create(res.runner_png);
+        var spriteRunner = new cc.Sprite(res.runner_png);
         spriteRunner.attr({x: 80, y: 85});
 
         //create the move action
-        var actionTo = cc.MoveTo.create(2, cc.p(300, 85));
-        spriteRunner.runAction(cc.Sequence.create(actionTo));
+        var actionTo = new cc.MoveTo(2, cc.p(300, 85));
+        spriteRunner.runAction(new cc.Sequence(actionTo));
         this.addChild(spriteRunner);
     }
 });
@@ -190,18 +190,18 @@ var StatusLayer = cc.Layer.extend({
 
         var winsize = cc.director.getWinSize();
 
-        this.labelCoin = cc.LabelTTF.create("Coins:0", "Helvetica", 20);
+        this.labelCoin = new cc.LabelTTF("Coins:0", "Helvetica", 20);
         this.labelCoin.setColor(cc.color(0,0,0));//black color
         this.labelCoin.setPosition(cc.p(70, winsize.height - 20));
         this.addChild(this.labelCoin);
 
-        this.labelMeter = cc.LabelTTF.create("0M", "Helvetica", 20);
+        this.labelMeter = new cc.LabelTTF("0M", "Helvetica", 20);
         this.labelMeter.setPosition(cc.p(winsize.width - 70, winsize.height - 20));
         this.addChild(this.labelMeter);
     }
 });
 ```
-我们可以使用**cc.LabelTTF.create** 来创建一个文本标签。这个函数的第一个参数是要显示的文本信息，第二个参数是字体，然后第三个参数是字体尺寸。我们可以使用**setColor** 这个LabelTTF的成员方法来设置标签的颜色。例如**cc.c3(0, 0, 0)** 代表的就是黑色。
+我们可以使用**new cc.LabelTTF** 来创建一个文本标签。这个函数的第一个参数是要显示的文本信息，第二个参数是字体，然后第三个参数是字体尺寸。我们可以使用**setColor** 这个LabelTTF的成员方法来设置标签的颜色。例如**cc.c3(0, 0, 0)** 代表的就是黑色。
 
 ## 总结
 

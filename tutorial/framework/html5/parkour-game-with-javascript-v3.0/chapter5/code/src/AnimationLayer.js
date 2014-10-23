@@ -12,7 +12,7 @@ var AnimationLayer = cc.Layer.extend({
 
         // create sprite sheet
         cc.spriteFrameCache.addSpriteFrames(res.runner_plist);
-        this.spriteSheet = cc.SpriteBatchNode.create(res.runner_png);
+        this.spriteSheet = new cc.SpriteBatchNode(res.runner_png);
         this.addChild(this.spriteSheet);
 
 
@@ -24,9 +24,9 @@ var AnimationLayer = cc.Layer.extend({
             animFrames.push(frame);
         }
 
-        var animation = cc.Animation.create(animFrames, 0.1);
-        this.runningAction = cc.RepeatForever.create(cc.Animate.create(animation));
-        this.sprite = cc.Sprite.create("#runner0.png");
+        var animation = new cc.Animation(animFrames, 0.1);
+        this.runningAction = new cc.RepeatForever(new cc.Animate(animation));
+        this.sprite = new cc.Sprite("#runner0.png");
         this.sprite.attr({x:80, y:85});
         this.sprite.runAction(this.runningAction);
         this.spriteSheet.addChild(this.sprite);

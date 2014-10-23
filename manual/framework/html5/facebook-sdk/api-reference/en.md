@@ -1,19 +1,26 @@
-#Facebook SDK Beta for Cocos2d-JS API Reference
+#Facebook SDK Beta2 for Cocos2d-JS API Reference
 
-##Getting start
+##Getting started
 
-Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for Cocos2d-JS in your project. Firstly, please use Cocos Console to create a new project, then follow these documents for the integration:
+Before using Facebook SDK Beta2, you will need to know about Cocos2d-JS project and how to integrate Facebook SDK Beta2 for Cocos2d-JS in your project. Firstly, please read the [Cross native / browser game with Cocos Console](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en) document. This will help you have a general idea about Cocos2d-JS architecture and the standard workflow of Cocos2d-JS development.
 
-- [Cocos Console usage document](http://www.cocos2d-x.org/docs/manual/framework/html5/v2/cocos-console/en)
-- [Integrate the Facebook SDK Beta for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Integrate the Facebook SDK Beta for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Integrate the Facebook SDK Beta for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+Then you can follow these integration documents for integrating Facebook SDK in your Cocos2d-JS project:
+
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+
+Next you may be interested in checking out the Facebook SDK test case and see all the functionalities in action, please follow [this document](../facebook-test-case/en.md) to know how to run it and what's demonstrated in the test case.
+
+We also invite you to explore other documents about Cocos2d-JS development.
+
+- [The document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
 
 ##API list
 
 ###FacebookAgent class
 
-`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook SDK Beta for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
+`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook SDK Beta2 for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
 
 ###Core Methods
 
@@ -22,10 +29,9 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[getInstance](./get-instance.md)|Initialize the SDK, and return the instance of `plugin.FacebookAgent`. Required before doing anything else.|
 |[destroyInstance](./destroy-instance.md)|Destroy the instance of `plugin.FacebookAgent`.|
 |[api](./api.md)|Call the [Facebook Graph API](http://developers.facebook.com/docs/graph-api) to find out about the user or act on his/her behalf.|
-|[share](./share.md)|Post a status update on Facebook.|
-|[dialog](./dialog-share.md) (for sharing)|Trigger the Facebook Dialog for sharing.|
-|[dialog](./dialog-message.md) (for sending messages)|Trigger the Facebook Dialog for sending messages.|
-|[appRequest](./appRequest.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog for one-to-one sharing.|
+|[dialog](./dialog.md)|Trigger different forms of Facebook created UI dialogs, such as the Share Dialog for one-to-many sharing on Facebook, or the Message Dialog for sending messages to friends. |
+|[canPresentDialog](./can-present-dialog.md)|Check whether it can trigger a particular form of Facebook created UI dialog based on the current user's device environment.|
+|[appRequest](./app-request.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog to send a request to one or more of friends from a game.|
 
 ###Auth and Session Methods
 
@@ -34,35 +40,39 @@ Before using Facebook SDK Beta, you may need to integrate Facebook SDK Beta for 
 |[login](./login.md)|Ask a user to authorize your app, or to grant additional authorizations.|
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
-|[requestAccessToken](./request-accesstoken.md)|Get the access token granted to your application by current user.|
-|[getPermissionList](./get-permission-list.md)|Get the access token granted to your application by current user.|
+|[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
+|[getAccessToken](./get-accesstoken.md)|Get the access token granted to your application by current user.|
 
 ###Auxiliary Methods
 
 |Name|Description|
 |----|-----------|
-|[pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/docs/concepts/payments/). _Desktop only_.|
-|[activateApp](./publish-install.md)|Report an install, for integration with [Mobile Install Ads](http://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
-|[logEvent](./log-event.md)|Publish an app event, for deeper integration with [Mobile Install Ads](http://developers.facebook.com/docs/tutorials/mobile-app-ads/). _Mobile only_.|
+|[canvas.pay](./pay.md)|Prompt the user to make a payment using [Facebook Payments](http://developers.facebook.com/docs/concepts/payments/). _Desktop only_.|
+|[activateApp](./activate-app.md)|Report the launch of the app, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
+|[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
+|[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
-##Facebook SDK Beta Features
+##Facebook SDK Beta2 Features
 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|
 |api|√|√|√|
-|share|√|√|√|
-|dialog - share_link|√|√|√|
-|dialog - share_photo|√|√|×|
-|dialog - share_open_graph|√|√|√|
-|dialog - message_link|√|√|√|
-|dialog - message_photo|√|√|×|
-|dialog - message_open_graph|√|√|×|
+|dialog - shareLink|√|√|√|
+|dialog - shareOpenGraph|√|√|√|
+|dialog - sharePhoto|√|√|×|
+|dialog - messageLink|√|√|√|
+|dialog - messageOpenGraph|√|√|×|
+|dialog - messagePhoto|√|√|×|
+|dialog - feedDialog|√|√|√|
 |appRequest|√|√|√|
 |login|√|√|√|
 |logout|√|√|√|
 |isLoggedIn|√|√|√|
-|requestAccessToken|√|√|√|
-|getPermissionList|√|√|√|
-|pay|×|×|√|
-|activateApp|√|√|×|
-|logEvent|√|√|×|
+|getUserId|√|√|√|
+|getAccessToken|√|√|√|
+|canvas.pay|×|×|√|
+|activateApp|√|√|√|
+|logEvent|√|√|√|
+|logPurchase|√|√|√|
+
+

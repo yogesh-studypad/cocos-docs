@@ -6,7 +6,7 @@
 
 ## How to use
 
-First include the `xxx/cocos2d-html5/CCBoot.js` into `index.html`.
+First include the `xxx/frameworks/cocos2d-html5/CCBoot.js` into `index.html`.
 
 Then you can type the code to boot your game, which is usually put in `main.js`.
 

@@ -75,7 +75,7 @@
 		
         - 버전 3.0에서의 새로운 기능과 API 변화:
             - [New Actions API](../manual/framework/html5/v3/cc-actions/en.md)
-            - [New workflow with cocos console](../manual/framework/html5/v2/cocos-console/en.md)
+            - [코코스 콘솔을 통한 새로운 작업흐름](../manual/framework/html5/v2/cocos-console/ko.md)
             - [Assets manager](../manual/framework/html5/v3/assets-manager/en.md)
             - [New event manager](../manual/framework/html5/v3/eventManager/en.md)
             - [New property API](../manual/framework/html5/v3/getter-setter-api/en.md)
@@ -99,10 +99,10 @@
             - [Simplified action APIs](http://cocos2d-x.org/docs/manual/framework/html5/v3/cc-actions/en)
             
         - Cocos2d-JS의 페이스북 SDK
-            - [페이스북 SDK API 레퍼런스](../manual/framework/html5/facebook-sdk/api-reference/en.md)
-            - [안드로이드에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/en.md)
-            - [iOS에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/en.md)
-            - [웹에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/en.md)
+            - [페이스북 SDK API 레퍼런스](../manual/framework/html5/facebook-sdk/api-reference/ko.md)
+            - [안드로이드에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/ko.md)
+            - [iOS에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/ko.md)
+            - [웹에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/ko.md)
                         
         - 기타 문서
             - [JSB에서 익스텐션 사용하기(Chinese version)](../manual/framework/html5/jsb/jsb-extension/zh.md)
