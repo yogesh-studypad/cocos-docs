@@ -60,10 +60,9 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.1 Beta](./release-notes/v3.1b/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.1 Beta](./release-notes/v3.1b/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.1 Beta](./release-notes/v3.0rc0/upgrade-guide/en.md)
-
+- [Highlighted release note of Cocos2d-JS v3.1](./release-notes/v3.1/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.1](./release-notes/v3.1/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.1](./release-notes/v3.0rc0/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
@@ -108,14 +107,15 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [About cc.log](./v3/cc-log/en.md)
     - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
     
-- Facebook SDK Beta2 for Cocos2d-JS
-    - [Facebook SDK Beta2 API Reference](./facebook-sdk/api-reference/en.md)
-    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
-    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
-    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
-    - [Facebook SDK Test Case](./facebook-sdk/facebook-test-case/en.md)
+- Facebook Integration for Cocos2d-JS
+    - [Facebook Integration API Reference](./facebook-sdk/api-reference/en.md)
+    - [Facebook Integration for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
+    - [Facebook Integration for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
+    - [Facebook Integration for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
+    - [Facebook Integration Test Case](./facebook-sdk/facebook-test-case/en.md)
     
 - Advanced topics
+    - [How to compile Cocos2d-JS project in Eclipse](./v3/jsb/compilation-in-eclipse/en.md)
     - [How to use extensions in JSB(Chinese version)](./jsb/jsb-extension/zh.md)
     - [How to use Plugin-x on Android](./jsb/plugin-x/how-to-use-plugin-x-on-android/en.md)
     - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)

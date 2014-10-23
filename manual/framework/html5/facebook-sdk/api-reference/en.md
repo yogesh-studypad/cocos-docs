@@ -1,16 +1,16 @@
-#Facebook SDK Beta2 for Cocos2d-JS API Reference
+#Facebook Integration for Cocos2d-JS API Reference
 
 ##Getting started
 
-Before using Facebook SDK Beta2, you will need to know about Cocos2d-JS project and how to integrate Facebook SDK Beta2 for Cocos2d-JS in your project. Firstly, please read the [Cross native / browser game with Cocos Console](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en) document. This will help you have a general idea about Cocos2d-JS architecture and the standard workflow of Cocos2d-JS development.
+Before using Facebook Integration, you will need to know about Cocos2d-JS project and how to import Facebook Integration for Cocos2d-JS in your project. Firstly, please read the [Cross native / browser game with Cocos Console](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en) document. This will help you have a general idea about Cocos2d-JS architecture and the standard workflow of Cocos2d-JS development.
 
-Then you can follow these integration documents for integrating Facebook SDK in your Cocos2d-JS project:
+Then you can follow these integration documents for integrating Facebook in your Cocos2d-JS project:
 
-- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+- [Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
 
-Next you may be interested in checking out the Facebook SDK test case and see all the functionalities in action, please follow [this document](../facebook-test-case/en.md) to know how to run it and what's demonstrated in the test case.
+Next you may be interested in checking out the Facebook Integration test case and see all the functionalities in action, please follow [this document](../facebook-test-case/en.md) to know how to run it and what's demonstrated in the test case.
 
 We also invite you to explore other documents about Cocos2d-JS development.
 
@@ -20,7 +20,7 @@ We also invite you to explore other documents about Cocos2d-JS development.
 
 ###FacebookAgent class
 
-`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook SDK Beta2 for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
+`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook Integration for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
 
 ###Core Methods
 
@@ -52,7 +52,7 @@ We also invite you to explore other documents about Cocos2d-JS development.
 |[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
-##Facebook SDK Beta2 Features
+##Facebook Integration Features
 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|

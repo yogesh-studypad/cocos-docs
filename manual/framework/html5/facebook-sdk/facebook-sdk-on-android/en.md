@@ -1,14 +1,14 @@
-#Integrate the Facebook SDK for Cocos2d-JS on Android
+#Facebook Integration for Cocos2d-JS on Android
 
-This doc walks you through the integration of Facebook SDK Beta for Cocos2d-JS on Android, including creating app, configuring SDK settings and apk packaging.
+This doc walks you through the usage of Facebook Integration for Cocos2d-JS on Android, including creating app, configuring SDK settings and apk packaging.
 
 ##Create a Facebook App
 
 Please refer to [Step 5. Create a Facebook App - Getting Started with the Facebook SDK for Android](http://developers.facebook.com/docs/android/getting-started/#create-app) to create a Facebook App with Android platform.
 
-##Add Facebook SDK to A Cocos2d-JS Project
+##Add Facebook Integration to A Cocos2d-JS Project
 
-Use Cocos command line tool to generate a js project, and you need to make a few modifications to the Android project before you can use Facebook SDK in js code.
+Use Cocos command line tool to generate a js project, and you need to make a few modifications to the Android project before you can use Facebook Integration in js code.
 
 **Step1**: Add app name and app id in `frameworks/runtime-src/proj.android/res/values/strings.xml`:
 
@@ -141,11 +141,11 @@ public class AppActivity extends Cocos2dxActivity {
 }
 ```
 
-Now we are done with the setup and are ready to use the Facebook SDK.
+Now we are done with the setup and are ready to use the Facebook API.
 
-## How to Use Facebook SDK
+## How to use Facebook API
 
-Please visit [Facebook SDK for Cocos2d-JS API Reference](../api-reference/zh.md)
+Please visit [Facebook Integration for Cocos2d-JS API Reference](../api-reference/zh.md)
 
 ## Package your project into apk
 
