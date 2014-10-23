@@ -10,7 +10,7 @@ plugin.FacebookAgent.prototype.login = function(permissions, callback){}
 
 |名称|类型|是否必须|描述|
 |----|----|--------|-----------|
-|permissions|字符串数组|否|来自用户请求的一组Facebook权限。|
+|permissions|字符串数组|否|一组来自用户请求的Facebook权限。|
 |callback|函数|否|包含结果码和JSON响应的回调函数。|
 
 ###回调函数
