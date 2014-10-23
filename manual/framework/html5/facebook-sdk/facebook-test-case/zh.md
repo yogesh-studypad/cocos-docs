@@ -81,6 +81,6 @@
 
 接下来，相信你已经迫不及待地想去创建自己的Facebook游戏，那么根据集成指南去创建支持Facebook的Cocos2d-JS项目吧。
 
-- [Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/zh.md)
-- [Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/zh.md)
-- [Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/zh.md)
+- [在安卓平台集成Facebook Integration for Cocos2d-JS](../facebook-sdk-on-android/zh.md)
+- [在iOS平台集成Facebook Integration for Cocos2d-JS](../facebook-sdk-on-ios/zh.md)
+- [在Web平台集成Facebook Integration for Cocos2d-JS](../facebook-sdk-on-web/zh.md)
