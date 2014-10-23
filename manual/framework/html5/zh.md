@@ -60,9 +60,9 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
    
 ## 文档
 
-- [Cocos2d-JS v3.1 Beta发布说明](./release-notes/v3.1b/release-note/zh.md)
-- [Cocos2d-JS v3.1 Beta改动列表](./release-notes/v3.1b/changelog/en.md)
-- [Cocos2d-JS v3.1 Beta升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
+- [Cocos2d-JS v3.1发布说明](./release-notes/v3.1/release-note/zh.md)
+- [Cocos2d-JS v3.1改动列表](./release-notes/v3.1/changelog/en.md)
+- [Cocos2d-JS v3.1升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
 
 - 综述
     - [Lite Version工作流](./v3/lite-version/zh.md)
@@ -115,13 +115,15 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [其他3.0版的API改动](./v3/more-change-from-v2-to-v3/zh.md)
     
 - 进阶主题
+    - [如何使用Eclipse中编译Cocos2d-JS项目](./v3/jsb/compilation-in-eclipse/zh.md)
     - [如何在JSB项目中使用extension](./jsb/jsb-extension/zh.md)
     - [在Android平台使用Plugin-x](./jsb/plugin-x/how-to-use-plugin-x-on-android/zh.md)
     - [Plugin-x的框架](./jsb/plugin-x/plugin-x-architecture/zh.md)
     - [如何为Android开发自己的Plugin](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
     - [使用iOS支付插件](./jsb/plugin-x/ios-iap/zh.md)
-    - Facebook SDK Beta for Cocos2d-JS
-        - [Facebook SDK Beta2 API Reference](./facebook-sdk/api-reference/en.md)
-        - [Android平台上如何集成Facebook SDK Beta2 for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-android/zh.md)
-        - [iOS平台上如何集成Facebook SDK Beta2 for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-ios/zh.md)
-        - [Web平台上如何集成Facebook SDK Beta2 for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-web/zh.md)
+    - Facebook Integration for Cocos2d-JS
+        - [Facebook Integration API Reference](./facebook-sdk/api-reference/en.md)
+        - [Android平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-android/zh.md)
+        - [iOS平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-ios/zh.md)
+        - [Web平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-web/zh.md)
+        - [如何使用Facebook Integration测试例](./facebook-sdk/facebook-test-case/zh.md)

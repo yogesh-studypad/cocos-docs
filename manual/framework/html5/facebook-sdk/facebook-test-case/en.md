@@ -23,54 +23,54 @@ By running the test case project, you will find a `Facebook SDK Test` in the lis
 
 There are two test cases which demostrate how to use the Facebook Integration.
 
-1. Facebook SDK Sharing Test
+**1. Facebook SDK Sharing Test**
 
-    ![](share.jpg)
+![](share.jpg)
 
-    All test in this page do not require user to login, you can test the following functionalities:
+All test in this page do not require user to login, you can test the following functionalities:
 
-    - Share different links, an open graph story, a photo to your timeline or to your friends.
-    - Send a message to your friends with links, an open graph story or a photo.
-    - Send different app requests to your friends.
+- Share different links, an open graph story, a photo to your timeline or to your friends.
+- Send a message to your friends with links, an open graph story or a photo.
+- Send different app requests to your friends.
 
-    APIs covered in this test page:
+APIs covered in this test page:
 
-    - [.getInstance()](../api-reference/get-instance.md)
-    - [.canPresentDialog(info)](../api-reference/can-present-dialog.md)
-    - [.dialog(info, callback)](../api-reference/dialog.md)
-    - [.appRequest(info, callback)](../api-reference/app-request.md)
+- [.getInstance()](../api-reference/get-instance.md)
+- [.canPresentDialog(info)](../api-reference/can-present-dialog.md)
+- [.dialog(info, callback)](../api-reference/dialog.md)
+- [.appRequest(info, callback)](../api-reference/app-request.md)
 
-2. Facebook SDK User Test
+**2. Facebook SDK User Test**
 
-    ![](user.jpg)
+![](user.jpg)
 
-    In the second test page, you can test other functionalities of the Facebook Integration:
+In the second test page, you can test other functionalities of the Facebook Integration:
 
-    - Login or logout an user to Facebook.
-    - Retrieve the user id.
-    - Retrieve the access token.
-    - Invoke Open Graph API.
-    - Retrieve permissions of your app via Open Graph API.
-    - Send an activation event to Facebook.
-    - Send an app event log to Facebook.
-    - Send an in app purchase log to Facebook.
-    - Invoke Facebook payment in canvas app.
+- Login or logout an user to Facebook.
+- Retrieve the user id.
+- Retrieve the access token.
+- Invoke Open Graph API.
+- Retrieve permissions of your app via Open Graph API.
+- Send an activation event to Facebook.
+- Send an app event log to Facebook.
+- Send an in app purchase log to Facebook.
+- Invoke Facebook payment in canvas app.
 
-    The last four tests can be invoked only in a Facebook Canvas App, and you can test them [on this test page](https://apps.facebook.com/cocostestmyfc/).
+The last four tests can be invoked only in a Facebook Canvas App, and you can test them [on this test page](https://apps.facebook.com/cocostestmyfc/).
 
-    APIs covered in this test page:
+APIs covered in this test page:
 
-    - [.getInstance()](../api-reference/get-instance.md)
-    - [.isLoggedIn()](../api-reference/isloggedin.md)
-    - [.login(permissions, callback)](../api-reference/login.md)
-    - [.logout(callback)](../api-reference/logout.md)
-    - [.getUserId()](../api-reference/get-userid.md)
-    - [.getAccessToken()](../api-reference/get-accesstoken.md)
-    - [.api(path, method, params, callback)](../api-reference/api.md)
-    - [.activateApp()](../api-reference/activate-app.md)
-    - [.logEvent(eventName, valueToSum, parameters)](../api-reference/log-event.md)
-    - [.logPurchase(amount, currency, parameters)](../api-reference/log-purchase.md)
-    - [.canvas.pay(info, callback)](../api-reference/pay.md)
+- [.getInstance()](../api-reference/get-instance.md)
+- [.isLoggedIn()](../api-reference/isloggedin.md)
+- [.login(permissions, callback)](../api-reference/login.md)
+- [.logout(callback)](../api-reference/logout.md)
+- [.getUserId()](../api-reference/get-userid.md)
+- [.getAccessToken()](../api-reference/get-accesstoken.md)
+- [.api(path, method, params, callback)](../api-reference/api.md)
+- [.activateApp()](../api-reference/activate-app.md)
+- [.logEvent(eventName, valueToSum, parameters)](../api-reference/log-event.md)
+- [.logPurchase(amount, currency, parameters)](../api-reference/log-purchase.md)
+- [.canvas.pay(info, callback)](../api-reference/pay.md)
 
 ## Online test
 
