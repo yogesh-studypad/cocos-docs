@@ -1,6 +1,6 @@
 #.getAccessToken()
 
-返回用户最近授权给应用的[access token](http://developers.facebook.com/docs/facebook-login/access-tokens/)，否则返回一个空字符串。
+如果用户登录成功，会返回[访问令牌](http://developers.facebook.com/docs/facebook-login/access-tokens/)，否则为null。
 
 ##范例
 
