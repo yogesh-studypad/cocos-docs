@@ -42,7 +42,7 @@ Here are some useful documents to get you ready for Cocos2d-JS development with 
 
 - Cocos2d-JS
     - [Cocos2d-JS document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
-    - [Cocos2d-JS v3.1 release note](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1/release-note/en)
+    - [Cocos2d-JS v3.1 release note](http://cocos2d-x.org/news/363)
     - [Cocos2d-JS cross platform workflow](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en)
     - [Facebook Integration for Cocos2d-JS API Reference](api-reference/en.md)
     - [How to use Facebook Integration test case](facebook-test-case/en.md)

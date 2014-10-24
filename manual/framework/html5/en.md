@@ -68,18 +68,6 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes](./release-notes/en.md)
-    
-- Pakour Game with Cocos2d-JS v3.x
-    - [1. Setup Development Environment](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
-	- [2. Hello World Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
-	- [3. Make your First Game Scene](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
-	- [4. Design and Make Main Game Scene](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/en.md)
-	- [5. Let Player Run Animations](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/en.md)
-	- [6. Add Chipmunk Physics to Our Game](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/en.md)
-	- [7. Explorer with TiledMap and Camera](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/en.md)
-	- [8. Add Coin and Obstacles](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/en.md)
-	- [9. Add Game Over Logic And More](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
-    - [10. Add Audio Effect into Parkour Game](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
         
 - New features and API changes in version 3.x:
     - [New workflow with cocos console](./v2/cocos-console/en.md)
@@ -122,3 +110,6 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)
     - [How to write your own Plugin for Android](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
     - [Use iOS IAP Plugin](./jsb/plugin-x/ios-iap/en.md)
+
+- Tutorials
+    - [Tutorial root](../../../tutorial/framework/html5/en.md)
