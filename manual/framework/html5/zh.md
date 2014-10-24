@@ -75,18 +75,6 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [Cocos2d-JS的屏幕适配方案](./v2/resolution-policy-design/zh.md)
     - [月亮战士——Cocos2d-html5游戏展示](./v2/moonwarriors-cocos2d-html5-showcase/zh.md)
     
-- 用Cocos2d-JS 来写一个跑酷游戏(Cocos2d-JS v3.x)
-	- [1. 建立Cocos2d-JS开发环境](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/zh.md)
-	- [2. 你好Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/zh.md)
-	- [3. 建立第一个游戏场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/zh.md)
-	- [4. 设计实现主场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/zh.md)
-	- [5. 让角色运行动画](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/zh.md)
-	- [6. 在游戏中加入Chipmunk物理引擎](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/zh.md)
-	- [7. 使用瓦片地图和相机](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/zh.md)
-	- [8. 增加金币和障碍物](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/zh.md)
-	- [9. 游戏结束逻辑](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/zh.md)
-	- [10. 添加游戏音频](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/zh.md)
-
 - Cocos2d-html5 v3.x的新功能
     - [使用Cocos Console管理工程](./v2/cocos-console/zh.md)
     - [资源管理器](./v3/assets-manager/zh.md)
@@ -127,3 +115,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
         - [iOS平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-ios/zh.md)
         - [Web平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-web/zh.md)
         - [如何使用Facebook Integration测试例](./facebook-sdk/facebook-test-case/zh.md)
+
+- 教程
+    - [教程目录](../../../tutorial/framework/html5/zh.md)
+
