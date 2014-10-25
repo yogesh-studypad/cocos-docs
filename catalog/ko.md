@@ -103,7 +103,8 @@
             - [안드로이드에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/ko.md)
             - [iOS에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/ko.md)
             - [웹에서 Cocos2d-JS의 페이스북 SDK 사용하기](../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/ko.md)
-                        
+            - [페이스북 SDK 테스트 케이스](../manual/framework/html5/facebook-sdk/facebook-test-case/ko.md)
+             
         - 기타 문서
             - [JSB에서 익스텐션 사용하기(Chinese version)](../manual/framework/html5/jsb/jsb-extension/zh.md)
             - [안드로이드에서 Plugin-x 사용하기](../manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-android/ko.md)
