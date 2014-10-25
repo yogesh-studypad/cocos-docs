@@ -2,7 +2,7 @@
 
 The Facebook Integration is a great new feature of Cocos2d-x game engine brought by the coorporation between Facebook and Cocos2d-x team. It's a officially confirmed Facebook implementation based on Facebook SDKs. The real power of Facebook Integration for Cocos2d-x is the cross platform ability with one code base.
 
-![]()
+![](facebook.png)
 
 ## About Cocos2d-x
 
