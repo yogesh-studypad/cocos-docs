@@ -4,7 +4,7 @@
 
 [Cocos2d-JS](https://github.com/cocos2d/cocos2d-js) is an open source game engine for web games and native games. It has a high performance, is user-friendly and supports multi-platform development. Supported platforms include web, Android, iOS, Windows Phone 8, Mac, Windows, etc. Cocos2d-JS makes 2D game programming easier and faster. It clarifies the key components of 2D game programming by being easy to learn and having an easy to use API. All of this combined makes it an outstanding framework compared to others.
 
-Cocos2d-JS is the HTML5 version of Cocos2d-x, includes [Cocos2d-html5](https://github.com/cocos2d/cocos2d-html5) and Cocos2d-x JavaScript Binding (JSB). Using Cocos2d-JS, you can write games in JavaScript and run your games on browsers that support HTML5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x. This means that Cocos2d-JS games can be run using Cocos2d's "JavaScript Binding" on Cocos2d-x without or with very little modification.
+Cocos2d-JS is the HTML5 version of Cocos2d-x, includes [Cocos2d-html5](https://github.com/cocos2d/cocos2d-html5) and Cocos2d-x JavaScript Binding (JSB). Using Cocos2d-JS, you can write games in JavaScript and run your games on browsers that support HTML5. The API is completely compatible between Cocos2d-html5 and Cocos2d-x JSB. This means that Cocos2d-JS games can be run using Cocos2d's "JavaScript Binding" on Cocos2d-x without or with very little modification.
 
 #### Why choose Cocos2d-JS
 Why would you want to choose Cocos2d-JS over other available game engines?
@@ -18,7 +18,7 @@ Why would you want to choose Cocos2d-JS over other available game engines?
      
 ### 1.1.1 History
 
-With the rise of Android in 2010, the Cocos2d-x team branched Cocos2d-x from Cocos2d-iphone not only to focuses on Android platform, but also to target cross-platform support as well. In 2011, Google sponsored the Cocos2d-x team to port Cocos2d-x to Cocos2d-html5's Web App, which focuses on HTML5-ready browsers. 
+With the rise of Android in 2010, the Cocos2d-x team branched Cocos2d-x from Cocos2d-iphone not only to focuses on Android platform, but also to target cross-platform support as well. In 2011, Google sponsored the Cocos2d-x team to port Cocos2d-x to Cocos2d-html5, which focuses on HTML5-ready browsers. 
 
 The Cocos2d-html5 project was started January 29, 2012. The first stable release, version v2.0, based on Cocos2d-x v2.0 was released in August of 2012. Meanwhile, Zygna was helping Cocos2d-x team to develop the Cocos2d-x JSB solution to extend Cocos2d-html5's native platform ability. The first coordinated release of the Cocos2d family was released on December 4, 2012. Since then, games that are developed based on Cocos2d-html5 can be run on web and native platforms. 
 
@@ -26,7 +26,7 @@ Cocos2d-html5 and Cocos2d-x JSB were combined and upgraded to Cocos2d-JS in Marc
 
 ### 1.1.2 Cocos2d-html5 and Cocos2d-x JSB
 
-Cocos2d-html5 is an important module of Cocos2d-JS. It is a pure HTML5 game engine, which is based on Canvas/WEBGL and is 100% compatible with HTML5. This ensures that a Cocos2d-JS project can easily be run on HTML5-ready browsers.From the foregoing introduction, Cocos2d-html5 it is one important module of Cocs2d-JS, and it is a pure HTML5 game engine, which base on Canvas/WebGL and 100% compitable with HTML5. So, Cocos2d-JS project can be easily run on HTML5-ready browsers.
+Cocos2d-html5 is an important module of Cocos2d-JS. It is a pure HTML5 game engine, which is based on Canvas/WEBGL and is 100% compatible with HTML5. This ensures that a Cocos2d-JS project can easily be run on HTML5-ready browsers.
 
 If you are only interested in developing casual games for the web, you can embed the Cocos2d-JS Lite Version which is extremely easy to use and light as a feather.
 
