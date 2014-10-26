@@ -34,7 +34,7 @@ At the current stage, Facebook support in Cocos2d-x (C++ and Lua) is still under
 
 ### Cocos2d-x (C++ and Lua)
 
-At the current stage, the documentation of Cocos2d-x (C++ and Lua) is still under beta and we are improving it. For now, please visit [Facebook integration instruction for Cocos2d-x](http://cocos2d-x.org/wiki/Facebook_SDK_Beta2_Integration_for_Cocos2d-X) to learn more details.
+At the current stage, the documentation of Cocos2d-x (C++ and Lua) is still under beta and we are improving it. For now, please visit [Facebook Support for Cocos2d-x Beta](http://cocos2d-x.org/wiki/Facebook_Support_for_Cocos2d-x_Beta) to learn more details.
 
 ## Report bugs or need help?
 
@@ -59,4 +59,4 @@ Please visit our [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x)
 - Cocos2d-x
     - [Cocos2d-x introduction](http://cocos2d-x.org/wiki/Cocos2d-x)
     - [Cocos2d-x v3.3rc0 release note](http://cocos2d-x.org/news/362)
-    - [Facebook integration instruction for Cocos2d-x](http://cocos2d-x.org/wiki/Facebook_SDK_Beta2_Integration_for_Cocos2d-X)
+    - [Facebook Support for Cocos2d-x Beta](http://cocos2d-x.org/wiki/Facebook_Support_for_Cocos2d-x_Beta)
