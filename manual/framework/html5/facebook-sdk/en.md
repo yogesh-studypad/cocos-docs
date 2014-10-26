@@ -18,6 +18,30 @@ At the current stage, Facebook support in Cocos2d-x (C++ and Lua) is still under
 
 ## Getting started 
 
+### Cocos2d-JS
+
+- Step 1: Before coding Facebook Integration in Cocos2d-JS, you may need to first learn the basic knowledge about Cocos2d-JS architecture and the workflow of Cocos2d-JS development. Please read the doc [Cocos2d-JS cross platform development tutorial](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en).
+
+- Step 2: Follow the docs below to learn how to setup Facebook integration in Cocos2d-JS for different platforms:
+
+    - [Facebook integration instruction for Cocos2d-JS on Android](facebook-sdk-on-android/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on iOS](facebook-sdk-on-ios/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on Web](facebook-sdk-on-web/en.md)
+
+- Step 3: Build our sample app to learn [How to integrate with Facebook - sample app](facebook-test-case/en.md)
+
+- Step 4: Learn all the supported Facebook APIs and details in [Facebook API Reference for Cocos2d-JS](api-reference/en.md)
+
+### Cocos2d-x (C++ and Lua)
+
+At the current stage, the documentation of Cocos2d-x (C++ and Lua) is still under beta and we are improving it. For now, please visit [Facebook integration instruction for Cocos2d-x](http://cocos2d-x.org/wiki/Facebook_SDK_Beta2_Integration_for_Cocos2d-X) to learn more details.
+
+## Report bugs or need help?
+
+Please visit our [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x)
+
+## Related resources
+
 - General
     - [Cocos2d website](http://cocos2d-x.org/)
     - [Cocos2d download page](http://www.cocos2d-x.org/download)
@@ -36,7 +60,3 @@ At the current stage, Facebook support in Cocos2d-x (C++ and Lua) is still under
     - [Cocos2d-x introduction](http://cocos2d-x.org/wiki/Cocos2d-x)
     - [Cocos2d-x v3.3rc0 release note](http://cocos2d-x.org/news/362)
     - [Facebook integration instruction for Cocos2d-x](http://cocos2d-x.org/wiki/Facebook_SDK_Beta2_Integration_for_Cocos2d-X)
-
-## Need help?
-
-Please visit our [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x)
