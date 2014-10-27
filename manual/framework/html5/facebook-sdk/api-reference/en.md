@@ -1,28 +1,10 @@
-#Facebook Integration for Cocos2d-JS API Reference
+#Facebook API reference for Cocos2d-JS
 
-##Getting started
+##FacebookAgent class
 
-Before using Facebook Integration, you will need to know about Cocos2d-JS project and how to import Facebook Integration for Cocos2d-JS in your project. Firstly, please read the [Cross native / browser game with Cocos Console](http://cocos2d-x.org/docs/manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en) document. This will help you have a general idea about Cocos2d-JS architecture and the standard workflow of Cocos2d-JS development.
+`plugin.FacebookAgent` is a singleton class that encapsulates all the methods. Before doing anything else, you need to initialize the instance first.
 
-Then you can follow these integration documents for integrating Facebook in your Cocos2d-JS project:
-
-- [Setup Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Setup Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Setup Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
-
-Next you may be interested in checking out the Facebook Integration test case and see all the functionalities in action, please follow [this document](../facebook-test-case/en.md) to know how to run it and what's demonstrated in the test case.
-
-We also invite you to explore other documents about Cocos2d-JS development.
-
-- [The document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
-
-##API list
-
-###FacebookAgent class
-
-`plugin.FacebookAgent` is a singleton class that encapsulates the methods of Facebook Integration for Cocos2d-JS. Before doing anything else, you need to initialize the instance first.
-
-###Core Methods
+##Core Methods
 
 |Name|Description|
 |----|-----------|
@@ -33,7 +15,7 @@ We also invite you to explore other documents about Cocos2d-JS development.
 |[canPresentDialog](./can-present-dialog.md)|Check whether it can trigger a particular form of Facebook created UI dialog based on the current user's device environment.|
 |[appRequest](./app-request.md)|Trigger the [Request](http://developers.facebook.com/docs/reference/dialogs/requests/) dialog to send a request to one or more of friends from a game.|
 
-###Auth and Session Methods
+##Auth and Session Methods
 
 |Name|Description|
 |----|-----------|
@@ -43,7 +25,7 @@ We also invite you to explore other documents about Cocos2d-JS development.
 |[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
 |[getAccessToken](./get-accesstoken.md)|Get the access token granted to your application by current user.|
 
-###Auxiliary Methods
+##Auxiliary Methods
 
 |Name|Description|
 |----|-----------|
@@ -52,7 +34,7 @@ We also invite you to explore other documents about Cocos2d-JS development.
 |[logEvent](./log-event.md)|Report an app event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 |[logPurchase](./log-purchase.md)|Report a purchase event, for integration with Facebook app ads. More details at [App Events](http://developers.facebook.com/docs/platforminsights/appevents). |
 
-##Facebook Integration Features
+##Facebook API availability on different platforms
 
 |Methods|iOS|Android|Web|
 |:-:|:-:|:-----:|:-:|
