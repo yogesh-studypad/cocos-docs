@@ -14,7 +14,7 @@ The director object is represented by `cc.director` in Cocos2d-JS. Here are its 
 
 - **Setting up the environment**
 
-    First of all, the director will setup the working environment for your game:
+    First of all, before entering the game, the director will setup the working environment for your game:
 
     1. Setup the context of the view, including the projection, the pixel format, etc.
     2. Setup the frame rate.
@@ -24,7 +24,7 @@ The director object is represented by `cc.director` in Cocos2d-JS. Here are its 
 
 - **Running the main loop**
     
-    The basic theory of a video game is pretty much like the old school animations. The artists draw page by page which will then be shown one after another during a very short period, e.g. 1/24 second, each page is called a frame. 
+    The basic theory of a video game is pretty much like the old school animations. For making an animation, the artists draw static images page by page which will then be shown one after another during a very short period, e.g. 1/24 second, each page is called a frame. 
 
     The video game is rendered in the same way, every 1/60 second, the program will draw an image(frame) to be displayed on the screen, this makes 60 frames per second. The render process of each frame calculates the correct transformation and other informations of all the graphic elements in the running scene, then they will be rendered one by one to the screen. As the game progresses, each frame changes a little, at last, you will see a beautiful video game in front of your eyes.
 
