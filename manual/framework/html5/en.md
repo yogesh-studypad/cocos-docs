@@ -60,27 +60,14 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.1 Beta](./release-notes/v3.1b/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.1 Beta](./release-notes/v3.1b/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.1 Beta](./release-notes/v3.0rc0/upgrade-guide/en.md)
-
+- [Highlighted release note of Cocos2d-JS v3.1](./release-notes/v3.1/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.1](./release-notes/v3.1/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.1](./release-notes/v3.0rc0/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes](./release-notes/en.md)
-    
-- Pakour Game with Cocos2d-JS v3.x
-    - [1. Setup Development Environment](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
-	- [2. Hello World Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
-	- [3. Make your First Game Scene](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
-	- [4. Design and Make Main Game Scene](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/en.md)
-	- [5. Let Player Run Animations](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/en.md)
-	- [6. Add Chipmunk Physics to Our Game](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/en.md)
-	- [7. Explorer with TiledMap and Camera](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/en.md)
-	- [8. Add Coin and Obstacles](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/en.md)
-	- [9. Add Game Over Logic And More](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
-    - [10. Add Audio Effect into Parkour Game](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
         
 - New features and API changes in version 3.x:
     - [New workflow with cocos console](./v2/cocos-console/en.md)
@@ -108,16 +95,21 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [About cc.log](./v3/cc-log/en.md)
     - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
     
-- Facebook SDK Beta2 for Cocos2d-JS
-    - [Facebook SDK Beta2 API Reference](./facebook-sdk/api-reference/en.md)
-    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
-    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
-    - [Integrate the Facebook SDK Beta2 for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
-    - [Facebook SDK Test Case](./facebook-sdk/facebook-test-case/en.md)
-    
+- Facebook support for Cocos2d-JS
+    - [Cocos2d-x with Facebook](./facebook-sdk/en.md)
+    - [Facebook API Reference for Cocos2d-JS](api-reference/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on Android](facebook-sdk-on-android/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on iOS](facebook-sdk-on-ios/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on Web](facebook-sdk-on-web/en.md)
+    - [How to integrate with Facebook - sample app](facebook-test-case/en.md)
+
 - Advanced topics
+    - [How to compile Cocos2d-JS project in Eclipse](./v3/jsb/compilation-in-eclipse/en.md)
     - [How to use extensions in JSB(Chinese version)](./jsb/jsb-extension/zh.md)
     - [How to use Plugin-x on Android](./jsb/plugin-x/how-to-use-plugin-x-on-android/en.md)
     - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)
     - [How to write your own Plugin for Android](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
     - [Use iOS IAP Plugin](./jsb/plugin-x/ios-iap/en.md)
+
+- Tutorials
+    - [Tutorial root](../../../tutorial/framework/html5/en.md)
