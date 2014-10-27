@@ -1,6 +1,6 @@
-#Facebook Integration for Cocos2d-JS on iOS
+#Facebook integration instruction for Cocos2d-JS on iOS
 
-This doc walks you through the usage of Facebook Integration for Cocos2d-JS on iOS.
+This doc walks you through the usage of Facebook support for Cocos2d-JS on iOS.
 
 ## Create a Facebook App
 
@@ -50,7 +50,7 @@ Please refer to [Step 3. Obtain a Facebook App ID - Getting Started with the Fac
 
 ## Add Plugin-x and PluginFacebook in your project
 
-Because `Facebook Integration for Cocos2d-JS` is based on Plugin-x, you need to add Plugin-x project to your project first.
+Because Facebook support for Cocos2d-JS is based on Plugin-x, you need to add Plugin-x project to your project first.
 
 **Step1**: Right click `myProject`, select `addFiles to "myProject"`, then add `myProject/frameworks/js-bindings/cocos2d-x/plugin/protocols/proj.ios/PluginProtocol.xcodeproj`.
 
@@ -110,4 +110,4 @@ To know more details about Plugin-x, please refer to [Plugin-x Architecture](htt
 
 ## How to Use Facebook API
 
-Please visit [Facebook Integration for Cocos2d-JS API Reference](../api-reference/en.md)
+Please visit [Facebook API Reference for Cocos2d-JS](../api-reference/en.md)

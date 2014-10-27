@@ -1,10 +1,10 @@
-# 探索Cocos2d-JS上接入Facebook Integration
+# 如何集成Facebook平台 - 测试工程
 
 ## 全功能测试例项目
 
-为了让更多的游戏开发者更容易的使用Facebook Integration，我们提供了一个完整的测试例项目。其中涉及SDK中所有的API和演示了怎么正确的使用它们。
+为了让更多的游戏开发者更容易的使用Facebook平台支持，我们提供了一个完整的测试例项目。其中涉及SDK中所有的API和演示了怎么正确的使用它们。
 
-如果目前还不熟悉 Facebook Integration for Cocos2d-JS，强烈建议你去查看 [Facebook Integration for Cocos2d-JS API Reference](../api-reference/zh.md)文档。
+如果目前还不熟悉Cocos2d-JS的Facebook平台支持，强烈建议你去查看[Cocos2d-x的Facebook集成](../zh.md)文档以及[Facebook API Reference for Cocos2d-JS](../api-reference/zh.md)文档。
 
 ## 如何运行测试例项目
 
@@ -34,10 +34,10 @@
 
 本页面所使用到的API：
 
-- [.getInstance()](../api-reference/get-instance.md)
-- [.canPresentDialog(info)](../api-reference/can-present-dialog.md)
-- [.dialog(info, callback)](../api-reference/dialog.md)
-- [.appRequest(info, callback)](../api-reference/app-request.md)
+- [.getInstance()](../api-reference/get-instance_zh.md)
+- [.canPresentDialog(info)](../api-reference/can-present-dialog_zh.md)
+- [.dialog(info, callback)](../api-reference/dialog_zh.md)
+- [.appRequest(info, callback)](../api-reference/app-request_zh.md)
 
 **2. 用户测试**
 
@@ -59,21 +59,21 @@
 
 本页面所使用的API:
 
-- [.getInstance()](../api-reference/get-instance.md)
-- [.isLoggedIn()](../api-reference/isloggedin.md)
-- [.login(permissions, callback)](../api-reference/login.md)
-- [.logout(callback)](../api-reference/logout.md)
-- [.getUserId()](../api-reference/get-userid.md)
-- [.getAccessToken()](../api-reference/get-accesstoken.md)
-- [.api(path, method, params, callback)](../api-reference/api.md)
-- [.activateApp()](../api-reference/activate-app.md)
-- [.logEvent(eventName, valueToSum, parameters)](../api-reference/log-event.md)
-- [.logPurchase(amount, currency, parameters)](../api-reference/log-purchase.md)
-- [.canvas.pay(info, callback)](../api-reference/pay.md)
+- [.getInstance()](../api-reference/get-instance_zh.md)
+- [.isLoggedIn()](../api-reference/isloggedin_zh.md)
+- [.login(permissions, callback)](../api-reference/login_zh.md)
+- [.logout(callback)](../api-reference/logout_zh.md)
+- [.getUserId()](../api-reference/get-userid_zh.md)
+- [.getAccessToken()](../api-reference/get-accesstoken_zh.md)
+- [.api(path, method, params, callback)](../api-reference/api_zh.md)
+- [.activateApp()](../api-reference/activate-app_zh.md)
+- [.logEvent(eventName, valueToSum, parameters)](../api-reference/log-event_zh.md)
+- [.logPurchase(amount, currency, parameters)](../api-reference/log-purchase_zh.md)
+- [.canvas.pay(info, callback)](../api-reference/pay_zh.md)
 
 ## 在线测试
 
-除了在Cocos2d-JS包里的测试，同时我们也为你提供了Facebook Canvas App来测试Facebook Integration for Cocos2d-JS。
+除了在Cocos2d-JS包里的测试，同时我们也为你提供了Facebook Canvas App来测试Facebook平台支持。
 
 [Facebook Canvas Test Case](https://apps.facebook.com/cocostestmyfc/)
 
@@ -81,6 +81,6 @@
 
 接下来，相信你已经迫不及待地想去创建自己的Facebook游戏，那么根据集成指南去创建支持Facebook的Cocos2d-JS项目吧。
 
-- [在安卓平台集成Facebook Integration for Cocos2d-JS](../facebook-sdk-on-android/zh.md)
-- [在iOS平台集成Facebook Integration for Cocos2d-JS](../facebook-sdk-on-ios/zh.md)
-- [在Web平台集成Facebook Integration for Cocos2d-JS](../facebook-sdk-on-web/zh.md)
+- [Android平台上如何配置Facebook平台集成](../facebook-sdk-on-android/zh.md)
+- [iOS平台上如何配置Facebook平台集成](../facebook-sdk-on-ios/zh.md)
+- [Web平台上如何配置Facebook平台集成](../facebook-sdk-on-web/zh.md)
