@@ -38,7 +38,7 @@ plugin.FacebookAgent.prototype.appRequest = function(info, callback){}
 
 ```javascript
 {
-    //TODO
+    "error_message": "Action canceled by user"
 }
 ```
 

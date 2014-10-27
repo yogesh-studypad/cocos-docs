@@ -26,7 +26,7 @@ var callback = function (code, response) {}
 ```javascript
 // The response object 
 {
-    // TODO
+    "error_message": "Unknown error message"
 }
 ```
 
