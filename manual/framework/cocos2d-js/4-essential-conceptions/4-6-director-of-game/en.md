@@ -151,7 +151,7 @@ node.unscheduleAllCallbacks();
 
 ## 4.6.5 Action manager
 
-The action manager is another important internal system of the director. It manages all actions in the running scene, it invokes the update funtions of all actions registered every frame. The details of the action system will be descirbed in the following documents.
+The action manager is another important internal system of the director. It manages all actions in the running scene, it invokes the `update` funtions of all actions registered every frame. The details of the action system will be descirbed in the following documents.
 
 ## 4.6.6 Events of the director
 
