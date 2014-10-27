@@ -5,12 +5,32 @@
 
 -------------------
 
-1. [工程目录][lua folder structure link]下有一个名字为[config.json][lua config link]的配置文件，可以在Code IDE中双击打开。配置中"entry"字段设置了游戏的入口文件为"src/main.lua"。  
-  ![][lua config img]
+1. [工程目录][lua folder structure link]下有一个名字为[config.json][lua config link]的配置文件，可以在Code IDE中双击打开。配置中"entry"字段设置了游戏的入口文件为"src/main.lua"。 
+
+        {
+            "init_cfg": {
+            ...
+            "entry": "src/main.lua",
+            ...
+            },
+            ...
+        }
+  
 2. 双击打开"src"目录下的"main.lua"文件，里面主要定义了"main"函数，然后在文件最后开始执行"main"函数，开始游戏执行。
 3. 在"main"函数中主要的步骤是：通过函数"setDesignResolutionSize"设置[游戏设计分辨率和屏幕适配模式]()；然后构建一个"GameScene"对象，通过"Director"运行此对象。  
-  ![][lua main img]
-4. "GameScene"是在"src/GameScene.lua"文件中定义的。在此文件中，使用[cocos2d-x引擎的API]构建了一个"Scene"，其中添加了两个"Layer"。
+
+        local function main()
+            ...
+            cc.Director:getInstance():getOpenGLView():setDesignResolutionSize(480, 320, 0)
+            local scene = require("GameScene")
+            local gameScene = scene.create()
+            ...
+            cc.Director:getInstance():runWithScene(gameScene)
+            ...
+        end
+        local status, msg = xpcall(main, __G__TRACKBACK__)    --run the main function
+        
+4. "GameScene"是在"src/GameScene.lua"文件中定义的。在此文件中，使用[cocos2d-x引擎的API]构建了一个"Scene"，其中添加了两个"Layer"，详见工程代码。
 5. 可以在模拟器的菜单中选择不同的分辨率，查看游戏在不同分辨率的屏幕上的表现效果。模拟器的窗口初始大小是在[config.json][lua config link]中配置的。  
   ![][lua multi reso img]
 5. Code IDE为代码编写提供了方便的cocos2d-x引擎API自动提示功能，只要在代码中输入相应的前缀或单词就可以看到相关的API和函数说明，不过如果代码中有语法错误的话，可能会因为语法树构建失败而无法正确提示。  
@@ -30,8 +50,6 @@
 
 [lua folder structure link]:
 [lua config link]:
-[lua config img]: ./res/lua-config.png
-[lua main img]: ./res/lua-main.png
-[lua multi reso img]: ./res/lua-multi-reso.png
-[lua autocode img]: ./res/lua-autocode.png
-[lua autopath img]: ./res/lua-autopath.png
+[lua multi reso img]: ./res/lua-multi-reso.jpg
+[lua autocode img]: ./res/lua-autocode.jpg
+[lua autopath img]: ./res/lua-autopath.jpg
