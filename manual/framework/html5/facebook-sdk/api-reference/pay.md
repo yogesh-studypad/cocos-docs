@@ -44,8 +44,7 @@ If the payment failed, `code` is error code and `response` is a JSON containing 
 
 ```javascript
 {
-    //TODO
-    "error" : ???
+    "error_message": "Unkown error"
 }
 ```
 

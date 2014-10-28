@@ -73,8 +73,6 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
 
 请注意在iOS和Android上一次只能分享一个Open Graph story。
 
-// TODO: this is not done. Need improvement.
-
 |Name|Type|Description|
 |----|----|-----------|
 |object_type|string| | 
@@ -91,7 +89,6 @@ plugin.FacebookAgent.prototype.dialog = function(info, callback){}
 ```javascript
 var callback = function (code, response) {}
 ```
-
 
 如果分享成功，`code` 等于 `plugin.FacebookAgent.CODE_SUCCEED`， `response` 是一个含有`post_id`的JSON对象。
 
@@ -215,8 +212,6 @@ var callback = function (code, response) {}
 
 请注意在iOS和Android上一次只能发送一个Open Graph story。
 
-// TODO: this is not done. Need improvement.
-
 |Name|Type|Description|
 |----|----|-----------|
 |object_type|string| | 
@@ -237,7 +232,7 @@ var callback = function (code, response) {}
 
 ```javascript
 {
-    "error" : TODO
+    "error_message": "Action canceled by user"
 }
 ```
 
@@ -331,7 +326,7 @@ var callback = function (code, response) {}
 ```javascript
 {
     // The id of the post which has been shared
-    //TODO
+    "post_id" : "1697818070_220407711431887"
 }
 ```
 
@@ -339,7 +334,7 @@ var callback = function (code, response) {}
 
 ```javascript
 {
-    "error" : TODO
+    "error_message": "Action canceled by user"
 }
 ```
 

@@ -1,10 +1,10 @@
-# Explorer Facebook Integration for Cocos2d-JS
+# How to integrate with Facebook - sample app
 
 ## A full featured test case
 
-To make it eaiser for all developers to start developing games with the Facebook Integration, we have provided a complete test case. It have covered all APIs and demonstrated how to correctly use them.
+To make it eaiser for all developers to start developing games with the Facebook support, we have provided a complete test case. It have covered all APIs and demonstrated how to correctly use them.
 
-If you are not until familiar with Facebook Integration for Cocos2d-JS, we strongly suggest you to take a look at the [Facebook Integration for Cocos2d-JS API Reference](../api-reference/zh.md) document.
+If you are not until familiar with Facebook support for Cocos2d-JS, we strongly suggest you to take a look at the [Cocos2d-x with Facebook](../zh.md) document and the [Facebook API Reference for Cocos2d-JS](../api-reference/zh.md) document.
 
 ## How to run test case
 
@@ -74,7 +74,7 @@ APIs covered in this test page:
 
 ## Online test
 
-Besides the test cases in Cocos2d-JS package, we also have a Facebook Canvas App for you to test our Facebook Integration.
+Besides the test cases in Cocos2d-JS package, we also have a Facebook Canvas App for you to test our Facebook support.
 
 [Facebook Canvas Test Case](https://apps.facebook.com/cocostestmyfc/)
 
@@ -82,6 +82,6 @@ Besides the test cases in Cocos2d-JS package, we also have a Facebook Canvas App
 
 Next up, I believe you can not wait to create your own Facebook games, so please follow the integration guides to create your Cocos2d-JS project with Facebook SDK integrated.
 
-- [Setup Facebook Integration for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
-- [Setup Facebook Integration for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
-- [Setup Facebook Integration for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)
+- [Facebook integration instruction for Cocos2d-JS on Android](../facebook-sdk-on-android/en.md)
+- [Facebook integration instruction for Cocos2d-JS on iOS](../facebook-sdk-on-ios/en.md)
+- [Facebook integration instruction for Cocos2d-JS on Web](../facebook-sdk-on-web/en.md)

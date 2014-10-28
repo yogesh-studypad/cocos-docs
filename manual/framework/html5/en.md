@@ -97,11 +97,11 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     
 - Facebook support for Cocos2d-JS
     - [Cocos2d-x with Facebook](./facebook-sdk/en.md)
-    - [Facebook API Reference for Cocos2d-JS](api-reference/en.md)
-    - [Facebook integration instruction for Cocos2d-JS on Android](facebook-sdk-on-android/en.md)
-    - [Facebook integration instruction for Cocos2d-JS on iOS](facebook-sdk-on-ios/en.md)
-    - [Facebook integration instruction for Cocos2d-JS on Web](facebook-sdk-on-web/en.md)
-    - [How to integrate with Facebook - sample app](facebook-test-case/en.md)
+    - [Facebook API Reference for Cocos2d-JS](./facebook-sdk/api-reference/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on Android](./facebook-sdk/facebook-sdk-on-android/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on iOS](./facebook-sdk/facebook-sdk-on-ios/en.md)
+    - [Facebook integration instruction for Cocos2d-JS on Web](./facebook-sdk/facebook-sdk-on-web/en.md)
+    - [How to integrate with Facebook - sample app](./facebook-sdk/facebook-test-case/en.md)
 
 - Advanced topics
     - [How to compile Cocos2d-JS project in Eclipse](./v3/jsb/compilation-in-eclipse/en.md)
@@ -112,4 +112,4 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Use iOS IAP Plugin](./jsb/plugin-x/ios-iap/en.md)
 
 - Tutorials
-    - [Tutorial root](../../../tutorial/framework/html5/en.md)
+    - [Tutorial root](http://cocos2d-x.org/docs/tutorial/framework/html5/en)

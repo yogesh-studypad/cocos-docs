@@ -110,11 +110,12 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [如何为Android开发自己的Plugin](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
     - [使用iOS支付插件](./jsb/plugin-x/ios-iap/zh.md)
     - Facebook Integration for Cocos2d-JS
-        - [Facebook Integration API Reference](./facebook-sdk/api-reference/en.md)
-        - [Android平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-android/zh.md)
-        - [iOS平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-ios/zh.md)
-        - [Web平台上如何集成Facebook Integration for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-web/zh.md)
-        - [如何使用Facebook Integration测试例](./facebook-sdk/facebook-test-case/zh.md)
+        - [Cocos2d-x的Facebook集成](./facebook-sdk/zh.md)
+        - [Facebook API Reference for Cocos2d-JS](./facebook-sdk/api-reference/zh.md)
+        - [Android平台上如何集成Facebook平台支持](./facebook-sdk/facebook-sdk-on-android/zh.md)
+        - [iOS平台上如何集成Facebook平台支持](./facebook-sdk/facebook-sdk-on-ios/zh.md)
+        - [Web平台上如何集成Facebook平台支持](./facebook-sdk/facebook-sdk-on-web/zh.md)
+        - [集成Facebook平台 - 测试工程](./facebook-sdk/facebook-test-case/zh.md)
 
 - 教程
     - [教程目录](../../../tutorial/framework/html5/zh.md)

@@ -73,8 +73,6 @@ Please note that you can only share one photo with Share Dialog on iOS and Andro
 
 Please note that you can only share a structured Open Graph story with Share Dialog on iOS and Android. 
 
-// TODO: this is not done. Need improvement.
-
 |Name|Type|Description|
 |----|----|-----------|
 |object_type|string| | 
@@ -82,8 +80,8 @@ Please note that you can only share a structured Open Graph story with Share Dia
 |image|string| |
 |url|string| |
 |description|string| |
-|preview_property_name|string| |
-|action_type|string| |
+|preview\_property\_name|string| |
+|action\_type|string| |
 
 
 ###Callback function
@@ -214,8 +212,6 @@ Please note that you can only message one photo with Message Dialog on iOS and A
 
 Please note that you can only share a structured Open Graph story with Message Dialog on iOS and Android. 
 
-// TODO: this is not done. Need improvement.
-
 |Name|Type|Description|
 |----|----|-----------|
 |object_type|string| | 
@@ -223,8 +219,8 @@ Please note that you can only share a structured Open Graph story with Message D
 |image|string| |
 |url|string| |
 |description|string| |
-|preview_property_name|string| |
-|action_type|string| |
+|preview\_property\_name|string| |
+|action\_type|string| |
 
 ###Callback function
 
@@ -236,7 +232,7 @@ If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the mes
 
 ```javascript
 {
-    "error" : TODO
+    "error_message": "Action canceled by user"
 }
 ```
 
@@ -325,11 +321,12 @@ On Web, you should always use the Share Dialog and the Feed Dialog for web has a
 var callback = function (code, response) {}
 ```
 
-If sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `???` as the example below,
+If sharing succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED` and `response` is a JSON containing the `post_id` as the example below,
+
 ```javascript
 {
     // The id of the post which has been shared
-    //TODO
+    "post_id" : "1697818070_220407711431887"
 }
 ```
 
@@ -337,7 +334,7 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 
 ```javascript
 {
-    "error" : TODO
+    "error_message": "Action canceled by user"
 }
 ```
 
