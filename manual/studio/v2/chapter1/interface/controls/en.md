@@ -1,5 +1,5 @@
 # 1.1.2 Widget Panel
----
+
 
 
 ![Image](res/image007.png)

@@ -1,5 +1,5 @@
 # 1.1.3 Asset panel
----
+
 
 Asset panel displays all files in the project. Creating new files, renaming files, deleting files and other asset files associated operation can be done here.
 

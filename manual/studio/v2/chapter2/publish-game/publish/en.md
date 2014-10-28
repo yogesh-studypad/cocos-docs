@@ -1,5 +1,5 @@
 # 2.6.1 Publish Assets
----
+
 When you finish editing the scene/ui/animation, you can publish the project use the publishing feature, Cocos Studio will optimize the assets and scenes for game to use. Cocos Studio will trim away unused resources, generate spritesheet etc.
 
 Click the "Publish" button on toolbar, you can publish four types of projects, they will appear in your project based on the project type and use of the environment:

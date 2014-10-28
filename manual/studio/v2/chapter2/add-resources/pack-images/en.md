@@ -1,5 +1,5 @@
 # 2.2.5 SpriteSheet
----
+
 Cocos Studio can package spritesheet for you, we’re going to show how to do it here.
 
 ![Image](res/image129.gif)

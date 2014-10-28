@@ -1,5 +1,5 @@
 # 1.2 Assets workflow
----
+
 
 We will explains how the assets are used in Cocos Studio in this page
 

@@ -1,5 +1,5 @@
 # 2.2.4 导入资源
----
+
 您的游戏素材想要在Cocos Studio中使用时，需要使用导入资源功能添加到您的Cocos Studio项目中。
 
 目前Cocos Studio支持的资源类型有图片（.png .jpg）、粒子（.plist）、合图（.plist）、FNT字体（.ttf .fnt）、艺术字体（.plist）、声音（.mp3）、地图（.tmx），Cocos Studio文件（.csd）

@@ -1,5 +1,5 @@
 # Cocos Studio Introduction
----
+
 
 This section will walk you through the key features of Cocos Studio, including user interface, asset workflow, samples, preferences and shortcut keys.
 

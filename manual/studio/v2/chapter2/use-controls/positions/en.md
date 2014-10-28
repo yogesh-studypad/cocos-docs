@@ -1,5 +1,5 @@
 # 2.3.3 Position and Layout
----
+
 
 In Cocos Studio, the coordinate system is based on bottom left corner, so the the point at bottom left corner of the screen is at (0,0). 
 

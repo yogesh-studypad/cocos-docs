@@ -1,5 +1,5 @@
 # 4.2 Animation Property
----
+
 
 Currently Cocos Studio animation support recording position, rotation, scaling, skew, color, image (some of them), hierarchy, display eight attributes in total.
 

@@ -1,5 +1,5 @@
 # 2.2.1 New File
----
+
 With Cocos Studio you can create scene, layers, node, SpriteSheet four file types.
 
 ![Image](res/image129.gif)

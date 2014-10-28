@@ -1,5 +1,5 @@
 # 2.1 Step 1:new game project
----
+
 ####Project
 Project is one that will contain and organize scenes, layers, spritesheet, resources and other files.。
 ####Create new project

@@ -1,6 +1,6 @@
 # Cocos Studio Manual
----
-* #### [1 Cocos Studio Introduction](../chapter1/fundamentals/en.md)
+
+* [1 Cocos Studio Introduction](../chapter1/fundamentals/en.md)
 	* [1.1 UI Overview](../chapter1/interface/about/en.md)
 		* [1.1.1 Toolbar](../chapter1/interface/toolbar/en.md)
 		* [1.1.2 Controls Panel](../chapter1/interface/controls/en.md)
@@ -11,7 +11,7 @@
 	* [1.2 Asset Workflow](../chapter1/resources-workflow/en.md)
 	* [1.3 Samples and Tutorial](../chapter1/samples-and-tutorial/en.md)
 	* [1.4 Preferences](../chapter1/preference/en.md)
-* #### [2 Create a game](../chapter2/how-to-create-game/en.md)
+* [2 Create a game](../chapter2/how-to-create-game/en.md)
 	* [2.1 Step 1:new game project](../chapter2/new-game/en.md)
 	* [2.2 Step 2:Add game assets](../chapter2/add-resources/about/en.md)
 		* [2.2.1 New File](../chapter2/add-resources/new-file/en.md)
@@ -30,7 +30,7 @@
 	* [2.5 Step 5:Debug Project](../chapter2/debug/en.md)
 	* [2.6 Step 6:Output Assets](../chapter2/publish-game/about/en.md)
 		* [2.6.1 Publish Assets](../chapter2/publish-game/publish/en.md)
-* #### [3 How to use controls](../chapter3/how-to-use-controls/en.md)
+* [3 How to use controls](../chapter3/how-to-use-controls/en.md)
 	* [3.1 Basic Controls](../chapter3/basic-controls/about/en.md)
 		* [3.1.1 Button](../chapter3/basic-controls/button/en.md)
 		* [3.1.2 Checkbox](../chapter3/basic-controls/checkbox/en.md)
@@ -50,7 +50,7 @@
 		* [3.2.1 Panel](../chapter3/containers/panel/en.md)
 		* [3.2.2 ScrollView](../chapter3/containers/scrolledview/en.md)
 		* [3.2.4 PageView](../chapter3/containers/pageview/en.md)
-* #### [4 How to edit animation](../chapter4/how-to-edit-animation/en.md)
+* [4 How to edit animation](../chapter4/how-to-edit-animation/en.md)
 	* [4.1 Add Key Frame](../chapter4/add-key-frame/en.md)
 	* [4.2 Animation Property](../chapter4/animation-property/en.md)
 	* [4.3 Use onion skin](../chapter4/onionskin/en.md)

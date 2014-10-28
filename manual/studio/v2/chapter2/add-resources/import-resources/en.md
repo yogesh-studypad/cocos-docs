@@ -1,5 +1,5 @@
 # 2.2.4 Import
----
+
 Currently Cocos Studio supports asset types with pictures (.png .jpg), particles (.plist), spritesheet (.plist), fonts (.ttf .fnt), bitmap fonts(.plist), sound (.mp3) , maps (.tmx), Cocos Studio file (.csz)
 
 ####How to import Assets

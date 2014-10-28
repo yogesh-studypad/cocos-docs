@@ -1,5 +1,5 @@
 # 4 How to edit animation
----
+
 
 Previous chapters we introduced the basic elements of Cocos Studio, This chapter we’re going 
 

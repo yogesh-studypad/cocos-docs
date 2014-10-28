@@ -1,5 +1,5 @@
 # 2.3 Step 3:Use Controls
----
+
 In Cocos Studio, the widgets is the basic element of a game, all the game scenes are composed by the widgets, in sample project (DifficultSelect.csd), we use a variety of widgets,such as sprite(title background), button(raids button, attack button), 9-sliced image (earth yellow background).
 
 ![Image](res/image037.png)

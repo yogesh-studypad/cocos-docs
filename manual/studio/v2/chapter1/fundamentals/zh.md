@@ -1,5 +1,5 @@
 # Cocos Studio基础
----
+
 
 本部分将带您快速了解Cocos Studio的主要功能以及使用流程，包括Cocos Studio 界面资源工作流程、示例和教程、偏好设置以及快捷键使用。
 

@@ -1,5 +1,5 @@
 # 2.2.2 Adjust Resolution
----
+
 ####When to adjust resolution
 All the devices have their resolution, such as iPhone5s resolution is 1136x640. When the game is running on these devices, design to this resolution to achieve best graphics.
 

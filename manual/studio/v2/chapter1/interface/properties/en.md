@@ -1,5 +1,5 @@
 # 1.1.6 Property Panel  
----
+
 
 The property panel shows all the properties of widgets.
 

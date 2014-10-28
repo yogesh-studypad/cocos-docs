@@ -1,5 +1,5 @@
 # 3.1.8 Slider
----
+
  
  ![image](res/image088.png)
 

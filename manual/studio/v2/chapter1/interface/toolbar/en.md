@@ -1,5 +1,5 @@
 # 1.1.1 Toolbar
----
+
 
 The toolbar contains four basic components: Preview, Publish, Resolution, Alignment
 

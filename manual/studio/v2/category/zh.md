@@ -1,5 +1,5 @@
 # Cocos Studio 用户手册
----
+
 * #### [1 Cocos Studio基础](../chapter1/fundamentals/zh.md)
 	* [1.1 学习界面](../chapter1/interface/about/zh.md)
 		* [1.1.1 工具栏](../chapter1/interface/toolbar/zh.md)

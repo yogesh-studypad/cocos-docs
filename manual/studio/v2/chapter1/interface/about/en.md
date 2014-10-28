@@ -1,5 +1,5 @@
 # 1.1 UI Overview
----
+
 
 The following is the Cocos Studio interface, the main interface consists of a toolbar at the top, a canvas in the middle and some panels docked around, you can turn on or turn off these interfaces via the View menu.
 

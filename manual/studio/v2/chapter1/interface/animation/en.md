@@ -1,6 +1,6 @@
 
 # 1.1.5 Animation panel
----
+
 
 The animation panel is divided into five parts, scene graph, timeline, animation playback, animation editing, the animation curve.
 

@@ -1,5 +1,5 @@
 # 2.4.2 Edit Reference
----
+
 In game development, set the node's art assets is one of the most basic action. Cocos Studio provides three ways to do it quick and easy. We’ll use the previous "Home" button to demonstrate how to do it.
 
 ####With property panel

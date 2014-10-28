@@ -1,5 +1,5 @@
 # 2.4.3 How to use 9-Slice
----
+
 Use 9-Slice can help you save a lot of asset as well as bundle size, in the example, we use 9-Slice in different places, as this ui screen below:
 
 ![Image](res/image125.png)
