@@ -19,6 +19,6 @@
 模拟器的运行环境和设备的运行环境还是有区别的，为了确保游戏在设备上运行正常，需要[《在安卓设备上运行游戏》](../4-running/on-android-zh.md)或[《在iOS设备上运行游戏》](../4-running/on-ios-zh.md)察看实际效果。
 
 [lua begin debug img]:     ./res/lua-begin-debug.jpg
-[lua ask enter debug img]: ./res/lua-ask-enter-debug-view.jpg
+[lua ask enter debug img]: ../../res/getting-started/ask-enter-debug-view.jpg
 [lua debug view img]:      ./res/lua-debug-view.jpg
 [lua quick value img]:     ./res/lua-quick-value.jpg

@@ -11,16 +11,14 @@
   ![][js ask enter debug img]
 3. 进入调试视图，左上角为函数调用栈，右上角为变量察看窗口，中间为代码窗口，下面为日志窗口。可以通过F5, F6, F7等功能键进行单步调试。把鼠标移动到工具栏的相应按钮上就可以知道具体的功能。  
   ![][js debug view img]
-4. 在代码窗口还可以通过简单的选择一个函数然后鼠标指上去的方式察看函数的返回值；同样的方式来察看变量的值也是可以的。  
+4. 在代码窗口还可以通过鼠标指向变量来察看它的值。  
   ![][js quick value img]
 5. 在调试的时候如果对代码进行简单的修改，在文件保存后，Code IDE会立即重新加载修改后的代码，这样就可以立即看到修改后的效果，提高调试效率。如果需要重新启动模拟器来调试，只需要再次点击工具栏上的调试按钮就可以了。  
-  ![][js live coding img]
 
 ----------------
-模拟器的运行环境和设备的运行环境还是有区别的，为了确保游戏在设备上运行正常，需要[《在安卓设备上运行游戏》](../4-running-on-android/zh.md)或[《在iOS设备上运行游戏》](../5-running-on-ios/zh.md)察看实际效果。
+模拟器的运行环境和设备的运行环境还是有区别的，为了确保游戏在设备上运行正常，需要[《在安卓设备上运行游戏》](../4-running/on-android-zh.md)或[《在iOS设备上运行游戏》](../4-running/on-ios-zh.md)察看实际效果。
 
-[lua begin debug img]: ./res/lua-begin-debug.png
-[lua ask enter debug img]: ./res/lua-ask-enter-debug-view.png
-[lua debug view img]: ./res/lua-debug-view.png
-[lua quick value img]: ./res/lua-quick-value.png
-[lua live coding img]: ./res/lua-live-coding.png
+[js begin debug img]: ./res/js-begin-debug.jpg
+[js ask enter debug img]: ../../res/getting-started/ask-enter-debug-view.jpg
+[js debug view img]: ./res/js-debug-view.jpg
+[js quick value img]: ./res/js-quick-value.jpg
