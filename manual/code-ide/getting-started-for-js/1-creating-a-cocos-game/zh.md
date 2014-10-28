@@ -27,7 +27,7 @@ JavaScript本来是网页开发领域的强大语言，用此语言实现的coco
 
 接下来，就可以[《编写游戏逻辑》](../2-typing-game-logic/zh.md)了。
 
----------------
+-------------
 
 小提示
 --------
@@ -36,12 +36,12 @@ JavaScript本来是网页开发领域的强大语言，用此语言实现的coco
 - Working set有什么用？Working set是一种项目分组机制，可以把项目中的项目按需要放入不同的Working set中，以方便管理。  
   ![][js working set img]
   
-[select workspace img]: ./res/select_workspace.png
-[select welcome js img]: ./select_welcome_js.png
-[set js engine img]: ./set_js_engine.png
-[select new js proj img]: ./select_new_js_proj.png
-[create js page1 img]: ./create_js_page1.png
-[create js page2 img]: ./create_js_page2.png
-[create js finish img]: ./create_js_finish.png
-[run new js game img]: ./run_new_js_game.png
-[js working set img]: ./js_working_set.png
+[select workspace img]: ../../res/getting-started/select_workspace.png
+[select welcome js img]: ./res/select_welcome_js.jpg
+[set js engine img]: ./res/set_js_engine.jpg
+[select new js proj img]: ./res/select_new_js_proj.jpg
+[create js page1 img]: ./res/create_js_page1.jpg
+[create js page2 img]: ./res/create_js_page2.jpg
+[create js finish img]: ./res/create_js_finish.jpg
+[run new js game img]: ./res/run_new_js_game.jpg
+[js working set img]: ../../res/getting-started/working_set.jpg
