@@ -29,7 +29,7 @@
         cc.director.runScene(new HelloWorldScene());
         }, this);
 
-4. "HelloWorldScene"是在"src/app.js"文件中定义的。在此文件中，使用[cocos2d-js引擎的API]构建了一个"Scene"，其中添加了一个"Layer"。
+4. "HelloWorldScene"是在"src/app.js"文件中定义的。在此文件中，使用cocos2d-js引擎的API构建了一个"Scene"，其中添加了一个"Layer"。
 5. 可以在模拟器的菜单中选择不同的分辨率，查看游戏在不同分辨率的屏幕上的表现效果。模拟器的窗口初始大小是在[config.json][js config link]中配置的。  
   ![][js multi reso img]
 5. Code IDE为代码编写提供了方便的cocos2d-js引擎API自动提示功能，只要在代码中输入相应的前缀或单词就可以看到相关的API和函数说明，不过如果代码中有语法错误的话，可能会因为语法树构建失败而无法正确提示。  
@@ -43,10 +43,8 @@
 在编写完一段逻辑后，需要[《调试游戏代码》](../3-debugging/zh.md)，验证一下代码的效果正确与否。
 
 
-[lua folder structure link]:
-[lua config link]:
-[lua config img]: ./res/lua-config.png
-[lua main img]: ./res/lua-main.png
-[lua multi reso img]: ./res/lua-multi-reso.png
-[lua autocode img]: ./res/lua-autocode.png
-[lua autopath img]: ./res/lua-autopath.png
+[js folder structure link]:
+[js config link]:
+[js multi reso img]: ./res/js-multi-reso.jpg
+[js autocode img]: ./res/js-autocode.jpg
+[js autopath img]: ./res/js-autopath.jpg
