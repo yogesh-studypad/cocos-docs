@@ -17,7 +17,7 @@
         }
   
 2. 双击打开"src"目录下的"main.lua"文件，里面主要定义了"main"函数，然后在文件最后开始执行"main"函数，开始游戏执行。
-3. 在"main"函数中主要的步骤是：通过函数"setDesignResolutionSize"设置[游戏设计分辨率和屏幕适配模式]()；然后构建一个"GameScene"对象，通过"Director"运行此对象。  
+3. 在"main"函数中主要的步骤是：通过函数"setDesignResolutionSize"设置[游戏设计分辨率和屏幕适配模式](../../../framework/native/v3/multi-resolution/zh.md)；然后构建一个"GameScene"对象，通过"Director"运行此对象。  
 
         local function main()
             ...
