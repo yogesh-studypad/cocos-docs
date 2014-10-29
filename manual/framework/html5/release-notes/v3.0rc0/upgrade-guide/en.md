@@ -1,4 +1,4 @@
-#Upgrade guide from Cocos2d-JS v3.0 beta to Cocos2d-JS v3.0 Final
+#Upgrade guide from Cocos2d-JS v3.0 beta to Cocos2d-JS v3.1
 
 ## 0. Upgrade from Cocos2d-JS v2.x to v3.0 beta
 

@@ -1,4 +1,4 @@
-#从Cocos2d-JS v3.0 beta到Cocos2d-JS v3.0 Final
+#从Cocos2d-JS v3.0 beta到Cocos2d-JS v3.1
 
 ## 0. 首先你需要知道如何从Cocos2d-JS v2.x升级到v3.0 beta
 
