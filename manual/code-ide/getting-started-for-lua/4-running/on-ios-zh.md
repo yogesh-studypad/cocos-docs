@@ -23,7 +23,7 @@
 
 ---------------
 
-以这样的方式在设备上运行的程序并不是正式的发布程序，正式打包请看[《如何申请发布版本的证书和使用Code IDE制作可发布的ipa》](../7-packaging-ipa/zh.md)。
+以这样的方式在设备上运行的程序并不是正式的发布程序，正式打包请看[《如何申请发布版本的证书和使用Code IDE制作可发布的ipa》](../5-packaging/to-ipa-zh.md)。
 
 
 [lua ios sim debug img]:    ./res/lua-ios-sim-debug.jpg

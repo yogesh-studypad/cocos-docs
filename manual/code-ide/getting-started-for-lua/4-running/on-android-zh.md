@@ -30,5 +30,5 @@
 * Lua游戏在调试时，执行效率比运行时慢，可以使用"运行"模式来察看真实的表现。
 
 
-[enable android debugging img]: ./res/enable-android-debugging.jpg
+[enable android debugging img]: ../../res/getting-started/enable-android-debugging.jpg
 [lua debug config img]: ./res/lua-debug-config.jpg
