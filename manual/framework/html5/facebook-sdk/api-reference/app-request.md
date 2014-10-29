@@ -38,7 +38,7 @@ If there is some error, `code` is error code and `response` is a JSON containing
 
 ```javascript
 {
-    //TODO
+    "error_message": "Action canceled by user"
 }
 ```
 

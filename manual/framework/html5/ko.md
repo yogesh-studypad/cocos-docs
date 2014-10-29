@@ -8,12 +8,20 @@ Cocos2d-JS는 웹과 네이티브, 어떤 플랫폼으로 배포하는가에 상
 
 또한 자바스크립트 친화적인 API는 쉬운 코드, 테스트와 배포 등 당신의 게임 개발 경험를 용이하게 합니다. 또한 Cocos2d-JS는 손쉽게 즉시 프로젝트를 생성하고 코딩을 시작할 수 있게 하는 스크립트 툴인 Cocos Console을 제공하며 android, iOS, Mac OS, 웹 등 새로운 프로젝트를 생성하거나 배포할 때도 사용할 수 있습니다.
 
+## 작업흐름
+
+- 크로스 플랫폼 개발자는 코코스 콘솔로 프로젝트를 생성하고 웹과 모든 네이티브 플랫폼으로 게임을 배포할 수 있습니다.
+
+- 캐주얼 웹 게임 개발자는 라이트 버전을 다운로드하고 다른 웹 프레임워크처럼 개발을 시작하면 됩니다.(예를 들어 jQuery처럼)
+
 ## 다운로드와 API 레퍼런스
 
 - [Cocos2d-JS github 저장소](http://github.com/cocos2d/cocos2d-js/)
-- [Cocos2d-JS 다운로드](http://www.cocos2d-x.org/download)
+- [Cocos2d-JS 풀 버전 다운로드](http://www.cocos2d-x.org/download)
+- [Cocos2d-JS 라이트 버전 다운로드](http://www.cocos2d-x.org/filecenter/jsbuilder)
 - [온라인 API 레퍼런스](http://www.cocos2d-x.org/wiki/Reference)
 - [API 레퍼런스 다운로드](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-beta-API.zip)
+- [온라인 테스트 케이스](http://cocos2d-x.org/js-tests/)
 
 ## 주요 기능
 
@@ -52,17 +60,17 @@ Cocos2d-JS는 웹과 네이티브, 어떤 플랫폼으로 배포하는가에 상
 
 ## 관련문서
 
-- [Cocos2d-JS v3.0 RC2 릴리스 노트](./release-notes/v3.0rc2/release-note/ko.md)
-- [Cocos2d-JS v3.0 RC2 체인지 로그](./release-notes/v3.0rc2/changelog/ko.md)
+- [Cocos2d-JS v3.1 베타 릴리스 노트](./release-notes/v3.1b/release-note/ko.md)
+- [Cocos2d-JS v3.1 베타 체인지 로그](./release-notes/v3.1b/changelog/ko.md)
 - [Cocos2d-JS v3.0 RC0 업그레이드 가이드](./release-notes/v3.0rc0/upgrade-guide/ko.md)
+
 - 시작하기
+    - [라이트 버전 작업흐름](./v3/lite-version/ko.md)
     - [왜 Cocos2d-html5로 게임을 개발해야 하는가?](./v2/cocosh5-advantages/ko.md)
     - [Cocos2d-html5 2.2.2의 화면 해상도 지원 정책](./v2/resolution-policy-design/ko.md)
     - [릴리스 노트 히스토리](./release-notes/en.md)
-    - [Plugin-x 구조](./v3/plugin-x/plugin-x-architecture/ko.md)
-    - [안드로이드에서 plugin-x 사용하기](./v3/plugin-x/how-to-use-plugin-x-on-android/ko.md)
-    - [안드로이드에서 당신만의 플러그인을 만들어보세요](./v3/plugin-x/how-to-write-your-own-plugin-for-android/ko.md)
-- Cocos2d-JS v3.0로 달리기 게임 만들기
+
+- Cocos2d-JS v3.x로 달리기 게임 만들기
     - [1. 개발환경 세팅](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
     - [2. Hello World Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
     - [3. 첫번째 게임 씬 만들기](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
@@ -74,8 +82,8 @@ Cocos2d-JS는 웹과 네이티브, 어떤 플랫폼으로 배포하는가에 상
     - [9. 게임오버 로직 및 기타등등](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
     - [10. 오디오 효과 추가하기](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
         
-- 버전 3.0의 새로운 기능과 API 변화:
-    - [New workflow with cocos console](./v2/cocos-console/en.md)
+- 버전 3.x의 새로운 기능과 API 변화:
+    - [코코스 콘솔을 통한 새로운 작업흐름](./v2/cocos-console/ko.md)
     - [Assets manager](./v3/assets-manager/en.md)
     - [New event manager](./v3/eventManager/en.md)
     - [New property API](./v3/getter-setter-api/en.md)
@@ -98,3 +106,17 @@ Cocos2d-JS는 웹과 네이티브, 어떤 플랫폼으로 배포하는가에 상
     - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
     - [Bake Layer](./v3/bake-layer/en.md)
     - [Using cc.reflection to call Java methods](./v3/reflection/en.md)
+ 
+- Cocos2d-JS의 페이스북 SDK
+    - [페이스북 SDK API 레퍼런스](./facebook-sdk/api-reference/ko.md)
+    - [안드로이드에서 Cocos2d-JS의 페이스북 SDK 사용하기](./facebook-sdk/facebook-sdk-on-android/ko.md)
+    - [iOS에서 Cocos2d-JS의 페이스북 SDK 사용하기](./facebook-sdk/facebook-sdk-on-ios/ko.md)
+    - [웹에서 Cocos2d-JS의 페이스북 SDK 사용하기](./facebook-sdk/facebook-sdk-on-web/ko.md)
+    - [페이스북 SDK 테스트 케이스](./facebook-sdk/facebook-test-case/ko.md)
+    
+- 기타 문서
+    - [JSB에서 익스텐션 사용하기(중국어)](./jsb/jsb-extension/zh.md)
+    - [Plugin-x 구조](./v3/plugin-x/plugin-x-architecture/ko.md)
+    - [안드로이드에서 plugin-x 사용하기](./v3/plugin-x/how-to-use-plugin-x-on-android/ko.md)
+    - [안드로이드에서 당신만의 플러그인을 만들어보세요](./v3/plugin-x/how-to-write-your-own-plugin-for-android/ko.md)
+    - [iOS에서 IAP 플러그인 사용하기](./jsb/plugin-x/ios-iap/ko.md)

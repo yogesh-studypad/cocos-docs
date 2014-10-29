@@ -26,7 +26,7 @@ If the API call is successful, `code` is `plugin.FacebookAgent.CODE_SUCCEED`, ot
 ```javascript
 // The response object 
 {
-    // TODO
+    "error_message": "Unknown error message"
 }
 ```
 

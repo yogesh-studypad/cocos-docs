@@ -5,7 +5,7 @@ Log the user out of both your site and Facebook. Will also invalidate any access
 ##Parameters
 
 ```javascript
-plugin.FacebookAgent.prototype.login = function(callback){}
+plugin.FacebookAgent.prototype.logout = function(callback){}
 ```
 
 |Name|Type|Required|Description|

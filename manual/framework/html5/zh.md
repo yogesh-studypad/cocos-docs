@@ -60,9 +60,9 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
    
 ## 文档
 
-- [Cocos2d-JS v3.1 Beta发布说明](./release-notes/v3.1b/release-note/zh.md)
-- [Cocos2d-JS v3.1 Beta改动列表](./release-notes/v3.1b/changelog/en.md)
-- [Cocos2d-JS v3.1 Beta升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
+- [Cocos2d-JS v3.1发布说明](./release-notes/v3.1/release-note/zh.md)
+- [Cocos2d-JS v3.1改动列表](./release-notes/v3.1/changelog/en.md)
+- [Cocos2d-JS v3.1升级指南](./release-notes/v3.0rc0/upgrade-guide/zh.md)
 
 - 综述
     - [Lite Version工作流](./v3/lite-version/zh.md)
@@ -75,18 +75,6 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [Cocos2d-JS的屏幕适配方案](./v2/resolution-policy-design/zh.md)
     - [月亮战士——Cocos2d-html5游戏展示](./v2/moonwarriors-cocos2d-html5-showcase/zh.md)
     
-- 用Cocos2d-JS 来写一个跑酷游戏(Cocos2d-JS v3.x)
-	- [1. 建立Cocos2d-JS开发环境](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/zh.md)
-	- [2. 你好Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/zh.md)
-	- [3. 建立第一个游戏场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/zh.md)
-	- [4. 设计实现主场景](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter4/zh.md)
-	- [5. 让角色运行动画](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter5/zh.md)
-	- [6. 在游戏中加入Chipmunk物理引擎](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter6/zh.md)
-	- [7. 使用瓦片地图和相机](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter7/zh.md)
-	- [8. 增加金币和障碍物](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/zh.md)
-	- [9. 游戏结束逻辑](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/zh.md)
-	- [10. 添加游戏音频](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/zh.md)
-
 - Cocos2d-html5 v3.x的新功能
     - [使用Cocos Console管理工程](./v2/cocos-console/zh.md)
     - [资源管理器](./v3/assets-manager/zh.md)
@@ -115,13 +103,20 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [其他3.0版的API改动](./v3/more-change-from-v2-to-v3/zh.md)
     
 - 进阶主题
+    - [如何使用Eclipse中编译Cocos2d-JS项目](./v3/jsb/compilation-in-eclipse/zh.md)
     - [如何在JSB项目中使用extension](./jsb/jsb-extension/zh.md)
     - [在Android平台使用Plugin-x](./jsb/plugin-x/how-to-use-plugin-x-on-android/zh.md)
     - [Plugin-x的框架](./jsb/plugin-x/plugin-x-architecture/zh.md)
     - [如何为Android开发自己的Plugin](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
     - [使用iOS支付插件](./jsb/plugin-x/ios-iap/zh.md)
-    - Facebook SDK Beta for Cocos2d-JS
-        - [Facebook SDK Beta2 API Reference](./facebook-sdk/api-reference/en.md)
-        - [Android平台上如何集成Facebook SDK Beta2 for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-android/zh.md)
-        - [iOS平台上如何集成Facebook SDK Beta2 for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-ios/zh.md)
-        - [Web平台上如何集成Facebook SDK Beta2 for Cocos2d-JS](./facebook-sdk/facebook-sdk-on-web/zh.md)
+    - Facebook Integration for Cocos2d-JS
+        - [Cocos2d-x的Facebook集成](./facebook-sdk/zh.md)
+        - [Facebook API Reference for Cocos2d-JS](./facebook-sdk/api-reference/zh.md)
+        - [Android平台上如何集成Facebook平台支持](./facebook-sdk/facebook-sdk-on-android/zh.md)
+        - [iOS平台上如何集成Facebook平台支持](./facebook-sdk/facebook-sdk-on-ios/zh.md)
+        - [Web平台上如何集成Facebook平台支持](./facebook-sdk/facebook-sdk-on-web/zh.md)
+        - [集成Facebook平台 - 测试工程](./facebook-sdk/facebook-test-case/zh.md)
+
+- 教程
+    - [教程目录](../../../tutorial/framework/html5/zh.md)
+
