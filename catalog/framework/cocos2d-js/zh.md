@@ -22,7 +22,7 @@
 
 ## 重要概念
 
-- [Cocos2d-JS项目结构介绍](../../../manual/framework/cocos2d-js/4-essential-conceptions/4-1-cocos2d-js-project/zh.md)
-- [cc.game对象和游戏启动流程](../../../manual/framework/cocos2d-js/4-essential-conceptions/4-2-game-object/zh.md)
-- [Cocos2d-JS坐标系统](../../../manual/framework/cocos2d-js/4-essential-conceptions/4-3-coordinate-system/zh.md)
-- [Cocos2d-JS的屏幕适配方案](../../../manual/framework/cocos2d-js/4-essential-conceptions/4-4-resolution-policies/zh.md)
+- [Cocos2d-JS项目结构介绍](../../../manual/framework/cocos2d-js/4-essential-concepts/4-1-cocos2d-js-project/zh.md)
+- [cc.game对象和游戏启动流程](../../../manual/framework/cocos2d-js/4-essential-concepts/4-2-game-object/zh.md)
+- [Cocos2d-JS坐标系统](../../../manual/framework/cocos2d-js/4-essential-concepts/4-3-coordinate-system/zh.md)
+- [Cocos2d-JS的屏幕适配方案](../../../manual/framework/cocos2d-js/4-essential-concepts/4-4-resolution-policies/zh.md)
