@@ -40,7 +40,7 @@ Box2D是一个优秀的物理引擎，它存在了很长一段时间。很多2D�
 然后，让我们创建一个名叫*globals.js*的新文件，并在里面添加两个全局变量。
 
 ```
-var g_groundHight = 57;
+var g_groundHeight = 57;
 var g_runnerStartX = 80;
 ```
 最后，我们应该告诉框架在启动后，去加载*globals.js*文件。
@@ -84,8 +84,8 @@ space:null,
 
         // 3. set up Walls
         var wallBottom = new cp.SegmentShape(this.space.staticBody,
-            cp.v(0, g_groundHight),// start point
-            cp.v(4294967295, g_groundHight),// MAX INT:4294967295
+            cp.v(0, g_groundHeight),// start point
+            cp.v(4294967295, g_groundHeight),// MAX INT:4294967295
             0);// thickness of wall
         this.space.addStaticShape(wallBottom);
     },
@@ -139,7 +139,7 @@ PhysicsSprite是一个可重用的组件，它能够将cocos2d精灵和物理bod
         // 2. init the runner physic body
         this.body = new cp.Body(1, cp.momentForBox(1, contentSize.width, contentSize.height));
         //3. set the position of the runner
-        this.body.p = cc.p(g_runnerStartX, g_groundHight + contentSize.height / 2);
+        this.body.p = cc.p(g_runnerStartX, g_groundHeight + contentSize.height / 2);
         //4. apply impulse to the body
         this.body.applyImpulse(cp.v(150, 0), cp.v(0, 0));//run speed
         //5. add the created body to space
