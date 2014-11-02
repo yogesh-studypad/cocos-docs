@@ -6,7 +6,7 @@
 	- [Cocos2d-x v3.0 beta & v2.2, CocoStudio v1.2, Cocos2d-html5 v2.2.2 on 2014-01-07](../release-notes/summary-release-20140107.md)
 - Cocos2d-x 
 	- はじめに	 
-		- Androidにおけるcpp-testsの起動方法
+		- [Androidにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-android/ja.md)
 		- Mac OS Xにおけるcpp-testsの起動方法
 		- [iOSにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-ios/ja.md)
 		- Linuxにおけるcpp-testsの起動方法
