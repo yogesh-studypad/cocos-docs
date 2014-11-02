@@ -6,12 +6,14 @@
 	- [Cocos2d-x v3.0 beta & v2.2, CocoStudio v1.2, Cocos2d-html5 v2.2.2 on 2014-01-07](../release-notes/summary-release-20140107.md)
 - Cocos2d-x 
 	- はじめに	 
-		- 開発環境の構築
-			- Windows 7上への環境構築(Android)
-			- Mac OS X上への環境構築
-		- Cocos2d-xを利用したプログラミングのスターティングポイント
-			- Objects Reference Count and Auto Release Pool
-			- Cocos API Style
+		- Androidにおけるcpp-testsの起動方法
+		- Mac OS Xにおけるcpp-testsの起動方法
+		- [iOSにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-ios/ja.md)
+		- Linuxにおけるcpp-testsの起動方法
+		- Win32におけるcpp-testsの起動方法
+		- Windows Phone 8におけるcpp-testsの起動方法
+		- 新しいゲームのスタート方法
+		- Eclipse上におけるAndroidプロジェクトのビルド・実行方法
 	- グラフィックとアニメーション
 		- Cocos2dの座標系
 		- スプライト、レイヤー、シーン(Sprite, Layer and Scene)
