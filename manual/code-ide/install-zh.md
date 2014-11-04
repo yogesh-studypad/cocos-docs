@@ -1,4 +1,4 @@
-Cocos Code IDE入门指南
+Cocos Code IDE安装指南
 =========================
 
 简介
@@ -58,12 +58,11 @@ Cocos Code IDE 只支持 Cocos2d-x 3.x/Cocos2d-js 3.x 引擎。
 * 通过 IDE 创建一个对应的 Cocos Lua/JavaScript 示例工程
 * 用项目资源（脚本、图片等）替换掉示例工程中的资源
 
-如何使用
+入门指南
 ----------
 
-+ [使用Code IDE调试Cocos2d-x Lua游戏](../debug-lua/zh.md)
-+ [使用Code IDE调试Cocos2d-x JavaScript游戏](../debug-js/zh.md)
-+ [如何同时调试脚本代码和C++代码](../how-to-debug-cpp/zh.md)
+* 如果你是Lua开发者，请[点击这里](getting-started-for-lua/1-creating-a-cocos-game/zh.md)。
+* 如果你是JavaScript开发者，请[点击这里](getting-started-for-js/1-creating-a-cocos-game/zh.md)。
 
 [Android SDK link]: https://developer.android.com/sdk/index.html?hl=sk
 [NDK link]: https://developer.android.com/tools/sdk/ndk/

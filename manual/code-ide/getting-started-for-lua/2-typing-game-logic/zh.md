@@ -49,7 +49,7 @@
 * [资源查找模式]()
 
 [lua folder structure link]:
-[lua config link]:
+[lua config link]:../../function-guides/runtime/config/zh.md
 [lua multi reso img]: ./res/lua-multi-reso.jpg
 [lua autocode img]: ./res/lua-autocode.jpg
 [lua autopath img]: ./res/lua-autopath.jpg

@@ -44,7 +44,7 @@
 
 
 [js folder structure link]:
-[js config link]:
+[js config link]: ../../function-guides/runtime/config/zh.md
 [js multi reso img]: ./res/js-multi-reso.jpg
 [js autocode img]: ./res/js-autocode.jpg
 [js autopath img]: ./res/js-autopath.jpg

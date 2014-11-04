@@ -51,7 +51,7 @@ Cocos Code IDE 填补了 Cocos2d Lua/JavaScript 调试工具的空白，你可�
 
 ![](http://files.cocos2d-x.org/images/orgsite/codeide-p8.jpg)
 
-开始使用
+开始安装
 ----------
 
-+ [Cocos Code IDE 新手指引](./getting-started/zh.md)
++ [Cocos Code IDE 安装指南](./install-zh.md)
