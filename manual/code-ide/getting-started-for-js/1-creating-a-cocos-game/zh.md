@@ -1,4 +1,4 @@
-新建一个cocos2d-JS 游戏
+新建一个Cocos2d-JS 游戏
 ============
 JavaScript本来是网页开发领域的强大语言，用此语言实现的cocos2d-JS引擎天然支持开发可以在网页上运行的游戏。更强大的是，cocos2d-JS引擎通过JavaScript Binding(简称"JSB")的方式，让JS开发的游戏运行在安卓和iOS设备上。Code IDE主要支持使用JSB的方式来开发游戏。
 
