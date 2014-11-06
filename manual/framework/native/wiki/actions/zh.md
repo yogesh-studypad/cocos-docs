@@ -21,7 +21,7 @@ Actions 继承了Node的属性。actions通常会修改对象的一些属性，�
 * [EaseInOut](http://www.cocos2d-x.org/reference/native-cpp/V3.0rc1/da/d63/classcocos2d_1_1_ease_out.html)
 * [Speed](http://www.cocos2d-x.org/reference/native-cpp/V3.0rc1/d7/d5e/classcocos2d_1_1_speed.html)
 
-等. (更多信息，详见`ActionsEaseTest.cpp`实例)
+等. (更多信息，详见[ActionsEaseTest.cpp](https://github.com/cocos2d/cocos2d-x/blob/v3/tests/cpp-tests/Classes/ActionsTest/ActionsTest.cpp)实例)
 
 你可以通过用ActionManager来暂停和恢复所有actions:
 
