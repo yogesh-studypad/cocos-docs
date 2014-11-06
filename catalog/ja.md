@@ -13,7 +13,7 @@
 		- Win32におけるcpp-testsの起動方法
 		- Windows Phone 8におけるcpp-testsの起動方法
 		- 新しいゲームのスタート方法
-		- Eclipse上におけるAndroidプロジェクトのビルド・実行方法
+		- [Eclipse上におけるAndroidプロジェクトのビルド・実行方法](../manual/framework/native/v3/getting-started/how-to-build-android-project-with-eclipse/ja.md)
 	- グラフィックとアニメーション
 		- Cocos2dの座標系
 		- スプライト、レイヤー、シーン(Sprite, Layer and Scene)
