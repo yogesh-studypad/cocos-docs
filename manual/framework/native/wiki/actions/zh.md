@@ -97,5 +97,5 @@ Actions 继承了Node的属性。actions通常会修改对象的一些属性，�
     sprite->runAction(Repeat::create(act1, 1));
 ```
 
-act1是持续0.5秒的MoveBy action,并且使用位置Point(100,0)的值？.
+act1是持续0.5秒的MoveBy action,并且使用位置Point(100,0)的值.
 
