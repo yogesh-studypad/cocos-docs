@@ -1,17 +1,15 @@
-Title: 在 Code IDE 中调试 quick 工程
-
-在 Code IDE 中调试 quick 工程
+在 Code IDE 中调试 Quick 工程
 ===========================
 
 > Code IDE 是 cocos2d-x 团队为开发者提供的全功能代码开发环境。
 
-为了支持 quick 工程，请使用 Code IDE 1.0 rc1 或更新版本。
+为了支持 Quick 工程，请使用 Code IDE 1.0 rc1 或更新版本。
 
 ~
 
 ## 准备
 
-1.  在 Code IDE 中导入 quick 工程：
+1.  在 Code IDE 中导入 Quick 工程：
 
     启动 Code IDE 后，选择菜单 File -> Import -> Cocos -> Import Cocos Project，并选择 quick 工程所在目录。
 
@@ -30,7 +28,7 @@ Title: 在 Code IDE 中调试 quick 工程
 
 ## 从命令行启动 player 进行调试（仅能调试 Lua 代码）
 
-目前版本（quick 3.2rc0）中，只能从命令行启动 player 的调试功能：
+目前版本（Quick 3.2rc0）中，只能从命令行启动 player 的调试功能：
 
 -   在命令行窗口中进入要调试的项目所在目录
 -   Mac 环境执行 debug_mac.sh，Windows 环境执行 debug_win.bat
