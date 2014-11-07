@@ -1,13 +1,11 @@
-Title: CCSLoader 用法说明
-
 CCSLoader 用法说明
 ================
 
-CCSLoader 是 quick 中的一个功能库。
+CCSLoader 是 Quick 中的一个功能库。
 
 CCSLoader 读取 Cocos Studio 输出的场景和 UI 布局 JSON 文件，并用 quick 自带的 Lua UI 控件渲染出来。
 
-相比使用 Cocos Studio C++ UI 控件来渲染，使用 quick 自带的 Lua UI 控件有以下好处：
+相比使用 Cocos Studio C++ UI 控件来渲染，使用 Quick 自带的 Lua UI 控件有以下好处：
 
 -   由于只使用了标准的 Node 和 Sprite 等对象，渲染效率更高
 -   支持 quick 的三阶段触摸事件机制
