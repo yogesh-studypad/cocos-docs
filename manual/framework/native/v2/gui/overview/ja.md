@@ -148,17 +148,17 @@ loadTexture(const char* fileName,TextureResType texType = UI_TEX_TYPE_LOCAL);   
 setTextureRect(const Rect& rect)            | 画像の領域を設定
 setScale9Enabled(bool able)                 | Scal9画像の有効化
 
-## CocoStudioからリソースをインポートする
+## Cocos Studioからリソースをインポートする
 
 最初にUIコンテナーを配置する為の**UILayer**を準備し、次に他のウィジェットをその中に追加するという手順です。その間にインタラクションが必要ならば、いくつかの一般的なプロパティ（クリックなど）を設定します。
 ウィジェットがあまり多くない場合は容易に管理できますが、UIウィジェットが多くなってくるとそれが困難になってきます。
-そこで、CocoStudioからUIリソースを読み込むという新しい方法を導入しました。
+そこで、Cocos StudioからUIリソースを読み込むという新しい方法を導入しました。
 
-CocoStudioを使う利点について説明します。
-CocoStudio UI editorでは、たった今デザインしたエディター内の全てのウィジェットをプレビューすることができます。
+Cocos Studioを使う利点について説明します。
+Cocos Studio UI editorでは、たった今デザインしたエディター内の全てのウィジェットをプレビューすることができます。
 エディターでプロパティの設定ができるため、コードを書く時間が大幅に削減できます。
-例えば、画像を表示する為のUIImageViewを設定できたり、テキストを表示する為のUILabelを設定できたり、ボタン画像ををUIButtonに設定でき、タッチも有効にできます。
-CocosStudioとGUIライブラリーを共に使うことは効率的です。
+例えば、画像を表示する為のUIImageViewを設定できたり、テキストを表示する為のUILabelを設定できたり、ボタン画像ををUIButtonに設定でき、タッチも有効にできます。s
+Cocos StudioとGUIライブラリーを共に使うことは効率的です。
 
 ## GUIリソースの読み込み
 
@@ -181,14 +181,14 @@ jsonファイルからUIウィジェットが読み込まれたcocostudio::GUIRe
 UILayerオブジェクトを最初に生成した後に、そのUILayerにjsonファイルからUIリソースを追加します。そうしなければUIリソースは表示されません。
 UILayerはシーンとUIウィジェットを繋ぐ役割です。
 
-備考：UITest.jsonはCocoStudioUIエディターによって生成されたファイルであり、通常は内容を変更しません。詳細はCocoStudioドキュメントにあるCocoStudioの使い方を参照してください。
+備考：UITest.jsonはCocos StudioのUIエディターによって生成されたファイルであり、通常は内容を変更しません。詳細はCocos StudioのドキュメントにあるCocos Studioの使い方を参照してください。
 
 **UITest.json**は全てのUIの定義、UIのレイアウト、全てのプロパティ設定を含むファイルです。
-GUIReaderでリソースを読み込む時に、対応するウィジェットが生成され、プロパティも設定されます。CocoStudio UIエディターを使うことでコーディング作業を大幅に削減できます。
+GUIReaderでリソースを読み込む時に、対応するウィジェットが生成され、プロパティも設定されます。Cocos StudioのUIエディターを使うことでコーディング作業を大幅に削減できます。
 
 ### プロシージャーを使ったUIリソース
 
-前述のように、UIリソースからあなたが得る最初のリソースはUILayerリソースであり、CocoStudioではPanelウィジェットです。これは常にレイアウトを行うUIウィジェットのルートのウィジェットです。
+前述のように、UIリソースからあなたが得る最初のリソースはUILayerリソースであり、Cocos StudioではPanelウィジェットです。これは常にレイアウトを行うUIウィジェットのルートのウィジェットです。
 Panelにはボタン、ラベル、テキストボックス、画像、スクロールビューなどを追加できます。さらに、PanelにサブエリアとしてのPanelも追加することができます。
 このjsonファイルはDectionaryデータであり、”key”でプロパティ名、”value”で値を持っています。GUIReaderの実装について懸念はありません。
 
