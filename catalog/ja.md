@@ -29,7 +29,7 @@
 		- 複数の解像度で動かすためのメカニズム
 	- オーディオ(Audio)
 	- GUI
-		- GUI系の概要
+		- [GUI系の概要](../manual/framework/native/v2/gui/overview/ja.md)
         - UI Containers
         - UI Widgets
         - UI Layouts
