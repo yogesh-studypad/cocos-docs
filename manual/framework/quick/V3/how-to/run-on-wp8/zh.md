@@ -1,5 +1,3 @@
-Title: 在 Windows Phone 8 上运行
-
 在 Windows Phone 8 上运行
 =======================
 
