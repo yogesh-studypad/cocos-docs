@@ -33,7 +33,7 @@
 ## 从Retina 到 design resolution
 在Cocos2d-x 2.0.4之前，有Retina的概念，这个是从Cocos2d-iphone过来的概念。
 
-Cocos2d-iphone为了支持Retina iphone 设备，使用了-hd等后缀来区分iphone和Retine iphone的图片资源。在设计游戏的时候，使用point 坐标系，而非真正的pixel坐标系。这点和iOS native应用开发提出的point概念一至，不用修改代码，就能在640×960的设备上跑之前320×480的程序，只是图片会看起来模糊，一旦加入@2x的图片，iOS自动加载@2x的图片，实现对Retna iphone的支持。
+Cocos2d-iphone为了支持Retina iphone 设备，使用了-hd等后缀来区分iphone和Retina iphone的图片资源。在设计游戏的时候，使用point 坐标系，而非真正的pixel坐标系。这点和iOS native应用开发提出的point概念一致，不用修改代码，就能在640×960的设备上跑之前320×480的程序，只是图片会看起来模糊，一旦加入@2x的图片，iOS自动加载@2x的图片，实现对Retina iphone的支持。
 
 point坐标系，在一定范围内能解决多分辨率支持的问题。但是当iphone5，ipad 3出来以后，iOS总共有5个分辨率需要支持，如果做一个universal的程序，是相当痛苦的。point坐标系并不能完全解决问题，android上的分辨率情况更加复杂。
 
@@ -64,7 +64,7 @@ Cocos2d-x图片显示有下面两个逻辑过程。
 ## 从资源分辨率到设计分辨率
 setSearchPaths()需要根据当前屏幕分辨率做恰当的设置，HelloCpp展示了一套简单方案，但可能不是最佳的。
 
-setContentScaleFactor()决定了图片显示到屏幕的缩放因子，但是这个接口的参数不是通过资源图片的宽、高比屏幕宽、高得来。Cocos2d-x引擎设计试图屏蔽游戏开发者直接去关注屏幕，所以这个因子是资源宽、高比设计分辨率宽、高。
+setContentScaleFactor()决定了图片显示到屏幕的缩放因子，但是这个接口的参数不是通过资源图片的宽、高比屏幕宽、高得来。Cocos2d-x引擎设计试图屏蔽游戏开发者直接去关注屏幕，所以这个因子是`资源宽、高`比`设计分辨率宽、高`得到的比值。
 
 setContentScaleFactor()通常有两个方式来设置参数。
 RH/DH或RW/DW，不同的因子选择有不同的缩放负作用。
