@@ -94,5 +94,5 @@
 
 ### 骨骼动画
 
-请参考[骨骼动画](http://)页面。
+请参考[骨骼动画](https://github.com/chukong/cocos-docs/blob/master/manual/framework/native/wiki/skeletal-animation/zh.md)页面。
 
