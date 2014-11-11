@@ -44,7 +44,7 @@ class CC_DLL TMXLayer : public Node
 
 更多API使用方法参考:
 
-- `COCOS2DX_ROOT/tests/cpp-tests/Classes/TileMapTest/TileMapTest2.cpp`
+- [COCOS2DX_ROOT/tests/cpp-tests/Classes/TileMapTest/TileMapTest2.cpp](https://github.com/cocos2d/cocos2d-x/blob/v3/tests/cpp-tests/Classes/TileMapTest/TileMapTest2.cpp)
 
 - [TileMap](http://cn.cocos2d-x.org/article/index?type=cocos2d-x&url=/doc/cocos-docs-master/manual/framework/native/v2/graphic/tiled-map/zh.md)
 
