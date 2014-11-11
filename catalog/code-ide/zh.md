@@ -17,12 +17,12 @@
 ## JavaScript开发者入门
 
 - [新建一个Cocos2d-JS游戏](../../manual/code-ide/getting-started-for-js/1-creating-a-cocos-game/zh.md)
-- [编写游戏逻辑](../../manual/code-ide/getting-started-for-js/2-typing-game-logic/zh.md)
-- [调试游戏代码](../../manual/code-ide/getting-started-for-js/3-debugging/zh.md)
-- [在安卓设备上运行游戏](../../manual/code-ide/getting-started-for-js/4-running/on-android-zh.md)
-- [在iOS设备上运行游戏](../../manual/code-ide/getting-started-for-js/4-running/on-ios-zh.md)
-- [生成安卓安装包](../../manual/code-ide/getting-started-for-js/5-packaging/to-apk-zh.md)
-- [生成iOS安装包](../../manual/code-ide/function-guides/compiling/package-ios-publish/zh.md)
+- [编写游戏逻辑　](../../manual/code-ide/getting-started-for-js/2-typing-game-logic/zh.md)
+- [调试游戏代码　](../../manual/code-ide/getting-started-for-js/3-debugging/zh.md)
+- [在安卓设备上运行游戏　](../../manual/code-ide/getting-started-for-js/4-running/on-android-zh.md)
+- [在iOS设备上运行游戏　](../../manual/code-ide/getting-started-for-js/4-running/on-ios-zh.md)
+- [生成安卓安装包　](../../manual/code-ide/getting-started-for-js/5-packaging/to-apk-zh.md)
+- [生成iOS安装包　](../../manual/code-ide/function-guides/compiling/package-ios-publish/zh.md)
 
 ## 功能指导
 
