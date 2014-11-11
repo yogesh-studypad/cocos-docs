@@ -18,7 +18,3 @@
 ----------------
 模拟器的运行环境和设备的运行环境还是有区别的，为了确保游戏在设备上运行正常，需要[《在安卓设备上运行游戏》](../4-running/on-android-zh.md)或[《在iOS设备上运行游戏》](../4-running/on-ios-zh.md)察看实际效果。
 
-[js begin debug img]: 
-[js ask enter debug img]: 
-[js debug view img]: 
-[js quick value img]: 
