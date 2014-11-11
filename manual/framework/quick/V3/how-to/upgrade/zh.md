@@ -1,6 +1,4 @@
-Title: 升级到 quick-cocos2d-x 最新版
-
-升级到 quick-cocos2d-x 最新版
+升级到 Quick-Cocos2d-x 最新版
 ============================
 
 ## 从 2.2.5 升级到 3.2rc0
