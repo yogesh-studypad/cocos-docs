@@ -20,4 +20,3 @@
 | setFlipX()                              | setFlippedX()                |
 | setFlipY()                              | setFlippedY()                |
 
-~

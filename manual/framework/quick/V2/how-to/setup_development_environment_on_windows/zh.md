@@ -18,7 +18,6 @@
 2. 不能放在根目录
 3. 路径中不能包含中文和空格（所以别放桌面了）
 
-~
 
 
 ## Step 2: 设置运行环境
@@ -31,14 +30,12 @@
 
 ![](res/howto_setup_development_environment_windows_00_.png)
 
-~
 
 
 ## Step 3: 安装 Java SDK ##
 
 从 <http://www.oracle.com/technetwork/java/javase/downloads/> 下载最新版的 Java SDK，并进行安装。
 
-~
 
 
 ## Step 4: 安装最新的 Android ADT bundle 和 Android NDK ##
@@ -73,7 +70,6 @@
 
 ![](res/howto_setup_development_environment_windows_02.png)
 
-~
 
 
 ## Step 5: 编译 LuaJavaBridge 示例，并在 Android 真机上进行测试 ##

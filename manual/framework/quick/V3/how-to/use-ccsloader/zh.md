@@ -11,7 +11,6 @@ CCSLoader 读取 Cocos Studio 输出的场景和 UI 布局 JSON 文件，并用 
 -   支持 quick 的三阶段触摸事件机制
 -   Lua UI 控件更容易理解和扩展
 
-~
 
 ## 基本用法
 
@@ -29,7 +28,6 @@ end
 
 ~~~
 
-~
 
 按名字查找节点：
 
@@ -49,7 +47,6 @@ end)
 
 ~~~
 
-~
 
 按名字顺序查找节点：
 
@@ -66,7 +63,6 @@ hero:getAnimation():play("attack")
 
 ~~~
 
-~
 
 更多用法参见样例 samples/ccsloader。
 
