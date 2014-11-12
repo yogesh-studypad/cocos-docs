@@ -62,4 +62,4 @@ Cocos2d-x 英文[wiki](http://cocos2d-x.org/wiki)的中文翻译，官方wiki是
 
 Github文档编写规范是为了规范各个文档统一样式，实现自动抓取github内容而不会出现样式乱码以及图片抓取错误等现象。所以需要在此对文档做出规范统一。
 
-[点击进入](conversion/conversion.md)
+[点击进入](conversion/zh.md)
