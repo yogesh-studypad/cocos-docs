@@ -30,6 +30,7 @@
 - [config.json文件说明](../../manual/code-ide/function-guides/runtime/config/zh.md)
 - [使用Code IDE调试Cocos2d-x Lua游戏](../../manual/code-ide/function-guides/debugging/debug-lua/zh.md)
 - [使用Code IDE调试Cocos2d-x JavaScript游戏](../../manual/code-ide/function-guides/debugging/debug-js/zh.md)
+- [Cocos2d-x lua 的基本调试原理](../../manual/code-ide/function-guides/debugging/debug-principle-for-lua/zh.md)
 - [Cocos2d-js 的基本调试原理](../../manual/code-ide/function-guides/debugging/debug-principle-for-js/zh.md)
 - [如何同时调试脚本代码和C++代码](../../manual/code-ide/function-guides/debugging/how-to-debug-cpp/zh.md)
 - [Lua Runtime 绑定自定义类](../../manual/code-ide/function-guides/add-3rd-party-lib/binding-custom-class-to-lua/zh.md)
