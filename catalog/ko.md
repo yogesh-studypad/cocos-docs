@@ -74,13 +74,14 @@
 		    - [릴리스 노트 히스토리](../manual/framework/html5/release-notes/en.md)
 		
         - 버전 3.0에서의 새로운 기능과 API 변화:
-            - [New Actions API](../manual/framework/html5/v3/cc-actions/en.md)
+            - [새로운 액션 API](../manual/framework/html5/v3/cc-actions/ko.md)
             - [코코스 콘솔을 통한 새로운 작업흐름](../manual/framework/html5/v2/cocos-console/ko.md)
             - [에셋 매니저](../manual/framework/html5/v3/assets-manager/ko.md)
             - [새로운 이벤트 매니저](../manual/framework/html5/v3/eventManager/ko.md)
-            - [New property API](../manual/framework/html5/v3/getter-setter-api/en.md)
-            - [Game creation](../manual/framework/html5/v3/cc-game/en.md)
-            - [Construction and inheritance](../manual/framework/html5/v3/inheritance/en.md)
+            - [새로운 속성 API](../manual/framework/html5/v3/getter-setter-api/ko.md)
+            - [게임 생성](../manual/framework/html5/v3/cc-game/ko.md)
+            - [생성자와 상속](../manual/framework/html5/v3/inheritance/ko.md)
+            - [오브젝트 풀](../manual/framework/html5/v3/cc-pool/ko.md)
             - [Cocos2d-html5 modulization](../manual/framework/html5/v3/moduleconfig-json/en.md)
             - [Pure configuration file](../manual/framework/html5/v3/project-json/en.md)
             - [Basic data refactoration](../manual/framework/html5/v3/basic-data/en.md)
