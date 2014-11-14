@@ -27,6 +27,7 @@
 ## 功能指导
 
 - [开发环境配置指导](../../manual/code-ide/function-guides/env-configration/zh.md)
+- [Runtime 是什么](../../manual/code-ide/function-guides/runtime/what-is/zh.md)
 - [config.json文件说明](../../manual/code-ide/function-guides/runtime/config/zh.md)
 - [使用Code IDE调试Cocos2d-x Lua游戏](../../manual/code-ide/function-guides/debugging/debug-lua/zh.md)
 - [使用Code IDE调试Cocos2d-x JavaScript游戏](../../manual/code-ide/function-guides/debugging/debug-js/zh.md)
