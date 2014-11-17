@@ -54,3 +54,4 @@
 	* [Add Key Frame](../../manual/studio/v2/chapter4/add-key-frame/en.md)
 	* [Animation Property](../../manual/studio/v2/chapter4/animation-property/en.md)
 	* [Use onion skin](../../manual/studio/v2/chapter4/onionskin/en.md)
+* [Samples](../../manual/studio/v2/chapter5/en.md)
