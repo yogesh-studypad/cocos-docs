@@ -44,7 +44,7 @@ adb shell am start -W apk的包名/apk的启动activity
 如果你遇到IDE无法安装 apk 的情况，可以尝试使用上面的命令找到原因
 
 ###iOS 模拟器
-我们通过第三方的工具 [ios-sim][ios-sim link] 将 app 安装到模拟器，并启动 app
+我们通过第三方的工具 [ios-sim][ios-sim link] 将 app 安装到模拟器，并启动 app，目前内置在 IDE 中的 ios-sim 为 2.0.1（支持 Xcode5） 和 3.0.0（支持 Xcode6）
 
 小提示
 ----
