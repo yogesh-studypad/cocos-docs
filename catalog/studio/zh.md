@@ -53,4 +53,3 @@
 	* [添加关键帧](../../manual/studio/v2/chapter4/add-key-frame/zh.md)
 	* [使用动画属性](../../manual/studio/v2/chapter4/animation-property/zh.md)
 	* [使用镜像参考](../../manual/studio/v2/chapter4/onionskin/zh.md)
-* [示例](../../manual/studio/v2/chapter5/zh.md)

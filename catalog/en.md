@@ -167,7 +167,6 @@
     	- [Add Key Frame](../manual/studio/v2/chapter4/add-key-frame/en.md)
     	- [Animation Property](../manual/studio/v2/chapter4/animation-property/en.md)
     	- [Use onion skin](../manual/studio/v2/chapter4/onionskin/en.md)
-    - [Samples](../manual/studio/v2/chapter5/en.md)
 - Tutorials
 	- Pakour Game with Javascript (Cocos2d-JS v3.0)
 		- [1. Setup Development Environment](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
