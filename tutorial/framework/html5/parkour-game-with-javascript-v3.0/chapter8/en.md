@@ -366,7 +366,7 @@ var Rock = cc.Class.extend({
 
         this.sprite = new cc.PhysicsSprite("#rock.png");
         var body = new cp.StaticBody();
-        body.setPos(cc.p(posX, this.sprite.getContentSize().height / 2 + g_groundHight));
+        body.setPos(cc.p(posX, this.sprite.getContentSize().height / 2 + g_groundHeight));
         this.sprite.setBody(body);
 
         this.shape = new cp.BoxShape(body,

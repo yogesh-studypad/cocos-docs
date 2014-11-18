@@ -94,7 +94,7 @@ MoveTo的position值表示最后位置，而MoveBy的position则表示移动的�
 
 ![bezier](res/bezier.png)
 
-使用时，我们要先创建ccBezierConfig结构体，设置好终点endPosition以及两个两个控制点controlPoint_1和controlPoint_2后，再把结构体传入BezierTo或BezierBy的初始化方法中：
+使用时，我们要先创建ccBezierConfig结构体，设置好终点endPosition以及两个控制点controlPoint_1和controlPoint_2后，再把结构体传入BezierTo或BezierBy的初始化方法中：
 
 ```
 	ccBezierConfig bezier;
