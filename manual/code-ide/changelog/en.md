@@ -1,3 +1,16 @@
+Cocos Code IDE 1.0.2
+
+	[NEW] Live coding switch
+	[NEW] Code Auto-complete feature enhancement
+	[NEW] "Open Declaration" feature enhancement
+	[NEW] Desktop runtime arguments support
+	
+	[FIX] Build iOS divice runtime failed
+	[FIX] Can't auto update on Windows
+	[FIX] Add breakpoint failed in JavaScript occasionally
+	[FIX] Delete js files in frameworks when add native code
+	[FIX] Some other bugs
+
 Cocos Code IDE 1.0.0-final
 
 	[NEW] Xcode 6 iOS simulator support
