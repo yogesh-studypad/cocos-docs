@@ -7,7 +7,7 @@ Cocos Code IDE 1.0.2
 	
 	[FIX] Build iOS divice runtime failed
 	[FIX] Can't auto update on Windows
-	[FIX] Add breakpoint failed sometimes in JavaScript
+	[FIX] Add breakpoint failed in JavaScript occasionally
 	[FIX] Delete js files in frameworks when add native code
 	[FIX] Some other bugs
 
