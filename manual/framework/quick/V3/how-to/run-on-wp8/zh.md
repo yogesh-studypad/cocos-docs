@@ -11,7 +11,6 @@
     2.  选择 Debug 标签
     3.  UI Task: 选择 "Native Only"
 
-~
 
 ## 不支持的特性
 

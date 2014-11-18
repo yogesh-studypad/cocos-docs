@@ -5,7 +5,6 @@
 
 为了支持 Quick 工程，请使用 Code IDE 1.0 rc1 或更新版本。
 
-~
 
 ## 准备
 
@@ -24,7 +23,6 @@
 
     ![](res/debug_configs.png)
 
-~
 
 ## 从命令行启动 player 进行调试（仅能调试 Lua 代码）
 
@@ -36,7 +34,6 @@
 -   在 Code IDE 中，设置好 Lua 代码断点
 -   点击 Code IDE 工具栏中的 Debug Remote 按钮开始调试
 
-~
 
 ## 配合 Xcode 和 Code IDE 进行 C++ 和 Lua 联调
 
@@ -64,7 +61,6 @@
 -   在调试期间，如果遇到 Lua 代码中设置的断点，则切换到 Code IDE 查看断点情况
 -   如果遇到 C++ 断点，则切换到 Xcode 查看断点情况
 
-~
 
 ## 配合 Visual Studio 和 Code IDE 进行 C++ 和 Lua 联调
 
