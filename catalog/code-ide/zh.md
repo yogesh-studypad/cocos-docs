@@ -39,6 +39,6 @@
 - [如何申请开发证书和使用Code IDE制作可以真机调试的ipa](../../manual/code-ide/function-guides/compiling/package-ios-runtime/zh.md)
 - [如何申请发布证书和使用Code IDE制作可发布的ipa](../../manual/code-ide/function-guides/compiling/package-ios-publish/zh.md)
 
-
+## [视频资源](../../manual/code-ide/others/videos/zh.md)
 
 
