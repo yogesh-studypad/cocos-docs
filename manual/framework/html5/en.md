@@ -104,7 +104,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [How to integrate with Facebook - sample app](./facebook-sdk/facebook-test-case/en.md)
 
 - Advanced topics
-    - [How to compile Cocos2d-JS project in Eclipse](./v3/jsb/compilation-in-eclipse/en.md)
+    - [How to compile Cocos2d-JS project in Eclipse](./jsb/compilation-in-eclipse/en.md)
     - [How to use extensions in JSB(Chinese version)](./jsb/jsb-extension/zh.md)
     - [How to use Plugin-x on Android](./jsb/plugin-x/how-to-use-plugin-x-on-android/en.md)
     - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)

@@ -22,8 +22,10 @@ The Cocos2d-JS documentation gives you a complete overview of all its components
 
 Use the Cocos2d-JS Programming Guide to read detailed descriptions of the Cocos2d-JS workflow, essential concepts, full features and drill-down into our live samples with the Scripting reference.
 
-The Programming Guide has been divided into topics for ease of use. You can study these pages to become a Cocos2d-JS master: [Cocos2d-JS Programming Guide]()
-
+The Programming Guide has been divided into topics for ease of use. You can study these pages to become a Cocos2d-JS master: 
+
+[Cocos2d-JS Programmers Guide]()
+
 
 
 
