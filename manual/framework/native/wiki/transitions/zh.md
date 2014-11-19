@@ -30,4 +30,4 @@ CCTransitionScene *transition = CCTransitionPageTurn::create(3.0f, s, false);
 ![](./res/pageTurn.jpeg)
 ## 更多过渡效果
 
-还有很多过渡类型，可在[官方Cocos2D-X文档](http://www.cocos2d-x.org/reference/native-cpp/da/d00/group__transition.html)中参见类完整列表。
+还有很多过渡类型，可在[官方Cocos2D-X文档](http://www.cocos2d-x.org/reference/native-cpp/V3.0alpha0/da/d00/group__transition.html)中参见类完整列表。

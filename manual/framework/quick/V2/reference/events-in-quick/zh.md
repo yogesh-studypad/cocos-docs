@@ -204,7 +204,6 @@ Cocos2d: [3.1489] node in scene [scene1] method onCleanup
 
 效果和直接注册事件一样。两种方式让开发者可以根据实际需求灵活选择。
 
-~
 
 
 ## 节点帧事件 (cc.NODE_ENTER_FRAME_EVENT)
@@ -245,7 +244,6 @@ display.replaceScene(scene)
 
 **注意**：一定要调用 `scheduleUpdate()` 后，帧事件才会触发。
 
-~
 
 
 **\[TO BE CONTINUED\]**

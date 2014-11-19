@@ -26,14 +26,14 @@
 
 ###编译方式
 
-- [设置 Quick-Cocos2d-x 在 Mac 下的编译环境](../../../manual/framework/quick/how-to/setup_development_environment_on_mac/zh.md)
-- [设置 Quick-Cocos2d-x 在 Windows 下的编译环境](../../../manual/framework/quick/how-to/setup_development_environment_on_windows/zh.md)
-- [Quick-Cocos2d-x 2.2.3 player 编译方法](../../../manual/framework/quick/how-to/compile_qt_player/zh.md)
+- [设置 Quick-Cocos2d-x 在 Mac 下的编译环境](../../../manual/framework/quick/V2/how-to/setup_development_environment_on_mac/zh.md)
+- [设置 Quick-Cocos2d-x 在 Windows 下的编译环境](../../../manual/framework/quick/V2/how-to/setup_development_environment_on_windows/zh.md)
+- [Quick-Cocos2d-x 2.2.3 player 编译方法](../../../manual/framework/quick/V2/how-to/compile_qt_player/zh.md)
 
 ###创建和导入项目
 
-- [创建新项目](../../../manual/framework/quick/how-to/get_started_create_new_project/zh.md)
-- [使用Mac工程和win32工程](../../../manual/framework/quick/how-to/use-project-mac-and-win/zh.md)
+- [创建新项目](../../../manual/framework/quick/V2/how-to/get_started_create_new_project/zh.md)
+- [使用Mac工程和win32工程](../../../manual/framework/quick/V2/how-to/use-project-mac-and-win/zh.md)
 
 ###后期开发和第三方集成
 - [在Quick中集成第三方SDK](../../../manual/framework/quick/V2/how-to/integration_third_party_sdk/zh.md)
