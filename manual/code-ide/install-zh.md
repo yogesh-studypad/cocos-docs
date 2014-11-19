@@ -54,6 +54,14 @@ Cocos Code IDE 只支持 Cocos2d-x 3.x/Cocos2d-js 3.x 引擎。
 	| Windows       | VS2012 或以上版本 |
 	| Android       | [Android SDK][Android SDK link], [NDK(**r9d版本**)][NDK link], [ANT][ANT link] |
 	
+如何更新版本
+------------
++ 从 1.0.0-RC2 版本开始，IDE 已经支持在线更新功能，当有新版本发布的使用，可以通过 Help->Check for Updates 来进行更新
++ 如果无法检测到更新，你也可以通过 Help->Install New Software... 并使用 "http://ide-update.cocos2d-x.org/update/stable/" 安装更新。
++ 当然，你也可以将[更新包下载][update link]到本地后再通过 Help->Install New Software... 安装更新。
+
+PS：更新后重启 IDE，如果发现 IDE 工作不正常可以再重启一次，之后就一切正常了。
+	
 已有的 Cocos2d 项目如何使用 Code IDE开发
 ----------
 
@@ -73,3 +81,4 @@ Cocos Code IDE 只支持 Cocos2d-x 3.x/Cocos2d-js 3.x 引擎。
 [ANT link]: http://ant.apache.org/
 [Python link]: http://www.python.org/download
 [cocos download page]: http://download.cocos2d-x.org
+[update link]:http://www.cocos2d-x.org/filedown/cocos-code-ide-1.0.2-update.zip
