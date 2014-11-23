@@ -1,49 +1,52 @@
-# Introduction to New Renderer
+# 新しいレンダラーの紹介
 
-## Overview
-This article is mainly a overview of Cocos2d-x v3.x rendering pipeline from a developer's view. It is not a substitution of the original [roadmap](https://docs.google.com/document/d/17zjC55vbP_PYTftTZEuvqXuMb9PbYNxRFu0EGTULPK8/edit) provided by the core engine team.
+## 概要
+この記事は、開発者の視点から見たCocos2d-x v3.xのレンダリングパイプラインの概要となっています。  
+これは、コアエンジンチームによって提供されるオリジナルの[ロードマップ](https://docs.google.com/document/d/17zjC55vbP_PYTftTZEuvqXuMb9PbYNxRFu0EGTULPK8/edit)の置換ではありません。
 
-**Note:** It will not cover most of the implementation details of the new rendering pipeline. If you want to contribute, please refer to the roadmap documentation.
+**※** 新しいレンダリングパイプラインの実装の詳細はカバーしきれていない状態です。貢献して頂ける場合は、ロードマップのドキュメントを参照してください。
 
-At first, let's take a look at the vision of the new rendering pipeline.
+それでは新しいレンダリングパイプラインのビジョンを見ていきましょう。
 
-## The Vision
-The Cocos2d-x v3.x new rendering pipeline aims at improving the rendering performance by leveraging the modern multi-core CPUs so popular nowadays on most modern mobile devices.
+## ビジョン
+Cocos2d-x v3.xのレンダリングパイプラインは、最近のモバイルデバイスに普及してきたマルチコアCPUを活用することで、レンダリングのパフォーマンスの向上を図っています。
 
-At the meanwhile, the API style of Cocos2d-x v3.x is compatible with the v2.x which the current Cocos2d-x users will feel very comfortable with.
+その一方、Cocos2d-x v3.xのAPIスタイルはCocos2d-x v2.xとの互換性があり、今までCocos2d-x v2.xを使用してきたCocos2d-xユーザもすぐに馴染めるようになっています。
 
-## The Goal
-The high level goal of the new features and improvement can be summarized as the following:
+## ゴール
+新しく実装された機能と、改善の目標点を次のようにまとめることができます。
 
-- Decouple the scene graph from the renderer
-- Viewing frustum Geometry culling
-- Rendering on a separate thread
-- Automatic batching
-- (Node based) Customizable rendering
-- Optimized for 2D, but suitable for 3D as well
+- レンダラーとシーングラフの切り離し
+- 視錐台ジオメトリカリング
+- 別スレッド上でのレンダリング
+- 自動バッチ処理
+- (ノードベース)カスタマイズ可能なレンダリング
+- 2Dの機能を最適化をしているが、3Dの機能にも適している
 
-## The Roadmap
-Currently, since Cocos2d-x v3.0beta, renderer has being decoupled from the Scene Graph and it also supports auto-batching and auto-culling.
+## ロードマップ
+現在、Cocos2d-x v3.0betaではレンダラーをシーングラフから切り離しており、自動バッチ処理及び自動カリングをサポートしています。
 
-The complete Roadmap of the rendering can be found [here](https://docs.google.com/document/d/17zjC55vbP_PYTftTZEuvqXuMb9PbYNxRFu0EGTULPK8/edit#heading=h.dii2kgdfqgcp).
+レンダリングについての詳細を知りたい場合、このリンク先を参照してください。[ロードマップ](https://docs.google.com/document/d/17zjC55vbP_PYTftTZEuvqXuMb9PbYNxRFu0EGTULPK8/edit#heading=h.dii2kgdfqgcp)
 
-## Overview of the new rendering architecture
-As we mentioned above, the actual rendering API goes into a new separate thread where a **RenderQueue** has been provided to issue call OpenGL commands directly to the graphic card.
+## 新しいレンダリングアーキテクチャの概要
+上記でも言及したように、実際のレンダリングは別のスレッド上で行われ、**RenderQueue**がグラフィックカードに直接OpenGLコマンドを発行しています。
 
-Here is the illustration picture:
+次のスクリーンショットの用になっています。
 
 ![architecture](./res/architexture.png)
 
-The process of scene graph is running in a front-end thread while generating various **Command**. Each Command will be sent to the CommandQueue waited to be processed(such as sorting, rearrange etc.) in a separate back-end thread.
+シーングラフのプロセスは、様々なコマンドを生成しながらフロントエンドのスレッドで実行されます。  
+各コマンドは、CommandQueueに送信され(ソートや再配置が行われる)別々のバックエンドスレッドで実行されます。
 
-The internal format of each Command is out of scope in the documentation, please refer to the roadmap documentation.
+各コマンドの内部形式はこのドキュメントでの説明の範囲外になるので、ロードマップのドキュメントをご覧になってください。
 
-If you want to extend Cocos2d-x engine v3.x. For example, if you want to define a Sprite with some customize drawing code. You can't put them into the old **draw()** function any longer.
+Cocos2d-x v3.xを拡張する場合・・  
+例えば、いくつかのスプライトを定義したい場合、描画コードをカスタマイズする必要があり、古いdraw関数は使用することはできません。
+draw関数の要求に応じたコマンドを構成する必要があり、対応するコマンドを熟知する必要があります。
 
-You should be familiar with the corresponding **Command** and construct the Command on demand in the **draw()** function.
+詳細についてはCocos2d-x v3.0betaに組み込まれている[DrawNode](https://github.com/chukong/cocos2d-x/blob/develop/cocos/2d/CCDrawNode.cpp)のページでご覧になることができます。
 
-For more information, you can take a look at [DrawNode](https://github.com/cocos2d/cocos2d-x/blob/develop/cocos/2d/CCDrawNode.cpp) built-in with Cocos2d-x v3.0beta.
-
-## Summary
-Since the new rendering pipeline of Cocos2d-x v3.x is still young. It needs more time and patient to be mature. We are eager to hear your invaluable suggestions and comments of any kinds and definitely welcome to contribute by sending us pull request via [github](https://github.com/cocos2d/cocos2d-x).
-
+## 要約
+Cocos2d-x v3.xのレンダリングパイプラインは制作されたばかりで、完成に近づけるためには多くの時間と試行するユーザが必要となります。  
+[GitHub](https://github.com/cocos2d/cocos2d-x)のプルリクエストを使うと、あなたの意見やコメントを送信することができます。  
+どのような種類のコメントでも構わないので、貢献して頂けることを願っています。
