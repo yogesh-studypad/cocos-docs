@@ -5,7 +5,7 @@
 
 -------------------
 
-1. [工程目录][lua folder structure link]下有一个名字为[config.json][lua config link]的配置文件，可以在Code IDE中双击打开。配置中"entry"字段设置了游戏的入口文件为"src/main.lua"。 
+1. 工程目录下有一个名字为[config.json](../../function-guides/runtime/config/zh.md)的配置文件，可以在Code IDE中双击打开。配置中"entry"字段设置了游戏的入口文件为"src/main.lua"。 
 
         {
             "init_cfg": {
@@ -31,12 +31,12 @@
         local status, msg = xpcall(main, __G__TRACKBACK__)    --run the main function
         
 4. "GameScene"是在"src/GameScene.lua"文件中定义的。在此文件中，使用[cocos2d-x引擎的API]构建了一个"Scene"，其中添加了两个"Layer"，详见工程代码。
-5. 可以在模拟器的菜单中选择不同的分辨率，查看游戏在不同分辨率的屏幕上的表现效果。模拟器的窗口初始大小是在[config.json][lua config link]中配置的。  
-  ![][lua multi reso img]
+5. 可以在模拟器的菜单中选择不同的分辨率，查看游戏在不同分辨率的屏幕上的表现效果。模拟器的窗口初始大小是在[config.json](../../function-guides/runtime/config/zh.md)中配置的。  
+  ![](./res/lua-multi-reso.jpg)
 5. Code IDE为代码编写提供了方便的cocos2d-x引擎API自动提示功能，只要在代码中输入相应的前缀或单词就可以看到相关的API和函数说明，不过如果代码中有语法错误的话，可能会因为语法树构建失败而无法正确提示。  
-  ![][lua autocode img]
+  ![](./res/lua-autocode.jpg)
 6. 此外，编写游戏需要添加一些图片等做为显示图像的资源，只要把需要的图片拖动到工程管理界面的某个目录下就会复制一份图片到此目录下。而且Code IDE提供了资源路径自动提示功能，方便在代码中输入资源路径。  
-  ![][lua autopath img]
+  ![](./res/lua-autopath.jpg)
 
 -----------------
 关于如何使用引擎API的更多资料可以在引擎的相关文档中找到，在此不再多述。
@@ -46,10 +46,3 @@
 参考
 --------
 * [示例游戏](https://github.com/cocoscodeide/EarthWarrior3DLua)
-* [资源查找模式]()
-
-[lua folder structure link]:
-[lua config link]:
-[lua multi reso img]: ./res/lua-multi-reso.jpg
-[lua autocode img]: ./res/lua-autocode.jpg
-[lua autopath img]: ./res/lua-autopath.jpg

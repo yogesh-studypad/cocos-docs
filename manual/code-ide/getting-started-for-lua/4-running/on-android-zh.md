@@ -6,7 +6,7 @@
 ------------
 
 1. 在调试前，需要做一些准备工作。首先打开安卓设备的调试模式。  
-  ![][enable android debugging img]
+  ![](../../res/getting-started/enable-android-debugging.jpg)
 2. 然后把手机通过USB线连接到电脑上，保证电脑可以正确识别出设备。  
 
         $>adb devices
@@ -15,7 +15,7 @@
 
 3. 然后需要把设备和电脑连接到同一个局域网内，比如手机可以打开WiFi连接到和电脑相通的无线热点上。
 4. 有了以上准备就可以开始调试了。点击工具栏上的调试配置按钮。  
-  ![][lua debug config img]
+  ![](./res/lua-debug-config.jpg)
 5. 在要调试的项目的设置页面上，选择"Target Platform"为"Android ADB Mode"，然后就可以点击调试按钮开始调试了。调试平台设置好后，下次直接点击工具栏上的调试按钮就可以开始调试了。
 
 ---------------
@@ -30,5 +30,5 @@
 * Lua游戏在调试时，执行效率比运行时慢，可以使用"运行"模式来察看真实的表现。
 
 
-[enable android debugging img]: ../../res/getting-started/enable-android-debugging.jpg
-[lua debug config img]: ./res/lua-debug-config.jpg
+[enable android debugging img]: 
+[lua debug config img]: 

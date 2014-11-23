@@ -5,7 +5,7 @@
 
 -------------------
 
-1. [工程目录][js folder structure link]下有一个名字为[config.json][js config link]的配置文件，可以在Code IDE中双击打开。配置中"entry"字段设置了游戏的入口文件为"main.js"。  
+1. 工程目录下有一个名字为[config.json](../../function-guides/runtime/config/zh.md)的配置文件，可以在Code IDE中双击打开。配置中"entry"字段设置了游戏的入口文件为"main.js"。  
 
         "init_cfg": {
             ...
@@ -30,21 +30,15 @@
         }, this);
 
 4. "HelloWorldScene"是在"src/app.js"文件中定义的。在此文件中，使用cocos2d-js引擎的API构建了一个"Scene"，其中添加了一个"Layer"。
-5. 可以在模拟器的菜单中选择不同的分辨率，查看游戏在不同分辨率的屏幕上的表现效果。模拟器的窗口初始大小是在[config.json][js config link]中配置的。  
-  ![][js multi reso img]
+5. 可以在模拟器的菜单中选择不同的分辨率，查看游戏在不同分辨率的屏幕上的表现效果。模拟器的窗口初始大小是在[config.json](../../function-guides/runtime/config/zh.md)中配置的。  
+  ![](./res/js-multi-reso.jpg)
 5. Code IDE为代码编写提供了方便的cocos2d-js引擎API自动提示功能，只要在代码中输入相应的前缀或单词就可以看到相关的API和函数说明，不过如果代码中有语法错误的话，可能会因为语法树构建失败而无法正确提示。  
-  ![][js autocode img]
+  ![](./res/js-autocode.jpg)
 6. 此外，编写游戏需要添加一些图片等做为显示图像的资源，只要把需要的图片拖动到工程管理界面的某个目录下就会复制一份图片到此目录下。而且Code IDE提供了资源路径自动提示功能，方便在代码中输入资源路径。  
-  ![][js autopath img]
+  ![](./res/js-autopath.jpg)
 
 -----------------
 关于如何使用引擎API的更多资料可以在引擎的相关文档中找到，在此不再多述。
 
 在编写完一段逻辑后，需要[《调试游戏代码》](../3-debugging/zh.md)，验证一下代码的效果正确与否。
 
-
-[js folder structure link]:
-[js config link]:
-[js multi reso img]: ./res/js-multi-reso.jpg
-[js autocode img]: ./res/js-autocode.jpg
-[js autopath img]: ./res/js-autopath.jpg

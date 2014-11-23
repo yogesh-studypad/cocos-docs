@@ -39,12 +39,12 @@ cocos2d v3.x版本的新的渲染管线旨在提高通过利用现代多核CPU�
 
 在前段线程中的场景图产生各种渲染命令，命令被发送到独立的后端线程CommandQueue中等待被处理。
 
-命令的内部格式超出了本文讨论的范围，请参考roadmap文档。
+命令的内部格式超出了本文讨论的范围，请参[考roadmap文档](http://cocos2d-x.org/wiki/Cocos2d_v30_renderer_pipeline_roadmap)。
 
 如果你想扩展 Cocos2d-x v3.x引擎，例如：你想定义一个精灵并自定义它的绘图，你不能在使用老的*draw()*函数来完成这件事。你必须熟悉响应*命令*并构建命令来完成draw功能。
 
-更多信息请查看[DrawNode](https://github.com/cocos2d/cocos2d-x/blob/develop/cocos/2d/CCDrawNode.cpp)。
+更多信息请查看[DrawNode](https://github.com/cocos2d/cocos2d-x/blob/v3/cocos/2d/CCDrawNode.cpp)。
 
 ## 总结
 
-Cocos2d-x v3.x的渲染通道还很年轻，它需要更多的时间来成熟。我们渴望听到您任何种类的宝贵建议，欢迎给我们的[gitbub](https://github.com/cocos2d/cocos2d-x)发送PR来贡献代码。
+Cocos2d-x v3.x的渲染通道还很年轻，它需要更多的时间来成熟。我们渴望听到您任何种类的宝贵建议，欢迎给我们的[github](https://github.com/cocos2d/cocos2d-x)发送PR来贡献代码。

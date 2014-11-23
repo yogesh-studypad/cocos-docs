@@ -10,10 +10,10 @@
 		- Mac OS Xにおけるcpp-testsの起動方法
 		- [iOSにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-ios/ja.md)
 		- Linuxにおけるcpp-testsの起動方法
-		- Win32におけるcpp-testsの起動方法
+		- [Win32におけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-win32/ja.md)
 		- Windows Phone 8におけるcpp-testsの起動方法
 		- 新しいゲームのスタート方法
-		- Eclipse上におけるAndroidプロジェクトのビルド・実行方法
+		- [Eclipse上におけるAndroidプロジェクトのビルド・実行方法](../manual/framework/native/v3/getting-started/how-to-build-android-project-with-eclipse/ja.md)
 	- グラフィックとアニメーション
 		- Cocos2dの座標系
 		- スプライト、レイヤー、シーン(Sprite, Layer and Scene)
@@ -29,7 +29,7 @@
 		- 複数の解像度で動かすためのメカニズム
 	- オーディオ(Audio)
 	- GUI
-		- GUI系の概要
+		- [GUI系の概要](../manual/framework/native/v2/gui/overview/ja.md)
         - UI Containers
         - UI Widgets
         - UI Layouts

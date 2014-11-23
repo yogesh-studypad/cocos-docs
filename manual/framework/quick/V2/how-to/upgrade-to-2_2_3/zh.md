@@ -6,7 +6,6 @@
 
 已作废 API 请参考 framework/deprecated.lua 文件。
 
-~
 
 ### 快速升级已有项目
 
@@ -24,7 +23,6 @@ DISABLE_DEPRECATED_WARNING = false       -- true: 不显示过时 API 警告，f
 
 快速升级适合当前项目在新版框架下的测试，但产品发布前还是应该按照本文档修改相关的代码。将过时 API 的使用改为新 API，因为过时的 API 在下一版本发布时可能会删除。
 
-~
 
 
 ### 事件机制的改变
@@ -53,7 +51,6 @@ DISABLE_DEPRECATED_WARNING = false       -- true: 不显示过时 API 警告，f
     end)
     ```
 
-~
 
 
 -   scheduleUpdate(handler)
@@ -76,7 +73,6 @@ DISABLE_DEPRECATED_WARNING = false       -- true: 不显示过时 API 警告，f
     self:scheduleUpdate()
     ```
 
-~
 
 
 -   registerScriptTouchHandler(handler)
@@ -179,7 +175,6 @@ DISABLE_DEPRECATED_WARNING = false       -- true: 不显示过时 API 警告，f
 
     关于触摸机制的详细用法，请参考 samples/touch 示例。
 
-~
 
 
 ### 扩展功能的变化

@@ -125,14 +125,14 @@
 - [如何创建精灵(Sprites) ](./how-to-create-sprites/zh.md)
 - [如何创建一个指示器(HUD)](./how-to-create-a-hud/zh.md)
 
-# Cocos2d-js
+# Cocos2d-JS
 
-- [Cocos2d-js的文件结构](./folder-structure-of-cocos2d-js/zh.md)
-- [Cocos2d-js特性](./features-of-cocos2d-js/zh.md)
+- [Cocos2d-JS的文件结构](./folder-structure-of-cocos2d-js/zh.md)
+- [Cocos2d-JS特性](./features-of-cocos2d-js/zh.md)
 - [开始使用Cocos2d-JS](./getting-started-with-cocos2d-js/zh.md)
-- [Cocos2d-js展示MoonWarriors游戏](./moonwarriors-cocos2d-js-showcase/zh.md)
+- [Cocos2d-JS展示MoonWarriors游戏](./moonwarriors-cocos2d-js-showcase/zh.md)
 - Cocos2d-js发行说明
-	- [Cocos2d-js v-0 alpha发布说明](./release-notes-for-cocos2d-js-v30alpha/zh.md)
+	- [Cocos2d-JS v-0 alpha发布说明](./release-notes-for-cocos2d-js-v30alpha/zh.md)
 
 # 关于
 

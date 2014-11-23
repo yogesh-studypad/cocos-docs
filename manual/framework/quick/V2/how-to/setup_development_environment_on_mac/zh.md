@@ -19,7 +19,6 @@ Quick-Cocos2d-x 目录的放置有一定要求 ** ：
 1. 不能放在根目录
 2. 路径中不能包含中文和空格（所以别放桌面了）
 
-~
 
 
 ## Step 2: 设置运行环境
@@ -28,7 +27,6 @@ Quick-Cocos2d-x 目录的放置有一定要求 ** ：
 
 ![](res/howto_setup_development_environment_mac_00.png)
 
-~
 
 
 启动 **player/mac/player.app**，如果是首次运行，会提示设置 quick-Cocos2d-x 源代码所在路径。如果不是首次运行，请按 CMD+, 键打开偏好设置对话框进行设置：
@@ -37,7 +35,6 @@ Quick-Cocos2d-x 目录的放置有一定要求 ** ：
 
 上述设置完成后，即可使用 player 运行示例和您的项目。
 
-~
 
 
 ## Step 3: 安装最新的 Android ADT bundle 和 Android NDK ##
@@ -62,7 +59,6 @@ Quick-Cocos2d-x 目录的放置有一定要求 ** ：
 运行 android/android-sdk-macosx/tools/android, 选中 Android SDK 2.2（如果看不到 Android SDK 2.2，请设置代理）, 并完成安装。
 ![](res/howto_setup_development_environment_mac_03.png)
 
-~
 
 
 启动 终端 应用程序, 运行命令:
@@ -92,7 +88,6 @@ export ANDROID_HOME=${ANDROID_SDK_ROOT}
 
 ```
 
-~
 
 
 ## Step 4: 编译 LuaJavaBridge 示例，并在 Android 真机上进行测试 ##

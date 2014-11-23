@@ -9,6 +9,7 @@
 		* [动画面板](../../manual/studio/v2/chapter1/interface/animation/zh.md)
 		* [属性面板](../../manual/studio/v2/chapter1/interface/properties/zh.md)
 	* [资源工作流程](../../manual/studio/v2/chapter1/resources-workflow/zh.md)
+	* [示例与教程](../../manual/studio/v2/chapter1/samples-and-tutorial/zh.md)
 	* [偏好设置](../../manual/studio/v2/chapter1/preference/zh.md)
 * [如何构建游戏项目](../../manual/studio/v2/chapter2/how-to-create-game/zh.md)
 	* [第一步：新建游戏项目](../../manual/studio/v2/chapter2/new-game/zh.md)

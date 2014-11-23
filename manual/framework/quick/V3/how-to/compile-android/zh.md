@@ -1,11 +1,8 @@
-Title: 编译 Android 工程
-
 编译 Android 工程
 ================
 
 要编译 Android 功能，必须使用最新版本的 Android SDK 和`指定的 r9d 版本` Android NDK。
 
-~
 
 ## 安装 Android SDK 和 NDK
 
@@ -68,7 +65,6 @@ Title: 编译 Android 工程
     ANDROID_HOME=%ANDROID_SDK_ROOT%
     ~~~
 
-~
 
 ## 编译 samples/anysdk
 
@@ -89,13 +85,11 @@ quick 中带有一个 AnySDK 的示例，我们可以编译这个示例来检查
     Install        : libgame.so => libs/armeabi/libgame.so
     ~~~
 
-~
 
 如果编译失败，请仔细检查 SDK/NDK 版本、安装路径。
 
 > 修改了环境设置后，必须重新打开终端窗口才能生效。
 
-~
 
 运行 `build_native` 只是编译了 C++ 部分，而 Android 应用还存在 Java 部分，这时就需要 Eclipse ADT 来进行了。
 
@@ -118,11 +112,9 @@ quick 中带有一个 AnySDK 的示例，我们可以编译这个示例来检查
 
     ![](res/check-project-properties.png)
 
-~
 
 如果完成上述操作后，Eclipse ADT 窗口 `Package Explorer` 列出的 `v3quick` 和 `AnySDK` 项目文件夹上有红色错误图标。请仔细检查 `v3quick` 和 `AnySDK` 项目的操作步骤，以及 `Project Build Target` 是否是最新版本的 SDK。
 
-~
 
 ### 设置 Android 设备允许真机调试 ###
 
@@ -147,7 +139,6 @@ Android 官方文档：http://developer.android.com/tools/device.html
     
     完成设置后，将设备连接到开发机，并解锁设备。
 
-~
 
 ### 在设备上测试 AnySDK 示例 ###
 
@@ -159,7 +150,6 @@ Android 官方文档：http://developer.android.com/tools/device.html
 
     ![](res/run-on-device.png)
 
-~
 
 ## 使用 build_apk 脚本快速生成 apk
 
@@ -169,7 +159,6 @@ Android 官方文档：http://developer.android.com/tools/device.html
 
 如果环境未搭建好或者未配置好，运行时会在命令行报相关错误提示并返回非 0 的错误码。
 
-~
 
 ### 运行 build_apk
 
@@ -178,7 +167,6 @@ Android 官方文档：http://developer.android.com/tools/device.html
 -   如果执行成功，将生成 `proj.android/<项目名-日期-时间>.apk` 文件，并返回 0 值。
 -   如果执行失败，将显示错误信息，并返回非 0 错误代码。
 
-~
 
 build_apk 支持下列参数：
 
@@ -222,7 +210,6 @@ build_apk 支持下列参数：
 -   JDK 1.7以上的版本，在签名时需要指定时间戳，此脚本现在未做处理，因此在签名时会有警告信息，并且打包出来的apk在真机上运行时会报错。
 -   旧版本 ADT 的目录结构不同，有可能造成无法找到 build tools 等，造成打包失败。
 
-~
 
 ## 使用模块化编译缩小 apk 体积
 

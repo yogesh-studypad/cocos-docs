@@ -1,11 +1,8 @@
-Title: 编译 player 执行文件
-
 编译 player 执行文件
 ==================
 
 如果开发者有需要，可以自行编译 player 执行文件。
 
-~
 
 ## 在 Mac 下编译 player 执行文件
 
@@ -20,7 +17,6 @@ Title: 编译 player 执行文件
 2.  编译
 3.  编译成功后，在 Project Navigator 中展开 `Products`，右键点击 `player.app` 选择菜单 `Show in Finder` 即可看到编译好的 player 执行文件。
 
-~
 
 ## 在 Windows 下编译 player 执行文件
 
