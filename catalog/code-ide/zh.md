@@ -33,7 +33,7 @@
     - [Lua Runtime 绑定自定义类](../../manual/code-ide/function-guides/add-3rd-party-lib/binding-custom-class-to-lua/zh.md)
     - [JS Runtime 绑定自定义类](../../manual/code-ide/function-guides/add-3rd-party-lib/binding-custom-class-to-js/zh.md)
 - 调试指导
-    principle-for-lua/zh.md)
+    - [Cocos2d-Lua 的基本调试原理](../../manual/code-ide/function-guides/debugging/debug-principle-for-lua/zh.md)
     - [Cocos2d-JS 的基本调试原理](../../manual/code-ide/function-guides/debugging/debug-principle-for-js/zh.md)
     - [如何同时调试脚本和C++代码](../../manual/code-ide/function-guides/debugging/how-to-debug-cpp/zh.md)
     - [如何制作可以真机调试的IPA](../../manual/code-ide/function-guides/compiling/package-ios-runtime/zh.md)
