@@ -1,6 +1,6 @@
 #Assets Manager Extension
 
-This document will introduce the new extension assets manager in Cocos2d-JS (JSB only). This extension is designed for hot update of images, audio files and game scripts used in your game. You will be able to update a new version of resources on your web server, your game can keep track your remote resources and download them into the device. An entier new design, new experience or even new contents could be instantly available without needing to update your application on every app store.
+This document will introduce the new extension assets manager in Cocos2d-JS (JSB only). This extension is designed for hot update of images, audio files and game scripts used in your game. You will be able to update a new version of resources on your web server, your game can keep track your remote resources and download them into the device. An entire new design, new experience or even new contents could be instantly available without needing to update your application on every app store.
 
 ##Use case
 
@@ -8,8 +8,8 @@ Imagine you have your game already released on app stores, however you are not s
 
 Other cases: 
 
-- When you want to organise an in game activity for the saint valentin day, you surely don't want to miss the timing. 
-- If you found a critial bug in your game which will strongly damage the balance in your game.
+- When you want to organise an in game activity for the Saint Valentine's Day, you surely don't want to miss the timing. 
+- If you found a critical bug in your game which will strongly damage the balance in your game.
 - When you want to add a new package of levels or scenes in your game to extend its playable time.
 - and many more...
 
@@ -73,17 +73,17 @@ Here is an example of the manifest file in json format:
 ```
 
 - packageUrl :          The url where the assets manager will try to request and download all the assets.
-- remoteVersionUrl :    The remote version file url which permit to check the remote version to dertermine whether a new version has been uploaded to the server.
+- remoteVersionUrl :    The remote version file url which permit to check the remote version to determine whether a new version has been uploaded to the server.
 - remoteManifestUrl :   The remote manifest file url which contains all the assets informations.
 - version :             The version of this manifest file.
 - engineVersion :       Engine version used by the manifest file.
-- assets :              All assets infromations.
+- assets :              All assets informations.
     - key : The key of each represents the relative path of the asset.
     - md5 : The md5 field represents the version information of the asset.
     - compressed : [optional] When compressed field is true, the downloaded file will be decompressed. automatically. Only zip format is supported.
 - searchPaths :         The search paths that should be added to cocos2d engine.
 
-The `version.manifest` file should contain exact same informations with the first five fields of manifest file. It is optional, if it can't be found, the assets manager will download directly the complete manifest file. But it can be very useful if your manifest file is very large so that it can greatly save the time for comparaision of version information.
+The `version.manifest` file should contain exact same informations with the first five fields of manifest file. It is optional, if it can't be found, the assets manager will download directly the complete manifest file. But it can be very useful if your manifest file is very large so that it can greatly save the time for comparison of version information.
 
 ###Usage of jsb.AssetsManager
 
@@ -123,7 +123,7 @@ else {
                 break;
             case cc.EventAssetsManager.UPDATE_FAILED:
                 cc.log("Update failed. " + event.getMessage());
-                // Directly update previously failed assets, we suggest you to count and abord after several retry.
+                // Directly update previously failed assets, we suggest you to count and abort after several retry.
                 manager.downloadFailedAssets();
                 break;
             case cc.EventAssetsManager.ERROR_UPDATING:

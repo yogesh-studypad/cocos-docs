@@ -31,7 +31,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 * Sprites and Sprite Sheets
 * Effects: Lens, Ripple, Waves, Liquid, etc.
 * Actions (behaviours):
-    * Trasformation Actions: Move, Rotate, Scale, Fade, Tint, etc.
+    * Transformation Actions: Move, Rotate, Scale, Fade, Tint, etc.
     * Composable actions: Sequence, Spawn, Repeat, Reverse
     * Ease Actions: Exp, Sin, Cubic, Elastic, etc.
     * Misc actions: CallFunc, OrbitCamera, Follow, Tween
@@ -83,8 +83,8 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Reflection from Javascript to Objective-C](./v3/reflection-oc/en.md)
     - [Cocos2d-html5 modulization](./v3/moduleconfig-json/en.md)
     - [Pure configuration file](./v3/project-json/en.md)
-    - [Basic data refactoration](./v3/basic-data/en.md)
-    - [Singleton objects refactoration](./v3/singleton-objs/en.md)
+    - [Basic data refactorization](./v3/basic-data/en.md)
+    - [Singleton objects refactorization](./v3/singleton-objs/en.md)
     - [Loading resource with cc.loader](./v3/cc-loader/en.md)
     - [System information in cc.sys](./v3/cc-sys/en.md)
     - [Path management with cc.path](./v3/cc-path/en.md)
