@@ -1,10 +1,10 @@
-# More
+﻿# More
 
 ## CCAudio.js
 
-`SimpleAudioEngine.js` is renamed as `CCAudio.js`.
+`SimpleAudioEngine.js` は `CCAudio.js` に名前が変更されました。
 
-Some APIs has been removed in `AudioEngine`:
+`AudioEngine`からいくつかのAPIを削除しました。
 
 ```
 preloadMusic
@@ -13,11 +13,11 @@ isFormatSupported
 preloadSound
 ```
 
-`cc.AudioEngine.end` is moved to its instance.
+`cc.AudioEngine.end`は静的メソッドへ変更しました。
 
 ## cc.textureCache
 
-Removed:
+以下を削除しました:
 
 ```
 cc.loadImg
@@ -25,15 +25,14 @@ cc.loadImage.handler
 cc.computeImageFormatType
 ```
 
-`addImageAsync` is merged into `addImage`.
-
+`addImageAsync` は`addImage`へマージされました
 ## CCTGAlib.js
 
-Remove `cc.tgaLoad`.
+`cc.tgaLoad`は削除されました。
 
 ## cc.Texture2D
 
-Changed:
+変更:
 
 ```
 cc.TEXTURE_2D_PIXEL_FORMAT_RGBA8888     --> cc.Texture2D.PIXEL_FORMAT_RGBA8888
@@ -57,9 +56,9 @@ cc.Texture2D.defaultAlphaPixelFormat()          --> cc.Texture2D.defaultPixelFor
 `cc.PRIORITY_SYSTEM` --> `cc.Scheduler.PRIORITY_SYSTEM`.
 
 
-## Array operations
+## 配列操作関数
 
-Changed:
+変更:
 
 ```
 cc.ArrayVerifyType --> cc.arrayVerifyType
@@ -74,10 +73,10 @@ cc.ArrayAppendObjectToIndex(arr, addObj, index) --> arr.splice(index, 0, addObj)
 cc.ArrayGetIndexOfObject(arr, findObj) --> arr.indexOf(findObj)
 cc.ArrayContainsObject(arr, findObj) --> arr.indexOf(findObj) != -1
 
-remove cc.HASH_FIND_INT
+cc.HASH_FIND_INTは削除されました
 ```
 
-## Public to private
+## Publicメソッドから privateメソッドへ変更されたメソッド
 
 ```
 cc.setup                    --> cc._setup
@@ -96,9 +95,9 @@ cc.PointFromString          --> cc.spriteFrameCache._pointFromString
 cc.SizeFromString           --> cc.spriteFrameCache._sizeFromString
 ```
 
-## Constants
+## 定数
 
-Removed:
+以下の定数は削除されました:
 
 ```
 cc.IS_SHOW_DEBUG_ON_PAGE
@@ -106,23 +105,23 @@ cc.COCOS2D_DEBUG
 ```
 
 
-## Others
+## その他
 
-Changed:
+変更:
 
 ```
 cc.dumpConfig ---> cc.sys.dump
 
 ```
 
-Removed:
+削除:
 
 ```
 cc.isAddedHiddenEvent
 cc.originalCanvasSize
 ```
 
-Added:
+追加:
 
 ```
 cc.BuilderReader.registerController

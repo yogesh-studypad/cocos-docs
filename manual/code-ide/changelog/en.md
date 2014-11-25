@@ -5,7 +5,7 @@ Cocos Code IDE 1.0.2
 	[NEW] "Open Declaration" feature enhancement
 	[NEW] Desktop runtime arguments support
 	
-	[FIX] Build iOS divice runtime failed
+	[FIX] Build iOS device runtime failed
 	[FIX] Can't auto update on Windows
 	[FIX] Add breakpoint failed in JavaScript occasionally
 	[FIX] Delete js files in frameworks when add native code
@@ -50,7 +50,7 @@ Cocos Code IDE 1.0.0-rc0
 	[NEW] Support for variable hover displaying
 	[NEW] Code Auto-complete feature enhancement
 	[NEW] Code Auto-complete performance improving
-	[NEW] Support cocos porject upgrading
+	[NEW] Support cocos project upgrading
 	[NEW] Add some useful buttons on toolbar
 	[NEW] Custom other ports instead of 6010/6050
 	[NEW] Package an iOS IPA
@@ -60,7 +60,7 @@ Cocos Code IDE 1.0.0-rc0
 
 Cocos Code IDE 1.0.2.beta
 
-    [NEW] Add a backgroud to runtime's "Wait for debug" page
+    [NEW] Add a background to runtime's "Wait for debug" page
     [NEW] Rename filename
     
     [FIX] Lua debugger can't step into/step over
