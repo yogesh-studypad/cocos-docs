@@ -114,15 +114,15 @@
 
 - Studio
     - [Cocos Studio에 대한 소개](../manual/studio/v2/chapter1/fundamentals/ko.md)
-    	- [UI 개요](../manual/studio/v2/chapter1/interface/about/en.md)
+    	- [UI 개요](../manual/studio/v2/chapter1/interface/about/ko.md)
     		- [Toolbar](../manual/studio/v2/chapter1/interface/toolbar/en.md)
     		- [Controls Panel](../manual/studio/v2/chapter1/interface/controls/en.md)
     		- [Assets Panel](../manual/studio/v2/chapter1/interface/resources/en.md)
     		- [Canvas](../manual/studio/v2/chapter1/interface/canvas/en.md)
     		- [Animation Panel](../manual/studio/v2/chapter1/interface/animation/en.md)
     		- [Property Panel](../manual/studio/v2/chapter1/interface/properties/en.md)
-    	- [Asset Workflow](../manual/studio/v2/chapter1/resources-workflow/en.md)
-    	- [샘플과 듀토리얼들](../manual/studio/v2/chapter1/samples-and-tutorial/en.md)
+    	- [Asset Workflow](../manual/studio/v2/chapter1/resources-workflow/ko.md)
+    	- [샘플과 듀토리얼들](../manual/studio/v2/chapter1/samples-and-tutorial/ko.md)
     	- [환경 설정](../manual/studio/v2/chapter1/preference/en.md)
     - [Create a game](../manual/studio/v2/chapter2/how-to-create-game/en.md)
     	- [Step 1:new game project](../manual/studio/v2/chapter2/new-game/en.md)
