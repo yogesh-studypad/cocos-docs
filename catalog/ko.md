@@ -59,7 +59,7 @@
 		- CCLog
 		- CCConsole
 	- File Stream
-	- 3rd SDK와의 통합
+	- 3rd party SDK와의 통합
 		- [Windows Phone 8에서 웹브라우져를 사용해서 Alipay 통합](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
     	- [Windows Phone 8에서 써드파티 SDK 통합](../manual/framework/native/v2/sdk-integration/wp8-thirdSDK/en.md)
 	- Cocos2d-html5
@@ -85,8 +85,8 @@
             - [Cocos2d-html5 modulization](../manual/framework/html5/v3/moduleconfig-json/en.md)
             - [Pure configuration file](../manual/framework/html5/v3/project-json/en.md)
             - [기본 데이터 재설계](../manual/framework/html5/v3/basic-data/ko.md)
-            - [Singleton objects refactoration](../manual/framework/html5/v3/singleton-objs/en.md)
-            - [Unified create functions](../manual/framework/html5/v3/create-api/en.md)
+            - [싱글톤 오브젝트들의 리팩토링](../manual/framework/html5/v3/singleton-objs/en.md)
+            - [통일된 create 함수 스타일](../manual/framework/html5/v3/create-api/en.md)
             - [cc.loader로 리소스 불러오기](../manual/framework/html5/v3/cc-loader/ko.md)
             - [System information in cc.sys](../manual/framework/html5/v3/cc-sys/en.md)
             - [cc.path를 이용한 경로 관리](../manual/framework/html5/v3/cc-path/ko.md)
@@ -113,8 +113,8 @@
             - [iOS에서 IAP 플러그인 사용하기](../manual/framework/html5/jsb/plugin-x/ios-iap/ko.md)
 
 - Studio
-    - [Cocos Studio Introduction](../manual/studio/v2/chapter1/fundamentals/en.md)
-    	- [UI Overview](../manual/studio/v2/chapter1/interface/about/en.md)
+    - [Cocos Studio에 대한 소개](../manual/studio/v2/chapter1/fundamentals/en.md)
+    	- [UI 개요](../manual/studio/v2/chapter1/interface/about/en.md)
     		- [Toolbar](../manual/studio/v2/chapter1/interface/toolbar/en.md)
     		- [Controls Panel](../manual/studio/v2/chapter1/interface/controls/en.md)
     		- [Assets Panel](../manual/studio/v2/chapter1/interface/resources/en.md)
@@ -122,8 +122,8 @@
     		- [Animation Panel](../manual/studio/v2/chapter1/interface/animation/en.md)
     		- [Property Panel](../manual/studio/v2/chapter1/interface/properties/en.md)
     	- [Asset Workflow](../manual/studio/v2/chapter1/resources-workflow/en.md)
-    	- [Samples and Tutorial](../manual/studio/v2/chapter1/samples-and-tutorial/en.md)
-    	- [Preferences](../manual/studio/v2/chapter1/preference/en.md)
+    	- [샘플과 듀토리얼들](../manual/studio/v2/chapter1/samples-and-tutorial/en.md)
+    	- [환경 설정](../manual/studio/v2/chapter1/preference/en.md)
     - [Create a game](../manual/studio/v2/chapter2/how-to-create-game/en.md)
     	- [Step 1:new game project](../manual/studio/v2/chapter2/new-game/en.md)
     	- [Step 2:Add game assets](../manual/studio/v2/chapter2/add-resources/about/en.md)
