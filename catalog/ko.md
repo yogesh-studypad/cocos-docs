@@ -113,7 +113,7 @@
             - [iOS에서 IAP 플러그인 사용하기](../manual/framework/html5/jsb/plugin-x/ios-iap/ko.md)
 
 - Studio
-    - [Cocos Studio에 대한 소개](../manual/studio/v2/chapter1/fundamentals/en.md)
+    - [Cocos Studio에 대한 소개](../manual/studio/v2/chapter1/fundamentals/ko.md)
     	- [UI 개요](../manual/studio/v2/chapter1/interface/about/en.md)
     		- [Toolbar](../manual/studio/v2/chapter1/interface/toolbar/en.md)
     		- [Controls Panel](../manual/studio/v2/chapter1/interface/controls/en.md)
