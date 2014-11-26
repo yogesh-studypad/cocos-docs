@@ -2,14 +2,14 @@
 
 
 Cocos Studio에서 asset을 사용하는 법에 대하여 공부합니다.
-
-#### asset 불러오기
-
-Cocos Studio supports a variety kinds of assets, you can
-Cocos Studio에서는 다양한 종류의 asset을 지원합니다.
 * 아래 번역에서 가리키는 항목들은 Cocos Studio의 버전에 따라 다를 수 있습니다.
 * 이 페이지는 Cocos Studio 1.6.0.0 버전을 기준으로 작성되었습니다.
 * [원문 보기](en.md)
+
+
+#### asset 불러오기
+
+Cocos Studio에서는 다양한 종류의 asset을 지원합니다.
 
 (1) 메뉴를 통하여 asset 불러오기
 
