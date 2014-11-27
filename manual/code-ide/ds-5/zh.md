@@ -1,11 +1,11 @@
-# ARM DS-5助力Android开发
+# ARM DS-5助力安卓开发
 
 ## 1. DS-5是什么？
 DS-5是 ARM<sup>®</sup> Development Studio 5 的简称，基于标准 Eclipse 开发环境，提供一流的窗口管理、项目管理和 C/C++ 源代码编辑工具。DS-5 将特定于 ARM 的众多功能集成到 Eclipse 平台，使得它成为功能最强大的工具链，非常适用于 ARM 软件开发。
 
-DS-5分为旗舰版、专业版和社区版。Cocos Code IDE获得ARM公司的授权，可以发布 DS-5 社区版给开发者使用。
+DS-5分为旗舰版、专业版和社区版。Cocos Code IDE获得 ARM Limited 授权，可以发布 DS-5 社区版给开发者使用。
 
-更多信息请参考[DS-5 官方网站](http://ds.arm.com/)。
+[DS-5 Powered By](http://ds.arm.com/)![](./res/arm-logo.jpg)
 
 ## 2. 功能介绍
 DS-5 社区版虽然没有专业版和旗舰版功能强大，但给安卓开发者提供的帮助可不小。
@@ -24,7 +24,12 @@ Cocos Code IDE从1.1.0版本开始支持 DS-5 社区版, 不过由于安装包�
 DS-5 社区版功能安装包: [点击下载]()
 
 --------
-
+1. 在"Help"菜单中点击"Install New Software..."。  
+![](./res/install-new-software.jpg)
+2. 点击"Add..."按钮，然后点击"Archive..."导航到下载的安装包。  
+![](./res/locate-archive.jpg)
+3. 一路"Next"下去，重启后就安装成功了，可以在透视图中双击打开"DS-5 Debug"的界面。  
+![](./res/install-sucdess.jpg)
 
 --------
 在Cocos Code IDE中安装好DS-5后，来体验一下[《用DS-5调试C++代码》](./debug-with-ds-5/zh.md)吧。
