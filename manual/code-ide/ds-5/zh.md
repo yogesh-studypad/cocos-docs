@@ -33,7 +33,9 @@ DS-5 社区版功能安装包:
 ![](./res/install-new-software.jpg)
 2. 点击"Add..."按钮，然后点击"Archive..."导航到下载的安装包。  
 ![](./res/locate-archive.jpg)
-3. 一路"Next"下去，重启后就安装成功了，可以在菜单"Windows"->"Open Perspective"->"Other..."中找到"DS-5 Debug"双击打开。  
+3. 一路"Next"下去，重启后就安装成功了，初次安装需要安装授权文件，请选择社区版本。  
+![](./res/ds-5-ask-license.jpg)
+4. 可以在菜单"Windows"->"Open Perspective"->"Other..."中找到"DS-5 Debug"双击打开。  
 ![](./res/open-ds-5.jpg)
 
 --------
