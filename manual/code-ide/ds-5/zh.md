@@ -18,21 +18,23 @@ DS-5 社区版虽然没有专业版和旗舰版功能强大，但给安卓开发
 支持简单的GPU/CPU功能分析，注意此功能只有一些特定的设备才能支持，更多信息请参考[《DS-5 CE Android Streamline》](http://ds.arm.com/zh-cn/developer-resources/tutorials/android-performance-analysis-streamline-tutorial/)。
 ![](./res/ds-5-streamline-feature.jpg)
 
-## 3. 安装
+## 3. 下载
 Cocos Code IDE从1.1.0版本开始支持 DS-5 社区版, 不过由于安装包大小原因，DS-5 由单独的安装包提供，没有集成到安装包中。
 
-DS-5 社区版功能安装包: [点击下载]()
+DS-5 社区版功能安装包:  
+-  [点击下载](http://www.cocos2d-x.org/filedown/arm-ds-5-5.20.0.20141022-for-cci.zip)  
+- __Size__:250,681,142 bytes  
+- __MD5__:7f2aa372c4ab15b34c2b96f010d4fecb  
+
+## 4. 安装
 
 --------
 1. 在"Help"菜单中点击"Install New Software..."。  
 ![](./res/install-new-software.jpg)
 2. 点击"Add..."按钮，然后点击"Archive..."导航到下载的安装包。  
 ![](./res/locate-archive.jpg)
-3. 一路"Next"下去，重启后就安装成功了，可以在透视图中双击打开"DS-5 Debug"的界面。  
-![](./res/install-sucdess.jpg)
+3. 一路"Next"下去，重启后就安装成功了，可以在菜单"Windows"->"Open Perspective"->"Other..."中找到"DS-5 Debug"双击打开。  
+![](./res/open-ds-5.jpg)
 
 --------
 在Cocos Code IDE中安装好DS-5后，来体验一下[《用DS-5调试C++代码》](./debug-with-ds-5/zh.md)吧。
-
-
-
