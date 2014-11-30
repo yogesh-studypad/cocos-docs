@@ -5,7 +5,7 @@ DS-5是 ARM<sup>®</sup> Development Studio 5 的简称，基于标准 Eclipse �
 
 DS-5分为旗舰版、专业版和社区版。Cocos Code IDE获得 ARM Limited 授权，可以发布 DS-5 社区版给开发者使用。
 
-[DS-5 Powered By](http://ds.arm.com/)![](./res/arm-logo.jpg)
+![](./res/arm-logo.png)
 
 ## 2. 功能介绍
 DS-5 社区版虽然没有专业版和旗舰版功能强大，但给安卓开发者提供的帮助可不小。
