@@ -11,11 +11,11 @@ DS-5分为旗舰版、专业版和社区版。Cocos Code IDE获得 ARM Limited �
 DS-5 社区版虽然没有专业版和旗舰版功能强大，但给安卓开发者提供的帮助可不小。
 
 ### 安卓平台C++代码调试
-支持基于ARM9、ARM11和Cortex-A (ARMv7-A)架构的处理器的安卓设备进行调试，注意某些基于安卓 2.2 版 (Froyo) 的产品尚未启用此功能。
+支持基于ARM9、ARM11和Cortex-A (ARMv7-A)架构的处理器的安卓设备进行调试，注意某些基于安卓 2.2 版 (Froyo) 的产品尚未启用此功能。  
 ![](./res/ds-5-debug-feature.jpg)
 
 ### 安卓平台性能分析
-支持简单的GPU/CPU功能分析，注意此功能只有一些特定的设备才能支持，更多信息请参考[《DS-5 CE Android Streamline》](http://ds.arm.com/zh-cn/developer-resources/tutorials/android-performance-analysis-streamline-tutorial/)。
+支持简单的GPU/CPU功能分析，注意此功能只有一些特定的设备才能支持，更多信息请参考[《DS-5 CE Android Streamline》](http://ds.arm.com/zh-cn/developer-resources/tutorials/android-performance-analysis-streamline-tutorial/)。  
 ![](./res/ds-5-streamline-feature.jpg)
 
 ## 3. 下载
