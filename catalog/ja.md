@@ -7,12 +7,12 @@
 - Cocos2d-x 
 	- はじめに	 
 		- [Androidにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-android/ja.md)
-		- Mac OS Xにおけるcpp-testsの起動方法
+		- [Mac OS Xにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-mac-osx/ja.md)
 		- [iOSにおけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-ios/ja.md)
 		- Linuxにおけるcpp-testsの起動方法
 		- [Win32におけるcpp-testsの起動方法](../manual/framework/native/v3/getting-started/how-to-run-cpp-tests-on-win32/ja.md)
 		- Windows Phone 8におけるcpp-testsの起動方法
-		- 新しいゲームのスタート方法
+		- [新しいゲームのスタート方法](../manual/framework/native/v3/getting-started/how-to-start-a-new-game/ja.md)
 		- [Eclipse上におけるAndroidプロジェクトのビルド・実行方法](../manual/framework/native/v3/getting-started/how-to-build-android-project-with-eclipse/ja.md)
 	- グラフィックとアニメーション
 		- Cocos2dの座標系
@@ -25,7 +25,7 @@
 		- タイルマップ(Tile Map)
 		- アクション(Actions)
 		- エフェクト(Effects)
-		- レンダー(Renderer)
+		- [レンダー(Renderer)](../manual/framework/native/v3/new-renderer/ja.md)
 		- 複数の解像度で動かすためのメカニズム
 	- オーディオ(Audio)
 	- GUI
@@ -33,12 +33,12 @@
         - UI Containers
         - UI Widgets
         - UI Layouts
-		- Label
+		- [Label](../manual/framework/native/v3/label/ja.md)
 	- データ構造
 		- v3.0: 
-			- Vector\<T\>
-			- Map\<K,V\>
-			- Value
+			- [Vector\<T\>](../manual/framework/native/v3/data-structure/vector/ja.md)
+			- [Map\<K,V\>](../manual/framework/native/v3/data-structure/map/ja.md)
+			- [Value](../manual/framework/native/v3/data-structure/value/ja.md)
 		- v2.x: CCArray, CCDictionary and CCString
 	- 物理特性(Physics)
 	- ネットワーク(Network)
