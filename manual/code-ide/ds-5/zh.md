@@ -39,4 +39,4 @@ DS-5 社区版功能安装包:
 ![](./res/open-ds-5.jpg)
 
 --------
-在Cocos Code IDE中安装好DS-5后，来体验一下[《用DS-5调试C++代码》](./debug-with-ds-5/zh.md)吧。
+在Cocos Code IDE中安装好DS-5后，来体验一下[《用 DS-5 调试 C++ 代码》](./debug-with-ds-5/zh.md)吧。

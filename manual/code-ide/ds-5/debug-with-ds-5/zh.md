@@ -1,4 +1,4 @@
-# 用DS-5调试C++代码
+# 用 DS-5 调试 C++ 代码
 
 在Cocos Code IDE中调试安卓的 C++ 代码，需要先安装好 ARM DS-5 插件，如果还未安装，[请点击这里](../zh.md)。
 
@@ -26,7 +26,26 @@
 ![](./res/ds-5-config-button.jpg)
 
 ----------
+按上面的步骤就可以在 Cocos Code IDE 中使用 DS-5 在安卓平台调试 C++ 代码啦，那可不可以同时调试游戏的 C++ 代码和脚本代码呢？答案是可以！
+很简单，只要在 DS-5 调试启动后，让游戏停留在等待连接界面，然后切换到 Lua 或 JS 的开发界面，通过 "Remote Debug"的方式启动脚本调试就好了。详细步骤请参考[《如何同时调试脚本代码和C++代码》](../../function-guides/debugging/how-to-debug-cpp/zh.md)。
 
-想了解更多，请参考 ARM 官方文档：[《DS-5 社区版 Android 调试》](http://ds.arm.com/zh-cn/developer-resources/tutorials/android-native-app-debug-tutorial/)。
+## 小提示
 
+- DS-5 识别通过"USB"连接的设备，需要调用安卓 SDK 中的"adb"命令。在Windows系统上Cocos Code IDE已自动把"adb"的路径设置给 DS-5，但在 Mac 系统上无法设置。如果在终端中无法访问"adb"命令，可以在终端执行如下命令解决问题：  
+
+        $>sudo ln <android sdk>/platform-tools/adb /usr/bin/adb
+        
+- Cocos2d-x 引擎3.3正式版以前版本在 DS-5 调试时会出现点击"Play"按钮无法执行游戏的问题，需要修改"<PROJECT>/frameworks/runtime-src/Classes/runtime/Runtime.cpp"中的"lua_cocos2dx_runtime_addSearchPath"为：
+
+        int lua_cocos2dx_runtime_addSearchPath(lua_State* tolua_S)
+        {
+            ......
+        // Modify the 'if' condition, at line: 1090
+        #if(CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+            cobj->addSearchPath(originPath);
+        #endif
+            ......
+        }
+        
+- 想了解更多 DS-5 相关信息，请参考 ARM 官方文档：[《DS-5 社区版 Android 调试》](http://ds.arm.com/zh-cn/developer-resources/tutorials/android-native-app-debug-tutorial/)。
 
