@@ -6,17 +6,17 @@ Cocos Studio의 UI를 살펴보면, 상단에는 툴바, 중앙에는 캔버스�
 이 인터페이스들은 View 메뉴를 통하여 켜거나 끌 수 있습니다.
 
 
-![image](res/image001.jpg)
+![이미지](res/image001.jpg)
 
 
-[Toolbar](../toolbar/en.md)
+[툴바](../toolbar/ko.md)
 
-[Controls Panel](../controls/en.md)
+[컨트롤 패널](../controls/ko.md)
 
-[Resource Panel](../resources/en.md)
+[리소스 패널](../resources/ko.md)
 
-[Canvas](../canvas/en.md)
+[캔버스](../canvas/ko.md)
 
-[Animation Panel](../animation/en.md)
+[애니메이션 패널](../animation/ko.md)
 
-[Property Panel](../properties/en.md)
+[속성 패널](../properties/ko.md)
