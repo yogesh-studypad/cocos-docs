@@ -5,15 +5,15 @@ DS-5是 ARM<sup>®</sup> Development Studio 5 的简称，基于标准 Eclipse �
 
 DS-5分为旗舰版、专业版和社区版。Cocos Code IDE 获得 ARM Limited 授权，可以发布 DS-5 社区版给开发者使用。
 
-![](./res/arm-logo.png)
+[![](./res/arm-logo.png)](http://ds.arm.com/zh-cn/ds-5-community-edition/)
 
 ## 2. 下载
 Cocos Code IDE 从1.1.0版本开始支持 DS-5 社区版, 不过由于安装包大小原因，DS-5 由单独的安装包提供，没有集成到安装包中。下载后，请按照下面的安装方法安装到 Cocos Code IDE 中。
 
 DS-5 社区版功能安装包:  
 -  [点击下载](http://www.cocos2d-x.org/filedown/arm-ds-5-5.20.0.20141022-for-cci.zip)  
-- __Size__:250,681,142 bytes  
-- __MD5__:7f2aa372c4ab15b34c2b96f010d4fecb  
+- __Size__: 250.7 MB(250,681,142 bytes)  
+- __MD5__: 7f2aa372c4ab15b34c2b96f010d4fecb  
 
 ## 3. 功能介绍
 DS-5 社区版虽然没有专业版和旗舰版功能强大，但给安卓开发者提供的帮助可不小。

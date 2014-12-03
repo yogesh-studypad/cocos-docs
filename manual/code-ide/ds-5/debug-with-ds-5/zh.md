@@ -2,7 +2,12 @@
 
 在 Cocos Code IDE 中调试安卓的 C++ 代码，需要先安装好 ARM DS-5 插件，如果还未安装，[请点击这里](../zh.md)。
 
-用 DS-5 调试安卓的 C++ 代码，需要做一些准备工作，高兴的告诉大家，Cocos Code IDE 从1.1.0版本开始，内置了 DS-5 调试的配置向导，方便大家准备好 DS-5 调试所需的设置。
+用 DS-5 调试安卓的 C++ 代码，需要做一些准备工作，高兴的告诉大家，Cocos Code IDE 从1.1.0版本开始，内置了 DS-5 调试的配置向导，方便大家准备好 DS-5 调试所需的设置。推荐的调试环境为：
+
+- Cocos2d-x 3.3 或 Cocos2d-JS 3.2 及以上版本
+- Android SDK
+- Android NDK r10c
+- Apache Ant 1.9 以上版本
 
 ## DS-5 调试步骤
 
@@ -35,7 +40,7 @@
 
         $>sudo ln <android sdk>/platform-tools/adb /usr/bin/adb
         
-- Cocos2d-x 引擎3.3正式版以前版本在 DS-5 调试时会出现点击"Play"按钮无法执行游戏的问题，需要修改"<PROJECT>/frameworks/runtime-src/Classes/runtime/Runtime.cpp"中的"lua_cocos2dx_runtime_addSearchPath"为：
+- 在Cocos2d-x 引擎3.3正式版中对 DS-5 调试做了相应的调整，如是其它版本的引擎用 DS-5 调试时会出现点击"Play"按钮无法执行游戏的问题，需要修改"<PROJECT>/frameworks/runtime-src/Classes/runtime/Runtime.cpp"中的"lua_cocos2dx_runtime_addSearchPath"为：
 
         int lua_cocos2dx_runtime_addSearchPath(lua_State* tolua_S)
         {
