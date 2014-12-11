@@ -12,7 +12,7 @@ One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportun
 
 ## Highlights
 
-* Refactoration of web engine by separating the render logic, this have brought a much clearer architecture and a big performance improvement, especially on mobile browsers.
+* Refactoration of web engine by separating the render logic, the arthictecture level refactoration is now completed and brounght great performance improvement, especially on mobile browsers.
 * Refactoration of web engine's resolution adaptation and audio engine with polyfilled adaptation logics for different devices and browsers. This ensures better compatibility and better extensibility for future needs.
 * Supported modulization for JSB, developers can comment out the bindings registration code then the corresponded module will be excluded in the final package. Minimum package size for android is now 4.4mb. The usage is described in the upgrade guide.
 * Added restart game feature and fixed crutial bugs in AssetsManager, developers can now easily update assets and scripts, new scripts can take effect directly with a restart.
@@ -30,7 +30,7 @@ For JSB build, there are some restrictions :
 
 - [Cocos2d-JS v3.2 RC0](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.2-rc0.zip)
 - [Online API reference](http://www.cocos2d-x.org/reference/html5-js/V3.0/index.html)
-- [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.2-RC0-API.zip)
 - [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## Workflows

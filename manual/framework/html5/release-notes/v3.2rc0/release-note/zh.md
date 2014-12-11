@@ -14,7 +14,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 * 重构Web引擎的渲染器，彻底分离渲染逻辑，至此，渲染器的框架改造已经完成。新渲染器不仅带来了渲染性能上的巨大提升，更清晰的渲染框架也让未来的优化更加轻松。
 * 重构Web引擎的屏幕适配策略和音频引擎，为不同的设备和浏览器的特殊性定制行为，大幅提升兼容性和未来的扩展性。
-* JSB中支持引擎裁剪，开发者可以通过注释掉绑定注册代码来在最终包中去除相应模块，达到减包的目的。目前安卓最小包是4.4mb，减包的具体方法参见升级指南。
+* JSB中支持引擎模块裁剪，开发者可以通过注释掉绑定注册代码来在最终包中去除相应模块，达到减包的目的。目前安卓最小包是4.4mb，减包的具体方法参见升级指南。
 * 添加重启游戏功能并稳定AssetsManager，开发者可以通过重启来让更新完成的脚本直接生效。
 * 补全Chipmunk API的绑定，大大提升Cocos2d-JS对物理游戏的支持，让物理游戏可以更轻松得完成跨平台。
 
@@ -30,7 +30,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 - [Cocos2d-JS v3.2 RC0](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.2-rc0.zip)
 - [在线API索引](http://www.cocos2d-x.org/reference/html5-js/V3.0/index.html)
-- [下载版API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [下载版API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.2-RC0-API.zip)
 - [在线测试例](http://cocos2d-x.org/js-tests/)
 
 ## 工作流
