@@ -43,6 +43,10 @@
     |:----------|:----------:|:----------:|:----------:|
     |Cocos2d-x 3.3|  r10c | r10c | r10c |
     |Cocos2d-x 3.2|  r9d, r10c | r9d, r10c | r10c |
+    |Cocos2d-JS 3.2RC0| r9d, r10c | r9d, r10c | r10c |
+    |Cocos2d-JS 3.1| r9d, r10c | r9d, r10c | r10c* |
+    |Cocos2d-JS 3.0| r9d, r10c | r9d, r10c | r10c* |
+    - __*__: 需要使用GCC4.9重新编译external中的库    
 
 - 在Cocos2d-x 引擎3.3正式版中对 DS-5 调试做了相应的调整，如是其它版本的引擎用 DS-5 调试时会出现在手机上点击"Play"按钮无法执行游戏的问题，需要修改"<PROJECT>/frameworks/runtime-src/Classes/runtime/Runtime.cpp"中的"lua_cocos2dx_runtime_addSearchPath"为：
 

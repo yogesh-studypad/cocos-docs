@@ -60,7 +60,11 @@ Follow the above instructions, you can use DS-5 in Cocos Code IDE in the Android
     |:----------|:----------:|:----------:|:----------:|
     |Cocos2d-x 3.3|  r10c | r10c | r10c |
     |Cocos2d-x 3.2|  r9d, r10c | r9d, r10c | r10c |
-
+    |Cocos2d-JS 3.2RC0| r9d, r10c | r9d, r10c | r10c |
+    |Cocos2d-JS 3.1| r9d, r10c | r9d, r10c | r10c* |
+    |Cocos2d-JS 3.0| r9d, r10c | r9d, r10c | r10c* |
+    - __*__: The external libraries should recompile using GCC4.9.   
+    
 - When debug with DS-5, the application can't execute script logic and stay in wait connection view if the engine version older than Cocos2d-x 3.3 or Cocos2d-JS 3.2. To fix this bug please modify a function "lua_cocos2dx_runtime_addSearchPath" in file: `"<PROJECT>/frameworks/runtime-src/Classes/runtime/Runtime.cpp"`:
 
         int lua_cocos2dx_runtime_addSearchPath(lua_State* tolua_S)
