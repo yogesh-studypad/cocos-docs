@@ -1,16 +1,16 @@
-#Upgrade guide from Cocos2d-JS v3.1 to Cocos2d-JS v3.2
+#从Cocos2d-JS v3.1到v3.2升级指南
 
-## 0. Upgrade to Cocos2d-JS v3.1
+## 0. 升级到Cocos2d-JS v3.1
 
-If you are still using Cocos2d-html5 or previous version of Cocos2d-JS, you need to read the previous upgrade guide first : [Upgrade guide to Cocos2d-JS v3.1](../../v3.0rc0/upgrade-guide/en.md)
+如果你还在使用Cocos2d-html5或者较早版本的Cocos2d-JS，你可以通过之前版本的升级指南来首先升级 : [Cocos2d-JS v3.1升级指南](../../v3.0rc0/upgrade-guide/zh.md)
 
-## 1. Reduce package size with modulirization in JSB
+## 1. JSB中基于模块化裁减包大小
 
-In Cocos2d-JS v3.2, during compilation, Cocos2d-x modules and related JavaScript Bindings code can be automatically excluded from the final package if they are not used. As you may already know, our web engine support modularization with `modules` section in project.json file. However, this configuration doesn't take effect in JSB, you should do the following to exclude any module you don't need in JSB.
+在Cocos2d-JS v3.2工程的编译过程中，如果一个Cocos2d-x模块及其相关的JavaScript绑定代码没有被使用到，那么它们会自动被排除出最终的包。你可能会奇怪，在Web引擎的模块化设计中，你可以在project.json文件的`modules`字段中填写自己需要的模块。然后，这种配置方式在JSB中并没有效果，你需要按照下面的方式在JSB中来排除一个你不需要的模块：
 
-In AppDelegate.cpp, you will find `applicationDidFinishLaunching` function in which all JSB bindings are registered. If the registration code for a module is commented out, then the base Cocos2d-x module won't be used, during linking the linker will exclude it. This is a common optimization in linker, so it will take effect for both Android and iOS apps. Of course, all modules that you don't register their bindings won't be available in your JavaScript code.
+在`AppDelegate.cpp`中，你会发现`applicationDidFinishLaunching`函数中注册了所有的JavaScript绑定。如果某个模块的JavaScript绑定的注册代码被注释掉，那么它所对应的C++基础模块也不会被使用到，链接过程中链接器就会将它去除。这个过程是链接器的通用过程，所以这个方法对iOS和Android应用都有效。当然，所有没有注册JavaScript绑定的模块在JS代码中也是无法被使用的。
 
-At last, you only need to compile your project. The minimum size of Android package in Cocos2d-JS v3.2 is 4.4mb.
+最后，你只需要再次编译你的工程。目前Cocos2d-JS v3.2编译出的最小的Android包是4.4mb。
 
 ```
 bool AppDelegate::applicationDidFinishLaunching()
@@ -79,31 +79,31 @@ bool AppDelegate::applicationDidFinishLaunching()
 }
 ```
 
-## 2. Restart game and hot update related APIs
+## 2. 重启游戏功能和热更新相关
 
-Since Cocos2d-JS v3.0 Beta, we have provided AssetsManager for assets and scripts hot update ability. Ever since, its stability is greatly improved and become reliable. Thank to our developers, we have also collected many great suggestions and feature requests. In v3.2, we decided to add two importants ones: 
+从Cocos2d-JS v3.0 Beta开始，我们提供了资源和脚本的热更新能力。经过几个月的迭代，这个功能被大幅度强化，并且有很多成熟的商业项目开始使用内置的热更新机制来给广大玩家推送游戏更新。同时受益于我们的开发者，我们也收集到了很多的建议和需求。在v3.2中，我们觉得添加两个最重要的功能：
 
-1. Clean a script's cache
+1. 清除脚本缓存
 
-    A script will be cached in JSB, so even if you updated it with AssetsManager, it won't take effect even if you require it again. In this case, we provided `cleanScript` API to clean its cache.
+    一个脚本在被执行后就会被添加到JSB的缓存中，所以游戏中即便用于覆盖旧脚本的新脚本被更新下来，通过`require`也无法让新的脚本生效。在这种情况下，我们提供了`cleanScript` API来清除它的缓存：
 
     ```
     cc.sys.cleanScript(scriptPath);
     ```
 
-2. Restart game
+2. 重启游戏
 
-    Very often, when the hot update is done, the game need to be restarted entirely. So we provided restart game API, it will do the following steps:
-
-    1. Clean up Cocos2d-x's environment
-    2. Restart the JavaScript VM
-    3. Register all script bindings
-    4. Re-execute the main.js
-
-    The API is
+    经常发生的是，当热更新结束后，游戏需要被完全重启来让热更新更好得生效。所以我们提供了重启游戏的API，它会做下面一些事情：
+    
+    1. 清除Cocos2d-x中的存储和环境
+    2. 重新启动一个干净的JavaScript虚拟机
+    3. 重新绑定所有的绑定代码
+    4. 重新执行main.js
+    
+    对应的API是：
 
     ```
     cc.game.restart()
     ```
     
-Hope these new APIs will make hot update in your game much eaiser.
+希望这些新的API可以让游戏的热更新变得更加方便。
