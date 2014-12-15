@@ -59,7 +59,7 @@
 		- CCLog
 		- CCConsole
 	- File Stream
-	- 3rd SDK와의 통합
+	- 3rd party SDK와의 통합
 		- [Windows Phone 8에서 웹브라우져를 사용해서 Alipay 통합](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
     	- [Windows Phone 8에서 써드파티 SDK 통합](../manual/framework/native/v2/sdk-integration/wp8-thirdSDK/en.md)
 	- Cocos2d-html5
@@ -84,20 +84,20 @@
             - [오브젝트 풀](../manual/framework/html5/v3/cc-pool/ko.md)
             - [Cocos2d-html5 modulization](../manual/framework/html5/v3/moduleconfig-json/en.md)
             - [Pure configuration file](../manual/framework/html5/v3/project-json/en.md)
-            - [Basic data refactoration](../manual/framework/html5/v3/basic-data/en.md)
-            - [Singleton objects refactoration](../manual/framework/html5/v3/singleton-objs/en.md)
-            - [Unified create functions](../manual/framework/html5/v3/create-api/en.md)
-            - [Loading resource with cc.loader](../manual/framework/html5/v3/cc-loader/en.md)
+            - [기본 데이터 재설계](../manual/framework/html5/v3/basic-data/ko.md)
+            - [싱글톤 오브젝트들의 리팩토링](../manual/framework/html5/v3/singleton-objs/en.md)
+            - [통일된 create 함수 스타일](../manual/framework/html5/v3/create-api/en.md)
+            - [cc.loader로 리소스 불러오기](../manual/framework/html5/v3/cc-loader/ko.md)
             - [System information in cc.sys](../manual/framework/html5/v3/cc-sys/en.md)
-            - [Path management with cc.path](../manual/framework/html5/v3/cc-path/en.md)
-            - [Asynchronised process with cc.async](../manual/framework/html5/v3/cc-async/en.md)
+            - [cc.path를 이용한 경로 관리](../manual/framework/html5/v3/cc-path/ko.md)
+            - [cc.async](../manual/framework/html5/v3/cc-async/ko.md)
             - [Modification to cc.saxParser](../manual/framework/html5/v3/cc-saxparser/en.md)
             - [Modification to cc.spriteFrameCache](../manual/framework/html5/v3/cc-spriteframecache/en.md)
-            - [About cc.FileUtils](../manual/framework/html5/v3/cc-fileutils/en.md)
-            - [About cc.log](../manual/framework/html5/v3/cc-log/en.md)
+            - [cc.FileUtils에 대해서](../manual/framework/html5/v3/cc-fileutils/ko.md)
+            - [cc.log에 대해서](../manual/framework/html5/v3/cc-log/ko.md)
             - [Other change from v2.2.2 to v3.0](../manual/framework/html5/v3/more-change-from-v2-to-v3/en.md)
-            - [Bake Layer](../manual/framework/html5/v3/bake-layer/en.md)
-            - [Simplified action APIs](http://cocos2d-x.org/docs/manual/framework/html5/v3/cc-actions/en)
+            - [레이어의 베이크 함수](../manual/framework/html5/v3/bake-layer/ko.md)
+            - [단순해진 액션 API](http://cocos2d-x.org/docs/manual/framework/html5/v3/cc-actions/ko)
             
         - Cocos2d-JS의 페이스북 SDK
             - [페이스북 SDK API 레퍼런스](../manual/framework/html5/facebook-sdk/api-reference/ko.md)
@@ -112,18 +112,18 @@
             - [안드로이드에서 당신만의 플러그인을 만들어보세요](../manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/ko.md)
             - [iOS에서 IAP 플러그인 사용하기](../manual/framework/html5/jsb/plugin-x/ios-iap/ko.md)
 
-- Studio
-    - [Cocos Studio Introduction](../manual/studio/v2/chapter1/fundamentals/en.md)
-    	- [UI Overview](../manual/studio/v2/chapter1/interface/about/en.md)
-    		- [Toolbar](../manual/studio/v2/chapter1/interface/toolbar/en.md)
-    		- [Controls Panel](../manual/studio/v2/chapter1/interface/controls/en.md)
-    		- [Assets Panel](../manual/studio/v2/chapter1/interface/resources/en.md)
-    		- [Canvas](../manual/studio/v2/chapter1/interface/canvas/en.md)
-    		- [Animation Panel](../manual/studio/v2/chapter1/interface/animation/en.md)
-    		- [Property Panel](../manual/studio/v2/chapter1/interface/properties/en.md)
-    	- [Asset Workflow](../manual/studio/v2/chapter1/resources-workflow/en.md)
-    	- [Samples and Tutorial](../manual/studio/v2/chapter1/samples-and-tutorial/en.md)
-    	- [Preferences](../manual/studio/v2/chapter1/preference/en.md)
+- 코코스 스튜디오
+    - [Cocos Studio에 대한 소개](../manual/studio/v2/chapter1/fundamentals/ko.md)
+    	- [UI 개요](../manual/studio/v2/chapter1/interface/about/ko.md)
+    		- [툴바](../manual/studio/v2/chapter1/interface/toolbar/ko.md)
+    		- [컨트롤 패널](../manual/studio/v2/chapter1/interface/controls/ko.md)
+    		- [에셋 패널](../manual/studio/v2/chapter1/interface/resources/ko.md)
+    		- [캔버스](../manual/studio/v2/chapter1/interface/canvas/ko.md)
+    		- [애니메이션 패널](../manual/studio/v2/chapter1/interface/animation/ko.md)
+    		- [속성 패널](../manual/studio/v2/chapter1/interface/properties/ko.md)
+    	- [에셋 작업흐름](../manual/studio/v2/chapter1/resources-workflow/ko.md)
+    	- [샘플과 튜토리얼](../manual/studio/v2/chapter1/samples-and-tutorial/ko.md)
+    	- [환경 설정](../manual/studio/v2/chapter1/preference/ko.md)
     - [Create a game](../manual/studio/v2/chapter2/how-to-create-game/en.md)
     	- [Step 1:new game project](../manual/studio/v2/chapter2/new-game/en.md)
     	- [Step 2:Add game assets](../manual/studio/v2/chapter2/add-resources/about/en.md)
