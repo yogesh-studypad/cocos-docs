@@ -1,6 +1,6 @@
 # 3.2.3 列表容器
 
-
+![image](res/Listview_1.png)
 
 列表容器是一个能够自动排列控件的容器。
 
@@ -11,7 +11,7 @@
 
 列表容器常被用于游戏中关卡列表等具有列表效果的场景中。
 
-![image](res/listview.png)
+![image](res/Listview_2.png)
 
 
 #### 场景1：如果不显示容器外的内容
