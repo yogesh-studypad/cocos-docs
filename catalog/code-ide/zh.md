@@ -24,6 +24,11 @@
 - [生成安卓安装包　](../../manual/code-ide/getting-started-for-js/5-packaging/to-apk-zh.md)
 - [生成iOS安装包　](../../manual/code-ide/function-guides/compiling/package-ios-publish/zh.md)
 
+## ARM DS-5
+
+- [DS-5 助力安卓游戏开发](../../manual/code-ide/ds-5/zh.md)
+- [用 DS-5 调试 C++ 代码](../../manual/code-ide/ds-5/debug-with-ds-5/zh.md)
+
 ## 功能指导
 
 - [开发环境配置指导](../../manual/code-ide/function-guides/env-configration/zh.md)
