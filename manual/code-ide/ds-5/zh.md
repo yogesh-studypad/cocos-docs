@@ -1,4 +1,4 @@
-# ARM DS-5助力安卓开发
+# ARM DS-5 助力安卓游戏开发
 
 ## 1. DS-5是什么？
 DS-5是 ARM<sup>®</sup> Development Studio 5 的简称，基于标准 Eclipse 开发环境，提供一流的窗口管理、项目管理和 C/C++ 源代码编辑工具。DS-5 将特定于 ARM 的众多功能集成到 Eclipse 平台，使得它成为功能最强大的工具链，非常适用于 ARM 软件开发。
