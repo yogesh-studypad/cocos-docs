@@ -3,6 +3,7 @@
 ## 特性和安装
 - [特性简介](../../manual/code-ide/zh.md)
 - [安装指南](../../manual/code-ide/install-zh.md)
+- [更新历史](../../manual/code-ide/changelog/zh.md)
 
 ## Lua开发者入门
 
