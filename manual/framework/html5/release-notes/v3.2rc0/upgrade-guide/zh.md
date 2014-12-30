@@ -106,4 +106,22 @@ bool AppDelegate::applicationDidFinishLaunching()
     cc.game.restart()
     ```
     
+3. Manifest新API：getSearchPaths
+
+    如果想要热更新下载下来的脚本生效，有两个必要条件必须满足：
+    
+    1. 脚本被热更新正常更新
+    2. 在每次启动时，必须在游戏的`cc.game.run()`之前添加新脚本对应的搜索路径，因为`cc.game.run`函数会去加载用户脚本，在这之前设置好搜索路径，那么新的脚本就会被加载。
+    
+    这意味着搜索路径必须被固化得存储起来，也就意味着Manifest对象对应的搜索路径必须可以被获取。至于如何存储这些搜索路径，开发者可以通过自己希望的任意方式做到这点，这里推荐的是`cc.sys.localStorage`。下面是热更新完成之后建议的处理逻辑：
+    
+    ```
+    // 在热更新成功之后，更新下来的最新版本Manifest将成为本地的默认Manfiest
+    var searchPaths = assetsManager.getLocalManifest().getSearchPaths();
+    // 将搜索路径转换成JSON字符串并通过cc.sys.localStorage存储到本地固化存储中，以便在游戏重启后获取并添加
+    cc.sys.localStorage.setItem("AssetsSearchPaths", JSON.stringify(searchPaths));
+    // 直接重新启动游戏来让脚本生效
+    cc.game.restart();
+    ```
+
 希望这些新的API可以让游戏的热更新变得更加方便。
