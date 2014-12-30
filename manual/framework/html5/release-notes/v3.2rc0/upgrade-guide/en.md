@@ -106,4 +106,22 @@ Since Cocos2d-JS v3.0 Beta, we have provided AssetsManager for assets and script
     cc.game.restart()
     ```
     
+3. Manifest's new API: getSearchPaths
+
+    If you want the new JavaScript files updated via AssetsManager to take effect, there are two requirements to be satisfied:
+    
+    1. JavaScript files must be updated correctly.
+    2. Everytime before the game start up, the search paths for the new scripts must be prepended before the execution of `cc.game.run()`. Then in `cc.game.run`, the engine will load the updated scripts.
+    
+    This means the search paths of the updated assets must be stored locally, so we have provided a new API of Manifest to retrieve the search pahts. Then the local storage can be used to save the search paths, it's our recommended way, but developers can also use whatever they want to save the paths persistantly. Here is an recommended process after the scripts hot update via AssetsManager:
+    
+    ```
+    // After update succeeded, updated manifest will become the new local manifest.
+    var searchPaths = assetsManager.getLocalManifest().getSearchPaths();
+    // The search paths can be coded to JSON string then stored in cc.sys.localStorage, so that it can be retrieved and preppended to jsb.fileUtils during the game restart. 
+    cc.sys.localStorage.setItem("AssetsSearchPaths", JSON.stringify(searchPaths));
+    // Restart the game to let new scripts take effect.
+    cc.game.restart();
+    ```
+
 Hope these new APIs will make hot update in your game much eaiser.

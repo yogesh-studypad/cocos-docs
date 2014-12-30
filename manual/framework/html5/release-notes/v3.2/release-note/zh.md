@@ -1,4 +1,4 @@
-# Cocos2d-JS v3.2 RC0发布说明
+# Cocos2d-JS v3.2发布说明
 
 <img src="http://files.cocos2d-x.org/images/orgsite/logo.png" height=180> 
 
@@ -28,9 +28,9 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 ## 下载
 
-- [Cocos2d-JS v3.2 RC0](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.2-rc0.zip)
+- [Cocos2d-JS v3.2](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.2.zip)
 - [在线API索引](http://www.cocos2d-x.org/reference/html5-js/V3.0/index.html)
-- [下载版API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.2-RC0-API.zip)
+- [下载版API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.2-API.zip)
 - [在线测试例](http://cocos2d-x.org/js-tests/)
 
 ## 工作流
@@ -45,24 +45,24 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 
 更详细的改动列表和升级文档可以参见:
 
-- [Cocos2d-JS v3.2 RC0改动说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2rc0/changelog/en)
-- [Cocos2d-JS v3.2 RC0升级指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2rc0/upgrade-guide/zh)
+- [Cocos2d-JS v3.2改动说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2/changelog/en)
+- [Cocos2d-JS v3.2升级指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2rc0/upgrade-guide/zh)
 
 ## 从旧版本升级你的项目
 
-如果你想升级你使用旧版本（从v3.0 Alpha开始）创建的项目到v3.2 RC0，你需要执行以下步骤：
+如果你想升级你使用旧版本（从v3.0 Alpha开始）创建的项目到v3.2，你需要执行以下步骤：
 
-1. 下载Cocos2d-JS v3.2 RC0引擎包。
+1. 下载Cocos2d-JS v3.2引擎包。
 2. 执行引擎包中的`setup.py`更新你的cocos命令。
-3. 使用`cocos new`命令创建一个新的基于v3.2 RC0的项目。
+3. 使用`cocos new`命令创建一个新的基于v3.2的项目。
 4. 从你的旧项目中拷贝"src"，"res"，"index.html"，"project.json"，"main.js"到第三步创建的新项目并覆盖。
 5. 最后你可能需要按照升级指南来升级你的项目以避免API不兼容的问题。
 
 ## 关于Cocos2d家族
 
-- Cocos2d-JS v3.2 RC0使用Cocos2d-x v3.3rc1作为JSB的底层实现。
-- Cocos2d-JS v3.2 RC0兼容Cocos Code IDE v1.1.0。
-- Cocos2d-JS v3.2 RC0兼容Cocos Studio v1.2 - v1.6，Cocos Studio 2中的FlatBuffer二进制格式没有办法在JS中被解析，所以暂时移除对Cocos Studio 2.0的支持，在3.3版本中我们会基于JSON解析来支持Cocos Studio 2。
+- Cocos2d-JS v3.2使用Cocos2d-x v3.3作为JSB的底层实现。
+- Cocos2d-JS v3.2兼容Cocos Code IDE v1.1.0。
+- Cocos2d-JS v3.2兼容Cocos Studio v1.2 - v1.6，Cocos Studio 2中的FlatBuffer二进制格式没有办法在JS中被解析，所以暂时移除对Cocos Studio 2.0的支持，在3.3版本中我们会基于JSON解析来支持Cocos Studio 2。
 
 如果遇到任何问题，你都可以向Cocos2d-JS开发者社区寻求帮助： 
 
