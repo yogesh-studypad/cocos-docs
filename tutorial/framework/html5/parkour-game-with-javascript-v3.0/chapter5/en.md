@@ -24,7 +24,7 @@ Here is the building process:
 
 When you add new images into the *TexturePacker* folder, TexturePacker will automatically detect the changes and load the images.
 
-2. Choose "data format" to "cocos2d" and "data format" to "png" from the TextureSettings panel(which is the default settings).
+2. Choose "Data format" to "cocos2d" and "Texture format" to "png" from the Settings panel(which is the default settings).
 
 3. Specify the *Data file* and *Texture file* path. Here we set the path at *res* directory and we set the data file name to "running.plist" and the texture file to "running.png".
 
