@@ -10,7 +10,7 @@ Cocos2d-JS v3.2 @ Dec.29, 2014
 * [JSB]Polished restart game feature.
 * [JSB]Added a sample usage case for `jsb.AssetsManager`'s script hot update ability.
 * [JSB]Skipped FlatBuffer related bindings.
-* [JSB]Canceled modifications in Spine due to License restriction and removed new constructor for `sp.SkeletonAnimation`.
+* [JSB]Canceled modifications in Spine due to License restriction and removed new constructor for `sp.SkeletonAnimation`, we will push our modification to the official Spine repo so that it can be supported in Cocos.
 
 * Bug fixes:
     1. Fixed an issue that `cc.InputManager` doesn't trigger touch event on chrome mobile emulator.
