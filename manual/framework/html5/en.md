@@ -68,6 +68,29 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes](./release-notes/en.md)
+    
+- Programmers Guide
+    - 1. About Cocos2d-JS
+        - [1.1 A brief history](../cocos2d-js/1-about-cocos2d-js/1-1-a-brief-history/en.md)
+        - [1.2 Where to get help](../cocos2d-js/1-about-cocos2d-js/1-2-where-to-get-help/en.md)
+    - 2. Working environment and workflow
+        - [2.1 Cocos2d-JS Lite version workflow](../cocos2d-js/2-working-environment-and-workflow/2-1-cocos2d-js-lite-workflow/en.md)
+        - [2.2 Cross native / browser game with Cocos Console](../cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en.md)
+        - [2.3 Workflow with Cocos Code IDE](../cocos2d-js/2-working-environment-and-workflow/2-3-workflow-with-cocos-code-ide/en.md)
+    - 3. Jumping into Cocos2d-JS
+        - [3.1 Installation](../cocos2d-js/3-jumping-into-cocos2d-js/3-1-installation/en.md)
+        - [3.2 Creating your first scene](../cocos2d-js/3-jumping-into-cocos2d-js/3-2-creating-your-first-scene/en.md)
+        - [3.3 Adding content to the scene](../cocos2d-js/3-jumping-into-cocos2d-js/3-3-adding-content-to-the-scene/en.md)
+        - [3.4 Using actions to animate the scene](../cocos2d-js/3-jumping-into-cocos2d-js/3-4-using-actions-to-animate-scenes/en.md)
+        - [3.5 Transition between scenes](../cocos2d-js/3-jumping-into-cocos2d-js/3-5-transition-between-scenes/en.md)
+        - [3.6 Creating user interaction with EventManager](../cocos2d-js/3-jumping-into-cocos2d-js/3-6-creating-user-interaction-with-event-manager/en.md)
+    - 4. Essential concepts
+        - [4.1 Cocos2d-JS project](../cocos2d-js/4-essential-concepts/4-1-cocos2d-js-project/en.md)
+        - [4.2 Game object](../cocos2d-js/4-essential-concepts/4-2-game-object/en.md)
+        - [4.3 Coordinate system](../cocos2d-js/4-essential-concepts/4-3-coordinate-system/en.md)
+        - [4.4 Resolution policies](../cocos2d-js/4-essential-concepts/4-4-resolution-policies/en.md)
+        - [4.5 Scene graph](../cocos2d-js/4-essential-concepts/4-5-scene-graph/en.md)
+        - [4.6 Director of game](../cocos2d-js/4-essential-concepts/4-6-director-of-game/en.md)
         
 - New features and API changes in version 3.x:
     - [New workflow with cocos console](./v2/cocos-console/en.md)
