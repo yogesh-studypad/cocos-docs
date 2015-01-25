@@ -38,15 +38,16 @@ Cocos2d-JS v3.3 Beta @ Jan.24, 2015
     21. [JSB] Fixed `jsb.AssetsManager`'s issue that manifest files progression is inversed.
     22. [JSB] Fixed `jsb.AssetsManager`'s issue that asset id isn't dispatched with progression event.
     23. [JSB] Fixed `Vec3` conversion issue.
-    24. [JSB] Added `cc.MenuItemToggle`'s `selectedItem` function to fix API inconsistence.
-    25. [JSB] Fixed `LayoutParameter`'s `setMargin` function's API inconsistence with web engine.
-    26. [JSB] Fixed `ccui.Button`'s constructor issue.
-    27. [JSB] Fixed `ccui.Button`'s `setNormalizedPosition` function's API inconsistence with web engine.
-    28. [JSB] Fixed `ccui.CheckBox`'s intialization issue.
-    29. [JSB] Fixed `ccui.ImageView`'s constructor issue.
-    30. [JSB] Fixed JSON parse issue in `XMLHTTPRequest`.
-    31. [JSB] Fixed a wired compilation issue which reports `JSVAL_TO_IMPL` is not a function on win32.
-    32. [JSB] Fixed image view test's implementation bug.
-    33. [JSB] Fixed an UI button test's implementation bug.
-    34. [JSB] Fixed list view test case's bug.
-    35. [JSB] Fixed issues of `ccui.TextField`'s test cases.
+    24. [JSB] Added missed `cc.AnimationFrame`'s `_ctor` function.
+    25. [JSB] Added `cc.MenuItemToggle`'s `selectedItem` function to fix API inconsistence.
+    26. [JSB] Fixed `LayoutParameter`'s `setMargin` function's API inconsistence with web engine.
+    27. [JSB] Fixed `ccui.Button`'s constructor issue.
+    28. [JSB] Fixed `ccui.Button`'s `setNormalizedPosition` function's API inconsistence with web engine.
+    29. [JSB] Fixed `ccui.CheckBox`'s intialization issue.
+    30. [JSB] Fixed `ccui.ImageView`'s constructor issue.
+    31. [JSB] Fixed JSON parse issue in `XMLHTTPRequest`.
+    32. [JSB] Fixed a wired compilation issue which reports `JSVAL_TO_IMPL` is not a function on win32.
+    33. [JSB] Fixed image view test's implementation bug.
+    34. [JSB] Fixed an UI button test's implementation bug.
+    35. [JSB] Fixed list view test case's bug.
+    36. [JSB] Fixed issues of `ccui.TextField`'s test cases.

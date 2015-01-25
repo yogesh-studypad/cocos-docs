@@ -28,7 +28,7 @@ For JSB build, there are some restrictions :
 
 ## Download
 
-- [Cocos2d-JS v3.3 Beta](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.2-beta.zip)
+- [Cocos2d-JS v3.3 Beta](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.3-beta.zip)
 - [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/)
 - [Online API reference](http://www.cocos2d-x.org/wiki/reference/)
 - [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.3-Beta-API.zip)
