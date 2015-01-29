@@ -1,6 +1,6 @@
 
 本部分对调试游戏代码和编写游戏逻辑的操作与功能进行了说明。
 
-####[编辑游戏代码](../chapter4/coding/zh.md)
+####[编辑游戏代码](../coding/zh.md)
 
-####[调试游戏项目](../chapter4/debugging/zh.md)
+####[调试游戏项目](../debugging/zh.md)
