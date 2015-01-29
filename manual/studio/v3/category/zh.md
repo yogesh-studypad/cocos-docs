@@ -1,9 +1,8 @@
 # Cocos Studio 用户手册
-* [1 Cocos 介绍](../chapter1/directory/zh.md)
-	* [1.1 综述](../chapter1/overview/zh.md)
-	* [1.2 家族成员](../chapter1/members/zh.md)
-	* [1.3 产品特点](../chapter1/features/zh.md)
-	* [1.4 核心功能](../chapter1/function/zh.md)
+* [1 Cocos 介绍](../chapter1/overview/zh.md)
+	* [1.1 家族成员](../chapter1/members/zh.md)
+	* [1.2 产品特点](../chapter1/features/zh.md)
+	* [1.3 核心功能](../chapter1/function/zh.md)
 * [2 选择游戏框架](../chapter2/directory/zh.md)
 * [3 制作游戏界面](../chapter3/directory/zh.md)
  * [3.1 Cocos Studio基础](../chapter3/chapter1/fundamentals/zh.md)
