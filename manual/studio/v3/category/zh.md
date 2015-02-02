@@ -69,6 +69,6 @@
 	 * [3.4.3 使用镜像参考](../chapter3/chapter4/onionskin/zh.md)
 	 * [3.4.4 动画列表](../chapter3/chapter4/curve/zh.md)
 	 * [3.4.5 快速创建序列帧](../chapter3/chapter4/sequences-frames/zh.md)
-* [4 编辑游戏逻辑](../chapter4/fundamentals/zh.md)
+* [4 编辑游戏逻辑](../chapter4/directory/zh.md)
  * [4.1 编辑游戏代码](../chapter4/coding/zh.md)
  * [4.2 调试游戏项目](../chapter4/debugging/zh.md)
