@@ -22,7 +22,7 @@
 |[login](./login.md)|Ask a user to authorize your app, or to grant additional authorizations.|
 |[logout](./logout.md)|Log a user entirely out of Facebook.|
 |[isLoggedIn](./isloggedin.md)|Check whether a user is currently logged in and has authorized your app.|
-|[getUserId](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
+|[getUserID](./get-userid.md)|Get the Facebook user ID of the currently logged in user.|
 |[getAccessToken](./get-accesstoken.md)|Get the access token granted to your application by current user.|
 
 ##Auxiliary Methods
@@ -50,7 +50,7 @@
 |login|√|√|√|
 |logout|√|√|√|
 |isLoggedIn|√|√|√|
-|getUserId|√|√|√|
+|getUserID|√|√|√|
 |getAccessToken|√|√|√|
 |canvas.pay|×|×|√|
 |activateApp|√|√|√|
