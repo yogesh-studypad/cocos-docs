@@ -1,4 +1,4 @@
-Cocos2d-JS v3.3 @ Reb.9, 2015
+Cocos2d-JS v3.3 @ Feb.9, 2015
 
 * Upgraded spine runtime to support the latest version and updated its test case.
 * Added an option "noCache" for debugging on browsers.
