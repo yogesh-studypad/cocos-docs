@@ -15,7 +15,7 @@ One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportun
 * Supported [Cocos Studio 2.x](http://cocos2d-x.org/download) with its JSON format export, the web engine and native engine share exactly the same parser, so that its result's consistency will be guaranteed for all platforms.
 * Supported latest versioin of [Spine animation editor](http://esotericsoftware.com/).
 * Upgraded UI system with the new flow layout system and added full featured test cases.
-* Provided [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/index-en.html) beta version. It's a web based playground for manipulating all coocs nodes in runtime. It will greatly improve your developement and debug experience.
+* Provided [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/index-en.html). It's a web based playground for manipulating all coocs nodes in runtime. It will greatly improve your developement and debug experience.
 
 ![](../../res/devtool.jpg)
 

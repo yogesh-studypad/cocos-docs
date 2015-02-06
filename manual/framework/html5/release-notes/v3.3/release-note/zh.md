@@ -13,7 +13,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 * 添加[Cocos Studio 2.x](http://cn.cocos2d-x.org/download/)的JSON格式解析支持，Web引擎和Native引擎完全共享解析器，以保证解析结果在全平台上都是一致的。并且精简解析器API来提升使用体验。
 * 支持最新版本的[Spine动画编辑器](http://zh.esotericsoftware.com/)。
 * 升级UI系统，支持流式布局，并添加完整的测试例。
-* 提供[Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/) beta版，这是一个基于Web的调试工具，可以在运行时展示节点树，自由操作Cocos2d-JS游戏中的任意节点，它将极大改善您的开发和调试体验。
+* 提供[Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/)，这是一个基于Web的调试工具，可以在运行时展示节点树，自由操作Cocos2d-JS游戏中的任意节点，它将极大改善您的开发和调试体验。
 
 ![](../../res/devtool.jpg)
 
@@ -40,8 +40,8 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 - 原生引擎支持Windows Phone 8平台。
 - 在原生引擎中添加3D功能绑定。
 - 在原生和Web引擎中使用Emscripten编译的Box2d物理引擎。
-- 升级Spine动画编辑器的API
-- 改善Web引擎中UI系统的性能
+- 升级Spine动画编辑器的API。
+- 改善Web引擎中UI系统的性能。
 
 ## 详细更改
 
