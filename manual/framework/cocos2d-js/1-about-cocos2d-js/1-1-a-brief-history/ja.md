@@ -1,4 +1,4 @@
-# 1.1 Cocos2d-jsの歴史
+# 1.1 Cocos2d-JSの歴史
 
 <img src="http://files.cocos2d-x.org/images/orgsite/logo.png" height=180> 
 
@@ -9,7 +9,7 @@ Cocos2d-JSは、APIを使用して学習することで２Dのゲームプログ
 Cocos2d-JSはCocos2d-xのHTML5版であり、Cocos2d-x　JavaScript Binding (JSB)　は　[Cocos2d-html5](https://github.com/cocos2d/cocos2d-html5)　に対応しています
 
 Cocos2d-JSを使用することで、あなたはJavaScriptでゲームのコードを書きHTML5をサポートするブラウザ上でゲームを実行することが出来ます。
-そのAPIは、Cococs2d-html5とCococs2d-x　JSBの間で完全に互換性があります。つまりCocos2d-JSのゲームは　Cocos2dの"JavaScript Binding"上のCocos2d-xもしくは少しの修正で実行することが出来る事を意味します。
+そのAPIは、Cocos2d-html5とCocos2d-x　JSBの間で完全に互換性があります。つまりCocos2d-JSのゲームは　Cocos2dの"JavaScript Binding"上のCocos2d-xもしくは少しの修正で実行することが出来る事を意味します。
 
 
 #### なぜCocos2d-JSを選ぶのか
@@ -25,9 +25,9 @@ Cocos2d-JSを使用することで、あなたはJavaScriptでゲームのコー
 
 2010年のアンドロイドの台頭を機に、Cocos2d-iphoneだけでなくAndroidのプラットフォームも重視し、Cocos2d-xの開発チームはチームを分岐させた。
 しかしそれだけではなく、クロスプラットフォームを対象とするサポートも同様に始めていた。GoogleはCocos2d-HTML5のHTML5対応のブラウザ
-Cocos2d-xチームはHTML5対応のブラウザに焦点を当てGoogleをスポンサーに迎えて、Cocos2d-xにCOcos2d-HTML5の移植を行いました。
+Cocos2d-xチームはHTML5対応のブラウザに焦点を当てGoogleをスポンサーに迎えて、Cocos2d-xにCocos2d-HTML5の移植を行いました。
 
-Cocos2d-HTML5プロジェクトは2012年1月29日に開始,　最初の安定板のリリースは2012年8月のCocos2d-X v2.0 に基づいてリリースされました。一方、 ZygnaはCocos2d - HTML5のネイティブプラットフォームの能力を拡張するCocos2d - xのJSBソリューションを開発するCocos2d -xのチームを手伝っていた。2012年12月4日にCocos2dファミリー最初の統合リリースがされました。それ以来、 Cocos2d - HTML5に基づいて開発されているゲームはウェブとネイティブプラットフォーム上で実行することができます。
+Cocos2d-html5プロジェクトは2012年1月29日に開始,　最初の安定板のリリースは2012年8月のCocos2d-X v2.0 に基づいてリリースされました。一方、 ZygnaはCocos2d-html5のネイティブプラットフォームの能力を拡張するCocos2d-xのJSBソリューションを開発するCocos2d-xのチームを手伝っていた。2012年12月4日にCocos2dファミリー最初の統合リリースがされました。それ以来、 Cocos2d-html5に基づいて開発されているゲームはウェブとネイティブプラットフォーム上で実行することができます。
 Cocos2d-html5とCocos2d-x JSBは結合されて、2014年3月にCocos2d-JSにアップグレードされました、そして、最初の安定したバージョン（v3.0）は2014年9月12日にリリースされました。
 Cocos2d-JS v3.0に、我々はすべてのプラットホームのためのワークフローを再発明したことで、ウェブまたはネイティブであってもあなたどのプラットフォームでも一貫した開発経験で問題なく配布することが出来ます。
 
@@ -43,8 +43,6 @@ JavaScriptコードはMozilla社が開発したSpiderMonkeyというJavaScript�
 
 SpiderMonkeyはC/C++で記述されているMozilla社のオープンソースのJavaScriptエンジンです。そしてそれはどんなC++プログラムでもウェブブラウザにリンクできます。
 
-SpiderMonkey is Mozilla's open source JavaScript engine written in C/C++, and it can be linked into any C++ program, not just web browsers.
-
 C++のコードは、JSAPIを通じてSpiderMonkeyにアクセスします。JSAPIは機能をJavaScript実行時を準備するために提供します。スクリプトをコンパイルして、実行する。そして、JavaScriptデータ構造を作成して、調べる。そして、エラーを取り扱って、セキュリティチェックの有効化、スクリプトのデバッグを提供します。このテクノロジーが、迅速なゲーム開発をゲーム・プロトタイピングのために使われます。
 
 
@@ -55,8 +53,8 @@ Cocos2dのブランチ
 
 ＨＴＭＬ５のゲームは、モバイル・ゲーム産業でますます重要になっていて、もう既に数えきれないほどのＨＴＭＬ５で利用できるカジュアル・ソーシャルゲームがあります。
 
-たとえＣｏｃｏｓ２ｄ－ｘが人気のクロスプラットフォームゲームのフレームワークでも、それはブラウザにアクセスできません。ですがCocos2d-HTML5は、HTML5のブラウザーで動作するアプリケーションやゲームを作成することに最適化されて作成されました。
+たとえCocos2d-xが人気のクロスプラットフォームゲームのフレームワークでも、それはブラウザにアクセスできません。ですがCocos2d-html5は、HTML5のブラウザーで動作するアプリケーションやゲームを作成することに最適化されて作成されました。
 
-Cocos2d-HTML5は使いやすいAPIによりとても学びやすく、あなたにHTML5のゲーミングの世界をもたらしてくれます。完全な機能、高いパフォーマンス、リアルタイムのアップデート、インストールを必要としないクリックトゥプレイ、効率的な開発サイクル、このすべてが付属しています。
+Cocos2d-html5は使いやすいAPIによりとても学びやすく、あなたにHTML5のゲーミングの世界をもたらしてくれます。完全な機能、高いパフォーマンス、リアルタイムのアップデート、インストールを必要としないクリックトゥプレイ、効率的な開発サイクル、このすべてが付属しています。
 
 Cocos2d-x JSBのおかげで、あなたが分配したいどのプラットホームにでも、Cocos2d-JSは、一貫した開発経験を提供します。これはほぼ全ての配布経路であなたのゲームに大きなチャンスをもたらします。
