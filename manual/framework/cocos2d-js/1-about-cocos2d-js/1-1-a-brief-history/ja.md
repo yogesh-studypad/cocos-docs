@@ -26,7 +26,7 @@ Cocos2d-html5とCocos2d-x JSBは2014年3月に結合されて、Cocos2d-JSにア
 
 ### 1.1.2 Cocos2d-html5とCocos2d-x JSB
 
-Cocos2d-html5は、Cocos2d-JSの重要なモジュールです。Cocos2d-html5はHTML5の純粋なゲームエンジンであり、Canvas/WEBGLにベースにしていて、HTML5と互換性があります。これによりCocos2d-JSプロジェクトがHTML5対応のブラウザで簡単に実行することが出来ます。
+Cocos2d-html5は、Cocos2d-JSの重要なモジュールです。Cocos2d-html5はHTML5の純粋なゲームエンジンであり、Canvas/WebGLにベースにしていて、HTML5と互換性があります。これによりCocos2d-JSプロジェクトがHTML5対応のブラウザで簡単に実行することが出来ます。
 
 もしあなたがウェブ用のカジュアルゲームの開発に興味がある場合は、簡易的な機能だけが入っているCocos2d-JS Lite Versionを導入することをお勧めします。
 
