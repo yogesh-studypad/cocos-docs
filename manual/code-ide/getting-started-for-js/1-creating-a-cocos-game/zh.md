@@ -10,8 +10,22 @@ JavaScript本来是网页开发领域的强大语言，用此语言实现的coco
   ![](../../res/getting-started/select_workspace.png)
 2. 进入Code IDE主界面，可以看到欢迎界面，在这里，可以选择开发Lua游戏或选择开发JavaScript游戏。点击JavaScript按钮进入JavaScript开发环境。  
   ![](./res/select_welcome_js.jpg)
-3. 如果没有设置好引擎路径，会弹出引擎设置框，点击下拉列表中的custom然后把引擎的根目录设置好就可以了。  
-  ![](./res/set_js_engine.jpg)
+3. 如果没有设置好引擎路径，会弹出引擎设置框，点击下拉列表中的custom然后把引擎的根目录设置好就可以了（注：1.2.0之前和之后的版本界面有所不同）。
+  
+     1.2.0之前的版本：  
+    ![](./res/set_js_engine.jpg)
+   
+     1.2.0以及之后的版本：
+    ![](./res/set_js_engine_above_1.2.0.jpg)
+  
+     1.2.0后，Code IDE还支持Cocos产品自带的Frameworks，如果你从官网下载并安装了Cocos产品，就可以使用其自带的引擎和模拟器了。
+    ![](./res/cocos_product.jpg)
+
+    安装Cocos产品后，在商城里下载CocosFramework并安装，你就可以选择Framework Mode。ide会自动识别Framework和模拟器路径。使用Frameworks的优点是：集成了js和lua，自带了预编译好的库，编译和打包的速度有质的提升。
+
+    ![](./res/select_framework_mode.jpg)
+   
+
 4. 在界面左边的窗口是项目管理器，在空白区域右键单击选择新建Cocos JavaScript项目开始新建项目。  
   ![](./res/select_new_js_proj.jpg)
 5. 在第一个页面，需要设置项目的名字和保存的路径，默认保存在workspace文件夹下，也可以手动设置保存到另外的目录下。需要注意的是，在一个workspace中，项目的名字是不能重复的。  
