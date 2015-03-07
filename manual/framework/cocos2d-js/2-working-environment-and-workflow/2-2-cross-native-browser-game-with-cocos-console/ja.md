@@ -1,6 +1,6 @@
 # 2.2 クロスネイティブ / ココスコンソール( Web開発者環境 )で作るブラウザゲーム
 
-Cocos2d-JSの一番優れているところは、完璧なマルチプラットフォームを実現しているところです。 1つのコードベースで、Cocos2d-JS v3.0内であればどこでも動作します。 全てのプラットフォームで統一されたワークフローを提供できるように、Cocos2d-JSの初めのバージョンでWebエンジン( Cocos2d-html5 )とネイティブエンジン( Cocos2d-x JavaScript Bindings )の統合を行いました。 Cocos2d-JSでは開発者がJavaScriptのコードを書くことに集中でき、Cocos Consoleはプロジェクトの作成や公開を行うことができます。
+Cocos2d-JSの一番優れているところは、完璧なマルチプラットフォームを実現しているところです。 1つのコードベースで、Cocos2d-JS v3.0内であればどこでも動作します。 全てのプラットフォームで統一されたワークフローを提供できるように、Cocos2d-JSの初めのバージョンでWebエンジン( Cocos2d-html5 )とネイティブエンジン( Cocos2d-x JavaScript Bindings )の統合を行いました。 Cocos2d-JSでは開発者がJavaScriptのコードを書くことに集中でき、Cocosコンソールはプロジェクトの作成や公開を行うことができます。
 
 **Cocos2d-JS v3.0のアーキテクチャ** :
 
@@ -31,20 +31,20 @@ Cocos2d-JSの一番優れているところは、完璧なマルチプラット�
 |samples                |サンプルが含まれているフォルダです。|
 | - js-moonwarriors     |Moon Warriorsというサンプルのゲーム|
 | - js-tests            |Cocos2d-JSのテストケース|
-|templates              |Cocos Console用のテンプレート|
+|templates              |Cocosコンソール用のテンプレート|
 |tools                  |ツールが含まれているフォルダです。|
 | - bindings-generator  |自動バインディング生成ツール|
-| - cocos2d-console     |Cocos Consoleツール|
+| - cocos2d-console     |Cocosコンソールツール|
 | - tojs                |自動JavaScriptバインディングの構成ファイルと生成スクリプト|
 |AUTHORS                |GitHubのリポジトリへの貢献者リスト|
 |CHANGELOG              |過去のバージョンの変更履歴|
 |LICENSE                |Cocos2d-JSのライセンス|
 |README.md              |Cocos2d-JSのプロジェクト紹介|
-|setup.py               |Cocos Consoleのインストールスクリプト|
+|setup.py               |Cocosコンソールのインストールスクリプト|
 
-##2. Cocos Consoleのインストール
+##2. Cocosコンソールのインストール
 
-Cocos Consoleはプロジェクトの作成、公開を補助するツールです。 上記のパッケージをダウンロードすることができたら、setup.pyを実行しCocos Consoleをインストールすることができます。( Windowsを使っている方は、[Python 2.7](https://www.python.org/downloads/release/python-278/)を事前にインストールする必要があります。 ) このスクリプトは`ココスコマンド`と依存関係をセットアップするもので、インストールを行っている最中に、NDKのパス、Android用のAndroid SDKのパス、Web用のANTのパスを入力します。 Cocos2d-JSのアップデートを行う場合、再度setup.pyを実行し、エンジンの参照を更新する必要があるので、注意してください。
+Cocosコンソールはプロジェクトの作成、公開を補助するツールです。 上記のパッケージをダウンロードすることができたら、setup.pyを実行しCocosコンソールをインストールすることができます。( Windowsを使っている方は、[Python 2.7](https://www.python.org/downloads/release/python-278/)を事前にインストールする必要があります。 ) このスクリプトは`cocosコマンド`と依存関係をセットアップするもので、インストールを行っている最中に、NDKのパス、Android用のAndroid SDKのパス、Web用のANTのパスを入力します。 Cocos2d-JSのアップデートを行う場合、再度setup.pyを実行し、エンジンの参照を更新する必要があるので、注意してください。
 
 使用するツールのリンク :
 
@@ -65,7 +65,7 @@ Cocos Consoleはプロジェクトの作成、公開を補助するツールで�
 
 ##3. プロジェクトの作成
 
-Cocos Consoleを使用すれば、プロジェクトを簡単に作成することができます。 ターミナルもしくはコマンドラインを開き、プロジェクトを保存したいフォルダまで移動します。 移動ができたら以下の`ココスコマンド`を実行します。
+Cocosコンソールを使用すれば、プロジェクトを簡単に作成することができます。 ターミナルもしくはコマンドラインを開き、プロジェクトを保存したいフォルダまで移動します。 移動ができたら以下の`cocosコマンド`を実行します。
 
 ```
 cocos new -l js ProjectName
@@ -102,9 +102,9 @@ Cocos2d-x APIとその具体的な使用方法はこの章では説明してい�
 
 ##5. ネイティブプラットフォームのコンパイル
 
-###5.1 Cocos Console
+###5.1 Cocosコンソール
 
-プロジェクトのテスト、公開をネイティブプラットフォーム上で行う場合、Webプラットフォーム上でテストした後にプロジェクトをコンパイルする事ができます。 ここでもCocos Consoleを使用し、`cocos compile`というコマンドを使用することで、簡単にコンパイルすることができます。
+プロジェクトのテスト、公開をネイティブプラットフォーム上で行う場合、Webプラットフォーム上でテストした後にプロジェクトをコンパイルする事ができます。 ここでもCocosコンソールを使用し、`cocos compile`というコマンドを使用することで、簡単にコンパイルすることができます。
 
 ```
 // ターミナルもしくはコマンドラインを開き、プロジェクトのフォルダまで移動します。
@@ -122,7 +122,7 @@ cocos run -p web
 cocos run -p ios
 ```
 
-Cocos Consoleについての詳細は[Cocos Consoleドキュメント](http://cocos2d-x.org/wiki/Cocos2d-console)を参照してください。
+Cocosコンソールについての詳細は[Cocosコンソールドキュメント](http://cocos2d-x.org/wiki/Cocos2d-console)を参照してください。
 
 ###5.2 IDEを使用してプロジェクトをコンパイル
 
