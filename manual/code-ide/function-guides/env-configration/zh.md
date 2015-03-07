@@ -33,6 +33,8 @@
 
 		| Cocos Code IDE 版本        | IDE对Cocos2d-x引擎支持的最高版本 |
 		| -------------------------- |:-----------------------------:|
+        | Cocos Code IDE 1.2.0       | Cocos2d-x 3.4                 |
+        | Cocos Code IDE 1.1.0       | Cocos2d-x 3.3final            |
 		| Cocos Code IDE 1.0.1       | Cocos2d-x 3.3rc0              |
 		| Cocos Code IDE 1.0.0-Final | Cocos2d-x 3.3rc0              |
 		| Cocos Code IDE 1.0.0-RC2   | Cocos2d-x 3.2                 |
@@ -44,6 +46,8 @@
 
 		| Cocos Code IDE 版本        | IDE对Cocos2d-JS引擎支持的最高版本 |
 		| -------------------------- |:------------------------------:|
+        | Cocos Code IDE 1.2.0       | Cocos2d-JS 3.3                 |
+        | Cocos Code IDE 1.1.0       | Cocos2d-JS 3.2                 |
 		| Cocos Code IDE 1.0.1       | Cocos2d-JS 3.1                 |
 		| Cocos Code IDE 1.0.0-Final | Cocos2d-JS 3.1                 |
 		| Cocos Code IDE 1.0.0-RC2   | Cocos2d-JS 3.0                 |
@@ -54,6 +58,8 @@
 	- **引擎版本和Cocos Code IDE版本的对应关系**
 		| Cocos Code IDE 版本       | IDE对Quick引擎支持的最高版本 |
 		|---------------------------|:-------------------------:|
+        | Cocos Code IDE 1.2.0      | Quick 3.2rc1              |
+        | Cocos Code IDE 1.1.0      | Quick 3.2rc1              |
 		| Cocos Code IDE 1.0.1      | Quick 3.2rc1              |
 		| Cocos Code IDE 1.0.0-Final| Quick 3.2rc0              |
 	
@@ -81,9 +87,9 @@
 
 	- **NDK版本与引擎版本的对应关系**
 
-		暂时不支持r10版本。
+		Cocos2d-x 3.4，支持r10c。
 
-		Cocos2d-x 3.2以上版本，只支持使用r9d。
+		Cocos2d-x 3.2和Cocos2d-x 3.3，支持r9d和r10c。
 
 		Cocos2d-x 3.0以上版本，Cocos2d-x 3.2以下版本，可以使用r9b、r9d。
 
