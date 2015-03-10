@@ -24,7 +24,7 @@
 		- タイルマップ(Tile Map)
 		- アクション(Actions)
 		- エフェクト(Effects)
-		- [レンダー(Renderer)](../manual/framework/native/v3/new-renderer/ja.md)
+		- [レンダラー(Renderer)](../manual/framework/native/v3/new-renderer/ja.md)
 		- 複数の解像度で動かすためのメカニズム
 	- オーディオ(Audio)
 	- GUI
@@ -42,7 +42,7 @@
 	- 物理特性(Physics)
 	- ネットワーク(Network)
 	- イベント系(Events System)
-	- スケジュールとコールバック(Scheduler and Timer Callbacks)
+	- スケジューラーとタイマーコールバック(Scheduler and Timer Callbacks)
 	- インプット(Inputs)
 		- タッチイベントのハンドリング
 		- 加速度センサーイベントのハンドリング
@@ -73,16 +73,16 @@
             
         - Cocos2d-JS v3.0の新機能とAPIの変更:
             - cocosコンソールツール
-            - アセット管理
-            - 新しいイベント管理
+            - アセットマネージャー
+            - 新しいイベントマネージャー
             - 新しいプロパティ
             - cc.gameによるゲームの生成
             - オブジェクト生成とクラスの継承
-            - アクション関数のデザイン
-            - オブジェクトのプール
+            - 簡単になったアクションAPI
+            - オブジェクトプール
             - cc.layerのbake関数
-            - JavaScriptへのJAVA呼び方
-            - JavaScriptからObjective-Cへの呼び方
+            - JavaScriptからJAVAの呼び方
+            - JavaScriptからObjective-Cの呼び方
             - 設定モジュール
             - 設定ファイル
             - 基本データ
