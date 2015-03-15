@@ -17,8 +17,6 @@
 
 ## Featureの項目について
 
-![](./res/.png)
-
 #### Disabled stateについて
 
 Disabled状態の時に表示する画像(png/jpg)を設定出来ます。
