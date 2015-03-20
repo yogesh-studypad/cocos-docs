@@ -62,6 +62,11 @@
 		 * [3.3.2.4 翻页容器](../chapter3/chapter3/containers/pageview/zh.md)
 	 * 3.3.3 自定义控件
 		 * [3.3.3.1 Armature](../chapter3/chapter3/custom/armature/zh.md)
+	* 3.3.4 3D控件
+    	* [3.3.4.1 基础属性](../chapter3/chapter3/3D/basic-parameter/zh.md)
+    	* [3.3.4.2 摄像机](../chapter3/chapter3/3D/camera/zh.md)
+    	* [3.3.4.3 模型](../chapter3/chapter3/3D/model/zh.md)
+    	* [3.3.4.4 3D粒子](../chapter3/chapter3/3D/particle/zh.md)		 
 		
  * [3.4 如何编辑动画](../chapter3/chapter4/how-to-edit-animation/zh.md)
 	 * [3.4.1 添加关键帧](../chapter3/chapter4/add-key-frame/zh.md)
