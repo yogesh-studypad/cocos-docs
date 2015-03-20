@@ -137,7 +137,7 @@ Exact fit policy will scale the container to fit exactly the frame, so your game
 
 ![FixedWidth](./res/FixedWidth.jpeg)
 
-Fixed width policy will scale the width of the container to fit the frame's width, and the height will be scaled proportionally.
+Fixed width policy will scale the width of the container to fit the frame's width, and vertially it will be scaled proportionally, but the width value will be extended to fill the frame.
 
 It may seem alike to the SHOW\_ALL policy, but the canvas's rect fills up the whole frame, and game world's coordinate system equals the canvas coordinate system.
 
@@ -145,7 +145,7 @@ It may seem alike to the SHOW\_ALL policy, but the canvas's rect fills up the wh
 
 ![FixedHeight](./res/FixedHeight.jpeg)
 
-Fixed height policy will scale the height of the container to fit the frame's height, and the width will be scaled proportionally.
+Fixed height policy will scale the height of the container to fit the frame's height, and horizontally it will be scaled proportionally, but the width value will be extended to fill the frame.
 
 In the case of our caption, the game width is larger than the game height, so the FIXED\_WIDTH policy act like SHOW\_ALL, and the FIXED\_HEIGHT policy act like NO\_BORDER. On the contrary, if the game width is smaller than the game height, the FIXED\_WIDTH policy will act like NO\_BORDER, and the FIXED\_HEIGHT policy will act like SHOW\_ALL. But FIXED\_HEIGHT and FIXED\_WIDTH policies will all take the whole frame as the viewport and game world rect.
 

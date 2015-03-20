@@ -21,6 +21,7 @@
 - [Cocos2d-JS v3.3 Beta release note](v3.3b/release-note/en.md)
 - [Cocos2d-JS v3.3 RC0 release note](v3.3rc0/release-note/en.md)
 - [Cocos2d-JS v3.3 release note](v3.3/release-note/en.md)
+- [Cocos2d-JS v3.4 Beta0 release note](v3.4b/release-note/en.md)
 
 #Cocos2d-JS change log
 
@@ -40,6 +41,7 @@
 - [Cocos2d-JS v3.3 Beta change log](v3.3b/changelog/en.md)
 - [Cocos2d-JS v3.3 RC0 change log](v3.3rc0/changelog/en.md)
 - [Cocos2d-JS v3.3 change log](v3.3/changelog/en.md)
+- [Cocos2d-JS v3.4 Beta0 change log](v3.4b/changelog/en.md)
 
 #Cocos2d-JS upgrade guides
 
@@ -51,3 +53,4 @@
 - [Cocos2d-JS upgrade guide from v3.0 beta to v3.1](v3.0rc0/upgrade-guide/en.md)
 - [Cocos2d-JS upgrade guide from v3.1 to v3.2](v3.2rc0/upgrade-guide/en.md)
 - [Cocos2d-JS upgrade guide from v3.2 to v3.3](v3.3b/upgrade-guide/en.md)
+- [Cocos2d-JS upgrade guide from v3.3 to v3.4](v3.4/upgrade-guide/en.md)
