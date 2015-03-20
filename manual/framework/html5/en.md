@@ -1,6 +1,6 @@
 # Cocos2d-JS
 
-<img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
+<img src="http://cocos2d-x.org/s/images/img-cocos2djs.jpg" height=180> 
 
 Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It equips your game with cross-browser and cross-platform abilities, accompanied by full Cocos2d-x features and simplified JavaScript friendly APIs.
 
@@ -60,9 +60,9 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.3](./release-notes/v3.3/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.3](./release-notes/v3.3/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.3](./release-notes/v3.3b/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.4 Beta0](./release-notes/v3.4b/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.4 Beta0](./release-notes/v3.4b/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.4 Beta0](./release-notes/v3.4/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)

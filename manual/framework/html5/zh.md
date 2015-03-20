@@ -1,6 +1,6 @@
 # Cocos2d-JS
 
-<img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
+<img src="http://cocos2d-x.org/s/images/img-cocos2djs.jpg" height=180> 
 
 Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x JavaScript Bindings。它支持Cocos2d-x的所有核心特性并提供更简单易用的JavaScript风格API，并且天然支持原生、浏览器跨平台应用。
 
@@ -60,9 +60,9 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
    
 ## 文档
 
-- [Cocos2d-JS v3.3发布说明](./release-notes/v3.3/release-note/zh.md)
-- [Cocos2d-JS v3.3改动列表](./release-notes/v3.3/changelog/en.md)
-- [Cocos2d-JS v3.3升级指南](./release-notes/v3.3b/upgrade-guide/zh.md)
+- [Cocos2d-JS v3.4 Beta0发布说明](./release-notes/v3.4b/release-note/zh.md)
+- [Cocos2d-JS v3.4 Beta0改动列表](./release-notes/v3.4b/changelog/en.md)
+- [Cocos2d-JS v3.4 Beta0升级指南](./release-notes/v3.4/upgrade-guide/zh.md)
 
 - 综述
     - [Lite Version工作流](./v3/lite-version/zh.md)
