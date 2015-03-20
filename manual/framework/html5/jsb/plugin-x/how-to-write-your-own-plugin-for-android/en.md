@@ -2,7 +2,7 @@
 
 Now we have four protocols in plugin-x: ProtocolAds, ProtocolAnalytics, ProtocolIAP, ProtocolSocial. You don't write any c++/jni code or JavaScript binding code. We have done it for you in the core code. What you need to do is:
 
-- New a android project.
+- Create an android project.
 - Write Java to implement the interface/protocol we defined.
 
 ##Introduction to Plugin Directory
@@ -24,7 +24,7 @@ Attention : The implementation of publish tools depends on the directory structu
 
 ![](res/Plugin_import_protocol2.jpg)
 
-###New a android library project.
+###Create an android library project.
 Make it depends on project libPluginProtocol.
 
 ![](res/Plugin_project_depend.jpg)
