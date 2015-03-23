@@ -1,5 +1,7 @@
 # Cocos2d-JS教程
 
+- [WEB SDK接入教程](web-plugin/zh.md)
+
 - 怎样用Cocos2d-html5制作一款横版动作游戏
 	- [怎样用Cocos2d-html5制作一款横版动作游戏 (1)](../../../tutorial/framework/html5/how-to-to-make-a-acting-game-by-cocos-html5/part1/zh.md)
 	- [怎样用Cocos2d-html5制作一款横版动作游戏 (2)](../../../tutorial/framework/html5/how-to-to-make-a-acting-game-by-cocos-html5/part2/zh.md)
