@@ -1,6 +1,9 @@
 # Cocos2d-JS教程
 
 - [WEB SDK接入教程](web-plugin/zh.md)
+    - [微信JS SDK社交功能接入教程](http://www.cocoachina.com/bbs/read.php?tid-281137.html)
+    - [微信JS SDK支付功能接入教程](http://www.cocoachina.com/bbs/read.php?tid-288949.html)
+    - [DataEye统计JS SDK接入](http://www.cocoachina.com/bbs/read.php?tid-288990.html)
 
 - 怎样用Cocos2d-html5制作一款横版动作游戏
 	- [怎样用Cocos2d-html5制作一款横版动作游戏 (1)](../../../tutorial/framework/html5/how-to-to-make-a-acting-game-by-cocos-html5/part1/zh.md)
