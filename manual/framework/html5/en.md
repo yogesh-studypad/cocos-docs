@@ -60,9 +60,9 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.4 Beta0](./release-notes/v3.4b/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.4 Beta0](./release-notes/v3.4b/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.4 Beta0](./release-notes/v3.4/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.5](./release-notes/v3.5/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.5](./release-notes/v3.5/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.5](./release-notes/v3.5/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
