@@ -1,21 +1,21 @@
-#从Cocos2d-JS v3.3到v3.4升级指南
+#从Cocos2d-JS v3.3到v3.5升级指南
 
 ## 0. 升级到Cocos2d-JS v3.3
 
 如果你还在使用Cocos2d-html5或者较早版本的Cocos2d-JS，你可以首先参考之前版本的升级指南来升级 : [历史版本升级指南](../../zh.md)
 
-## 1. Windows Phone 8平台支持（Windows Phone 8.1尚未支持）
+## 1. Windows Phone 8和Windows 8.1 Universal平台支持
 
-按照以下步骤可以轻松升级到v3.4，创建一个新的游戏工程，并开始为Windows Phone 8平台开发游戏。
+按照以下步骤可以轻松升级到v3.5，创建一个新的游戏工程，并开始为Windows Phone 8平台开发游戏。
 
-1. 你需要使用Cocos2d-JS v3.4包中的`setup.py`升级cocos console终端工具：
+1. 你需要使用Cocos2d-JS v3.5包中的`setup.py`升级cocos console终端工具：
 
     ```
-    $ cd cocos2d-js-v3.4
+    $ cd cocos2d-js-v3.5
     $ ./setup.py
     ```
     
-2. 创建一个Cocos2d-JS v3.4新工程：
+2. 创建一个Cocos2d-JS v3.5新工程：
 
     ```
     $ cocos new -l js WinPhone8Game
@@ -24,6 +24,10 @@
 3. 打开`WinPhone8Game/frameworks/runtime-src/proj.wp8-xaml/WinPhone8Game.sln`这个Windows Phone 8工程文件。你的环境中需要安装有Visual Studio 2012。
 
 4. 现在你就可以使用Visual Studio来调试，运行或发布Cocos2d-JS项目到Windows Phone 8平台了。
+
+5. 打开`WinPhone8Game/frameworks/runtime-src/proj.win8.1-universal/WinPhone8Game.sln`这个Windows 8.1工程文件。你的环境中需要安装有Visual Studio 2012。
+
+6. 现在你就可以使用Visual Studio来调试，运行或发布Cocos2d-JS项目到Windows 8.1 Universal平台了。
 
 ## 2. [原生平台特性] 创造3D游戏
 
@@ -69,3 +73,26 @@ this.addChild(gradient, 10);
 结果：
 
 ![](../../res/gradient-color-stop.jpg)
+
+## 4. cc.sys.OpenURL
+
+你可以使用`cc.sys.OpenURL(url)`来在浏览器中打开一个页面。
+在Web引擎中，这个接口将会在新窗口或标签中打开这个页面。
+在Native引擎中，这个接口将会在外部浏览器中打开这个页面。
+
+## 5. [Web平台特性] cc.TextFieldTTF的提示标签
+
+你现在可以获取或设置`cc.TextFieldTTF`的提示标签了。API如下：
+
+```
+textFieldTTF.setTipMessage(tipMessage);
+var message = textFieldTTF.getTipMessage();
+```
+
+## 6. 为ccs.load设置资源相对路径
+
+现在`ccs.load`开始接受第二个参数`path`来指定资源相对于工程的相对路径。如果不指定，Cocos导出的JSON文件中的路径都默认是相对于JSON文件路径的。
+
+```
+ccs.load(jsonFile, path);
+```
