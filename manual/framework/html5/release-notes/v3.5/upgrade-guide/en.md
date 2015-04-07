@@ -4,7 +4,7 @@
 
 If you are still using Cocos2d-html5 or previous version of Cocos2d-JS, you may need to read the previous upgrade guides first : [Historic upgrade guides](../../en.md)
 
-## 1. Pulish to Windows Phone 8 (Windows Phone 8.1 is not supported yet)
+## 1. Pulish to Windows Phone 8 and Windows 8.1 Universal platforms
 
 Follow these steps can help you upgrade to v3.4, then create a project and at last working for Windows Phone 8.
 
@@ -24,6 +24,10 @@ Follow these steps can help you upgrade to v3.4, then create a project and at la
 3. Open the Windows Phone 8 project in `WinPhone8Game/frameworks/runtime-src/proj.wp8-xaml/WinPhone8Game.sln`. Note that you need Visual Studio 2012 to open it.
 
 4. Now you can start to compile or publish the Cocos2d-JS project for Windows Phone 8.
+    
+5. Open the Windows Phone 8 project in `WinPhone8Game/frameworks/runtime-src/proj.win8.1-universal/WinPhone8Game.sln`. Note that you need Visual Studio 2012 to open it.
+
+6. Now you can start to compile or publish the Cocos2d-JS project for Windows 8.1 Universal.
 
 ## 2. [Native Exclusive] Create 3D games
 
