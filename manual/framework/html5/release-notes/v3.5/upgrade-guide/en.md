@@ -1,4 +1,4 @@
-#Upgrade guide from Cocos2d-JS v3.3 to Cocos2d-JS v3.4
+#Upgrade guide from Cocos2d-JS v3.3 to Cocos2d-JS v3.5
 
 ## 0. Upgrade to Cocos2d-JS v3.3
 
@@ -6,16 +6,16 @@ If you are still using Cocos2d-html5 or previous version of Cocos2d-JS, you may 
 
 ## 1. Pulish to Windows Phone 8 and Windows 8.1 Universal platforms
 
-Follow these steps can help you upgrade to v3.4, then create a project and at last working for Windows Phone 8.
+Follow these steps can help you upgrade to v3.5, then create a project and at last working for Windows Phone 8.
 
-1. You need to upgrade cocos console with the `setup.py` in Cocos2d-JS v3.4 package:
+1. You need to upgrade cocos console with the `setup.py` in Cocos2d-JS v3.5 package:
 
     ```
-    $ cd cocos2d-js-v3.4
+    $ cd cocos2d-js-v3.5
     $ ./setup.py
     ```
     
-2. Create a Cocos2d-JS v3.4 project:
+2. Create a Cocos2d-JS v3.5 project:
 
     ```
     $ cocos new -l js WinPhone8Game
@@ -31,7 +31,7 @@ Follow these steps can help you upgrade to v3.4, then create a project and at la
 
 ## 2. [Native Exclusive] Create 3D games
 
-The biggest feature in Cocos2d-JS v3.4 is the 3D modules. We have bound Cocos2d-x's 3D modules to JSB, so that you can now code 3D games using JavaScript. Please note that it's a native engine exclusive feature, you can not use 3D classes in the web engine. We are not planning to support 3D for the web in the near future.
+The biggest feature in Cocos2d-JS v3.5 is the 3D modules. We have bound Cocos2d-x's 3D modules to JSB, so that you can now code 3D games using JavaScript. Please note that it's a native engine exclusive feature, you can not use 3D classes in the web engine. We are not planning to support 3D for the web in the near future.
 
 All bound 3D classes or objects are listed here:
 
@@ -60,15 +60,16 @@ To know how to use the new 3D modules, please refer to the following documents:
 - Cocos [3d module's API reference](http://www.cocos2d-x.org/reference/native-cpp/V3.4/dir_0cec398151724e9e1c180a4e8f99801b.html)
 - Cocos [Camera API reference](http://www.cocos2d-x.org/reference/native-cpp/V3.4/d6/d2b/classcocos2d_1_1_camera.html)
 - Cocos [Light API reference](http://www.cocos2d-x.org/reference/native-cpp/V3.4/d2/d85/classcocos2d_1_1_base_light.html)
-- Test cases in the Cocos2d-JS v3.4 package, run it with projects in `build` folder or using `cocos run` command under `samples/js-tests` folder. You can refer to the following test cases:
+- Test cases in the Cocos2d-JS v3.5 package, run it with projects in `build` folder or using `cocos run` command under `samples/js-tests` folder. You can refer to the following test cases:
     - BillBoardTest: source code in `samples/js-tests/src/BillBoardTest`.
     - Camera3DTest: source code in `samples/js-tests/src/Camera3DTest`.
     - LightTest: source code in `samples/js-tests/src/LightTest`.
     - Sprite3DTest: source code in `samples/js-tests/src/Sprite3DTest`.
+- Cocos2d-JS v3.5 ported [FantasyWarriors 3D source code](https://github.com/joshuastray/fantasywarrior)
     
 ## 3. [Web Exclusive] cc.LayerGradient with color stops
 
-In the web engine of Cocos2d-JS v3.4, you can now define color stops for a layer gradient. It's a web exclusive feature but it's safe to use the same code in native engine.
+In the web engine of Cocos2d-JS v3.5, you can now define color stops for a layer gradient. It's a web exclusive feature but it's safe to use the same code in native engine.
 
 API:
 

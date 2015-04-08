@@ -31,7 +31,27 @@
 
 ## 2. [原生平台特性] 创造3D游戏
 
-Cocos2d-JS v3.4中最大的新特性就是对3D模块的支持。我们绑定了Cocos2d-x的3D模块到JSB中，这样你就可以使用JavaScript来编写3D游戏功能了。**请注意**，这是一个原生平台独占的特性，你不能够在Web引擎中使用这些3D功能，我们在短期内也没有计划在Web引擎中支持3D。
+Cocos2d-JS v3.5中最大的新特性就是对3D模块的支持。我们绑定了Cocos2d-x的3D模块到JSB中，这样你就可以使用JavaScript来编写3D游戏功能了。**请注意**，这是一个原生平台独占的特性，你不能够在Web引擎中使用这些3D功能，我们在短期内也没有计划在Web引擎中支持3D。
+
+已绑定的3D类或对象列举如下：
+
+```
+jsb.Animate3D
+jsb.Animation3D
+jsb.Sprite3D
+jsb.Skeleton3D 
+jsb.Mesh
+jsb.AttachNode
+jsb.BillBoard
+jsb.sprite3DCache
+jsb.ParticleSystem3D
+jsb.PUParticleSystem3D
+jsb.BaseLight
+jsb.DirectionLight
+jsb.PointLight
+jsb.SpotLight
+jsb.AmbientLight
+```
 
 很抱歉我们暂时还没有3D功能的完整文档，我们将会尽快添加。
 
@@ -40,15 +60,16 @@ Cocos2d-JS v3.4中最大的新特性就是对3D模块的支持。我们绑定了
 - Cocos [3D模块API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.4/dir_0cec398151724e9e1c180a4e8f99801b.html)
 - Cocos [Camera类API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.4/d6/d2b/classcocos2d_1_1_camera.html)
 - Cocos [Light类API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.4/d2/d85/classcocos2d_1_1_base_light.html)
-- Cocos2d-JS v3.4测试用例，可以通过`build`文件夹中的Visual Studio工程来运行，或者在`samples/js-tests`目录下执行`cocos run`命令。运行成功后你可以参考下面的测试用例：
+- Cocos2d-JS v3.5测试用例，可以通过`build`文件夹中的Visual Studio工程来运行，或者在`samples/js-tests`目录下执行`cocos run`命令。运行成功后你可以参考下面的测试用例：
     - BillBoardTest：源代码位于`samples/js-tests/src/BillBoardTest`.
     - Camera3DTest：源代码位于`samples/js-tests/src/Camera3DTest`.
     - LightTest：源代码位于`samples/js-tests/src/LightTest`.
     - Sprite3DTest：源代码位于`samples/js-tests/src/Sprite3DTest`.
+- Cocos2d-JS v3.5移植[FantasyWarriors 3D实例游戏源码](https://github.com/joshuastray/fantasywarrior)
     
 ## 3. [Web平台特性] cc.LayerGradient支持多阶颜色渐变
 
-在Cocos2d-JS v3.4 Web引擎中，你现在可以为颜色渐变图层添加多阶的中间颜色。这是一个Web平台特性，但是同样的代码在原生引擎中也不会造成任何问题（不会有效果），可以放心使用。
+在Cocos2d-JS v3.5 Web引擎中，你现在可以为颜色渐变图层添加多阶的中间颜色。这是一个Web平台特性，但是同样的代码在原生引擎中也不会造成任何问题（不会有效果），可以放心使用。
 
 API：
 
