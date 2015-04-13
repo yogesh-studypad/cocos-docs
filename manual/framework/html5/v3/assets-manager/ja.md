@@ -85,15 +85,15 @@ Cocos2d-JS v3.0 RC0のアセットマネージャーは、ホットアップデ�
 
 マニフェストファイルが大きくなるにつれ、バージョン情報を比較する時間がかかります。`version.manifest`ファイルにはマニフェストファイルの最初の5つのフィールドと同じ情報が含まれていて、バージョン情報を比較する時間を短縮することができます。`version.manifest`ファイルが見つからない場合、直接マニフェストファイルをダウンロードします。
 
-###Usage of jsb.AssetsManager
+###jsb.AssetsManagerの使い方
 
-Here is an example of usage:
+以下が使用例になります。
 
 ```
 var manager = new jsb.AssetsManager(manifestUrl, storagePath);
 
 manager.update();
-// As the process is asynchronised, you need to retain the assets manager to make sure it won't be released before the process is ended.
+// プロセスが終わる前にアセットマネージャーが解放されてしまうとまずいので、参照カウンタを加算します。
 manager.retain();
 
 if (!manager.getLocalManifest().isLoaded()) {
@@ -118,12 +118,12 @@ else {
             case jsb.EventAssetsManager.ALREADY_UP_TO_DATE:
             case jsb.EventAssetsManager.UPDATE_FINISHED:
                 cc.log("Update finished.");
-                // You need to release the assets manager while you are sure you don't need it any more
+                // アセットマネージャーを解放します。
                 manager.release();
                 break;
             case jsb.EventAssetsManager.UPDATE_FAILED:
                 cc.log("Update failed. " + event.getMessage());
-                // Directly update previously failed assets, we suggest you to count and abort after several retry.
+                // アセットのダウンロードに失敗した場合は、何度か再試行を試した後に中止することをオススメします。
                 manager.downloadFailedAssets();
                 break;
             case jsb.EventAssetsManager.ERROR_UPDATING:
@@ -139,7 +139,7 @@ else {
 }
 ```
 
-You can also refer to the test case Extensions/AssetsManagerTest in our js-tests project. Other public APIs of `jsb.AssetsManager` is listed below:
+また、サンプルとしてjs-testsプロジェクト内にExtensions/AssetsManagerTestがあります。`jsb.AssetsManager`のその他のAPIとして以下の様なものがあります。
 
 - checkUpdate()
 - getState()
