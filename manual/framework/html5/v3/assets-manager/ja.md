@@ -147,6 +147,6 @@ else {
 - getLocalManifest()
 - getRemoteManifest()
 
-###Known issue
+###既知の問題
 
-Assets manager may fail to create and download files on windows and iOS simulator, we will try to fix it very soon, please test on real iOS devices in the meantime.
+Windows, iOSシミュレータ上でアセットマネージャーを使用したファイルの作成及びダウンロードに失敗する場合があります。問題が修正されるまでは実機のiOSデバイスを使用するようにしてください。
