@@ -23,6 +23,7 @@
 - [Cocos2d-JS v3.3 release note](v3.3/release-note/en.md)
 - [Cocos2d-JS v3.4 Beta0 release note](v3.4b/release-note/en.md)
 - [Cocos2d-JS v3.5 release note](v3.5/release-note/en.md)
+- [Cocos2d-JS v3.6 Beta release note](v3.6b/release-note/en.md)
 
 #Cocos2d-JS change log
 

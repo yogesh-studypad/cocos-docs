@@ -20,7 +20,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 - [Cocos2d-JS Full Version Download](http://www.cocos2d-x.org/download)
 - [Cocos2d-JS Lite Version](http://www.cocos2d-x.org/filecenter/jsbuilder)
 - [Online API reference](http://www.cocos2d-x.org/wiki/Reference)
-- [Downloadable API reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [Downloadable API reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.5-API.zip)
 - [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## Main features
@@ -60,12 +60,12 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.5](./release-notes/v3.5/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.5](./release-notes/v3.5/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.5](./release-notes/v3.5/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.6 Beta](./release-notes/v3.6b/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.6 Beta](./release-notes/v3.6b/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.6 Beta](./release-notes/v3.6/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
-    - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
+    - [Why use Cocos2d-JS for Game Development](./v2/cocosh5-advantages/en.md)
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes and upgrade guides](./release-notes/en.md)
     
@@ -133,6 +133,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)
     - [How to write your own Plugin for Android](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
     - [Use iOS IAP Plugin](./jsb/plugin-x/ios-iap/en.md)
+    - [How to use Firefox remote debugger](http://cocos2d-x.org/docs/manual/framework/native/v3/js-remote-debugger/en)
 
 - Tutorials
     - [Tutorial root](http://cocos2d-x.org/docs/tutorial/framework/html5/en)

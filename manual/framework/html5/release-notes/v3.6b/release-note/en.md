@@ -16,7 +16,6 @@ One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportun
 * Upgraded support of Cocos editor to the latest version.
 * Added `enumerateChildren` function which support powerful children searching in the child node tree with name and patterns.
 * Added `cc.sys.isObjectValid` for detecting node's validity to prevent the famous `Invalid Native Object` issue.
-* Reactivated Firefox remote debug functionality with SpiderMonkey v33, refer to the [manual document](http://cocos2d-x.org/docs/manual/framework/native/v3/js-remote-debugger/en).
 
 ## Notice
 

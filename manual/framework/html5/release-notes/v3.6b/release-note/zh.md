@@ -14,7 +14,6 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 * 升级Cocos编辑器支持到最新版本。
 * 新增`enumerateChildren`函数支持强大的搜索功能，可以根据名字或名字模式对子节点树中的节点进行搜索。
 * 新增`cc.sys.isObjectValid`以便于检测节点的有效性以避免有名的`Invalid Native Object`错误。
-* 重新开启Firefox远程调试功能，支持SpiderMonkey v33，参考[使用文档](http://cocos2d-x.org/docs/manual/framework/native/v3/js-remote-debugger/en)。
 
 ## 注意事项
 
