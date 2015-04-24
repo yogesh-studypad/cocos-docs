@@ -5,10 +5,10 @@
 
 数据格式包括csb（二进制）和Json文件。
 
-csb（二进制）文件的解析效率高，体积小，安全性能好。适用于cocos2d-x v3.3版本。
+csb（二进制）使用FlatBuffers输出的二进制格式文件，解析效率高、体积小、安全性能好。适用于cocos2d-x C++和LuaBinding版本。
 
 ![Image](res/csb.jpg)
 
-Json文件可读性强。兼容cocos2d-x-JS各主流版本。
+Json文件是轻量级的数据交换格式，可读性强。适用于cocos2d-x-JS。
 
 ![Image](res/json.jpg)
