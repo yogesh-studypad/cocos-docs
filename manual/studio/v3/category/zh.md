@@ -62,7 +62,7 @@
 		 * [3.3.2.4 翻页容器](../chapter3/chapter3/containers/pageview/zh.md)
 	 * 3.3.3 自定义控件
 		 * [3.3.3.1 Armature](../chapter3/chapter3/custom/armature/zh.md)
-	* 3.3.4 3D控件
+	 * 3.3.4 3D控件
     	* [3.3.4.1 基础属性](../chapter3/chapter3/3D/basic-parameter/zh.md)
     	* [3.3.4.2 摄像机](../chapter3/chapter3/3D/camera/zh.md)
     	* [3.3.4.3 模型](../chapter3/chapter3/3D/model/zh.md)
@@ -77,3 +77,4 @@
 * [4 编辑游戏逻辑](../chapter4/directory/zh.md)
  * [4.1 编辑游戏代码](../chapter4/coding/zh.md)
  * [4.2 调试游戏项目](../chapter4/debugging/zh.md)
+* [5 常见问题解答](../chapter5/connect-solution/zh.md)
