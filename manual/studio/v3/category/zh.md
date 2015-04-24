@@ -63,10 +63,10 @@
 	 * 3.3.3 自定义控件
 		 * [3.3.3.1 Armature](../chapter3/chapter3/custom/armature/zh.md)
 	 * 3.3.4 3D控件
-    	 * [3.3.4.1 基础属性](../chapter3/chapter3/3D/basic-parameter/zh.md)
-    	 * [3.3.4.2 摄像机](../chapter3/chapter3/3D/camera/zh.md)
-    	 * [3.3.4.3 模型](../chapter3/chapter3/3D/model/zh.md)
-    	 * [3.3.4.4 3D粒子](../chapter3/chapter3/3D/particle/zh.md)		 
+    	* [3.3.4.1 基础属性](../chapter3/chapter3/3D/basic-parameter/zh.md)
+    	* [3.3.4.2 摄像机](../chapter3/chapter3/3D/camera/zh.md)
+    	* [3.3.4.3 模型](../chapter3/chapter3/3D/model/zh.md)
+    	* [3.3.4.4 3D粒子](../chapter3/chapter3/3D/particle/zh.md)		 
 		
  * [3.4 如何编辑动画](../chapter3/chapter4/how-to-edit-animation/zh.md)
 	 * [3.4.1 添加关键帧](../chapter3/chapter4/add-key-frame/zh.md)
@@ -77,6 +77,4 @@
 * [4 编辑游戏逻辑](../chapter4/directory/zh.md)
  * [4.1 编辑游戏代码](../chapter4/coding/zh.md)
  * [4.2 调试游戏项目](../chapter4/debugging/zh.md)
-* [5 打包游戏项目](../chapter5/directory/zh.md)
- * [5.1 Win32平台的打包](../chapter5/package_win32/zh.md)
- * [5.2 Mac平台的打包](../chapter5/package_mac/zh.md)
+* [5 常见问题解答](../chapter5/connect-solution/zh.md)
