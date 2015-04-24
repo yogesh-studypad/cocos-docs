@@ -78,6 +78,3 @@
 * [4 编辑游戏逻辑](../chapter4/directory/zh.md)
  * [4.1 编辑游戏代码](../chapter4/coding/zh.md)
  * [4.2 调试游戏项目](../chapter4/debugging/zh.md)
-* [5 打包游戏项目](../chapter5/directory/zh.md)
- * [5.1 Win32平台的打包](../chapter5/package_win32/zh.md)
- * [5.2 Mac平台的打包](../chapter5/package_mac/zh.md)
