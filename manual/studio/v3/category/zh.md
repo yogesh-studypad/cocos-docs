@@ -78,4 +78,7 @@
  * [4.1 编辑游戏代码](../directory/zh.md)
  * [4.2 调试游戏项目](../chapter4/debugging/zh.md)
 * [5 常见问题解答](../chapter5/directory/zh.md)
- * [5.1 Andriod设备连接修复教程](../chapter5/connect-solution/zh.md)
+ * [5.1 Android设备连接修复教程](../chapter5/connect-solution/zh.md)
+ * [5.2 导出文件加载教程](../chapter5/load-export-datafile/zh.md)
+ * [5.3 在浏览器调试教程](../chapter5/debug-on-browser/zh.md)
+ * [5.4 升级framework教程](../chapter5/upgrade-framework/zh.md)
