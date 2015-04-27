@@ -61,4 +61,5 @@
 	* [5.1 How to Connect Andorid Devices](../chapter5/connect-solution/en.md)   
 	* [5.2 How to Load Export Datafile](../chapter5/load-export-datafile/en.md) 
 	* [5.3 How to Debug On Browser](../chapter5/debug-on-browser/en.md)     
-	* [5.4 How to Upgrade Framework](../chapter5/upgrade-framework/en.md)    
+	* [5.4 How to Upgrade Framework](../chapter5/upgrade-framework/en.md)
+	* [5.5 Getting Started on Cocos](../chapter5/introduceCocos/en.md)     

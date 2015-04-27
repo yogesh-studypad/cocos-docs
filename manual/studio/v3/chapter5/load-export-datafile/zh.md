@@ -1,0 +1,76 @@
+#如何加载Cocos Studio 2.0版本生成的数据
+使用Cocos Studio v2.0发布的CSB资源更换了加载方式，需要用CSLoader来加载。CSLoader在Cocos2d-x 3.3 RC0开始提供。目前的Cocos Studio支持的语言有C++、js：
+ 
+下面提供的分别为C++、js的代码
+###1.	C++
+    #include "ui/CocosGUI.h"//UI相关的头文件 
+    #include"cocostudio/CocoStudio.h"//在CocosStudio.h 头文件中已经包含了Studio所需要的各个头文件(除CocosGUI)因此我们使用Cocos Studio仅需要包含他就可以 
+    using namespace cocos2d;//CSLoader位于cocos2d命名空间。 
+    using namespace cocostudio::timeline;//动画相关的类位于cocostuio::timeline当中 
+  
+  
+    void myScene::initFunc() 
+    { 
+    //以下是加载相关的代码： 
+    Node *rootNode = CSLoader::createNode("MainScene.csb");//传入Studio2.x的资源路径 
+    this->addChild(rootNode);//假设this是即将显示的scene 
+  
+    //加载动画： 
+    ActionTimeline *action = CSLoader::createTimeline("MainScene.csb"); 
+    rootNode->runAction(action); 
+    //注!!!：同一个文件创建的节点只能使用同一个文件创建的动画。 
+    //嵌套节点的动画会自动加载动画，可以用嵌套节点->getActionByTag(嵌套节点->getTag()) 来获取动画 
+  
+  
+    //播放动画： 
+    action->gotoFrameAndPlay(0,60,true);//从第0帧到60帧循环播放。还有其他重载函数，具体看源码。 
+  
+  
+    //帧事件监听 
+    action->setFrameEventCallFunc(CC_CALLBACK_1(myScene::onFrameEvent, this)); 
+    //关于CC_CALLBACK_1需要点C++11的基础才能知道是咋回事，这里只要照着写就行。想了解可以查下std::Bind 
+    } 
+    void myScene::onFrameEvent(Frame* frame)//固定的格式 
+    { 
+     EventFrame* evnt = dynamic_cast<EventFrame*>(frame); 
+     if(!evnt) 
+        return; 
+  
+    std::string str = evnt->getEvent(); 
+     if (str == "xxoo") 
+     { 
+        CCLOG("come on baby"); 
+     } 
+    }
+###2. js
+    var res=
+    {
+	 HelloWorld_png:"res/HelloWorld.png",
+	 MainScene_json:"res/MainScene.json"
+    };
+
+    var g_resource=[];
+    for(var i inres)
+    {
+	 g_resource.push(res[i]);
+    }
+
+    var HelloWorldLayer=cc.Layer.extend{{
+    sprite:null,
+    ctor:function()
+     {
+     this._super();
+     var size=cc.winSize;
+     var mainscene=ccs.load(res.MainScene_json);
+     this.addChild(mainscene.node);
+
+     return true;
+     }
+     }};
+###3. lua
+
+####注: 
+
+1. 2.1及其以上版本的Cocos Studio导出的数据，cocos2d-x 3.4及其以上版本和cocos2d-js 3.3及其以上的版本均可以加载。 
+
+2. Cocos Studio v2.x 假定在编辑器里边的资源目录即游戏的最终的目录结构，因而如果你修改了导出资源的目录则需要编辑器目录也需要跟着修改。也可以用addSearchPath来把你的路径添加到FileUtils中，但要注意文件名冲突。 

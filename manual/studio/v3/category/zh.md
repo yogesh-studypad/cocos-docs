@@ -82,3 +82,4 @@
  * [5.2 导出文件加载教程](../chapter5/load-export-datafile/zh.md)
  * [5.3 在浏览器调试教程](../chapter5/debug-on-browser/zh.md)
  * [5.4 升级framework教程](../chapter5/upgrade-framework/zh.md)
+ * [5.5 Cocos入门教程](../chapter5/introduceCocos/zh.md)

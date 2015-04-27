@@ -6,4 +6,5 @@
 ####[导出文件加载教程](../load-export-datafile/zh.md)
 ####[在浏览器调试教程](../debug-on-browser/zh.md) 
 ####[升级framework教程](../upgrade-framework/zh.md)
+####[Cocos入门教程](../introduceCocos/zh.md)
 
