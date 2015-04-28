@@ -39,6 +39,7 @@
 	 * [3.2.5 第五步：调试游戏项目](../chapter3/chapter2/debug/zh.md)
 	 * [3.2.6 第六步：输出游戏资源](../chapter3/chapter2/publish-game/about/zh.md)
 	 	 * [3.2.6.1 构建发布](../chapter3/chapter2/publish-game/publish/zh.md)
+	 	 * [3.2.6.2 项目打包]../chapter3/chapter2/publish-game/package/zh.md）
  * [3.3 如何使用控件](../chapter3/chapter3/how-to-use-controls/zh.md)
 	 * [3.3.1 基础控件](../chapter3/chapter3/basic-controls/about/zh.md)
 		 * [3.3.1.1 按钮](../chapter3/chapter3/basic-controls/button/zh.md)
@@ -62,11 +63,11 @@
 		 * [3.3.2.4 翻页容器](../chapter3/chapter3/containers/pageview/zh.md)
 	 * 3.3.3 自定义控件
 		 * [3.3.3.1 Armature](../chapter3/chapter3/custom/armature/zh.md)
-	* 3.3.4 3D控件
-    	* [3.3.4.1 基础属性](../chapter3/chapter3/3D/basic-parameter/zh.md)
-    	* [3.3.4.2 摄像机](../chapter3/chapter3/3D/camera/zh.md)
-    	* [3.3.4.3 模型](../chapter3/chapter3/3D/model/zh.md)
-    	* [3.3.4.4 3D粒子](../chapter3/chapter3/3D/particle/zh.md)		 
+	 * 3.3.4 3D控件
+    	 * [3.3.4.1 基础属性](../chapter3/chapter3/3D/basic-parameter/zh.md)
+    	 * [3.3.4.2 摄像机](../chapter3/chapter3/3D/camera/zh.md)
+    	 * [3.3.4.3 模型](../chapter3/chapter3/3D/model/zh.md)
+    	 * [3.3.4.4 3D粒子](../chapter3/chapter3/3D/particle/zh.md)		 
 		
  * [3.4 如何编辑动画](../chapter3/chapter4/how-to-edit-animation/zh.md)
 	 * [3.4.1 添加关键帧](../chapter3/chapter4/add-key-frame/zh.md)
@@ -77,3 +78,11 @@
 * [4 编辑游戏逻辑](../chapter4/directory/zh.md)
  * [4.1 编辑游戏代码](../chapter4/coding/zh.md)
  * [4.2 调试游戏项目](../chapter4/debugging/zh.md)
+* [5 常见问题解答](../chapter5/directory/zh.md)
+ * [5.1 Android设备连接修复教程](../chapter5/connect-solution/zh.md)
+ * [5.2 导出文件加载教程](../chapter5/load-export-datafile/zh.md)
+ * [5.3 在浏览器调试教程](../chapter5/debug-on-browser/zh.md)
+ * [5.4 升级framework教程](../chapter5/upgrade-framework/zh.md)
+ * [5.5 Cocos入门教程](../chapter5/introduceCocos/zh.md)
+
+
