@@ -31,6 +31,7 @@ For JSB build, there are some restrictions :
 - [Cocos2d-JS Lite Version](http://cocos2d-x.org/filecenter/jsbuilder/)
 - [Cocos Dev Tool](http://h5.cocos.com/static/cocos-devtools/index-en.html)
 - [Online API reference](http://www.cocos2d-x.org/wiki/reference/)
+- [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.6-API.zip)
 - [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## More information

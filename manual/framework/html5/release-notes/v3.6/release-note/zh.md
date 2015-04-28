@@ -29,6 +29,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 - [Cocos2d-JS Lite Version](http://cocos2d-x.org/filecenter/jsbuilder/)
 - [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/)
 - [在线API索引](http://www.cocos2d-x.org/wiki/reference/)
+- [下载版API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.6-API.zip)
 - [在线测试例](http://cocos2d-x.org/js-tests/)
 
 ## 详细更改
