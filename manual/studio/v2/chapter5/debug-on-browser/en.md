@@ -2,6 +2,7 @@
 For a JS project, after clicking “run in the browser”, these may appear something wrong with the preview effect. This tutorial aims to help you solve this problem with the following two methods. 
 
 1.	Drop the scene files used in the current browser to the list of JS projects src/resource.js. For example, 
+
 Original resource.js:
 
  ![image](res/image001.png)

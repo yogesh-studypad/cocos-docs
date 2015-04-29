@@ -8,21 +8,25 @@ Cocos是全球最受欢迎的移动游戏开发解决方案，无论您是开发
 ![image](res/image001.png)
 
 Cocos项目整合了资源编辑、代码编辑，真机运行以及游戏打包的功能：
+
 资源编辑：通过Cocos可以直接进行游戏界面（UI），2D/3D场景（Scene），动画（Animation）的编辑，同时支持国内外最优秀工具产出的数据，比如：支持TexturePacker产出的plist合图数据，支持Flash产出的动画数据，支持Particle Designer以及Particle Universe产出的粒子数据，支持3DMax产出的3D模型/动画数据等等，这些优秀的工具不用再去google搜索下载，我们已经把它们添加到Cocos启动页“商店”里面，大家可以直接到商店里面免费下载使用，如下图：
+
+![image](res/image002.png)
+
+代码编辑：Cocos项目支持lua，js，C++三种语言，支持Visual Studio， XCode， CodeIDE进行游戏代码编写与调试，Visual Studio，XCode分别是Windows和Mac系统上最强的代码IDE，CodeIDE是由触控开发的专门针对于lua，js两种语言的代码编写与调试工具，大家可以根据喜好选择使用。
+
+真机运行：在游戏开发过程中，Cocos支持运行项目在android，ios手机上，windows和Mac操作系统上以及浏览器上， 如下图：
 
 ![image](res/image003.png)
 
-代码编辑：Cocos项目支持lua，js，C++三种语言，支持Visual Studio， XCode， CodeIDE进行游戏代码编写与调试，Visual Studio，XCode分别是Windows和Mac系统上最强的代码IDE，CodeIDE是由触控开发的专门针对于lua，js两种语言的代码编写与调试工具，大家可以根据喜好选择使用。
-真机运行：在游戏开发过程中，Cocos支持运行项目在android，ios手机上，windows和Mac操作系统上以及浏览器上， 如下图：
+游戏打包：当游戏开发完毕之后，可以通过Cocos生成游戏App，支持android，ios，HTML5 App的生成，如下图：
 
 ![image](res/image004.png)
 
-游戏打包：当游戏开发完毕之后，可以通过Cocos生成游戏App，支持android，ios，HTML5 App的生成，如下图：
-
-![image](res/image005.png)
-
 
 ###二、新建Cocos项目：
+
+![image](res/image005.png)
  
 Cocos新建项目可以设置项目的名称，项目路径，屏幕方向，引擎的版本，项目语言以及附加功能。
 
@@ -39,7 +43,9 @@ Cocos新建项目可以设置项目的名称，项目路径，屏幕方向，引
 
 ###三、点击完成。
    根据参数选择好自己想要的，点击完成，Cocos项目被创建出来了:
-![image](res/image001.png)
+
+![image](res/image006.png)
+
    学习使用Cocos制作闹钟：[http://cn.cocos2d-x.org/tutorial/show?id=2438](http://cn.cocos2d-x.org/tutorial/show?id=2438)
 
    学习使用Cocos打包：[http://cn.cocos2d-x.org/tutorial/show?id=2419](http://cn.cocos2d-x.org/tutorial/show?id=2419)

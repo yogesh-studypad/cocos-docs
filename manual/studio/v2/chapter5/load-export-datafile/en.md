@@ -26,7 +26,7 @@ CSB files, published by cocos v2.0, need to be loaded with CSLoader. CSLoader ha
      { 
         CCLOG("come on baby"); 
      } 
-}
+    }
 
 ###2. js
 

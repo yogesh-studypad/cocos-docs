@@ -14,9 +14,9 @@ There are a few reasons why you might be getting an error message when trying to
 
 The default option may be "charging". The issue can be solved by changing the mode to "mass storage". Different devices have different options. I choose two popular mobiles to show how to changing the connection modes.
 
-(1) Samsung
+####(1) Samsung
        
-   1) If the following picture appears when connect Samsung devices to the computer, you need to change the connection option. Then slide down the screen.
+1) If the following picture appears when connect Samsung devices to the computer, you need to change the connection option. Then slide down the screen.
 
  ![image](res/image001.png)
 
@@ -30,7 +30,7 @@ The default option may be "charging". The issue can be solved by changing the mo
  
 ![image](res/image004.png)
  
-(2) Huawei
+####(2) Huawei
       
 1）Usually, a pop-up window will appear to select connection mode after connecting the device. Enable "Media Device (MTP)", and the system will find the phone.
 
@@ -57,6 +57,5 @@ USB debugging mode is also Developer mode, allows apps to be copied via USB to t
 (3) Android 4.1.X，Settings > Developer Options > Enable “USB Debugging”.
 
 (4) Android 4.2 - Android 4.3，Settings > "About phone” > "Build Number” > Developer Options> Enable “USB Debugging”.
-
 
 7.Restart the computer or Android device Multiple programs are running at the same time, and that leads to timeout errors. Restart the Android device, run Cocos Studio, try to connect again.
