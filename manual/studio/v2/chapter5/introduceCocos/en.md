@@ -44,8 +44,3 @@ Extra functions: For Android devices, enable "support x86 architecture CPU", the
 Customize settings, and click "OK". A cocos project is thus created. 
 
 ![image](res/image006.png)
-
-Develop a “Clock” game with cocos:[http://cn.cocos2d-x.org/tutorial/show?id=2438](http://cn.cocos2d-x.org/tutorial/show?id=2438)
-
-How to package projects with cocos:
-[http://cn.cocos2d-x.org/tutorial/show?id=2419](http://cn.cocos2d-x.org/tutorial/show?id=2419)
