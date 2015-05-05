@@ -31,7 +31,7 @@ Follow these steps can help you upgrade to v3.5, then create a project and at la
 
 ## 2. [Native Exclusive] Create 3D games
 
-The biggest feature in Cocos2d-JS v3.5 is the 3D modules. We have bound Cocos2d-x's 3D modules to JSB, so that you can now code 3D games using JavaScript. Please note that it's a native engine exclusive feature, you can not use 3D classes in the web engine. We are not planning to support 3D for the web in the near future.
+The biggest feature in Cocos2d-JS v3.5 is the 3D modules. We have bound Cocos2d-x's 3D modules to JSB, so that you can now code 3D games using JavaScript. Please note that they are native engine exclusive features, you can not use 3D classes in the web engine. We are not planning to support 3D for the web in the near future.
 
 All bound 3D classes or objects are listed here:
 

@@ -1,7 +1,7 @@
 #如何加载cocos 2.0版本生成的数据
-使用Cocos v2.0发布的CSB资源更换了加载方式，需要用CSLoader来加载。CSLoader在Cocos2d-x 3.3 RC0开始提供。目前的cocos支持的语言有C++、js：
+使用Cocos v2.0发布的CSB资源更换了加载方式，需要用CSLoader来加载。CSLoader在Cocos2d-x 3.3 RC0开始提供。目前的cocos支持的语言有C++、js、lua：
  
-下面提供的分别为C++、js的代码
+下面提供的分别为C++、js、lua的代码
 ###1.	C++
     #include "ui/CocosGUI.h"//UI相关的头文件 
     #include"cocostudio/CocoStudio.h"//在CocosStudio.h 头文件中已经包含了cocos所需要的各个头文件(除CocosGUI)因此我们使用Cocos仅需要包含他就可以 
@@ -43,6 +43,8 @@
      } 
     }
 ###2. js
+resource.js
+
     var res=
     {
 	 HelloWorld_png:"res/HelloWorld.png",
@@ -55,6 +57,8 @@
 	 g_resource.push(res[i]);
     }
 
+app.js
+
     var HelloWorldLayer=cc.Layer.extend{{
     sprite:null,
     ctor:function()
@@ -62,15 +66,46 @@
      this._super();
      var size=cc.winSize;
      var mainscene=ccs.load(res.MainScene_json);
+     var action = mainscene.action;
+
+        if(action){
+
+        	mainscene.node.runAction(action);
+
+        	action.gotoFrameAndPlay(0,true);
+
+        }
+
      this.addChild(mainscene.node);
 
      return true;
      }
      }};
+
 ###3. lua
+
+    local function RunExportedCSB(csbFileName)
+       -- get root node from csb file.
+       local node = cc.CSLoader:createNode(csbFileName)
+       -- run animation in the scene
+       local action = cc.CSLoader:createTimeline(csbFileName)
+       node:runAction(action)
+       action:gotoFrameAndPlay(0, true)
+
+       -- add csb returned node to scene.
+       local runningScene = cc.Director:getInstance():getRunningScene()
+       if runningScene then
+          runningScene:addChild(node)
+       end
+    end
+
+
+相关代码可参考 src\app\views\MainScene.lua和 src\packages\mvc\ViewBase.lua文件。
 
 ####注: 
 
-1. 2.1及其以上版本的cocos导出的数据，Cocos2d-x 3.4及其以上版本和cocos2d-js 3.3及其以上的版本均可以加载。 
+1. 您可以在发布工程目录的 res 子目录中找到发布出来的csb文件。
 
-2. Cocos v2.x 假定在编辑器里边的资源目录即游戏的最终的目录结构，因而如果你修改了导出资源的目录则需要编辑器目录也需要跟着修改。也可以用addSearchPath来把你的路径添加到FileUtils中，但要注意文件名冲突。 
+2. 2.1及其以上版本的cocos导出的数据，Cocos2d-x 3.4及其以上版本和cocos2d-js 3.3及其以上的版本均可以加载。 
+
+3. Cocos v2.x 假定在编辑器里边的资源目录即游戏的最终的目录结构，因而如果你修改了导出资源的目录则需要编辑器目录也需要跟着修改。也可以用addSearchPath来把你的路径添加到FileUtils中，但要注意文件名冲突。 

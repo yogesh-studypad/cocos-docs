@@ -74,14 +74,14 @@ Cocos2d-JS提供了Cocos Console工具来简化html5和JSB游戏的创建和开�
 
 	```
 	cd directory/to/project
-	cocos compile -p ios|mac|android|web
-	cocos run -p ios|mac|android
+	cocos compile -p ios|mac|android|win32
+	cocos run -p ios|mac|win32|android
 	```
 
 * 选项
 
 	```
-	-p platform : 平台：ios|mac|android|web.
+	-p platform : 平台：ios|mac|android|win32|web.
 	-s source   : 项目目录，如果没有指明会使用当前路径。
 	-q          : 静默模式，不打印log信息。
 	-m mode     : 选择debug或release模式，默认为debug模式

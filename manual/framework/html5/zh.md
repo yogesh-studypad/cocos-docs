@@ -20,7 +20,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
 - [Cocos2d-JS Full Version下载链接](http://cn.cocos2d-x.org/download)
 - [Cocos2d-JS Lite Version下载链接](http://www.cocos2d-x.org/filecenter/jsbuilder)
 - [在线API索引](http://www.cocos2d-x.org/wiki/Reference)
-- [下载API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [下载API索引](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.5-API.zip)
 - [在线测试例](http://cocos2d-x.org/js-tests/)
 
 ## 主要特性
@@ -60,13 +60,12 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
    
 ## 文档
 
-- [Cocos2d-JS v3.5发布说明](./release-notes/v3.5/release-note/zh.md)
-- [Cocos2d-JS v3.5改动列表](./release-notes/v3.5/changelog/en.md)
-- [Cocos2d-JS v3.5升级指南](./release-notes/v3.5/upgrade-guide/zh.md)
+- [Cocos2d-JS v3.6发布说明](./release-notes/v3.6/release-note/zh.md)
+- [Cocos2d-JS v3.6改动列表](./release-notes/v3.6/changelog/en.md)
+- [Cocos2d-JS v3.6升级指南](./release-notes/v3.6/upgrade-guide/zh.md)
 
 - 综述
     - [Lite Version工作流](./v3/lite-version/zh.md)
-	- [Cocos2d-JS 2.x新手入门](./v2/getting-started_with-cocos2d-html5/zh.md)
 	- [历史版本发布说明和升级文档](./release-notes/zh.md)
 	
 - 初步了解Cocos2d-html5
@@ -109,6 +108,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [Plugin-x的框架](./jsb/plugin-x/plugin-x-architecture/zh.md)
     - [如何为Android开发自己的Plugin](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
     - [使用iOS支付插件](./jsb/plugin-x/ios-iap/zh.md)
+    - [如何使用Firefox远程调试工具](http://cocos2d-x.org/docs/manual/framework/native/v3/js-remote-debugger/en)
     - Facebook Integration for Cocos2d-JS
         - [Cocos2d-x的Facebook集成](./facebook-sdk/zh.md)
         - [Facebook API Reference for Cocos2d-JS](./facebook-sdk/api-reference/zh.md)
