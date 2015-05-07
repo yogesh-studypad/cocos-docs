@@ -1,6 +1,6 @@
 # Cocos2d-JS
 
-<img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
+<img src="http://cocos2d-x.org/s/images/img-cocos2djs.jpg" height=180> 
 
 Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It equips your game with cross-browser and cross-platform abilities, accompanied by full Cocos2d-x features and simplified JavaScript friendly APIs.
 
@@ -20,7 +20,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 - [Cocos2d-JS Full Version Download](http://www.cocos2d-x.org/download)
 - [Cocos2d-JS Lite Version](http://www.cocos2d-x.org/filecenter/jsbuilder)
 - [Online API reference](http://www.cocos2d-x.org/wiki/Reference)
-- [Downloadable API reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [Downloadable API reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.5-API.zip)
 - [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## Main features
@@ -60,12 +60,12 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.3](./release-notes/v3.3/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.3](./release-notes/v3.3/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.3](./release-notes/v3.3b/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.6](./release-notes/v3.6/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.6](./release-notes/v3.6/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.6](./release-notes/v3.6/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
-    - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
+    - [Why use Cocos2d-JS for Game Development](./v2/cocosh5-advantages/en.md)
     - [Resolution Policy Design for Cocos2d-JS](./v2/resolution-policy-design/en.md)
     - [History release notes and upgrade guides](./release-notes/en.md)
     
@@ -133,6 +133,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Plugin-x architecture](./jsb/plugin-x/plugin-x-architecture/en.md)
     - [How to write your own Plugin for Android](./jsb/plugin-x/how-to-write-your-own-plugin-for-android/en.md)
     - [Use iOS IAP Plugin](./jsb/plugin-x/ios-iap/en.md)
+    - [How to use Firefox remote debugger](http://cocos2d-x.org/docs/manual/framework/native/v3/js-remote-debugger/en)
 
 - Tutorials
     - [Tutorial root](http://cocos2d-x.org/docs/tutorial/framework/html5/en)

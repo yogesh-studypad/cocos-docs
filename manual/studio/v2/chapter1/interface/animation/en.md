@@ -42,7 +42,7 @@ Add frame: add a key frame on the timeline when you click the selected position.
 
 Automatic recording frame: what you do after the click will be recorded in the current frame, become the key frame, by modifying the widget property in different frames, you can create rich and colorful animation effects
 
-Orion Skin: use the current frame as the foundation, the frame around the current frame show up through to assist with animation editing.
+Onion Skin: use the current frame as the foundation, the frame around the current frame show up through to assist with animation editing.
 
 
 ![Image](res/image018.png)
