@@ -50,3 +50,17 @@ Cocos Code IDE 支持一键打包 Android APK、iOS IPA。如果你使用了正�
 
 ![](http://files.cocos2d-x.org/images/orgsite/codeide-p5.gif)
 
+## Cocos Code IDE for Interllij（新）
+继承了Cocos Code IDE上原有的功能，在编辑器上的体验有了质的提高，并且拥有了同webstorm一样强大的js编辑器，让您编写js代码更加得心应手，lua编辑器和代码调试性能也得到进一步地提升。编译打包功能也都移植到了上面。
+
+[IDEA版本的安装和简介](./install-idea-zh.md)
+
+![](./res/cocos-code-idea-jseditor.jpg)
+
+## 开始安装
+
++ [Cocos 下载页](http://cn.cocos2d-x.org/download)
++ [Cocos Code IDE安装指南](./install-zh.md)
+
+
+
