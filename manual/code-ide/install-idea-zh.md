@@ -63,7 +63,6 @@ Other Settings -> Cocos 在此处可以配置python、SDK、NDK、ANT、JDK的�
 
 ![](./res/idea/other/native-and-build.jpg)
 
-
 ###新建项目
 
 1.当你配置好引擎和设置好环境后，就可以开始新建项目了。点击File->New Project
@@ -77,6 +76,25 @@ Other Settings -> Cocos 在此处可以配置python、SDK、NDK、ANT、JDK的�
 2.进入新建项目的向导,就可以选择新建Cocos JS或者Cocos Lua项目
 
 ![](./res/idea/project/new-project-wizard.jpg)
+
+###导入已有的Cocos Code IDE项目（旧版本）
+
+File->New->Project from Existing Sources
+
+![](./res/idea/project/import-project-1.jpg)
+
+选择Import project from external model，选中Eclipse
+
+![](./res/idea/project/import-project-2.jpg)
+
+勾选根项目(TestJSProject)，注意不要勾选frameworks下的源码项目
+
+![](./res/idea/project/import-project-3.jpg)
+
+一直Next，直到把项目导入。打开项目.impl文件，找到JAVA\_MODULE改成
+COCOS\_JS\_MODULE或者COCOS\_LUA\_MODULE（根据你的项目类型）。然后重启IDEA，旧版本的项目就导入成功。
+
+![](./res/idea/project/import-project-4.jpg)
 
 ###调试
 
