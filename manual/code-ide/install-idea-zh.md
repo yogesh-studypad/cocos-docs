@@ -61,7 +61,7 @@ Cocos Code IDE for Intellij IDEA下载和安装
 
 Other Settings -> Cocos 在此处可以配置python、SDK、NDK、ANT、JDK的路径。
 
-![](./res/idea/other/native-and-build.jpg)
+![](./res/idea/settings/cocos.jpg)
 
 ###新建项目
 
