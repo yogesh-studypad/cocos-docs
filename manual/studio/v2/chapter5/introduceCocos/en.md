@@ -1,4 +1,4 @@
-#Started on Cocos
+#Getting Started on Cocos
 
 
 Welcome to cocos!
