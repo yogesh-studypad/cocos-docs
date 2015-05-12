@@ -6,9 +6,9 @@ Cocos Code IDE for Intellij IDEA安装说明
 你可以通过[这篇文章](../zh.md)了解 Cocos Code IDE 的功能。
 
 
-关于IDEA平台版本适配说明
+关于Intellij IDEA平台版本适配说明
 ----------
-从Cocos Code IDE 2.0.0beta开始都是在IDEA平台上，如果你要下载基于Ecipse平台的IDE，
+从Cocos Code IDE 2.0.0beta开始都是在Intellij IDEA平台上，如果你要下载基于Ecipse平台的IDE，
 请下载2.0.0之前的版本。
 
 安装环境
@@ -19,13 +19,15 @@ Cocos Code IDE for Intellij IDEA下载和安装
 ---------
 请从[Cocos2dx官网下载页](http://cn.cocos2d-x.org/download/)下载Cocos Code IDE 2.0.0beta或者更高的版本。
 
-目前提供了Windows和Mac平台的安装版本，同时，也提供了一个IDEA插件，如果你已经拥有了自己的IDEA，就可以选择使用插件的方式进行安装。特别注意，请选择IDEA 14安装插件。
+目前提供了Windows和Mac平台的安装版本，同时，也提供了一个Intellij IDEA插件，如果你已经拥有了自己的Intellij IDEA，就可以选择使用插件的方式进行安装。特别注意，请选择Intellij IDEA 14安装插件。Intellij分为社区版和专业版，社区版是免费的，专业版需要收费。功能上专业版有更强大的功能，比如在代码提示，编辑体验上。
 
 ###Windows和Mac平台安装
 双击Windows或Mac平台的安装程序cocos-code-ide.exe、cocos-code-ide.dmg，按照向导说明即可完成安装。
 
 ###插件安装
-请选择IDEA 14版本安装插件，推荐14.1
+请选择Intellij IDEA 14版本安装插件，推荐专业版14.1
+
+[Intellij IDEA 14下载地址](https://www.jetbrains.com/idea/download/)
 
 1.选择File->settings
  
