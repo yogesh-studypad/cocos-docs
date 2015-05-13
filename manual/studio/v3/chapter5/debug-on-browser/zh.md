@@ -31,7 +31,8 @@
 
 设置-》开发者-》浏览器控制台-》JS
 
-![image](res/image006.png) ![image](res/image007.png)   
+![image](res/image006.png) ![image](res/image007.png)
+   
 ![image](res/image008.png) 
 
  

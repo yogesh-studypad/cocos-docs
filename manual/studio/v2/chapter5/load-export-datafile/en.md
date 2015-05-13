@@ -26,7 +26,7 @@ CSB files, published by cocos v2.0, need to be loaded with CSLoader. CSLoader ha
      { 
         CCLOG("come on baby"); 
      } 
-}
+    }
 
 ###2. js
 
@@ -53,6 +53,16 @@ app.js
      this._super();
      var size=cc.winSize;
      var mainscene=ccs.load(res.MainScene_json);
+     var action = mainscene.action;
+
+        if(action){
+
+        	mainscene.node.runAction(action);
+
+        	action.gotoFrameAndPlay(0,true);
+
+        }
+
      this.addChild(mainscene.node);
 
      return true;
@@ -64,11 +74,15 @@ app.js
     local function RunExportedCSB(csbFileName)
        -- get root node from csb file.
        local node = cc.CSLoader:createNode(csbFileName)
+       -- run animation in the scene
+       local action = cc.CSLoader:createTimeline(csbFileName)
+       node:runAction(action)
+       action:gotoFrameAndPlay(0, true)
 
        -- add csb returned node to scene.
        local runningScene = cc.Director:getInstance():getRunningScene()
        if runningScene then
-              runningScene:addChild(node)
+        runningScene:addChild(node)
        end
     end
 
