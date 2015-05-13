@@ -1,4 +1,4 @@
-#Upgrade guide from Cocos2d-JS v3.5 to Cocos2d-JS v3.6
+#Upgrade guide from Cocos2d-JS v3.5 to Cocos2d-JS v3.6.1
 
 ## 0. Upgrade to Cocos2d-JS v3.5
 
@@ -21,7 +21,7 @@ To know how to use the new 3D modules, please refer to the following documents:
 - Cocos [3d module's API reference](http://www.cocos2d-x.org/reference/native-cpp/V3.5/dir_0cec398151724e9e1c180a4e8f99801b.html)
 - Cocos [Camera API reference](http://www.cocos2d-x.org/reference/native-cpp/V3.5/d6/d2b/classcocos2d_1_1_camera.html)
 - Cocos [Light API reference](http://www.cocos2d-x.org/reference/native-cpp/V3.5/d2/d85/classcocos2d_1_1_base_light.html)
-- Test cases in the Cocos2d-JS v3.6 package, run it with projects in `build` folder or using `cocos run` command under `samples/js-tests` folder. You can refer to the following test cases:
+- Test cases in the Cocos2d-JS v3.6.1 package, run it with projects in `build` folder or using `cocos run` command under `samples/js-tests` folder. You can refer to the following test cases:
     - BillBoardTest: source code in `samples/js-tests/src/BillBoardTest`.
     - Camera3DTest: source code in `samples/js-tests/src/Camera3DTest`.
     - LightTest: source code in `samples/js-tests/src/LightTest`.

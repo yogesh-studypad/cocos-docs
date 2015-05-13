@@ -1,4 +1,4 @@
-#从Cocos2d-JS v3.5到v3.6升级指南
+#从Cocos2d-JS v3.5到v3.6.1升级指南
 
 ## 0. 升级到Cocos2d-JS v3.5
 
@@ -6,7 +6,7 @@
 
 ## 1. [原生平台特性] 新的3D功能：地形和天空盒
 
-在Cocos2d-JS v3.6中我们新增了两个3D功能：天空盒和地形。**请注意**，这是一个原生平台独占的特性，你不能够在Web引擎中使用这些3D功能，我们在短期内也没有计划在Web引擎中支持3D。
+在Cocos2d-JS v3.6.1中我们新增了两个3D功能：天空盒和地形。**请注意**，这是一个原生平台独占的特性，你不能够在Web引擎中使用这些3D功能，我们在短期内也没有计划在Web引擎中支持3D。
 
 新绑定的3D类或对象列举如下：
 
@@ -21,7 +21,7 @@ jsb.Skybox
 - Cocos [3D模块API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.5/dir_0cec398151724e9e1c180a4e8f99801b.html)
 - Cocos [Camera类API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.5/d6/d2b/classcocos2d_1_1_camera.html)
 - Cocos [Light类API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.5/d2/d85/classcocos2d_1_1_base_light.html)
-- Cocos2d-JS v3.6测试用例，可以通过`build`文件夹中的Visual Studio工程来运行，或者在`samples/js-tests`目录下执行`cocos run`命令。运行成功后你可以参考下面的测试用例：
+- Cocos2d-JS v3.6.1测试用例，可以通过`build`文件夹中的Visual Studio工程来运行，或者在`samples/js-tests`目录下执行`cocos run`命令。运行成功后你可以参考下面的测试用例：
     - BillBoardTest：源代码位于`samples/js-tests/src/BillBoardTest`.
     - Camera3DTest：源代码位于`samples/js-tests/src/Camera3DTest`.
     - LightTest：源代码位于`samples/js-tests/src/LightTest`.
@@ -31,7 +31,7 @@ jsb.Skybox
 
 ## 2. 新API：`cc.sys.isObjectValid`
 
-在Cocos2d-JS v3.6中，我们提供了一个新的API：`cc.sys.isObjectValid`，用来检查一个对象是否还有效。检测的结果在Web引擎和原生引擎中逻辑不同。
+在Cocos2d-JS v3.6.1中，我们提供了一个新的API：`cc.sys.isObjectValid`，用来检查一个对象是否还有效。检测的结果在Web引擎和原生引擎中逻辑不同。
 
 ```
 var valid = cc.sys.isObjectValid(object);
