@@ -1,221 +1,54 @@
-#从Cocos2d-JS v3.0 beta到Cocos2d-JS v3.0 Final
+#从Cocos2d-JS v3.5到v3.6.1升级指南
 
-## 0. 首先你需要知道如何从Cocos2d-JS v2.x升级到v3.0 beta
+## 0. 升级到Cocos2d-JS v3.5
 
-如果你还在使用Cocos2d-html5或者JSB v2.x，你将需要首先完成2.x到3.0 beta的升级：请参考这篇的文档：[#从Cocos2d-html5 v2.2.x到Cocos2d-JS v3.0 alpha2升级指南](../../v3.0a/upgrade-guide/zh.md)
+如果你还在使用Cocos2d-html5或者较早版本的Cocos2d-JS，你可以首先参考之前版本的升级指南来升级 : [历史版本升级指南](../../zh.md)
 
-## 1. cc.Layer的静态缓存功能
+## 1. [原生平台特性] 新的3D功能：地形和天空盒
 
-在v3.0中，你可以将一个图层静态缓存起来，这将极大得减少该图层的绘制数，使你的游戏更加高效，当然，请只缓存那些不经常更新的图层，否则缓存将消耗更大。
+在Cocos2d-JS v3.6.1中我们新增了两个3D功能：天空盒和地形。**请注意**，这是一个原生平台独占的特性，你不能够在Web引擎中使用这些3D功能，我们在短期内也没有计划在Web引擎中支持3D。
 
-```
-var layer = new cc.Layer();
-// 启用静态缓存
-layer.bake();
-
-// 取消静态缓存
-layer.unbake();
-```
-
-详细信息请查看[Bake功能使用说明](../../../v3.0/bake-layer/zh.md)。
-
-## 2. 对象缓冲池：`cc.pool`
-
-一个通用的对象缓冲池实现被添加到了v3.0中：`cc.pool`，当你的游戏中有需要大规模创建或重用的对象的时候，缓冲池可以帮助你显著改善运行的效率。
-
-一些常见的应用场景：
-    - 游戏中的子弹（生命周期短，大规模创建和重用，对其他对象没有非常大的影响）
-    - Candy Crash中的方块（大规模创建和重用）
-    - 其他很多情况...
-
-当你不再需要一个对象并且希望它可以被复用的时候，你就可以用`cc.pool.putInPool(obj)`将它加到缓冲池中。
+新绑定的3D类或对象列举如下：
 
 ```
-layer.removeChild(sprite);
-cc.pool.putInPool(sprite);
+jsb.Terrain
+jsb.TextureCube
+jsb.Skybox
 ```
 
-当你希望从缓冲池中获取一个对象的时候，你可以使用`cc.pool.getFromPool()`。
+现在想要知道如何使用3D模块，你可以参考下面的文档和范例代码：
+
+- Cocos [3D模块API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.5/dir_0cec398151724e9e1c180a4e8f99801b.html)
+- Cocos [Camera类API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.5/d6/d2b/classcocos2d_1_1_camera.html)
+- Cocos [Light类API文档](http://www.cocos2d-x.org/reference/native-cpp/V3.5/d2/d85/classcocos2d_1_1_base_light.html)
+- Cocos2d-JS v3.6.1测试用例，可以通过`build`文件夹中的Visual Studio工程来运行，或者在`samples/js-tests`目录下执行`cocos run`命令。运行成功后你可以参考下面的测试用例：
+    - BillBoardTest：源代码位于`samples/js-tests/src/BillBoardTest`.
+    - Camera3DTest：源代码位于`samples/js-tests/src/Camera3DTest`.
+    - LightTest：源代码位于`samples/js-tests/src/LightTest`.
+    - Sprite3DTest (包含天空盒测试例)：源代码位于`samples/js-tests/src/Sprite3DTest`.
+    - TerrainTest: 源代码位于`samples/js-tests/src/TerrainTest`.
+- Cocos2d-JS v3.5移植[FantasyWarriors 3D实例游戏源码](https://github.com/joshuastray/fantasywarrior)
+
+## 2. 新API：`cc.sys.isObjectValid`
+
+在Cocos2d-JS v3.6.1中，我们提供了一个新的API：`cc.sys.isObjectValid`，用来检查一个对象是否还有效。检测的结果在Web引擎和原生引擎中逻辑不同。
 
 ```
-cc.pool.getFromPool(cc.Sprite, "a.png");
+var valid = cc.sys.isObjectValid(object);
 ```
 
-你可以使用`cc.pool.hasObj(cc.Sprite)`检测缓冲池中是否有`cc.Sprite`类的可用对象。
+在Web引擎中，一个对象只要不是`null`或`undefined`，那么它就是有效的。
 
-你也可以使用`cc.pool.drainAllPool()`去清空所有缓冲池。
+在原生引擎中，当JS对象和它对应的原生C++对象都存在时，这个API会返回true，否则会返回false。我们的开发者经常遇到`Invalid Native Object`错误，不明白为什么在Web上运行正常，一发布到原生平台就会出现这种问题，更不知道从何查起。那么，这主要是因为在Cocos2d-JS的原生引擎中，一个绑定的Cocos2d对象，既拥有一个JavaScript对象索引，同时拥有一个C++对象索引，这两个索引负责在不同的环境中表示同一个对象。JavaScript对象的生命周期由JavaScript的垃圾回收机制自动管理，而原生C++对象的生命周期是由Cocos2d的引用计数机制来管理。所以有可能产生一种情况：一个对象的JavaScript索引还存在，而它的C++索引却已经被释放了。这个时候，如果游戏逻辑代码尝试去调用这个对象的原生方法，就会导致`Invalid Native Object`错误。
 
-## 3. 新的缓动动作
+这个新的API可以帮助你在运行时去检测一个对象是否已经失效了，对于避免游戏逻辑中可能的对象失效问题很有用处，而更有用的是，在遇到类似问题的时候它可以帮助你更好的调试，并找到错误背后真正的原因。
 
-我们在v3.0中添加了一系列方便的缓动动作供大家使用：
+## 3. Cocos Console支持导出目录
 
-```
-cc.easeBezierAction(p0, p1, p2, p3) // JSB暂不支持
-cc.easeQuadraticActionIn()
-cc.easeQuadraticActionOut()
-cc.easeQuadraticActionInOut()
-cc.easeQuarticActionIn()
-cc.easeQuarticActionOut()
-cc.easeQuarticActionInOut()
-cc.easeQuinticActionIn()
-cc.easeQuinticActionOut()
-cc.easeQuinticActionInOut()
-cc.easeCircleActionIn()
-cc.easeCircleActionOut()
-cc.easeCircleActionInOut()
-cc.easeCubicActionIn()
-cc.easeCubicActionOut()
-cc.easeCubicActionInOut()
-```
-
-重提一下缓动动作在v3.0中的使用方式，直接调用目标action的`easing`函数：`action.easing(cc.easeQuadraticActionIn())`。
-
-## 4. jsb命名空间
-
-我们添加了jsb命名空间来包含所有仅限于jsb的API：
+在新版本中，Cocos Console在所有平台上支持导出目录，需要自定义导出目录可以使用`-o`选项
 
 ```
-cc.fileUtils        -->     jsb.fileUtils
-cc.Reflection       -->     jsb.Reflection
-cc.AssetsManager    -->     jsb.AssetsManager
+cocos compile -p web -m release -o ../www_released/
 ```
 
-同时也给`jsb.fileUtils`添加了一些新的函数绑定：
-
-```
-jsb.fileUtils.getSearchPaths()
-jsb.fileUtils.setSearchPaths(paths)
-jsb.fileUtils.getSearchResolutionsOrder()
-jsb.fileUtils.setSearchResolutionsOrder(orders)
-jsb.fileUtils.addSearchResolutionsOrder(order)
-```
-
-## 5. ccui
-
-### 5.1 ccui.Widget的边界获取函数按照-x的函数名重命名
-
-```
-getLeftInParent     -->     getLeftBoundary
-getBottomInParent   -->     getBottomBoundary
-getRightInParent    -->     getRightBoundary
-getTopInParent      -->     getTopBoundary
-```
-
-### 5.2 添加`getContentSize`和`setContentSize`函数
-
-我们还添加了`getContentSize`和`setContentSize`给`ccui.Widget`，这样在大小的存取上`ccui.Widget`就和`cc.Node`共享同样的API了。
-
-```
-// 新增
-ccui.Widget#getContentSize
-ccui.Widget#setContentSize
-```
-
-### 5.3 重命名所有`addEventListenerXXX`函数
-
-ccui中所有`addEventListenerXXX`都被重命名为`addEventListener`以保障更好的开发体验，以下是具体修改列表
-
-```
-ccui.CheckBox#addEventListenerCheckBox      --> ccui.CheckBox#addEventListener
-ccui.Slider#addEventListenerSlider          --> ccui.Slider#addEventListener
-ccui.TextField#addEventListenerTextField    --> ccui.TextField#addEventListener
-ccui.PageView#addEventListenerPageView      --> ccui.PageView#addEventListener
-ccui.ScrollView#addEventListenerScrollView  --> ccui.ScrollView#addEventListener
-ccui.ListView#addEventListenerListView      --> ccui.ListView#addEventListener
-```
-
-## 6. 其他API改动
-
-### 6.1 cc.FadeIn
-
-```
-cc.FadeIn.create(duration, toOpacity)   -->     cc.FadeIn.create(duration)
-```
-
-### 6.2 cc.log支持格式化字符串
-
-```
-var str = "The number is";
-var number = cc.random0To1() * 10;
-cc.log("%s : %d", str, number);
-```
-
-### 6.3 资源管理器
-
-在v3.0中，你可以使用`cc.AssetsManager`的`downloadFailedAssets`函数重启未成功下载的资源，v3.0中的资源管理器还支持了非常多优秀的特性，详情请参见新的[资源管理器文档](../../../v3/assets-manager/zh.md)
-
-### 6.4 仿射变换工具函数
-
-为了符合引擎整体的命名风格，所有函数都必须小写字母开头，我们将放射变换函数重命名为这种形式，下面是API改动列表：
-
-```
-cc.AffineTransformMake              ->  cc.affineTransformMake
-cc.PointApplyAffineTransform        ->  cc.pointApplyAffineTransform
-cc.\_PointApplyAffineTransform       ->  cc._pointApplyAffineTransform
-cc.SizeApplyAffineTransform         ->  cc.sizeApplyAffineTransform
-cc.AffineTransformMakeIdentity      ->  cc.affineTransformMakeIdentity
-cc.AffineTransformIdentity          ->  cc.affineTransformIdentity
-cc.RectApplyAffineTransform         ->  cc.rectApplyAffineTransform
-cc.\_RectApplyAffineTransformIn      ->  cc._rectApplyAffineTransformIn
-cc.AffineTransformTranslate         ->  cc.affineTransformTranslate
-cc.AffineTransformScale             ->  cc.affineTransformScale
-cc.AffineTransformRotate            ->  cc.affineTransformRotate
-cc.AffineTransformConcat            ->  cc.affineTransformConcat
-cc.AffineTransformEqualToTransform  ->  cc.affineTransformEqualToTransform
-cc.AffineTransformInvert            ->  cc.affineTransformInvert
-```
-
-### 6.5 cc.RenderTexture
-
-```
-cc.RenderTexture.beginWithClear(r, g, b, a, depthValue, stencilValue)
-```
-
-`cc.RenderTexture`的`beginWithClear`函数不再支持浮点颜色值作为参数，与引擎中其他API一样接受0-255的整型颜色值作为`r`, `g`, `b`, `a`的参数值。
-
-### 6.6 cc.sys.platform
-
-添加获取平台的API：`cc.sys.platform`。
-
-### 6.7 [JSB]console.log
-
-绑定`console.log`。
-
-### 6.8 cc.formatStr
-
-增加格式化字符串函数`cc.formatStr`，使用方法： 
-
-```
-cc.formatStr("a: %d, b: %b", a, b);
-```
-
-同时，所有log函数也支持格式化字符串作为参数：
-
-```
-cc.log(message, ...)
-cc.assert(condition, message, ...)
-cc.warn(message, ...)
-cc.error(message, ...)
-```
-
-### 6.9 修改部分函数名以适应引擎命名风格
-
-```
-cc.pool.hasObj                  -> cc.pool.hasObject
-cc.pool.removeObj               -> cc.pool.removeObject
-cc.textureCache.textureForKey   -> cc.textureCache.getTextureForKey
-cc.TMXTilemap#propertiesForGID  -> cc.TMXTilemap#getPropertiesForGID
-```
-
-### 6.10 添加设备的目标像素密度控制函数
-
-```
-// 添加API
-cc.DENSITYDPI_DEVICE = "device-dpi";
-cc.DENSITYDPI_HIGH = "high-dpi";
-cc.DENSITYDPI_MEDIUM = "medium-dpi";
-cc.DENSITYDPI_LOW = "low-dpi";
-
-cc.view.setTargetDensityDPI(targetDensityDPI)
-cc.view.getTargetDensityDPI()
-```
+这条命令将发布Web版本的发布包到`../www_released/`文件夹中，`-o`选项可以支持绝对路径以及相对路径。

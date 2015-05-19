@@ -16,6 +16,17 @@
 - [Cocos2d-JS v3.0 RC3发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc3/release-note/zh)
 - [Cocos2d-JS v3.0发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0/release-note/zh)
 - [Cocos2d-JS v3.1 Beta发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1b/release-note/zh)
+- [Cocos2d-JS v3.1发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1/release-note/zh)
+- [Cocos2d-JS v3.2 RC0发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2rc0/release-note/zh)
+- [Cocos2d-JS v3.2发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2/release-note/zh)
+- [Cocos2d-JS v3.3 Beta发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3b/release-note/zh)
+- [Cocos2d-JS v3.3 RC0发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3rc0/release-note/zh)
+- [Cocos2d-JS v3.3发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3/release-note/zh)
+- [Cocos2d-JS v3.4 Beta0发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.4b/release-note/zh)
+- [Cocos2d-JS v3.5发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.5/release-note/zh)
+- [Cocos2d-JS v3.6 Beta发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6b/release-note/zh)
+- [Cocos2d-JS v3.6发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6/release-note/zh)
+- [Cocos2d-JS v3.6.1发布说明](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6.1/release-note/zh)
 
 #Cocos2d-JS 更新日志
 
@@ -29,6 +40,17 @@
 - [Cocos2d-JS v3.0 RC3更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc3/changelog/en)
 - [Cocos2d-JS v3.0更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0/changelog/en)
 - [Cocos2d-JS v3.1 Beta更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1b/changelog/en)
+- [Cocos2d-JS v3.1更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1/changelog/en)
+- [Cocos2d-JS v3.2 RC0更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2rc0/changelog/en)
+- [Cocos2d-JS v3.2更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2/changelog/en)
+- [Cocos2d-JS v3.3 Beta更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3b/changelog/en)
+- [Cocos2d-JS v3.3 RC0更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3rc0/changelog/en)
+- [Cocos2d-JS v3.3更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3/changelog/en)
+- [Cocos2d-JS v3.4 Beta0更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.4b/changelog/en)
+- [Cocos2d-JS v3.5更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.5/changelog/en)
+- [Cocos2d-JS v3.6 Beta更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6b/changelog/en)
+- [Cocos2d-JS v3.6更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6/changelog/en)
+- [Cocos2d-JS v3.6.1更新日志](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6.1/changelog/en)
 
 #Cocos2d-JS 升级指南
 
@@ -36,6 +58,10 @@
 - [Cocos2d-html5 v2.1.5版本升级为v2.2版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v2.2/upgrade-guide-from-v215-to-v22/zh)
 - [Cocos2d-html5 v2.2版本升级为v2.2.1版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v2.2.1/upgrade-guide-from-v22-to-v221/zh)
 - [Cocos2d-html5 v2.2.1版本升级为v2.2.2版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v2.2.2/upgrade-guide-from-v221-to-v222/zh)
-- [Cocos2d-html5 v2.2.2版本升级为v2.2.3版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v2.2.3/upgrade-guide/zh)
+- [Cocos2d-html5 v2.2.2版本升级为v2.2.3版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v2.2.3/upgrade-guide/en)
 - [Cocos2d-JS v2.2.3版本升级为v3.0 beta版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0a/upgrade-guide/zh)
-- [Cocos2d-JS v3.0 beta版本升级为v3.0版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/zh)
+- [Cocos2d-JS v3.0 beta版本升级为v3.1版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/zh)
+- [Cocos2d-JS v3.1版本升级为v3.2版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.2rc0/upgrade-guide/zh)
+- [Cocos2d-JS v3.2版本升级为v3.3版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.3b/upgrade-guide/zh)
+- [Cocos2d-JS v3.3版本升级为v3.5版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.5/upgrade-guide/zh)
+- [Cocos2d-JS v3.5版本升级为v3.6.1版本指南](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6/upgrade-guide/zh)
