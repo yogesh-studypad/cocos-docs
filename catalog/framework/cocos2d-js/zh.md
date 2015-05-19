@@ -2,13 +2,15 @@
 
 ## 关于Cocos2d-JS
 
+- [Cocos2d-JS文档目录](../../../manual/framework/cocos2d-js/catalog/zh.md)
 - [Cocos2d-JS介绍](../../../manual/framework/cocos2d-js/1-about-cocos2d-js/1-1-a-brief-history/zh.md)
 - [获取支持](../../../manual/framework/cocos2d-js/1-about-cocos2d-js/1-2-where-to-get-help/zh.md)
+- [历史版本发布说明和升级文档](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/zh)
 
 ## 开发环境以及工作流
 
-- [用Cocos2d-JS Lite Version开发网页游戏/微信游戏（浏览器开发环境介绍）](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-1-cocos2d-js-lite-workflow/zh.md)
-- [用Cocos Console工作流开发网页/原生平台游戏（JSB开发环境简介）](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/zh.md)
+- [浏览器开发环境介绍](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-1-cocos2d-js-lite-workflow/zh.md)
+- [原生与跨平台开发环境简介](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/zh.md)
 - [使用Cocos Code IDE开发](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-3-workflow-with-cocos-code-ide/zh.md)
 
 ## 深入Cocos2d-JS
@@ -28,3 +30,54 @@
 - [屏幕适配方案](../../../manual/framework/cocos2d-js/4-essential-concepts/4-4-resolution-policies/zh.md)
 - [场景树](../../../manual/framework/cocos2d-js/4-essential-concepts/4-5-scene-graph/zh.md)
 - [导演对象](../../../manual/framework/cocos2d-js/4-essential-concepts/4-6-director-of-game/zh.md)
+
+## Cocos2d-JS v3.x的新功能
+
+- [使用Cocos Console管理工程](http://www.cocos2d-x.org/docs/manual/framework/html5/v2/cocos-console/zh.md)
+- [资源管理器](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/assets-manager/zh.md)
+- [事件管理器](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/eventManager/zh.md)
+- [属性风格API](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/getter-setter-api/zh.md)
+- [简化的游戏启动流程](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-game/zh.md)
+- [对象构造与类继承](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/inheritance/zh.md)
+- [简化action的使用](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-actions/zh.md)
+- [对象缓冲池](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-pool/zh.md)
+- [Bake Layer](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/bake-layer/zh.md)
+- [Javascript到JAVA反射](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/reflection/zh.md)
+- [Javascript到Objective-C反射](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/reflection-oc/zh.md)
+- [Web引擎模块化](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/moduleconfig-json/zh.md)
+- [项目配置文件](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/project-json/zh.md)
+- [基础数据类型重构](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/basic-data/zh.md)
+- [单例对象重构](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/singleton-objs/zh.md)
+- [统一create函数](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/create-api/zh.md)
+- [使用cc.loader加载资源](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-loader/zh.md)
+- [资源路径工具cc.path](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-path/zh.md)
+- [系统信息](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-sys/zh.md)
+- [异步函数工具cc.async](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-async/zh.md)
+- [cc.saxParser的改造](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-saxparser/zh.md)
+- [cc.spriteFrameCache的改造](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-spriteframecache/zh.md)
+- [cc.FileUtils的移除](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-fileutils/zh.md)
+- [cc.log的改造](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/cc-log/zh.md)
+- [其他3.x版的API改动](http://www.cocos2d-x.org/docs/manual/framework/html5/v3/more-change-from-v2-to-v3/zh.md)
+
+## 进阶主题
+
+- [如何使用Eclipse中编译Cocos2d-JS项目](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/compilation-in-eclipse/zh.md)
+- [如何在JSB项目中使用extension](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/jsb-extension/zh.md)
+- [在Android平台使用Plugin-x](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-android/zh.md)
+- [Plugin-x的框架](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/plugin-x-architecture/zh.md)
+- [如何为Android开发自己的Plugin](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
+- [使用iOS支付插件](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/ios-iap/zh.md)
+- [如何使用Firefox远程调试工具](http://cocos2d-x.org/docs/manual/framework/native/v3/js-remote-debugger/en)
+
+## Facebook接入教程
+
+- [Cocos2d-x的Facebook集成](http://www.cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/zh.md)
+- [Facebook API Reference for Cocos2d-JS](http://www.cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/api-reference/zh.md)
+- [Android平台上如何集成Facebook平台支持](http://www.cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/facebook-sdk-on-android/zh.md)
+- [iOS平台上如何集成Facebook平台支持](http://www.cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/zh.md)
+- [Web平台上如何集成Facebook平台支持](http://www.cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/facebook-sdk-on-web/zh.md)
+- [集成Facebook平台 - 测试工程](http://www.cocos2d-x.org/docs/manual/framework/html5/facebook-sdk/facebook-test-case/zh.md)
+
+## 教程
+
+- [教程目录](http://cocos2d-x.org/docs/tutorial/framework/html5/zh)

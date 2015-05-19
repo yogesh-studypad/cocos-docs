@@ -1,55 +1,57 @@
-# Cocos2d-JS v3.1 Beta release note
+# Cocos2d-JS v3.6.1 release note
 
-<img src="http://www.cocos2d-x.org/attachments/download/1508" height=180> 
+<img src="http://files.cocos2d-x.org/images/orgsite/logo.png" height=180> 
 
 Cocos2d-JS is Cocos2d-x engine's JavaScript version that includes Cocos2d-html5 and Cocos2d-x JavaScript Bindings. It equips your game with cross-browser and cross-platform abilities, accompanied by full Cocos2d-x features and simplified JavaScript friendly APIs.
 
 Cocos2d-JS reinvented workflows for all platforms in v3.x, it provides a consistent development experience for whichever platform you want to distribute to, no matter web and native. "Code once, run everywhere" is incredibly easy and natural in Cocos2d-JS. With one single JavaScript code base, you can run your game on all web browsers and native platforms including Mac OS, Windows, iOS and Android. This will bring your game great opportunities in almost all channels of distribution. On the other hand, if you are only interested in casual games on the web, you can embed directly in your web page the Cocos2d-JS Lite Version which is extremely easy to use and light as a feather.
 
-Furthermore, JavaScript friendly APIs make your game development experience a breeze - easy to code, test and distribute. In the meantime, Cocos2d-JS v3.x is super powerful along with all these cool new features: Editors Support, Assets Manager, Object Pool, JS to Objective-C/JAVA reflection, etc.
+In addition, Cocos2d-JS v3.x is super powerful along with all these cool new features: Editors Support, Assets Manager, Object Pool, JS to Objective-C/JAVA reflection, etc.
 
-## Workflows
-
-- Cross platforms developers can use Cocos Console to create projects, boost their development with web version engine and deploy games onto all native platforms and all browsers with Cocos Console.
-
-- Casual web game developers can download the Lite Version and start to develop just like using other web frameworks (e.g. jQuery).
-
-![](../../v3.0/release-note/workflows.jpg)
+One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportunity for game developers who want to integrate Facebook functionality into their games. With a single code base, they can release fully cross-platform games across Facebook Canvas, iOS and Android.
 
 ## Highlights
 
-* Refactorization of the web engine with new renderer architecture, the new renderer has brought a great performance boost on Web engine, yet it hasn't been fully optimized. The next step is to focus on the optimization.
-* Released Facebook SDK for Cocos2d-JS Beta2, its API have been significantly improved and stablized. API reference document have also been greatly improved.
-* Automatically enabled WebGL on iOS 8 safari, the performance is incredibly enhanced compare to Canvas render mode.
-* Upgraded MoonWarriors sample game with brand new graphical assets.
-* Upgraded chipmunk to the newest version and improved bindings for chipmunk.
+* Added new 3D features: Skybox and Terrain.
+* Upgraded support of Cocos editor to the latest version.
+* Added `enumerateChildren` function which support powerful children searching in the child node tree with name and patterns.
+* Added `cc.sys.isObjectValid` for detecting node's validity to prevent the famous `Invalid Native Object` issue.
+* v3.6.1 is a hotfix version contains essentially two important fixes:
+    1. Fixed the issue that jsc compiler generates jsc files which contain sources code.
+    2. Fixed the issue that jsb remote debugger can't be used in windows version Code IDE.
+
+**We strongly recommand you to upgrade v3.6 or minus versions to v3.6.1**
 
 ## Notice
 
 For JSB build, there are some restrictions :
 
-- [Android build] NDK version must be r9d
+- [Android build] Suggested NDK version is r10c +, if you don't need Android 5.0 compatibility, you can also use r9d, other NDKs are not supported.
 - [iOS build] Xcode version must be 5.1.1 +
+- [Web code obfuscation] JRE or JDK version must be 1.6+
 
 ## Download
 
-- [Cocos2d-JS v3.1 Beta](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.1-beta.zip)
-- [Online API reference](http://www.cocos2d-x.org/reference/html5-js/V3.0/index.html)
-- [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.0-API.zip)
+- [Cocos2d-JS v3.6.1](http://www.cocos2d-x.org/filedown/cocos2d-js-v3.6.1.zip)
+- [Cocos2d-JS Lite Version](http://cocos2d-x.org/filecenter/jsbuilder/)
+- [Cocos Dev Tool](http://h5.cocos.com/static/cocos-devtools/index-en.html)
+- [Online API reference](http://www.cocos2d-x.org/wiki/reference/)
+- [Downloadable API Reference](http://www.cocos2d-x.org/filedown/Cocos2d-JS-v3.6-API.zip)
 - [Online test cases](http://cocos2d-x.org/js-tests/)
 
 ## More information
 
 Read more about all the features and bug fixes
 
-- [Cocos2d-JS v3.1 Beta changelog](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.1b/changelog/en)
-- [Cocos2d-JS v3.1 upgrade guide](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.0rc0/upgrade-guide/en)
+- [Cocos2d-JS v3.6.1 changelog](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6.1/changelog/en)
+- [Cocos2d-JS v3.6 changelog](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6/changelog/en)
+- [Cocos2d-JS v3.6.1 upgrade guide](http://www.cocos2d-x.org/docs/manual/framework/html5/release-notes/v3.6/upgrade-guide/en)
 
 ## Upgrade your project from previous versions
 
-If you want to upgrade your game based on v3.0 previous version to the 3.1 Beta version, you should follow these steps:
+If you want to upgrade your game based on v3.0 previous version to the v3.6.1, you should follow these steps:
 
-1. Download the Cocos2d-JS v3.1 Beta package.
+1. Download the Cocos2d-JS v3.6.1 package.
 2. Upgrade cocos command with `setup.py`.
 3. Create a new project with `cocos new` command.
 4. Replace the "src", "res", "index.html", "project.json", "main.js" etc with your old project.
@@ -57,12 +59,14 @@ If you want to upgrade your game based on v3.0 previous version to the 3.1 Beta 
 
 ## About Cocos2d family
 
-- Cocos2d-JS v3.1 Beta uses Cocos2d-x 3.2 final as base of JSB solution
-- Cocos2d-JS v3.1 Beta is temporarily not compatible with Cocos Code IDE
-- Cocos2d-JS v3.1 Beta is compatible with Cocos Studio v1.2 - v1.5.0.1
+- Cocos2d-JS v3.6.1 uses Cocos2d-x v3.6 as base of JSB solution.
+- Cocos2d-JS v3.6.1 uses SpiderMonkey v33 as builtin JavaScript engine.
+- Cocos2d-JS v3.6.1 is compatible with Cocos Code IDE v1.2.0.
+- Cocos2d-JS v3.6.1 is compatible with Cocos Studio v1.2 - v1.6 and Cocos Studio 2.1+..
 
 With any problems you might have, our communities are happy to help:
 
 - [Online forum](http://discuss.cocos2d-x.org/category/cocos2d-x/javascript)
-- [Document root](http://cocos2d-x.org/docs/manual/framework/html5/en)
+- [Document root](http://cocos2d-x.org/wiki/Cocos2d-JS)
 - [Github repository](https://github.com/cocos2d/cocos2d-js)
+- [Issue tracker](https://github.com/cocos2d/cocos2d-js/issues)
