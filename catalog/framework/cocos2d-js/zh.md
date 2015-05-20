@@ -67,7 +67,7 @@
 - [Plugin-x的框架](../../../manual/framework/html5/jsb/plugin-x/plugin-x-architecture/zh.md)
 - [如何为Android开发自己的Plugin](../../../manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
 - [使用iOS支付插件](../../../manual/framework/html5/jsb/plugin-x/ios-iap/zh.md)
-- [如何使用Firefox远程调试工具](../../../manual/framework/native/v3/js-remote-debugger/en)
+- [如何使用Firefox远程调试工具](../../../manual/framework/native/v3/js-remote-debugger/en.md)
 
 ## Facebook接入教程
 
@@ -80,4 +80,4 @@
 
 ## 教程
 
-- [教程目录](../../../tutorial/framework/html5/zh)
+- [教程目录](../../../tutorial/framework/html5/zh.md)
