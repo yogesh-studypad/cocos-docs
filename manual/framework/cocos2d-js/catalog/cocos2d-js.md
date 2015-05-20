@@ -30,37 +30,49 @@
 - [屏幕适配方案](../../../manual/framework/cocos2d-js/4-essential-concepts/4-4-resolution-policies/zh.md)
 - [树形场景结构](../../../manual/framework/cocos2d-js/4-essential-concepts/4-5-scene-graph/zh.md)
 - [游戏导演对象](../../../manual/framework/cocos2d-js/4-essential-concepts/4-6-director-of-game/zh.md)
-
-## Cocos2d-JS v3.x的新功能
-
 - [使用Cocos Console管理工程](../../../manual/framework/html5/v2/cocos-console/zh.md)
-- [资源热更新管理器](../../../manual/framework/html5/v3/assets-manager/zh.md)
-- [事件管理器](../../../manual/framework/html5/v3/eventManager/zh.md)
-- [属性风格API](../../../manual/framework/html5/v3/getter-setter-api/zh.md)
-- [简化的游戏启动流程](../../../manual/framework/html5/v3/cc-game/zh.md)
-- [对象构造与类继承](../../../manual/framework/html5/v3/inheritance/zh.md)
-- [简化action的使用](../../../manual/framework/html5/v3/cc-actions/zh.md)
-- [对象缓冲池](../../../manual/framework/html5/v3/cc-pool/zh.md)
-- [Bake Layer(预烘培图层)](../../../manual/framework/html5/v3/bake-layer/zh.md)
-- [Javascript到JAVA反射](../../../manual/framework/html5/v3/reflection/zh.md)
-- [Javascript到Objective-C反射](../../../manual/framework/html5/v3/reflection-oc/zh.md)
-- [Web引擎模块化](../../../manual/framework/html5/v3/moduleconfig-json/zh.md)
+
+## Cocos2d-JS v3.x基础
+
+- [游戏启动流程](../../../manual/framework/html5/v3/cc-game/zh.md)
+- [基础数据类型](../../../manual/framework/html5/v3/basic-data/zh.md)
 - [项目配置文件](../../../manual/framework/html5/v3/project-json/zh.md)
-- [基础数据类型重构](../../../manual/framework/html5/v3/basic-data/zh.md)
-- [单例对象重构](../../../manual/framework/html5/v3/singleton-objs/zh.md)
-- [统一create函数](../../../manual/framework/html5/v3/create-api/zh.md)
-- [使用cc.loader加载资源](../../../manual/framework/html5/v3/cc-loader/zh.md)
-- [资源路径工具cc.path](../../../manual/framework/html5/v3/cc-path/zh.md)
+- [Web引擎模块化](../../../manual/framework/html5/v3/moduleconfig-json/zh.md)
 - [系统信息](../../../manual/framework/html5/v3/cc-sys/zh.md)
+- [单例对象](../../../manual/framework/html5/v3/singleton-objs/zh.md)
+- [对象构造与类继承](../../../manual/framework/html5/v3/inheritance/zh.md)
+- [属性风格API](../../../manual/framework/html5/v3/getter-setter-api/zh.md)
+- [统一create函数](../../../manual/framework/html5/v3/create-api/zh.md)
+- [持续更新中](#)
+
+## Cocos2d-JS v3.x核心功能
+
+- [使用cc.loader加载资源](../../../manual/framework/html5/v3/cc-loader/zh.md)
+- [Action的使用](../../../manual/framework/html5/v3/cc-actions/zh.md)
+- [事件管理器](../../../manual/framework/html5/v3/eventManager/zh.md)
+- [精灵帧缓存](../../../manual/framework/html5/v3/cc-spriteframecache/zh.md)
+- [资源热更新管理器](../../../manual/framework/html5/v3/assets-manager/zh.md)
+- [持续更新中](#)
+
+## Cocos2d-JS v3.x的细枝末节
+
+- [关于FileUtils](../../../manual/framework/html5/v3/cc-fileutils/zh.md)
 - [异步函数工具cc.async](../../../manual/framework/html5/v3/cc-async/zh.md)
-- [Plist加载器的改造](../../../manual/framework/html5/v3/cc-saxparser/zh.md)
-- [精灵帧缓存的改造](../../../manual/framework/html5/v3/cc-spriteframecache/zh.md)
-- [cc.FileUtils的移除](../../../manual/framework/html5/v3/cc-fileutils/zh.md)
+- [资源路径工具cc.path](../../../manual/framework/html5/v3/cc-path/zh.md)
+- [Plist加载器](../../../manual/framework/html5/v3/cc-saxparser/zh.md)
 - [cc.log的改造](../../../manual/framework/html5/v3/cc-log/zh.md)
 - [其他3.x版的API改动](../../../manual/framework/html5/v3/more-change-from-v2-to-v3/zh.md)
 
+## 性能优化
+
+- [对象缓冲池](../../../manual/framework/html5/v3/cc-pool/zh.md)
+- [Bake Layer(预烘培图层)](../../../manual/framework/html5/v3/bake-layer/zh.md)
+- [持续更新中](#)
+
 ## 进阶主题
 
+- [JS到JAVA反射](../../../manual/framework/html5/v3/reflection/zh.md)
+- [JS到Objective-C反射](../../../manual/framework/html5/v3/reflection-oc/zh.md)
 - [Eclipse编译Cocos2d-JS项目](../../../manual/framework/html5/jsb/compilation-in-eclipse/zh.md)
 - [在JSB项目中使用extension](../../../manual/framework/html5/jsb/jsb-extension/zh.md)
 - [在Android平台使用Plugin-x](../../../manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-android/zh.md)
@@ -68,16 +80,14 @@
 - [为Android开发自己的Plugin](../../../manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh.md)
 - [使用iOS支付插件](../../../manual/framework/html5/jsb/plugin-x/ios-iap/zh.md)
 - [使用Firefox远程调试工具](../../../manual/framework/native/v3/js-remote-debugger/en.md)
+- [持续更新中](#)
 
-## Facebook接入教程
+## 教程
 
+- [教程目录](../../../tutorial/framework/html5/zh.md)
 - [Cocos2d-x的Facebook集成](../../../manual/framework/html5/facebook-sdk/zh.md)
 - [Facebook API Reference](../../../manual/framework/html5/facebook-sdk/api-reference/zh.md)
 - [Android平台集成Facebook支持](../../../manual/framework/html5/facebook-sdk/facebook-sdk-on-android/zh.md)
 - [iOS平台集成Facebook支持](../../../manual/framework/html5/facebook-sdk/facebook-sdk-on-ios/zh.md)
 - [Web平台集成Facebook支持](../../../manual/framework/html5/facebook-sdk/facebook-sdk-on-web/zh.md)
 - [集成Facebook平台 - 测试工程](../../../manual/framework/html5/facebook-sdk/facebook-test-case/zh.md)
-
-## 教程
-
-- [教程目录](../../../tutorial/framework/html5/zh.md)
