@@ -1,8 +1,7 @@
 # Cocos2d-JS
 
-## 关于Cocos2d-JS
+## [关于Cocos2d-JS](./zh.md)
 
-- [Cocos2d-JS文档目录](../../../manual/framework/cocos2d-js/catalog/index.html)
 - [Cocos2d-JS介绍](../../../manual/framework/cocos2d-js/1-about-cocos2d-js/1-1-a-brief-history/zh.md)
 - [获取支持](../../../manual/framework/cocos2d-js/1-about-cocos2d-js/1-2-where-to-get-help/zh.md)
 - [历史版本发布说明和升级文档](../../../manual/framework/html5/release-notes/zh.md)

@@ -7,7 +7,7 @@ PluginX IOS IAP 集成
  - 引入pluginProtocol和pluginIap两个工程
  - 在工程中的 Target -> build Phases 中添加 StoreKit.framework和引入libPluginProtocol.a和libPluginIAP.a
  - 我们可以在Capabilities 中查看我们的工程中的IAP是否能够使用了，不能使用按照提示来进行配置
- <img src="res/check.png" width=500/>
+![](res/check.png)
  - 接下来我们就可以开始编写我们的应用了。
  
 ##代码的编写

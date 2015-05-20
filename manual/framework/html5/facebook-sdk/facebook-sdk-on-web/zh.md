@@ -16,7 +16,7 @@ Web端除了直接使用Facebook提供的Javascript SDK外，Cocos2d-JS也提供
 
 在app的Settings页面点击add platform,选择"Website", 如果使用的是cocos命令运行web程序那么可以填上如下地址：
 
-![](./2_2.PNG)
+![](./2_2.png)
 
 具体细节请参考Facebook官方文档：[Getting Started with Canvas](http://developers.facebook.com/docs/games/canvas/)。
 
