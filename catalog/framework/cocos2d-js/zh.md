@@ -1,6 +1,6 @@
 # Cocos2d-JS
 
-## [关于Cocos2d-JS](./zh.md)
+## [关于Cocos2d-JS](https://github.com/chukong/cocos-docs/blob/master/catalog/framework/cocos2d-js/zh.md)
 
 - [Cocos2d-JS介绍](../../../manual/framework/cocos2d-js/1-about-cocos2d-js/1-1-a-brief-history/zh.md)
 - [获取支持](../../../manual/framework/cocos2d-js/1-about-cocos2d-js/1-2-where-to-get-help/zh.md)
