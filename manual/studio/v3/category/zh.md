@@ -39,7 +39,7 @@
 	 * [3.2.5 第五步：调试游戏项目](../chapter3/chapter2/debug/zh.md)
 	 * [3.2.6 第六步：输出游戏资源](../chapter3/chapter2/publish-game/about/zh.md)
 	 	 * [3.2.6.1 构建发布](../chapter3/chapter2/publish-game/publish/zh.md)
-	 	 * [3.2.6.2 项目打包]../chapter3/chapter2/publish-game/package/zh.md）
+	 	 * [3.2.6.2 项目打包](../chapter3/chapter2/publish-game/package/zh.md）
  * [3.3 如何使用控件](../chapter3/chapter3/how-to-use-controls/zh.md)
 	 * [3.3.1 基础控件](../chapter3/chapter3/basic-controls/about/zh.md)
 		 * [3.3.1.1 按钮](../chapter3/chapter3/basic-controls/button/zh.md)
