@@ -3,6 +3,8 @@ var fs = require("fs");
 var titleRE = /\#\#[\s]*(.*)/;
 var linkRE = /\[([^\]]+)\]\(([^\)]+)\)/;
 
+var linkPre = "http://cn.cocos2d-x.org/article/index?type=cocos2d-x&url=/doc/cocos-docs-master/manual/framework/cocos2d-js/catalog/";
+
 var header = fs.readFileSync("./header", {encoding: "utf8"});
 var footer = fs.readFileSync("./footer", {encoding: "utf8"});
 
@@ -44,7 +46,7 @@ fs.readFile('./cocos2d-js.md', {encoding: "utf8"}, function (err, content) {
         output += "\t<p>\n";
         for (var j = 0; j < links.length; ++j) {
             link = links[j];
-            output += '\t\t<a href="' + link.link + '" class="btn btn-lg btn-outline">' + link.name + '</a>\n';
+            output += '\t\t<a href="' + linkPre + link.link + '" class="btn btn-lg btn-outline">' + link.name + '</a>\n';
         }
         output += "\t</p>\n";
     }
