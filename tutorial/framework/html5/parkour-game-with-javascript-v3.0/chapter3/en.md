@@ -188,7 +188,7 @@ var MenuLayer = cc.Layer.extend({
         this._super();
     },
     init:function(){
-        //call super class's super function
+        //call super class's init function
         this._super();
 
         //2. get the screen size of your game canvas
