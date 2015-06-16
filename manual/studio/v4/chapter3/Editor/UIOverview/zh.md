@@ -386,7 +386,7 @@ Cocos Studio对每个文件提供一个动画时间轴，在该时间轴上可�
 
   &emsp;&emsp; 高级属性：
 
-  &emsp;&emsp; 1，[帧事件](../../Animation/InsertKeyframe/zh.md)
+  &emsp;&emsp; 1，[帧事件](../../Animation/AddFrameEvents/zh.md)
 
   &emsp;&emsp; 2，[回调特性](../../HowToCode/CallBack/zh.md)
 

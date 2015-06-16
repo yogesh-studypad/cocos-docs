@@ -1,7 +1,7 @@
 #制作场景与UI：
-###&emsp;&emsp;[1、认识Cocos编辑器主界面。](../../chapter3/Editor/UIOverview/zh.md)
+&emsp;&emsp;[1、认识Cocos编辑器主界面。](../../chapter3/Editor/UIOverview/zh.md)
 
-###&emsp;&emsp;2、制作新场景：
+&emsp;&emsp;2、制作新场景：
 
 &emsp;&emsp;1）打开我们新建的Hello Cocos项目，新建场景名称为“Scene1”，如下图：           
  
@@ -31,7 +31,8 @@
  
 &emsp;&emsp;Cocos Studio拼接场景，UI，动画都是延续这个思路，先导入资源，然后创建控件，再给控件赋资源，改变控件的属性，达到效果，这一点要记清楚。
 
-###&emsp;&emsp;2、制作新UI：
+&emsp;&emsp;2、制作新UI：
+
 &emsp;&emsp;1）新建图层，命名为“Layer”，如下图：
 
 ![image](res/image0009.png)

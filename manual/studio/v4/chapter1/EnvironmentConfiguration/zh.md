@@ -1,7 +1,7 @@
 # 环境配置
 
-1、如果您是windows用户，请下载[Visual Studio 2013旗舰版](https://www.visualstudio.com/downloads/download-visual-studio-vs)，并安装。
-如果您是mac用户，请下载[Xcode 6.3.2](https://developer.apple.com/xcode/downloads/)，并安装。
+1、如果您是windows用户，请下载**Visual Studio 2013旗舰版**
+如果您是mac用户，请下载**Xcode 6.3.2**，并安装。
 
   2、启动cocos，并点击“商店页”如下： 
 
