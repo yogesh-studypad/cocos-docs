@@ -4,11 +4,11 @@ Cocos 2.3.0版本更新内容：
 
  &emsp;&emsp;【新增】3D场景内多个物体选中后，参考坐标轴和原点的快速切换功能。
 
- &emsp;&emsp;【新增】2D场景，2D节点和2D图层标尺与参考线。
+ &emsp;&emsp;【新增】标尺与参考线在场景，节点和图层。
 
  &emsp;&emsp;【优化】以JSON文件格式发布时，将场景资源列表存储到对应的.json文件中。
 
- &emsp;&emsp;【优化】3D场景网格参考线优化。
+ &emsp;&emsp;【优化】3D场景网格参考线。
 
  &emsp;&emsp;【优化】菜单增加隐藏/显示锚点，Windows快捷键为 ctrl + shift + A，
 Mac平台的快捷键为Command+Shift+A。
