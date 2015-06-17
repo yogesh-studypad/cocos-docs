@@ -1,9 +1,5 @@
 #Cocos简介
 
-   
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
-![image](res/image001.png)          
-                  
    &emsp;&emsp; Cocos是全球最受欢迎的移动游戏开发解决方案，整合了cocos2d-x、cocos2d-js、cocos studio、cocos code ide等框架及工具， 无论您是开发新手还是行业资深人士都可以使用cocos极大地提升游戏开发效率，降低沟通成本，实现游戏的快速迭代，cocos专为手游而生，专为您而生！
 
    &emsp;&emsp; Cocos2d-x: 全球占有率第一的手机游戏引擎， 基于MIT开源协议，opengl es的免费跨平台开源引擎， 开发者可以使用c++，lua来进行跨平台游戏的制作，覆盖世界上所有主流的操作系统包括iOS，android，wp，windows，mac, 平台兼容性达到99.37%, 被开发者誉为“千万级手游摇篮”。  

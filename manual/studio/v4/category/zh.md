@@ -54,5 +54,6 @@
 	* [关于UIHelper的两个自动递归获取节点的函数](../chapter4/UIHelperGetNode/zh.md) 
 	* [修复升级或降级Framework后引发问题](../chapter4/upgrade-framework/zh.md)
 	* [加载编辑导出数据错误或者效果不对？](../chapter4/LoadError/zh.md)
+	* [如何显示艺术数字？](../chapter4/ShowAtlasLabel/zh.md)
 * [5、版本发布说明](../chapter5/ReleaseNote/zh.md)
 	

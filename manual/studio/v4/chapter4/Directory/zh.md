@@ -24,3 +24,5 @@
 ####[11) 修复升级或降级Framework后引发问题](../upgrade-framework/zh.md)
 
 ####[12) 加载编辑导出数据错误或者效果不对？](../LoadError/zh.md)
+
+####[13) 如何显示艺术数字？](../ShowAtlasLabel/zh.md)
