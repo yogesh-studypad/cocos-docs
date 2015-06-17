@@ -1,6 +1,6 @@
 **版本更新说明：**
 
-Cocos 2.3.0版本更新内容：
+**Cocos 2.3.0版本更新内容：**
 
  &emsp;&emsp;【新增】3D场景内多个物体选中后，参考坐标轴和原点的快速切换功能。
 
@@ -19,11 +19,11 @@ Mac平台的快捷键为Command+Shift+A。
  &emsp;&emsp;【修复】替换fnt字体，刷新资源区，渲染区不更新的问题。
 
 
-Cocos 2.2.9版本更新内容：
+**Cocos 2.2.9版本更新内容：**
 
  &emsp;&emsp;【修复】plist合图导出png时，合图中含有透明属性的图片丢失。
 
-Cocos 2.2.8版本更新内容：
+**Cocos 2.2.8版本更新内容：**
 
  &emsp;&emsp;【新增】点击3D世界坐标轴可快速调节视图。
 
@@ -45,11 +45,11 @@ Cocos 2.2.8版本更新内容：
 
  &emsp;&emsp;【修复】编辑器导出数据文件中，PercentWidthEnabled以及PercentHeightEnabled不更新的问题。
 
-Cocos 2.2.6版本更新内容：
+**Cocos 2.2.6版本更新内容：**
 	
  &emsp;&emsp;【修正】打开含有较多合图文件的项目，合图文件中的图片丢失。
 
-Cocos 2.2.5版本更新内容：
+**Cocos 2.2.5版本更新内容：**
 									
  &emsp;&emsp;【新增】一键部署并运行app在iOS、Android、win32、Mac以及浏览器平台上。
 
@@ -95,11 +95,11 @@ Cocos 2.2.5版本更新内容：
 
  &emsp;&emsp;【修复】ScrollView Area大小受content size限制的问题。						
 																		
-Cocos 2.2.1版本更新内容：
+**Cocos 2.2.1版本更新内容：**
     
  &emsp;&emsp;【修复】编辑器导出的合图文件会多增加.plist扩展名的问题。
 
-Cocos 2.2版本更新内容：
+**Cocos 2.2版本更新内容：**
 	
  &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（cocos2d-x 3.5支持解析）。
 
