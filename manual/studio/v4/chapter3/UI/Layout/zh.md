@@ -39,11 +39,12 @@
 
 &emsp;&emsp;设计分辨率一般在启动时进行设置
 
-      AppDelegate::applicationDidFinishLaunching
+&emsp;&emsp;&emsp;&emsp;AppDelegate::applicationDidFinishLaunching
 
 &emsp;&emsp;中进行，代码如下：
 
-    director->getOpenGLView()->setDesignResolutionSize(960,640,ResolutionPolicy::FIXED_HEIGHT);
+ &emsp;&emsp;&emsp;&emsp;director->getOpenGLView()->setDesignResolutionSize(960,640,ResolutionPolicy::FIXED_HEIGHT);
+
 &emsp;&emsp;(这句代码上边还有一句createWithRect这个是在桌面系统上，创建游戏模拟器用的。可以修改里边的Rect的后边两个值来修改设备分辨率，但这个值在移动设备上是无效的。)
 
 &emsp;&emsp;这句代码什么意思呢？
