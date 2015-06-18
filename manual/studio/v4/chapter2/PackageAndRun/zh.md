@@ -7,7 +7,7 @@
 
 ###环境搭建&打包设置
 
-#####一、Windows平台
+&emsp;&emsp;一、Windows平台
 
 &emsp;&emsp;注意：JDK、NDK、SDK、Framework的安装路径、电脑的系统变量配置、以及编辑器打包设置中这些工具的路径配置一定要都正确，任何一个地方不对，打包很有可能会出现错误。
 
@@ -99,11 +99,11 @@
 
 &emsp;&emsp;![image](res/image0007.png)
 
-###测试打包功能
+###打包功能
 
 &emsp;&emsp;环境搭建成功后，需要在编辑器中配置必要的发布和打包设置，再执行打包功能。
 
-### 一、Windows上打包测试：
+&emsp;&emsp;**一、Windows上打包测试：**
 
 &emsp;&emsp;1、	C++项目打包举例
 
@@ -129,7 +129,7 @@
 
 &emsp;&emsp;2、	Lua或JavaScript项目同理。
 
-### 二、Mac上打包测试：
+&emsp;&emsp;**二、Mac上打包测试：**
 
 &emsp;&emsp;Android打包和Windows上面的一样。
 
@@ -156,3 +156,8 @@
 &emsp;&emsp;菜单栏->项目->执行打包，选择iOS或Android。
 
 &emsp;&emsp;5、打包成功之后安装到手机上查看效果。
+
+
+###运行功能
+
+&emsp;&emsp;运行功能的配置与打包功能的环境配置一样，不一样的地方在于运行支持Android手机连上PC或者Mac可以直接把游戏推送到手机上，直接预览效果。
