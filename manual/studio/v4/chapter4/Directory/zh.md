@@ -28,4 +28,4 @@
 ####&emsp;&emsp;[13) 如何显示艺术数字？](../ShowAtlasLabel/zh.md)
 
 
-####&emsp;&emsp;[14) "导入1.6版本项目..."禁用？](../Import1.6ProjectError/zh.md)
+####&emsp;&emsp;[14) 导入1.6版本项目禁用？](../Import1.6ProjectError/zh.md)
