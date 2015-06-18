@@ -129,7 +129,7 @@
 
   &emsp;&emsp; 打包：
 
-  &emsp;&emsp; 具体请参考：[打包与运行环境配置]((../../../chapter2/PackageAndRun/zh.md)
+  &emsp;&emsp; 具体请参考：[打包与运行环境配置](../../../chapter2/PackageAndRun/zh.md)
 
 ####4.窗口
 
@@ -226,8 +226,7 @@
 
   &emsp;&emsp; 添加控件：左键选中控件，然后拖拽控件到画布面板，然后松开鼠标左键，可以实现添加一个控件的操作。
 
-  &emsp;&emsp; 2.编辑3D场景时。
-  &emsp;&emsp; 3D状态下的控制面板仅显示3D控件。如，3D摄像机，模型，3D粒子等。如下图所示：
+  &emsp;&emsp; 2.编辑3D场景时。3D状态下的控制面板仅显示3D控件。如，3D摄像机，模型，3D粒子等。如下图所示：
 
 ![image](res/image031.png)
  
