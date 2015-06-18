@@ -178,4 +178,5 @@ b.重写如下接口：
 
 6，使用CreateNode加载你的节点，因为你的自定义类的create已经委托给工厂类，只要你注册工厂类的时候没写错，工厂类会在createNode里边create你的自定义类并调用 onLocateTouchCallback，onLocateClickCallback，onLocateEventCallback实现代码回调与编辑器的绑定。 
 
-
+Lua:
+   参考启动器教程页《Cocos如何绑定Lua自定义类》。
