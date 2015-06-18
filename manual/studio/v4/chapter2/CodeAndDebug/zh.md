@@ -4,6 +4,10 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0001.png)           
 
-&emsp;&emsp;C++ cocos项目无法使用code ide打开，lua和js项目既可以使用Visual Studio和Xcode打开，又可以通过Code IDE打开，[Visual Studio 调试帮助](https://msdn.microsoft.com/zh-cn/library/aa290595%28v=vs.71%29.aspx)，[Code IDE调试帮助](http://www.cocos.com/doc/article/index?type=code-ide&url=/doc/cocos-docs-master/manual/code-ide/function-guides/debugging/debug-principle-for-lua/zh.md) 。
+&emsp;&emsp;C++ cocos项目无法使用code ide打开，lua和js项目既可以使用Visual Studio和Xcode打开，又可以通过Code IDE打开，
+
+&emsp;&emsp;Visual Studio 调试帮助(https://msdn.microsoft.com/zh-cn/library/aa290595%28v=vs.71%29.aspx)
+
+&emsp;&emsp;Code IDE调试帮助(http://www.cocos.com/doc/article/index?type=code-ide&url=/doc/cocos-docs-master/manual/code-ide/function-guides/debugging/debug-principle-for-lua/zh.md) 。
          
     
