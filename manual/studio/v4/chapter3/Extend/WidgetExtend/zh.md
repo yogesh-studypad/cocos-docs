@@ -749,7 +749,7 @@ C# 和 Lua 之间数据的交互，目前只支持这几种预定义的类型，
 
 &emsp;&emsp;13.其它
 
-&emsp;&emsp;1) 文档所描述的内容适用于 Cocos Studio 2.2.5 版本所附带的示例工程。
+&emsp;&emsp;1) 文档所描述的内容适用于 Cocos Studio 2.2.5及其以上的版本 所附带的示例工程。
 
 &emsp;&emsp;2)Cocos Studio 工程中控件的名字应为合法的 Lua 变量，否则发布到Lua 文件后程序 Lua 程序不可以正常执行。这个可以 Cocos Studio 的工程配置文件中开启命名规则检查（注：工程配置文件即是 Cocos Studio 工程文件同目录 的以.cfg  o为后缀的文件，将其中的字段 IsNameStandardized 置为 “True”即可）。另外，不合法的变量名在发布 Lua 文件时会在 Cocos Studio 输出区打印相应的提示。
 
