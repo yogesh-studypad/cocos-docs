@@ -1,41 +1,36 @@
 #获取支持
 
- 
-在线支持系统： 国内QQ群：
 
-Cocos官方交流1群  (2d-x)	           136017252
+**国内QQ群：**
 
-Cocos官方交流2群  (2d-x)	           187294716
+   &emsp;&emsp;Cocos官方交流1群  (2d-x)	           &emsp;136017252
 
-Cocos官方交流3群  (Studio)	       431357131
+   &emsp;&emsp;Cocos官方交流2群  (2d-x)	           &emsp;187294716
 
-Cocos官方交流4群  (Studio)	       330910720
+   &emsp;&emsp;Cocos官方交流3群  (Studio)	           &emsp;431357131
 
-Cocos官方交流5群  (Studio)	       312987275
+   &emsp;&emsp;Cocos官方交流4群  (Studio)	           &emsp;330910720
 
-Cocos官方交流6群  (Studio)	       130607511
+   &emsp;&emsp;Cocos官方交流5群  (Studio)	           &emsp;312987275
 
-Cocos官方交流7群  (js)	            182142281
+   &emsp;&emsp;Cocos官方交流6群  (Studio)	           &emsp;130607511
 
-Cocos官方交流8群  (js)	            364874256
+   &emsp;&emsp;Cocos官方交流7群  (js)	               &emsp;&emsp;182142281
 
-Cocos官方交流10群 (lua)	            284148017
+   &emsp;&emsp;Cocos官方交流8群  (js)	               &emsp;&emsp;364874256
 
-Cocos官方交流11群 (lua)	            243709595
+   &emsp;&emsp;Cocos官方交流10群 (lua)	           &emsp;284148017
 
-Cocos官方交流12群 (lua)	            8952580
+   &emsp;&emsp;Cocos官方交流11群 (lua)	           &emsp;243709595
 
- **论坛**：
+   &emsp;&emsp;Cocos官方交流12群 (lua)	           &emsp;8952580
 
-中文：[http://www.cocoachina.com/bbs/thread.php?fid=48](http://www.cocoachina.com/bbs/thread.php?fid=48) 
+ **社区**：[http://cn.cocos2d-x.org/bbs/](http://cn.cocos2d-x.org/bbs/)
 
-英文：[http://discuss.cocos2d-x.org/c/editors-and-tools/cocos-studio](http://discuss.cocos2d-x.org/c/editors-and-tools/cocos-studio)
+**编辑器FAQ：**[http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/zh.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/zh.md)
 
-常见问题解答： 
-编辑器启动器文档页。
+**教程：** [http://cn.cocos2d-x.org/tutorial/](http://cn.cocos2d-x.org/tutorial/)
 
-教程： 
-编辑器启动器教程页。
+**Bug报告：** [http://support.cocos.com/](http://support.cocos.com/)
 
-Bug报告：
-编辑器启动器反馈页。
+

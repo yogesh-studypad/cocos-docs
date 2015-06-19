@@ -9,7 +9,7 @@
 
 安装说明：
 
-&emsp;&emsp; windows：
+&emsp;&emsp; **Windows**：
 
   &emsp;&emsp;    1、选择cocos安装目录，然后下一步：
 
@@ -23,7 +23,7 @@
 
 ![image](res/image003.png)
 
-&emsp;&emsp; mac：
+&emsp;&emsp; **Mac：**
 
 &emsp;&emsp;  1、打开安装界面，然后点击立即安装：
 
