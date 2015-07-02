@@ -33,7 +33,7 @@
 
 &emsp;&emsp;导入->导入1.6版本项目...： 将Cocos Studio 1.6的项目文件转换为当前版本的项目文件。
 
-&emsp;&emsp;退出：退出cocos studio编辑器，快捷键为Alt+F4。
+&emsp;&emsp;退出：退出Cocos Studio编辑器，快捷键为Alt+F4。
 
 ####2.	编辑
 
@@ -53,7 +53,7 @@
 
   &emsp;&emsp; 2、鼠标：是否禁用鼠标滚轮缩放。
 
-  &emsp;&emsp; 3、CodeIDE：设置CodeIDE的路径。
+  &emsp;&emsp; 3、Code IDE：设置Code IDE的路径。
     
 ![image](res/image006.png)
 
@@ -93,17 +93,17 @@
 
    &emsp;&emsp; 1）发布资源：把编辑器编辑的资源与项目文件发布为cocos2d-x引擎所使用的资源，发布后的资源加载速度快，体积小。
 
-   &emsp;&emsp; 2）发布为Code IDE工程：发布资源后并使用CodeIDE打开当前项目，方便进一步编码。
+   &emsp;&emsp; 2）发布为Code IDE工程：发布资源后并使用Code IDE打开当前项目，方便进一步编码。
 
    &emsp;&emsp; 3）发布为Visual Studio工程：发布资源后并使用Visual Studio打开当前项目，方便进一步编码。
 
    &emsp;&emsp; 打包 - > 选择打包类型：
 
-   &emsp;&emsp;  1）Android 安装包（.apk）: 将当前项目打包为.apk文件，windows与mac运行的cocos都支持，c++，js，lua都支持。
+   &emsp;&emsp;  1）Android 安装包（.apk）: 将当前项目打包为.apk文件，Windows与Mac运行的cocos都支持，c++，js，lua都支持。
 
-   &emsp;&emsp; 2）iOS安装包（.ipa）:将当前项目打包为.ipa文件，仅mac运行的cocos支持，c++，js，lua项目都支持。
+   &emsp;&emsp; 2）iOS安装包（.ipa）:将当前项目打包为.ipa文件，仅Mac运行的cocos支持，c++，js，lua项目都支持。
 
-   &emsp;&emsp;  3）HTML5: 将当前项目打包为HTML5包，windows与mac运行的cocos都支持，仅js项目支持。    
+   &emsp;&emsp;  3）HTML5: 将当前项目打包为HTML5包，Windows与Mac运行的cocos都支持，仅js项目支持。    
       
   &emsp;&emsp; 使用上次设置发布与打包：若上次做的发布操作，则继续使用上次设置发布，若上次做的打包操作，则继续使用上次设置打包
 
@@ -114,7 +114,7 @@
   &emsp;&emsp;  发布：
   &emsp;&emsp; 发布内容：
 
-  &emsp;&emsp; 1）发布资源与项目文件：把编辑所用的资源拷贝到发布路径以及把csd，csi文件发布为cocos2d-x所使用的资源。注意：当资源较多的时候，拷贝速度比较慢，建议使用仅发布项目文件。
+  &emsp;&emsp; 1）发布资源与项目文件：把编辑所用的资源拷贝到发布路径以及把csd，csi文件发布为Cocos2d-x所使用的资源。注意：当资源较多的时候，拷贝速度比较慢，建议使用仅发布项目文件。
 
   &emsp;&emsp; 2）仅发布项目文件：仅把csd，csi文件发布为cocos2d-x所使用的资源。
 
@@ -179,7 +179,7 @@
 
 ![image](res/image019.png)
 
-  &emsp;&emsp; 发布与打包按钮——用于发布项目资源或项目工程，打包IOS（.ipa）安装包、Android（.apk）、HTML5 包。
+  &emsp;&emsp; 发布与打包按钮——用于发布项目资源或项目工程，打包iOS（.ipa）安装包、Android（.apk）、HTML5 包。
 
   &emsp;&emsp; 平台运行切换工具——在不同的平台下运行项目
 
@@ -258,7 +258,7 @@
  
 ![image](res/image035.png)
 
-  &emsp;&emsp; 画布面板是cocos studio中最常使用的面板，在该面板中可以进行控件的位置、旋转、缩放的调整、对控件锚点的修改、复制、粘贴等操作，在画布面板中可以单选或多选控件，选中后通过右键菜单或属性面板可以对控件进行进一步的设置。
+  &emsp;&emsp; 画布面板是Cocos Studio中最常使用的面板，在该面板中可以进行控件的位置、旋转、缩放的调整、对控件锚点的修改、复制、粘贴等操作，在画布面板中可以单选或多选控件，选中后通过右键菜单或属性面板可以对控件进行进一步的设置。
 
   &emsp;&emsp; 按住空格，鼠标拖动空白处可以对画布进行移动或者按下鼠标中间对画布进行移动。
 

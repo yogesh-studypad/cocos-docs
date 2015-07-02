@@ -33,4 +33,4 @@
 
 &emsp;&emsp;![image](res/image0007.png) 
  
-&emsp;&emsp;vi.	把此场景发布到Cocos工程，然后通过增加代码控制就可以实现一个简单的英雄打怪的游戏了。
+&emsp;&emsp;vi.	把此场景发布到cocos工程，然后通过增加代码控制就可以实现一个简单的英雄打怪的游戏了。

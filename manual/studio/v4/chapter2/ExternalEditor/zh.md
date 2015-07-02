@@ -1,6 +1,6 @@
 #使用外部编辑器
 
-&emsp;&emsp;cocos2d-x支持的所有外部工具，cocos studio也全部都支持，把这些外部的工具导出的数据，导入到资源面板，再配合上cocos studio现有的控件就可以使用了，下面介绍一下几种编辑器的使用方法。
+&emsp;&emsp;Cocos2d-x支持的所有外部工具，Cocos Studio也全部都支持，把这些外部的工具导出的数据，导入到资源面板，再配合上Cocos Studio现有的控件就可以使用了，下面介绍一下几种编辑器的使用方法。
 
 ### 1. Texture Packer
 

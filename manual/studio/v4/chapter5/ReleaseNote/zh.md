@@ -13,7 +13,7 @@
  &emsp;&emsp;【优化】菜单增加隐藏/显示锚点，Windows快捷键为 ctrl + shift + A，
 Mac平台的快捷键为Command+Shift+A。
 
- &emsp;&emsp;【优化】cocos帮助文档，启动界面内置文档模块，方便快速查看。
+ &emsp;&emsp;【优化】Cocos帮助文档，启动界面内置文档模块，方便快速查看。
 
  &emsp;&emsp;【修复】描边宽度为0，游戏加载效果仍然显示描边效果的问题。
 
@@ -102,7 +102,7 @@ Mac平台的快捷键为Command+Shift+A。
 
 **&emsp;&emsp;Cocos 2.2版本更新内容：**
 	
- &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（cocos2d-x 3.5支持解析）。
+ &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（Cocos2d-x 3.5支持解析）。
 
  &emsp;&emsp;【万众期待】支持基于Lua脚本的自定义控件，扩展随心所欲 。
 
@@ -112,9 +112,9 @@ Mac平台的快捷键为Command+Shift+A。
 
  &emsp;&emsp;【新增】多分辨率设置，常用分辨率自由设定 。
  
- &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （cocos2d-x 3.5支持解析）。
+ &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （Cocos2d-x 3.5支持解析）。
 
- &emsp;&emsp;【优化】编辑器导出的数据，支持cocos2d-x 3.4 Final加载。
+ &emsp;&emsp;【优化】编辑器导出的数据，支持Cocos2d-x 3.4 Final加载。
  
  &emsp;&emsp;【优化】新建项目与示例工程合并，创建项目更便捷 。
 
@@ -135,4 +135,4 @@ Mac平台的快捷键为Command+Shift+A。
  &emsp;&emsp;【修正】Mac OS X 10.10.2自动升级闪退的bug。
 
 
-注意：Cocos 2.2极其以上的任意版本导出的数据支持cocos2d-x 3.4极其以上任意版本加载。
+注意：Cocos 2.2极其以上的任意版本导出的数据支持Cocos2d-x 3.4极其以上任意版本加载。

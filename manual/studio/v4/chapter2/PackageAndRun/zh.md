@@ -22,7 +22,7 @@
 
 &emsp;&emsp;![image](res/image0002.png)
 
-&emsp;&emsp;2、	从商店下载ndk，双击android-ndk-r10d-windows-x86_64.exe，将其安装到英文目录，非英文尤其中文目录可能会导致打包出现异常问题。
+&emsp;&emsp;2、	从商店下载NDK，双击android-ndk-r10d-windows-x86_64.exe，将其安装到英文目录，非英文尤其中文目录可能会导致打包出现异常问题。
 
 &emsp;&emsp;安装目录下的文件截图：
 
@@ -38,7 +38,7 @@
 
 &emsp;&emsp;4、	从商店下载匹配的Framework版本，安装到英文目录，非英文尤其中文目录可能会导致打包出现异常问题。
 
-&emsp;&emsp;5、	创建一个Cocos项目，创建过程中一定要选择一个Framework版本。点击编辑器菜单栏->编辑->偏好设置->平台。
+&emsp;&emsp;5、	创建一个cocos项目，创建过程中一定要选择一个Framework版本。点击编辑器菜单栏->编辑->偏好设置->平台。
 
 &emsp;&emsp;注意：以下路径设置一定要正确，不然打包会出错！
 
@@ -135,7 +135,7 @@
 
 &emsp;&emsp;iOS打包：
 
-&emsp;&emsp;1、	创建一个Cocos项目（必须选择一个引擎版本）
+&emsp;&emsp;1、	创建一个cocos项目（必须选择一个引擎版本）
 
 &emsp;&emsp;2、	导入项目资源
 

@@ -2,7 +2,7 @@
 
 ![image](res/image001.png) 
  
-&emsp;&emsp;Armature控件可支持导入1.x版本的cocos studio 动画编辑器所制作的动画控件。 您可以使用Armature控件实现在cocos studio 2.x中添加动画内容的功能，并控制当前的动画列表以及播放状态。并在编辑器中预览动画。
+&emsp;&emsp;Armature控件可支持导入1.x版本的Cocos Studio 动画编辑器所制作的动画控件。 您可以使用Armature控件实现在Cocos Studio v2.x中添加动画内容的功能，并控制当前的动画列表以及播放状态。并在编辑器中预览动画。
 
 使用场景:
 

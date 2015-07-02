@@ -18,7 +18,7 @@
 
 &emsp;&emsp;对 Lua 脚本有一定的了解。
 
-&emsp;&emsp;对 cocos2d-x 导出的 Lua 接口比较熟悉。
+&emsp;&emsp;对 Cocos2d-x 导出的 Lua 接口比较熟悉。
 
 &emsp;&emsp;对 C# 语言编程有一定的了解。（非必需，不影响基础篇的阅读。进阶篇有此要求）
 
