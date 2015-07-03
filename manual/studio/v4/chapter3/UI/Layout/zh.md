@@ -76,7 +76,7 @@
         _scaleY= _scaleX;//将X、Y轴缩放值固定为X轴缩放值，调整设计分辨率的高度，使设计分辨率的高度在缩放后依然能够充满屏幕。
         _designResolutionSize.height= ceilf(_screenSize.height/_scaleY);
     }
-    //其他缩放策略:EXACT_FIT不作调整
+    //其他缩放策略：EXACT_FIT不作调整
 &emsp;&emsp;这段代码主要做了两件事：
 
 &emsp;&emsp;1.根据设备分辨率和设计分辨率计算游戏界面的缩放率；

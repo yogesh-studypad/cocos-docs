@@ -47,7 +47,7 @@
 &emsp;&emsp;&emsp;&emsp;C++： 编译型语言，基于Cocos 2d-x引擎，可以运行在Windows、Mac、Android、iOS， 新建C++项目需要安装Cocos Framework。
 
 &emsp;&emsp;&emsp;&emsp;JavaScript：脚本语言，基于Cocos 2d-js引擎，Cocos 2d-js引擎包含Cocos 2d-x jsbinding（将Cocos 2d-x的接口绑定到JS层）和Cocos 2d-html5（纯JS 引擎），jsbinding和Html5接口兼容，同一套JS游戏逻辑代码既可以驱动Cocos 2d-x也可以驱动Html5原生引擎，当打包到Win32，Mac，iOS，Android平台的时候默认基于jsbinding，打包到HTML5基于Cocos 2d-js引擎。
-附加功能: 只针对于Android，开启“支持x86架构cpu”后，编译出来的Android程序可以运行在使用x86架构的cpu的手机上。
+附加功能： 只针对于Android，开启“支持x86架构cpu”后，编译出来的Android程序可以运行在使用x86架构的cpu的手机上。
 
 ###三、点击完成。
 

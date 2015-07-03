@@ -47,7 +47,7 @@
 
 ![image](res/image005.png)
  
-&emsp;&emsp;通用:
+&emsp;&emsp;通用：
 
   &emsp;&emsp;1、控件：是否允许使用过时控件（艺术数字）。
 
@@ -99,11 +99,11 @@
 
    &emsp;&emsp; 打包 - > 选择打包类型：
 
-   &emsp;&emsp;  1）Android 安装包（.apk）: 将当前项目打包为.apk文件，Windows与Mac运行的cocos都支持，c++，js，lua都支持。
+   &emsp;&emsp;  1）Android 安装包（.apk）：将当前项目打包为.apk文件，Windows与Mac运行的cocos都支持，c++，js，lua都支持。
 
-   &emsp;&emsp; 2）iOS安装包（.ipa）:将当前项目打包为.ipa文件，仅Mac运行的cocos支持，c++，js，lua项目都支持。
+   &emsp;&emsp; 2）iOS安装包（.ipa）：将当前项目打包为.ipa文件，仅Mac运行的cocos支持，c++，js，lua项目都支持。
 
-   &emsp;&emsp;  3）HTML5: 将当前项目打包为HTML5包，Windows与Mac运行的cocos都支持，仅js项目支持。    
+   &emsp;&emsp;  3）HTML5： 将当前项目打包为HTML5包，Windows与Mac运行的cocos都支持，仅js项目支持。    
       
   &emsp;&emsp; 使用上次设置发布与打包：若上次做的发布操作，则继续使用上次设置发布，若上次做的打包操作，则继续使用上次设置打包
 
@@ -121,7 +121,7 @@
   &emsp;&emsp; 发布路径：可以自定义资源的发布路径，支持绝对与相对路径。
 数据格式：csd文件转换为的供引擎加载的数据格式。
 
-  &emsp;&emsp; csb: 使用Flatbuffers上输出二进制，解析效率高，体积小，安全性好，适用于c++与lua项目。
+  &emsp;&emsp; csb：使用Flatbuffers上输出二进制，解析效率高，体积小，安全性好，适用于c++与lua项目。
 
   &emsp;&emsp; Json：轻量级的数据交换格式，可读性强，JavaScript原生支持，适用于js项目。
 
@@ -331,7 +331,7 @@ Cocos Studio对每个文件提供一个动画时间轴，在该时间轴上可�
  
    &emsp;&emsp; ![image](res/image057.png) 动画列表可实现新建动画、删除、重命名等功能。
 
-   &emsp;&emsp; ![image](res/image058.png):新建动画,标识动画的起始帧与结束帧，并把起始帧与结束帧保存下来作为一个动画，比如，如下图：
+   &emsp;&emsp; ![image](res/image058.png)：新建动画，标识动画的起始帧与结束帧，并把起始帧与结束帧保存下来作为一个动画，比如，如下图：
  
 ![image](res/image059.png)
 

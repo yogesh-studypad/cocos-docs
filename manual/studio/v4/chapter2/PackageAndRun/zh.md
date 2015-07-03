@@ -18,7 +18,7 @@
 
 &emsp;&emsp;![image](res/image0001.png)
  
-&emsp;&emsp;编辑系统变量Path，在后面追加jre文件夹下的bin路径，注意，需要先输入一个半角分号，再输入bin路径，例如; C:\Program Files\Java\jre1.8.0_45\bin，如下截图：
+&emsp;&emsp;编辑系统变量Path，在后面追加jre文件夹下的bin路径，注意，需要先输入一个半角分号，再输入bin路径，例如： C:\Program Files\Java\jre1.8.0_45\bin，如下截图：
 
 &emsp;&emsp;![image](res/image0002.png)
 
@@ -29,12 +29,12 @@
 &emsp;&emsp;![image](res/image0003.png)
 
 &emsp;&emsp;编辑系统变量Path，在Path值后面添加android-ndk-r10d、build和platforms的路径，以半角分号隔开，例如：
-;D:\Studiowork\sdk\android-ndk-r10d\build\tools;D:\Studiowork\sdk\android-ndk-r10d;D:\Studiowork\sdk\android-ndk-r10d\platforms
+；D:\Studiowork\sdk\android-ndk-r10d\build\tools；D:\Studiowork\sdk\android-ndk-r10d；D:\Studiowork\sdk\android-ndk-r10d\platforms
 
 &emsp;&emsp;3、从商店下载SDK，解压到英文目录，非英文尤其中文目录可能会导致打包出现异常问题。
 
 &emsp;&emsp;编辑系统变量Path，在Path值后面添加platforms、platform-tools和tools的路径，以半角分号隔开，例如：
-;D:\Studiowork\sdk\sdk\platforms;D:\Studiowork\sdk\sdk\platform-tools;D:\Studiowork\sdk\sdk\tools
+；D:\Studiowork\sdk\sdk\platforms；D:\Studiowork\sdk\sdk\platform-tools；D:\Studiowork\sdk\sdk\tools
 
 &emsp;&emsp;4、从商店下载匹配的Framework版本，安装到英文目录，非英文尤其中文目录可能会导致打包出现异常问题。
 

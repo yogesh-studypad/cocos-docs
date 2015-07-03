@@ -13,7 +13,7 @@
 
 3）	摆放场景资源
 
-&emsp;&emsp;i.	拖入Scene文件夹下的changing.c3b到场景,在选中状态下配置属性信息如下：
+&emsp;&emsp;i.	拖入Scene文件夹下的changing.c3b到场景，在选中状态下配置属性信息如下：
 
 &emsp;&emsp;![image](res/image0003.png) 
  

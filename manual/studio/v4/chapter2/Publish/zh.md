@@ -29,7 +29,7 @@
 &emsp;&emsp;发布路径：可以自定义资源的发布路径，支持绝对与相对路径。
 数据格式：
 
-&emsp;&emsp;1、csb: 使用Flatbuffers输出二进制，解析效率高，体积小，安全性能好，适用于c++与lua项目。
+&emsp;&emsp;1、csb： 使用Flatbuffers输出二进制，解析效率高，体积小，安全性能好，适用于c++与lua项目。
 
 &emsp;&emsp;2、 Json：轻量级的数据交换格式，可读性强，JavaScript原生支持，适用于js项目。
 
