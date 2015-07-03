@@ -4,13 +4,13 @@
 
 &emsp;&emsp;自定义控件相关部分的设计思路及技术细节。包括两种自定义控件的编写方法： 
 
-&emsp;&emsp;A.使用  Lua 脚本编写供 Cocos Studio使用的自定义控件；（基础篇内容）
+&emsp;&emsp;A.使用 Lua 脚本编写供 Cocos Studio使用的自定义控件；（基础篇内容）
 
 &emsp;&emsp;B.使用 C# + Lua 来编写供 Cocos Studio 使用的自定义控件；（进阶篇内容）
 
 2.文档的读者
 
-&emsp;&emsp;需要更进一步了解 Cocos Studio, 对 Cocos Studio 有自定义控件需求的用户。
+&emsp;&emsp;需要更进一步了解 Cocos Studio，对 Cocos Studio 有自定义控件需求的用户。
 
 &emsp;&emsp;在此，我们假定读者有以下的知识技能：
 
@@ -18,7 +18,7 @@
 
 &emsp;&emsp;对 Lua 脚本有一定的了解。
 
-&emsp;&emsp;对 Cocos2d-x 导出的 Lua 接口比较熟悉。
+&emsp;&emsp;对 Cocos 2d-x 导出的 Lua 接口比较熟悉。
 
 &emsp;&emsp;对 C# 语言编程有一定的了解。（非必需，不影响基础篇的阅读。进阶篇有此要求）
 
@@ -63,7 +63,7 @@
 
 ![image](res/image001.png)
 
-&emsp;&emsp;在发布带有 Lua 自定义控件的 Cocos Studio 工程时，选择该选项。否则，自定义控件不可展示出来。例如，工程发布为 csb 文件时， 相应的自定义 Lua 控件会被跳过从而不可使用。（在 Cocos Studio 工程不包含 Lua 自定义控件时也可以选择该项来将工程导出为 Lua 文件。）
+&emsp;&emsp;在发布带有 Lua 自定义控件的 Cocos Studio 工程时，选择该选项。否则，自定义控件不可展示出来。例如，工程发布为 csb 文件时，相应的自定义 Lua 控件会被跳过从而不可使用。（在 Cocos Studio 工程不包含 Lua 自定义控件时也可以选择该项来将工程导出为 Lua 文件。）
 如果有其它的特殊的发布格式需求，请参考自定义工程导出一节。
 
 &emsp;&emsp;下面针对这两种情况分析介绍：
@@ -77,7 +77,7 @@
 
 &emsp;&emsp;Cocos Studio启动时，会扫描 Cocos Studio 插件目录下 LuaScript 目录，其中的 Lua 文件（以后缀名 .lua 作为判断）会被认为是一个用 Lua 编写的自定义扩展控件。文件名作为控件名字显示在 Cocos Studio 控件区（参见下面的示例）。
 
-&emsp;&emsp;对于只需要修改或者扩展 Cocos Studio控件的渲染的情况或者给控件属性设置默认值，比如要定制一套控件皮肤或者设置默认的文本字体，可以只编写 Lua 代码来完成操作。在这种情况下，用户根据我们规定的格式来编写 Lua 代码，在 Lua 代码中指定所扩展的 Cocos Studio 预定义控件的类型（这也就是下面会提到的 GetBaseType 的作用。由于这里是对 Cocos Studio 预定义类型的扩展，所以除 Lua 所扩展的部分之外，其它控件部分的初始化依然是由 Cocos Studio 来完成。这也是基础篇里对控件的扩展可以只写 Lua 代码而不需要 C# 代码来完成的原因。）， 完成所扩展的控件的自定义构建，放在Cocos Studio 插件目录下 LuaScript 目录内， Cocos Studio 的启动时便会加载它。要完成这个操作只需要以下两步：
+&emsp;&emsp;对于只需要修改或者扩展 Cocos Studio控件的渲染的情况或者给控件属性设置默认值，比如要定制一套控件皮肤或者设置默认的文本字体，可以只编写 Lua 代码来完成操作。在这种情况下，用户根据我们规定的格式来编写 Lua 代码，在 Lua 代码中指定所扩展的 Cocos Studio 预定义控件的类型（这也就是下面会提到的 GetBaseType 的作用。由于这里是对 Cocos Studio 预定义类型的扩展，所以除 Lua 所扩展的部分之外，其它控件部分的初始化依然是由 Cocos Studio 来完成。这也是基础篇里对控件的扩展可以只写 Lua 代码而不需要 C# 代码来完成的原因。）， 完成所扩展的控件的自定义构建，放在Cocos Studio 插件目录下 LuaScript 目录内，Cocos Studio 的启动时便会加载它。要完成这个操作只需要以下两步：
 
 &emsp;&emsp;1） 编写自定义控件 Lua 脚本代码。
 
@@ -85,7 +85,7 @@
 
 
 &emsp;&emsp;下面来看一个示例：一个自定义的带文本的精灵控件。
-请在示例工程位置处找到 Addins.sln， 可以在 Visual Studio 2013 中打开它，下面的示例是位于 LuaScript 目录里的 abc.lua 文件。
+请在示例工程位置处找到 Addins.sln，可以在 Visual Studio 2013 中打开它，下面的示例是位于 LuaScript 目录里的 abc.lua 文件。
 
 7.示例
 
@@ -131,7 +131,7 @@ return container
 
 &emsp;&emsp;分析：
 上面的代码是一个完整的 Lua 模块。加载它时会返回一个 Lua Table，也就是代码片段最后的那个 container 表。
-方法GetBaseType用以返回这个 Lua 代码所扩展的自定义控件的根节点基础类型，这里返回一个字符串 ‘Sprite’, 表示自定义扩展的控件是一个精灵。GetBaseType 的具体可用的返回值见下一节中关于GetBaseType方法的描述。
+方法GetBaseType用以返回这个 Lua 代码所扩展的自定义控件的根节点基础类型，这里返回一个字符串 ‘Sprite’， 表示自定义扩展的控件是一个精灵。GetBaseType 的具体可用的返回值见下一节中关于GetBaseType方法的描述。
 方法CreateCustomNode 用以返回一个结点，这里就是一个扩展的精灵。
 假设上面的 Lua 代码文件 abc.lua 已经放置Cocos Studio 插件目录下 LuaScript 目录内，同时目录中有图片 temp.png。
 运行 Cocos Studio ，可以在控件面板 “自定义控件” 分组中看到这个自定义控件，控件的名字即 Lua 文件名 “abc”：
@@ -425,7 +425,7 @@ ModelExtension 特性：导出这个自定义的 ViewModel 类型，其参数为
     [ModelExtension(2, EnumModelType.ThreeDimensional)]
 
 &emsp;&emsp;Category 特性：
-分组，以及控件在分组中的顺序。这里因为给它指定的是名字是 "Control_Custom", 所示该控件在控件区显示在“自定义控件”分组中，（注意， 这里用字段"Control_Custom" 而实际显示为“自定义控件”是因为 Cocos Studio 里有特殊的处理，如果使用其它的字段，则会显示会字段的名字。）
+分组，以及控件在分组中的顺序。这里因为给它指定的是名字是 "Control_Custom"， 所示该控件在控件区显示在“自定义控件”分组中，（注意：这里用字段"Control_Custom" 而实际显示为“自定义控件”是因为 Cocos Studio 里有特殊的处理，如果使用其它的字段，则会显示会字段的名字。）
 
 &emsp;&emsp;EngineClassName：控件名，其名字会显示在属性面板的类型处。Cocos Studio 的控件此处显示的是是它在 Cocos 2d-x 中类型。自定义控件没有对应的引擎类型，所以此处以自己能清晰的分辨所选择类型为准。
 
@@ -598,7 +598,7 @@ DataModel的其它细节请参见DataModel 和 ViewModel 一节。
 
 &emsp;&emsp;T4 模板的其它细节请参见 T4 模板一节。
 
-&emsp;&emsp;Lua 代码生成的 T4 模板这里使用的是 Monodevelop 的插件机制，所以需要为其添加一个 Xml 导出文件。Cocos Studio项目在导出 Lua 文件时会由其插件机制扫描 "/CocoStudio/Model/Lua/Templates" 扩展点下的所有 LuaBaseObject 类（这个类是所有的代码生成模板类的基类。）,所以这里添加代码生成模板的导出类。在进行 Lua 代码生成的时候，Cocos Studio 会以每个要生成的 DataModel 类为参数来调用 CanSerialize 来查找该 DataModel 所对应的代码模板生成类。
+&emsp;&emsp;Lua 代码生成的 T4 模板这里使用的是 Monodevelop 的插件机制，所以需要为其添加一个 Xml 导出文件。Cocos Studio项目在导出 Lua 文件时会由其插件机制扫描 "/CocoStudio/Model/Lua/Templates" 扩展点下的所有 LuaBaseObject 类（这个类是所有的代码生成模板类的基类。），所以这里添加代码生成模板的导出类。在进行 Lua 代码生成的时候，Cocos Studio 会以每个要生成的 DataModel 类为参数来调用 CanSerialize 来查找该 DataModel 所对应的代码模板生成类。
 
 &emsp;&emsp;Lua 代码生成模板导出
 
@@ -628,7 +628,7 @@ Mono.Addins的具体细节请参考：[http://monoaddins.codeplex.com/](http://m
 
 &emsp;&emsp;DataModel 和 ViewModel 
 
-&emsp;&emsp;在 Cocos Studio 中，渲染区所展示的每一个控件都是一个 ViewModel, 每一个 ViewModel 都对应一个 DataModel 来管理其数据。
+&emsp;&emsp;在 Cocos Studio 中，渲染区所展示的每一个控件都是一个 ViewModel，每一个 ViewModel 都对应一个 DataModel 来管理其数据。
 
 &emsp;&emsp;根据要扩展的控件的不同，ViewModel 需要继承自 NodeObject 或者 NodeObject 的某个子类。DataModel 需要相应的继承自和 ViewModel 的基类所配对的 NodeObjectData 或者 NodeObjectData 某个子类。
 DataModel 和 ViewModel 的关联通过 DataModelExtension 特性来实现。
@@ -695,7 +695,7 @@ C# 和 Lua 之间数据的交互，目前只支持这几种预定义的类型，
 
 &emsp;&emsp;相关类一览
 
-&emsp;&emsp;Cocos Studio 中的 ViewModel, DataModel, 及 T4 模板生成的相关类名一览：
+&emsp;&emsp;Cocos Studio 中的 ViewModel，DataModel， 及 T4 模板生成的相关类名一览：
 
 &emsp;&emsp;ViewModel 类	DataModel 类	T4 模板类
 	
@@ -751,7 +751,7 @@ C# 和 Lua 之间数据的交互，目前只支持这几种预定义的类型，
 
 &emsp;&emsp;1) 文档所描述的内容适用于 Cocos Studio 2.2.5及其以上的版本 所附带的示例工程。
 
-&emsp;&emsp;2)Cocos Studio 工程中控件的名字应为合法的 Lua 变量，否则发布到Lua 文件后程序 Lua 程序不可以正常执行。这个可以 Cocos Studio 的工程配置文件中开启命名规则检查（注：工程配置文件即是 Cocos Studio 工程文件同目录 的以.cfg  o为后缀的文件，将其中的字段 IsNameStandardized 置为 “True”即可）。另外，不合法的变量名在发布 Lua 文件时会在 Cocos Studio 输出区打印相应的提示。
+&emsp;&emsp;2)Cocos Studio 工程中控件的名字应为合法的 Lua 变量，否则发布到Lua 文件后程序 Lua 程序不可以正常执行。这个可以 Cocos Studio 的工程配置文件中开启命名规则检查（注：工程配置文件即是 Cocos Studio 工程文件同目录的以.cfg  o为后缀的文件，将其中的字段 IsNameStandardized 置为 “True”即可）。另外，不合法的变量名在发布 Lua 文件时会在 Cocos Studio 输出区打印相应的提示。
 
 &emsp;&emsp;3)这是编辑器第一阶段的开放，上面只是针对控件扩展部分，给出了几个必要的类。在编辑器后续的开发过程中，我们会逐步开放编辑器扩展相关的接口和类。并给出相关的文档说明，敬请期待。
 

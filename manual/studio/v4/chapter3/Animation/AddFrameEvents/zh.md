@@ -12,7 +12,7 @@
 ![image](res/image002.png)
 
 
-&emsp;&emsp;3.属性区切换到高级属性. 属性区切换到高级属性。
+&emsp;&emsp;3.属性区切换到高级属性。
 
 &emsp;![image](res/image003.png)
 

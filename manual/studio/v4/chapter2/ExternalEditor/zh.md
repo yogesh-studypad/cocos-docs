@@ -1,6 +1,6 @@
 #使用外部编辑器
 
-&emsp;&emsp;Cocos2d-x支持的所有外部工具，Cocos Studio也全部都支持，把这些外部的工具导出的数据，导入到资源面板，再配合上Cocos Studio现有的控件就可以使用了，下面介绍一下几种编辑器的使用方法。
+&emsp;&emsp;Cocos 2d-x支持的所有外部工具，Cocos Studio也全部都支持，把这些外部的工具导出的数据，导入到资源面板，再配合上Cocos Studio现有的控件就可以使用了，下面介绍一下几种编辑器的使用方法。
 
 ### 1. Texture Packer
 
@@ -10,7 +10,7 @@
 
 &emsp;&emsp;2）使用Texture Packer，导出plist合图为:
 
-&emsp;&emsp;TexturePacker.plist TexturePacker.png, 右键点击编辑器资源面板，选择“导入资源…”，选择TexturePacker.plist，导入成功后如下图：
+&emsp;&emsp;TexturePacker.plist TexturePacker.png，右键点击编辑器资源面板，选择“导入资源…”，选择TexturePacker.plist，导入成功后如下图：
 
 &emsp;&emsp;![image](res/image0002.png)
  
@@ -37,7 +37,7 @@
 ![image](res/image0005.png)
 
 &emsp;&emsp;2)使用Particle Designer，导出plist特效粒子文件为:
-&emsp;&emsp;blue.plist, 右键点击编辑器资源面板，选择“导入资源…”，选择blue.plist，导入成功后如下图：
+&emsp;&emsp;blue.plist， 右键点击编辑器资源面板，选择“导入资源…”，选择blue.plist，导入成功后如下图：
 
 &emsp;&emsp;![image](res/image0006.png)
 

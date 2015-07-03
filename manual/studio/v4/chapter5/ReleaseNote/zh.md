@@ -60,13 +60,13 @@ Mac平台的快捷键为Command+Shift+A。
 
  &emsp;&emsp;【新增】资源面板csd文件支持拷贝操作，快捷键为Ctrl/Command+D。
 
- &emsp;&emsp;【新增】双击嵌套的csd文件, 直接进入编辑状态。
+ &emsp;&emsp;【新增】双击嵌套的csd文件， 直接进入编辑状态。
 
- &emsp;&emsp;【新增】按钮和文本控件增加描边、阴影属性设置。(cocos2d-x 3.6支持解析)
+ &emsp;&emsp;【新增】按钮和文本控件增加描边、阴影属性设置。(Cocos 2d-x 3.6支持解析)
 
- &emsp;&emsp;【新增】动画缓动设置。（cocos2d-x 3.6支持解析）。
+ &emsp;&emsp;【新增】动画缓动设置。（Cocos 2d-x 3.6支持解析）。
 
- &emsp;&emsp;【新增】精灵控件，粒子控件blending功能。（cocos2d-x 3.6支持解析）
+ &emsp;&emsp;【新增】精灵控件，粒子控件blending功能。（Cocos 2d-x 3.6支持解析）
 
  &emsp;&emsp;【新增】取色器面板支持颜色历史记录。
 
@@ -102,7 +102,7 @@ Mac平台的快捷键为Command+Shift+A。
 
 **&emsp;&emsp;Cocos 2.2版本更新内容：**
 	
- &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（Cocos2d-x 3.5支持解析）。
+ &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（Cocos 2d-x 3.5支持解析）。
 
  &emsp;&emsp;【万众期待】支持基于Lua脚本的自定义控件，扩展随心所欲 。
 
@@ -112,21 +112,21 @@ Mac平台的快捷键为Command+Shift+A。
 
  &emsp;&emsp;【新增】多分辨率设置，常用分辨率自由设定 。
  
- &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （Cocos2d-x 3.5支持解析）。
+ &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （Cocos 2d-x 3.5支持解析）。
 
- &emsp;&emsp;【优化】编辑器导出的数据，支持Cocos2d-x 3.4 Final加载。
+ &emsp;&emsp;【优化】编辑器导出的数据，支持Cocos 2d-x 3.4 Final加载。
  
  &emsp;&emsp;【优化】新建项目与示例工程合并，创建项目更便捷 。
 
- &emsp;&emsp;【优化】对新创建的项目进行Name属性校验, 保证变量名有效。
+ &emsp;&emsp;【优化】对新创建的项目进行Name属性校验， 保证变量名有效。
 
  &emsp;&emsp;【优化】支持在属性区修改图层尺寸。
 
- &emsp;&emsp;【优化】固定与拉伸布局属性, 支持直接输入数值进行设置。
+ &emsp;&emsp;【优化】固定与拉伸布局属性， 支持直接输入数值进行设置。
 
  &emsp;&emsp;【优化】控件可设置禁用的图片。
 
- &emsp;&emsp;【优化】Button控件支持清空默认资源, 减小资源大小。
+ &emsp;&emsp;【优化】Button控件支持清空默认资源， 减小资源大小。
 
  &emsp;&emsp;【优化】csd文件外部编辑后的同步问题。
  
@@ -135,4 +135,4 @@ Mac平台的快捷键为Command+Shift+A。
  &emsp;&emsp;【修正】Mac OS X 10.10.2自动升级闪退的bug。
 
 
-注意：Cocos 2.2极其以上的任意版本导出的数据支持Cocos2d-x 3.4极其以上任意版本加载。
+注意：Cocos 2.2极其以上的任意版本导出的数据支持Cocos 2d-x 3.4极其以上任意版本加载。

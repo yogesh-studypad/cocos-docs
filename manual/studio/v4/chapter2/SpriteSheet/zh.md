@@ -17,7 +17,7 @@
 
  ![image](res/image0003.png)
 
-&emsp;&emsp;4） 可通过属性面板修改合图类型文件的属性，如下图：
+&emsp;&emsp;4）可通过属性面板修改合图类型文件的属性，如下图：
 
  ![image](res/image0004.png)
  

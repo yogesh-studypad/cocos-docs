@@ -12,7 +12,7 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;发布为Code IDE工程：先执行发布资源过程，然后使用Code IDE打开项目，C++项目此选项为灰。
 
-&emsp;&emsp;&emsp;&emsp;&emsp;发布为Visual Studio工程： 仅windows上，先执行发布资源过程，然后使用Visual Studio打开项目。
+&emsp;&emsp;&emsp;&emsp;&emsp;发布为Visual Studio工程： 仅Windows上，先执行发布资源过程，然后使用Visual Studio打开项目。
 
 &emsp;&emsp;&emsp;&emsp;&emsp;发布为Xcode工程： 仅Mac上，先执行发布资源过程，然后使用Xcode打开项目。
 
@@ -24,7 +24,7 @@
 
 &emsp;&emsp;1、发布资源与项目文件：把编辑所用的资源拷贝到发布路径以及把csd，csi文件发布为Cocos2d-x所使用的资源。注意：当资源较多的时候，拷贝速度比较慢，建议使用仅发布项目文件。
 
-&emsp;&emsp;2、仅发布项目文件：仅把csd，csi文件发布为Cocos2d-x所使用的资源。
+&emsp;&emsp;2、仅发布项目文件：仅把csd，csi文件发布为Cocos 2d-x所使用的资源。
 
 &emsp;&emsp;发布路径：可以自定义资源的发布路径，支持绝对与相对路径。
 数据格式：
