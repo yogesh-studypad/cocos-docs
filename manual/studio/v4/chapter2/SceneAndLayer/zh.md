@@ -1,5 +1,5 @@
 #制作场景与UI：
-&emsp;&emsp;[1、认识Cocos编辑器主界面。](../../chapter3/Editor/UIOverview/zh.md)
+&emsp;&emsp;[1、认识cocos编辑器主界面。](../../chapter3/Editor/UIOverview/zh.md)
 
 &emsp;&emsp;2、制作新场景：
 
@@ -41,11 +41,11 @@
  
 ![image](res/image0010.png)
 
-&emsp;&emsp;3）这个基本的UI界面就做好了，我们现在把这个界面放到场景里面，在资源面板双击”Scene1.csd”,打开Scene1.csd后，拖动Layer.csd到渲染区，Layer.csd就被添加到Scene1.csd里面了，这样就完成了UI界面与场景文件的结合，如下图：
+&emsp;&emsp;3）这个基本的UI界面就做好了，我们现在把这个界面放到场景里面，在资源面板双击”Scene1.csd”，打开Scene1.csd后，拖动Layer.csd到渲染区，Layer.csd就被添加到Scene1.csd里面了，这样就完成了UI界面与场景文件的结合，如下图：
 
 ![image](res/image0013.png)
 
-&emsp;&emsp;4）点击工具栏”预览![image](res/image0011.png)”按钮，看一下场景在游戏里面的样子, 如下图：
+&emsp;&emsp;4）点击工具栏”预览![image](res/image0011.png)”按钮，看一下场景在游戏里面的样子，如下图：
  
 ![image](res/image0012.png)
 
