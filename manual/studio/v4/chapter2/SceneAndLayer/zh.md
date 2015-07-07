@@ -15,7 +15,7 @@
   
 ![image](res/image0003.png)
 
-&emsp;&emsp;4）导入了Common，LevelSelecttion资源文件夹，如下图：
+&emsp;&emsp;4）导入了Common、LevelSelecttion资源文件夹，如下图：
 
 ![image](res/image0004.png)
  
@@ -29,7 +29,7 @@
 
 ![image](res/image0008.png)
  
-&emsp;&emsp;Cocos Studio拼接场景，UI，动画都是延续这个思路，先导入资源，然后创建控件，再给控件赋资源，改变控件的属性，达到效果，这一点要记清楚。
+&emsp;&emsp;Cocos Studio拼接场景、UI、动画都是延续这个思路，先导入资源，然后创建控件，再给控件赋资源，改变控件的属性，达到效果，这一点要记清楚。
 
 &emsp;&emsp;2、制作新UI：
 

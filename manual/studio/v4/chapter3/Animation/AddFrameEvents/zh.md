@@ -9,23 +9,23 @@
 
 &emsp;&emsp;2.选中控件，在时间轴上点击需要添加帧事件的位置。
 
-![image](res/image002.png)
+&emsp;&emsp;&emsp;![image](res/image002.png)
 
 
 &emsp;&emsp;3.属性区切换到高级属性。
 
-&emsp;![image](res/image003.png)
+&emsp;&emsp;&emsp;![image](res/image003.png)
 
 &emsp;&emsp;4.为帧事件赋值。
 
-&emsp;![image](res/image004.png)
+&emsp;&emsp;&emsp;![image](res/image004.png)
 
 &emsp;5.切换到时间轴的下一位置。
 
-![image](res/image005.png)
+&emsp;&emsp;&emsp;![image](res/image005.png)
 
 &emsp;6.再次为帧事件赋值（可与前一帧不同）。
 
-![image](res/image006.png)
+&emsp;&emsp;&emsp;![image](res/image006.png)
 
-![image](res/image007.png)
+&emsp;&emsp;&emsp;![image](res/image007.png)

@@ -7,7 +7,7 @@
 
 ![image](res/image002.png)
  
-####1.	文件
+####1.文件
  
 ![image](res/image003.png)
 
@@ -35,7 +35,7 @@
 
 &emsp;&emsp;退出：退出Cocos Studio编辑器，快捷键为Alt+F4。
 
-####2.	编辑
+####2.编辑
 
 ![image](res/image004.png)
  
@@ -57,13 +57,13 @@
     
 ![image](res/image006.png)
 
-&emsp;&emsp; 模拟器：
+&emsp;&emsp;模拟器：
 
-&emsp;&emsp; 1、启动：模拟器启动是否打开命令行窗口，默认隐藏。
+&emsp;&emsp;1、启动：模拟器启动是否打开命令行窗口，默认隐藏。
 
 ![image](res/image007.png)
 
-&emsp;&emsp; 2.平台：
+&emsp;&emsp;2.平台：
 
   &emsp;&emsp; Android相关路径：
 
@@ -73,50 +73,51 @@
 
  &emsp;&emsp; 分辨率：
 
-  &emsp;&emsp; 可以对分辨率设置的下拉列表显示状态进行修改，添加、编辑、上移、下移、移除、重置，修改后点击确定，工具栏中的下拉菜单同步刷新。
+ &emsp;&emsp; 可以对分辨率设置的下拉列表显示状态进行修改，添加、编辑、上移、下移、移除、重置，修改后点击确定，工具栏中的下拉菜单同步刷新。
 
 ####3.项目
 
 ![image](res/image009.png)
 
- &emsp;&emsp; 运行项目...：
+  &emsp;&emsp;运行项目...：
 
-  &emsp;&emsp; Windows：可以选择在Windows平台上运行，在Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
+  &emsp;&emsp;Windows：可以选择在Windows平台上运行，在Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
 
-  &emsp;&emsp; Mac：在IOS设备上运行，Mac平台上运行，Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
+  &emsp;&emsp;Mac：在IOS设备上运行，Mac平台上运行，Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
 
-  &emsp;&emsp; 如何运行在各个平台，具体请参考：[打包与运行环境配置](../../../chapter2/PackageAndRun/zh.md)
+  &emsp;&emsp;如何运行在各个平台，具体请参考：[打包与运行环境配置](../../../chapter2/PackageAndRun/zh.md)
 
   &emsp;&emsp; 发布与打包：
 
   &emsp;&emsp; 发布 - > 选择发布类型：
 
-   &emsp;&emsp; 1）发布资源：把编辑器编辑的资源与项目文件发布为cocos2d-x引擎所使用的资源，发布后的资源加载速度快，体积小。
+   &emsp;&emsp;1）发布资源：把编辑器编辑的资源与项目文件发布为Cocos 2d-x引擎所使用的资源，发布后的资源加载速度快，体积小。
 
-   &emsp;&emsp; 2）发布为Code IDE工程：发布资源后并使用Code IDE打开当前项目，方便进一步编码。
+   &emsp;&emsp;2）发布为Code IDE工程：发布资源后并使用Code IDE打开当前项目，方便进一步编码。
 
-   &emsp;&emsp; 3）发布为Visual Studio工程：发布资源后并使用Visual Studio打开当前项目，方便进一步编码。
+   &emsp;&emsp;3）发布为Visual Studio工程：发布资源后并使用Visual Studio打开当前项目，方便进一步编码。
 
-   &emsp;&emsp; 打包 - > 选择打包类型：
+   &emsp;&emsp;打包 - > 选择打包类型：
 
-   &emsp;&emsp;  1）Android 安装包（.apk）：将当前项目打包为.apk文件，Windows与Mac运行的cocos都支持，c++，js，lua都支持。
+   &emsp;&emsp;1）Android 安装包（.apk）：将当前项目打包为.apk文件，Windows与Mac运行的cocos都支持，c++、js、lua都支持。
 
-   &emsp;&emsp; 2）iOS安装包（.ipa）：将当前项目打包为.ipa文件，仅Mac运行的cocos支持，c++，js，lua项目都支持。
+   &emsp;&emsp;2）iOS安装包（.ipa）：将当前项目打包为.ipa文件，仅Mac运行的cocos支持，c++、js、lua项目都支持。
 
-   &emsp;&emsp;  3）HTML5： 将当前项目打包为HTML5包，Windows与Mac运行的cocos都支持，仅js项目支持。    
+   &emsp;&emsp;3）HTML5： 将当前项目打包为HTML5包，Windows与Mac运行的cocos都支持，仅js项目支持。    
       
-  &emsp;&emsp; 使用上次设置发布与打包：若上次做的发布操作，则继续使用上次设置发布，若上次做的打包操作，则继续使用上次设置打包
+  &emsp;&emsp;使用上次设置发布与打包：若上次做的发布操作，则继续使用上次设置发布，若上次做的打包操作，则继续使用上次设置打包
 
-  &emsp;&emsp; 项目设置
+  &emsp;&emsp;项目设置
 
 ![image](res/image010.png)
  
   &emsp;&emsp;  发布：
+
   &emsp;&emsp; 发布内容：
 
-  &emsp;&emsp; 1）发布资源与项目文件：把编辑所用的资源拷贝到发布路径以及把csd，csi文件发布为Cocos 2d-x所使用的资源。注意：当资源较多的时候，拷贝速度比较慢，建议使用仅发布项目文件。
+  &emsp;&emsp; 1）发布资源与项目文件：把编辑所用的资源拷贝到发布路径以及把csd、csi文件发布为Cocos 2d-x所使用的资源。注意：当资源较多的时候，拷贝速度比较慢，建议使用仅发布项目文件。
 
-  &emsp;&emsp; 2）仅发布项目文件：仅把csd，csi文件发布为Cocos 2d-x所使用的资源。
+  &emsp;&emsp; 2）仅发布项目文件：仅把csd、csi文件发布为Cocos 2d-x所使用的资源。
 
   &emsp;&emsp; 发布路径：可以自定义资源的发布路径，支持绝对与相对路径。
 数据格式：csd文件转换为的供引擎加载的数据格式。
@@ -201,19 +202,19 @@
 
 ![image](res/image024.png)
  
-  &emsp;&emsp; 仅出现在编辑3D场景文件。
+  &emsp;&emsp;仅出现在编辑3D场景文件。
 
-   &emsp;&emsp; ![image](res/image025.png)默认选择“平移“状态，可以通过点击对应x轴，y轴，z轴进行切换，决定在沿着哪个坐标轴进行平移。
+   &emsp;&emsp;![image](res/image025.png)默认选择“平移“状态，可以通过点击对应x轴，y轴，z轴进行切换，决定在沿着哪个坐标轴进行平移。
 
-   &emsp;&emsp; ![image](res/image026.png)“旋转”状态下拖拽鼠标，可以通过点击对应x轴，y轴，z轴进行切换，决定将选中物体围绕着哪个坐标轴进行旋转。
+   &emsp;&emsp;![image](res/image026.png)“旋转”状态下拖拽鼠标，可以通过点击对应x轴，y轴，z轴进行切换，决定将选中物体围绕着哪个坐标轴进行旋转。
 
-   &emsp;&emsp; ![image](res/image027.png)“缩放”状态下拖拽鼠标，可以通过点击对应x轴，y轴，z轴进行切换，决定将选中物体沿着哪个坐标轴进行缩放。
+   &emsp;&emsp;![image](res/image027.png)“缩放”状态下拖拽鼠标，可以通过点击对应x轴，y轴，z轴进行切换，决定将选中物体沿着哪个坐标轴进行缩放。
 
 ###对象面板
 
   &emsp;&emsp; 控件面板会根据编辑项目类型不同显示不同控件
 
-  &emsp;&emsp; 1.编辑场景，图层，节点，合图的时候时，对象面板默认分为基础对象、控件、容器、自定义控件四部分。
+  &emsp;&emsp; 1.编辑场景、图层、节点、合图的时候时，对象面板默认分为基础对象、控件、容器、自定义控件四部分。
 显示如下
 
 ![image](res/image028.png)
@@ -226,7 +227,7 @@
 
   &emsp;&emsp; 添加控件：左键选中控件，然后拖拽控件到画布面板，然后松开鼠标左键，可以实现添加一个控件的操作。
 
-  &emsp;&emsp; 2.编辑3D场景时。3D状态下的控制面板仅显示3D控件。如，3D摄像机，模型，3D粒子等。如下图所示：
+  &emsp;&emsp; 2.编辑3D场景时。3D状态下的控制面板仅显示3D控件。如：3D摄像机、模型、3D粒子等。如下图所示：
 
 ![image](res/image031.png)
  
@@ -248,13 +249,13 @@
 
   &emsp;&emsp; Cocos的标准操作流程是：
 
-  &emsp;&emsp; 先把游戏将要用到的资源拖拽到资源面板，然后从对象面板拖拽需要用到的控件到画布面板新建控件，然后从资源面板把资源给新建的控件赋值，然后修改控件的属性，进行界面，场景，动画的编辑。
+  &emsp;&emsp; 先把游戏将要用到的资源拖拽到资源面板，然后从对象面板拖拽需要用到的控件到画布面板新建控件，然后从资源面板把资源给新建的控件赋值，然后修改控件的属性，进行界面、场景、动画的编辑。
 
 ###画布面板
 
   &emsp;&emsp; 注意：此面板根据编辑内容不同而动态调整
 
-  &emsp;&emsp; 1）当编辑场景，图层时，显示画布如下：
+  &emsp;&emsp; 1）当编辑场景、图层时，显示画布如下：
  
 ![image](res/image035.png)
 

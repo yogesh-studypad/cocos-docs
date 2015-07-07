@@ -10,7 +10,7 @@
 
  &emsp;&emsp;【优化】3D场景网格参考线。
 
- &emsp;&emsp;【优化】菜单增加隐藏/显示锚点，Windows快捷键为 ctrl + shift + A，
+ &emsp;&emsp;【优化】菜单增加隐藏/显示锚点，Windows快捷键为Ctrl+Shift+A，
 Mac平台的快捷键为Command+Shift+A。
 
  &emsp;&emsp;【优化】Cocos帮助文档，启动界面内置文档模块，方便快速查看。
@@ -76,7 +76,7 @@ Mac平台的快捷键为Command+Shift+A。
 
  &emsp;&emsp;【优化】资源项目可以升级为完整项目。
 
- &emsp;&emsp;【优化】支持快捷键（Shift + Q/W/T/B）控制调整对象的渲染层级​。
+ &emsp;&emsp;【优化】支持快捷键（Shift+Q/W/T/B）控制调整对象的渲染层级​。
 
  &emsp;&emsp;【优化】创建序列帧动画，增加“是否追加第一帧为最后一帧”选项，可方便的创建循环的序列帧动画。
  
@@ -104,29 +104,29 @@ Mac平台的快捷键为Command+Shift+A。
 	
  &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（Cocos 2d-x 3.5支持解析）。
 
- &emsp;&emsp;【万众期待】支持基于Lua脚本的自定义控件，扩展随心所欲 。
+ &emsp;&emsp;【万众期待】支持基于Lua脚本的自定义控件，扩展随心所欲。
 
  &emsp;&emsp;【新增】Cocos商店华丽变身，下载、安装、卸载一键搞定，信息和评论与你分享。
 
- &emsp;&emsp;【新增】支持修改动画播放速度，预览演示更方便 （cocos2d-x 3.5支持解析）。
+ &emsp;&emsp;【新增】支持修改动画播放速度，预览演示更方便（Cocos2d-x 3.5支持解析）。
 
- &emsp;&emsp;【新增】多分辨率设置，常用分辨率自由设定 。
+ &emsp;&emsp;【新增】多分辨率设置，常用分辨率自由设定。
  
- &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （Cocos 2d-x 3.5支持解析）。
+ &emsp;&emsp;【新增】控件高级属性可设置自定义数据（Cocos 2d-x 3.5支持解析）。
 
- &emsp;&emsp;【优化】编辑器导出的数据，支持Cocos 2d-x 3.4 Final加载。
+ &emsp;&emsp;【优化】编辑器导出的数据，支持Cocos 2d-x 3.4Final加载。
  
- &emsp;&emsp;【优化】新建项目与示例工程合并，创建项目更便捷 。
+ &emsp;&emsp;【优化】新建项目与示例工程合并，创建项目更便捷。
 
- &emsp;&emsp;【优化】对新创建的项目进行Name属性校验， 保证变量名有效。
+ &emsp;&emsp;【优化】对新创建的项目进行Name属性校验，保证变量名有效。
 
  &emsp;&emsp;【优化】支持在属性区修改图层尺寸。
 
- &emsp;&emsp;【优化】固定与拉伸布局属性， 支持直接输入数值进行设置。
+ &emsp;&emsp;【优化】固定与拉伸布局属性，支持直接输入数值进行设置。
 
  &emsp;&emsp;【优化】控件可设置禁用的图片。
 
- &emsp;&emsp;【优化】Button控件支持清空默认资源， 减小资源大小。
+ &emsp;&emsp;【优化】Button控件支持清空默认资源，减小资源大小。
 
  &emsp;&emsp;【优化】csd文件外部编辑后的同步问题。
  

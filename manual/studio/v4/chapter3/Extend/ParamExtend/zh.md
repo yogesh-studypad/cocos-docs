@@ -235,14 +235,14 @@
         [JsonProperty]
         public int CustomInt { get; set; }
 
-&emsp;&emsp;具体的代码在CustomObjectData 已经添加。
+&emsp;&emsp;具体的代码在CustomObjectData已经添加。
 
 &emsp;&emsp;编写一个自定义控件
 
-&emsp;&emsp;CustomEditor 继承了BaseEditor基类和 ITypeEditor 接口
-NumberEditorWidget 是一个有两个TextBox的控件(类似于ScaleValue类型的这个控件)。
+&emsp;&emsp;CustomEditor继承了BaseEditor基类和ITypeEditor接口
+NumberEditorWidget是一个有两个TextBox的控件(类似于ScaleValue类型的这个控件)。
 
-&emsp;&emsp;ITypeEditor接口必须实现ResolveEditor 方法，这个方法返回一个显示在界面上的控件，如果需要添加多个，则可以继续添加Table之类的容器控件，在容器控件中自定义完所需内容后，返回容器控件。
+&emsp;&emsp;ITypeEditor接口必须实现ResolveEditor方法，这个方法返回一个显示在界面上的控件，如果需要添加多个，则可以继续添加Table之类的容器控件，在容器控件中自定义完所需内容后，返回容器控件。
 
 &emsp;&emsp;如果要处理两个TextBox的值变化，则需要添加下面两个事件：
 
@@ -261,11 +261,11 @@ NumberEditorWidget 是一个有两个TextBox的控件(类似于ScaleValue类型�
 			
 	scaleValue.ScaleX = (float)e.PointX;
 
-&emsp;&emsp;然后调用UpdatePropertyValue 对渲染区进行更改，当渲染区数据变化时，则会触发  override void OnPropertyChanged(object sender,PropertyChangedEventArgs e) 事件，如果要单独处理事件，则可以在OnPropertyChanged 中加上逻辑代码.
+&emsp;&emsp;然后调用UpdatePropertyValue对渲染区进行更改，当渲染区数据变化时，则会触发override void OnPropertyChanged(object sender,PropertyChangedEventArgs e)事件，如果要单独处理事件，则可以在OnPropertyChanged中加上逻辑代码.
 (源代码在CustomEditor这个文件中)。
 
 &emsp;&emsp;2.其它
 
 &emsp;&emsp;在后续的开发过程中文档的内容会根据反馈持续更新。如有更新，请以新的版本为准。
 
-&emsp;&emsp;如果您对于 Cocos Studio 扩展有任何的意见或者是建议，请在论坛或者是开发者群里反馈给我们。感谢您对 Cocos Studio 的关注和支持，我们将回报您以更好用的产品。
+&emsp;&emsp;如果您对于Cocos Studio扩展有任何的意见或者是建议，请在论坛或者是开发者群里反馈给我们。感谢您对Cocos Studio的关注和支持，我们将回报您以更好用的产品。

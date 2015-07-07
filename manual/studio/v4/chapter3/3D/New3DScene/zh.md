@@ -13,24 +13,24 @@
 
 3）	摆放场景资源
 
-&emsp;&emsp;i.	拖入Scene文件夹下的changing.c3b到场景，在选中状态下配置属性信息如下：
+&emsp;&emsp;i.拖入Scene文件夹下的changing.c3b到场景，在选中状态下配置属性信息如下：
 
 &emsp;&emsp;![image](res/image0003.png) 
  
-&emsp;&emsp;ii.	拖入dragon文件夹下的dragon.c3b到场景，然后在选中状态下配置属性信息如下：
+&emsp;&emsp;ii.拖入dragon文件夹下的dragon.c3b到场景，然后在选中状态下配置属性信息如下：
 
 &emsp;&emsp;![image](res/image0004.png) 
 
-&emsp;&emsp;iii.	重复以上两个步骤，放入knight.c3b、mage.c3b和rat.c3b并配置其常规属性，得出如下图的场景。
+&emsp;&emsp;iii.重复以上两个步骤，放入knight.c3b、mage.c3b和rat.c3b并配置其常规属性，得出如下图的场景。
 
 &emsp;&emsp;![image](res/image0005.png) 
  
-&emsp;&emsp;iv.	创建一个摄像机，并配置摄像机的常规属性如下：
+&emsp;&emsp;iv.创建一个摄像机，并配置摄像机的常规属性如下：
 
 &emsp;&emsp;![image](res/image0006.png) 
  
-&emsp;&emsp;v.	我们通过配置好的摄像机镜头就可以看到一个粗略的游戏场景了，如下图所示：
+&emsp;&emsp;v.我们通过配置好的摄像机镜头就可以看到一个粗略的游戏场景了，如下图所示：
 
 &emsp;&emsp;![image](res/image0007.png) 
  
-&emsp;&emsp;vi.	把此场景发布到cocos工程，然后通过增加代码控制就可以实现一个简单的英雄打怪的游戏了。
+&emsp;&emsp;vi.把此场景发布到cocos工程，然后通过增加代码控制就可以实现一个简单的英雄打怪的游戏了。
