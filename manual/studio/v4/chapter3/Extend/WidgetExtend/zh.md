@@ -521,13 +521,18 @@ DataModel的其它细节请参见DataModel 和 ViewModel 一节。
 
 &emsp;&emsp;给工程添加 AddinConfig.cs 文件，内容如下：
 
-	[assembly: Addin("Addins.Sample", Option.MainVersion, Namespace = Option.AddinNamespace)]
-	[assembly: AddinDependency("CocoStudio.Core", Option.MainVersion)]
-	[assembly: AddinDependency("CocoStudio.Projects", Option.MainVersion)]
-	[assembly: AddinDependency("CocoStudio.Model", Option.MainVersion)]
-	[assembly: AddinDependency("CocoStudio.ResourcePanel", Option.MainVersion)]
-	[assembly: AddinDependency("CocoStudio.Model.Lua", Option.MainVersion)]
-	[assembly: AddinDependency("Addins.LuaExtend", Option.MainVersion)]
+    // "2.2" is version of the this Addin. Addin should match its dependency with the same version.
+    [assembly: Addin("Addins.Sample", "2.2", Namespace = Option.AddinNamespace)]
+    
+    // "2.2" is the version of Addin dependency.
+    [assembly: AddinDependency("CocoStudio.Core", "2.2")]
+    [assembly: AddinDependency("CocoStudio.Projects", "2.2")]
+    [assembly: AddinDependency("CocoStudio.Model", "2.2")]
+    [assembly: AddinDependency("CocoStudio.Model.Lua", "2.2")]
+    [assembly: AddinDependency("CocoStudio.Model3D", "2.2")]
+    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "2.2")]
+    [assembly: AddinDependency("Addins.LuaExtend", "2.2")]
+
 
 &emsp;&emsp;分析：
 
