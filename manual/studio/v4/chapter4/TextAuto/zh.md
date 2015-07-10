@@ -4,4 +4,4 @@
 
 1.Text的setTextAreaSize 设置固定宽度，高度设定0。 
 
-2.Text的ignoreContentAdaptWithSize, 设置为true 即可。
+2.Text的ignoreContentAdaptWithSize， 设置为true 即可。
