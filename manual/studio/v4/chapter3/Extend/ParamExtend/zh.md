@@ -109,7 +109,9 @@
 
 &emsp;&emsp;范例：
 
-    protected enum CocosEnum
+    // 枚举定义示例，实际使用时请将枚举的定义放到 ViewModel 类外面，和 ViewModel 平级。
+    // 参见示例工程中 WeekdayEnum 枚举的定义。
+    public enum CocosEnum
     {
         None,
         Fir,
