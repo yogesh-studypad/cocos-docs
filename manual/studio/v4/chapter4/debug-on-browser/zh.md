@@ -3,11 +3,11 @@
 
 ####1，将当前浏览器加载的场景所用的资源加到：JS项目 src/resource.js里面，比如：
 
-   原始resource.js:  
+   原始resource.js：  
 
 ![image](res/image001.png)
 
-  修改后的resource.js:
+  修改后的resource.js：
 
 ![image](res/image002.png)   
 
