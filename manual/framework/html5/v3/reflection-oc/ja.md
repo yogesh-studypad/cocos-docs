@@ -60,7 +60,7 @@ var ret = jsb.reflection.callStaticMethod( "NativeOcClass",
 }
 ```
 
-##お知らせ
+##注意
 
 - メソッドの引数で**float, int, double**を使用する場合は、`NSNumber`に置き換える必要があります。
 
