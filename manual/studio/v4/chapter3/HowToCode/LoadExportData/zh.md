@@ -40,7 +40,7 @@ Lua（仅能加载csb数据）：
 		
 		-- 通过csb创建动画
 		local action = cc.CSLoader:createTimeline(resourceFilename)
-		node:runAction(action)
+		self.resourceNode_:runAction(action)
 		
 		--同一个文件创建的节点只能使用同一个文件创建的动画。 
         --从第0帧循环播放动画
