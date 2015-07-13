@@ -1,14 +1,17 @@
-# 定制 Cocos Framework 方法说明
+# 自编译 Cocos Framework & Simulator 使用说明
+
 
 ## 简介
 
-本文档介绍如何定制 Cocos Framework，并在游戏工程中使用定制后的 Cocos Framework。
+本文档介绍如何定制 Cocos Framework & Simulator，并在游戏工程中使用定制后的 Cocos Framework & Simulator。
 
 定制 Cocos Framework 是指安装 Cocos Framework 之后，对其中的引擎源码进行修改与定制，然后使用的过程。
 
 ## 版本要求
 
-定制 Cocos Framework 为 v3.7 版本新增的功能。以下的内容中提到的路径以 v3.7 版本为例，具体路径以实际安装的 Cocos Framework 版本为准。
+定制 Cocos Framework 为 v3.7 版本新增的功能， 3.7以下的版本并不支持。
+
+以下的内容中提到的路径以 v3.7 版本为例，具体路径以实际安装的 Cocos Framework 版本为准。
 
 ## 如何定制 Cocos Framework
 
@@ -17,7 +20,7 @@
 * Mac 系统可以使用 XCode 打开工程文件 `/Applications/Cocos/frameworks/cocos2d-x-v3.7/build/CocosFramework.xcodeproj` ，然后修改与调试代码即可定制引擎。
 * Windows 系统可以使用 Visual Studio 打开工程文件 `[安装目录]/frameworks/cocos2d-x-v3.7/build/CocosFramework.sln`，然后修改与调试代码即可定制引擎。
 
-## 如何使用定制后的 Cocos Framework
+## 如何生成定制后的 Cocos Framework
 
 ### 重新生成预编译库
 
@@ -32,17 +35,26 @@ usage: gen_cocos_libs.py [-h] [-c] [-all] [--win] [--mac] [--ios] [--android]
 生成新的 Cocos Framework 预编译库。
 
 可用参数:
-  -h, --help            显示帮助信息
-  -c                    编译之前先删除之前的 prebuilt 文件夹
-  -all                  编译所有平台（Mac 系统编译 Mac，iOS 和 Android；Windows 系统编译 Win32 和 Android）
-  --win                 编译 Win32 平台
-  --mac                 编译 Mac 平台
-  --ios                 编译 iOS 平台
-  --android             编译 Android 平台
-  --dis-strip, --disable-strip
-                        关闭 strip 功能，编译生成的 .a 文件不再 strip。（影响 Mac，iOS 和 Android 平台的预编译库）
-  --vs VS_VERSION       指定使用的 Visual Studio 版本。不指定的话，自动查找可用版本。
-  --app-abi APP_ABI     指定 ndk-build 所使用的 APP_ABI 参数值。可以使用 ":" 来分隔多个值。例如：--app-abi armeabi:x86。 默认值为 armeabi。
+
+     -h, --help            显示帮助信息
+
+     -c                    编译之前先删除之前的 prebuilt 文件夹
+
+     -all                  编译所有平台（Mac 系统编译 Mac，iOS 和 Android；Windows 系统编译 Win32 和 Android）
+
+     --win                 编译 Win32 平台
+
+     --mac                 编译 Mac 平台
+
+     --ios                 编译 iOS 平台
+
+     --android             编译 Android 平台
+
+     --dis-strip, --disable-strip  关闭 strip 功能，编译生成的 .a 文件不再 strip。（影响 Mac，iOS 和 Android 平台的预编译库）
+
+     --vs VS_VERSION       指定使用的 Visual Studio 版本。不指定的话，自动查找可用版本。
+
+     --app-abi APP_ABI     指定 ndk-build 所使用的 APP_ABI 参数值。可以使用 ":" 来分隔多个值。例如：--app-abi armeabi:x86。 默认值为 armeabi。
 ```
 
 使用示例：
@@ -56,7 +68,9 @@ usage: gen_cocos_libs.py [-h] [-c] [-all] [--win] [--mac] [--ios] [--android]
 
 * 对 Cocos Framework 源码的定制包括源码修改以及相应的工程文件维护。如果定制后的代码或者工程配置有问题可能导致编译工具执行失败。
 
-### 重新生成模拟器
+
+## 重新生成模拟器
+
 
 Cocos Framework 中附带了将源码编译生成预编译库的脚本工具：`frameworks/cocos2d-x-v3.7/tools/framework-compile/gen_cocos_simulator.py`。
 
@@ -69,21 +83,29 @@ usage: gen_cocos_simulator.py [-h] [-c] [-m {debug,release}] [-o OUT_DIR] -p
 重新生成模拟器。
 
 可用参数:
-  -h, --help            显示帮助信息
-  -c, --clean           重新生成之前，先删除指定的输出目录。
-  -m {debug,release}, --mode {debug,release}
-                        生成模拟器的模式，可选值：debug，release
-  -o OUT_DIR, --output OUT_DIR
-                        生成的模拟器存放路径。不指定的话，默认放在 "frameworks/cocos2d-x-v3.7/simulator" 文件夹。
-  -p {ios,mac,android,win32,all}, --platform {ios,mac,android,win32,all}
-                        需要编译的平台。如果为 all，则 Mac 系统编译 Mac，iOS 和 Android；Windows 系统编译 Win32 和 Android
-  --vs VS_VERSION       指定使用的 Visual Studio 版本。不指定的话，自动查找可用版本。
+
+    -h, --help            显示帮助信息
+
+    -c, --clean           重新生成之前，先删除指定的输出目录。
+
+    -m {debug,release}, --mode {debug,release}  生成模拟器的模式，可选值：debug，release
+
+    -o OUT_DIR, --output OUT_DIR 生成的模拟器存放路径。不指定的话，默认放在 "frameworks/cocos2d-x-v3.7/simulator" 文件夹。
+
+    -p {ios,mac,android,win32,all}, --platform {ios,mac,android,win32,all} 需要编译的平台。如果为 all，则 Mac 系统编译 Mac，iOS 和 Android；Windows 系统编译 Win32 和 Android
+
+    --vs VS_VERSION       指定使用的 Visual Studio 版本。不指定的话，自动查找可用版本。
 ```
 
 使用示例：
 
 1. `python gen_cocos_simulator.py -c -p all` 清除之前的模拟器并编译所有平台。
 2. `python gen_cocos_libs.py -p win32 --vs 2015` 使用 VS2015 编译 Win32 平台模拟器。
+
+## 集成自定义模拟器：
+
+
+把编译出来的模拟器程序文件拷贝覆盖掉" **安装目录/Cocos/cocos-simulator-bin** "下面的文件，这样就可以替换掉Cocos内置的模拟器，使用自定义的模拟器了。
 
 备注：
 

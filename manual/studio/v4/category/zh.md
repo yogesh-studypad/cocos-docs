@@ -41,6 +41,7 @@
        * [事件回调](../chapter3/HowToCode/CallBack/zh.md)
 	   * [设置自定义数据](../chapter3/HowToCode/UserData/zh.md)
 	   * [导出数据在代码中加载](../chapter3/HowToCode/LoadExportData/zh.md)
+	   * [自编译Framework以及模拟器](../chapter3/HowToCode/CustomizeFramework/zh.md)
 * [4、常见问题解答](../chapter4/Directory/zh.md)
 	* [Anroid设备连接失败？](../chapter4/connect-solution/zh.md)
 	* [浏览器运行效果不正确如何定位？](../chapter4/debug-on-browser/zh.md)
