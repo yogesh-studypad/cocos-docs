@@ -56,6 +56,8 @@
 	* [修复升级或降级Framework后引发问题](../chapter4/upgrade-framework/zh.md)
 	* [加载编辑导出数据错误或者效果不对？](../chapter4/LoadError/zh.md)
 	* [如何显示艺术数字？](../chapter4/ShowAtlasLabel/zh.md)
-	* [导入1.6版本项目禁用](../chapter4/Import1.6ProjectError/zh.md)
+	* [导入1.6版本项目禁用？](../chapter4/Import1.6ProjectError/zh.md)
+	* [如何自定义、编译cocos framework以及模拟器？](../chapter3/HowToCode/CustomizeFramework/zh.md)
+	* [如何修复打包以及运行失败？](../chapter4/FixPackageError/zh.md)
 * [5、版本发布说明](../chapter5/ReleaseNote/zh.md)
 	
