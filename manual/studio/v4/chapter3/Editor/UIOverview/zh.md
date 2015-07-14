@@ -83,7 +83,7 @@
 
   &emsp;&emsp;Windows：可以选择在Windows平台上运行，在Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
 
-  &emsp;&emsp;Mac：在IOS设备上运行，Mac平台上运行，Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
+  &emsp;&emsp;Mac：在iOS设备上运行，Mac平台上运行，Android设备上运行，以及浏览器运行（仅JS语言项目支持）。
 
   &emsp;&emsp;如何运行在各个平台，具体请参考：[打包与运行环境配置](../../../chapter2/PackageAndRun/zh.md)
 
