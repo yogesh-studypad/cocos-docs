@@ -26,26 +26,54 @@
 	} 
 
 
-Lua（仅能加载csb数据）：
+Lua（仅能加载csb数据和lua文件）：
      
-	--相关代码在src\packages\mvc\ViewBase.lua文件
-	function ViewBase:createResoueceNode(resourceFilename)
-		if self.resourceNode_ then
-			self.resourceNode_:removeSelf()
-				self.resourceNode_ = nil
+&emsp;&emsp;加载csb：
+
+		--相关代码在src\packages\mvc\ViewBase.lua文件
+		function ViewBase:createResoueceNode(resourceFilename)
+			if self.resourceNode_ then
+				self.resourceNode_:removeSelf()
+					self.resourceNode_ = nil
+			end
+			-- 通过csb创建场景
+			self.resourceNode_ = cc.CSLoader:createNode(resourceFilename)
+			self:addChild(self.resourceNode_)
+			
+			-- 通过csb创建动画
+			local action = cc.CSLoader:createTimeline(resourceFilename)
+			self.resourceNode_:runAction(action)
+			
+			--同一个文件创建的节点只能使用同一个文件创建的动画。 
+	        --从第0帧循环播放动画
+			action:gotoFrameAndPlay(0, true)
 		end
-		-- 通过csb创建场景
-		self.resourceNode_ = cc.CSLoader:createNode(resourceFilename)
-		self:addChild(self.resourceNode_)
-		
-		-- 通过csb创建动画
-		local action = cc.CSLoader:createTimeline(resourceFilename)
-		self.resourceNode_:runAction(action)
-		
-		--同一个文件创建的节点只能使用同一个文件创建的动画。 
-        --从第0帧循环播放动画
-		action:gotoFrameAndPlay(0, true)
-	end
+
+&emsp;&emsp;加载lua(去商店下载Lua导出插件)：
+
+	   --相关代码在src\app\views\MainScene.lua文件
+	   -- 注：这里 MainScene.lua 为发布出来的 Lua 代码文件。您可以在发布目录中找到它。
+		   MainScene.RESOURCE_FILENAME = "MainScene.csb" 修改为 
+	   	   MainScene.RESOURCE_FILENAME = "MainScene.lua"
+	
+	   --相关代码在src\packages\mvc\ViewBase.lua文件：	
+	   function ViewBase:createResoueceNode(resourceFilename)
+	       if self.resourceNode_ then
+				self.resourceNode_:removeSelf()
+					self.resourceNode_ = nil
+		   end
+		   -- 通过lua创建场景
+	       local scene=require(resourceFilename)
+		   local gameScene=scene.create(nil)
+		   self.resourceNode_=gameScene.root
+	
+	       -- 通过lua创建动画
+	       gameScene.root:runAction(gameScene.animation)
+	
+	       --同一个文件创建的节点只能使用同一个文件创建的动画。 
+	       --从第0帧循环播放动画
+	       gameScene.animation:gotoFrameAndPlay(0,true)
+	    end    
 
 JS（仅能加载Json数据）：
    
@@ -77,6 +105,8 @@ JS（仅能加载Json数据）：
 		    return true;
 		}
 	});
+
+
 
 **注意：**
 
