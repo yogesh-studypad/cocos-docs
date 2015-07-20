@@ -11,11 +11,11 @@
  
 ![image](res/image003.png)
 
-&emsp;&emsp;新建项目：新建cocos项目，快捷键为Ctrl+Shift+N。
+&emsp;&emsp;新建项目：新建cocos项目，快捷键为Ctrl+Shift+N（Win）、Command+Shift+N（Mac）。
 
-&emsp;&emsp;新建文件：新建场景、图层、节点、合图、3d场景文件，快捷键为Ctrl+N。
+&emsp;&emsp;新建文件：新建场景、图层、节点、合图、3d场景文件，快捷键为Ctrl+N（Win）、Command+N（Mac）。
 
-&emsp;&emsp;打开项目：打开cocos项目功能，快捷键为Ctrl+O。
+&emsp;&emsp;打开项目：打开cocos项目功能，快捷键为Ctrl+O（Win）、Command+O（Mac）。
 
 &emsp;&emsp;最近打开的项目：最近用cocos编辑的项目路径，最多可显示10个项目，最后打开的项目其项目路径显示在最上面。
 
@@ -23,9 +23,9 @@
 
 &emsp;&emsp;关闭项目：关闭当前打开的cocos项目。
 
-&emsp;&emsp;保存XXXX.csd/csi：保存当前正在编辑的XXXX.csd/csi，快捷键为Ctrl+S。
+&emsp;&emsp;保存XXXX.csd/csi：保存当前正在编辑的XXXX.csd/csi，快捷键为Ctrl+S（Win）、Command+S（Mac）。
 
-&emsp;&emsp;全部保存：保存整个项目中所有的项目文件，快捷键为Ctrl+Shift+S。
+&emsp;&emsp;全部保存：保存整个项目中所有的项目文件，快捷键为Ctrl+Shift+S（Win）、Command+Shift+S（Mac）。
 
 &emsp;&emsp;另存为：将cocos项目另存到自定义路径下。
 
@@ -33,17 +33,17 @@
 
 &emsp;&emsp;导入->导入1.6版本项目...： 将Cocos Studio 1.6的项目文件转换为当前版本的项目文件。
 
-&emsp;&emsp;退出：退出Cocos Studio编辑器，快捷键为Alt+F4。
+&emsp;&emsp;退出：退出Cocos Studio编辑器，快捷键为Alt+F4（Win）、Command+Q（Mac）。
 
 ####2.编辑
 
 ![image](res/image004.png)
  
-&emsp;&emsp;撤销：在编辑器中做一些操作之后，返回到上一步的状态，快捷键为Ctrl+Z。
+&emsp;&emsp;撤销：在编辑器中做一些操作之后，返回到上一步的状态，快捷键为Ctrl+Z（Win）、Command+Z（Mac）。
 
-&emsp;&emsp;重做：撤销到上一步后再回撤到修改后的状态，快捷键为Ctrl+Y。
+&emsp;&emsp;重做：撤销到上一步后再回撤到修改后的状态，快捷键为Ctrl+Y（Win）、Command+Y（Mac）。
 
-&emsp;&emsp;偏好设置：快捷键为Ctrl+，。
+&emsp;&emsp;偏好设置：快捷键为Ctrl+,（Win）、Command+,（Mac）。
 
 ![image](res/image005.png)
  
@@ -136,13 +136,13 @@
 
 ![image](res/image100.png)
 
-  &emsp;&emsp; 锚点：控制锚点在渲染区的显示与隐藏，快捷键为Ctrl+Shift+A。
+  &emsp;&emsp; 锚点：控制锚点在渲染区的显示与隐藏，快捷键为Ctrl+Shift+A（Win）、Command+Shift+A（Mac）。
 
-  &emsp;&emsp; 标尺：控制标尺的显示与隐藏，快捷键为：Ctrl+Shift+R。
+  &emsp;&emsp; 标尺：控制标尺的显示与隐藏，快捷键为：Ctrl+Shift+R（Win）、Command+Shift+R（Mac）。
 
-  &emsp;&emsp; 参考线：控制参考线的显示与隐藏，快捷键为：Ctrl+；。
+  &emsp;&emsp; 参考线：控制参考线的显示与隐藏，快捷键为：Ctrl+;（Win）、Command+;（Mac）。
 
-  &emsp;&emsp; 锁定参考线：当点击锁定参考线时，将无法选中或移动参考线；取消锁定参考线时，可以在渲染区选中并移动参考线。快捷键为：Ctrl+Shift+；。
+  &emsp;&emsp; 锁定参考线：当点击锁定参考线时，将无法选中或移动参考线；取消锁定参考线时，可以在渲染区选中并移动参考线。快捷键为：Ctrl+Alt+;（Win）、Command+Alt+;（Mac）。
 
   &emsp;&emsp; 清除参考线：当在渲染区添加参考线后，点击清除参考线，所有参考线将被删除。
 
