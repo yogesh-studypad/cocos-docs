@@ -3,19 +3,19 @@
 **&emsp;&emsp;Cocos 2.3.1版本更新内容：**
 
 
- &emsp;&emsp;【新增】自定义Cocos Framework & Simulator功能。（**"Cocos Framework 3.7支持，文档：http://www.cocos.com/doc/，搜索关键字"自定义Framework"**）
+ &emsp;&emsp;【新增】自定义Cocos Framework & Simulator功能。（**"Cocos Framework 3.7支持，文档：http://www.cocos.com/doc/**）
 
  &emsp;&emsp;【新增】项目设置增加全部发布选项。
 
  &emsp;&emsp;【新增】Cocos增加API文档，支持复制粘贴。
 
- &emsp;&emsp;【新增】偏好设置增加简化控件（按钮，复选框，滑动条）初始资源功能。（**"文档：http://www.cocos.com/doc/，搜索关键字"简化控件初始资源"**）
+ &emsp;&emsp;【新增】偏好设置增加简化控件（按钮，复选框，滑动条）初始资源功能。（**"文档：http://www.cocos.com/doc/**）
 
  &emsp;&emsp;【新增】艺术字体控件支持首字符，字符宽，字符高设置。
  
  &emsp;&emsp;【新增】ttc格式字体支持描边设置。
 
- &emsp;&emsp;【新增】FAQ新增修复打包失败文档。（**文档：http://www.cocos.com/doc/，搜索关键字"修复打包"**）
+ &emsp;&emsp;【新增】FAQ新增修复打包失败文档。（**文档：http://www.cocos.com/doc/**）
 
  &emsp;&emsp;【优化】字体描边算法，描边效果更合理。
 
