@@ -36,7 +36,7 @@
  &emsp;&emsp;【优化】阴影偏移量支持两位小数，提高阴影效果精确度。
 
 
- &emsp;&emsp;【优化】Cocos商店和文档页面支持复制粘贴。
+ &emsp;&emsp;【优化】Cocos文档页面支持复制粘贴。
 
 
  &emsp;&emsp;【优化】Cocos反馈页面增加常见问题解答。
