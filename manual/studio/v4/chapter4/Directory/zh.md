@@ -34,4 +34,4 @@
 
 ####&emsp;&emsp;[16) 如何修复打包以及运行失败？](../FixPackageError/zh.md)
 
-####&emsp;&emsp;[17) 如何简化控件默认资源？](../SimplifyWidgetsRes/zh.md)
+####&emsp;&emsp;[17) 如何简化控件初始资源？](../SimplifyWidgetsRes/zh.md)
