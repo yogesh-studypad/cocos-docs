@@ -60,5 +60,6 @@
 	* [如何自定义、编译cocos framework以及模拟器？](../chapter3/HowToCode/CustomizeFramework/zh.md)
 	* [如何修复打包以及运行失败？](../chapter4/FixPackageError/zh.md)
 	* [如何简化控件初始资源？](../chapter4/SimplifyWidgetsRes/zh.md)
+	* 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 * [5、版本发布说明](../chapter5/ReleaseNote/zh.md)
 	
