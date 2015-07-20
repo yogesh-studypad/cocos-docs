@@ -3,7 +3,7 @@
 编辑器菜单->“编辑”->“偏好设置...”->“通用”->“简化控件初始资源”，默认不勾选，如下图：
 &emsp;&emsp;![image](res/image0001.png)
 
-"简化控件初始资源"，目前只会影响![image](res/image0002.png)，![image](res/image0003.png)，![image](res/image0004.png)。
+"简化控件初始资源"，目前只会影响 按钮，复选框，滑动条。
 
 按钮：
 

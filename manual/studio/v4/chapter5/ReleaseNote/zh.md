@@ -1,5 +1,55 @@
 # **版本更新说明：** #
 
+**&emsp;&emsp;Cocos 2.3.1版本更新内容：**
+
+
+ &emsp;&emsp;【新增】自定义Cocos Framework & Simulator功能。（**"Cocos Framework 3.7支持，文档：http://www.cocos.com/doc/，搜索关键字"自定义Framework"**）
+
+ &emsp;&emsp;【新增】项目设置增加全部发布选项。
+
+ &emsp;&emsp;【新增】Cocos增加API文档，支持复制粘贴。
+
+ &emsp;&emsp;【新增】偏好设置增加简化控件（按钮，复选框，滑动条）初始资源功能。（**"文档：http://www.cocos.com/doc/，搜索关键字"简化控件初始资源"**）
+
+ &emsp;&emsp;【新增】艺术字体控件支持首字符，字符宽，字符高设置。
+ 
+ &emsp;&emsp;【新增】ttc格式字体支持描边设置。
+
+ &emsp;&emsp;【新增】FAQ新增修复打包失败文档。（**文档：http://www.cocos.com/doc/，搜索关键字"修复打包"**）
+
+ &emsp;&emsp;【优化】字体描边算法，描边效果更合理。
+
+
+ &emsp;&emsp;【优化】去掉解析"xxx missed"显示。(**Cocos Framework 3.7支持**)。
+
+
+ &emsp;&emsp;【优化】Windows模拟器菜单显示改为标题栏右键弹出菜单，扩大调试区域。
+
+
+ &emsp;&emsp;【优化】控件面板和属性面板UI，增强操作性。
+
+
+ &emsp;&emsp;【优化】JS项目资源不需要添加到src/resource.js，浏览器运行也可以正常显示。（**Cocos Framework 3.7支持**）
+
+
+
+ &emsp;&emsp;【优化】阴影偏移量支持两位小数，提高阴影效果精确度。
+
+
+ &emsp;&emsp;【优化】Cocos商店和文档页面支持复制粘贴。
+
+
+ &emsp;&emsp;【优化】Cocos反馈页面增加常见问题解答。
+
+
+ &emsp;&emsp;【修复】打开项目，描边宽度1变为0的问题。
+
+
+ &emsp;&emsp;【修复】C++项目编辑资源后发布到VS运行，资源刷新不及时的问题。（**Cocos Framework 3.7支持**）
+
+
+ &emsp;&emsp;【修复】在结构树重命名时按下Shift+B/T/Q/W会结束编辑状态的问题。
+
 **&emsp;&emsp;Cocos 2.3.0版本更新内容：**
 
  &emsp;&emsp;【新增】3D场景内多个物体选中后，参考坐标轴和原点的快速切换功能。
@@ -62,11 +112,11 @@ Mac平台的快捷键为Command+Shift+A。
 
  &emsp;&emsp;【新增】双击嵌套的csd文件， 直接进入编辑状态。
 
- &emsp;&emsp;【新增】按钮和文本控件增加描边、阴影属性设置。(Cocos 2d-x 3.6支持解析)
+ &emsp;&emsp;【新增】按钮和文本控件增加描边、阴影属性设置。(**Cocos 2d-x 3.6支持解析**)
 
  &emsp;&emsp;【新增】动画缓动设置。（Cocos 2d-x 3.6支持解析）。
 
- &emsp;&emsp;【新增】精灵控件，粒子控件blending功能。（Cocos 2d-x 3.6支持解析）
+ &emsp;&emsp;【新增】精灵控件，粒子控件blending功能。（**Cocos 2d-x 3.6支持解析**）
 
  &emsp;&emsp;【新增】取色器面板支持颜色历史记录。
 
@@ -102,17 +152,17 @@ Mac平台的快捷键为Command+Shift+A。
 
 **&emsp;&emsp;Cocos 2.2版本更新内容：**
 	
- &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（Cocos 2d-x 3.5支持解析）。
+ &emsp;&emsp;【重磅推出】3D场景编辑——新增模型支持、粒子特效、摄像机控件，游戏制作功能更强大（**Cocos 2d-x 3.5支持解析**）。
 
  &emsp;&emsp;【万众期待】支持基于Lua脚本的自定义控件，扩展随心所欲 。
 
  &emsp;&emsp;【新增】Cocos商店华丽变身，下载、安装、卸载一键搞定，信息和评论与你分享。
 
- &emsp;&emsp;【新增】支持修改动画播放速度，预览演示更方便 （cocos2d-x 3.5支持解析）。
+ &emsp;&emsp;【新增】支持修改动画播放速度，预览演示更方便 （**cocos2d-x 3.5支持解析**）。
 
  &emsp;&emsp;【新增】多分辨率设置，常用分辨率自由设定 。
  
- &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （Cocos 2d-x 3.5支持解析）。
+ &emsp;&emsp;【新增】控件高级属性可设置自定义数据 （**Cocos 2d-x 3.5支持解析**）。
 
  &emsp;&emsp;【优化】编辑器导出的数据，支持Cocos 2d-x 3.4 Final加载。
  
