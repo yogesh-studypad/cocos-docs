@@ -35,4 +35,7 @@
 ####&emsp;&emsp;[16) 如何修复打包以及运行失败？](../FixPackageError/zh.md)
 
 ####&emsp;&emsp;[17) 如何简化控件初始资源？](../SimplifyWidgetsRes/zh.md)
-####&emsp;&emsp;18)反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+
+####&emsp;&emsp;[18) 老版本插件在新版本加载失败？](../PluginLoadError/zh.md)
+
+####&emsp;&emsp;19) 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
