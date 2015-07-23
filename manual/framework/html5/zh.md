@@ -105,6 +105,7 @@ Cocos2d-JS是Cocos2d-x的JavaScript版本，融合了Cocos2d-html5和Cocos2d-x J
     - [如何使用Eclipse中编译Cocos2d-JS项目](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/compilation-in-eclipse/zh)
     - [如何在JSB项目中使用extension](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/jsb-extension/zh)
     - [在Android平台使用Plugin-x](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-android/zh)
+    - [在iOS平台使用Plugin-x](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/how-to-use-plugin-x-on-iOS/zh)
     - [Plugin-x的框架](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/plugin-x-architecture/zh)
     - [如何为Android开发自己的Plugin](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/how-to-write-your-own-plugin-for-android/zh)
     - [使用iOS支付插件](http://www.cocos2d-x.org/docs/manual/framework/html5/jsb/plugin-x/ios-iap/zh)
