@@ -64,7 +64,7 @@
 ![image](res/image001.png)
 
 &emsp;&emsp;在发布带有Lua自定义控件的Cocos Studio工程时，选择该选项。否则，自定义控件不可展示出来。例如，工程发布为csb文件时，相应的自定义Lua控件会被跳过从而不可使用。（在Cocos Studio工程不包含Lua自定义控件时也可以选择该项来将工程导出为Lua文件。）
-如果有其它的特殊的发布格式需求，请参考自定义工程导出一节。
+如果有其它的特殊的发布格式需求，请参考自定义数据导出格式导出一节。
 
 &emsp;&emsp;下面针对这两种情况分析介绍：
 
@@ -214,11 +214,11 @@ return container
 
 &emsp;&emsp;2） 将上一步编写好的Lua脚本代码放置在Cocos Studio的插件目录。 
 
-&emsp;&emsp;4） 配置插件AddinConfig.cs。 
+&emsp;&emsp;3） 配置插件AddinConfig.cs。 
 
-&emsp;&emsp;5） 添加ViewModel和DataModels。 
+&emsp;&emsp;4） 添加ViewModel和DataModels。 
 
-&emsp;&emsp;6） 添加Lua代码生成模板。
+&emsp;&emsp;5） 添加Lua代码生成模板。
 
 &emsp;&emsp;下面来看一个示例：一个自定义的带文本的精灵控件，该自定义控件在渲染区选中时，可以通过属性区修改文本的内容和字体大小。
 这里我们已经提供了一个配置好的Visual Studio 2013项目工程，请在示例工程位置处找到Addins.sln，可以在Visual Studio 2013中打开它，下面的内容都是基于该示例工程（示例工程的其它介绍请参见示例工程一节）。
@@ -751,7 +751,7 @@ C#和Lua之间数据的交互，目前只支持这几种预定义的类型，如
 
 &emsp;&emsp;1) 文档所描述的内容适用于Cocos Studio 2.2.5及其以上的版本 所附带的示例工程。
 
-&emsp;&emsp;2)Cocos Studio工程中控件的名字应为合法的Lua变量，否则发布到Lua文件后程序Lua程序不可以正常执行。这个可以Cocos Studio的工程配置文件中开启命名规则检查（注：工程配置文件即是Cocos Studio工程文件同目录的以.cfg  o为后缀的文件，将其中的字段IsNameStandardized置为“True”即可）。另外，不合法的变量名在发布Lua文件时会在Cocos Studio输出区打印相应的提示。
+&emsp;&emsp;2)Cocos Studio工程中控件的名字应为合法的Lua变量，否则发布到Lua文件后程序Lua程序不可以正常执行。这个可以Cocos Studio的工程配置文件中开启命名规则检查（注：工程配置文件即是Cocos Studio工程文件同目录的以.cfg为后缀的文件，将其中的字段IsNameStandardized置为“True”即可）。另外，不合法的变量名在发布Lua文件时会在Cocos Studio输出区打印相应的提示。
 
 &emsp;&emsp;3)这是编辑器第一阶段的开放，上面只是针对控件扩展部分，给出了几个必要的类。在编辑器后续的开发过程中，我们会逐步开放编辑器扩展相关的接口和类。并给出相关的文档说明，敬请期待。
 
