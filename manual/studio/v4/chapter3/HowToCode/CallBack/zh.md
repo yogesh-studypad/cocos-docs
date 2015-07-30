@@ -10,7 +10,7 @@ C++：
 
    ![image](res/image001.png)
   
-2，在高级属性->回调特性->自定义类 添加类名，比如 MyClass，如图：
+2，在高级属性->回调特性->自定义类 添加类名，比如MyClass，如图：
 
    ![image](res/image002.png)
 
@@ -23,7 +23,7 @@ C++：
 
 这个类必须遵循如下要求： 
 
-a.继承WidgetCallBackHandlerProtocol和 Node(或其他继承自Node的类) 
+a.继承WidgetCallBackHandlerProtocol和Node(或其他继承自Node的类) 
 
 b.重写如下接口： 
 
@@ -176,7 +176,7 @@ b.重写如下接口：
 	//注意第一个参数必须是第一步填写的自定义类名加“Reader ”如上述的"MyClassReader" 
 	instance->registReaderObject("MyClassReader",(ObjectFactory::Instance)MyClassReader::getInstance);
 
-6，使用CreateNode加载你的节点，因为你的自定义类的create已经委托给工厂类，只要你注册工厂类的时候没写错，工厂类会在createNode里边create你的自定义类并调用 onLocateTouchCallback，onLocateClickCallback，onLocateEventCallback实现代码回调与编辑器的绑定。 
+6，使用CreateNode加载你的节点，因为你的自定义类的create已经委托给工厂类，只要你注册工厂类的时候没写错，工厂类会在createNode里边create你的自定义类并调用onLocateTouchCallback，onLocateClickCallback，onLocateEventCallback实现代码回调与编辑器的绑定。 
 
 Lua：
    参考启动器教程页《Cocos如何绑定Lua自定义类》。

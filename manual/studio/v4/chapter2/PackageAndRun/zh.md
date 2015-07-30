@@ -1,9 +1,9 @@
 #打包与运行环境配置
 &emsp;&emsp;完成以下操作，才能在编辑器中使用打包功能：
 
-&emsp;&emsp;1、	环境搭建（Win/Mac）
+&emsp;&emsp;1、环境搭建（Win/Mac）
 
-&emsp;&emsp;2、	在编辑器中配置发布和打包设置
+&emsp;&emsp;2、在编辑器中配置发布和打包设置
 
 ###环境搭建&打包设置
 
@@ -95,7 +95,7 @@
 &emsp;&emsp;将*.cer拖动到此界面中。
 
 &emsp;&emsp;（2）验证秘钥是否添加成功。
-打开终端，运行此命令：security find-identity -v -p codesigning  出现以下截图说明添加成功了：
+打开终端，运行此命令：security find-identity -v -p codesigning，出现以下截图说明添加成功了：
 
 &emsp;&emsp;![image](res/image0007.png)
 

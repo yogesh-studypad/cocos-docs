@@ -10,7 +10,7 @@
 
 ![image](res/image001.png)
 
-&emsp;&emsp;帧事件这个属性是一个string类型，内容是一个可以输入的文本，不限制文本的输入格式，可以随意输入，可为空
+&emsp;&emsp;帧事件这个属性是一个string类型，内容是一个可以输入的文本，不限制文本的输入格式，可以随意输入，可为空。
 
 &emsp;&emsp;范例：
 
@@ -37,7 +37,7 @@
 
 ![image](res/image002.png)
 
-&emsp;&emsp;名称这个属性是一个string类型，内容是一个可以输入的文本，不限制文本的输入格式，可以随意输入，但是不能为空，如果为空，恢复上一次保存的值，若要使用这类文本框，则要调用ValidTextEditor
+&emsp;&emsp;名称这个属性是一个string类型，内容是一个可以输入的文本，不限制文本的输入格式，可以随意输入，但是不能为空，如果为空，恢复上一次保存的值，若要使用这类文本框，则要调用ValidTextEditor。
 
 &emsp;&emsp;范例：
 
@@ -51,7 +51,7 @@
 
 &emsp;&emsp;int 类型
 
-&emsp;&emsp;逻辑标签这个属性是一个int类型，内容是一个可以输入数字的控件，限制只能输入数字，最大限制默认是正负9999999，在程序中可以通过SetMaxMin进行设置
+&emsp;&emsp;逻辑标签这个属性是一个int类型，内容是一个可以输入数字的控件，限制只能输入数字，最大限制默认是正负9999999，在程序中可以通过SetMaxMin进行设置。
 
 &emsp;&emsp;范例：
 
@@ -78,7 +78,7 @@
 
 ![image](res/image003.png)
 
-&emsp;&emsp;可见性这个属性是一个bool类型，类型是一个checkbox，可以进行选择和不选择
+&emsp;&emsp;可见性这个属性是一个bool类型，类型是一个checkbox，可以进行选择和不选择。
 
 &emsp;&emsp;范例：
 
@@ -143,7 +143,7 @@
 
 ![image](res/image005.png)
 
-&emsp;&emsp;颜色混合这个属性是一个Color类型，类型是一个组合控件，可以选择不同的颜色
+&emsp;&emsp;颜色混合这个属性是一个Color类型，类型是一个组合控件，可以选择不同的颜色。
 
 &emsp;&emsp;范例：
 	
@@ -172,7 +172,7 @@
 ![image](res/image006.png)
 
 
-&emsp;&emsp;倾斜这个属性是一个ScaleValue类型，类型是一个组合控件，可以分别设置X和Y的值，并且可以在属性中设置最大值最小值和每次鼠标滚轮幅度
+&emsp;&emsp;倾斜这个属性是一个ScaleValue类型，类型是一个组合控件，可以分别设置X和Y的值，并且可以在属性中设置最大值最小值和每次鼠标滚轮幅度。
 
 &emsp;&emsp;范例：
 
@@ -201,7 +201,7 @@
 
 ![image](res/image007.png)
 
-&emsp;&emsp;锚点这个属性是一个PointF类型，类型是一个组合控件，可以分别设置XY的值
+&emsp;&emsp;锚点这个属性是一个PointF类型，类型是一个组合控件，可以分别设置XY的值。
 
 &emsp;&emsp;范例：
 
@@ -237,14 +237,13 @@
         [JsonProperty]
         public int CustomInt { get; set; }
 
-&emsp;&emsp;具体的代码在CustomObjectData 已经添加。
+&emsp;&emsp;具体的代码在CustomObjectData已经添加。
 
 &emsp;&emsp;编写一个自定义控件
 
-&emsp;&emsp;CustomEditor 继承了BaseEditor基类和 ITypeEditor 接口
-NumberEditorWidget 是一个有两个TextBox的控件(类似于ScaleValue类型的这个控件)。
+&emsp;&emsp;CustomEditor继承了BaseEditor基类和ITypeEditor接口。NumberEditorWidget是一个有两个TextBox的控件(类似于ScaleValue类型的这个控件)。
 
-&emsp;&emsp;ITypeEditor接口必须实现ResolveEditor 方法，这个方法返回一个显示在界面上的控件，如果需要添加多个，则可以继续添加Table之类的容器控件，在容器控件中自定义完所需内容后，返回容器控件。
+&emsp;&emsp;ITypeEditor接口必须实现ResolveEditor方法，这个方法返回一个显示在界面上的控件，如果需要添加多个，则可以继续添加Table之类的容器控件，在容器控件中自定义完所需内容后，返回容器控件。
 
 &emsp;&emsp;如果要处理两个TextBox的值变化，则需要添加下面两个事件：
 
@@ -263,11 +262,11 @@ NumberEditorWidget 是一个有两个TextBox的控件(类似于ScaleValue类型�
 			
 	scaleValue.ScaleX = (float)e.PointX;
 
-&emsp;&emsp;然后调用UpdatePropertyValue 对渲染区进行更改，当渲染区数据变化时，则会触发  override void OnPropertyChanged(object sender,PropertyChangedEventArgs e) 事件，如果要单独处理事件，则可以在OnPropertyChanged 中加上逻辑代码.
+&emsp;&emsp;然后调用UpdatePropertyValue对渲染区进行更改，当渲染区数据变化时，则会触发override void OnPropertyChanged(object sender,PropertyChangedEventArgs e)事件，如果要单独处理事件，则可以在OnPropertyChanged中加上逻辑代码。
 (源代码在CustomEditor这个文件中)。
 
 &emsp;&emsp;2.其它
 
 &emsp;&emsp;在后续的开发过程中文档的内容会根据反馈持续更新。如有更新，请以新的版本为准。
 
-&emsp;&emsp;如果您对于 Cocos Studio 扩展有任何的意见或者是建议，请在论坛或者是开发者群里反馈给我们。感谢您对 Cocos Studio 的关注和支持，我们将回报您以更好用的产品。
+&emsp;&emsp;如果您对于Cocos Studio扩展有任何的意见或者是建议，请在论坛或者是开发者群里反馈给我们。感谢您对Cocos Studio的关注和支持，我们将回报您以更好用的产品。

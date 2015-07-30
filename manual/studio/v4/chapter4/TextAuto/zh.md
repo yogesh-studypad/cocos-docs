@@ -2,6 +2,6 @@
 
 主要是两个接口： 
 
-1.Text的setTextAreaSize 设置固定宽度，高度设定0。 
+1.Text的setTextAreaSize设置固定宽度，高度设定0。 
 
-2.Text的ignoreContentAdaptWithSize， 设置为true 即可。
+2.Text的ignoreContentAdaptWithSize，设置为true即可。
