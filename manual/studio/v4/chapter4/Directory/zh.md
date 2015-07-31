@@ -30,7 +30,7 @@
 
 ####&emsp;&emsp;[14) 导入1.6版本项目禁用？](../Import1.6ProjectError/zh.md)
 
-####&emsp;&emsp;[15) 如何自定义cocos framework？](../../chapter3/HowToCode/CustomizeFramework/zh.md)
+####&emsp;&emsp;[15) 如何自定义Cocos Framework？](../../chapter3/HowToCode/CustomizeFramework/zh.md)
 
 ####&emsp;&emsp;[16) 如何修复打包以及运行失败？](../FixPackageError/zh.md)
 

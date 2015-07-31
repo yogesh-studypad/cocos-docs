@@ -1,30 +1,30 @@
-# 自编译 Cocos Framework & Simulator 使用说明
+#自编译Cocos Framework&Simulator使用说明
 
 
-## 简介
+##简介
 
-本文档介绍如何定制 Cocos Framework & Simulator，并在游戏工程中使用定制后的 Cocos Framework & Simulator。
+本文档介绍如何定制Cocos Framework&Simulator，并在游戏工程中使用定制后的Cocos Framework&Simulator。
 
-定制 Cocos Framework 是指安装 Cocos Framework 之后，对其中的引擎源码进行修改与定制，然后使用的过程。
+定制Cocos Framework是指安装Cocos Framework之后，对其中的引擎源码进行修改与定制，然后使用的过程。
 
-## 版本要求
+##版本要求
 
-定制 Cocos Framework 为 v3.7 版本新增的功能， 3.7以下的版本并不支持。
+定制Cocos Framework为v3.7版本新增的功能，3.7以下的版本并不支持。
 
-以下的内容中提到的路径以 v3.7 版本为例，具体路径以实际安装的 Cocos Framework 版本为准。
+以下的内容中提到的路径以v3.7版本为例，具体路径以实际安装的Cocos Framework版本为准。
 
-## 如何定制 Cocos Framework
+##如何定制Cocos Framework
 
-定制 Cocos Framework 实际上就是修改安装的源码。在 Cocos Framework 安装完成后，使用自己常用的 IDE 工具或者代码编辑器对安装的源码进行修改即可。
+定制Cocos Framework实际上就是修改安装的源码。在Cocos Framework安装完成后，使用自己常用的IDE工具或者代码编辑器对安装的源码进行修改即可。
 
-* Mac 系统可以使用 XCode 打开工程文件 `/Applications/Cocos/frameworks/cocos2d-x-v3.7/build/CocosFramework.xcodeproj` ，然后修改与调试代码即可定制引擎。
-* Windows 系统可以使用 Visual Studio 打开工程文件 `[安装目录]/frameworks/cocos2d-x-v3.7/build/CocosFramework.sln`，然后修改与调试代码即可定制引擎。
+* Mac系统可以使用XCode打开工程文件`/Applications/Cocos/frameworks/cocos2d-x-v3.7/build/CocosFramework.xcodeproj`，然后修改与调试代码即可定制引擎。
+* Windows系统可以使用Visual Studio打开工程文件`[安装目录]/frameworks/Cocos2d-x-v3.7/build/CocosFramework.sln`，然后修改与调试代码即可定制引擎。
 
-## 如何生成定制后的 Cocos Framework
+##如何生成定制后的Cocos Framework
 
-### 重新生成预编译库
+###重新生成预编译库
 
-Cocos Framework 中附带了将源码编译生成预编译库的脚本工具：`frameworks/cocos2d-x-v3.7/tools/framework-compile/gen_cocos_libs.py`。
+Cocos Framework中附带了将源码编译生成预编译库的脚本工具：`frameworks/cocos2d-x-v3.7/tools/framework-compile/gen_cocos_libs.py`。
 
 此脚本工具的使用说明如下：
 
@@ -32,7 +32,7 @@ Cocos Framework 中附带了将源码编译生成预编译库的脚本工具：`
 usage: gen_cocos_libs.py [-h] [-c] [-all] [--win] [--mac] [--ios] [--android]
                          [--dis-strip] [--vs VS_VERSION] [--app-abi APP_ABI]
 
-生成新的 Cocos Framework 预编译库。
+生成新的Cocos Framework预编译库。
 
 可用参数:
 
@@ -60,19 +60,19 @@ usage: gen_cocos_libs.py [-h] [-c] [-all] [--win] [--mac] [--ios] [--android]
 使用示例：
 
 1. `python gen_cocos_libs.py -c -all` 清除之前的预编译库并编译所有平台。
-2. `python gen_cocos_libs.py --win --vs 2015` 使用 VS2015 编译 Win32 平台。
+2. `python gen_cocos_libs.py --win --vs 2015` 使用VS2015编译Win32平台。
 
-编译完成后，预编译库生成在 `frameworks/cocos2d-x-v3.7/prebuilt` 文件夹下。游戏工程可以直接链接到新生成的预编译库。
+编译完成后，预编译库生成在`frameworks/cocos2d-x-v3.7/prebuilt`文件夹下。游戏工程可以直接链接到新生成的预编译库。
 
 备注：
 
-* 对 Cocos Framework 源码的定制包括源码修改以及相应的工程文件维护。如果定制后的代码或者工程配置有问题可能导致编译工具执行失败。
+* 对Cocos Framework源码的定制包括源码修改以及相应的工程文件维护。如果定制后的代码或者工程配置有问题可能导致编译工具执行失败。
 
 
-## 重新生成模拟器
+##重新生成模拟器
 
 
-Cocos Framework 中附带了将源码编译生成预编译库的脚本工具：`frameworks/cocos2d-x-v3.7/tools/framework-compile/gen_cocos_simulator.py`。
+Cocos Framework中附带了将源码编译生成预编译库的脚本工具：`frameworks/cocos2d-x-v3.7/tools/framework-compile/gen_cocos_simulator.py`。
 
 此脚本工具的使用说明如下：
 
@@ -99,14 +99,14 @@ usage: gen_cocos_simulator.py [-h] [-c] [-m {debug,release}] [-o OUT_DIR] -p
 
 使用示例：
 
-1. `python gen_cocos_simulator.py -c -p all` 清除之前的模拟器并编译所有平台。
-2. `python gen_cocos_libs.py -p win32 --vs 2015` 使用 VS2015 编译 Win32 平台模拟器。
+1.`python gen_cocos_simulator.py -c -p all`清除之前的模拟器并编译所有平台。
+2.`python gen_cocos_libs.py -p win32 --vs 2015`使用VS2015编译Win32平台模拟器。
 
-## 集成自定义模拟器：
+##集成自定义模拟器：
 
 
-把编译出来的模拟器程序文件拷贝覆盖掉" **安装目录/Cocos/cocos-simulator-bin** "下面的文件，这样就可以替换掉Cocos内置的模拟器，使用自定义的模拟器了。
+把编译出来的模拟器程序文件拷贝覆盖掉"**安装目录/Cocos/cocos-simulator-bin**"下面的文件，这样就可以替换掉Cocos内置的模拟器，使用自定义的模拟器了。
 
 备注：
 
-* 模拟器主要用于 Cocos 资源编辑器中的预览功能。如果要在资源编辑器中使用新生成的模拟器，需要使用新生成的模拟器替换掉资源编辑器中的模拟器。
+* 模拟器主要用于Cocos资源编辑器中的预览功能。如果要在资源编辑器中使用新生成的模拟器，需要使用新生成的模拟器替换掉资源编辑器中的模拟器。
