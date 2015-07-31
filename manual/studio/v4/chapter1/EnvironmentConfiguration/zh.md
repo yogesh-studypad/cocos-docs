@@ -1,10 +1,10 @@
-# 环境配置
+#环境配置
 
 1、如果您是Windows用户，请下载**Visual Studio 2013旗舰版**，并安装。
 
 [https://www.visualstudio.com/downloads/download-visual-studio-vs](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 
-  如果您是Mac用户，请下载**Xcode 6.3.2**，并安装。
+如果您是Mac用户，请下载**Xcode 6.3.2**，并安装。
 
 [https://developer.apple.com/xcode/downloads/](https://developer.apple.com/xcode/downloads/)
 

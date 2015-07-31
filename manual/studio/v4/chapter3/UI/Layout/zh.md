@@ -43,7 +43,7 @@
 
 &emsp;&emsp;中进行，代码如下：
 
- &emsp;&emsp;&emsp;&emsp;director->getOpenGLView()->setDesignResolutionSize(960,640,ResolutionPolicy::FIXED_HEIGHT);
+&emsp;&emsp;&emsp;&emsp;director->getOpenGLView()->setDesignResolutionSize(960,640,ResolutionPolicy::FIXED_HEIGHT);
 
 &emsp;&emsp;(这句代码上边还有一句createWithRect这个是在桌面系统上，创建游戏模拟器用的。可以修改里边的Rect的后边两个值来修改设备分辨率，但这个值在移动设备上是无效的。)
 
@@ -133,6 +133,6 @@
 
 ![image](res/image009.png) 
 
-&emsp;&emsp;PS：枚举类型 ResolutionPolicy 是框架提供给我们的方便的默认方案。其实我们在设置设计分辨率之前可以获取设备分辨率，然后自己根据设备分辨率调整设计分辨率。 
+&emsp;&emsp;PS：枚举类型ResolutionPolicy是框架提供给我们的方便的默认方案。其实我们在设置设计分辨率之前可以获取设备分辨率，然后自己根据设备分辨率调整设计分辨率。
 
 
