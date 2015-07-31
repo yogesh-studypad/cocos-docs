@@ -47,6 +47,9 @@ Lua（仅能加载csb数据和lua文件）：
 			--同一个文件创建的节点只能使用同一个文件创建的动画。 
 	        --从第0帧循环播放动画
 			action:gotoFrameAndPlay(0, true)
+
+		    assert(self.resourceNode_, string.format("ViewBase:createResoueceNode() - load resouce node from file \"%s\" failed", resourceFilename))
+            self:addChild(self.resourceNode_)
 		end
 
 &emsp;&emsp;加载lua(去商店下载Lua导出插件)：
@@ -65,14 +68,18 @@ Lua（仅能加载csb数据和lua文件）：
 		   -- 通过lua创建场景
 	       local scene=require(resourceFilename)
 		   local gameScene=scene.create(nil)
-		   self.resourceNode_=gameScene.root
-	
+		   
 	       -- 通过lua创建动画
 	       gameScene.root:runAction(gameScene.animation)
 	
 	       --同一个文件创建的节点只能使用同一个文件创建的动画。 
 	       --从第0帧循环播放动画
 	       gameScene.animation:gotoFrameAndPlay(0,true)
+
+		   self.resourceNode_=gameScene.root
+
+		   assert(self.resourceNode_, string.format("ViewBase:createResoueceNode() - load resouce node from file \"%s\" failed", resourceFilename))
+           self:addChild(self.resourceNode_)
 	    end    
 
 JS（仅能加载Json数据）：
