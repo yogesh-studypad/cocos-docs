@@ -185,4 +185,5 @@ Mac平台的快捷键为Command+Shift+A。
  &emsp;&emsp;【修正】Mac OS X 10.10.2自动升级闪退的bug。
 
 
-注意：Cocos 2.2极其以上的任意版本导出的数据支持Cocos 2d-x 3.4极其以上任意版本加载。
+注意：Cocos2d-x 3.4（含）以上的版本支持cocos 2.2（含）以上的版本发布的数据。
+
