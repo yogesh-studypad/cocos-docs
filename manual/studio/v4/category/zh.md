@@ -36,6 +36,7 @@
 	   * [3D粒子](../chapter3/3D/3DParticle/zh.md)
 	   * [摄像机](../chapter3/3D/Camera/zh.md)
 	   * [3D快捷键](../chapter3/3D/3DShortcutKey/zh.md)
+	   * [3D节点简介](../chapter3/3D/3DNode/zh.md)
     * [自定义插件开发](../chapter3/Extend/Directory/zh.md)
        * [控件扩展](../chapter3/Extend/WidgetExtend/zh.md)
 	   * [属性扩展](../chapter3/Extend/ParamExtend/zh.md)

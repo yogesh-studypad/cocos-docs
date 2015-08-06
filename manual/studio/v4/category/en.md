@@ -36,6 +36,7 @@
 	   * [3D Particles Overview](../chapter3/3D/3DParticle/en.md)
 	   * [Camera](../chapter3/3D/Camera/en.md)
 	   * [3D Keyboard Shortcuts](../chapter3/3D/3DShortcutKey/en.md)
+	   * [3D Nodes Overview](../chapter3/3D/3DNode/en.md)
     * [Custom Widgets](../chapter3/Extend/Directory/en.md)
        * [Widgets Extension](../chapter3/Extend/WidgetExtend/en.md)
 	   * [Properties Extension](../chapter3/Extend/ParamExtend/en.md)
