@@ -15,7 +15,7 @@
 
 ##如何定制Cocos Framework
 
-定制Cocos Framework实际上就是修改安装的源码。在Cocos Framework安装完成后，使用自己常用的IDE工具或者代码编辑器对安装的源码进行修改即可。
+定制Cocos Framework实际上就是修改安装的源码。在Cocos Framework安装完成后，可以使用XCode 6.0机器以上的版本 和 Visual Studio 2013版本进行修改和调试：
 
 * Mac系统可以使用XCode打开工程文件`/Applications/Cocos/frameworks/cocos2d-x-v3.7/build/CocosFramework.xcodeproj`，然后修改与调试代码即可定制引擎。
 * Windows系统可以使用Visual Studio打开工程文件`[安装目录]/frameworks/Cocos2d-x-v3.7/build/CocosFramework.sln`，然后修改与调试代码即可定制引擎。
