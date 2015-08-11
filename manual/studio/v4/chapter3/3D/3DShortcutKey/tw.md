@@ -11,11 +11,17 @@
 &emsp;&emsp;&emsp;1) 鍵盤上按下快速鍵Q切換到場景模式，滑鼠拖拽移動場景；
 
 &emsp;&emsp;&emsp;2) 鍵盤上按下快速鍵W切換到位置模式，場景內拖拽時，改變被選取物體的位置座標；
+
+![image](res/image0002.png)
  
 &emsp;&emsp;&emsp;3) 鍵盤上按下快速鍵E時，切換到旋轉模式，場景內拖拽時，旋轉被選取物體；
+
+![image](res/image0003.png)
  
 &emsp;&emsp;&emsp;4) 鍵盤上按下快速鍵R時，場景內拖拽滑鼠，縮放被選中物體。
  
+![image](res/image0004.png)
+
 &emsp;相機旋轉
 
 &emsp;按下Alt並拖拽滑鼠，相機圍繞中心點旋轉，改變視角。

@@ -57,7 +57,7 @@
 
 &emsp;&emsp;在官方示例的胜利界面中，我们使用了声音控件来作为胜利的音效，您可以获取官方示例进行查看
  
-![image](res/image005.png)
+![image](res/image006.png)
 
 &emsp;&emsp;场景1：导入文件
 

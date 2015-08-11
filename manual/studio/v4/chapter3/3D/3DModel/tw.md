@@ -8,28 +8,28 @@
 
 &emsp;滑鼠拖拽3D控制項欄的模型控制項，拖入到場景中。
 
-![image](res/image0001.png)
+![image](res_tw/image0001.png)
  
 2、調整物件屬性
 
 &emsp;調整基本屬性值，或者通過在場景中進行自由變換操作
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_tw/image0002.png)
 
-![image](res/image0003.png)
+![image](res_tw/image0003.png)
  
 3、導入模型並使用
 
 &emsp;把模型、貼圖檔導入到工程，然後把模型檔拖到場景使用導入三維資源圖示如下：
  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0004.png)、
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_tw/image0004.png)、
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0005.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_tw/image0005.png)
 
-![image](res/image0006.png)
+![image](res_tw/image0006.png)
  
 &emsp;使用模型資源時，直接拖動模型檔到場景就可以使用了，圖示如下：
 
-![image](res/image0007.png)
+![image](res_tw/image0007.png)
 
  

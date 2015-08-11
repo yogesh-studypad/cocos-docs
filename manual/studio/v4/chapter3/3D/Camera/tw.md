@@ -8,19 +8,19 @@
 
 &emsp;滑鼠拖拽3D控制項欄的攝像機控制項，拖入到場景中。
 
-![image](res/image0001.png)
+![image](res_tw/image0001.png)
  
 2、調整攝像機屬性基本屬性
 
 &emsp;調整基本屬性值，或者通過在場景中進行自由變換操作可以改變攝像機的位置和旋轉。
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_tw/image0002.png)
  
 3、調整攝像機視椎體
 
 &emsp;只有落在攝像機視椎體內的物體才可以被看到，如下圖所示藍色視椎範圍為視椎體，第一個方盒不在視椎體內，第二個方盒子在視椎體內，所以攝像機預覽只能看到一個方盒子。
 
-![image](res/image0003.png)
+![image](res_tw/image0003.png)
 
 &emsp;調節視角（Fov）來控制視椎體的開口大小，從而可以控制可以觀察的物體；
 

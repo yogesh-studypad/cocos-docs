@@ -2,7 +2,7 @@
 
 1，先在編輯器Button控制項高級屬性，使用者資料填寫資料：比如123，如下圖：
 
-![image](res/image001.png)
+![image](res_tw/image001.png)
       
 C++：
    

@@ -6,20 +6,20 @@
 
 &emsp;&emsp;1）在工具列點擊新建檔圖示
  
- ![image](res/image0001.png)
+ ![image](res_tw/image0001.png)
 
 &emsp;&emsp;2）在彈出新建檔視窗後，選擇“合圖”，點擊新建按鈕；
  
 
- ![image](res/image0002.png)
+ ![image](res_tw/image0002.png)
 
 &emsp;&emsp;3）在資源面板取圖片資源，拖拽至畫布面板。目前僅圖片類型（.png和.jpg）資源。如下圖：
 
- ![image](res/image0003.png)
+ ![image](res_tw/image0003.png)
 
 &emsp;&emsp;4）可通過屬性面板修改合圖類型檔的屬性，如下圖：
 
- ![image](res/image0004.png)
+ ![image](res_tw/image0004.png)
  
 &emsp;&emsp;尺寸：當前合圖的尺寸，該屬性隨其他屬性改變而改變。
 

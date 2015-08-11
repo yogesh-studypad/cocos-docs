@@ -7,24 +7,24 @@
 
 用户可单击菜单栏中‘文件——新建文件’，进行骨骼文件的创建。
 
-![Image](res/caidan1.jpg)
+![Image](res_tw/caidan1.jpg)
 
 ####方法二：工具栏新建文件
 
 用户可单击工具栏中的新建文件快捷按钮，进行骨骼文件的创建。
 
-![Image](res/gongjulan.jpg)
+![Image](res_tw/gongjulan.jpg)
 
 ####方法三：资源区新建文件
 
 用户可单击资源区左下角的‘ + ’，选择‘新建文件’；
 
-![Image](res/ziyuanqu.jpg)
+![Image](res_tw/ziyuanqu.jpg)
 
 或在资源区内单击右键，选择‘新建文件’，进行骨骼文件的创建。
 
-![Image](res/ziyuan2.jpg)
+![Image](res_tw/ziyuan2.jpg)
 
 在新建文件时选择‘骨骼’，并可以自定义骨骼文件的文件名称，最后单击确定，完成创建。
 
-![Image](res/candan2.jpg)
+![Image](res_tw/candan2.jpg)

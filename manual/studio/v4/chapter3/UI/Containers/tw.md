@@ -2,7 +2,7 @@
 
 ###1.基礎容器
 
-![image](res/image001.png)
+![image](res_tw/image001.png)
  
 &emsp;&emsp;基礎容器可以設置子容器佈局、是否裁切子元素、填充顏色、背景圖片資源等屬性。
 
@@ -10,7 +10,7 @@
 
 &emsp;&emsp;在官方示例中，大量使用了基礎容器作佈局管理，如下面的主介面中，用戶名稱，鑽石和金幣就使用了基礎容器，以保證相對佈局的統一：
 
-![image](res/image002.png)
+![image](res_tw/image002.png)
  
 場景1：如果不顯示容器外的內容。
 
@@ -20,17 +20,17 @@
 
 &emsp;&emsp;您可以為基礎容器填充兩種類型的背景色：純色背景、漸變背景。您可以選擇單色並設置背景的不透明度；當您選擇漸變背景時，需要設置起始顏色和結束顏色，並且可以為這兩個顏色分別設置不透明度。
 
-![image](res/image003.png)
+![image](res_tw/image003.png)
  
 &emsp;&emsp;場景3：快速添加子控制項。
 
 &emsp;&emsp;在畫布中選中控制項後右鍵，您可以添加所有類型控制項作為他的子控制項。
 
-![image](res/image004.png)
+![image](res_tw/image004.png)
   
 ###2.列表容器
 
-![image](res/image005.png)
+![image](res_tw/image005.png)
  
 &emsp;&emsp;清單容器是一個能夠自動排列控制項的容器。
 
@@ -40,7 +40,7 @@
 
 &emsp;&emsp;列表容器常被用於遊戲中關卡列表等具有列表效果的場景中。
 
-![image](res/image006.png)
+![image](res_tw/image006.png)
  
 &emsp;&emsp;場景1：如果不顯示容器外的內容。
 
@@ -52,7 +52,7 @@
 
 ###3.翻頁容器
 
-![image](res/image007.png)
+![image](res_tw/image007.png)
  
 &emsp;&emsp;翻頁容器是一個具有翻頁效果的容器，只能添加基礎容器。
 
@@ -60,13 +60,13 @@
 
 &emsp;&emsp;翻頁容器常被用於遊戲中背包等具有翻頁效果的場景中，在官方示例中，我們就在選擇關卡介面，應用了翻頁容器，來切換不同的關卡。
  
-![image](res/image008.png)
+![image](res_tw/image008.png)
 
 &emsp;&emsp;場景1：如果不顯示容器外的內容。
 
 &emsp;&emsp;當容器上的控制項有超出容器的部分時，可以通過屬性“裁切內容”使超出部分將被隱藏，不予顯示。如上圖，我們勾選屬性後，效果如下：
 
-![image](res/image009.png)
+![image](res_tw/image009.png)
 
 &emsp;&emsp;場景2：如何添加翻頁效果。
 
@@ -76,7 +76,7 @@
  
 ###4.滾動容器
 
-![image](res/image010.png)
+![image](res_tw/image010.png)
  
 &emsp;&emsp;滾動容器可以實現觸屏上的滾動效果，能夠設置滾動區域、滾動方向等屬性。
 
@@ -84,13 +84,13 @@
 
 &emsp;&emsp;在官方示例中，我們特意在任務選擇介面（MissionSelect.csd）中，設置了滾動層容易，用來表示關卡的地圖背景。我們將關卡背景設置為3個螢幕高度大小，實際運行中，使用者可以上下滑動螢幕來查看整張地圖。
 
-![image](res/image011.png)
+![image](res_tw/image011.png)
  
 &emsp;&emsp;場景1：如果不顯示容器外的內容。
 
 &emsp;&emsp;當容器上的控制項有超出容器的部分時，可以通過屬性“裁切內容”使超出部分將被隱藏，不予顯示。如上圖，我們勾選屬性後，效果如下：
 
-![image](res/image012.png)
+![image](res_tw/image012.png)
  
 &emsp;&emsp;場景2：如何設置滾動容器的可滾動尺寸。
 
@@ -100,7 +100,7 @@
 
 &emsp;&emsp;您可以在這裡選擇需要的容器滾動方向：水準、垂直、水準與垂直。
 
-![image](res/image014.png)
+![image](res_tw/image014.png)
  
 &emsp;&emsp;場景3：如何設置回彈效果。
 

@@ -61,7 +61,7 @@
 
 &emsp;&emsp;如果工程中含有用 Lua 實現的自訂控制項，在載入場景時就需要使用這些Lua檔。為更方便的使用Lua擴展來完成場景的構建，此次我們為Cocos Studio項目發佈添加了Lua檔案類型，如下圖所示：
 
-![image](res/image001.png)
+![image](res_tw/image001.png)
 
 &emsp;&emsp;在發佈帶有Lua自訂控制項的Cocos Studio工程時，選擇該選項。否則，自訂控制項不可展示出來。例如，工程發佈為csb檔時，相應的自訂Lua控制項會被跳過從而不可使用。（在Cocos Studio工程不包含Lua自訂控制項時也可以選擇該項來將工程匯出為Lua檔。）
 如果有其它的特殊的發佈格式需求，請參考自訂資料匯出格式匯出一節。
@@ -136,18 +136,18 @@ return container
 假設上面的Lua代碼檔abc.lua已經放置Cocos Studio外掛程式目錄下LuaScript目錄內，同時目錄中有圖片temp.png。
 運行Cocos Studio，可以在控制項面板 “自訂控制項” 分組中看到這個自訂控制項，控制項的名字即Lua檔案名“abc”：
 
-![image](res/image002.png)
+![image](res_tw/image002.png)
 
 &emsp;&emsp;由於這個自訂控制項是擴展的精靈，所以它在控制項面板中顯示的圖示和精靈一樣。
 
 &emsp;&emsp;拖動abc圖示到渲染可以看到如下內容（注：背景圖片為temp.png圖片。）：
 
 
-![image](res/image003.png)
+![image](res_tw/image003.png)
 
 &emsp;&emsp;在渲染區選中它，可以看到它的類型仍然為Sprite。
 
-![image](res/image004.png)
+![image](res_tw/image004.png)
 
 &emsp;&emsp;Lua代碼編寫中的常見問題和注意事項，請參考下節。
 
@@ -205,7 +205,7 @@ return container
 
 &emsp;&emsp;對於需要更多定制的情況，比如要添加屬性的修改，就需要用到Cocos Studio所提供的擴展功能，編寫相應的C#代碼來完成。這裡先簡單的介紹下這個過程（更詳細的細節請參見下麵各節），Cocos Studio是基於Mono.Addins來構建的外掛程式系統，在需要對擴展更進一步的定制時，我們就需要使用這個外掛程式系統（配置程式集）。為了擴展屬性，需要對所擴展類型時行 C#擴展（視圖模型的擴展，即從ViewModel派生一個子類，並添加屬性。由於ViewModel的擴展，從而DataModel也需要相應的擴展。）。擴展的C#屬性需要和Lua腳本進行資料交互（通過運行時從Lua代碼讀寫資料，所以要修改相應的Lua腳本，並在C#裡調用Cocos Studio提供的介面來與Lua腳本時行資料交互）。擴展的控制項需要匯出到Lua檔（通過添加Lua代碼生成範本），相應的Lua代碼生成範本雖然被添加到Cocos Studio的外掛程式系統從而在工程發佈可被應用（添加Lua代碼生成範本的匯出）。在此過程中的幾個概念的關係如下圖所示：
 
-![image](res/image005.png)
+![image](res_tw/image005.png)
 
 &emsp;&emsp;（說明：Lua Objects為自訂控制項的Lua腳本代碼。Lua Codes從DataModel生成的Lua檔代碼。）
 一般來說，完成這個操作需要以下幾步：
@@ -416,7 +416,7 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
 DisplayName特性：在Cocos Studio控制項欄裡顯示的自訂控制項的名字，這裡顯示為"Sprite Extend"。
 ModelExtension特性：匯出這個自訂的ViewModel類型，其參數為類型匯出順序，由於添加了這個特性，這個控制項就在 Cocos Studio的自訂控制群組中顯示出來，如下所示：
 
-![image](res/image006.png)
+![image](res_tw/image006.png)
 
 &emsp;&emsp;（這個自訂控制項的名字即為DisplayName所指定的"Sprite Extend"。）
 
@@ -429,11 +429,11 @@ ModelExtension特性：匯出這個自訂的ViewModel類型，其參數為類型
 
 &emsp;&emsp;EngineClassName：控制項名，其名字會顯示在屬性面板的類型處。Cocos Studio的控制項此處顯示的是是它在 Cocos 2d-x中類型。自訂控制項沒有對應的引擎類型，所以此處以自己能清晰的分辨所選擇類型為准。
 
-![image](res/image007.png)
+![image](res_tw/image007.png)
 
 &emsp;&emsp;由於其中添加了LabelText和LabelFont擴展屬性，所以它們在屬性區展示如下：
 
-![image](res/image008.png)
+![image](res_tw/image008.png)
 
 &emsp;&emsp;（注意屬性的名字和ViewModel屬性上的DisplayName的對應關係。）
 屬性區擴展及屬性區編輯控制項的擴展，請參考屬性區擴展一節。
@@ -733,7 +733,7 @@ C#和Lua之間資料的交互，目前只支援這幾種預定義的類型，如
 
 &emsp;&emsp;2) 在這裡用到的Lua檔如果也是放置在Cocos Studio外掛程式目錄的LuaScript目錄裡的話。其本身的Lua檔也會以基礎篇裡所定義的基本的自訂控制項形式出現。此時其只表現為基本的自訂控制項而不再包括屬性擴展。如下圖示：
 
-![image](res/image009.png)
+![image](res_tw/image009.png)
 
 
 &emsp;&emsp;Sprite Extend控制項是進階篇中提到的帶屬性區擴展的自訂控制項，而sprite0則是基礎篇中的基本的自訂控制項（其表現出來的形式只和abc這個基本的自訂控制項一樣。）。雖然它們所對應的是同一個Lua檔。

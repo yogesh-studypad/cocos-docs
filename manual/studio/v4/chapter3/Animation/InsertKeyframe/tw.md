@@ -17,17 +17,17 @@
 
 &emsp;(1)在時間軸的刻度線上按下滑鼠右鍵，選擇“添加幀”來添加：
 
-&emsp;&emsp;&emsp;![image](res/image004.png)
+&emsp;&emsp;&emsp;![image](res_tw/image004.png)
 
 &emsp;(2) 點擊“添加幀”按鈕。
 
-&emsp;&emsp;&emsp;![image](res/image008.png)
+&emsp;&emsp;&emsp;![image](res_tw/image008.png)
 
 &emsp;(3) 在時間軸的刻度線上按下滑鼠左鍵，按下鍵盤按鍵K鍵，添加關鍵幀。
 
 &emsp;(4) 使用自動記錄幀功能。
 
-&emsp;&emsp;&emsp;![image](res/image006.png)
+&emsp;&emsp;&emsp;![image](res_tw/image006.png)
 
 &emsp;自動記錄幀
 
