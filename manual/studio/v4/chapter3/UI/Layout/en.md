@@ -104,19 +104,19 @@ Adjust the ` ContentSize` of the loaded interface, call `ui::Helper::doLayout` f
 
 - The screen size is bigger than the design size, and choose FIXED_HEIGHT as the design resolution size. 
 
-![image](res/image006.png) 
+![image](res_en/image006.png) 
  
 - The screen size is bigger than the design size, and choose FIXED_WIDTH as the design resolution size. 
 
-![image](res/image007.png) 
+![image](res_en/image007.png) 
  
 - The screen size is smaller than the design size, and choose FIXED_ HEIGHT as the design resolution size.
 
-![image](res/image008.png) 
+![image](res_en/image008.png) 
  
 - The screen size is smaller than the design size, and choose FIXED_WIDTH as the design resolution size. 
 
-![image](res/image009.png) 
+![image](res_en/image009.png) 
 
 ***Note** The example ResolutionPolicy is the default option provided by framework. You need to know the screen resolution, and adjust the design size according to different screen resolution.*
 

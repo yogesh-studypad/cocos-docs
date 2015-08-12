@@ -6,7 +6,7 @@ Note: this tutorial aims to slove an update issue, if "cocos lua export plugin" 
 
 You have installed "cocos lua export plugin" from Cocos Store, as the following picture shows, but the update failed.  
 
-   ![image](res/image001.png) 
+   ![image](res_en/image001.png) 
 
 **Resolution**
   

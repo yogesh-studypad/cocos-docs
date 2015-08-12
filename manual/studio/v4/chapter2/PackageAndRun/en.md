@@ -22,11 +22,11 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 - Add new variable name as JAVA_HOME, and variable value as folder path where JDK is installed. 
 
-&emsp;&emsp;![image](res/image0001.png)
+&emsp;&emsp;![image](res_en/image0001.png)
  
 - Set variable Path, and append the location of the bin folder where the JRE is installed. You need to use a semicolon in English half-angle state, and then add the location of bin. For example, C:\Program Files\Java\jre1.8.0_45\bin.
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_en/image0002.png)
 
 **2 NDK**
 
@@ -34,7 +34,7 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 - Double click android-ndk-r10d-windows-x86_64.exe, and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. Following is a screenshot of installation directory: 
 
-&emsp;&emsp;![image](res/image0003.png)
+&emsp;&emsp;![image](res_en/image0003.png)
 
 - Set variable Path, and append the location of android-ndk-r10d, build and platform after Path value (use a semicolon in English half-angle state to separate them). For example, `;D:\Studiowork\sdk\android-ndk-r10d\build\tools;D:\Studiowork\sdk\android-ndk-r10d;D:\Studiowork\sdk\android-ndk-r10d\platforms`.
 
@@ -62,15 +62,17 @@ Create a cocos project, at the same time select a Framework version. Click Edit 
 
 - NDK path: set folders for NDK (include folders of build and platform).
 
- - ANT path: folders for bin of ANT under Framework directory. If multiple versions of Framework have been installed, please choose the bin folder of the Framework that is used for packaging.   
+- ANT path: folders for bin of ANT under Framework directory. If multiple versions of Framework have been installed, please choose the bin folder of the Framework that is used for packaging.   
 
 - JDK path: bin folder of JDK. 
 
-&emsp;&emsp;![image](res/image0004.png)
+&emsp;&emsp;![image](res_en/image0004.png)
  
 **6 Check**
 
-Click toolbar -> Project -> Publish and Package. When finish packaging, click Output panel at the bottom of Cocos Studio. The message "project packaged" will appear at the Output panel, which indicates the environment variables are set right. Otherwise, you need to  check the settings and try again. 
+Click Project at the toolbar -> Publish and Package. When finish packaging, click Output panel at the bottom of Cocos Studio. The message "project packaged" will appear at the Output panel, which indicates the environment variables are set right. Otherwise, you need to  check the settings and try again. 
+
+![image](res_en/image0000.png)
 
 **7 Possible errors and analysis**
 
@@ -104,11 +106,11 @@ Installation of various tools on Mac is relatively simple, users do not need to 
 
 - Set preferences for Apple developer certificate, double click *.p12, you can see the page as the following picture shows. 
 
-&emsp;&emsp;![image](res/image0005.png)
+&emsp;&emsp;![image](res_en/image0005.png)
 
 - Enter password, and then click "OK". Now you can see the following page. 
 
-&emsp;&emsp;![image](res/image0006.png)
+&emsp;&emsp;![image](res_en/image0006.png)
 
 - Drag and drop *.cer here. 
 
@@ -118,7 +120,7 @@ Installation of various tools on Mac is relatively simple, users do not need to 
 
 - Run this command: security find-identity -v -p codesigning. The identities are valid if you can see the information as the following picture shows. 
 
-&emsp;&emsp;![image](res/image0007.png)
+&emsp;&emsp;![image](res_en/image0007.png)
 
 ### Package  ###
 
@@ -132,19 +134,19 @@ If you need to publish a C++ project to csb format, and package it to APK file. 
 
 - Go to the publish settings for C++ projects.
  
-&emsp;&emsp;![image](res/image0008.png)
+&emsp;&emsp;![image](res_en/image0008.png)
 
-&emsp;&emsp;![image](res/image0009.png) 
+&emsp;&emsp;![image](res_en/image0009.png) 
 
 - Publish and package. 
  
-&emsp;&emsp;![image](res/image0010.png) 
+&emsp;&emsp;![image](res_en/image0010.png) 
 
-&emsp;&emsp;![image](res/image0011.png)  
+&emsp;&emsp;![image](res_en/image0011.png)  
 
 &emsp;&emsp;Apk package is located in：
 
-&emsp;&emsp;![image](res/image0012.png)  
+&emsp;&emsp;![image](res_en/image0012.png)  
 
 &emsp;&emsp;It is a relative path in project directory. 
 
@@ -168,9 +170,9 @@ iOS Package, do the following:
     
         “Build Settings”->Code Signing->Provisioning Profile，select "cocosstudioDemoInhouse". 
 
-&emsp;&emsp;![image](res/image0013.png) 
+&emsp;&emsp;![image](res_en/image0013.png) 
 
-&emsp;&emsp;![image](res/image0014.png) 
+&emsp;&emsp;![image](res_en/image0014.png) 
 
 - Package in Cocos Studio. Toolbar -> Project -> Package Project, select iOS or Android. 
 

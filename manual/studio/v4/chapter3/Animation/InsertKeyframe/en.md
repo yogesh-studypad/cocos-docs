@@ -10,17 +10,17 @@ There are four ways to **add keyframes**:
 
 - Right-click on the timeline marker, and select "add frame". 
 
-&emsp;&emsp;&emsp;![image](res/image004.png)
+&emsp;&emsp;&emsp;![image](res_en/image004.png)
 
 - Click "Add Frame" button. 
 
-&emsp;&emsp;&emsp;![image](res/image008.png)
+&emsp;&emsp;&emsp;![image](res_en/image008.png)
 
 - Click the timeline marker, and press K on the keyboard to add a key frame. 
 
 - Select "AutoRecord Frame" checkbox. 
 
-&emsp;&emsp;&emsp;![image](res/image006.png)
+&emsp;&emsp;&emsp;![image](res_en/image006.png)
 
 Cocos Studio provides an effective method to record key frames: AutoRecord Frame. When you select "AutoRecord Frame"check box, and move timeline marker to a position, you can adjust its values for a perfect effects. All the widgets and their changed properties will be saved and recorded automatically. 
 
