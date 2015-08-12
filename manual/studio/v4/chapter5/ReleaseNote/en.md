@@ -175,4 +175,4 @@ Improved the efficiency of opening a project.
 
 Fixed a bug on Mac OS X 10.10.2 that updating package could not be opened automatically. 
 
-***Note** Data exported from cocos v2.2+ can be loaded in Cocos 2d-x v3.4+.* 
+***Note** Data exported from cocos v2.2+ can be loaded in Cocos2d-x v3.4+.* 
