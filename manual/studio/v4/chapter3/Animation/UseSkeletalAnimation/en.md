@@ -8,7 +8,7 @@ Skeletal animation files can be used in cocos after being nested to Scene, Node 
 
 - You may receive an error message when nesting skeletal files, if those files do not conform to the nested rules. 
 
-   ![Image](res/tuo.jpg)
+   ![Image](res_en/tuo.jpg)
 
 Skeletal files are used as nodes in the nested files, therefore their properties are the same as Node. 
 

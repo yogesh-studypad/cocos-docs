@@ -4,33 +4,33 @@
 
 How to use 3D Model
 
-**1 Create a 3D object** 
+**1 Create a 3D Widget** 
 
-&emsp; Drag and drop the Model from 3D Objects to Scene. 
+Drag and drop a Model from 3D Widgets to Scene. 
 
-![image](res/image0001.png)
+![image](res_en/image0001.png)
  
 **2 Modify objects' properties**
 
-&emsp;Modify basic properties, or move and dynamically adjust a model's states with mouse. 
+Adjust the properties of the model, either using the Properties panel or you can left click a numeric property and scroll the mouse wheel to vary the values. 
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_en/image0002.png)
 
-![image](res/image0003.png)
+![image](res_en/image0003.png)
  
 **3 Import models**
 
-&emsp;Import model and map resources to a project, then drag and drop model files to scene. 
+Import model and map resources to a project, then drag and drop model files to scene. 
  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0004.png)、
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_en/image0004.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0005.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_en/image0005.png)
 
 ![image](res/image0006.png)
  
-&emsp;Drag and drop model files to scene to use various model resources. 
+To use model resources, just drag and drop them to the scene. 
 
-![image](res/image0007.png)
+![image](res_en/image0007.png)
 
  
 

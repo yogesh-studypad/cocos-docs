@@ -2,11 +2,11 @@
 
 ###1 Panel
 
-![image](res/image001.png)
+![image](res_en/image001.png)
  
 Panel can be used to control child element's layout, also has handy features like clipping, fill color or background image. In the official example, we make extensive use of the panel to manage the layout, such as the main menu, user name, diamonds and gold they all have Panel, in order to ensure a relatively uniform layout. 
 
-![image](res/image002.png)
+![image](res_en/image002.png)
  
 **Scenario 1: Do not display the contents of the container outside** 
 
@@ -16,23 +16,23 @@ When you want to hide the content that’s bigger than the panel, you can use at
 
 There are two options to fill the color: solid color background, or gradient background. You can choose color and set the opacity of the background; when you select a gradient background, you need to set the starting color and ending color, and opacity can be set separately for these two colors.
 
-![image](res/image003.png)
+![image](res_en/image003.png)
  
 **Scenario 3: Add child controls**
 
 On canvas, right click the selected widget, and then you can add all types of widgets as its child.
 
-![image](res/image004.png)
+![image](res_en/image004.png)
   
 ###2 ListView 
 
-![image](res/image005.png)
+![image](res_en/image005.png)
  
 ListView can auto-arrange widgets quickly. ListView is often used in game scenes where list effects are needed. 
 
 ***Note** The position cannot be modified when a widget is added into ListView.*
 
-![image](res/image006.png)
+![image](res_en/image006.png)
 
 **Scenario 1: Do not display the contents of the container outside**
 
@@ -44,17 +44,17 @@ When widgets are added into ListView, they will be arranged automatically. By se
 
 ###3 PageView 
 
-![image](res/image007.png)
+![image](res_en/image007.png)
  
 PageView is a container with a page flip effect, can only add basic container. PageView often used in game scenes like inventory with page flip effect, the official example, we use PageView in level selection screen, player can paging between different levels.
  
-![image](res/image008.png)
+![image](res_en/image008.png)
 
 **Scenario 1: Do not display the contents of the container outside**
 
 When you want to hide the content that’s bigger than the panel, you can use attribute "clipping" so the panel will clip the content. As shown above, after enable Clipping, the effect is as follows:
 
-![image](res/image009.png)
+![image](res_en/image009.png)
 
 **Scenario 2: Add flip effect** 
 
@@ -64,27 +64,27 @@ When a widget is added to PageView, it will be reset back to default settsing, i
  
 ###4 ScrollView
 
-![image](res/image010.png)
+![image](res_en/image010.png)
  
 ScrollView shows scrolling effect on the touch screen, it has the ability to set the scroll area, scroll direction and other attributes. In the official example, we implemented scrollview in task selection screen (MissionSelect.csd), player can scroll the background. We set the height of the background about triple the size of a screen, so user can slide up and down the screen to view the entire map.
 
-![image](res/image011.png)
+![image](res_en/image011.png)
  
 **Scenario 1: Do not display the contents of the container outside**
 
 When you want to hide the content that’s bigger than the panel, you can use attribute "clipping" so the panel will clip the content. As shown above, after we check the properties, the effect is as follows:
 
-![image](res/image012.png)
+![image](res_en/image012.png)
  
 **Scenario 2: Set the size of the scrolling content**
 
-![image](res/image013.png)
+![image](res_en/image013.png)
  
 In the above picture, area A is the size of ScrollView. When enable Clipping for the ScrollView, areas outside A will not be displayed. However, contents in area B can be displayed by scrolling to area A. Scrolling content size has to be bigger than the scrollview for the scrolling to work.
 
 You can select the desired scroll direction: horizontal, vertical or both.
 
-![image](res/image014.png)
+![image](res_en/image014.png)
  
 **Scenario 3: Set the rebound effect**
 

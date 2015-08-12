@@ -8,7 +8,7 @@ A series of widget types is available in Cocos Studio.
 
 - **string type**    
 
-   ![image](res/image001.png)
+   ![image](res_en/image001.png)
 
 Frame event is a string type with a text field, which has no text format restriction and can also be blank. For example: 
 
@@ -32,7 +32,7 @@ Frame event is a string type with a text field, which has no text format restric
         }
     }
 
-![image](res/image002.png)
+![image](res_en/image002.png)
 
 Name is a string type with a text field, which has no text format restriction but cannot be blank. If it is blank, it will restore the previous value by default. Such text field can be applied by calling **ValidTextEditor**. For example: 
 
@@ -69,7 +69,7 @@ Logical Label is an **int** type with a text field only for numbers extending fr
 
 - **bool type**
 
-![image](res/image003.png)
+![image](res_en/image003.png)
 
 Visible is a **bool** type with a check box, which can be checked or unchecked. For example：
 
@@ -94,7 +94,7 @@ Visible is a **bool** type with a check box, which can be checked or unchecked. 
 
 - **enum type**
 
-![image](res/image004.png)
+![image](res_en/image004.png)
 
 Alignment is an **enmu** type with a combox, in which various enmu items can be selected. For example: 
 
@@ -130,7 +130,7 @@ Alignment is an **enmu** type with a combox, in which various enmu items can be 
 
 - **Color type**
 
-![image](res/image005.png)
+![image](res_en/image005.png)
 
 Color-blend is a Color type with a combined control, in which various color can be selected. For example: 
 
@@ -156,7 +156,7 @@ Color-blend is a Color type with a combined control, in which various color can 
 
 - **ScaleValue type**
 
-![image](res/image006.png)
+![image](res_en/image006.png)
 
 Skew is a **ScaleValue** type with a combined control, in which the value of X and Y can be set separately. Minimum/ Maximum values and value range can be set in property. For example: 
 
@@ -183,7 +183,7 @@ Skew is a **ScaleValue** type with a combined control, in which the value of X a
 
 - **PointF type**
 
-![image](res/image007.png)
+![image](res_en/image007.png)
 
 The anchor attribute is a **PoinfF** Type. Type refers to a combined control, in which the value of X and Y can be set separately. For example:
 

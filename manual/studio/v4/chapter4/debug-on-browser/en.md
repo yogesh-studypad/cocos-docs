@@ -6,11 +6,11 @@ For a JS project, after clicking “run in the browser”, these may appear some
 
    Original resource.js:
 
-![image](res/image001.png)
+![image](res_en/image001.png)
 
    Modified resources. js: 
 
-![image](res/image002.png)   
+![image](res_en/image002.png)   
 
   Add the resources of current scene to g_resources=[...].
 
@@ -18,23 +18,21 @@ For a JS project, after clicking “run in the browser”, these may appear some
 
 **Chrome**
 
-   Customize and control -> More tools -> Developer tools
+   Customize and control Google Chrome -> More tools -> Developer tools
 
-![image](res/image003.png)   ![image](res/image004.png)
+![image](res_en/image003.png)   
 
 **360 Browser**
   
    Tools -> Developer Tools:
 
-![image](res/image005.png)  
-
 **Firefox**
 
-Settings -> Developers -> Browser Console -> JS
+Settings -> Developer -> Browser Console -> JS
 
-![image](res/image006.png) ![image](res/image007.png)
+![image](res_en/image006.png) ![image](res_en/image007.png)
    
-![image](res/image008.png) 
+![image](res_en/image008.png) 
 
  
 

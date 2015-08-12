@@ -6,7 +6,7 @@ By default samples are installed to  **%userprofile%\Documents\Cocos\CocosStudio
 
 Note `%userprofile%` is an environment variable on Windows.It is installed in **C:\users\ABC** (ABC is user name). Paste and open the location in Window Resource Manager. For example, type **set userprofile** in Windows CMD command line, you will get the following information on the screen. 
 
-![image](res/image001.png) 
+![image](res_en/image001.png) 
  
 (Username is covered.)
 

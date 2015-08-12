@@ -2,7 +2,7 @@
 
 Select Button-> Properties -> Advanced -> User Data. For example, type 123, as the following picture shows. 
 
-![image](res/image001.png)
+![image](res_en/image001.png)
       
 ### C++ ###
    

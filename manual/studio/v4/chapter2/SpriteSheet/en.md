@@ -2,35 +2,35 @@
 
 ### Create a SpriteSheet
 
-Do one of the following, 
+To create a SpriteSheet, do the following, 
 
-1 On the toolbar, click New File button.
+1 On the toolbar, click **New File** button.
  
- ![image](res/image0001.png)
+ ![image](res_en/image0001.png)
 
-2 Select SpriteSheet on the pop up window,   and then click New.  
+2 Select **SpriteSheet** on the pop up window,   and then click **New**.  
 
- ![image](res/image0002.png)
+ ![image](res_en/image0002.png)
 
 3 Select an image from project manager, drag it to the canvas. Currently Cocos Studio only supports *.png* and *.jpg* file types.
 
- ![image](res/image0003.png)
+ ![image](res_en/image0003.png)
 
 ### Specify SpriteSheet Properties ###
 
- ![image](res/image0004.png)
+ ![image](res_en/image0004.png)
  
 **Size**: The size of the current SpriteSheet. Size property  varies with other properties.  
 
-**Customize Size**: If checked, this option will ignore the power of 2 size limit, sprite sheet can be any image size. 
+**Allow Any Size**: If checked, this option will ignore the power of 2 size limit, SpriteSheet can be any image size. 
 
-**Trim**: When checked, the editor will automatically trim SpriteSheet to ensure its size minimized.
+**Allow Clipping**: When checked, the editor will automatically trim SpriteSheet to ensure its size minimized.
 
-**Maximum size**: The maximum size that cocos will allow for sprite sheet. If the size of resources exceeds the limit, the sections that exceed will be excluded from the sprite sheet. 
+**Maximum size**: The maximum size that cocos will allow for SpriteSheet. If the file size exceeds the limit, the sections that exceed will be excluded from the SpriteSheet. 
 
-**Type**: File type of SpriteSheet, supporting *.png* and *.jpg* file types.
+**Type**: File type of SpriteSheet, supporting *.png* and *.jpg* format images.
 
-**Gap**: The gap between resources. Gap can prevent resources from overlapping. 
+**Spacing**: The gap between resources. Spacing can prevent resources from overlapping. 
 
 **Allow Rotation**: When checked,  resources will automatically rotate to the best angle  for a SpriteSheet. 
 

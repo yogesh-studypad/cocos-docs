@@ -18,9 +18,9 @@ To create Guides, please do one of the following:
 
 - Menu -> View -> select "New Guides" -> select Direction and Position -> click "OK". The position is the location of the line, being displayed parallel to the X coordinate  (Horizontal Direction) or Y coordinate (Vertical Direction) of rulers. Press Alt (Windows) or Option (Mac OS), and drag from the vertical ruler to created a horizontal guide and vice versa. When draging the ruler, you can see the position of the guide. 
 
-&emsp;&emsp;&emsp;![image](res/image001.png) 
+&emsp;&emsp;&emsp;![image](res_en/image001.png) 
 
-&emsp;&emsp;&emsp;![image](res/image002.png) 
+&emsp;&emsp;&emsp;![image](res_en/image002.png) 
           
 **Move Guides**
 
@@ -30,13 +30,13 @@ Position the pointer over the guide until the pointer turns into a double-headed
 
 To lock all guides, choose Menu -> View -> select Lock Guides. Keyboard shortcut is Ctrl+Alt+; (Windows), Command+Alt+;(Mac). 
 
-&emsp;&emsp;![image](res/image003.png) 
+&emsp;&emsp;![image](res_en/image003.png) 
 
 **Hide Guides** 
 
 By default, the guides are visible. To hide all guides , choose Menu -> View -> deselect Guides. Keyboard shortcut is Ctrl+; (Windows), Command+;(Mac).  
         
-&emsp;&emsp;![image](res/image004.png) 
+&emsp;&emsp;![image](res_en/image004.png) 
 
 **Clear Guides**
 
@@ -48,7 +48,7 @@ Remove all guides: choose Menu -> View -> Clear Guides.
 
 By default the Guide'd color is cyan. To customize its color, select Menu -> Edit -> Preferences -> Guides -> select a color and click OK.  
 
-![image](res/image005.png) 
+![image](res_en/image005.png) 
   
 **Save Guides** 
 

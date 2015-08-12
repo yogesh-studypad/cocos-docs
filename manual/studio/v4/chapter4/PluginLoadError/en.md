@@ -10,5 +10,5 @@ Compare Samples and the customized addins to find differences and make modificat
 
 - Use the latest version of Lua export plugin if you need to export projects to Lua. Download the plugin on [Cocos Store](http://store.cocos.com/).
 
-![image](res/image001.png) 
+![image](res_en/image001.png) 
 
