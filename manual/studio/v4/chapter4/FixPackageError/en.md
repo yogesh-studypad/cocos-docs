@@ -14,9 +14,9 @@ Set variable Path, and append the location of the bin folder where the JRE is in
 
 4 Use UTF-8 to code Cpp. It is convenient to view the file encoding format with Visual Studio. 
 
-&emsp;&emsp;![image](res/image0004.png)
+&emsp;&emsp;![image](res_en/image0004.png)
 
-&emsp;&emsp;![image](res/image0003.png)
+&emsp;&emsp;![image](res_en/image0003.png)
 
 5 Currently it is not supported to access files on a USB disk, for on Windows the path support in Python is flawed. Copy project files from the USB disk to your computer and run the project. 
 
@@ -43,9 +43,9 @@ Solution: Add source files to Android.mk.
 
 8 “was declared deprecated”, for example: 
 
-	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCString': 被声明为已否决
-	1>          d:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(1050) : 参见“cocos2d::CCString”的声明
-	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCDictionary': 被声明为已否决
+	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCString': was declared deprecated
+	1>          d:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(1050) : 
+	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCDictionary': was declared deprecated
 
 Cause: When updating the engine, there will be some deprecated functions, which are available but with this error message. 
 
@@ -59,7 +59,7 @@ Solution:  use the F12 tools to debug on a statement level, and find the codes t
 	Updated file d:\cocosSample\Cocos\CocosProjects\CocosProject1\proj.android\proguard-project.txt
 	It seems that there are sub-projects. If you want to update them
 	please use the --subprojects parameter.
-	系统找不到指定的路径。
+
 	Running command: compile
 	Building mode: debug
 	Android platform not specified, searching a default one...
@@ -94,13 +94,13 @@ Solution: update .vxproject configuration.
 
 13 Missing type specifier (missing header files), for example: 
 
-&emsp;&emsp;![image](res/image0005.png)
+&emsp;&emsp;![image](res_en/image0005.png)
 
 Cause: Undefined preprocessor.
 
 Solution: 
 
-    CC_ENABLE_CHIPMUNK_INTEGRATION=1更改为CC_ENABLE_BOX2D_INTEGRATION=1
+    CC_ENABLE_CHIPMUNK_INTEGRATION=1 change to CC_ENABLE_BOX2D_INTEGRATION=1
 
 If you have added references to project, please see [http://www.bkjia.com/Androidjc/889857.html](http://www.bkjia.com/Androidjc/889857.html).
 
@@ -108,7 +108,6 @@ P.S. there is bug in v3.6 BOX2D- TEST. Solution: [https://github.com/cocos2d/coc
 
 14 sh: cocos: command not found, for example: 
 
-	//3.5、3.6的话，将工程导入到Eclipse中，会报sh: cocos: command not found的错误，但是用控制台能正常打包。这是一个Bug。
 	**** Build of configuration Release for project CocosProjectTest ****
 	python /Users/zhongcs/dev/cocosworkspace/CocosProjectTest/proj.android/build_native.py -b release all 
 	sh: cocos: command not found
@@ -130,21 +129,6 @@ Cause: Successful compilation on PC means that there is IDE libraries support C+
 
 Solution: Look for 3rd-party regular expression parsing library, for example, C++ regular expression library. Or compile with ndk-r10c or higher versions.  
 
-16 Failed to load one or more solution projects, for example: 
-
-    Based on: cocos2d-x-3.6
-    Microsoft (R) Microsoft Visual Studio 2012 11.0.50727.1 版。
-    版权所有(C) Microsoft Corp。保留所有权利。
-    D:\Cocos_Project\js\test\frameworks\runtime-src\proj.win32\test.vcxproj : error  : 未找到与约束 
-	ContractName	Microsoft.VisualStudio.Project.IProjectServiceAccessor
-	RequiredTypeIdentity	Microsoft.VisualStudio.Project.IProjectServiceAccessor 匹配的导出
-    未能正确加载解决方案中的一个或多个项目。
-    有关详细信息，请参见“输出”窗口。
-    未能完成操作。参数错误。 
-    用法: 
-    devenv  [解决方案文件 | 项目文件 | 任意文件.扩展名]  [开关]
-
-Solution: Repair or reinstall Visual Studio. 
 
 ***Note** Remember to check log files, which are the points to debug most issues.* 
 
