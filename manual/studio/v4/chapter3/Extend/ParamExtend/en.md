@@ -13,11 +13,11 @@ A series of widget types is available in Cocos Studio.
 Frame event is a string type with a text field, which has no text format restriction and can also be blank. For example: 
 
     string customString = string.Empty;
-    [UndoPropertyAttribute] //允许撤销回退，不允许则不添加
-    [DisplayName("字符串")]//Label显示文本
-    [Category("Custom_Plug")]//属于哪个分组
-    [PropertyOrder(0)]//在分组的排序，例如，1在0之后
-    [Browsable(true)]//是否显示当前属性，不允许则设置为false 或者不添加这个属性戳
+    [UndoPropertyAttribute] 
+    [DisplayName("字符串")]
+    [Category("Custom_Plug")]
+    [PropertyOrder(0)]
+    [Browsable(true)]
     public string CustomString
     {
         get { return customString; }
@@ -26,7 +26,6 @@ Frame event is a string type with a text field, which has no text format restric
             if (customString != value)
             {
                 customString = value;
-                //如果允许记录撤销记录，则调用属性通知，如果不需要记录，则不添加
                 this.RaisePropertyChanged(() => this.CustomString);
             }
         }
@@ -38,7 +37,7 @@ Name is a string type with a text field, which has no text format restriction bu
 
     [UndoPropertyAttribute]
     [DisplayName("ValidTextBox")]
-    [Editor(typeof(ValidTextEditor), typeof(ValidTextEditor))] //这里的Editor是制定特定的类型控件，这些控件属于自己写的，非系统原生
+    [Editor(typeof(ValidTextEditor), typeof(ValidTextEditor))] 
     [Category("Custom_Plug")]
     [PropertyOrder(0)]
     [Browsable(true)]
@@ -50,7 +49,7 @@ Logical Label is an **int** type with a text field only for numbers extending fr
 
     int customInt = 0;
     [UndoPropertyAttribute]
-    [DisplayName("整数")]
+    [DisplayName("Integer")]
     [Category("Custom_Plug")]
     [PropertyOrder(1)]
     [Browsable(true)]
@@ -75,7 +74,7 @@ Visible is a **bool** type with a check box, which can be checked or unchecked. 
 
     bool customBool = false;
     [UndoPropertyAttribute]
-    [DisplayName("布尔")]
+    [DisplayName("Bool")]
     [Category("Custom_Extend")]
     [PropertyOrder(4)]
     [Browsable(true)]
@@ -98,8 +97,6 @@ Visible is a **bool** type with a check box, which can be checked or unchecked. 
 
 Alignment is an **enmu** type with a combox, in which various enmu items can be selected. For example: 
 
-    // 枚举定义示例，实际使用时请将枚举的定义放到 ViewModel 类外面，和 ViewModel 平级。
-    // 参见示例工程中 WeekdayEnum 枚举的定义。
     public enum CocosEnum
     {
         None,
@@ -111,7 +108,7 @@ Alignment is an **enmu** type with a combox, in which various enmu items can be 
     CocosEnum customEnum = CocosEnum.None;
 
     [UndoPropertyAttribute]
-    [DisplayName("枚举")]
+    [DisplayName("Enum")]
     [Category("Custom_Plug")]
     [PropertyOrder(5)]
     [Browsable(true)]
@@ -137,7 +134,7 @@ Color-blend is a Color type with a combined control, in which various color can 
 	System.Drawing.Color customColor = System.Drawing.Color.White;
 	[UndoPropertyAttribute]
 	[Editor(typeof(ColorEditor), typeof(ColorEditor))]
-	[DisplayName("颜色")]
+	[DisplayName("Color")]
 	[Category("Custom_Extend")]
 	[PropertyOrder(6)]
 	[Browsable(true)]
@@ -162,8 +159,8 @@ Skew is a **ScaleValue** type with a combined control, in which the value of X a
 
 	ScaleValue customScaleValue = new ScaleValue(1, 1);
 	[UndoPropertyAttribute]
-	[Editor(typeof(CustomEditor), typeof(CustomEditor))] // CustomEditor 的源代码可以在示例工程中找到。
-	[ValueRange(int.MinValue, int.MaxValue, 1)]//ValueRange属性是设置控件最大值最小值和幅度
+	[Editor(typeof(CustomEditor), typeof(CustomEditor))] 
+	[ValueRange(int.MinValue, int.MaxValue, 1)]
 	[DisplayName("ScaleValue")]
 	[Category("Custom_Extend")]
 	[PropertyOrder(7)]
@@ -187,13 +184,10 @@ Skew is a **ScaleValue** type with a combined control, in which the value of X a
 
 The anchor attribute is a **PoinfF** Type. Type refers to a combined control, in which the value of X and Y can be set separately. For example:
 
-	/*PointFEditor和ScaleValueEditor的内容一致，
-	只是在其中需要类型的强制转换，Point和ScaleValue两种强类型，
-	在控件内做处理太繁杂，单一原则，把这两个类型写成了两个控件*/
 	PointF customPointF = new PointF(1, 1);
 	[UndoPropertyAttribute]
 	[Editor(typeof(PointFEditor), typeof(PointFEditor))]
-	[ValueRange(int.MinValue, int.MaxValue, 1)]//ValueRange属性是设置控件最大值最小值和幅度
+	[ValueRange(int.MinValue, int.MaxValue, 1)]
 	[DisplayName("ScaleValue")]
 	[Category("Custom_Extend")]
 	[PropertyOrder(7)]

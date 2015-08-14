@@ -35,5 +35,3 @@
 ####&emsp;&emsp;[17 How to: Simplify Widgets Initial Resources](../SimplifyWidgetsRes/en.md)
 
 ####&emsp;&emsp;[18 How to: Run Previous Versions of Addins in cocos](../PluginLoadError/en.md)
-
-####&emsp;&emsp;19 Feedback FAQ [http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)

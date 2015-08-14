@@ -69,7 +69,7 @@ The section is an introduction to callback functions in C++ and Lua.
 	
 	Widget::ccWidgetTouchCallback MyClass::onLocateTouchCallback(const string &callBackName) 
 	{ 
-		if (callBackName == "onTouch")//判断事件名，返回对应的函数。下同 
+		if (callBackName == "onTouch")
 		{ 
 			return CC_CALLBACK_2(MyClass::onTouch, this); 
 		} 
@@ -120,8 +120,8 @@ Purge—delete factory class
 
 createNodeWithFlatBuffers—create the class edited in step 4, and invoke setPropsWithFlatBuffers, as following, 
 
-     purge —— 销毁工厂类 
-     createNodeWithFlatBuffers —— 创建第3步编写的类，并调用setPropsWithFlatBuffers 
+     purge
+     createNodeWithFlatBuffers
 
 For example, 
    
@@ -177,7 +177,6 @@ For example,
 5 Register this interface to CSLoader before using createNode.
   
 	CSLoader* instance = CSLoader::getInstance();
-	//注意第一个参数必须是第一步填写的自定义类名加“Reader ”如上述的"MyClassReader" 
 	instance->registReaderObject("MyClassReader",(ObjectFactory::Instance)MyClassReader::getInstance);
 
 6 Load your node.

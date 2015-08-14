@@ -8,36 +8,15 @@ Interface Description:
     [TypeExtensionPoint]
     public interface IGameProjectSerializer
     {
-        /// <summary>
-        /// 序列化器ID
-        /// </summary>
+
         string ID { get; }
 
-        /// <summary>
-        /// 对外显示的名称
-        /// </summary>
         string Label { get; }
 
-        /// <summary>
-        /// 执行序列化
-        /// </summary>
-        /// <param name="info">发布设置信息</param>
-        /// <param name="projFile">项目文件</param>
-        /// <returns>错误信息（正常结束时为空）</returns>
         string Serialize(PublishInfo info, IProjectFile projFile);
 
-        /// <summary>
-        /// 执行上下文初始化操作，在第一次 Serialize 调用之前调用它。
-        /// 对于一个 Studio 解决方案只应该调用一次。
-        /// 注：每个 *.csd 文件会调用一次 Serialize.
-        /// </summary>
         void ContextInitialize(PublishInfo publishInfo);
 
-        /// <summary>
-        /// 执行上下文结束操作，在最后一次 Serialize 调用之后调用它。
-        /// 对于一个 Studio 解决方案只应该调用一次。
-        /// 注：每个 *.csd 文件会调用一次 Serialize.
-        /// </summary>
         void ContextFinalize(PublishInfo publishInfo);
      }
 

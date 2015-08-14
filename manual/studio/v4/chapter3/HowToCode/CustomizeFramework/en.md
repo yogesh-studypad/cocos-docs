@@ -29,29 +29,24 @@ The following is a detailed description of how to use this scripting tool:
     usage: gen_cocos_libs.py [-h] [-c] [-all] [--win] [--mac] [--ios] [--android]
      [--dis-strip] [--vs VS_VERSION] [--app-abi APP_ABI]
     
-    生成新的 Cocos Framework 预编译库。
+     -h, 
     
-    可用参数:
+     -c
     
-     -h, --help显示帮助信息
+     -all  
     
-     -c编译之前先删除之前的 prebuilt 文件夹
+     --win 
     
-     -all  编译所有平台（Mac 系统编译 Mac，iOS 和 Android；Windows 系统编译 Win32 和 Android）
+     --mac 
     
-     --win 编译 Win32 平台
+     --ios 
     
-     --mac 编译 Mac 平台
+     --android 
     
-     --ios 编译 iOS 平台
+     --dis-strip, --disable-strip  
+     --vs VS_VERSION   
     
-     --android 编译 Android 平台
-    
-     --dis-strip, --disable-strip  关闭 strip 功能，编译生成的 .a 文件不再 strip。（影响 Mac，iOS 和 Android 平台的预编译库）
-    
-     --vs VS_VERSION   指定使用的 Visual Studio 版本。不指定的话，自动查找可用版本。
-    
-     --app-abi APP_ABI 指定 ndk-build 所使用的 APP_ABI 参数值。可以使用 ":" 来分隔多个值。例如：--app-abi armeabi:x86。 默认值为 armeabi。
+     --app-abi APP_ABI 
      ```
 For example: 
 
@@ -72,19 +67,16 @@ The following is a detailed description of how to use this scripting tool:
     usage: gen_cocos_simulator.py [-h] [-c] [-m {debug,release}] [-o OUT_DIR] -p
       {ios,mac,android,win32,all} [--vs VS_VERSION]
     
-    重新生成模拟器。
     
-    可用参数:
+    -h, --help
     
-    -h, --help显示帮助信息
+    -c, --clean  
     
-    -c, --clean   重新生成之前，先删除指定的输出目录。
+    -m {debug,release}, --mode {debug,release}  
     
-    -m {debug,release}, --mode {debug,release}  生成模拟器的模式，可选值：debug，release
+    -o OUT_DIR, 
     
-    -o OUT_DIR, --output OUT_DIR 生成的模拟器存放路径。不指定的话，默认放在 "frameworks/cocos2d-x-v3.7/simulator" 文件夹。
-    
-    -p {ios,mac,android,win32,all}, --platform {ios,mac,android,win32,all} 需要编译的平台。如果为 all，则 Mac 系统编译 Mac，iOS 和 Android；Windows 系统编译 Win32 和 Android
+    -p {ios,mac,android,win32,all}
     
     --vs VS_VERSION   指定使用的 Visual Studio 版本。不指定的话，自动查找可用版本。
     ```

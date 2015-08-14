@@ -4,7 +4,7 @@
 
 Auto-layout functionality mainly refers to "Pin & Sizing" property. 
  
-![gif](res/gif001.gif) 
+![gif](res_en/gif001.gif) 
 
 You can have the effect in the above figure by setting Enable/ Disable the "Pins" around and the "Size bars" in the center.
 
@@ -12,15 +12,15 @@ You can have the effect in the above figure by setting Enable/ Disable the "Pins
 
 - When a pin is enabled, a widget will be arranged at the corresponding border of its parent widget. The margins between a widget and its parent widget maintain a proportion as the parent widget changes its size. 
 
-![gif](res/gif002.gif) 
+![gif](res_en/gif002.gif) 
  
 - When two pins are enabled, a widget will be arranged at the corresponding borders of its parent widget. 
 
-![gif](res/gif003.gif) 
+![gif](res_en/gif003.gif) 
  
 - When a size bar is enabled, the widget scales maintaining its margin proportions to its parent widget.  
 
-![gif](res/gif004.gif) 
+![gif](res_en/gif004.gif) 
  
 #####Other important information
 
