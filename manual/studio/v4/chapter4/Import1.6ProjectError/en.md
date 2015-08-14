@@ -6,4 +6,4 @@ Import project from v1.6" option is  unavailable.
 
 **Resolution**
 
-To solve this issue, create a project first and then choose "import project from v1.6". 
+To solve this issue, create a project first and then choose "File -> Import -> import project from v1.6...". 

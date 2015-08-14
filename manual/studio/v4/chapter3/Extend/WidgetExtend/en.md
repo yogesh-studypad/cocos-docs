@@ -76,40 +76,27 @@ Following is a sample: A custom Sprite widget with text. The sample below is **a
 
 Following are the codes of **abc.lua**.  
 
-    --[[
-    一个简单的示例，新建一个精灵，并在精灵上放置了一个文本。
-    当调用 CreateCustomNode 时，会生成这个精灵并返回。
-    ]]
     
-     -- 新建一个 table，包含 CreateCustomNode 和 GetBaseType 方法。
     local container = {}
     
-    -- 新建根节点 Node，目前这个方法的名字为固定的，必须为 CreateCustomNode。
-    -- 方法的最后一句必须是一个 return 语句，把新建的结点返回。
     function container.CreateCustomNode()
-    	-- 新建一个精灵。
-    	local rootNode = cc.Sprite:create('temp.png') -- 图片资源位于本文件所在目录
-    	
-    -- 新建一个 Label。
+    	local rootNode = cc.Sprite:create('temp.png') 
     	local label = cc.Label:create()
-    	label:setString('abc Label From Lua') -- 设置 label 的文本内容。
-    	label:setSystemFontSize(24) -- 设置 label 字体大小。
-    	label:setPosition(140, 50) -- 设置 label 的位置。
-    	label:setName('labelName')  -- 设置 label 的名字。
-    	label:retain()  -- 保留，以回避垃圾回收。
+    	label:setString('abc Label From Lua') 
+    	label:setSystemFontSize(24) 
+    	label:setPosition(140, 50)
+    	label:setName('labelName') 
+    	label:retain() 
     	
     rootNode:addChild(label)
     return rootNode
     end
     
-    -- 返回该插件所扩展的基础类型。
     function container.GetBaseType()
     return 'Sprite'
     end
     
-    -- 返回这个包含 CreateCustomNode 和 GetBaseType 方法的表。
     return container
-    -- 片段到这里结束
 
 **Analysis**: 
 
@@ -150,25 +137,25 @@ Selecting it in the rendering section, we can see that its type is Sprite.
     "Lua Table" must include a method `GetBaseType`, which is used to return a widget's node. Widgets in Cocos Studio and their GetBaseType are listed below:
 
           控件名	                             GetBaseType返回
-         Sprite（精灵）	                             Sprite
-         ParticleSystemQuad（粒子）                  Particle
-         TMXTiledMap（地图）	                     GameMap
-         ComAudio（声音）	                         SimpleAudio
-         Node（节点）	                             Node
-         Button（按钮）	                             Button
-         CheckBox（复选框）       	                CheckBox
-         ImageView（图片）	                         ImageView
-	     TextBMFont（FNT 字体）	                     TextBMFont
-	     LoadingBar（进度条）	                    LoadingBar
-	     Slider（滑动条）	                        Slider
-	     Text（文本）	                             Text
-	     TextField（输入框）      	                TextField
-	     ScrollView（滚动容器）	                    ScrollView
-	     ListView（列表容器）	                        ListView
-	     PageView（翻页容器）	                        PageView
-	     Particle3D（3D 粒子）	                     Particle3D
-	     Sprite3D（模型）	                         Sprite3D										
-         UserCamera（摄像机）	                    UserCamera
+         Sprite	                             Sprite
+         ParticleSystemQuad                  Particle
+         TMXTiledMap                         GameMap
+         ComAudio	                         SimpleAudio
+         Node	                             Node
+         Button	                             Button
+         CheckBox       	                 CheckBox
+         ImageView	                         ImageView
+	     TextBMFont	                         TextBMFont
+	     LoadingBar	                         LoadingBar
+	     Slider	                             Slider
+	     Text	                             Text
+	     TextField  	                     TextField
+	     ScrollView	                         ScrollView
+	     ListView	                         ListView
+	     PageView                            PageView
+	     Particle3D	                         Particle3D
+	     Sprite3D     	                     Sprite3D								
+         UserCamera                          UserCamera
 
 - How to call third party's Lua codes library from custom widget's Lua codes library?  
 
@@ -219,75 +206,59 @@ The Samples and Analysis below are based on this example.
 Add a method to deal with text contents and font size in Lua scripts. In LuaScript directory, scripts of sprite0.lua are listed below: 
 
     --[[
-        一个简单的示例，新建一个精灵，并在精灵上放置了一个文本。
-       当调用 CreateCustomNode 时，会生成这个精灵并返回。
        ]]
     		
-    	-- 新建一个精灵。
-    	-- 新建精灵时传入了一个图片路径作为参数。
+   
     	local function CreateSprite()
-    		return cc.Sprite:create('temp.png') --图片资源请放在本文件所在目录 (LuaScript 目录)
+    		return cc.Sprite:create('temp.png') 
     	end
     	
-    	-- 新建一个 Label，用以显示文字
     	local function CreateLabel()
     		local label = cc.Label:create()
     		label:setString('sprite0 Label from Lua')
     		label:setSystemFontSize(24)
     		label:setPosition(140, 50)
-    		label:setName('labelName') --设置 label 的名字，这个 label 的名字在下面会用到。
+    		label:setName('labelName') 
     		label:retain()
     		return label
     	end
     
-    	-- 新建一个 table，避免全局变量污染。用以包括脚本中所定义的所有的全局方法。
     	local container = {}
-    	-- 新建根节点 Node，目前这个方法的名字为固定的，必须为 CreateCustomNode。
-    	-- 方法的最后一句必须是一个 return 语句，把新建的结点返回。
+    
     	function container.CreateCustomNode()
     		local rootNode = CreateSprite()
     		rootNode:addChild(CreateLabel())
     		return rootNode
     	end
     
-    	-- 返回该插件所扩展的基础类型。
     	function container.GetBaseType()
     	return 'Sprite'
     	end
     
-    	-- 取得精灵上文本的内容。
-    	-- root 参数即为调用 CreateCustomNode 时返回的根结点。
+
     	function container.GetLabelText(root)
-    	-- 在父控件中查找名字为 'labelName' 的子控件。
     	local child = root:getChildByName('labelName')
     	return child:getString()
     	end
     
-    	-- 设置精灵上文本的内容。
-    	-- root 参数即为调用 CreateCustomNode 时返回的根结点。
-    	-- value 所赋的字符串的值。
+
     	function container.SetLabelText(root, value)
-    	-- 在父控件中查找名字为 'labelName' 的子控件。
     	local child = root:getChildByName('labelName')
     	child:setString(value)
     	end
     
-    	-- 取得精灵上文本的字体大小。
     	function container.GetLabelFont(root)
     	local child = root:getChildByName('labelName')
     	return child:getSystemFontSize()
     	end
     	
-    	-- 设置精灵上文本的字体大小。
     	function container.SetLabelFont(root, value)
     	local child = root:getChildByName('labelName')
     	child:setSystemFontSize(value)
     	end
     	
-    	-- 返回这个包含所有全局方法的表
     	return container
 
-     -- 片段到这里结束
 
 **Analysis**
 
@@ -625,21 +596,21 @@ LuaValueConverter can be used to transfer data between C# and Lua.
 
 Methods provided by **LuaValueConverter** are listed below: 
 
-    Method Name	                                                    Description
+    Method Name	                                                   
 	
-	bool GetBoolValue(string funcName)	                            从指定的函数名 funcName 返回一个 bool 值。
-	void SetBoolValue(string funcName, bool val)	                使用指定的函数名 funcName 设置一个 bool 值。
-	int GetIntValue(string funcName)	                            从指定的函数名 funcName 返回一个整数。
-	void SetIntValue(string funcName, int val)	                    使用指定的函数名 funcName 设置一个整数。
-	string GetStringValue(string funcName)	                        从指定的函数名 funcName 返回一个字符串。
-	void SetStringValue(string funcName, string val)	            使用指定的函数名 funcName 设置一个字符串。
-	double GetDoubleValue(string funcName)	                        从指定的函数名 funcName 返回一个双精度浮点值。
-	void SetDoubleValue(string funcName, double val)	            使用指定的函数名 funcName 设置一个双精度浮点值。
-	float GetFloatValue(string funcName)	                        从指定的函数名 funcName 返回一个浮点值。
-	void SetFloatValue(string funcName, float val)	                使用指定的函数名 funcName 设置一个浮点值。
-	System.Drawing.Color GetColorValue(string funcName)	            从指定的函数名 funcName 返回一个颜色值。
-	void SetColorValue(string funcName, System.Drawing.Color val)	使用指定的函数名 funcName 设置一个颜色值。
-	void SetResourceDataValue(string funcName, ResourceData val)	使用指定的函数名 funcName 设置一个资源值。
+	bool GetBoolValue(string funcName)	                          
+	void SetBoolValue(string funcName, bool val)	               
+	int GetIntValue(string funcName)	                          
+	void SetIntValue(string funcName, int val)	                   
+	string GetStringValue(string funcName)	                       
+	void SetStringValue(string funcName, string val)	          
+	double GetDoubleValue(string funcName)	                       
+	void SetDoubleValue(string funcName, double val)	           
+	float GetFloatValue(string funcName)	                       
+	void SetFloatValue(string funcName, float val)	               
+	System.Drawing.Color GetColorValue(string funcName)	           
+	void SetColorValue(string funcName, System.Drawing.Color val)	
+	void SetResourceDataValue(string funcName, ResourceData val)	
 
 ***Notes*** 
 

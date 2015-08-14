@@ -43,9 +43,9 @@ Solution: Add source files to Android.mk.
 
 8 “was declared deprecated”, for example: 
 
-	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCString': was declared deprecated
-	1>          d:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(1050) : 
-	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCDictionary': was declared deprecated
+	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCString': 被声明为已否决
+	1>          d:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(1050) : 参见“cocos2d::CCString”的声明
+	1>d:\cocos2d-x\project\xiaochuxinxin\classes\xmlparser.cpp(15): warning C4996: 'cocos2d::CCDictionary': 被声明为已否决
 
 Cause: When updating the engine, there will be some deprecated functions, which are available but with this error message. 
 
@@ -59,7 +59,6 @@ Solution:  use the F12 tools to debug on a statement level, and find the codes t
 	Updated file d:\cocosSample\Cocos\CocosProjects\CocosProject1\proj.android\proguard-project.txt
 	It seems that there are sub-projects. If you want to update them
 	please use the --subprojects parameter.
-
 	Running command: compile
 	Building mode: debug
 	Android platform not specified, searching a default one...
@@ -92,11 +91,15 @@ Cause: .vxproject configuration unchanged.
 
 Solution: update .vxproject configuration. 
 
-13 Missing type specifier (missing header files), for example: 
+13 Missing type specifier (grammar error), for example: 
 
 &emsp;&emsp;![image](res_en/image0005.png)
 
-Cause: Undefined preprocessor.
+Cause 
+
+- Undeclared identifier, which must be specified in a declaration before using. 
+- Missing ":", grammar error, please check carefully if there is ":" in the code. 
+- Missing type specifier, function type was not declared. 
 
 Solution: 
 

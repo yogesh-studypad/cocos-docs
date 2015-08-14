@@ -66,6 +66,6 @@
 	* [How to: Fix Packaging and Running Issues](../chapter4/FixPackageError/en.md)
 	* [How to: Simplify Widgets Initial Resources](../chapter4/SimplifyWidgetsRes/en.md)
 	* [How to: Run Previous Versions of Addins in cocos](../chapter4/PluginLoadError/en.md)
-	* Feedback FAQ  [http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+
 * [Chapter5: Release Notes](../chapter5/ReleaseNote/en.md)
 	
