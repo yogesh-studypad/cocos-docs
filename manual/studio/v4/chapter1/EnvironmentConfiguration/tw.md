@@ -10,24 +10,24 @@
 
 2、啟動cocos，並點擊“商店頁”如下： 
 
-![image](res/image001.png)
+![image](res_tw/image001.png)
 
 3、在搜索框輸入“Cocos Framework”，回車，下載並安裝，如下圖：
 
-![image](res/image002.png)
+![image](res_tw/image002.png)
 
 4、在搜索框輸入“NDK”，回車，下載並解壓，如下圖：
 
-![image](res/image003.png)
+![image](res_tw/image003.png)
 
 5、在搜索框輸入“Android SDK”，回車，下載並解壓，如下圖：
 
-![image](res/image004.png)
+![image](res_tw/image004.png)
 
  6、在搜索框輸入“JDK”，回車，下載並安裝，如下圖：
 
-![image](res/image005.png)
+![image](res_tw/image005.png)
 
 7、在搜索框輸入“Code IDE”，回車，下載並安裝，如下圖：
 
-![image](res/image006.png)
+![image](res_tw/image006.png)

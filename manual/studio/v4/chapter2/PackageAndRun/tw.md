@@ -16,17 +16,17 @@
 
 &emsp;&emsp;添加系統變數JAVA_HOME，變數值是jdk資料夾路徑。如下截圖：
 
-&emsp;&emsp;![image](res/image0001.png)
+&emsp;&emsp;![image](res_tw/image0001.png)
  
 &emsp;&emsp;編輯系統變數Path，在後面追加jre資料夾下的bin路徑，注意，需要先輸入一個半形分號，再輸入bin路徑，例如： C:\Program Files\Java\jre1.8.0_45\bin，如下截圖：
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_tw/image0002.png)
 
 &emsp;&emsp;2、從商店下載NDK，按兩下android-ndk-r10d-windows-x86_64.exe，將其安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
 
 &emsp;&emsp;安裝目錄下的檔截圖：
 
-&emsp;&emsp;![image](res/image0003.png)
+&emsp;&emsp;![image](res_tw/image0003.png)
 
 &emsp;&emsp;編輯系統變數Path，在Path值後面添加android-ndk-r10d、build和platforms的路徑，以半形分號隔開，例如：
 ；D:\Studiowork\sdk\android-ndk-r10d\build\tools；D:\Studiowork\sdk\android-ndk-r10d；D:\Studiowork\sdk\android-ndk-r10d\platforms
@@ -50,7 +50,7 @@
 
 &emsp;&emsp;JDK路徑：設置為jdk的bin路徑。
 
-&emsp;&emsp;![image](res/image0004.png)
+&emsp;&emsp;![image](res_tw/image0004.png)
  
 &emsp;&emsp;6、驗證環境變數和打包配置是否成功
 
@@ -86,18 +86,18 @@
 
 &emsp;&emsp;（1）配置蘋果開發者證書，按兩下*.p12檔，打開如下圖所示的介面，
 
-&emsp;&emsp;![image](res/image0005.png)
+&emsp;&emsp;![image](res_tw/image0005.png)
 
 &emsp;&emsp;輸入正確的密碼，點擊“好”，打開如下圖所示的介面，
 
-&emsp;&emsp;![image](res/image0006.png)
+&emsp;&emsp;![image](res_tw/image0006.png)
 
 &emsp;&emsp;將*.cer拖動到此介面中。
 
 &emsp;&emsp;（2）驗證秘鑰是否添加成功。
 打開終端，運行此命令：security find-identity -v -p codesigning，出現以下截圖說明添加成功了：
 
-&emsp;&emsp;![image](res/image0007.png)
+&emsp;&emsp;![image](res_tw/image0007.png)
 
 ###打包功能
 
@@ -111,19 +111,19 @@
 
 &emsp;&emsp;步驟1：設置C++項目的發佈格式，如下截圖：
  
-&emsp;&emsp;![image](res/image0008.png)
+&emsp;&emsp;![image](res_tw/image0008.png)
 
-&emsp;&emsp;![image](res/image0009.png) 
+&emsp;&emsp;![image](res_tw/image0009.png) 
 
 &emsp;&emsp;步驟2：執行發佈和打包，如下截圖
  
-&emsp;&emsp;![image](res/image0010.png) 
+&emsp;&emsp;![image](res_tw/image0010.png) 
 
-&emsp;&emsp;![image](res/image0011.png)  
+&emsp;&emsp;![image](res_tw/image0011.png)  
 
 &emsp;&emsp;Apk包存放地址：
 
-&emsp;&emsp;![image](res/image0012.png)  
+&emsp;&emsp;![image](res_tw/image0012.png)  
 
 &emsp;&emsp;這是個相對路徑，在專案工程下。
 
@@ -143,13 +143,13 @@
 
 &emsp;&emsp;點擊左側的專案，選中“General”，修改Bundle Identifier值為*.p12檔的檔案名。本教程中使用Com.cocosstudio.demo.inhouse作為檔案名。
 
-&emsp;&emsp;![image](res/image0013.png) 
+&emsp;&emsp;![image](res_tw/image0013.png) 
 
 選中“Build Settings”->Code Signing->Code Signing Identity，選擇設置的密碼。
 “Build Settings”->Code Signing->Provisioning Profile，選擇cocosstudioDemoInhouse
 設置如下圖所示：
 
-&emsp;&emsp;![image](res/image0014.png) 
+&emsp;&emsp;![image](res_tw/image0014.png) 
 
 &emsp;&emsp;4、Cocos編輯器中執行打包
 

@@ -17,4 +17,4 @@
 
 Lua 匯出外掛程式，見下圖：
 
-   ![image](res/image001.png) 
+   ![image](res_tw/image001.png) 

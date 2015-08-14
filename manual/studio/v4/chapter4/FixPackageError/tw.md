@@ -4,19 +4,19 @@
 
 &emsp;&emsp;2，JDK安裝成功後，Java目錄下會生成2個資料夾，分別以jdk和jre開頭。需要將這2個資料夾下的bin路徑配置到系統變數裡面。添加系統變數JAVA_HOME，變數值是jdk資料夾路徑。如下截圖：
 
-&emsp;&emsp;![image](res/image0001.png)
+&emsp;&emsp;![image](res_tw/image0001.png)
  
 &emsp;&emsp;編輯系統變數Path，在後面追加jre資料夾下的bin路徑，注意，需要先輸入一個半形分號，再輸入bin路徑，例如： C:\Program Files\Java\jre1.8.0_45\bin，如下截圖：
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_tw/image0002.png)
 
 &emsp;&emsp;3，增加cpp檔，需要添加到VS工程、XCode工程，同時必須需要修改android.mk檔，位置在proj.android/jni/Android.mk。
 
 &emsp;&emsp;4，Cpp代碼編碼格式一定要是UTF-8，使用Visual Studio可以方便的查看檔編碼格式，如下圖：
 
-&emsp;&emsp;![image](res/image0004.png)
+&emsp;&emsp;![image](res_tw/image0004.png)
 
-&emsp;&emsp;![image](res/image0003.png)
+&emsp;&emsp;![image](res_tw/image0003.png)
 
 &emsp;&emsp;5，由於 python 對 windows 系統中路徑的支援存在缺陷，目前暫不支持直接運行 U 盤中的項目。請將專案拷貝到硬碟中然後運行。
 
@@ -98,11 +98,17 @@
 
 &emsp;&emsp;解決辦法：.vxproject配置改為新引擎版本。
 
-&emsp;&emsp;13，缺少類型說明符（缺少標頭檔）,案例：
+&emsp;&emsp;13，缺少類型說明符（語法錯誤）,案例：
 
 &emsp;&emsp;![image](res/image0005.png)
 
-&emsp;&emsp;原因：前置處理器未定義 
+&emsp;&emsp;原因：
+
+&emsp;&emsp;1.未聲明識別字，是未聲明就使用造成的。
+
+&emsp;&emsp;2.缺少 “：”，語法錯誤，仔細檢查語句是否缺少“：”號。
+
+&emsp;&emsp;3.缺少類型說明符，函數類型未聲明。
 
 &emsp;&emsp;解決辦法：
 

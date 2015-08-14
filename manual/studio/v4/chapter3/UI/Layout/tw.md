@@ -5,7 +5,7 @@
 
 自動佈局系統主要涉及固定與拉伸屬性：
  
-![gif](res/gif001.gif) 
+![gif](res_tw/gif001.gif) 
 
 &emsp;&emsp;如圖，總共可以修改控制項的上下左右四個圖釘和中間的兩個拉伸條六個屬性。
 
@@ -13,15 +13,15 @@
 
 &emsp;&emsp;1.當打開其中的任意一個圖釘時，當前節點與父節點的對應邊的距離即被固定。當父節點的大小修改時，當前節點與父節點對應邊的距離總是不變。
 
-![gif](res/gif002.gif) 
+![gif](res_tw/gif002.gif) 
  
 &emsp;&emsp;2.當打開其中的任意兩個相對的圖釘時，當前節點與父節點對應的兩邊的距離成固定比例。即當修改父節點的大小時，當前節點到父節點對應兩條邊的距離之比總是不變的。
 
-![gif](res/gif003.gif) 
+![gif](res_tw/gif003.gif) 
  
 &emsp;&emsp;3.當開啟中間任意一條拉伸條，如橫向拉伸條，節點的寬度與父節點的寬度之比固定不變。
 
-![gif](res/gif004.gif) 
+![gif](res_tw/gif004.gif) 
  
 #####其他
 &emsp;&emsp;1. 不開啟上述任意屬性時，物件預設相對左下角位置不變。
@@ -119,18 +119,18 @@
 
 1. 設備解析度X/Y相對設計解析度X/Y較大，設配策略為固定高度
 
-![image](res/image006.png) 
+![image](res_tw/image006.png) 
  
 2. 設備解析度X/Y相對設計解析度X/Y較大，設配策略為固定寬度
 
-![image](res/image007.png) 
+![image](res_tw/image007.png) 
  
 3. 設備解析度X/Y相對設計解析度X/Y較小，設配策略為固定高度
 
-![image](res/image008.png) 
+![image](res_tw/image008.png) 
  
 4. 設備解析度X/Y相對設計解析度X/Y較小，設配策略為固定高度
 
-![image](res/image009.png) 
+![image](res_tw/image009.png) 
 
 &emsp;&emsp;PS：枚舉類型ResolutionPolicy是框架提供給我們的方便的默認方案。其實我們在設置設計解析度之前可以獲取設備解析度，然後自己根據設備解析度調整設計解析度。

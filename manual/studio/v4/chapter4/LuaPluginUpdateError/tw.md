@@ -4,7 +4,7 @@
 
 之前下載了 “Lua匯出外掛程式，就是目前商店裡的那個，見下圖：
 
-   ![image](res/image001.png) 
+   ![image](res_tw/image001.png) 
 
 更新沒有成功，解決方法如下所示： 
      
