@@ -98,11 +98,17 @@
 
 &emsp;&emsp;解决办法：.vxproject配置改为新引擎版本。
 
-&emsp;&emsp;13，缺少类型说明符（缺少头文件）,案例：
+&emsp;&emsp;13，缺少类型说明符（语法错误）,案例：
 
 &emsp;&emsp;![image](res/image0005.png)
 
-&emsp;&emsp;原因：预处理器未定义 
+&emsp;&emsp;原因：
+
+&emsp;&emsp;1.未声明标识符，是未声明就使用造成的。
+
+&emsp;&emsp;2.缺少 “：”，语法错误，仔细检查语句是否缺少“：”号。
+
+&emsp;&emsp;3.缺少类型说明符，函数类型未声明。
 
 &emsp;&emsp;解决办法：
 

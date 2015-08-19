@@ -19,20 +19,11 @@
 
    設置-》更多工具-》開發者工具
 
-![image](res/image003.png)   ![image](res/image004.png)
-
 ####360安全流覽器：
   
-   工具-》開發人員工具：
-
-![image](res/image005.png)  
+   工具-》開發人員工具： 
 
 ####火狐流覽器：
 
 設置-》開發者-》流覽器控制台-》JS
 
-![image](res/image006.png) ![image](res/image007.png)
-   
-![image](res/image008.png) 
-
- 

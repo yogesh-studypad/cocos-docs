@@ -6,13 +6,13 @@
 
 &emsp;&emsp;1）在商店裡面下載Texture Packer，如下圖：
 
-![image](res/image0001.png)
+![image](res_tw/image0001.png)
 
 &emsp;&emsp;2）使用Texture Packer，匯出plist合圖為：
 
 &emsp;&emsp;TexturePacker.plist TexturePacker.png，右鍵點擊編輯器資源面板，選擇“導入資源…”，選擇TexturePacker.plist，導入成功後如下圖：
 
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_tw/image0002.png)
  
 &emsp;&emsp;3）資源面板會自動展開當前plist所包含的png圖片，這樣就可以拖plist合圖裡面的檔給控制項賦值了，當發佈之後，控制項所使用的圖片就是plist合圖圖片。
 
@@ -20,13 +20,13 @@
 
 &emsp;&emsp;1）在商店中下載Tiled
 
-![image](res/image0003.png)
+![image](res_tw/image0003.png)
  
 &emsp;&emsp;2）使用Tiled匯出地圖檔為：
 
 &emsp;&emsp;sewers.tmx sewers.png，右鍵點擊編輯器資源面板，選擇“導入資源…”，選擇sewers.tmx，導入成功後如下圖：
 
-&emsp;&emsp;![image](res/image0004.png)
+&emsp;&emsp;![image](res_tw/image0004.png)
 
 &emsp;&emsp;3）添加一個地圖控制項到渲染區，就可以給地圖控制項賦值了。
 
@@ -34,21 +34,21 @@
 
 &emsp;&emsp;1)在商店裡下載Particle Designer
 
-![image](res/image0005.png)
+![image](res_tw/image0005.png)
 
 &emsp;&emsp;2)使用Particle Designer，匯出plist特效粒子檔為：
 &emsp;&emsp;blue.plist，右鍵點擊編輯器資源面板，選擇“導入資源…”，選擇blue.plist，導入成功後如下圖：
 
-&emsp;&emsp;![image](res/image0006.png)
+&emsp;&emsp;![image](res_tw/image0006.png)
 
 ### 4.Particle Universe
 
 &emsp;&emsp;為了讓廣大開發者實現絢麗的3D粒子特效，我們Studio支持Particle Universe（基於OGRE的免費粒子編輯器）匯出的3D粒子特效。首先，使用者需要在Particle Universe製作好粒子的特效檔。如下圖所示的pu文件，材質、貼圖和腳本分別位於materials/texture/script資料夾中：
 
-&emsp;&emsp;![image](res/image0007.png)
+&emsp;&emsp;![image](res_tw/image0007.png)
 
 &emsp;&emsp;1）使用者保持粒子檔的資料夾結構不變，導入到Studio中，如下圖所示：
 
-&emsp;&emsp;![image](res/image0008.png)
+&emsp;&emsp;![image](res_tw/image0008.png)
  
 &emsp;&emsp;2）用戶把Script資料夾下的pu檔，拖入到場景中使用。

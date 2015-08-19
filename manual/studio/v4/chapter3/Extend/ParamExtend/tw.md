@@ -8,7 +8,7 @@
 
 &emsp;&emsp;string 類型
 
-![image](res/image001.png)
+![image](res_tw/image001.png)
 
 &emsp;&emsp;幀事件這個屬性是一個string類型，內容是一個可以輸入的文本，不限制文本的輸入格式，可以隨意輸入，可為空。
 
@@ -35,7 +35,7 @@
     }
 
 
-![image](res/image002.png)
+![image](res_tw/image002.png)
 
 &emsp;&emsp;名稱這個屬性是一個string類型，內容是一個可以輸入的文本，不限制文本的輸入格式，可以隨意輸入，但是不能為空，如果為空，恢復上一次保存的值，若要使用這類文字方塊，則要調用ValidTextEditor。
 
@@ -76,7 +76,7 @@
 
 &emsp;&emsp;bool 類型
 
-![image](res/image003.png)
+![image](res_tw/image003.png)
 
 &emsp;&emsp;可見性這個屬性是一個bool類型，類型是一個checkbox，可以進行選擇和不選擇。
 
@@ -103,7 +103,7 @@
 
 &emsp;&emsp;enum 類型
 
-![image](res/image004.png)
+![image](res_tw/image004.png)
 
 &emsp;&emsp;水準對齊這個屬性是一個enum枚舉類型，類型是一個下拉combox，可以選擇不同的枚舉項。
 
@@ -141,7 +141,7 @@
 
 &emsp;&emsp;Color 類型
 
-![image](res/image005.png)
+![image](res_tw/image005.png)
 
 &emsp;&emsp;顏色混合這個屬性是一個Color類型，類型是一個群組控制項，可以選擇不同的顏色。
 
@@ -169,7 +169,7 @@
 
 &emsp;&emsp;ScaleValue 類型
 
-![image](res/image006.png)
+![image](res_tw/image006.png)
 
 
 &emsp;&emsp;傾斜這個屬性是一個ScaleValue類型，類型是一個群組控制項，可以分別設置X和Y的值，並且可以在屬性中設置最大值最小值和每次滑鼠滾輪幅度。
@@ -199,7 +199,7 @@
 
 &emsp;&emsp;PointF 類型
 
-![image](res/image007.png)
+![image](res_tw/image007.png)
 
 &emsp;&emsp;錨點這個屬性是一個PointF類型，類型是一個群組控制項，可以分別設置XY的值。
 

@@ -17,9 +17,9 @@
 
 &emsp;&emsp;方式二：在功能表列-視圖，點擊“新建輔助線”快顯視窗，選擇方向和位置，其中位置與當前尺規單位對應。內容如下圖。確定後，出現相應位置的輔助線，如下圖：
 
-&emsp;&emsp;&emsp;![image](res/image001.png) 
+&emsp;&emsp;&emsp;![image](res_tw/image001.png) 
 
-&emsp;&emsp;&emsp;![image](res/image002.png) 
+&emsp;&emsp;&emsp;![image](res_tw/image002.png) 
           
 &emsp;&emsp;移動輔助線
 
@@ -29,13 +29,13 @@
 
 &emsp;&emsp;在功能表列-視圖，勾選“鎖定輔助線”，所有輔助線被鎖定，不能被拖動，只能消除；取消勾選“鎖定輔助線”，則恢復可選中並能拖動狀態。快速鍵為：Ctrl+Alt+; （Win）、Command+Alt+;（Mac），如下圖：
 
-&emsp;&emsp;![image](res/image003.png) 
+&emsp;&emsp;![image](res_tw/image003.png) 
         
 &emsp;&emsp;隱藏輔助線
 
 &emsp;&emsp;輔助線預設是顯示的。在功能表列-視圖，當取消勾選“輔助線”時，則所有輔助線隱藏。當勾選“輔助線”，顯示之前的輔助線。快速鍵為：Ctrl+;（Win）、Command+;（Mac） 。
         
-&emsp;&emsp;![image](res/image004.png) 
+&emsp;&emsp;![image](res_tw/image004.png) 
 
 &emsp;&emsp;消除輔助線
 
@@ -47,7 +47,7 @@
 
 &emsp;&emsp;輔助線的默認顏色為青色，您可以通過功能表列-編輯-偏好設置-輔助線處，選擇下拉清單中的顏色選項後點擊確定，改變輔助線的顏色，如下圖：
 
-![image](res/image005.png) 
+![image](res_tw/image005.png) 
   
 &emsp;&emsp;保存輔助線
 

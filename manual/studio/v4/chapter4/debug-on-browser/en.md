@@ -1,6 +1,6 @@
 #How to: Debug Browser Preview
 
-For a JS project, after clicking “run in the browser”, these may appear something wrong with the preview effect. This tutorial aims to help you solve this problem with the following two methods. 
+For a JS project, there may be something wrong with preview effect after clicking "Run in browser". There are two ways to solve this problem. 
 
 1 Drop the scene files used in the current browser to the list of JS projects src/resource.js. For example, 
 

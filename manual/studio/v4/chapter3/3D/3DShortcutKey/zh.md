@@ -11,10 +11,16 @@
 &emsp;&emsp;&emsp;1) 键盘上按下快捷键Q切换到场景模式，鼠标拖拽移动场景；
 
 &emsp;&emsp;&emsp;2) 键盘上按下快捷键W切换到位置模式，场景内拖拽时，改变被选取物体的位置坐标；
+
+![image](res/image0002.png)
  
 &emsp;&emsp;&emsp;3) 键盘上按下快捷键E时，切换到旋转模式，场景内拖拽时，旋转被选取物体；
+
+![image](res/image0003.png)
  
 &emsp;&emsp;&emsp;4) 键盘上按下快捷键R时，场景内拖拽鼠标，缩放被选中物体。
+
+![image](res/image0004.png)
  
 &emsp;相机旋转
 

@@ -5,27 +5,27 @@
 
 &emsp;&emsp;1.勾選自動記錄幀。
 
-&emsp;&emsp;&emsp;![image](res/image001.png)
+&emsp;&emsp;&emsp;![image](res_tw/image001.png)
 
 &emsp;&emsp;2.選中控制項，在時間軸上點擊需要添加幀事件的位置。
 
-&emsp;&emsp;&emsp;![image](res/image002.png)
+&emsp;&emsp;&emsp;![image](res_tw/image002.png)
 
 
 &emsp;&emsp;3.屬性區切換到高級屬性。
 
-&emsp;&emsp;&emsp;![image](res/image003.png)
+&emsp;&emsp;&emsp;![image](res_tw/image003.png)
 
 &emsp;&emsp;4.為幀事件賦值。
 
-&emsp;&emsp;&emsp;![image](res/image004.png)
+&emsp;&emsp;&emsp;![image](res_tw/image004.png)
 
 &emsp;5.切換到時間軸的下一位置。
 
-&emsp;&emsp;&emsp;![image](res/image005.png)
+&emsp;&emsp;&emsp;![image](res_tw/image005.png)
 
 &emsp;6.再次為幀事件賦值（可與前一幀不同）。
 
-&emsp;&emsp;&emsp;![image](res/image006.png)
+&emsp;&emsp;&emsp;![image](res_tw/image006.png)
 
-&emsp;&emsp;&emsp;![image](res/image007.png)
+&emsp;&emsp;&emsp;![image](res_tw/image007.png)

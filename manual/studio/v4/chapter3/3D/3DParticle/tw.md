@@ -8,7 +8,7 @@
 
 &emsp;滑鼠拖拽3D控制項欄的3D粒子，拖入到場景中。
 
-![image](res/image0001.png)
+![image](res_tw/image0001.png)
  
 2、調整物件屬性
 
@@ -18,14 +18,14 @@
 
 &emsp;把粒子檔導入到工程，然後把粒子檔拖到場景使用導入粒子資源圖示如下：
  
-&emsp;&emsp;![image](res/image0002.png)
+&emsp;&emsp;![image](res_tw/image0002.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0003.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_tw/image0003.png)
 
-![image](res/image0004.png)
+![image](res_tw/image0004.png)
  
 &emsp;使用粒子資源時，直接拖動粒子檔到場景就可以使用了，圖示如下：
 
-![image](res/image0005.png)
+![image](res_tw/image0005.png)
 
 &emsp;也可以把粒子檔拖到已經創建的粒子特性屬性區，替換粒子檔，替換後原來的粒子呈現粒子檔描述的效果。
