@@ -125,6 +125,10 @@
 - [如何创建精灵(Sprites) ](./how-to-create-sprites/zh.md)
 - [如何创建一个指示器(HUD)](./how-to-create-a-hud/zh.md)
 
+## Cocos2d-console
+
+- [cocos2d-console 使用说明文档](./cocos2d-console/zh.md)
+
 # Cocos2d-JS
 
 - [Cocos2d-JS的文件结构](./folder-structure-of-cocos2d-js/zh.md)
