@@ -24,7 +24,7 @@
 	   * [标尺与参考线](../chapter3/UI/RulersGuides/zh.md)
 	* [动画编辑](../chapter3/Animation/Directory/zh.md)
 	   * [制作2D序列帧动画](../chapter3/Animation/2DSpriteSheetAnimation/zh.md)
-	   * [插入关键桢](../chapter3/Animation/InsertKeyframe/zh.md)
+	   * [插入关键帧](../chapter3/Animation/InsertKeyframe/zh.md)
 	   * [添加帧事件](../chapter3/Animation/AddFrameEvents/zh.md)
 	   * [编辑骨骼动画](../chapter3/Animation/EditSkeletalAnimation/zh.md)
 	   * [创建骨骼文件](../chapter3/Animation/CreateSkeletalAnimation/zh.md)
