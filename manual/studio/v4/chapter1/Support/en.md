@@ -26,7 +26,7 @@
 
  **Forum:** [http://cn.cocos2d-x.org/bbs/](http://cn.cocos2d-x.org/bbs/)
 
-**Cocos FAQ:** [http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/zh.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/zh.md)
+**Cocos FAQ:** [http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/en.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/en.md)
 
 **Tutorials:** [http://cn.cocos2d-x.org/tutorial/](http://cn.cocos2d-x.org/tutorial/)
 

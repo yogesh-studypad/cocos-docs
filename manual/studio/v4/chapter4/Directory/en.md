@@ -28,7 +28,7 @@
 
 ####&emsp;&emsp;[14 How to: Import Project from v1.6](../Import1.6ProjectError/en.md)
 
-####&emsp;&emsp;[Customize Cocos Framework & Simulator](../../chapter3/HowToCode/CustomizeFramework/en.md)
+####&emsp;&emsp;[15 Customize Cocos Framework & Simulator](../../chapter3/HowToCode/CustomizeFramework/en.md)
 
 ####&emsp;&emsp;[16 How to: Fix Packaging and Running Issues](../FixPackageError/en.md)
 

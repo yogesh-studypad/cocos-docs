@@ -78,7 +78,7 @@ Click Project at the toolbar -> Publish and Package. When finish packaging, clic
 
 - The installed tool is outdated. 
  
-    Solution: uninstall tools that cause problems -> remove the leftover files -> *** -> download this tool at Cocos Store ->  follow the setting tutorials and try again.  
+    Solution: uninstall tools that cause problems -> remove the leftover files -> remove its path from system path variable -> download this tool at Cocos Store ->  follow the setting tutorials and try again.  
 
 - Non-English languages exist in the installation directory. 
 
