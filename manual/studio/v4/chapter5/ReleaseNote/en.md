@@ -171,8 +171,8 @@ Fixed a bug that images may lost when open a project containing multiple sprites
 
 - Improved .csd files synchronization.
 
-Improved the efficiency of opening a project. 
+- Improved the efficiency of opening a project. 
 
-Fixed a bug on Mac OS X 10.10.2 that updating package could not be opened automatically. 
+- Fixed a bug on Mac OS X 10.10.2 that updating package could not be opened automatically. 
 
 ***Note** Data exported from cocos v2.2+ can be loaded in Cocos2d-x v3.4+.* 
