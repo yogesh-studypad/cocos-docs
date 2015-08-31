@@ -10,8 +10,4 @@ Select **Project** -> **Publish and Package**, as following picture shows,
 
 ***Note** Lua and JS projects can be opened in Visual Studio, XCode and Code IDE. C++ projects can be opened in Visual Studio and Xcode.*  
 
-### Debugging ###
-
-- See [Visual Studio](https://msdn.microsoft.com/en-us/aa290595(zh-cn,vs.71)). 
-         
     
