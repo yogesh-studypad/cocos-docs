@@ -8,7 +8,7 @@ The external editors supported by Cocos2d-x are supported by cocos as well. Expo
 
 ![image](res_en/image0001.png)
 
-- Export Tilde files from Texture Packer, named as sewers.tmx & sewers.png
+- Export Tiled files from Texture Packer, and name them as sewers.tmx & sewers.png. 
 
 - Right-click `TexturePacker.plist` or `TexturePacker.png` on Resource Panel, select "Import Resources", browse and select TexturePacker.plist. The following picture shows a successful import: 
 

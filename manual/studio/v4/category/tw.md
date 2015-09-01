@@ -24,7 +24,7 @@
        * [尺規與輔助線](../chapter3/UI/RulersGuides/tw.md)
     * [動畫編輯](../chapter3/Animation/Directory/tw.md)
        * [製作2D序列幀動畫](../chapter3/Animation/2DSpriteSheetAnimation/tw.md)
-       * [插入關鍵楨](../chapter3/Animation/InsertKeyframe/tw.md)
+       * [插入關鍵幀](../chapter3/Animation/InsertKeyframe/tw.md)
        * [添加幀事件](../chapter3/Animation/AddFrameEvents/tw.md)
        * [編輯骨骼動畫](../chapter3/Animation/EditSkeletalAnimation/tw.md)
        * [創建骨骼文件](../chapter3/Animation/CreateSkeletalAnimation/tw.md)

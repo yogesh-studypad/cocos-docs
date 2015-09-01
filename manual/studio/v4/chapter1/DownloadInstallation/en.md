@@ -2,9 +2,9 @@
 
 ### Download ###
  
-English Users: [download cocos](http://www.cocos2d-x.org/download)
+English Users: [http://www.cocos2d-x.org/download](http://www.cocos2d-x.org/download)
 
-Chinese Users: [download cocos](http://www.cocos.com/download/) 
+Chinese Users: [http://www.cocos.com/download/](http://www.cocos.com/download/) 
 
 ### Install ###
 

@@ -10,7 +10,7 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 ### Windows ###
 
-**Note** You need to set installation paths for JDK/ NDK/ SDK/ Framework and set environment variables in Windows properly. Any mistake will lead to a failure. 
+***Note** You need to set installation paths for JDK/ NDK/ SDK/ Framework and set environment variables in Windows properly. Any mistake will lead to a failure.* 
 
 **1 JDK**
 
@@ -32,7 +32,7 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 - Download NDK at Cocos Store
 
-- Double click android-ndk-r10d-windows-x86_64.exe, and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. Following is a screenshot of installation directory: 
+- Double click **android-ndk-r10d-windows-x86_64.exe**, and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. Following is a screenshot of the installation directory: 
 
 &emsp;&emsp;![image](res_en/image0003.png)
 
@@ -54,15 +54,15 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 **5 Package Settings**
 
-Create a cocos project, at the same time select a Framework version. Click Edit at the Toolbar -> Preferences -> Platform.
+Create a cocos project, and at the same time select a Framework version. Click Edit at the Toolbar -> Preferences -> Platform.
 
-**Note** Please make sure the following directory must be correct, otherwise there will be errors during the process of package creation. 
+**Note** Please make sure the following directory must be correct, otherwise there will be errors during the process of packaging. 
 
 - SDK path: set folders for SDK (include folders of platforms, platform-tools and tools).
 
 - NDK path: set folders for NDK (include folders of build and platform).
 
-- ANT path: folders for bin of ANT under Framework directory. If multiple versions of Framework have been installed, please choose the bin folder of the Framework that is used for packaging.   
+- ANT path: folders for bin of ANT under Framework directory. If multiple versions of Framework have been installed, please choose the bin folder of the Framework which is used for packaging.   
 
 - JDK path: bin folder of JDK. 
 
@@ -78,7 +78,7 @@ Click Project at the toolbar -> Publish and Package. When finish packaging, clic
 
 - The installed tool is outdated. 
  
-    Solution: uninstall tools that cause problems -> remove the leftover files -> *** -> download this tool at Cocos Store ->  follow the setting tutorials and try again.  
+    Solution: uninstall tools that cause problems -> remove the leftover files -> remove its path from system path variable -> download this tool at Cocos Store ->  follow the setting tutorials and try again.  
 
 - Non-English languages exist in the installation directory. 
 
@@ -96,9 +96,9 @@ Click Project at the toolbar -> Publish and Package. When finish packaging, clic
 
 Installation of various tools on Mac is relatively simple, users do not need to modify environment variables. 
 
-- For Android device, install JDK, SDK and NDK for Mac. 
+- For Android device, install JDK, SDK and NDK. 
 
-- iOS package settings 
+- iOS package settings
 
 **Note** Apple developer certificate (* .p12) and identities (* .cer) are necessary. 
 
@@ -124,13 +124,13 @@ Installation of various tools on Mac is relatively simple, users do not need to 
 
 ### Package  ###
 
-When environment is set correctly, some settings of package and publish are necessary. 
+After configuring the environment, you need to specify Package and Publish settings. 
 
 **Windows**
 
 1  C++ package
 
-If you need to publish a C++ project to csb format, and package it to APK file. Do the following: 
+If you need to publish a C++ project to csb format, and then package it to an APK file. Do the following: 
 
 - Go to the publish settings for C++ projects.
  
@@ -150,7 +150,7 @@ If you need to publish a C++ project to csb format, and package it to APK file. 
 
 &emsp;&emsp;It is a relative path in project directory. 
 
-2 For Lua and JavaScript projects, the packaging process is similar to C++ projects. 
+2 The package process of Lua and JavaScript projects is similar to that of C++ projects. 
  
 **Mac**
 
@@ -176,10 +176,8 @@ iOS Package, do the following:
 
 - Package in Cocos Studio. Toolbar -> Project -> Package Project, select iOS or Android. 
 
-- Install the packaged project on cellphone to check effects.  
+- Install the project on mobile devices to check effects.  
 
 ###Run Project
 
-Run project settings is similar to package settings, but Run function supports pushing projects to Android when connected to PC or Mac and preview effects directly.   
-
-Configured to run the function and the function of environmental packaging configurations, not the same place that supports Android phones run on a PC or Mac can be connected directly to the game pushed to the phone, direct preview.
+Run project settings are similar to package settings. "Run" function supports pushing and previewing projects directly when an Android device is connected to PC or Mac.   

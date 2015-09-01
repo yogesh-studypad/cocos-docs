@@ -65,7 +65,7 @@ Cocos menu bar is composed of seven items, which are File, Edit, View, Project, 
 
 - **Platform**: 
 
-     Android Path: Set path of SDK, NDK, ANT and JDK. For more information, please see [Package and Runtime Environment Settings](../../../chapter2/PackageAndRun/z****h.md).
+     Android Path: Set path of SDK, NDK, ANT and JDK. For more information, please see [Package and Runtime Environment Settings](../../../chapter2/PackageAndRun/en.md).
 
 ![image](res_en/image007.png)
 
