@@ -8,7 +8,7 @@ Panel can be used to control child element's layout, also has handy features lik
 
 ![image](res_en/image002.png)
  
-**Scenario 1: Do not display the contents of the container outside** 
+**Scenario 1: Do not display the contents out of the container** 
 
 When you want to hide the content that’s bigger than the panel, you can use attribute "clipping" so the panel will clip the content. 
 
@@ -50,7 +50,7 @@ PageView is a container with a page flip effect, can only add basic container. P
  
 ![image](res_en/image008.png)
 
-**Scenario 1: Do not display the contents of the container outside**
+**Scenario 1: Do not display the contents out of the container**
 
 When you want to hide the content that’s bigger than the panel, you can use attribute "clipping" so the panel will clip the content. As shown above, after enable Clipping, the effect is as follows:
 
@@ -70,7 +70,7 @@ ScrollView shows scrolling effect on the touch screen, it has the ability to set
 
 ![image](res_en/image011.png)
  
-**Scenario 1: Do not display the contents of the container outside**
+**Scenario 1: Do not display the contents out of the container**
 
 When you want to hide the content that’s bigger than the panel, you can use attribute "clipping" so the panel will clip the content. As shown above, after we check the properties, the effect is as follows:
 
@@ -83,13 +83,12 @@ When you want to hide the content that’s bigger than the panel, you can use at
 In the above picture, area A is the size of ScrollView. When enable Clipping for the ScrollView, areas outside A will not be displayed. However, contents in area B can be displayed by scrolling to area A. Scrolling content size has to be bigger than the scrollview for the scrolling to work.
 
 You can select the desired scroll direction: horizontal, vertical or both.
-
-![image](res_en/image014.png)
  
 **Scenario 3: Set the rebound effect**
 
-When ScrollView slides to screen border, the  interface will have a rebound effect if it continues to slide. To achieve this effect, you only need to enable"rebound effect". The system will load this effect in the game.
+When ScrollView slides to screen border, the  interface will have a rebound effect if it continues to slide. To achieve this effect, you only need to enable"Bounce Back". The system will load this effect in the game.
 
-
+![image](res_en/image014.png)
+ 
 
 
