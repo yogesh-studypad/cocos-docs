@@ -1,54 +1,45 @@
 # **版本更新說明：** #
+**&emsp;&emsp;Cocos 2.3.2版本更新內容：**
 
-**&emsp;&emsp;Cocos 2.3.1版本更新內容：**
+ &emsp;&emsp;【新增】3D場景和攝影機支持天空盒編輯。（**Cocos Framework 3.8支持**，文檔：http://www.cocos.com/doc/）
 
+ &emsp;&emsp;【新增】一鍵配置開發所需環境。
 
- &emsp;&emsp;【新增】自訂Cocos Framework & Simulator功能。（**"Cocos Framework 3.7支持，文檔：http://www.cocos.com/doc/**）
+ &emsp;&emsp;【新增】繁體語言支持。
 
- &emsp;&emsp;【新增】專案設置增加全部發佈選項。
+ &emsp;&emsp;【新增】JS專案支持增強型Web模擬器模擬。（**Cocos Framework 3.7及其以上版本支持**，商店搜索"web simulator"下載並安裝即可）
 
- &emsp;&emsp;【新增】Cocos增加API文檔，支援複製粘貼。
+ &emsp;&emsp;【優化】文檔，教程，API合併為文檔中心，學習更便利。
 
- &emsp;&emsp;【新增】偏好設置增加簡化控制項（按鈕，核取方塊，滑動條）初始資源功能。（**"文檔：http://www.cocos.com/doc/**）
+ &emsp;&emsp;【優化】整合商店，文檔搜索，查詢更快捷。
 
- &emsp;&emsp;【新增】藝術字體控制項支援首字元，字元寬，字元高設置。
- 
- &emsp;&emsp;【新增】ttc格式字體支援描邊設置。
+ &emsp;&emsp;【優化】輸出窗口支持列印Windows模擬器與Mac模擬器啟動調試資訊。
 
- &emsp;&emsp;【新增】FAQ新增修復打包失敗文檔。（**文檔：http://www.cocos.com/doc/**）
+ &emsp;&emsp;【優化】發佈數據增加編輯數據與本地檔案名大小寫校驗，解決因為windows系統檔案名大小寫不敏感導致的App出錯的問題。
 
- &emsp;&emsp;【優化】字體描邊演算法，描邊效果更合理。
+ &emsp;&emsp;【優化】發佈路徑設置增加打開發佈路徑功能。
 
+ &emsp;&emsp;【優化】藝術數字控件默認顯示。
 
- &emsp;&emsp;【優化】去掉解析"xxx missed"顯示。(**Cocos Framework 3.7支持**)。
+ &emsp;&emsp;【優化】骨骼支持通過顏色進行標記。
 
+ &emsp;&emsp;【優化】骨骼支持顏色屬性作為動畫幀。
 
- &emsp;&emsp;【優化】Windows模擬器功能表顯示改為標題列右鍵彈出功能表，擴大調試區域。
+ &emsp;&emsp;【優化】骨骼支持顏色混合屬性作為動畫幀。（**Cocos Framework 3.8支持**）
 
+ &emsp;&emsp;【優化】骨骼動畫編輯模式遮罩骨骼顏色透明度級聯刷新。（**Cocos Framework 3.8支持**）
 
- &emsp;&emsp;【優化】控制項面板和屬性面板UI，增強操作性。
+ &emsp;&emsp;【優化】Cocos Framework示例專案上傳商店。（商店搜索"Framework示例專案"下載並解壓即可）
 
+ &emsp;&emsp;【修復】安裝cocos framework後，新建專案找不到cocos framework的問題。
 
- &emsp;&emsp;【優化】JS專案資源不需要添加到src/resource.js，流覽器運行也可以正常顯示。（**Cocos Framework 3.7支持**）
+ &emsp;&emsp;【修復】畫布足夠小時骨骼超出右上邊界時會從左下邊界冒出來的問題。
 
+ &emsp;&emsp;【修復】導入帶顏色混合屬性cocos studio 1.6骨骼動畫專案效果不正確的問題。
 
+ &emsp;&emsp;【修復】編輯器部分英文翻譯不准確的問題。
 
- &emsp;&emsp;【優化】陰影偏移量支援兩位元小數，提高陰影效果精確度。
-
-
- &emsp;&emsp;【優化】Cocos文檔頁面支援複製粘貼。
-
-
- &emsp;&emsp;【優化】Cocos回饋頁面增加常見問題解答。
-
-
- &emsp;&emsp;【修復】打開專案，描邊寬度1變為0的問題。
-
-
- &emsp;&emsp;【修復】C++專案編輯資源後發佈到VS運行，資源刷新不及時的問題。（**Cocos Framework 3.7支持**）
-
-
- &emsp;&emsp;【修復】在結構樹重命名時按下Shift+B/T/Q/W會結束編輯狀態的問題。
+ &emsp;&emsp;【修復】編輯器的一些bug。
 
 **&emsp;&emsp;Cocos 2.3.0版本更新內容：**
 
