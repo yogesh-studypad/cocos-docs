@@ -346,16 +346,12 @@ The parent-child hierarchies: Cocos Studio uses the concept of parent-child hier
 In the Properties panel, you can make modifications of any widgets' properties. 
 
 ![image](res_en/image065.png) 
+
+In Properties panel, there are title section and several tabs, including Position and Size, General properties, 9-Slice, Feature and Advanced properties. 
  
-Property panel has two tabs, Basic properties and Advanced properties. 
-
-**Basic properties** include sections as Position and Size, General,  9-Slice and Feature.  
-
-**Advanced properties** include control layout, sub control layout and frame events. When select one or multiple widgets in Canvas, you can adjust the corresponding attributes in the Properties panel. 
-
-![image](res_en/image066.png)
-
 **Title section**: shows the type of the currently selected widget. You can find a widget in the game by searching its name or tag. 
+
+![image](res_en/image069.png)
 
 **Position and Size**
 
@@ -368,6 +364,10 @@ This section includes some settings about anchor point, position and size. Adapt
 General properties contain basic properties of a widget, such as Visible, Scale, Rotation, Skew, etc. General properties are the same for most widgets, but there are also exceptions for some widgets, please refer to "Online Help".  
 
 ![image](res_en/image068.png)
+
+**Advanced properties** include control layout, sub control layout and frame events. When select one or multiple widgets in Canvas, you can adjust the corresponding attributes in the Properties panel. 
+
+![image](res_en/image066.png)
  
 [**9-Slice**](../../UI/9Slice/en.md)
 
