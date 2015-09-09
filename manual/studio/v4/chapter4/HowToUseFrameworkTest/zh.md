@@ -1,8 +1,8 @@
-#FrameworkTest使用文档
+#Cocos Framework Test使用文档
 
 ###一&emsp;使用前提
 
-&emsp;1&emsp;安装相应版本的`Framework`
+&emsp;1&emsp;安装相应版本的`Cocos Framework`
 
 &emsp;2&emsp;`Tests`的`zip`包可解压到任意路径下（但路径不能包含中文及特殊字符）
 
@@ -60,11 +60,11 @@
 
 
 &emsp;&emsp;
-&emsp;![image](res/img004.png)
+&emsp;&emsp;&emsp;![image](res/img004.png)
 
 
 &emsp;&emsp;
-&emsp;![image](res/img005.png)
+&emsp;&emsp;&emsp;![image](res/img005.png)
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;变量值分别为`SDK`和`NDK`解压后的绝对路径
 
@@ -145,9 +145,9 @@
 
 ###四&emsp;Q&A
 
-&emsp;1&emsp;`Framework`和`Tests`包不匹配会编译不通过
+&emsp;1&emsp;`Cocos Framework`版本和`Tests`包版本不匹配会编译不通过
 
-&emsp;2&emsp;无`Framework`，命令无法被执行
+&emsp;2&emsp;电脑上未安装`Cocos Framework`，命令无法被执行
 
 &emsp;3&emsp;在执行安卓命令时，需将手机连接电脑，并打开`usb`调试
 
