@@ -47,7 +47,8 @@
        * [事件回调](../chapter3/HowToCode/CallBack/zh.md)
 	   * [设置自定义数据](../chapter3/HowToCode/UserData/zh.md)
 	   * [导出数据在代码中加载](../chapter3/HowToCode/LoadExportData/zh.md)
-	   * [自编译Framework以及模拟器](../chapter3/HowToCode/CustomizeFramework/zh.md)
+	   * [自编译Framework以及模拟器（v3.7）](../chapter3/HowToCode/CustomizeFramework/zh.md)
+	   * [自编译Framework以及模拟器（v3.8）](../chapter3/HowToCode/CustomizeFramework-v3.8/zh.md)
 * [4、常见问题解答](../chapter4/Directory/zh.md)
 	* [Anroid设备连接失败？](../chapter4/connect-solution/zh.md)
 	* [浏览器运行效果不正确如何定位？](../chapter4/debug-on-browser/zh.md)
@@ -68,5 +69,6 @@
 	* [如何简化控件初始资源？](../chapter4/SimplifyWidgetsRes/zh.md)
 	* [老版本插件在新版本加载失败？](../chapter4/PluginLoadError/zh.md)
 	* 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+	* [FrameworkTest使用文档？](../chapter4/HowToUseFrameworkTest/zh.md)
 * [5、版本发布说明](../chapter5/ReleaseNote/zh.md)
 	

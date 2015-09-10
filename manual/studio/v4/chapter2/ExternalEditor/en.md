@@ -24,7 +24,7 @@ The external editors supported by Cocos2d-x are supported by cocos as well. Expo
  
 - Export TileMap files from Tiled. 
 
-- Right-click` sewers.tmx` on the Resource Panel, select "Import Resources", browse and select `sewers.tmx`. The following picture shows a successful import:
+- Right-click ` sewers.tmx` on the Resource Panel, select "Import Resources", browse and select `sewers.tmx`. The following picture shows a successful import:
 
 &emsp;&emsp;![image](res_en/image0004.png)
 

@@ -18,20 +18,20 @@ Chinese Users: [http://www.cocos.com/download/](http://www.cocos.com/download/)
 
 ![image](res_en/image002.png)
 
-3 Installation complete, click **Finished** to run cocos:
+3 Installation complete, click **Finish** to run cocos:
 
 ![image](res_en/image003.png)
 
 **Mac**
 
-1 Open the installation file, then click **Install Now**: 
+1 Open the installation file, then click **Install**: 
 
 ![image](res_en/image004.png)
 
-2 During installation, enter user name and user password: 
+2 Enter user name and user password: 
 
 ![image](res_en/image005.png)
 
-3 Installation complete, click **Finished** to run cocos: 
+3 Installation complete, click **Finish** to run cocos: 
 
 ![image](res_en/image006.png)

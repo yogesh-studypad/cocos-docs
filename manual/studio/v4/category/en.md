@@ -47,7 +47,8 @@
        * [Callback Feature](../chapter3/HowToCode/CallBack/en.md)
 	   * [Create Custom Data](../chapter3/HowToCode/UserData/en.md)
 	   * [Load Exported Data](../chapter3/HowToCode/LoadExportData/en.md)
-	   * [Customize Cocos Framework & Simulator](../chapter3/HowToCode/CustomizeFramework/en.md)
+	   * [Customize Cocos Framework & Simulator(v3.7)](../chapter3/HowToCode/CustomizeFramework/en.md)
+	   * [Customize Cocos Framework & Simulator(v3.8))](../chapter3/HowToCode/CustomizeFramework-v3.8/en.md)
 * [Chapter4: FAQ](../chapter4/Directory/en.md)
 	* [No Android Devices Found？](../chapter4/connect-solution/en.md)
 	* [How to: Debug Browser Preview](../chapter4/debug-on-browser/en.md)
@@ -67,6 +68,7 @@
 	* [How to: Fix Packaging and Running Issues](../chapter4/FixPackageError/en.md)
 	* [How to: Simplify Widgets Initial Resources](../chapter4/SimplifyWidgetsRes/en.md)
 	* [How to: Run Previous Versions of Addins in cocos](../chapter4/PluginLoadError/en.md)
-
+	* Solved issues on the forum: [http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+	* [How to Use FrameworkTest](../chapter4/HowToUseFrameworkTest/en.md)
 * [Chapter5: Release Notes](../chapter5/ReleaseNote/en.md)
 	

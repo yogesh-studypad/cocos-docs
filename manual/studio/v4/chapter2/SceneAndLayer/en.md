@@ -12,7 +12,7 @@
 
 2 Create a scene and name it **Scene1**. Do the following: 
 
-- Select **File** -> **New File** -> name the  file **Scene1** -> select **Scene** -> click **New**. 
+- Click **New File** button -> select **Scene** ->  name the  file **Scene1** -> click **New**. 
  
 ![image](res_en/image0001.png)
 
@@ -40,7 +40,7 @@ In Cocos Studio, the procedures of creating Scenes, UI and animations are simila
 
 ### Create a Layer ###
 
-1 Click **New File** button and select **Layer**. Name it as "Layer" and click **New**. 
+1 Click **New File** button and select **Layer**. Name it "Layer" and click **New**. 
 
 ![image](res_en/image0009.png)
  

@@ -1,5 +1,48 @@
 # **版本更新说明：** #
 
+**&emsp;&emsp;Cocos 2.3.2版本更新内容：**
+
+
+ &emsp;&emsp;【新增】3D场景和摄影机支持天空盒编辑。（**Cocos Framework 3.8支持**，文档：http://www.cocos.com/doc/）
+
+ &emsp;&emsp;【新增】一键配置开发所需环境。
+
+ &emsp;&emsp;【新增】繁体语言支持。
+
+ &emsp;&emsp;【新增】JS项目支持增强型Web模拟器模拟。（**Cocos Framework 3.7及其以上版本支持**，商店搜索"web simulator"下载并安装即可）
+
+ &emsp;&emsp;【优化】文档，教程，API合并为文档中心，学习更便利。
+
+ &emsp;&emsp;【优化】整合商店，文档搜索，查询更快捷。
+
+ &emsp;&emsp;【优化】输出窗口支持打印Windows模拟器与Mac模拟器启动调试信息。
+
+ &emsp;&emsp;【优化】发布数据增加编辑数据与本地文件名大小写校验，解决因为windows系统文件名大小写不敏感导致的App出错的问题。
+
+ &emsp;&emsp;【优化】发布路径设置增加打开发布路径功能。
+
+ &emsp;&emsp;【优化】艺术数字控件默认显示。
+
+ &emsp;&emsp;【优化】骨骼支持通过颜色进行标记。
+
+ &emsp;&emsp;【优化】骨骼支持颜色属性作为动画帧。
+
+ &emsp;&emsp;【优化】骨骼支持颜色混合属性作为动画帧。（**Cocos Framework 3.8支持**）
+
+ &emsp;&emsp;【优化】骨骼动画编辑模式屏蔽骨骼颜色透明度级联刷新。（**Cocos Framework 3.8支持**）
+
+ &emsp;&emsp;【优化】Cocos Framework示例项目上传商店。（商店搜索"Framework示例项目"下载并解压即可）
+
+ &emsp;&emsp;【修复】安装cocos framework后，新建项目找不到cocos framework的问题。
+
+ &emsp;&emsp;【修复】画布足够小时骨骼超出右上边界时会从左下边界冒出来的问题。
+
+ &emsp;&emsp;【修复】导入带颜色混合属性cocos studio 1.6骨骼动画项目效果不正确的问题。
+
+ &emsp;&emsp;【修复】编辑器部分英文翻译不准确的问题。
+
+ &emsp;&emsp;【修复】编辑器的一些bug。
+
 **&emsp;&emsp;Cocos 2.3.1版本更新内容：**
 
 

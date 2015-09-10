@@ -1,23 +1,31 @@
 #創建新遊戲
-###一、認識cocos專案：
+###一、認識cocos專案，如圖1：
 
 ![image](res_tw/image0001.png)
 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖1.專案類型選擇**
+
 &emsp;&emsp;Cocos項目整合了資源編輯、代碼編寫調試，真機運行以及遊戲打包的功能：
 
-&emsp;&emsp;資源編輯：通過cocos可以直接進行2D/3D場景、遊戲介面（UI）、關鍵幀動畫、序列幀動畫，骨骼動畫的編輯，同時支援國內外最優秀工具產出的資料，比如：支援TexturePacker產出的plist合圖資料，支援Particle Designer以及Particle Universe產出的粒子資料，支援3DMax產出的3D模型/動畫資料等等，這些優秀的工具不用再去google搜索下載，我們已經把它們添加到cocos啟動頁“商店”裡面，大家可以直接到商店裡面免費下載使用，如下圖：
+&emsp;&emsp;資源編輯：通過cocos可以直接進行2D/3D場景、遊戲介面（UI）、關鍵幀動畫、序列幀動畫，骨骼動畫的編輯，同時支援國內外最優秀工具產出的資料，比如：支援TexturePacker產出的plist合圖資料，支援Particle Designer以及Particle Universe產出的粒子資料，支援3DMax產出的3D模型/動畫資料等等，這些優秀的工具不用再去google搜索下載，我們已經把它們添加到cocos啟動頁“商店”裡面，大家可以直接到商店裡面免費下載使用，如圖2：
 
-![image](res_tw/image0003.png)
+![image](res_tw/image0002.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖2. Cocos商店**
 
 &emsp;&emsp;代碼編輯：Cocos專案支援lua、js、C++三種語言，支援Visual Studio、Xcode、Cocos Code IDE遊戲代碼編寫與調試，Visual Studio、Xcode分別是Windows和Mac系統上最強的代碼IDE，Cocos Code IDE是由觸控開發的專門針對於lua、js兩種語言的代碼編寫與調試工具，大家可以根據擅長的技術選擇使用。
 
-&emsp;&emsp;真機運行：在遊戲開發過程中，Cocos支援運行專案在Android、iOS手機上，Windows和Mac作業系統以及流覽器上， 如下圖：
+&emsp;&emsp;真機運行：在遊戲開發過程中，Cocos支援運行專案在Android、iOS手機上，Windows和Mac作業系統以及流覽器上， 如圖3：
 
+![image](res_tw/image0003.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖3. 運行到各平臺**
+
+&emsp;&emsp;遊戲打包：當遊戲開發完畢之後，可以通過才cocos生成遊戲App，支持Android、iOS、HTML5 App的生成，如圖4：
+ 
 ![image](res_tw/image0004.png)
 
-&emsp;&emsp;遊戲打包：當遊戲開發完畢之後，可以通過才cocos生成遊戲App，支持Android、iOS、HTML5 App的生成，如下圖：
- 
-![image](res_tw/image0005.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖4. 生成遊戲App**
 
 ###二、新建cocos項目：
  
@@ -31,9 +39,11 @@
 
 &emsp;&emsp;引擎版本：在沒有安裝Cocos Framework（整合Cocos 2d-x以及Cocos 2d-js引擎原始程式碼，並基於整合後的原始程式碼進行編譯，編譯出來的二進位庫就是Cocos Framework，Cocos Framework同時支持luabinding、jsbinding、js、C++，商店裡面可以下載）無法新建C++項目的，只可以新建js和lua的專案，C++專案需要安裝Cocos Framework，當安裝了Cocos Framework後，可以在引擎版本選擇安裝的Cocos Framework進行新建。如下圖：
 
-代表已經安裝了Cocos Framework 3.5，否則是“無”。
+![image](res_tw/image0005.png)
 
-![image](res_tw/image0006.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖5. 新建cocos項目** 
+
+&emsp;&emsp;註：安裝了Cocos Framework 3.5以及Cocos Framework 3.6，否則是“無”。
  
 &emsp;&emsp;專案語言：
 
@@ -46,6 +56,8 @@
 
 ###三、點擊完成。
 
-&emsp;&emsp;根據參數選擇好自己想要的，點擊完成，Cocos項目被創建出來了，如下圖：
+&emsp;&emsp;根據參數選擇好自己想要的，點擊完成，Cocos專案被創建出來了，如下圖6：
 
 ![image](res_tw/image0007.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图6. HelloCocos** 
