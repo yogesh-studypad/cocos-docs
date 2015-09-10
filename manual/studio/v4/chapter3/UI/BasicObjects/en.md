@@ -44,13 +44,13 @@ To import a specific effect of particle files (plist file), do the following:
 
 - Select the right choice particle controls on the canvas **Setting particle File** and select the file to import.
 
-###3 Sound
+###3 Audio
 
 ![image](res_en/image005.png)
  
-Sound is a widget for music and sound effects, which is very important for user experience of games. Sound widget supports mp3, wav audio file formats.
+Audio is a widget for music and sound effects, which is very important for user experience of games. Audio widget supports mp3, wav audio file formats.
 
-In the official example of a victory scene, we apply Sound for victory sound effects. 
+In the official example of a victory scene, we apply Audio for victory sound effects. 
 
 ![image](res_en/image006.png) 
 

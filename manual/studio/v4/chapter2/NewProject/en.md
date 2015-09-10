@@ -4,7 +4,7 @@
 
 Cocos is an all-in-one solution for all your needs in developing games, covering functions of editing resources, coding, running on real devices and packaging. In the following section, we will introduce you how to build a perfect game with cocos. 
 
-**New Project** The  first step is to create a game project. Cocos provides sample projects that you can use as resources or learn from, as following figure 1:
+**New Project** The  first step is to create a game project. Cocos provides sample projects that you can use as resources or learn from, as Figure 1 shows:
 
 ![image](res_en/image0001.png)
 
@@ -19,13 +19,13 @@ Cocos is an all-in-one solution for all your needs in developing games, covering
 
 **Code** Cocos supports editing and debugging Lua, JavaScript and C++ with Visual Studio, XCode and Cocos Code IDE. Cocos Code IDE is a complete toolkit for developing, debugging, publishing Lua & JavaScript games. 
 
-**Run on real devices** You can run projects on real devices, for example mobile phones (Android, iOS), PC (Windows, Mac), and browsers, as following figure 2:
+**Run on real devices** You can run projects on real devices, for example mobile phones (Android, iOS), PC (Windows, Mac), and browsers, as Figure 2 shows:
 
 ![image](res_en/image0003.png)
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 2. Run on real devices**
 
-**Package** Cocos can be widely used to build mobile games and apps on platforms of Android, iOS and HTML5, as following figure 3:
+**Package** Cocos can be widely used to build mobile games and apps on platforms of Android, iOS and HTML5, as Figure 3 shows:
 
 ![image](res_en/image0004.png)
 
@@ -33,7 +33,7 @@ Cocos is an all-in-one solution for all your needs in developing games, covering
 
 ### Project Settings###
  
-Projects settings include Project Name, Project Path, Orientation, Engine Version and Project Language, etc, as following figure 4:
+Projects settings include Project Name, Project Path, Orientation, Engine Version and Project Language, etc, as Figure 4 shows:
 
 ![image](res_en/image0005.png) 
 
@@ -57,7 +57,7 @@ Projects settings include Project Name, Project Path, Orientation, Engine Versio
 
 - **Extra**: If you want to create a game that can run on x86-based Android devices, select **Support x86 CPU**. 
 
-   Click **Finished**. A cocos project is successfully created, as following figure 5:
+   Click **Finished**. A cocos project is successfully created, as Figure 5 shows:
 
 ![image](res_en/image0007.png)
 

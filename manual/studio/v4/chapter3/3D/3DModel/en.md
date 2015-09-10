@@ -4,7 +4,7 @@
 
 How to use 3D Model
 
-**1 Create a 3D Widget** 
+**1 Create a 3D Model** 
 
 Drag and drop a Model from 3D Widgets to Scene. 
 
