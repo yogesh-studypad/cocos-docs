@@ -25,7 +25,7 @@
 
    &emsp;&emsp;Cocos官方交流12群 （lua）               &emsp;8952580
 
- **社區**：[http://cn.cocos2d-x.org/bbs/](http://cn.cocos2d-x.org/bbs/)
+ **社區**：[http://www.cocoachina.com/bbs/thread.php?fid=48](http://www.cocoachina.com/bbs/thread.php?fid=48)
 
 **編輯器FAQ：**[http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/tw.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/tw.md)
 
