@@ -39,3 +39,5 @@
 ####&emsp;&emsp;[18) 老版本外掛程式在新版本載入失敗？](../PluginLoadError/tw.md)
 
 ####&emsp;&emsp;19) 回饋平臺已解決問題入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+
+####&emsp;&emsp;[20) 修復cocos run -p web失敗？](../runError/tw.md)

@@ -41,3 +41,7 @@
 ####&emsp;&emsp;19) 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 
 ####&emsp;&emsp;[20) FrameworkTest使用文档？](../HowToUseFrameworkTest/zh.md)
+
+
+####&emsp;&emsp;[21) 修复cocos run -p web失败？](../runError/zh.md)
+

@@ -39,3 +39,5 @@
 ####&emsp;&emsp;19 Solved issues on the forum: [http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 
 ####&emsp;&emsp;[20 How to Use FrameworkTest](../HowToUseFrameworkTest/en.md)
+
+####&emsp;&emsp;[21 How to Fix cocos run error?](../runError/en.md)

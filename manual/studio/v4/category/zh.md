@@ -70,5 +70,6 @@
 	* [老版本插件在新版本加载失败？](../chapter4/PluginLoadError/zh.md)
 	* 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 	* [FrameworkTest使用文档？](../chapter4/HowToUseFrameworkTest/zh.md)
+	* [修复cocos run -p web失败？](../chapter4/runError/zh.md)
 * [5、版本发布说明](../chapter5/ReleaseNote/zh.md)
 	
