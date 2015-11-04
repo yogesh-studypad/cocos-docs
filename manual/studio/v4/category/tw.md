@@ -69,5 +69,6 @@
     * [如何簡化控制項初始資源？](../chapter4/SimplifyWidgetsRes/tw.md)
     * [老版本外掛程式在新版本載入失敗？](../chapter4/PluginLoadError/tw.md)
     * 回饋平臺已解決問題入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+    * [修復cocos run -p web失敗?](../chapter4/runError/tw.md)
 * [5、版本發佈說明](../chapter5/ReleaseNote/tw.md)
     

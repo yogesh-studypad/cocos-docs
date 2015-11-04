@@ -70,5 +70,6 @@
 	* [How to: Run Previous Versions of Addins in cocos](../chapter4/PluginLoadError/en.md)
 	* Solved issues on the forum: [http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 	* [How to Use FrameworkTest](../chapter4/HowToUseFrameworkTest/en.md)
+	* [How to Fix cocos run error?](../chapter4/runError/en.md)
 * [Chapter5: Release Notes](../chapter5/ReleaseNote/en.md)
 	
