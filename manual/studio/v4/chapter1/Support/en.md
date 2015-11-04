@@ -24,7 +24,7 @@
 
    &emsp;&emsp;Cocos Official Group 12 (lua)	           &emsp;8952580
 
- **Forum:** [http://cn.cocos2d-x.org/bbs/](http://cn.cocos2d-x.org/bbs/)
+ **Forum:** [http://discuss.cocos2d-x.org/](http://discuss.cocos2d-x.org/)
 
 **Cocos FAQ:** [http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/en.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/en.md)
 
