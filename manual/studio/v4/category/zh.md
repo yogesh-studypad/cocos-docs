@@ -38,6 +38,7 @@
 	   * [3D快捷键](../chapter3/3D/3DShortcutKey/zh.md)
 	   * [3D节点简介](../chapter3/3D/3DNode/zh.md)
 	   * [天空盒](../chapter3/3D/SkyBox/zh.md)
+	   * [光源](../chapter3/3D/Light/zh.md)
     * [自定义插件开发](../chapter3/Extend/Directory/zh.md)
        * [控件扩展](../chapter3/Extend/WidgetExtend/zh.md)
 	   * [属性扩展](../chapter3/Extend/ParamExtend/zh.md)

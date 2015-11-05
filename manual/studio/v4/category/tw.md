@@ -38,6 +38,7 @@
        * [3D快速鍵](../chapter3/3D/3DShortcutKey/tw.md)
        * [3D節點簡介](../chapter3/3D/3DNode/tw.md)
        * [天空盒](../chapter3/3D/SkyBox/tw.md)
+       * [光源](../chapter3/3D/Light/tw.md)
     * [自訂外掛程式開發](../chapter3/Extend/Directory/tw.md)
        * [控制項擴展](../chapter3/Extend/WidgetExtend/tw.md)
        * [屬性擴展](../chapter3/Extend/ParamExtend/tw.md)

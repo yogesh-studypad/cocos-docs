@@ -14,3 +14,5 @@
 ####&emsp;&emsp;[3D节点简介](../3DNode/zh.md) 
 
 ####&emsp;&emsp;[天空盒](../SkyBox/zh.md) 
+
+####&emsp;&emsp;[光源](../Light/zh.md) 
