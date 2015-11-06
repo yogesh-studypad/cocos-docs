@@ -1,18 +1,19 @@
 #Customizing Exported Data Formats#
 
-By default you can export data from Cocos Studio to other formats, including CSB, JSON and Lua. You can also customize export formats by implementing the following interface: `CocoStudio.Projects.IGameProjectSerializer`.  For more information, see the description of 
-"CustomSerializer" in Samples. 
+By default you can export data from Cocos Studio to other formats, including CSB, JSON and Lua. You can also customize export formats by implementing the following interface: `CocoStudio.Projects.IGameProjectSerializer`.  (or after Cocos v2.3.3 the interface is `CocoStudio.Projects.IGameFileSerializer` . ) For more information, see the description of `CustomSerializer` in Samples. 
 
 Interface Description:
 
     [TypeExtensionPoint]
+	// or in version 2.3.3, it's IGameFileSerializer
     public interface IGameProjectSerializer
     {
 
         string ID { get; }
 
         string Label { get; }
-
+	
+	// or in verison 2.3.3, the second parameter is GameFile gameFile
         string Serialize(PublishInfo info, IProjectFile projFile);
 
         void ContextInitialize(PublishInfo publishInfo);
