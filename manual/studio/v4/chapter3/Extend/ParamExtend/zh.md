@@ -1,5 +1,7 @@
 # **属性扩展** #
 
+**注意：**2.3.3.0版本对属性区相关接口进行了调整，详情请见 **2.接口变更**
+
 &emsp;&emsp;1.属性区扩展
 
 &emsp;&emsp;Cocos Studio预置的控件支持扩展，对于控件的属性区同样支持扩展。一些基本类型的属性，编辑器中已经包含对应的属性控件，只需要按照一定规则即可使用。如果使用者想要扩展自定义属性，可以根据自己意愿制作需要的功能(示例代码中有详细介绍)。
@@ -241,31 +243,44 @@
 
 &emsp;&emsp;编写一个自定义控件
 
-&emsp;&emsp;CustomEditor继承了BaseEditor基类和ITypeEditor接口。NumberEditorWidget是一个有两个TextBox的控件(类似于ScaleValue类型的这个控件)。
+&emsp;&emsp;CustomEditor是一个可以编辑ScaleValue类型的属性编辑器，它继承自BaseEditor，BaseEditor则继承自IPropertyEditor接口。
+BaseEditor中已对IPropertyEditor接口进行了实现，但子类在继承BaseEditor时，依然需要重写其中的一些方法，其中必须要重写的方法如下：
 
-&emsp;&emsp;ITypeEditor接口必须实现ResolveEditor方法，这个方法返回一个显示在界面上的控件，如果需要添加多个，则可以继续添加Table之类的容器控件，在容器控件中自定义完所需内容后，返回容器控件。
+            protected abstract Gtk.Widget OnCreateWidget();
+            protected abstract void void OnSetControl();
 
-&emsp;&emsp;如果要处理两个TextBox的值变化，则需要添加下面两个事件：
+&emsp;&emsp;Gtk.Widget OnCreateWidget()方法用于在属性编辑器初始化的时候创建其对应的Gtk部件，例如CustomEditor就创建了一个包含了两个输入框的部件（NoUndoNumEntry是Gtk.Entry的子类，其中封装了一些额外的逻辑）。
 
-   _widget.PointX += widget_PointX;
-   _widget.PointY += widget_PointY;
+&emsp;&emsp;void OnSetControl()方法用于在属性发生改变的时候同步刷新属性面板上的Gtk部件。对于CustomEditor来说，这个方法的作用就是在属性变更的时候，把最新的属性值显示在输入框中。
 
-&emsp;&emsp;PointX和PointY分别是两个TextBox的事件。
+&emsp;&emsp;CustomEditor中的两个输入框在其数值改为的时候会去更新对应属性的值，这一赋值操作是通过BaseEditor中成员属性PropertyItem来进行的。PropertyItem与当前属性编辑器所对应的属性绑定，通过它可以获取或是设置属性的数值。下面的代码便是X值输入框对其内容改变事件的回调方法。
 
-	private void widget_PointX(object sender, PointEvent e)
-	{
-		_scaleValue.ScaleX = (float)e.PointX;
-		UpdatePropertyValue(_propertyItem.PropertyData, _scaleValue);
-	}
+	private void XEntryValueChangedHandler(object sender, EntryIntEventArgs e)
+    {
+        using (GetLock())
+        {
+            for (int i = 0; i < PropertyItem.Objects.Count; i++)
+            {
+                ScaleValue value = PropertyItem.Values[i] as ScaleValue;
+                value.ScaleX = e.Value;
+                PropertyItem.Values[i] = value;
+            }
+        }
+    }
 
-&emsp;&emsp;首先对scaleValue进行赋值：
-			
-	scaleValue.ScaleX = (float)e.PointX;
+&emsp;&emsp;2.接口变更
 
-&emsp;&emsp;然后调用UpdatePropertyValue对渲染区进行更改，当渲染区数据变化时，则会触发override void OnPropertyChanged(object sender,PropertyChangedEventArgs e)事件，如果要单独处理事件，则可以在OnPropertyChanged中加上逻辑代码。
-(源代码在CustomEditor这个文件中)。
+&emsp;&emsp;Cocos 2.3.3.0版本对属性区进行了重构，同时对一些相关接口进行了调整。具体的调整包含以下内容：
 
-&emsp;&emsp;2.其它
+&emsp;&emsp;1) CocoStudio.ToolKit项目中的内容被移动至Modules.Communal.PropertyGrid项目。目前属性区的通用类均位于PropertyGrid项目，ToolKit项目已被删除。原本使用CocoStudio.ToolKit命名空间的代码需要将命名空间更改为Modules.Communal.PropertyGrid。
+
+&emsp;&emsp;2) ITypeEditor接口被重命名为IPropertyEditor。新的接口已经由BaseEditor类统一实现，它的子类无需再声明实现接口，且不需要再进行插件导出。ITypeEditor接口中的原方法与属性均不再使用，新的使用方法以IPropertyEditor中公开的接口为准。
+
+&emsp;&emsp;3) CatagoryAttribute类被重命名为ControlGroupAttribute，并被移动至CocoStudio.Model。
+
+&emsp;&emsp;4) PropertyEditorTypeAttribute类已被删除。属性区对于默认类型的支持已内置于自身的框架代码当中，外部无需再使用额外的特性进行标注。
+
+&emsp;&emsp;3.其它
 
 &emsp;&emsp;在后续的开发过程中文档的内容会根据反馈持续更新。如有更新，请以新的版本为准。
 
