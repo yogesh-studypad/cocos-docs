@@ -27,15 +27,15 @@
         string Serialize(PublishInfo info, IProjectFile projFile);
 
         /// <summary>
-        /// 執行上下文初始化操作，在第一次 Serialize 調用之前調用它。
-        /// 對於一個 Studio 解決方案只應該調用一次。
+        /// 執行上下文初始化操作。
+        /// 一個 Studio 解決方案只會調用一次，在第一次 Serialize 調用之前會被調用。
         /// 注：每個 *.csd 檔會調用一次 Serialize.
         /// </summary>
         void ContextInitialize(PublishInfo publishInfo);
 
         /// <summary>
-        /// 執行上下文結束操作，在最後一次 Serialize 調用之後調用它。
-        /// 對於一個 Studio 解決方案只應該調用一次。
+        /// 執行上下文結束操作。
+        /// 一個 Studio 解決方案只會調用一次，在最後一次 Serialize 調用之後會被調用。
         /// 注：每個 *.csd 檔會調用一次 Serialize.
         /// </summary>
         void ContextFinalize(PublishInfo publishInfo);
