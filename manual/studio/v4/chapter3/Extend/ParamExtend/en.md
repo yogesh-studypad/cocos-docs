@@ -1,4 +1,6 @@
-﻿#Properties Extension #
+#Properties Extension #
+
+**NOTE:** Some interfaces of property have been changed in v2.3.3.0. More details in **Interface Changes**
 
 ### Widget Types ###
 
@@ -241,5 +243,18 @@ The specific codes have been added to **CustomObjectData**.
                 }
             }
         }
+
+
+### Interface Changes ###
+
+Some interface of property have been changed in v2.3.3.0, including:
+
+**1)** The project **CocoStudio.ToolKit** is merged into **Modules.Communal.PropertyGrid**. Please use **Modules.Communal.PropertyGrid** namespace instead of **CocoStudio.ToolKit** namespace.
+
+**2)** **ITypeEditor** is renamed to **IPropertyEditor**. Old methods in **ITypeEditor** are obsoloted, pleased use new methods in **IPropertyEditor** instead.
+
+**3)** **CatagoryAttribute** is renamed to **ControlGroupAttribute**, and is moved to project **CocoStudio.Model**.
+
+**4)** **PropertyEditorTypeAttribte** is deleted for it is no longer used in the new property grid frame.
 
 ***Note** The contents of the document are under continuous update based on users' feedback. Please check the latest version for reference. If you have any suggestions or comments on the extensions of Cocos Studio, please let us know. Thanks for your interest and support for Cocos Studio, and for helping us make a better product.*  

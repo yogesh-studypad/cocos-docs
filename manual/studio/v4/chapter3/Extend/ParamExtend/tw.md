@@ -1,5 +1,7 @@
 # **屬性擴展** #
 
+**注意：**2.3.3.0版本對屬性區相關介面進行了調整，詳情請見 **2.介面變更**
+
 &emsp;&emsp;1.屬性區擴展
 
 &emsp;&emsp;Cocos Studio預置的控制項支援擴展，對於控制項的屬性區同樣支援擴展。一些基本類型的屬性，編輯器中已經包含對應的屬性控制項，只需要按照一定規則即可使用。如果使用者想要擴展自訂屬性，可以根據自己意願製作需要的功能(示例代碼中有詳細介紹)。
@@ -267,7 +269,19 @@ BaseEditor中已對IPropertyEditor介面進行了實現，但子類在繼承Base
         }
     }
 
-&emsp;&emsp;2.其它
+&emsp;&emsp;2.介面變更
+
+&emsp;&emsp;Cocos 2.3.3.0版本對屬性區進行了重構，同時對一些相關介面進行了調整。具體的調整包含以下內容：
+
+&emsp;&emsp;1) CocoStudio.ToolKit專案中的內容被移動至Modules.Communal.PropertyGrid項目。目前屬性區的通用類均位於PropertyGrid專案，ToolKit專案已被刪除。原本使用CocoStudio.ToolKit命名空間的代碼需要將命名空間更改為Modules.Communal.PropertyGrid。
+
+&emsp;&emsp;2) ITypeEditor介面被重命名為IPropertyEditor。新的介面已經由BaseEditor類統一實現，它的子類無需再聲明實現介面，且不需要再進行外掛程式匯出。ITypeEditor介面中的原方法與屬性均不再使用，新的使用方法以IPropertyEditor中公開的介面為准。
+
+&emsp;&emsp;3) CatagoryAttribute類被重命名為ControlGroupAttribute，並被移動至CocoStudio.Model。
+
+&emsp;&emsp;4) PropertyEditorTypeAttribute類已被刪除。屬性區對於預設類型的支援已內置於自身的框架代碼當中，外部無需再使用額外的特性進行標注。
+
+&emsp;&emsp;3.其它
 
 &emsp;&emsp;在後續的開發過程中文檔的內容會根據回饋持續更新。如有更新，請以新的版本為准。
 
