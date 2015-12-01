@@ -76,7 +76,6 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - 2. Working environment and workflow
         - [2.1 Cocos2d-JS Lite version workflow](../cocos2d-js/2-working-environment-and-workflow/2-1-cocos2d-js-lite-workflow/en.md)
         - [2.2 Cross native / browser game with Cocos Console](../cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/en.md)
-        - [2.3 Workflow with Cocos Code IDE](../cocos2d-js/2-working-environment-and-workflow/2-3-workflow-with-cocos-code-ide/en.md)
     - 3. Jumping into Cocos2d-JS
         - [3.1 Installation](../cocos2d-js/3-jumping-into-cocos2d-js/3-1-installation/en.md)
         - [3.2 Creating your first scene](../cocos2d-js/3-jumping-into-cocos2d-js/3-2-creating-your-first-scene/en.md)
