@@ -18,6 +18,8 @@
    &emsp;&emsp;Cocos官方交流7群  （js）                   &emsp;&emsp;182142281
 
    &emsp;&emsp;Cocos官方交流8群  （js）                   &emsp;&emsp;364874256
+ 
+  &emsp;&emsp;Cocos官方交流9群  （3D&VR）	     &emsp;&emsp;184039935
 
    &emsp;&emsp;Cocos官方交流10群 （lua）               &emsp;284148017
 
