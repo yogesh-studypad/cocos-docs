@@ -18,6 +18,8 @@
 
    &emsp;&emsp;Cocos Official Group 8  (js)	               &emsp;&emsp;364874256
 
+   &emsp;&emsp;Cocos Official Group 9  (3D&VR）	     &emsp;&emsp;184039935
+
    &emsp;&emsp;Cocos Official Group 10 (lua)	           &emsp;284148017
 
    &emsp;&emsp;Cocos Official Group 11 (lua)	           &emsp;243709595

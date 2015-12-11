@@ -11,7 +11,6 @@
     * [Publish](../chapter2/Publish/en.md)
     * [Coding and Debugging](../chapter2/CodeAndDebug/en.md)
     * [Package and Runtime Environment Settings](../chapter2/PackageAndRun/en.md)
-    * [External Editors](../chapter2/ExternalEditor/en.md)
 * [Chapter 3: Editor](../chapter3/Directory/en.md)
 	* [Workspace Overview](../chapter3/Editor/UIOverview/en.md)
 	* [UI](../chapter3/UI/Directory/en.md)

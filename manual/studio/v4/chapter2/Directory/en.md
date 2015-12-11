@@ -12,4 +12,3 @@
 
 ####&emsp;&emsp;[Package and Runtime Environment Settings](../PackageAndRun/en.md) 
 
-####&emsp;&emsp;[External Editors](../ExternalEditor/en.md) 
