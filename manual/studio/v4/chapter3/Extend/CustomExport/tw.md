@@ -2,9 +2,10 @@
 
 &emsp;&emsp;1.自訂資料匯出格式
 
-&emsp;&emsp;Cocos Studio默認支援三種匯出格式：CSB、Json、Lua。使用者可能選擇自己需要的格式進行匯出，如果有特殊的需求，可以自定制匯出，相應的讀取部分也需要自己實現。只需要實現CocoStudio.Projects.IGameProjectSerializer介面（參見示例工程中的PublishExtend目錄裡的CustomSerializer類）。介面的定義如下：
+&emsp;&emsp;Cocos Studio默認支援三種匯出格式：CSB、Json、Lua。使用者可能選擇自己需要的格式進行匯出，如果有特殊的需求，可以自定制匯出，相應的讀取部分也需要自己實現。只需要實現 `CocoStudio.Projects.IGameProjectSerializer` 介面（在 Cocos v2.3.3 版本之後為 `CocoStudio.Projects.IGameFileSerializer`, 請以實際代碼為準。參見示例工程中的 `PublishExtend` 目錄裡的 `CustomSerializer` 類）。介面的定義如下：
 
     [TypeExtensionPoint]
+	// 在 Cocos v2.3.3 版本之後為 IGameFileSerializer
     public interface IGameProjectSerializer
     {
         /// <summary>
@@ -21,20 +22,20 @@
         /// 執行序列化
         /// </summary>
         /// <param name="info">發佈設置資訊</param>
-        /// <param name="projFile">專案檔案</param>
+        /// <param name="projFile">專案檔案， 在 Cocos v2.3.3 之後該參數為 GameFile gameFile</param>
         /// <returns>錯誤資訊（正常結束時為空）</returns>
         string Serialize(PublishInfo info, IProjectFile projFile);
 
         /// <summary>
-        /// 執行上下文初始化操作，在第一次 Serialize 調用之前調用它。
-        /// 對於一個 Studio 解決方案只應該調用一次。
+        /// 執行上下文初始化操作。
+        /// 一個 Studio 解決方案只會調用一次，在第一次 Serialize 調用之前會被調用。
         /// 注：每個 *.csd 檔會調用一次 Serialize.
         /// </summary>
         void ContextInitialize(PublishInfo publishInfo);
 
         /// <summary>
-        /// 執行上下文結束操作，在最後一次 Serialize 調用之後調用它。
-        /// 對於一個 Studio 解決方案只應該調用一次。
+        /// 執行上下文結束操作。
+        /// 一個 Studio 解決方案只會調用一次，在最後一次 Serialize 調用之後會被調用。
         /// 注：每個 *.csd 檔會調用一次 Serialize.
         /// </summary>
         void ContextFinalize(PublishInfo publishInfo);

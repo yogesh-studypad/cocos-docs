@@ -10,7 +10,6 @@
 
 - [浏览器开发环境介绍](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-1-cocos2d-js-lite-workflow/zh.md)
 - [原生与跨平台开发环境简介](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-2-cross-native-browser-game-with-cocos-console/zh.md)
-- [使用Cocos Code IDE开发](../../../manual/framework/cocos2d-js/2-working-environment-and-workflow/2-3-workflow-with-cocos-code-ide/zh.md)
 
 ## 一个简单的Cocos2d-JS游戏
 

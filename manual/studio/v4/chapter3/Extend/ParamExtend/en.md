@@ -1,5 +1,7 @@
 #Properties Extension #
 
+**NOTE:** Some interfaces of property have been changed in v2.3.3.0. More details in **Interface Changes**
+
 ### Widget Types ###
 
 Cocos Studio supports extensions of widgets and widgets’ properties. The editor has some general settings of widgets' properties in default. It is also recommended to add custom properties to widgets (For more information, see Sample). 
@@ -216,32 +218,43 @@ The specific codes have been added to **CustomObjectData**.
 
 ### **Creating a Custom Widget** ###
 
-- **CustomEditor** inherits **BaseEditor** base class and **ITypeEditor** interface.
+- **CustomEditor** inherits **BaseEditor** base class, **BaseEditor** inherits **IPropertyEditor** interface.
 
-    **ITypeEditor** interface should implement **ResolveEditor**. With this method, a control will display on the canvas panel. To display more controls, users need to put them in a Container, such as a Table. After settings of the controls in Container, the Container will be displayed on the canvas. 
+    **BaseEditor** has realised **IPropertyEditor**, but when inherit from **BaseEditor**, you still need to override some method of the base class. The methods which must be override are:
 
-- **NumberEditorWidget** is a control with two **TextBox** (similar to controls of ScaleValue type).
+        protected abstract Gtk.Widget OnCreateWidget();
+        protected abstract void void OnSetControl();
 
-    When setting two **TextBox** value, add the following two events: 
+    Gtk.Widget OnCreateWidget() is called when initialize the editor. It returns the Gtk widget of the editor which will be shown in the PropertyGrid.
 
-     `_widget.PointX += widget_PointX;`
+    void OnSetControl() is used to refresh the Gtk widgets when property changed. 
 
-     `_widget.PointY += widget_PointY;`
+    When the value of entry in CustomEditor changed, it will set the property value. This is done through  the member **PropertyItem**. You can get or set property value using **PropertyItem**.    
 
-    **PointX** and **PointY** are two separate events for **TextBox**.
+        private void XEntryValueChangedHandler(object sender, EntryIntEventArgs e)
+        {
+            using (GetLock())
+            {
+                for (int i = 0; i < PropertyItem.Objects.Count; i++)
+                {
+                    ScaleValue value = PropertyItem.Values[i] as ScaleValue;
+                    value.ScaleX = e.Value;
+                    PropertyItem.Values[i] = value;
+                }
+            }
+        }
 
-	private void widget_PointX(object sender, PointEvent e)
-	{
-		_scaleValue.ScaleX = (float)e.PointX;
-		UpdatePropertyValue(_propertyItem.PropertyData, _scaleValue);
-	}
-- To create a custom widget, do the following: 
 
-    1 Assign values to **scaleValue**: 	
-	scaleValue.ScaleX = (float)e.PointX;
+### Interface Changes ###
 
-    2 Call **UpdatePropertyValue** to modify rendering section. Any change in the rendering section will trigger the event `override void OnPropertyChanged(object sender,PropertyChangedEventArgs e)`. 
+Some interface of property have been changed in v2.3.3.0, including:
 
-    3 Add logical codes in OnPropertyChanged if changes are needed. (Source Codes are in **CustomEditor** file.)
+**1)** The project **CocoStudio.ToolKit** is merged into **Modules.Communal.PropertyGrid**. Please use **Modules.Communal.PropertyGrid** namespace instead of **CocoStudio.ToolKit** namespace.
+
+**2)** **ITypeEditor** is renamed to **IPropertyEditor**. Old methods in **ITypeEditor** are obsoloted, pleased use new methods in **IPropertyEditor** instead.
+
+**3)** **CatagoryAttribute** is renamed to **ControlGroupAttribute**, and is moved to project **CocoStudio.Model**.
+
+**4)** **PropertyEditorTypeAttribte** is deleted for it is no longer used in the new property grid frame.
 
 ***Note** The contents of the document are under continuous update based on users' feedback. Please check the latest version for reference. If you have any suggestions or comments on the extensions of Cocos Studio, please let us know. Thanks for your interest and support for Cocos Studio, and for helping us make a better product.*  
