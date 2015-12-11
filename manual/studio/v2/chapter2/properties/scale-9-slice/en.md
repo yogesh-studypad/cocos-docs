@@ -19,6 +19,6 @@ Its yellow background is to use a image just 482 bytes, here is how we made it:
 ####How 9-Slice work
 When the four corners of 9-Slice scales it will extending in four directions, to reach the new position, and then stretched on both sides of the line of horizontal slices, vertical slice stretched left and right, and the middle will scale as normal.
 
-![Image](res/image057.png)
+![Image](res/image004.png)
 
 Note: 9-slice only works with customized content size, also with enable 9-Slice enabled.
