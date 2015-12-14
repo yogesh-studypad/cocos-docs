@@ -1,7 +1,6 @@
 # Cocos Studio幫助文檔
 * [1、概述](../chapter1/Overview/tw.md)
     * [Cocos簡介](../chapter1/Overview/tw.md)
-    * [下載與安裝](../chapter1/DownloadInstallation/tw.md)
     * [環境配置](../chapter1/EnvironmentConfiguration/tw.md)
     * [獲取支持](../chapter1/Support/tw.md)
 * [2、基本工作流](../chapter2/Directory/tw.md)

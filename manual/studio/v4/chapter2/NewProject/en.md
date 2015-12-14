@@ -17,7 +17,7 @@ Cocos is an all-in-one solution for all your needs in developing games, covering
 - Particle files exported from **Particle Designer** and **Particle Universe**; 
 - 3D models and animations from **3DMax**, etc. 
 
-**Code** Cocos supports editing and debugging Lua, JavaScript and C++ with Visual Studio, XCode and Cocos Code IDE. Cocos Code IDE is a complete toolkit for developing, debugging, publishing Lua & JavaScript games. 
+**Code** Cocos supports editing and debugging Lua, JavaScript and C++ with Visual Studio, XCode.
 
 **Run on real devices** You can run projects on real devices, for example mobile phones (Android, iOS), PC (Windows, Mac), and browsers, as Figure 2 shows:
 

@@ -1,7 +1,6 @@
 # Cocos Studio Manual
 * [Chapter1: Cocos Overview](../chapter1/Overview/en.md)
 	* [About cocos](../chapter1/Overview/en.md)
-	* [Download and Install](../chapter1/DownloadInstallation/en.md)
 	* [Environment Configuration](../chapter1/EnvironmentConfiguration/en.md)
     * [Cocos Help and Support](../chapter1/Support/en.md)
 * [Chapter 2: General Project Workflow](../chapter2/Directory/en.md)

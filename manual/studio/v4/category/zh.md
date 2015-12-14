@@ -1,7 +1,6 @@
 # Cocos Studio帮助文档
 * [1、概述](../chapter1/Overview/zh.md)
 	* [Cocos简介](../chapter1/Overview/zh.md)
-	* [下载与安装](../chapter1/DownloadInstallation/zh.md)
 	* [环境配置](../chapter1/EnvironmentConfiguration/zh.md)
     * [获取支持](../chapter1/Support/zh.md)
 * [2、基本工作流](../chapter2/Directory/zh.md)
