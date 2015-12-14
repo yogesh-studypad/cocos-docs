@@ -13,7 +13,7 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖2. Cocos商店**
 
-&emsp;&emsp;代碼編輯：Cocos專案支援lua、js、C++三種語言，支援Visual Studio、Xcode、Cocos Code IDE遊戲代碼編寫與調試，Visual Studio、Xcode分別是Windows和Mac系統上最強的代碼IDE，Cocos Code IDE是由觸控開發的專門針對於lua、js兩種語言的代碼編寫與調試工具，大家可以根據擅長的技術選擇使用。
+&emsp;&emsp;代碼編輯：Cocos專案支援lua、js、C++三種語言，支援Visual Studio、Xcode遊戲代碼編寫與調試，Visual Studio、Xcode分別是Windows和Mac系統上最強的代碼IDE。
 
 &emsp;&emsp;真機運行：在遊戲開發過程中，Cocos支援運行專案在Android、iOS手機上，Windows和Mac作業系統以及流覽器上， 如圖3：
 

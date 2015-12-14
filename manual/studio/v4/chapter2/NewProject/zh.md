@@ -14,7 +14,7 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图2. Cocos商店**
 
-&emsp;&emsp;代码编辑：Cocos项目支持lua、js、C++三种语言，支持Visual Studio、Xcode、Cocos Code IDE游戏代码编写与调试，Visual Studio、Xcode分别是Windows和Mac系统上最强的代码IDE，Cocos Code IDE是由触控开发的专门针对于lua、js两种语言的代码编写与调试工具，大家可以根据擅长的技术选择使用。
+&emsp;&emsp;代码编辑：Cocos项目支持lua、js、C++三种语言，支持Visual Studio、Xcode游戏代码编写与调试，Visual Studio、Xcode分别是Windows和Mac系统上最强的代码IDE。
 
 &emsp;&emsp;真机运行：在游戏开发过程中，Cocos支持运行项目在Android、iOS手机上，Windows和Mac操作系统以及浏览器上， 如图3：
 
