@@ -49,21 +49,14 @@
  
 &emsp;&emsp;通用：
 
-  &emsp;&emsp;1、控件：是否允许使用过时控件（艺术数字）。
+  &emsp;&emsp;1、控件：是否简化控件初始资源。
 
   &emsp;&emsp;2、鼠标：是否禁用鼠标滚轮缩放。
-
-  &emsp;&emsp;3、Code IDE：设置Code IDE的路径。
-    
-![image](res/image006.png)
-
-&emsp;&emsp;模拟器：
-
-&emsp;&emsp;1、启动：模拟器启动是否打开命令行窗口，默认隐藏。
+  
 
 ![image](res/image007.png)
 
-&emsp;&emsp;2.平台：
+&emsp;&emsp;平台：
 
   &emsp;&emsp; Android相关路径：
 
@@ -93,9 +86,7 @@
 
    &emsp;&emsp;1）发布资源：把编辑器编辑的资源与项目文件发布为Cocos 2d-x引擎所使用的资源，发布后的资源加载速度快，体积小。
 
-   &emsp;&emsp;2）发布为Code IDE工程：发布资源后并使用Code IDE打开当前项目，方便进一步编码。
-
-   &emsp;&emsp;3）发布为Visual Studio工程：发布资源后并使用Visual Studio打开当前项目，方便进一步编码。
+   &emsp;&emsp;2）发布为Visual Studio工程：发布资源后并使用Visual Studio打开当前项目，方便进一步编码。
 
    &emsp;&emsp;打包 - > 选择打包类型：
 
@@ -162,7 +153,7 @@
  
 ![image](res/image012.png)
 
-  &emsp;&emsp; 编辑器目前支持中文版、英文版，若切换语言需要重启编辑器后才能生效；
+  &emsp;&emsp; 编辑器目前支持英文版，简体中文和繁体中文，若切换语言需要重启编辑器后才能生效；
 
 ####7.帮助
 
@@ -234,12 +225,6 @@
 显示如下
 
 ![image](res/image028.png)
-
-![image](res/image029.png)
- 
-  &emsp;&emsp; 在菜单栏 -> 编辑 -> 偏好设置 -> 通用中，如下提勾选允许使用过时控件选项，点击确定可以将过时的控件——艺术数字显示出来，如下图：
-
-![image](res/image030.png)
 
   &emsp;&emsp; 添加控件：左键选中控件，然后拖拽控件到画布面板，然后松开鼠标左键，可以实现添加一个控件的操作。
 

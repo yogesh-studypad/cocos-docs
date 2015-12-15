@@ -54,7 +54,6 @@
     * [流覽器運行效果不正確如何定位？](../chapter4/debug-on-browser/tw.md)
     * [Framework如何列印log？](../chapter4/FWNoLog/tw.md) 
     * [如何匯出fbx文件？](../chapter4/HowToUseFBX/tw.md) 
-    * [Lua匯出外掛程式升級失敗？](../chapter4/LuaPluginUpdateError/tw.md) 
     * [無法新建C++項目？](../chapter4/NoCreateCPPProject/tw.md) 
     * [如何解決引擎載入合圖會有1圖元間隔？](../chapter4/OnePixelBug/tw.md) 
     * [如何預載入資源？](../chapter4/PreloadRes/tw.md) 
@@ -62,7 +61,6 @@
     * [關於UIHelper的兩個自動遞迴獲取節點的函數](../chapter4/UIHelperGetNode/tw.md) 
     * [修復升級或降級Framework後引發問題](../chapter4/upgrade-framework/tw.md)
     * [載入編輯匯出資料錯誤或者效果不對？](../chapter4/LoadError/tw.md)
-    * [如何顯示藝術數位？](../chapter4/ShowAtlasLabel/tw.md)
     * [導入1.6版本項目禁用？](../chapter4/Import1.6ProjectError/tw.md)
     * [如何自訂、編譯Cocos Framework以及模擬器？](../chapter3/HowToCode/CustomizeFramework/tw.md)
     * [如何修復打包以及運行失敗？](../chapter4/FixPackageError/tw.md)
@@ -70,5 +68,6 @@
     * [老版本外掛程式在新版本載入失敗？](../chapter4/PluginLoadError/tw.md)
     * 回饋平臺已解決問題入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
     * [修復cocos run -p web失敗?](../chapter4/runError/tw.md)
+    * [如何使用Cocos Framework？](../chapter4/HowToUseCocosFramework/tw.md)
 * [5、版本發佈說明](../chapter5/ReleaseNote/tw.md)
     

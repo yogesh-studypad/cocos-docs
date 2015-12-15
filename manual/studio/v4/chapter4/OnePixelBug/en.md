@@ -1,7 +1,7 @@
 # How to: Load SpriteSheet Correctly #
 
 **Symptoms**
-1 pixel gap appears after loading a sprite sheet with Cocos. 
+1 pixel gap appears after loading a sprite sheet with cocos. 
 
 **Resolution**
 

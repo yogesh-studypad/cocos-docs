@@ -14,9 +14,7 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 **1 JDK**
 
-- Download JDK at Cocos Store.
-
-- Install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. 
+- Download and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. 
 
 - In Java directory there will be two folders with the name starting with jdk and jre respectively. Add bin directory of the two folders to Environment Variable.  
 
@@ -30,9 +28,7 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 **2 NDK**
 
-- Download NDK at Cocos Store
-
-- Double click **android-ndk-r10d-windows-x86_64.exe**, and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. Following is a screenshot of the installation directory: 
+- Download and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. Following is a screenshot of the installation directory: 
 
 &emsp;&emsp;![image](res_en/image0003.png)
 
@@ -40,23 +36,19 @@ To activate the package function in Cocos Studio, you need to do the following,
 
 **3 SDK**
 
-- Download SDK at Cocos Store.
-
--  Install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. 
+-  Download and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. 
 
 - Set variable Path, and append the location of platforms, platform-tools and tools after Path value (use a semicolon in English half-angle state to separate them). For example, `;D:\Studiowork\sdk\sdk\platforms;D:\Studiowork\sdk\sdk\platform-tools;D:\Studiowork\sdk\sdk\tools`
 
 **4 Framework**
 
-- Download Framework at Cocos Store. 
-
-- Install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. 
+- Download and install it in a directory supporting English language. Installation in a directory supporting non-English languages may cause errors when packaging. 
 
 **5 Package Settings**
 
 Create a cocos project, and at the same time select a Framework version. Click Edit at the Toolbar -> Preferences -> Platform.
 
-**Note** Please make sure the following directory must be correct, otherwise there will be errors during the process of packaging. 
+***Note** Please make sure the following directory must be correct, otherwise there will be errors during the process of packaging.* 
 
 - SDK path: set folders for SDK (include folders of platforms, platform-tools and tools).
 
@@ -78,7 +70,7 @@ Click Project at the toolbar -> Publish and Package. When finish packaging, clic
 
 - The installed tool is outdated. 
  
-    Solution: uninstall tools that cause problems -> remove the leftover files -> remove its path from system path variable -> download this tool at Cocos Store ->  follow the setting tutorials and try again.  
+    Solution: uninstall tools that cause problems -> remove the leftover files -> remove its path from system path variable -> download the tool ->  follow the setting tutorials and try again.  
 
 - Non-English languages exist in the installation directory. 
 
