@@ -4,7 +4,7 @@
 ![image](res/image0001.png)
 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图1.项目类型选择**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图1.新建项目**
 
 &emsp;&emsp;Cocos项目整合了资源编辑、代码编写调试，真机运行以及游戏打包的功能：
 
@@ -31,35 +31,43 @@
 
 ###二、新建cocos项目：
  
-&emsp;&emsp;Cocos新建项目可以设置项目的名称、项目路径、屏幕方向、引擎的版本、项目语言以及附加功能。
-
-&emsp;&emsp;项目名称：游戏项目名称。
-
-&emsp;&emsp;项目路径：游戏项目所在的路径。
-
-&emsp;&emsp;屏幕方向：表示所制作的游戏是横屏还是竖屏。
-
-&emsp;&emsp;引擎版本：在没有安装Cocos Framework（整合Cocos 2d-x以及Cocos 2d-js引擎源代码，并基于整合后的源代码进行编译，编译出来的二进制库就是Cocos Framework，Cocos Framework同时支持luabinding、jsbinding、js、C++，商店里面可以下载）无法新建C++项目的，只可以新建js和lua的项目，C++项目需要安装Cocos Framework，当安装了Cocos Framework后，可以在引擎版本选择安装的Cocos Framework进行新建。如图5：
+打开启动器，在面板右上角的位置，您可以看到“新建项目”的按钮，点击此按钮，在弹出的“新建项目”对话框中，按照提示填写项目名称、项目项目路径、引擎版本、引擎类型、项目语言、编辑器、SDK接入，然后点击“完成”即可创建一个新项目。如图5：
 
 ![image](res/image0005.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图5. 新建cocos项目** 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图5. 新建项目界面**
 
-&emsp;&emsp;注：已经安装了Cocos Framework 3.6，否则是“无”。
+&emsp;&emsp;**项目名称**：游戏项目名称。
 
-&emsp;&emsp;项目语言：
+&emsp;&emsp;**项目路径**：游戏项目所在的路径。
 
-&emsp;&emsp;&emsp;&emsp;Lua：脚本语言，基于Cocos 2d-x luabinding（将Cocos 2d-x接口绑定到lua层并加入Quick Lua框架），可以运行在Windows、Mac、Android、iOS。
+&emsp;&emsp;**引擎版本**：选择基于哪个cocos2d-x的版本创建项目。
 
-&emsp;&emsp;&emsp;&emsp;C++：编译型语言，基于Cocos 2d-x引擎，可以运行在Windows、Mac、Android、iOS， 新建C++项目需要安装Cocos Framework。
+&emsp;&emsp;**引擎类型**：
+         
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;预编译库：基于cocos2d-x源代码编译而成的二进制库。
 
-&emsp;&emsp;&emsp;&emsp;JavaScript：脚本语言，基于Cocos 2d-js引擎，Cocos 2d-js引擎包含Cocos 2d-x jsbinding（将Cocos 2d-x的接口绑定到JS层）和Cocos 2d-html5（纯JS 引擎），jsbinding和Html5接口兼容，同一套JS游戏逻辑代码既可以驱动Cocos 2d-x也可以驱动Html5原生引擎，当打包到Win32、Mac、iOS、Android平台的时候默认基于jsbinding，打包到HTML5基于Cocos 2d-js引擎。
-附加功能：只针对于Android，开启“支持x86架构cpu”后，编译出来的Android程序可以运行在使用x86架构的cpu的手机上。
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;源代码：基于cocos2d-x源代码。
+
+&emsp;&emsp;**项目语言**：
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Lua：脚本语言，基于cocos2d-x luabinding（将cocos2d-x接口绑定到lua层并加入Quick Lua框架），可以运行在Android、iOS、Windows Phone、Windows、Mac。
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;JavaScript：脚本语言，基于cocos2d-js引擎，cocos2d-js引擎包含cocos2d-x JavaScript binding（将cocos2d-x的接口绑定到JavaScript层）和cocos2d-js（纯JavaScript引擎），JavaScript binding和Html5接口兼容，同一套JavaScript游戏逻辑代码既可以驱动cocos2d-x runtime，也可以驱动Html5原生引擎，当打包到Android、iOS、Windows Phone、Windows、Mac平台的时候默认基于JavaScript binding，打包到HTML5基于cocos2d-js引擎。
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C++：编译型语言，基于cocos2d-x引擎，可以运行在Android、iOS、Windows Phone、Windows、Mac。
+
+&emsp;&emsp;**编辑器**：是否创建cocos2d-x官方编辑器Cocos Studio项目文件。
+
+&emsp;&emsp;**SDK接入**：是否添加AnySDK服务。
 
 ###三、点击完成。
+&emsp;&emsp;根据需求选择参数设置，点击“完成”，cocos项目就创建成功了。新创建的cocos项目将被添加到“我的项目”，如图6：
 
-&emsp;&emsp;根据参数选择好自己想要的，点击完成，Cocos项目被创建出来了，如图6：
+![image](res/image0006.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图6. 我的项目** 
 
 ![image](res/image0007.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图6. HelloCocos项目** 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图7. HelloCocos项目** 

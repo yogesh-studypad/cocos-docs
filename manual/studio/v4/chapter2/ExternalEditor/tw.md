@@ -4,39 +4,28 @@
 
 ### 1.Texture Packer
 
-&emsp;&emsp;1）在商店裡面下載Texture Packer，如下圖：
-
-![image](res_tw/image0001.png)
-
-&emsp;&emsp;2）使用Texture Packer，匯出plist合圖為：
+&emsp;&emsp;使用Texture Packer，匯出plist合圖為：
 
 &emsp;&emsp;TexturePacker.plist TexturePacker.png，右鍵點擊編輯器資源面板，選擇“導入資源…”，選擇TexturePacker.plist，導入成功後如下圖：
 
 &emsp;&emsp;![image](res_tw/image0002.png)
  
-&emsp;&emsp;3）資源面板會自動展開當前plist所包含的png圖片，這樣就可以拖plist合圖裡面的檔給控制項賦值了，當發佈之後，控制項所使用的圖片就是plist合圖圖片。
+&emsp;&emsp;資源面板會自動展開當前plist所包含的png圖片，這樣就可以拖plist合圖裡面的檔給控制項賦值了，當發佈之後，控制項所使用的圖片就是plist合圖圖片。
 
 ### 2.Tiled
 
-&emsp;&emsp;1）在商店中下載Tiled
-
-![image](res_tw/image0003.png)
- 
-&emsp;&emsp;2）使用Tiled匯出地圖檔為：
+&emsp;&emsp;使用Tiled匯出地圖檔為：
 
 &emsp;&emsp;sewers.tmx sewers.png，右鍵點擊編輯器資源面板，選擇“導入資源…”，選擇sewers.tmx，導入成功後如下圖：
 
 &emsp;&emsp;![image](res_tw/image0004.png)
 
-&emsp;&emsp;3）添加一個地圖控制項到渲染區，就可以給地圖控制項賦值了。
+&emsp;&emsp;添加一個地圖控制項到渲染區，就可以給地圖控制項賦值了。
 
 ### 3.Particle Designer（僅有Mac版本）
 
-&emsp;&emsp;1)在商店裡下載Particle Designer
+&emsp;&emsp;使用Particle Designer，匯出plist特效粒子檔為：
 
-![image](res_tw/image0005.png)
-
-&emsp;&emsp;2)使用Particle Designer，匯出plist特效粒子檔為：
 &emsp;&emsp;blue.plist，右鍵點擊編輯器資源面板，選擇“導入資源…”，選擇blue.plist，導入成功後如下圖：
 
 &emsp;&emsp;![image](res_tw/image0006.png)

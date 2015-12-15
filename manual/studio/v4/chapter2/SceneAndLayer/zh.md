@@ -3,7 +3,7 @@
 
 &emsp;&emsp;2、制作新场景：
 
-&emsp;&emsp;1）打开我们新建的HelloCocos项目，新建场景名称为“Scene1”，如下图：           
+&emsp;&emsp;1）打开我们新建的HelloCocos项目，新建场景名称为“Scene”，如下图：           
  
 ![image](res/image0001.png)
 
@@ -41,7 +41,7 @@
  
 ![image](res/image0010.png)
 
-&emsp;&emsp;3）这个基本的UI界面就做好了，我们现在把这个界面放到场景里面，在资源面板双击”Scene1.csd”，打开Scene1.csd后，拖动Layer.csd到渲染区，Layer.csd就被添加到Scene1.csd里面了，这样就完成了UI界面与场景文件的结合，如下图：
+&emsp;&emsp;3）这个基本的UI界面就做好了，我们现在把这个界面放到场景里面，在资源面板双击”Scene.csd”，打开Scene.csd后，拖动Layer.csd到渲染区，Layer.csd就被添加到Scene.csd里面了，这样就完成了UI界面与场景文件的结合，如下图：
 
 ![image](res/image0013.png)
 

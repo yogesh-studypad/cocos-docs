@@ -8,7 +8,6 @@ Compare Samples and the customized addins to find differences and make modificat
 
 - If there are changes or updates to an addin, that is version numbers of the Addin and AddinDependency are updated, you need to replace and compile the custom addins' reference library (DLL) with new Samples' reference library.  
 
-- Use the latest version of Lua export plugin if you need to export projects to Lua. Download the plugin on [Cocos Store](http://store.cocos.com/).
+- Use the latest version of Lua export plugin if you need to export projects to Lua. 
 
-![image](res_en/image001.png) 
 

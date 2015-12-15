@@ -51,17 +51,9 @@ Cocos menu bar is composed of seven items, which are File, Edit, View, Project, 
  
 - **General**:
 
-    1 Widgets：to show/hide deprecated widgets. 
+    1 Widgets：whether simplify widgets initial resources or not. 
 
     2 Mouse：to enable/disable zooming with mouse wheel. 
- 
-    3 Code IDE：to set path for Code IDE. 
-    
-- **Simulator**: 
-
-    Start: to show/hide command window, which is hidden by default. 
-
-![image](res_en/image006.png)
 
 - **Platform**: 
 
@@ -90,8 +82,6 @@ Cocos menu bar is composed of seven items, which are File, Edit, View, Project, 
 **Publish and Package**: 
 
 - Publish Resource: publish resources, then open project with Cocos 2d-x. The published resources have a small file size and load quickly.  
-
-- Publish to Code IDE: first publish resources, and then open project with Code IDE. 
 
 - Publish to Visual Studio: first publish resources, and then open project with Visual Studio. 
 
@@ -155,7 +145,7 @@ For more information about Package, please see [Package and Runtime Environment 
  
 ![image](res_en/image012.png)
 
-Cocos Studio support Chinese and English interface. You need to restart Cocos Studio for your new language setting to take effect.
+Cocos Studio support English, Simplified Chinese and Traditional Chinese. You need to restart Cocos Studio for your new language setting to take effect.
 
 ####7 Help 
 

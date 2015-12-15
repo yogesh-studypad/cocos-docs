@@ -62,7 +62,6 @@
 	* [关于UIHelper的两个自动递归获取节点的函数](../chapter4/UIHelperGetNode/zh.md) 
 	* [修复升级或降级Framework后引发问题](../chapter4/upgrade-framework/zh.md)
 	* [加载编辑导出数据错误或者效果不对？](../chapter4/LoadError/zh.md)
-	* [如何显示艺术数字？](../chapter4/ShowAtlasLabel/zh.md)
 	* [导入1.6版本项目禁用？](../chapter4/Import1.6ProjectError/zh.md)
 	* [如何自定义、编译Cocos Framework以及模拟器？](../chapter3/HowToCode/CustomizeFramework/zh.md)
 	* [如何修复打包以及运行失败？](../chapter4/FixPackageError/zh.md)
@@ -71,5 +70,6 @@
 	* 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 	* [FrameworkTest使用文档？](../chapter4/HowToUseFrameworkTest/zh.md)
 	* [修复cocos run -p web失败？](../chapter4/runError/zh.md)
+	* [ 如何使用Cocos Framework？](../chapter4/HowToUseCocosFramework/zh.md)
 * [5、版本发布说明](../chapter5/ReleaseNote/zh.md)
 	

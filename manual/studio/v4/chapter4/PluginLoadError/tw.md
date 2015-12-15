@@ -12,9 +12,5 @@
 
 > 對於外掛程式版本號升級的，即 AddinConfig.cs 檔中，Addin 及 AddinDependency 特性中的版本號發生變化的，需要用示例工程中引用庫（Library 目錄裡的 DLL）替換自己的外掛程式工程，之後重新編譯。
 
-> 如果需要匯出到 Lua 的，需要使用新版本的 Lua 匯出外掛程式（見下圖），可以在 Cocos 商店中下到。
+> 如果需要匯出到 Lua 的，需要使用新版本的 Lua 匯出外掛程式（見下圖）。
 
-
-Lua 匯出外掛程式，見下圖：
-
-   ![image](res_tw/image001.png) 

@@ -27,7 +27,3 @@
  6、在搜索框输入“JDK”，回车，下载并安装，如下图：
 
 ![image](res/image005.png)
-
-7、在搜索框输入“Code IDE”，回车，下载并安装，如下图：
-
-![image](res/image006.png)

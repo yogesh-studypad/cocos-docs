@@ -1,16 +1,16 @@
 # Create a Game #
 
-### Project Overview ###
+### 1. Project Overview ###
 
 Cocos is an all-in-one solution for all your needs in developing games, covering functions of editing resources, coding, running on real devices and packaging. In the following section, we will introduce you how to build a perfect game with cocos. 
 
-**New Project** The  first step is to create a game project. Cocos provides sample projects that you can use as resources or learn from, as Figure 1 shows:
+**New Project** The  first step is to create a game project，as the following picture shows:
 
 ![image](res_en/image0001.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 1. Cocos Project**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Cocos Project**
 
-**Edit** With cocos, you can create and edit UI, 2D/ 3D scenes, Keyframe Animations, SpriteSheet Animations and Skeletal Animations. Cocos supports files exported from the following software, which can be downloaded at [Cocos Store](http://store.cocos.com/).  
+**Edit** With cocos, you can create and edit UI, 2D/ 3D scenes, Keyframe Animations, SpriteSheet Animations and Skeletal Animations. Cocos supports files exported from the following software.  
 
 - *.plist* file exported from **TexturePacker**;
 - animation files exported from **Flash**;
@@ -23,42 +23,55 @@ Cocos is an all-in-one solution for all your needs in developing games, covering
 
 ![image](res_en/image0003.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 2. Run on real devices**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Run on real devices**
 
 **Package** Cocos can be widely used to build mobile games and apps on platforms of Android, iOS and HTML5, as Figure 3 shows:
 
 ![image](res_en/image0004.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 3. Package**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Package**
 
-### Project Settings###
+### 2. New Project###
  
-Projects settings include Project Name, Project Path, Orientation, Engine Version and Project Language, etc, as Figure 4 shows:
+Follow the steps below to create a project. 
 
-![image](res_en/image0005.png) 
+- Open cocos launcher
+- Click **New Project**
+- Specify your project settings
+- Click **Create**
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 4. New cocos Project**
+![image](res_en/image0005.png)
 
-- **Project Name**: the name of a game project. 
+**Project Name**：the name of the project to be created.
 
-- **Project Path**: the location of a game project. 
+**Project Path**：the folder in which your projects are located.
 
-- **Orientation**: a game's orientation, horizontal or vertical. 
+**Engine Version**：version of cocos2d-x you use to create projects. 
 
-- **Engine Version**: Cocos Framework is not necessary for JavaScript and Lua projects, but necessary for C++ projects.  You can download Cocos Framework in Cocos Store. We can see from the above picture that Cocos Framework 3.5 has been installed, otherwise **None** will be displayed in the Engine Version drop-down list. 
+**Engine Type**：
 
-- **Supported scripting languages**
+- Precompiled Library: a static library of the cocos2d-x source code. This would speed up compile times as there is no need to continually build the engine's source.
 
-     - Lua: based on Cocos 2d-x Lua binding. It can run on Windows, Mac, Android, iOS. 
+- Source Code: cocos2d-x source code. 
 
-    - C++: based on Cocos 2d-x. It can run on Windows, Mac, Android and iOS. Cocos Framework is necessary for a new C++ project. 
+**Project Language**：
 
-    - JavaScript: based on Cocos 2d-jx. It includes Cocos 2d-x JS binding and Cocos 2d HTML5. Interface of JS binding is compatible with that of HTML5. Game codes can run in Cocos2d-x and HTML5 native engine. When packaging projects to Win32, Mac, iOS and Android, the default setting is JS binding. When packaging projects to HTML5, the default setting is Cocos 2d-x. 
+- Lua：based on cocos2d-x Lua binding. It can run on Android, iOS, Windows Phone, Windows, Mac. 
 
-- **Extra**: If you want to create a game that can run on x86-based Android devices, select **Support x86 CPU**. 
+- JavaScript：based on cocos2d-js, also includes cocos2d-x JavaScript bindings. The JavaScript bindings are compatible with HTML5. You can run code in cocos2d-x runtime and HTML5 native engine. The default settings will be JavaScript bindings if the projects are built for running on Android, iOS, Windows Phone, Windows and Mac. The default settings will be cocos2d-js if the projects are for HTML5.
 
-   Click **Finished**. A cocos project is successfully created, as Figure 5 shows:
+- C++：based on cocos2d-x, It can run on Android, iOS, Windows Phone, Windows, Mac. 
+
+**Editor**：whether or not to create a project of cocos, the official editor of cocos2d-x. 
+
+**SDK**：select SDKs to be integrated with. 
+
+### 3. Recent Projects ###
+
+Newly created projects are added to the **Recent Projects** list. 
+
+![image](res_en/image0006.png)
 
 ![image](res_en/image0007.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Figure 5. HelloCocos**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;

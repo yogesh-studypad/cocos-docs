@@ -49,21 +49,14 @@
  
 &emsp;&emsp;通用：
 
-  &emsp;&emsp;1、控制項：是否允許使用過時控制項（藝術數位）。
+  &emsp;&emsp;1、控制項：是否簡化控制項初始資源。
 
   &emsp;&emsp;2、滑鼠：是否禁用滑鼠滾輪縮放。
-
-  &emsp;&emsp;3、Code IDE：設置Code IDE的路徑。
-    
-![image](res_tw/image006.png)
-
-&emsp;&emsp;模擬器：
-
-&emsp;&emsp;1、啟動：模擬器啟動是否打開命令列視窗，預設隱藏。
+  
 
 ![image](res_tw/image007.png)
 
-&emsp;&emsp;2.平臺：
+&emsp;&emsp;平臺：
 
   &emsp;&emsp; Android相關路徑：
 
@@ -92,8 +85,6 @@
   &emsp;&emsp; 發佈 - > 選擇發佈類型：
 
    &emsp;&emsp;1）發佈資源：把編輯器編輯的資源與專案檔案發佈為Cocos 2d-x引擎所使用的資源，發佈後的資源載入速度快，體積小。
-
-   &emsp;&emsp;2）發佈為Code IDE工程：發佈資源後並使用Code IDE打開當前專案，方便進一步編碼。
 
    &emsp;&emsp;3）發佈為Visual Studio工程：發佈資源後並使用Visual Studio打開當前專案，方便進一步編碼。
 
@@ -128,9 +119,7 @@
 
   &emsp;&emsp; 自訂：使用者擴展的資料格式放在這裡，如何擴展參考[Cocos Studio自訂工程匯出](../../Extend/CustomExport/tw.md)
 
-  &emsp;&emsp; 打包：
-
-  &emsp;&emsp; 具體請參考：[打包與運行環境配置](../../../chapter2/PackageAndRun/tw.md)
+  &emsp;&emsp; 打包：具體請參考：[打包與運行環境配置](../../../chapter2/PackageAndRun/tw.md)
 
 ####4.視圖
 
@@ -162,7 +151,7 @@
  
 ![image](res_tw/image012.png)
 
-  &emsp;&emsp; 編輯器目前支持中文版、英文版，若切換語言需要重啟編輯器後才能生效；
+  &emsp;&emsp; 編輯器目前支持英文，簡體中文，繁體中文，若切換語言需要重啟編輯器後才能生效；
 
 ####7.幫助
 
@@ -184,7 +173,7 @@
 
 ![image](res_tw/image016.png)
 
-  &emsp;&emsp; 新建文件——用於新建場景、圖層、節點、合圖、3D場景。
+  &emsp;&emsp; 新建文件——用於新建場景、圖層、節點、合圖、3D場景等。
 
 ![image](res_tw/image017.png)
 

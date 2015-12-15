@@ -11,7 +11,7 @@
 
 &emsp;&emsp;注意：JDK、NDK、SDK、Framework的安裝路徑、電腦的系統變數配置、以及編輯器打包設置中這些工具的路徑配置一定要都正確，任何一個地方不對，打包很有可能會出現錯誤。
 
-&emsp;&emsp;1、從商店下載JDK，安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
+&emsp;&emsp;1、下載JDK，安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
 安裝成功後，Java目錄下會生成2個資料夾，分別以jdk和jre開頭。需要將這2個資料夾下的bin路徑配置到系統變數裡面。
 
 &emsp;&emsp;添加系統變數JAVA_HOME，變數值是jdk資料夾路徑。如下截圖：
@@ -22,7 +22,7 @@
 
 &emsp;&emsp;![image](res_tw/image0002.png)
 
-&emsp;&emsp;2、從商店下載NDK，按兩下android-ndk-r10d-windows-x86_64.exe，將其安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
+&emsp;&emsp;2、下載NDK，按兩下android-ndk-r10d-windows-x86_64.exe，將其安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
 
 &emsp;&emsp;安裝目錄下的檔截圖：
 
@@ -31,12 +31,12 @@
 &emsp;&emsp;編輯系統變數Path，在Path值後面添加android-ndk-r10d、build和platforms的路徑，以半形分號隔開，例如：
 ；D:\Studiowork\sdk\android-ndk-r10d\build\tools；D:\Studiowork\sdk\android-ndk-r10d；D:\Studiowork\sdk\android-ndk-r10d\platforms
 
-&emsp;&emsp;3、從商店下載SDK，解壓到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
+&emsp;&emsp;3、下載SDK，解壓到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
 
 &emsp;&emsp;編輯系統變數Path，在Path值後面添加platforms、platform-tools和tools的路徑，以半形分號隔開，例如：
 ；D:\Studiowork\sdk\sdk\platforms；D:\Studiowork\sdk\sdk\platform-tools；D:\Studiowork\sdk\sdk\tools
 
-&emsp;&emsp;4、從商店下載匹配的Framework版本，安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
+&emsp;&emsp;4、下載匹配的Framework版本，安裝到英文目錄，非英文尤其中文目錄可能會導致打包出現異常問題。
 
 &emsp;&emsp;5、創建一個cocos項目，創建過程中一定要選擇一個Framework版本。點擊編輯器功能表列->編輯->偏好設置->平臺。
 
@@ -60,7 +60,7 @@
 
 - 電腦上安裝過對應工具，但版本過低。
 
-&emsp;&emsp;解決辦法：卸載出錯的工具，清除殘留的安裝檔。去掉系統變數Path值中的該工具路徑。從商店中下載該工具，按照文檔開頭的步驟安裝、配置。
+&emsp;&emsp;解決辦法：卸載出錯的工具，清除殘留的安裝檔。去掉系統變數Path值中的該工具路徑。下載該工具，按照文檔開頭的步驟安裝、配置。
 
 - 安裝目錄含有非英文。
 

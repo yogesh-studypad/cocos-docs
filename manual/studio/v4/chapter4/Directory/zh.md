@@ -25,23 +25,21 @@
 
 ####&emsp;&emsp;[12) 加载编辑导出数据错误或者效果不对？](../LoadError/zh.md)
 
-####&emsp;&emsp;[13) 如何显示艺术数字？](../ShowAtlasLabel/zh.md)
+####&emsp;&emsp;[13) 导入1.6版本项目禁用？](../Import1.6ProjectError/zh.md)
 
+####&emsp;&emsp;[14) 如何自定义Cocos Framework？](../../chapter3/HowToCode/CustomizeFramework/zh.md)
 
-####&emsp;&emsp;[14) 导入1.6版本项目禁用？](../Import1.6ProjectError/zh.md)
+####&emsp;&emsp;[15) 如何修复打包以及运行失败？](../FixPackageError/zh.md)
 
-####&emsp;&emsp;[15) 如何自定义Cocos Framework？](../../chapter3/HowToCode/CustomizeFramework/zh.md)
+####&emsp;&emsp;[16) 如何简化控件初始资源？](../SimplifyWidgetsRes/zh.md)
 
-####&emsp;&emsp;[16) 如何修复打包以及运行失败？](../FixPackageError/zh.md)
+####&emsp;&emsp;[17) 老版本插件在新版本加载失败？](../PluginLoadError/zh.md)
 
-####&emsp;&emsp;[17) 如何简化控件初始资源？](../SimplifyWidgetsRes/zh.md)
+####&emsp;&emsp;18) 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
 
-####&emsp;&emsp;[18) 老版本插件在新版本加载失败？](../PluginLoadError/zh.md)
+####&emsp;&emsp;[19) FrameworkTest使用文档？](../HowToUseFrameworkTest/zh.md)
 
-####&emsp;&emsp;19) 反馈平台已解决问题入口：[http://support.cocos.com/feedback_solve](http://support.cocos.com/feedback_solve)
+####&emsp;&emsp;[20) 修复cocos run -p web失败？](../runError/zh.md)
 
-####&emsp;&emsp;[20) FrameworkTest使用文档？](../HowToUseFrameworkTest/zh.md)
-
-
-####&emsp;&emsp;[21) 修复cocos run -p web失败？](../runError/zh.md)
+####&emsp;&emsp;[21) 如何使用Cocos Framework？](../HowToUseCocosFramework/zh.md)
 
