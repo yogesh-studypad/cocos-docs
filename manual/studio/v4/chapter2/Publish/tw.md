@@ -10,8 +10,6 @@
 
 &emsp;&emsp;3）發佈資源：執行發佈資源過程。
 
-&emsp;&emsp;&emsp;&emsp;&emsp;發佈為Code IDE工程：先執行發佈資源過程，然後使用Code IDE打開專案，C++專案此選項為灰。
-
 &emsp;&emsp;&emsp;&emsp;&emsp;發佈為Visual Studio工程：僅Windows上，先執行發佈資源過程，然後使用Visual Studio打開專案。
 
 &emsp;&emsp;&emsp;&emsp;&emsp;發佈為Xcode工程：僅Mac上，先執行發佈資源過程，然後使用Xcode打開專案。
@@ -33,7 +31,9 @@
 
 &emsp;&emsp;2、Json：羽量級的資料交換格式，可讀性強，JavaScript原生支持，適用於js專案。
 
-&emsp;&emsp;3、自訂：參考 [匯出資料擴展。](../../chapter3/Extend/CustomExport/tw.md)
+&emsp;&emsp;3、Lua：可讀性強，適用於Cocos2d-x Luabinding專案。
+
+&emsp;&emsp;4、自訂：參考 [匯出資料擴展。](../../chapter3/Extend/CustomExport/tw.md)
 
 
 

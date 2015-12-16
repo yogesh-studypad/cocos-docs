@@ -1,38 +1,9 @@
-# Create a Game #
+#Cocos launcher
 
-### 1. Project Overview ###
+With Cocos launcher, you can quickly create projects, import projects and submit your games. 
 
-Cocos is an all-in-one solution for all your needs in developing games, covering functions of editing resources, coding, running on real devices and packaging. In the following section, we will introduce you how to build a perfect game with cocos. 
+### 1. New Project ###
 
-**New Project** The  first step is to create a game project，as the following picture shows:
-
-![image](res_en/image0001.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Cocos Project**
-
-**Edit** With cocos, you can create and edit UI, 2D/ 3D scenes, Keyframe Animations, SpriteSheet Animations and Skeletal Animations. Cocos supports files exported from the following software.  
-
-- *.plist* file exported from **TexturePacker**;
-- animation files exported from **Flash**;
-- Particle files exported from **Particle Designer** and **Particle Universe**; 
-- 3D models and animations from **3DMax**, etc. 
-
-**Code** Cocos supports editing and debugging Lua, JavaScript and C++ with Visual Studio, XCode.
-
-**Run on real devices** You can run projects on real devices, for example mobile phones (Android, iOS), PC (Windows, Mac), and browsers, as Figure 2 shows:
-
-![image](res_en/image0003.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Run on real devices**
-
-**Package** Cocos can be widely used to build mobile games and apps on platforms of Android, iOS and HTML5, as Figure 3 shows:
-
-![image](res_en/image0004.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Package**
-
-### 2. New Project###
- 
 Follow the steps below to create a project. 
 
 - Open cocos launcher
@@ -40,7 +11,7 @@ Follow the steps below to create a project.
 - Specify your project settings
 - Click **Create**
 
-![image](res_en/image0005.png)
+![image](res_en/image0001.png)
 
 **Project Name**：the name of the project to be created.
 
@@ -66,12 +37,58 @@ Follow the steps below to create a project.
 
 **SDK**：select SDKs to be integrated with. 
 
-### 3. Recent Projects ###
+### 2. Recent Projects ###
 
 Newly created projects are added to the **Recent Projects** list. 
 
-![image](res_en/image0006.png)
+![image](res_en/image0002.png)
 
-![image](res_en/image0007.png)
+### 3. Import Project ###
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+You can create a project by importing one available on your computer. 
+
+- Click **Import Project**
+
+- Select the project to be imported 
+
+- Click **Select Folder** on Windows, or **Open** on Mac. 
+	
+![image](res_en/image0008.png)
+
+### 4. Open ###
+
+Click **Open** to open the selected project in Visual Studio, Android Studio or cocos. As you hover the mouse over the each of the icons, you will see a tool-tip text describing its functionality.
+
+![image](res_en/image0010.png)
+
+### 5. Settings ###
+
+- Click the triangle button at the top right of the screen.
+- Choose **Settings**.
+- Specify preferences for cocos launcher.
+
+![image](res_en/image0011.png)
+
+### 6. Open Folder ###
+
+Click **Open Folder** at the right bottom of the screen to open the cocos folder, including cocos2d-x source codes and cocos launcher. 
+
+![image](res_en/image0012.png)
+
+### 7. Other Options ###
+
+In addition to **Projects**, you can view the **Documentation** and provide **Feedback** on the sidebar.
+
+### Documentation ###
+
+Click **Documentation** on the left, you will see cocos manual and cocos2d-x API. 
+
+![image](res_en/image0013.png)
+
+### Feedback ###
+
+Click **Feedback** to send us your suggestions or report any problems. Select an appropriate issue type and edit the issue description. A member of the cocos Technical Support Team will contact you via e-mail.
+
+*Note: Please login before trying to send feedback.* 
+
+![image](res_en/image0017.png)

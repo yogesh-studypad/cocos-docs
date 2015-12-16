@@ -15,8 +15,6 @@ To publish resources, do the following:
 
 3 Publish resources
 
-- Publish to Code IDE Project: first publish resources, then open project with Code IDE. For C++ project, this option cannot be selected. 
-
 - Publish to Visual Studio Project: only for Windows, first publish resources, then open project with Visual Studio. 
 
 - Publish to Xcode Project: only for Mac, first publish resources, and then open project with Xcode. 
@@ -42,7 +40,9 @@ To publish resources, do the following:
     - *csb* File: FlatBuffers is employed to read binary files, featuring in high efficiency, small size and significant security. Support Cocos2d-x C++ and Lua Binding. 
 
     - JSON File: Lightweight data transfer format, good readability, native support for JavaScript. Support Cocos2d-JS. 
-
+   
+    - Lua File：Good readability，support Lua Binding。
+   
     - Custom export: Click [Customizing Exported Data Formats](../../chapter3/Extend/CustomExport/en.md) for more information. 
 
 

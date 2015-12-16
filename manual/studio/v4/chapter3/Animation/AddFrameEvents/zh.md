@@ -3,7 +3,7 @@
 
 如何使用帧事件？
 
-&emsp;&emsp;1.勾选自动记录帧。
+&emsp;&emsp;1.勾选开始记录动画。
 
 &emsp;&emsp;&emsp;![image](res/image001.png)
 

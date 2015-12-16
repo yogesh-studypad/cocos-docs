@@ -1,36 +1,11 @@
 #獲取支持
 
+**官网：** [http://www.cocos2d-x.org/](http://www.cocos2d-x.org/ "http://www.cocos2d-x.org/")
 
-**國內QQ群：**
+**Twitter：**[https://twitter.com/cocos2dx](https://twitter.com/cocos2dx "https://twitter.com/cocos2dx")
 
-   &emsp;&emsp;Cocos官方交流1群  （2d-x）               &emsp;136017252
+**社區：** [http://discuss.cocos2d-x.org/](http://discuss.cocos2d-x.org/)
 
-   &emsp;&emsp;Cocos官方交流2群  （2d-x）               &emsp;187294716
-
-   &emsp;&emsp;Cocos官方交流3群  （Studio）               &emsp;431357131
-
-   &emsp;&emsp;Cocos官方交流4群  （Studio）          &emsp;330910720
-
-   &emsp;&emsp;Cocos官方交流5群  （Studio）           &emsp;312987275
-
-   &emsp;&emsp;Cocos官方交流6群 （Studio）          &emsp;130607511
-
-   &emsp;&emsp;Cocos官方交流7群  （js）                   &emsp;&emsp;182142281
-
-   &emsp;&emsp;Cocos官方交流8群  （js）                   &emsp;&emsp;364874256
- 
-  &emsp;&emsp;Cocos官方交流9群  （3D&VR）	     &emsp;&emsp;184039935
-
-   &emsp;&emsp;Cocos官方交流10群 （lua）               &emsp;284148017
-
-   &emsp;&emsp;Cocos官方交流11群 （lua）               &emsp;243709595
-
-   &emsp;&emsp;Cocos官方交流12群 （lua）               &emsp;8952580
-
- **社區**：[http://www.cocoachina.com/bbs/thread.php?fid=48](http://www.cocoachina.com/bbs/thread.php?fid=48)
-
-**編輯器FAQ：**[http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/tw.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/tw.md)
-
-**教程：** [http://cn.cocos2d-x.org/tutorial/](http://cn.cocos2d-x.org/tutorial/)
+**編輯器FAQ：** [http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/en.md](http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master//manual/studio/v4/chapter4/Directory/en.md)
 
 **Bug報告：** [http://support.cocos.com/](http://support.cocos.com/)

@@ -3,7 +3,7 @@
 
 如何使用幀事件？
 
-&emsp;&emsp;1.勾選自動記錄幀。
+&emsp;&emsp;1.勾選開始記錄動畫。
 
 &emsp;&emsp;&emsp;![image](res_tw/image001.png)
 
