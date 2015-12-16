@@ -1,5 +1,5 @@
 # Cocos Studio Manual
-* [Chapter1: Cocos Overview](../chapter1/Overview/en.md)
+* [Chapter 1: Cocos Overview](../chapter1/Overview/en.md)
 	* [About cocos](../chapter1/Overview/en.md)
 	* [Environment Configuration](../chapter1/EnvironmentConfiguration/en.md)
     * [Cocos Help and Support](../chapter1/Support/en.md)
@@ -49,7 +49,7 @@
 	   * [Customize Framework & Simulator(v3.7)](../chapter3/HowToCode/CustomizeFramework/en.md)
 	   * [Customize Framework & Simulator(v3.8~3.9)](../chapter3/HowToCode/CustomizeFramework-v3.8/en.md)
 	   * [Customize precompiled library(v3.10)](../chapter3/HowToCode/CustomizeFramework-v3.10/en.md)
-* [Chapter4: FAQ](../chapter4/Directory/en.md)
+* [Chapter 4: FAQ](../chapter4/Directory/en.md)
 	* [No Android Devices Found？](../chapter4/connect-solution/en.md)
 	* [How to: Debug Browser Preview](../chapter4/debug-on-browser/en.md)
 	* [How to: Use CCLog to Debug](../chapter4/FWNoLog/en.md) 
@@ -69,5 +69,5 @@
 	* [How to: Run Previous Versions of Addins in cocos](../chapter4/PluginLoadError/en.md)
 	* [How to Fix cocos run error?](../chapter4/runError/en.md)
 
-* [Chapter5: Release Notes](../chapter5/ReleaseNote/en.md)
+* [Chapter 5: Release Notes](../chapter5/ReleaseNote/en.md)
 	
