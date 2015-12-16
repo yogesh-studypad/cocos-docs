@@ -10,8 +10,6 @@
 
 &emsp;&emsp;3）发布资源：执行发布资源过程。
 
-&emsp;&emsp;&emsp;&emsp;&emsp;发布为Code IDE工程：先执行发布资源过程，然后使用Code IDE打开项目，C++项目此选项为灰。
-
 &emsp;&emsp;&emsp;&emsp;&emsp;发布为Visual Studio工程：仅Windows上，先执行发布资源过程，然后使用Visual Studio打开项目。
 
 &emsp;&emsp;&emsp;&emsp;&emsp;发布为Xcode工程：仅Mac上，先执行发布资源过程，然后使用Xcode打开项目。
@@ -33,7 +31,9 @@
 
 &emsp;&emsp;2、Json：轻量级的数据交换格式，可读性强，JavaScript原生支持，适用于js项目。
 
-&emsp;&emsp;3、自定义：参考 [导出数据扩展。](../../chapter3/Extend/CustomExport/zh.md)
+&emsp;&emsp;3、Lua：可读性强，适用于Cocos2d-x Luabinding项目。
+
+&emsp;&emsp;4、自定义：参考 [导出数据扩展。](../../chapter3/Extend/CustomExport/zh.md)
 
 
 

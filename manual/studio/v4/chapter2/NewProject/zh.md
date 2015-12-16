@@ -1,41 +1,14 @@
-#创建新游戏
-###一、认识cocos项目，如图1：
+#认识Cocos
+
+使用Cocos启动器，您将可以快速新建项目、导入项目、发布多渠道。
+
+### 1.新建项目 ###
+
+打开启动器，在面板右上角的位置，您可以看到“新建项目”的按钮，点击此按钮，在弹出的“新建项目”对话框中，按照提示填写项目名称、项目项目路径、引擎版本、引擎类型、项目语言、编辑器、SDK接入，然后点击“完成”即可创建一个新项目。如图1：
 
 ![image](res/image0001.png)
 
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图1.新建项目**
-
-&emsp;&emsp;Cocos项目整合了资源编辑、代码编写调试，真机运行以及游戏打包的功能：
-
-&emsp;&emsp;资源编辑：通过cocos可以直接进行2D/3D场景、游戏界面（UI）、关键帧动画、序列帧动画，骨骼动画的编辑，同时支持国内外最优秀工具产出的数据，比如：支持TexturePacker产出的plist合图数据，支持Particle Designer以及Particle Universe产出的粒子数据，支持3DMax产出的3D模型/动画数据等等，这些优秀的工具不用再去google搜索下载，我们已经把它们添加到cocos启动页“商店”里面，大家可以直接到商店里面免费下载使用，如图2：
-
-![image](res/image0002.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图2. Cocos商店**
-
-&emsp;&emsp;代码编辑：Cocos项目支持lua、js、C++三种语言，支持Visual Studio、Xcode游戏代码编写与调试，Visual Studio、Xcode分别是Windows和Mac系统上最强的代码IDE。
-
-&emsp;&emsp;真机运行：在游戏开发过程中，Cocos支持运行项目在Android、iOS手机上，Windows和Mac操作系统以及浏览器上， 如图3：
-
-![image](res/image0003.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图3. 运行到各平台**
-
-&emsp;&emsp;游戏打包：当游戏开发完毕之后，可以通过才cocos生成游戏App，支持Android、iOS、HTML5 App的生成，如下图：
- 
-![image](res/image0004.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图4. 生成游戏App**
-
-
-###二、新建cocos项目：
- 
-打开启动器，在面板右上角的位置，您可以看到“新建项目”的按钮，点击此按钮，在弹出的“新建项目”对话框中，按照提示填写项目名称、项目项目路径、引擎版本、引擎类型、项目语言、编辑器、SDK接入，然后点击“完成”即可创建一个新项目。如图5：
-
-![image](res/image0005.png)
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图5. 新建项目界面**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图1. 新建项目界面**
 
 &emsp;&emsp;**项目名称**：游戏项目名称。
 
@@ -61,13 +34,86 @@
 
 &emsp;&emsp;**SDK接入**：是否添加AnySDK服务。
 
-###三、点击完成。
-&emsp;&emsp;根据需求选择参数设置，点击“完成”，cocos项目就创建成功了。新创建的cocos项目将被添加到“我的项目”，如图6：
+### 2.我的项目 ###
 
-![image](res/image0006.png)
+&emsp;&emsp;根据需求选择参数设置，点击“完成”，cocos项目就创建成功了。新创建的cocos项目将被添加到“我的项目”，如图2：
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图6. 我的项目** 
+![image](res/image0002.png)
 
-![image](res/image0007.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图2. 我的项目** 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图7. HelloCocos项目** 
+### 3.导入项目 ###
+
+在启动器面板，点击右上角的“导入项目”按钮，进入项目导入界面，选择要导入的cocos项目文件，点击“选择文件夹”按钮，完成项目导入，如图3：
+	
+![image](res/image0008.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图3. 导入项目** 
+
+### 4.发布多渠道 ###
+
+在启动器面板，点击“发布多渠道”按钮，您将体验到AnySDK一站式渠道接入服务。如果系统检测到您的电脑里还未安装SDK打包工具，会弹出提示框。点击“下载”按钮下载打包工具，点击“手动设置”按钮，配置SDK路径及项目路径。如图4：
+
+![image](res/image0009.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图4. 发布多渠道** 
+
+### 5.打开文件 ###
+在“我的项目”的项目路径右侧，有三个"打开"按钮。单击相应的图标或文字，分别在“Visual Studio”、“Android Studio”和“Cocos”中打开项目文件。鼠标悬停在图标或者“打开”上，将会出现相应的提示信息。如图5：
+
+![image](res/image0010.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图5. 打开文件** 
+
+### 6.设置 ###
+在启动器面板，点击右上角的三角图标，弹出3个选项，点击“设置”，您将看到如图6所示界面。其中包括下载目录，发布多渠道目录，勾选是否开机启动cocos和启动器的显示语言，有简体中文，繁体中文和英文可供选择，如图6：
+
+![image](res/image0011.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图6. 偏好设置** 
+
+### 7.打开目录 ###
+
+点击启动器右下角“打开目录”按钮，将打开cocos安装目录，cocos2d-x引擎源代码以及cocos启动器程序包含其中，如图7：
+
+![image](res/image0012.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图7. 打开目录** 
+
+### 8.其他侧边栏标签 ###
+
+启动器左侧有5个标签，分别为项目、文档、cocos商店、下载和反馈。
+
+### 文档 ###
+
+打开启动器，点击左侧“文档”标签，您将看到cocos2d-x API文档和cocos帮助手册与教程，如图8：
+
+![image](res/image0013.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图8. 文档** 
+
+### 商店 ###
+打开启动器，点击左侧“商店”标签按钮进入Cocos Store。Cocos Store包含了工具、2D美术、3D模型、特效、UI、字体、源码及其他版块，涵盖几乎所有游戏开发工具素材类别。Cocos Store网页版也已上线，请访问 https://store.cocos.com/ ，如图9：
+
+![image](res/image0015.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图9. 商店** 
+
+### 下载 ###
+
+打开启动器，点击左侧“下载”标签按钮进入下载界面。您在商店搜索到需要的资源，点击“立即下载”按钮，下载的文件将会列在“下载”界面，您可以暂停或者取消要下载的文件。如图10：
+
+更改默认的下载位置，点击启动器右上角的三角图标，选择“设置”，找到“下载目录”部分，点击“浏览”，更改默认下载位置，然后点击“选择文件夹”保存设置。
+
+![image](res/image0016.png)
+
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图10. 下载**
+
+### 反馈 ###
+
+开发者可以在反馈界面提交建议及问题，cocos技术支持团队将通过邮件回复您。如图11：
+
+![image](res/image0017.png)
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图11. 反馈**

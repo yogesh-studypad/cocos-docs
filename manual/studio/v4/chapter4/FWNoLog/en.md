@@ -1,12 +1,8 @@
-#How to: Use CCLog to Debug#
+#How to: Use CCLog to Debug project based on precompiled library#
 
 **Symptoms**
 
-No log output of projects based on Framework . 
-
-**Cause**
-
-Cocos has a Debug version for debugging and a Release version for distribution.  Debug version provides log output while no log output from precompiled libraries of Release version.
+No log output of projects based on precompiled library . 
 
 **Resolution**
 

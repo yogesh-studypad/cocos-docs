@@ -1,7 +1,7 @@
 #基本工作流
 
 
-####&emsp;&emsp;[创建新游戏](../NewProject/zh.md)
+####&emsp;&emsp;[认识Cocos](../NewProject/zh.md)
 
 ####&emsp;&emsp;[制作游戏场景和UI](../SceneAndLayer/zh.md)
 

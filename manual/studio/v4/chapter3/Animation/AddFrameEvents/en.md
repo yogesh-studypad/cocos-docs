@@ -2,7 +2,7 @@
 
 Frame event property allows to customize each frame of a widget for back-end calls. 
 
-1 Select the "AutoRecord Frame" checkbox. 
+1 Select the "Begin to record frame" checkbox. 
 
 &emsp;&emsp;&emsp;![image](res_en/image001.png)
 

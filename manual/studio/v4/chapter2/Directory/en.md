@@ -1,6 +1,6 @@
 #General Project Workflow
 
-####&emsp;&emsp;[Create a Game](../NewProject/en.md)
+####&emsp;&emsp;[Cocos launcher](../NewProject/en.md)
 
 ####&emsp;&emsp;[Scenes and UI](../SceneAndLayer/en.md)
 

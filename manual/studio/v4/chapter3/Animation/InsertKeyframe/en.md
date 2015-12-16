@@ -18,13 +18,13 @@ There are four ways to **add keyframes**:
 
 - Click the timeline marker, and press K on the keyboard to add a key frame. 
 
-- Select "AutoRecord Frame" checkbox. 
+- Select "Begin to record frame" checkbox. 
 
 &emsp;&emsp;&emsp;![image](res_en/image006.png)
 
-Cocos Studio provides an effective method to record key frames: AutoRecord Frame. When you select "AutoRecord Frame"check box, and move timeline marker to a position, you can adjust its values for a perfect effects. All the widgets and their changed properties will be saved and recorded automatically. 
+Cocos Studio provides an effective method to record key frames: Begin to record frame. When you select "AutoRecord Frame"check box, and move timeline marker to a position, you can adjust its values for a perfect effects. All the widgets and their changed properties will be saved and recorded automatically. 
 
-***Note** Remove the timeline marker to a desired position, and then customize widgets' settings.*
+**Note:** Remove the timeline marker to a desired position, and then customize widgets' settings.
 
 **Edit keyframes**
 
