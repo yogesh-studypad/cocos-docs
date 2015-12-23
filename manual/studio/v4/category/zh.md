@@ -1,11 +1,10 @@
-# Cocos Studio帮助文档
+# Cocos 帮助文档
 * [概述](../chapter1/Overview/zh.md)
 	* [Cocos简介](../chapter1/Overview/zh.md)
 	* [认识Cocos](../chapter2/NewProject/zh.md)
 	* [环境配置](../chapter1/EnvironmentConfiguration/zh.md)
     * [获取支持](../chapter1/Support/zh.md)
 * [Cocos2d-x用户向导](../chapter0/cocos2d-x/zh.md)
-* [Cocos2d-x API](../chapter0/cocos2d-x-api/zh.md)
 * [Cocos Studio用户向导](../chapter0/cocosstudio/zh.md)
   * [基本工作流](../chapter2/Directory/zh.md)
 	  * [制作游戏场景和UI](../chapter2/SceneAndLayer/zh.md)
