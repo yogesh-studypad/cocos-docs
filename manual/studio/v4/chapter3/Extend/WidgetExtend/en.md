@@ -159,7 +159,7 @@ Selecting it in the rendering section, we can see that its type is Sprite.
 
 - How to call third party's Lua codes library from custom widget's Lua codes library?  
 
-    Solution: Currently Lua runtime of Cocos Studio only supports interfaces exported from Cocos 2d-x. If other interfaces need to be loaded, please load it in Lua codes. For example, if you need lua interface provided by Quick-cocos2d-x, load the  required library in the codes (For more information, see generated code of Code IDE). 
+    Solution: Currently Lua runtime of Cocos Studio only supports interfaces exported from Cocos 2d-x. If other interfaces need to be loaded, please load it in Lua codes. For example, if you need lua interface provided by Quick-cocos2d-x, load the  required library in the codes. 
 
 - A custom widget should be defined by one Lua file. A Lua file should define only one custom widget. Cocos Studio will load all the Lua files in LuaScript directory, and each Lua file is represented by a widget's icon in Objects' panel. Name of the icon is same with files' names. 
 

@@ -1,7 +1,7 @@
 # Cocos 幫助文檔
 * [概述](../chapter1/Overview/tw.md)
     * [Cocos簡介](../chapter1/Overview/tw.md)
-    * [認識Cocos](../chapter2/NewProject/tw.md)
+    * [認識cocos](../chapter2/NewProject/tw.md)
     * [環境配置](../chapter1/EnvironmentConfiguration/tw.md)
     * [獲取支持](../chapter1/Support/tw.md)
 * [Cocos2d-x用户向导](../chapter0/cocos2d-x/tw.md)
