@@ -189,7 +189,7 @@ return container
 
 &emsp;&emsp;6) 如何在自訂控制項的Lua腳本中調用協力廠商Lua代碼庫? 
 
-&emsp;&emsp;目前Cocos Studio的Lua運行時只支持從Cocos 2d-x匯出的介面，預設沒有載入其它介面。如果需要，請在Lua 代碼中自行載入。例如，如果需要用到Quick-cocos2d-x提供的Lua擴展介面，請在代碼中自行載入相關的庫（這部分可以參考 Code IDE的生成代碼，即在需要用到Lua擴展的介面的時候require相應的Lua模組）。
+&emsp;&emsp;目前Cocos Studio的Lua運行時只支持從Cocos 2d-x匯出的介面，預設沒有載入其它介面。如果需要，請在Lua 代碼中自行載入。例如，如果需要用到Quick-cocos2d-x提供的Lua擴展介面，請在代碼中自行載入相關的庫。
 
 &emsp;&emsp;7) 只寫Lua代碼的話，可以自訂渲染，對相應的控制項定制渲染。如果需要更深入的控制項（例如需要擴展屬性區），需要寫配對的C#代碼。
 

@@ -189,7 +189,7 @@ return container
 
 &emsp;&emsp;6) 如何在自定义控件的Lua脚本中调用第三方Lua代码库? 
 
-&emsp;&emsp;目前Cocos Studio的Lua运行时只支持从Cocos 2d-x导出的接口，默认没有加载其它接口。如果需要，请在Lua 代码中自行加载。例如，如果需要用到Quick-cocos2d-x提供的Lua扩展接口，请在代码中自行加载相关的库（这部分可以参考 Code IDE的生成代码，即在需要用到Lua扩展的接口的时候require相应的Lua模块）。
+&emsp;&emsp;目前Cocos Studio的Lua运行时只支持从Cocos 2d-x导出的接口，默认没有加载其它接口。如果需要，请在Lua 代码中自行加载。例如，如果需要用到Quick-cocos2d-x提供的Lua扩展接口，请在代码中自行加载相关的库。
 
 &emsp;&emsp;7) 只写Lua代码的话，可以自定义渲染，对相应的控件定制渲染。如果需要更深入的控件（例如需要扩展属性区），需要写配对的C#代码。
 

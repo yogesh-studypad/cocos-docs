@@ -52,8 +52,6 @@
 
 ![image](res/image006.png) 
 
-![image](res/image007.png) 
-
 
 	Ps：注意路径不要有中文和空格等特殊字符
 
