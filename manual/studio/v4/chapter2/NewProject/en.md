@@ -61,10 +61,10 @@ Click **Open** to open the selected project in Visual Studio, Android Studio or 
 
 ![image](res_en/image0010.png)
 
-### 5. Settings ###
+### 5. Preferences ###
 
 - Click the triangle button at the top right of the screen.
-- Choose **Settings**.
+- Choose **Preferences**.
 - Specify preferences for cocos launcher.
 
 ![image](res_en/image0011.png)
