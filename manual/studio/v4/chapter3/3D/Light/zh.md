@@ -1,6 +1,6 @@
 # 3D 灯光简介 #
 
-Cocos 提供了四种光源类型：平行光（Directional），点光源（Point），聚光灯（Spot）和环境光（Ambient）。
+Cocos Studio提供了四种光源类型：平行光（Directional），点光源（Point），聚光灯（Spot）和环境光（Ambient）。
 
 平行光：提供平行的照明范围，通常用于模拟方向光。
 

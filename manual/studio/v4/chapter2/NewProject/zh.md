@@ -66,7 +66,7 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**图5. 打开文件** 
 
 ### 6.设置 ###
-在启动器面板，点击右上角的三角图标，弹出3个选项，点击“设置”，您将看到如图6所示界面。其中包括下载目录，发布多渠道目录，勾选是否开机启动cocos和启动器的显示语言，有简体中文，繁体中文和英文可供选择，如图6：
+在启动器面板，点击右上角的三角图标，弹出3个选项，点击“偏好设置”，您将看到如图6所示界面。其中包括下载目录，发布多渠道目录，勾选是否开机启动cocos和启动器的显示语言，有简体中文，繁体中文和英文可供选择，如图6：
 
 ![image](res/image0011.png)
 

@@ -58,7 +58,7 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖4. 打開文件** 
 
 ### 5.設置 ###
-在啟動器面板，點擊右上角的三角圖示，彈出3個選項，點擊“設置”，您將看到如圖6所示介面。可設置是否開機啟動，設置cocos和啟動器的顯示語言。目前有簡體中文，繁體中文和英文可供選擇，如圖5：
+在啟動器面板，點擊右上角的三角圖示，彈出3個選項，點擊“偏好設置”，您將看到如圖6所示介面。可設置是否開機啟動，設置cocos和啟動器的顯示語言。目前有簡體中文，繁體中文和英文可供選擇，如圖5：
 
 ![image](res_tw/image0011.png)
 
