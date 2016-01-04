@@ -1,7 +1,5 @@
 #General Project Workflow
 
-####&emsp;&emsp;[Cocos launcher](../NewProject/en.md)
-
 ####&emsp;&emsp;[Scenes and UI](../SceneAndLayer/en.md)
 
 ####&emsp;&emsp;[SpriteSheet](../SpriteSheet/en.md) 
