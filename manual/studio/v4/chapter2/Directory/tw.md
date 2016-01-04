@@ -1,8 +1,5 @@
 #基本工作流
 
-
-####&emsp;&emsp;[認識Cocos](../NewProject/tw.md)
-
 ####&emsp;&emsp;[製作遊戲場景和UI](../SceneAndLayer/tw.md)
 
 ####&emsp;&emsp;[製作合圖](../SpriteSheet/tw.md) 
