@@ -521,17 +521,17 @@ DataModel的其它细节请参见DataModel和ViewModel一节。
 
 &emsp;&emsp;给工程添加AddinConfig.cs文件，内容如下：
 
-    // "2.2" is version of the this Addin. Addin should match its dependency with the same version.
-    [assembly: Addin("Addins.Sample", "2.2", Namespace = Option.AddinNamespace)]
+    // "3.10" is version of the this Addin. Addin should match its dependency with the same version.
+    [assembly: Addin("Addins.Sample", "3.10", Namespace = Option.AddinNamespace)]
     
-    // "2.2" is the version of Addin dependency.
-    [assembly: AddinDependency("CocoStudio.Core", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Projects", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model.Lua", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model3D", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "2.2")]
-    [assembly: AddinDependency("Addins.LuaExtend", "2.2")]
+    // "3.10" is the version of Addin dependency.
+    [assembly: AddinDependency("CocoStudio.Core", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Projects", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model.Lua", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model3D", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "3.10")]
+    [assembly: AddinDependency("Addins.LuaExtend", "3.10")]
 
 
 &emsp;&emsp;分析：
