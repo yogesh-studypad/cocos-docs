@@ -222,7 +222,13 @@ Add a method to deal with text contents and font size in Lua scripts. In LuaScri
     		label:retain()
     		return label
     	end
-    
+
+    	-- make sure ccslog is not empty
+    	local ccslog = ccslog
+    	if not ccslog then
+    	    ccslog = function(...) end
+    	end
+
     	local container = {}
     
     	function container.CreateCustomNode()
@@ -269,6 +275,8 @@ We have discussed how to create TextSprite in basic level section. Now let's see
 - GetLabelFont/SetLabelFont: to get/ set font size on Sprite. 
 
 Some operations are implemented by Lua interface exported from Cocos 2d-x.  
+
+In Cocos Studio version 3.10, add a `ccslog` function for print message to Cocos Studio output area。The usage of `ccslog` is the same as `print` in lua, you can find a sample in sprite0.lua code in the sample project of Cocos Studio 3.10。
 
 Scripts of LuaCustomObject: 
 

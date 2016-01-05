@@ -256,6 +256,12 @@ return container
         return label
     end
 
+	-- make sure ccslog is not empty
+	local ccslog = ccslog
+	if not ccslog then
+		ccslog = function(...) end
+	end
+
     -- 新建一個table，避免全域變數污染。用以包括腳本中所定義的所有的全域方法。
     local container = {}
     -- 新建根節點 Node，目前這個方法的名字為固定的，必須為CreateCustomNode。
@@ -309,6 +315,8 @@ return container
 新建精靈部分在上一個示例中已經描述。這裡看下它新添加的兩對Set/Get方法：
 GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelFont/SetLabelFont（獲取/設置精靈上文本字體的大小）。注意這裡的方法名，在下面的C#代碼中會用到。
 這裡可以看到，在方法內部，是通過Cocos 2d-x匯出的Lua介面完成相應的操作。 
+
+&emsp;&emsp;在 Cocos Studio 3.10 版本中，新添加了 `ccslog` 用於向 Cocos Studio 的輸出區輸出資訊。`ccslog` 的使用方法同 lua 中的 `print` ，在 3.10 版本的示例工程 sprite0.lua 代碼中可以看到它的使用。
 
 &emsp;&emsp;為了在Cocos Studio中可以生成它，使它可以展示在渲染區，為它添加ViewModel。如下所示：
 
