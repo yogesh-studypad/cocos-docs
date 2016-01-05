@@ -326,7 +326,7 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
 
     [DisplayName("Sprite Extend")]
     [ModelExtension(2)]
-    [ControlGroup("Control_Custom", 2)]
+    [ControlGroup(ViewObjectCategory.CustomGroupKey, 2)]
     [EngineClassName("LuaCustom")]
     public class LuaCustomObject : SpriteObject
     {
@@ -334,22 +334,20 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
             : base(GetScriptFileData())
         {
             if (System.IO.File.Exists(luaFile))
-                luaValueConverter = new LuaValueConverter(new CSLuaNode(luaFile, innerNode));
+                luaValueConverter = new LuaValueConverter(luaFile, this);
             else
                 throw new System.IO.FileNotFoundException(luaFile + " not found!");
         }
 
         private LuaValueConverter luaValueConverter;
 
-        // make sure luaFile exists, if not, please copy it from the output folder to target folder.
-        // it will be in folder Output path/lua/LuaScript, or you can just copy it from source.
-        private static string luaFile = System.IO.Path.Combine(Option.LuaScriptFolder, "sprite0.lua");
+        private static string luaFile = GetLuaFilePath();
 
         private static ScriptFileData GetScriptFileData()
         {
             if (System.IO.File.Exists(luaFile))
             {
-                CSCocosHelp.AddSearchPath(Option.LuaScriptFolder);
+                CSCocosHelp.AddSearchPath(Path.GetDirectoryName(luaFile));
                 return new ScriptFileData(luaFile, ScriptType.Lua);
             }
 
@@ -357,12 +355,47 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
             return null;
         }
 
-        protected internal override string InitNamePrefix()
+        /// <summary>
+        /// get lua file path according to current running assembly.
+        /// lua script file should in a folder "LuaScript" which is in current running assembly parent folder.
+        /// e.g. current running assembly is in "Addins", lua file path is "Addins/LuaScript/sprite0.lua"
+        ///
+        ///      Addins
+        ///      ├─Addins.Sample.dll (current running assembly)
+        ///      └─LuaScript
+        ///          ├─ sprite0.lua
+        ///
+        /// you can modify "LuaScript" or lua file name "sprite0.lua" to other name as you like.
+        /// NOTICE: only Addins/LuaScript folder will be copied to target folder. if lua script is in other
+        /// folder, user should write extra codes to copy it to target folder, e.g. use CustomSerializer to do the job.
+        /// </summary>
+        /// <returns>lua file path</returns>
+        private static string GetLuaFilePath()
+        {
+            string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string luaScriptFolder = Path.Combine(assemblyFolder, "LuaScript");
+
+            // make sure luaFile exists, if not, please copy it from source folder to target.
+            // you can find the lua script file in "../LuaScript/" folder as "."(current folder) is the one
+            // who contains current file LuaCustomObject.cs.(here "." is "Addins.Sample/Lua/ViewModel")
+            //  
+            //  ├─LuaScript
+            //  │   ├─ sprite0.lua
+            //  │
+            //  └─ViewModel
+            //      ├─ LuaCustomObject.cs (current file)
+            //
+            string luaFilePath = Path.Combine(luaScriptFolder, "sprite0.lua");
+
+            return luaFilePath;
+        }
+
+        protected override string GetNamePrefix()
         {
             return "LuaSprite_";
         }
 
-        [UndoPropertyAttribute]
+        [UndoProperty]
         [DefaultValue("abc")]
         [DisplayName("Label Text")]
         [Category("Group_Feature")]
@@ -381,7 +414,7 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
             }
         }
 
-        [UndoPropertyAttribute]
+        [UndoProperty]
         [DisplayName("Label Font")]
         [Category("Group_Feature")]
         [Description("Int value description")]
@@ -412,13 +445,11 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
                 return;
             nObject.LabelText = this.LabelText;
             nObject.LabelFont = this.LabelFont;
-            nObject.LabelVisible = this.LabelVisible;
-            nObject.MixedColor = this.MixedColor;
-            nObject.TextureResource = this.TextureResource;
         }
 
         #endregion methods for clone
     }
+
 &emsp;&emsp;分析：
 由於該自訂控制項擴展的是精靈，所以，它繼承自SpriteObject。
 DisplayName特性：在Cocos Studio控制項欄裡顯示的自訂控制項的名字，這裡顯示為"Sprite Extend"。
