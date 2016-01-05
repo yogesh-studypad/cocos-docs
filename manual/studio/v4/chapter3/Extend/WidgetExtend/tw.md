@@ -158,7 +158,7 @@ return container
 &emsp;&emsp;1)在自訂控制項欄無法看到所擴展的控制項：代碼檔需要放置在Cocos Studio外掛程式目錄下LuaScript目錄內，同時目錄中有圖片temp.png。寫好的Lua代碼檔必須放置在這個目錄內，否則的話，Cocos Studio啟動時將找不到該Lua檔從而無法載入它。（例如，為了運行上面的示例，可以把示例工程位置中的 LuaScript 目錄拷貝到Cocos Studio外掛程式目錄下，啟動Cocos Studio以觀察效果。）。
 如果要從另外的地方載入Lua檔，則需要修改C#代碼，這部分請參考進階篇。
 
-&emsp;&emsp;2)在Lua代碼中需要用到的資源也應該放到這個目錄中去（例如上面示例中的temp.png圖片也是放置在 LuaScript目錄內），以相對路徑載入它LuaScript目錄是載入 Lua 代碼檔時的工作目錄。在發佈的時候，LuaScript目錄會被整個拷貝到Cocos Studio的工程發佈目錄。
+&emsp;&emsp;2)在Lua代碼中需要用到的資源也應該放到這個目錄中去（例如上面示例中的temp.png圖片也是放置在 LuaScript目錄內），以相對路徑載入它LuaScript目錄是載入 Lua 代碼檔時的工作目錄。在發佈的時候，LuaScript目錄會被整個拷貝到Cocos Studio的工程發佈目錄。LuaScript 目錄只會被拷貝一次，如果工程發佈目錄裡已經存在同名的目錄，將不再拷貝。
 
 &emsp;&emsp;3)一個Lua代碼檔是一個完整的自訂模組。Lua代碼最後會返回一個Lua Table。
 

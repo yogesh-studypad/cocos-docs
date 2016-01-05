@@ -158,7 +158,7 @@ return container
 &emsp;&emsp;1)在自定义控件栏无法看到所扩展的控件：代码文件需要放置在Cocos Studio插件目录下LuaScript目录内，同时目录中有图片temp.png。写好的Lua代码文件必须放置在这个目录内，否则的话，Cocos Studio启动时将找不到该Lua文件从而无法加载它。（例如，为了运行上面的示例，可以把示例工程位置中的 LuaScript 目录拷贝到Cocos Studio插件目录下，启动Cocos Studio以观察效果。）。
 如果要从另外的地方加载Lua文件，则需要修改C#代码，这部分请参考进阶篇。
 
-&emsp;&emsp;2)在Lua代码中需要用到的资源也应该放到这个目录中去（例如上面示例中的temp.png图片也是放置在 LuaScript目录内），以相对路径加载它LuaScript目录是加载 Lua 代码文件时的工作目录。在发布的时候，LuaScript目录会被整个拷贝到Cocos Studio的工程发布目录。
+&emsp;&emsp;2)在Lua代码中需要用到的资源也应该放到这个目录中去（例如上面示例中的temp.png图片也是放置在 LuaScript目录内），以相对路径加载它LuaScript目录是加载 Lua 代码文件时的工作目录。在发布的时候，LuaScript目录会被整个拷贝到Cocos Studio的工程发布目录。LuaScript 目录只会被拷贝一次，如果工程发布目录里已经存在同名的目录，将不再拷贝。
 
 &emsp;&emsp;3)一个Lua代码文件是一个完整的自定义模块。Lua代码最后会返回一个Lua Table。
 
