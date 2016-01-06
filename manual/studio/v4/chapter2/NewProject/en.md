@@ -35,7 +35,7 @@ Follow the steps below to create a project.
 
 **Editor**：whether or not to create a project of cocos, the official editor of cocos2d-x. 
 
-**SDK**：select SDKs to be integrated with. 
+**SDKs**：select SDKs to be integrated with. 
 
 ### 2. Recent Projects ###
 
