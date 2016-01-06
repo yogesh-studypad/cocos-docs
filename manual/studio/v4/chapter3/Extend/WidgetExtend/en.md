@@ -128,7 +128,7 @@ Selecting it in the rendering section, we can see that its type is Sprite.
 
     Solution: The codes and a picture named temp.png should be in the LuaScript folder under plugin directory. Otherwise, this Lua file cannot be loaded when Cocos Studio starts. 
     
-    Resources used in Lua scripts should also be put in LuaScript directory, and be loaded in relative path. When publish a project, LuaScript directory will be copied to publish directory. 
+    Resources used in Lua scripts should also be put in LuaScript directory, and be loaded in relative path. When publish a project, LuaScript directory will be copied to publish directory. LuaScript directory is just copied once, if there is a directory with the same name in publish directory, LuaScript directory will not be copied.
 
      A Lua file is a complete Lua template. Loading the template will return a Lua Table
 
@@ -222,7 +222,13 @@ Add a method to deal with text contents and font size in Lua scripts. In LuaScri
     		label:retain()
     		return label
     	end
-    
+
+    	-- make sure ccslog is not empty
+    	local ccslog = ccslog
+    	if not ccslog then
+    	    ccslog = function(...) end
+    	end
+
     	local container = {}
     
     	function container.CreateCustomNode()
@@ -270,11 +276,13 @@ We have discussed how to create TextSprite in basic level section. Now let's see
 
 Some operations are implemented by Lua interface exported from Cocos 2d-x.  
 
+In Cocos Studio version 3.10, add a `ccslog` function for print message to Cocos Studio output area。The usage of `ccslog` is the same as `print` in lua, you can find a sample in sprite0.lua code in the sample project of Cocos Studio 3.10。
+
 Scripts of LuaCustomObject: 
 
     [DisplayName("Sprite Extend")]
     [ModelExtension(2)]
-    [ControlGroup("Control_Custom", 2)]
+    [ControlGroup(ViewObjectCategory.CustomGroupKey, 2)]
     [EngineClassName("LuaCustom")]
     public class LuaCustomObject : SpriteObject
     {
@@ -282,22 +290,20 @@ Scripts of LuaCustomObject:
             : base(GetScriptFileData())
         {
             if (System.IO.File.Exists(luaFile))
-                luaValueConverter = new LuaValueConverter(new CSLuaNode(luaFile, innerNode));
+                luaValueConverter = new LuaValueConverter(luaFile, this);
             else
                 throw new System.IO.FileNotFoundException(luaFile + " not found!");
         }
 
         private LuaValueConverter luaValueConverter;
 
-        // make sure luaFile exists, if not, please copy it from the output folder to target folder.
-        // it will be in folder Output path/lua/LuaScript, or you can just copy it from source.
-        private static string luaFile = System.IO.Path.Combine(Option.LuaScriptFolder, "sprite0.lua");
+        private static string luaFile = GetLuaFilePath();
 
         private static ScriptFileData GetScriptFileData()
         {
             if (System.IO.File.Exists(luaFile))
             {
-                CSCocosHelp.AddSearchPath(Option.LuaScriptFolder);
+                CSCocosHelp.AddSearchPath(Path.GetDirectoryName(luaFile));
                 return new ScriptFileData(luaFile, ScriptType.Lua);
             }
 
@@ -305,12 +311,47 @@ Scripts of LuaCustomObject:
             return null;
         }
 
-        protected internal override string InitNamePrefix()
+        /// <summary>
+        /// get lua file path according to current running assembly.
+        /// lua script file should in a folder "LuaScript" which is in current running assembly parent folder.
+        /// e.g. current running assembly is in "Addins", lua file path is "Addins/LuaScript/sprite0.lua"
+        ///
+        ///      Addins
+        ///      ├─Addins.Sample.dll (current running assembly)
+        ///      └─LuaScript
+        ///          ├─ sprite0.lua
+        ///
+        /// you can modify "LuaScript" or lua file name "sprite0.lua" to other name as you like.
+        /// NOTICE: only Addins/LuaScript folder will be copied to target folder. if lua script is in other
+        /// folder, user should write extra codes to copy it to target folder, e.g. use CustomSerializer to do the job.
+        /// </summary>
+        /// <returns>lua file path</returns>
+        private static string GetLuaFilePath()
+        {
+            string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string luaScriptFolder = Path.Combine(assemblyFolder, "LuaScript");
+
+            // make sure luaFile exists, if not, please copy it from source folder to target.
+            // you can find the lua script file in "../LuaScript/" folder as "."(current folder) is the one
+            // who contains current file LuaCustomObject.cs.(here "." is "Addins.Sample/Lua/ViewModel")
+            //  
+            //  ├─LuaScript
+            //  │   ├─ sprite0.lua
+            //  │
+            //  └─ViewModel
+            //      ├─ LuaCustomObject.cs (current file)
+            //
+            string luaFilePath = Path.Combine(luaScriptFolder, "sprite0.lua");
+
+            return luaFilePath;
+        }
+
+        protected override string GetNamePrefix()
         {
             return "LuaSprite_";
         }
 
-        [UndoPropertyAttribute]
+        [UndoProperty]
         [DefaultValue("abc")]
         [DisplayName("Label Text")]
         [Category("Group_Feature")]
@@ -329,7 +370,7 @@ Scripts of LuaCustomObject:
             }
         }
 
-        [UndoPropertyAttribute]
+        [UndoProperty]
         [DisplayName("Label Font")]
         [Category("Group_Feature")]
         [Description("Int value description")]
@@ -360,9 +401,6 @@ Scripts of LuaCustomObject:
                 return;
             nObject.LabelText = this.LabelText;
             nObject.LabelFont = this.LabelFont;
-            nObject.LabelVisible = this.LabelVisible;
-            nObject.MixedColor = this.MixedColor;
-            nObject.TextureResource = this.TextureResource;
         }
 
         #endregion methods for clone
@@ -474,17 +512,17 @@ Since the convention Cocos Studio plug- scheme used, the need to generate an ass
 
 Add AddinConfig.cs to project: 
 
-     // "2.2" is version of the this Addin. Addin should match its dependency with the same version.
-    [assembly: Addin("Addins.Sample", "2.2", Namespace = Option.AddinNamespace)]
+     // "3.10" is version of the this Addin. Addin should match its dependency with the same version.
+    [assembly: Addin("Addins.Sample", "3.10", Namespace = Option.AddinNamespace)]
     
-    // "2.2" is the version of Addin dependency.
-    [assembly: AddinDependency("CocoStudio.Core", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Projects", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model.Lua", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model3D", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "2.2")]
-    [assembly: AddinDependency("Addins.LuaExtend", "2.2")]
+    // "3.10" is the version of Addin dependency.
+    [assembly: AddinDependency("CocoStudio.Core", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Projects", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model.Lua", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model3D", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "3.10")]
+    [assembly: AddinDependency("Addins.LuaExtend", "3.10")]
 
 **Analysis**
 

@@ -158,7 +158,7 @@ return container
 &emsp;&emsp;1)在自訂控制項欄無法看到所擴展的控制項：代碼檔需要放置在Cocos Studio外掛程式目錄下LuaScript目錄內，同時目錄中有圖片temp.png。寫好的Lua代碼檔必須放置在這個目錄內，否則的話，Cocos Studio啟動時將找不到該Lua檔從而無法載入它。（例如，為了運行上面的示例，可以把示例工程位置中的 LuaScript 目錄拷貝到Cocos Studio外掛程式目錄下，啟動Cocos Studio以觀察效果。）。
 如果要從另外的地方載入Lua檔，則需要修改C#代碼，這部分請參考進階篇。
 
-&emsp;&emsp;2)在Lua代碼中需要用到的資源也應該放到這個目錄中去（例如上面示例中的temp.png圖片也是放置在 LuaScript目錄內），以相對路徑載入它LuaScript目錄是載入 Lua 代碼檔時的工作目錄。在發佈的時候，LuaScript目錄會被整個拷貝到Cocos Studio的工程發佈目錄。
+&emsp;&emsp;2)在Lua代碼中需要用到的資源也應該放到這個目錄中去（例如上面示例中的temp.png圖片也是放置在 LuaScript目錄內），以相對路徑載入它LuaScript目錄是載入 Lua 代碼檔時的工作目錄。在發佈的時候，LuaScript目錄會被整個拷貝到Cocos Studio的工程發佈目錄。LuaScript 目錄只會被拷貝一次，如果工程發佈目錄裡已經存在同名的目錄，將不再拷貝。
 
 &emsp;&emsp;3)一個Lua代碼檔是一個完整的自訂模組。Lua代碼最後會返回一個Lua Table。
 
@@ -256,6 +256,12 @@ return container
         return label
     end
 
+	-- make sure ccslog is not empty
+	local ccslog = ccslog
+	if not ccslog then
+		ccslog = function(...) end
+	end
+
     -- 新建一個table，避免全域變數污染。用以包括腳本中所定義的所有的全域方法。
     local container = {}
     -- 新建根節點 Node，目前這個方法的名字為固定的，必須為CreateCustomNode。
@@ -310,6 +316,8 @@ return container
 GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelFont/SetLabelFont（獲取/設置精靈上文本字體的大小）。注意這裡的方法名，在下面的C#代碼中會用到。
 這裡可以看到，在方法內部，是通過Cocos 2d-x匯出的Lua介面完成相應的操作。 
 
+&emsp;&emsp;在 Cocos Studio 3.10 版本中，新添加了 `ccslog` 用於向 Cocos Studio 的輸出區輸出資訊。`ccslog` 的使用方法同 lua 中的 `print` ，在 3.10 版本的示例工程 sprite0.lua 代碼中可以看到它的使用。
+
 &emsp;&emsp;為了在Cocos Studio中可以生成它，使它可以展示在渲染區，為它添加ViewModel。如下所示：
 
 &emsp;&emsp;視圖模型
@@ -318,7 +326,7 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
 
     [DisplayName("Sprite Extend")]
     [ModelExtension(2)]
-    [ControlGroup("Control_Custom", 2)]
+    [ControlGroup(ViewObjectCategory.CustomGroupKey, 2)]
     [EngineClassName("LuaCustom")]
     public class LuaCustomObject : SpriteObject
     {
@@ -326,22 +334,20 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
             : base(GetScriptFileData())
         {
             if (System.IO.File.Exists(luaFile))
-                luaValueConverter = new LuaValueConverter(new CSLuaNode(luaFile, innerNode));
+                luaValueConverter = new LuaValueConverter(luaFile, this);
             else
                 throw new System.IO.FileNotFoundException(luaFile + " not found!");
         }
 
         private LuaValueConverter luaValueConverter;
 
-        // make sure luaFile exists, if not, please copy it from the output folder to target folder.
-        // it will be in folder Output path/lua/LuaScript, or you can just copy it from source.
-        private static string luaFile = System.IO.Path.Combine(Option.LuaScriptFolder, "sprite0.lua");
+        private static string luaFile = GetLuaFilePath();
 
         private static ScriptFileData GetScriptFileData()
         {
             if (System.IO.File.Exists(luaFile))
             {
-                CSCocosHelp.AddSearchPath(Option.LuaScriptFolder);
+                CSCocosHelp.AddSearchPath(Path.GetDirectoryName(luaFile));
                 return new ScriptFileData(luaFile, ScriptType.Lua);
             }
 
@@ -349,12 +355,47 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
             return null;
         }
 
-        protected internal override string InitNamePrefix()
+        /// <summary>
+        /// get lua file path according to current running assembly.
+        /// lua script file should in a folder "LuaScript" which is in current running assembly parent folder.
+        /// e.g. current running assembly is in "Addins", lua file path is "Addins/LuaScript/sprite0.lua"
+        ///
+        ///      Addins
+        ///      ├─Addins.Sample.dll (current running assembly)
+        ///      └─LuaScript
+        ///          ├─ sprite0.lua
+        ///
+        /// you can modify "LuaScript" or lua file name "sprite0.lua" to other name as you like.
+        /// NOTICE: only Addins/LuaScript folder will be copied to target folder. if lua script is in other
+        /// folder, user should write extra codes to copy it to target folder, e.g. use CustomSerializer to do the job.
+        /// </summary>
+        /// <returns>lua file path</returns>
+        private static string GetLuaFilePath()
+        {
+            string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string luaScriptFolder = Path.Combine(assemblyFolder, "LuaScript");
+
+            // make sure luaFile exists, if not, please copy it from source folder to target.
+            // you can find the lua script file in "../LuaScript/" folder as "."(current folder) is the one
+            // who contains current file LuaCustomObject.cs.(here "." is "Addins.Sample/Lua/ViewModel")
+            //  
+            //  ├─LuaScript
+            //  │   ├─ sprite0.lua
+            //  │
+            //  └─ViewModel
+            //      ├─ LuaCustomObject.cs (current file)
+            //
+            string luaFilePath = Path.Combine(luaScriptFolder, "sprite0.lua");
+
+            return luaFilePath;
+        }
+
+        protected override string GetNamePrefix()
         {
             return "LuaSprite_";
         }
 
-        [UndoPropertyAttribute]
+        [UndoProperty]
         [DefaultValue("abc")]
         [DisplayName("Label Text")]
         [Category("Group_Feature")]
@@ -373,7 +414,7 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
             }
         }
 
-        [UndoPropertyAttribute]
+        [UndoProperty]
         [DisplayName("Label Font")]
         [Category("Group_Feature")]
         [Description("Int value description")]
@@ -404,13 +445,11 @@ GetLabelText/SetLabelText（獲取/設置精靈上文本的內容），GetLabelF
                 return;
             nObject.LabelText = this.LabelText;
             nObject.LabelFont = this.LabelFont;
-            nObject.LabelVisible = this.LabelVisible;
-            nObject.MixedColor = this.MixedColor;
-            nObject.TextureResource = this.TextureResource;
         }
 
         #endregion methods for clone
     }
+
 &emsp;&emsp;分析：
 由於該自訂控制項擴展的是精靈，所以，它繼承自SpriteObject。
 DisplayName特性：在Cocos Studio控制項欄裡顯示的自訂控制項的名字，這裡顯示為"Sprite Extend"。
@@ -521,17 +560,17 @@ DataModel的其它細節請參見DataModel和ViewModel一節。
 
 &emsp;&emsp;給工程添加AddinConfig.cs檔，內容如下：
 
-    // "2.2" is version of the this Addin. Addin should match its dependency with the same version.
-    [assembly: Addin("Addins.Sample", "2.2", Namespace = Option.AddinNamespace)]
+    // "3.10" is version of the this Addin. Addin should match its dependency with the same version.
+    [assembly: Addin("Addins.Sample", "3.10", Namespace = Option.AddinNamespace)]
     
-    // "2.2" is the version of Addin dependency.
-    [assembly: AddinDependency("CocoStudio.Core", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Projects", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model.Lua", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model3D", "2.2")]
-    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "2.2")]
-    [assembly: AddinDependency("Addins.LuaExtend", "2.2")]
+    // "3.10" is the version of Addin dependency.
+    [assembly: AddinDependency("CocoStudio.Core", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Projects", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model.Lua", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model3D", "3.10")]
+    [assembly: AddinDependency("CocoStudio.Model3D.Lua", "3.10")]
+    [assembly: AddinDependency("Addins.LuaExtend", "3.10")]
 
 
 &emsp;&emsp;分析：
