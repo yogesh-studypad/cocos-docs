@@ -1,6 +1,6 @@
 #Cocos launcher
 
-With Cocos launcher, you can quickly create projects, import projects and submit your games. 
+With Cocos launcher, you can quickly create projects, import projects and integrate with SDKs. 
 
 ### 1. New Project ###
 
@@ -25,7 +25,7 @@ Follow the steps below to create a project.
 
 - Source Code: cocos2d-x source code. 
 
-**Project Language**：
+**Language**：
 
 - Lua：based on cocos2d-x Lua binding. It can run on Android, iOS, Windows Phone, Windows, Mac. 
 
@@ -35,13 +35,17 @@ Follow the steps below to create a project.
 
 **Editor**：whether or not to create a project of cocos, the official editor of cocos2d-x. 
 
-**SDK**：select SDKs to be integrated with. 
+**SDKs**：select SDKs to be integrated with. 
 
 ### 2. Recent Projects ###
 
 Newly created projects are added to the **Recent Projects** list. 
 
 ![image](res_en/image0002.png)
+
+right-click "Property" will open the "Edit Project" window displays the current project information as well as a secondary integrate services.
+
+![image](res_en/image0018.png)
 
 ### 3. Import Project ###
 
@@ -57,21 +61,21 @@ You can create a project by importing one available on your computer.
 
 ### 4. Open ###
 
-Click **Open** to open the selected project in Visual Studio, Android Studio or cocos. As you hover the mouse over the each of the icons, you will see a tool-tip text describing its functionality.
+Click **Open** to open the selected project in Visual Studio, Android Studio or cocos studio. As you hover the mouse over the each of the icons, you will see a tool-tip text describing its functionality.
 
 ![image](res_en/image0010.png)
 
-### 5. Preferences ###
+### 5. Preferences... ###
 
 - Click the triangle button at the top right of the screen.
-- Choose **Preferences**.
+- Choose **Preferences...**.
 - Specify preferences for cocos launcher.
 
 ![image](res_en/image0011.png)
 
 ### 6. Open Folder ###
 
-Click **Open Folder** at the right bottom of the screen to open the cocos folder, including cocos2d-x source codes and cocos launcher. 
+Click **Open Folder** at the right bottom of the screen to open the cocos folder, including cocos2d-x source codes . 
 
 ![image](res_en/image0012.png)
 
@@ -81,9 +85,7 @@ In addition to **Projects**, you can view the **Documentation** and provide **Fe
 
 ### Documentation ###
 
-Click **Documentation** on the left, you will see cocos manual and cocos2d-x API. 
-
-![image](res_en/image0013.png)
+Click **Documentation** on the left, you will see cocos2d-x manual, cocos2d-x API and cocos studio manual. 
 
 ### Feedback ###
 
