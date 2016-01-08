@@ -1,0 +1,18 @@
+{% if meta.source %}
+<div class="source-links">
+{% for filename in meta.source %}
+    <span class="label label-primary">{{ filename }}</span>
+{% endfor %}
+</div>
+{% endif %}
+
+<!-- we can put this here if we want it on all content pages, but we don't at this point -->
+<!--<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>-->
+    <!--<li><a href="#" id="tab-lua">Lua</a></li>-->
+  <!--</ul>
+</div>-->
+
+{{ content }}
