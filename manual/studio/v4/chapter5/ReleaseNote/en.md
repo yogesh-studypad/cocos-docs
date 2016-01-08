@@ -1,6 +1,28 @@
 #Release Notes#
 
-**&emsp;&emsp;What's new in version 2.3.2**
+
+##What's new in v3.10
+
+1. Provides a unified setup for both Cocos2d-x and Cocos. This allows you to stay
+  up to date with the latest Cocos2d-x releases. This includes using precompiled binaries
+  and source code, in a single place. As always the source code is available
+  from [GitHub]() but, there is no longer a `.zip` file available containing the
+  source code. 
+2. New __Cocos Launcher__ tool! __Cocos Launcher__ allows:
+  * One step to create a new project with the engine, by using precompiled libraries or source code.
+  * Easy integration with SDKBOX for 3rd party services: Facebook, IAP and many more.
+  * Developers to provide feedback and get support, directly within __Cocos Launcher__, making
+  it simple to contact the engine team for help.　　　　　
+3. UI System:
+  * Reimplemented `Scale9Sprite` to improve performance and reduce memory consumption.
+  * Changed `PageView` to derive from `ListView`. `PageView` can add any widget as a child.
+  * Added three new *overflow types* to `Label`: **CLAMP**，**SHRINK**, **RESIZE_HEIGHT**.
+  * Fixed a bug in `ClippingNode` that corrects its behavior when being set as a child.
+4. New and improved Programmers Guide! Adds JavaScript, Cocos Studio, Cocos, bug fixes and more.
+5. Improved **JavaScript Bindings**: follows [SpiderMonkey GC best practices](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/GC_Rooting_Guide) making it more robust.
+6. Added `ccslog` to output Lua project log in Cocos output section.
+
+##What's new in v2.3.2
 
 - Added skybox for 3D scenes and cameras. (Available for Cocos Framework v3.8)
 - One button configuration of development environment.
@@ -23,7 +45,7 @@
 - Fixed grammatical errors in English user interface.
 - Several bug fixes and improvements.
 
-**&emsp;&emsp;What's new in version 2.3.1**
+##What's new in v2.3.1
 
 - Added custom settings for Cocos Framework & Simulator. (Support Cocos Framework 3.7)
 - A “Publish All” option is added in project setting.
@@ -50,7 +72,7 @@
 ***Note** Please quit cocos and Cocos Studio before installing v2.3.1.* 
 
 
-**&emsp;&emsp;What's new in version 2.3.0**
+##What's new in version 2.3.0
 
 - Added support for quickly switching reference coordinates and coordinate origin after selecting multiple objects in 3D scenes.
 - Added rulers and guides in Scene, Node and Layer.
@@ -61,11 +83,11 @@
 - Fixed a bug that the Label still have an outline effect when outline width is set to zero.
 - Fixed a bug that after changing FNT and refreshing the list of resources, the effect failed to render.
 
-**&emsp;&emsp;What's new in version 2.2.9**
+##What's new in version 2.2.9
 
 - Fixed a bug that when extracting .png images from a plist file,  images with transparency will be lost.
 
-**&emsp;&emsp;What's new in version 2.2.8**
+#What's new in version 2.2.8
 
 - Added 3D world axis to adjust view. 
 - Added 4 arrow keys to move 3D scene. 
@@ -78,11 +100,11 @@
 - Eased the process of deleting projects from resource panel, remove reference or move to recycle-bin/ trash.
 - Fixed a bug that PercentWidthEnabled and PercentHeightEnabled cannot update. 
 
-**&emsp;&emsp;What's new in version 2.2.6**
+##What's new in version 2.2.6
 	
 Fixed a bug that images may lost when open a project containing multiple spritesheets.
 
-**&emsp;&emsp;What's new in version 2.2.5**
+##What's new in version 2.2.5
 									
 - One click to deploy and run App on iOS, Android, Win32, Mac and in Browser. 
 - Package JS projects to HTML5 App.
@@ -106,11 +128,11 @@ Fixed a bug that images may lost when open a project containing multiple sprites
 - Fixed a bug for the imported 1.6 UI projects, that only change the tree display but the visibility of widgets.
 - Fixed a bug that the size of ScrollView Area is limited by its content size. 		
 																		
-**&emsp;&emsp;What's new in version 2.2.1**
+##What's new in version 2.2.1
     
 - Fixed a bug of the extension used for SpriteSheet files.
 
-**&emsp;&emsp;What's new in version 2.2**
+##What's new in version 2.2
 	
 - Introduced 3D scene editor— with modules, particle effects and cameras (Based on Cocos2d-x 3.5). 
 - Added support for custom controls with Lua scripting.

@@ -1,5 +1,31 @@
 # **版本更新說明：** #
-**&emsp;&emsp;Cocos 2.3.2版本更新內容：**
+
+##Cocos 3.10版本更新內容：
+
+ &emsp;&emsp;【新增】Cocos2d-x與Cocos整合升級為Cocos引擎，一次安裝引擎編輯器全搞定。
+
+ &emsp;&emsp;【新增】Cocos引擎支援新建cocos2d-x預編譯庫和原始程式碼專案。
+                     
+ &emsp;&emsp;【新增】Cocos引擎整合協力廠商服務接入工具AnySDK，打通遊戲開發到上線全流程。
+                     
+ &emsp;&emsp;【新增】文檔中心，整合Cocos2d-x用戶嚮導，API文檔，Cocos Studio用戶嚮導。
+
+ &emsp;&emsp;【新增】商店系統，獲取豐富的遊戲開發資料以及資源更容易。 
+             
+ &emsp;&emsp;【新增】問題回饋系統，問題直通引擎組，回復快速準確。
+
+ &emsp;&emsp;【新增】Label新增三種overflow：CLAMP，SHRINK,  RESIZE_HEIGHT。
+
+ &emsp;&emsp;【新增】重構Scale9Sprite，提高性能降低記憶體佔用。
+
+ &emsp;&emsp;【新增】ListView嵌套ClippingNode顯示錯誤的問題。
+
+ &emsp;&emsp;【修改】PageView繼承ListView，PageView可以添加任何widget作為其子控制項。
+
+ &emsp;&emsp;【修改】全面優化JSB記憶體使用，增強引擎的穩定性，大幅度精簡綁定代碼以符合[Spidermonkey的GC標準](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/GC_Rooting_Guide) 。
+
+
+##Cocos 2.3.2版本更新內容：
 
  &emsp;&emsp;【新增】3D場景和攝影機支持天空盒編輯。（**Cocos Framework 3.8支持**，文檔：http://www.cocos.com/doc/）
 
@@ -41,7 +67,7 @@
 
  &emsp;&emsp;【修復】編輯器的一些bug。
 
-**&emsp;&emsp;Cocos 2.3.0版本更新內容：**
+##Cocos 2.3.0版本更新內容：
 
  &emsp;&emsp;【新增】3D場景內多個物體選中後，參考坐標軸和原點的快速切換功能。
 
@@ -61,11 +87,11 @@ Mac平臺的快速鍵為Command+Shift+A。
  &emsp;&emsp;【修復】替換fnt字體，刷新資源區，渲染區不更新的問題。
 
 
-**&emsp;&emsp;Cocos 2.2.9版本更新內容：**
+##Cocos 2.2.9版本更新內容：
 
  &emsp;&emsp;【修復】plist合圖匯出png時，合圖中含有透明屬性的圖片丟失。
 
-**&emsp;&emsp;Cocos 2.2.8版本更新內容：**
+##Cocos 2.2.8版本更新內容：
 
  &emsp;&emsp;【新增】點擊3D世界坐標軸可快速調節視圖。
 
@@ -87,11 +113,11 @@ Mac平臺的快速鍵為Command+Shift+A。
 
  &emsp;&emsp;【修復】編輯器匯出資料檔案中，PercentWidthEnabled以及PercentHeightEnabled不更新的問題。
 
-**&emsp;&emsp;Cocos 2.2.6版本更新內容：**
+##Cocos 2.2.6版本更新內容：
     
  &emsp;&emsp;【修正】打開含有較多合圖檔的專案，合圖檔中的圖片丟失。
 
-**&emsp;&emsp;Cocos 2.2.5版本更新內容：**
+##Cocos 2.2.5版本更新內容：
                                     
  &emsp;&emsp;【新增】一鍵部署並運行app在iOS、Android、win32、Mac以及流覽器平臺上。
 
@@ -137,11 +163,11 @@ Mac平臺的快速鍵為Command+Shift+A。
 
  &emsp;&emsp;【修復】ScrollView Area大小受content size限制的問題。                        
                                                                         
-**&emsp;&emsp;Cocos 2.2.1版本更新內容：**
+##Cocos 2.2.1版本更新內容：
     
  &emsp;&emsp;【修復】編輯器匯出的合圖檔會多增加.plist副檔名的問題。
 
-**&emsp;&emsp;Cocos 2.2版本更新內容：**
+##Cocos 2.2版本更新內容：
     
  &emsp;&emsp;【重磅推出】3D場景編輯——新增模型支援、粒子特效、攝像機控制項，遊戲製作功能更強大（**Cocos 2d-x 3.5支援解析**）。
 
