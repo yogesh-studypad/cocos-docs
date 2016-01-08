@@ -1,0 +1,40 @@
+site_name: Cocos2d-x Documentation
+site_url: http://cocos2d-x.org/documentation
+site_description: Cocos2d-x Documentation.
+site_author: The Cocos2d-x Team
+pages:
+- Home: 'index.md'
+- Contents:
+#    - 'Cocos': 'cocos/cocos.md'
+    - 'Programmers Guide':
+        - '1: About Cocos2d-x': 'programmers-guide/1.md'
+        - '2: Basic Concepts': 'programmers-guide/2.md'
+        - '3: Sprites': 'programmers-guide/3.md'
+        - '4: Actions': 'programmers-guide/4.md'
+        - '5: Scenes': 'programmers-guide/5.md'
+        - '6: UI': 'programmers-guide/6.md'
+        - '7: Other Node Types': 'programmers-guide/7.md'
+        - '8: Event Dispatch': 'programmers-guide/8.md'
+        - '9: 3D': 'programmers-guide/9.md'
+        - '10: Scripting': 'programmers-guide/10.md'
+        - '11: Physics': 'programmers-guide/11.md'
+        - '12: Audio': 'programmers-guide/12.md'
+        - '13: Advanced Topics': 'programmers-guide/13.md'
+        - 'A: Prerequisites': 'programmers-guide/A.md'
+        - 'B: Android (Terminal) Setup': 'programmers-guide/B.md'
+        - 'C: Android (Eclipse) Setup': 'programmers-guide/C.md'
+        - 'D: iOS Setup': 'programmers-guide/D.md'
+        - 'E: Mac OSX Setup': 'programmers-guide/E.md'
+        - 'F: Linux Setup': 'programmers-guide/F.md'
+        - 'G: Windows Setup': 'programmers-guide/G.md'
+        - 'H: Windows Phone Setup': 'programmers-guide/H.md'
+        - 'I: SDKBOX': 'programmers-guide/I.md'
+#- About: 'title.md'
+
+#theme: readable
+theme_dir: 'theme'
+copyright: Copyright &copy; 2014-2016, Chukong Technology
+use_directory_urls: false
+repo_url: https://github.com/chukong/cocos-docs
+repo_name: GitHub
+google_analytics: ['UA-3216502-3', 'Cocos2d-x.org']
