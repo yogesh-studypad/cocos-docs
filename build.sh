@@ -7,6 +7,8 @@ allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 
 
 ### Cocos
+CocosAll=('cocos')
+CocoschaptersWithFolders=('cocos')
 
 ### Programmers Guide
 PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
@@ -67,6 +69,14 @@ deployToGitHub() {
   cd ../cocos-docs
 }
 
+buildCocosDocs() {
+  for i in ${CocoschaptersWithFolders[@]}; do
+    rsync -a cocos/${i}-web docs/cocos/
+    mv docs/cocos/${i}-web docs/cocos/${i}-img
+    cp cocos/${i}.md docs/cocos/${i}.md
+  done
+}
+
 buildProgrammersGuide() {
   for i in ${PGchaptersWithFolders[@]}; do
     rsync -a programmers-guide/chapters/${i}-web docs/programmers-guide/
@@ -91,8 +101,10 @@ buildHTML() {
   mkdir -p docs
   mkdir -p print
 
+  buildCocosDocs
   buildProgrammersGuide
 
+  ## this needs to happen each time
   for i in ${misc[@]}; do
     cp ${i}.md docs/${i}.md
     cp ${i}.md print/${i}.md

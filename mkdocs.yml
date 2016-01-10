@@ -5,7 +5,7 @@ site_author: The Cocos2d-x Team
 pages:
 - Home: 'index.md'
 - Contents:
-#    - 'Cocos': 'cocos/cocos.md'
+    - 'Cocos': 'cocos/cocos.md'
     - 'Programmers Guide':
         - '1: About Cocos2d-x': 'programmers-guide/1.md'
         - '2: Basic Concepts': 'programmers-guide/2.md'
