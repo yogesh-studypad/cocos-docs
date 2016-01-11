@@ -11,6 +11,8 @@ CocosAll=('cocos')
 CocoschaptersWithFolders=('cocos')
 
 ### Programmers Guide
+PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
 PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 '12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
 PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13' 'B' 'C' 'D' 'F' 'G' 'H')
@@ -51,6 +53,7 @@ help() {
 cleanUp() {
   echo "cleaning up cruft..."
   rm -rf print/
+  rm -rf _layout.html5
 }
 
 exitScript() {
@@ -80,16 +83,16 @@ buildCocosDocs() {
 buildProgrammersGuide() {
   for i in ${PGchaptersWithFolders[@]}; do
     rsync -a programmers-guide/chapters/${i}-web docs/programmers-guide/
-    #rsync -a programmers-guide/chapters/${i}-print print/programmers-guide/
+    rsync -a programmers-guide/chapters/${i}-print print/
     mv docs/programmers-guide/${i}-web docs/programmers-guide/${i}-img
-    #mv print${i}-print print/${i}-img
+    mv print/${i}-print print/${i}-img
     cp programmers-guide/chapters/${i}.md docs/programmers-guide/${i}.md
-    #cp programmers-guide/chapters/${i}.md print/programmers-guide/${i}.md
+    cp programmers-guide/chapters/${i}.md print/${i}.md
   done
 
   for i in ${PGchaptersWithOutFolders[@]}; do
     cp programmers-guide/chapters/${i}.md docs/programmers-guide/${i}.md
-    #cp programmers-guide/chapters/${i}.md print/programmers-guide/${i}.md
+    cp programmers-guide/chapters/${i}.md print/${i}.md
   done
 }
 
@@ -118,8 +121,8 @@ buildHTML() {
   ## Now, lets copy the img folder to each chapter, we need to do this for theme
   ## path issues in the fact each directory is treated separately.
   ## We will get some errors here for chapters that dont yet exist
-  for i in ${allChapters[@]}; do
-    rsync -a theme/img site/${i}/
+  for i in ${PGallChapters[@]}; do
+    rsync -a theme/img site/programmers-guide/${i}/
   done
 }
 
@@ -128,14 +131,15 @@ buildPrint() {
   echo "building print version..."
   cp styling/solarized-light.css styling/main.css styling/style.css styling/_layout.html5 print/.
 
-  for i in "${allDocuments[@]}"; do
-    pandoc -s --template "_layout" --css "styling/solarized-light.css" -f markdown -t html5 -o print/${i}.html print/${i}.md
+  cd print/
+  for i in "${PGallDocuments[@]}"; do
+    pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o ${i}.html ${i}.md
   done
 
   ## create a PDF from the styled HTML
   echo "building ePub..."
-  cd print/
-  pandoc -S --epub-stylesheet="styling/style.css" -o "ProgrammersGuide.epub" \
+
+  pandoc -S --epub-stylesheet="style.css" -o "ProgrammersGuide.epub" \
   index.html \
   blank.html \
   1.html \
@@ -181,8 +185,6 @@ buildPrint() {
   H.html \
   blank.html \
   I.html \
-  blank.html \
-  cocos.html \
   blank.html
 
   echo "building PDF..."
@@ -208,8 +210,8 @@ main() {
 
   ## we don't need parameters to run the script so build the documentation
   buildHTML
-  #buildPrint
-  #deployToGitHub
+  buildPrint
+  deployToGitHub
   cleanUp
   exitScript
 }
