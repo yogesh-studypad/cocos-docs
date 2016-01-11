@@ -2180,10 +2180,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 .dropdown-menu>li>a {
     display: block;
-    padding: 3px 20px;
+    padding: 1px 20px;
     clear: both;
     font-weight: normal;
-    line-height: 1.428571429;
+    line-height: 0.75; /* 1.428571429;*/
     color: #555;
     white-space: nowrap;
 }
