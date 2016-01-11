@@ -33,7 +33,7 @@ pages:
 
 #theme: readable
 theme_dir: 'theme'
-copyright: Copyright &copy; 2014-2016, Chukong Technology
+copyright: Copyright (c) 2014-2016 Chukong Technologies Inc.
 use_directory_urls: false
 repo_url: https://github.com/chukong/cocos-docs
 repo_name: GitHub
