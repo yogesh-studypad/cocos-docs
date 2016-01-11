@@ -9,6 +9,6 @@ echo 'applying custom changes used only for production...'
 #cp tipuesearch.js site/js/tipuesearch/.
 
 echo "deploying site/ via rsync..."
-rsync -au site/* docops@cocos2dx:/documentation/.
+rsync -au site/* docops@cocos2dx:documentation/.
 
 echo 'deployment is done, if no errors were shown above this line...'
