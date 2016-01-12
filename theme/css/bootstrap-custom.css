@@ -401,7 +401,7 @@ dl {
     margin-bottom: 21px;
 }
 dt, dd {
-    line-height: 1.428571429;
+    line-height: 0.75; /* 1.428571429;*/
 }
 dt {
     font-weight: bold;
