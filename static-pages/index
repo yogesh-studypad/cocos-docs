@@ -1,0 +1,30 @@
+<br />
+
+<!-- the blocks below the search box -->
+
+<!-- installation -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="static-pages/installation.html">
+    <img src="static-pages/installation.png" align="middle" />
+    <h3>Installation</h3>
+    <p>Get your environment working!</p>
+  </a>
+</div>
+
+<!-- the basics -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="static-pages/theBasics.html">
+    <img src="static-pages/logo.png" align="middle" />
+    <h3>The Basics</h3>
+    <p>A good place to get started.</p>
+  </a>
+</div>
+
+<!--  -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="static-pages/.html">
+    <img src="static-pages/.png" align="middle" />
+    <h3></h3>
+    <p></p>
+  </a>
+</div>

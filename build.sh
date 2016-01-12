@@ -54,6 +54,7 @@ cleanUp() {
   echo "cleaning up cruft..."
   rm -rf print/
   rm -rf _layout.html5
+  rm -rf static-pages/*.html static-pages/*.bak
 }
 
 exitScript() {
@@ -96,8 +97,47 @@ buildProgrammersGuide() {
   done
 }
 
-buildHTML() {
-  echo "building the html version with mkdocs..."
+buildStaticHTMLPages() {
+  echo "building the static pages we need outside of the MKDocs build process."
+  echo "output is in site/static-pages/..."
+
+  SED="/usr/bin/sed"
+
+  cd static-pages
+
+  ## Copy the build index.html page so that we can add the sections.
+  ## We can't do this as part of MkDocs as it would require these pages
+  ## be listed in the TOC. Also, Pandoc would also need it's resouces since it
+  ## finds links to them in the markdown when building
+  cp ../site/index.html .
+  ${SED} -i .bak -E -f index.sed index.html
+  cp index.html ../site/.
+
+  ## Copy the 404 as our template for each new page
+  ## replace the 404 content with our key
+  cp ../site/404.html .
+  mv 404.html template.orig
+  ${SED} -i .bak -e 's/.\/css\//..\/css\//g' template.orig
+  ${SED} -i .bak -e 's/.\/js\//..\/js\//g' template.orig
+  ${SED} -i .bak -e 's/.\/mkdocs\//..\/mkdocs\//g' template.orig
+  ${SED} -i .bak -E -f template.sed template.orig
+
+  ## copy template to each page we need
+  ## replace the key in each page with it's content
+  cp template.orig installation.html
+  cp template.orig theBasics.html
+  ${SED} -i .bak -f installation.sed installation.html
+  ${SED} -i .bak -f theBasics.sed theBasics.html
+  
+  ## sync html pages and images with site/ so they get published
+  rsync -a *.html ../site/static-pages/
+  rsync -a *.png ../site/static-pages/
+
+  cd ..
+}
+
+buildMarkdown() {
+  echo "building the Markdown to HTML with MKDocs..."
   echo "output is in site/..."
   echo "copying resources to respective directories..."
   rm -rf docs/
@@ -128,7 +168,7 @@ buildHTML() {
 
 buildPrint() {
   ## create HTML docs from the markdown files in the above array
-  echo "building print version..."
+  echo "building print versions..."
   cp styling/solarized-light.css styling/main.css styling/style.css styling/_layout.html5 print/.
 
   cd print/
@@ -209,8 +249,9 @@ main() {
   fi
 
   ## we don't need parameters to run the script so build the documentation
-  buildHTML
+  buildMarkdown
   buildPrint
+  buildStaticHTMLPages
   deployToGitHub
   cleanUp
   exitScript

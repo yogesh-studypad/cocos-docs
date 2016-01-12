@@ -1,0 +1,4 @@
+/{{REPLACE}}/{
+    r installation
+    d
+}
