@@ -16,7 +16,7 @@
  .section {
     width: 265px;
     float: left;
-    padding: 3px;
+    padding: 10px;
     margin: 3px;
   }
 
