@@ -126,9 +126,11 @@ buildStaticHTMLPages() {
   ## replace the key in each page with it's content
   cp template.orig installation.html
   cp template.orig theBasics.html
+  cp template.orig toolchain.html
   ${SED} -i .bak -f installation.sed installation.html
   ${SED} -i .bak -f theBasics.sed theBasics.html
-  
+  ${SED} -i .bak -f toolchain.sed toolchain.html
+
   ## sync html pages and images with site/ so they get published
   rsync -a *.html ../site/static-pages/
   rsync -a *.png ../site/static-pages/
