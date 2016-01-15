@@ -1,0 +1,21 @@
+<style>
+  h3 {
+      text-align: center;
+  }
+
+  p {
+    text-align:center
+  }
+</style>
+
+<h3>Installation</h3>
+
+<div>
+<p><a href="../programmers-guide/B/">Android (Terminal) Setup</a></p>
+<p><a href="../programmers-guide/C/">Android (Eclipse) Setup</a></p>
+<p><a href="../programmers-guide/D/">iOS Setup</a></p>
+<p><a href="../programmers-guide/E/">Mac OSX Setup</a></p>
+<p><a href="../programmers-guide/F/">Linux Setup</a></p>
+<p><a href="../programmers-guide/G/">Windows Setup</a></p>
+<p><a href="../programmers-guide/H/">Windows Phone Setup</a></p>
+</div>

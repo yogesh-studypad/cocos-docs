@@ -1,0 +1,19 @@
+<style>
+  h3 {
+      text-align: center;
+  }
+
+  p {
+    text-align:center
+  }
+</style>
+
+<h3>Our editors and tools</h3>
+Besides the source code and prebuilt libraries, there are also more tools to aid
+in the development of your games.
+
+<div>
+<p><a href="">Cocos</a></p>
+<p><a href="">Cocos Creator</a></p>
+<p><a href="">Cocos Studio</a></p>
+</div>
