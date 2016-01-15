@@ -119,7 +119,9 @@ buildStaticHTMLPages() {
   mv 404.html template.orig
   ${SED} -i .bak -e 's/.\/css\//..\/css\//g' template.orig
   ${SED} -i .bak -e 's/.\/js\//..\/js\//g' template.orig
-  ${SED} -i .bak -e 's/.\/mkdocs\//..\/mkdocs\//g' template.orig
+  ${SED} -i .bak -e 's/.\/mkdocs..\/js\//..\/mkdocs\/js\//g' template.orig
+  ${SED} -i .bak -e 's/cocos\/cocos\//..\/cocos\/cocos\//g' template.orig
+  ${SED} -i .bak -e 's/programmers-guide\//..\/programmers-guide\//g' template.orig
   ${SED} -i .bak -E -f template.sed template.orig
 
   ## copy template to each page we need
