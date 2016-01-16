@@ -46,7 +46,7 @@ Y轴坐标从屏幕最下方开始，由下向上渐增
 
 ###Parent and Childrens
 
-由于每个类都继承自CCNode（Cocos2d-x的最顶层类），所以每个类都会默认有anchorPoint属性。 当我们在一个位置画一个的对象的时候，Cocos2d-x会合并属性位置和anchorPoint。当然，当旋转一个对象时，Cocos2d-x会围绕绕anchorPoint旋转的。
+由于每个类都继承自CCNode（Cocos2d-x的最顶层类），所以每个类都会默认有anchorPoint属性。 当我们在一个位置画一个的对象的时候，Cocos2d-x会合并属性位置和anchorPoint。当然，当旋转一个对象时，Cocos2d-x会围绕anchorPoint旋转的。
 
 我们创建一个灰色父对象和一个蓝色子对象。设置父对象位置是ccp(100,100),子对象的anchor point位于圆心。
 
@@ -116,9 +116,10 @@ getVisibleSize（获取可视区域大小）会返回此点的OpenGL视图的可
 
 ##如何转换坐标
 
-##convertToNodeSpace：
+###convertToNodeSpace：
 
-举例，`convertToNodeSpace`用于tile-based的游戏，即有一个大地图。convertToNodeSpace会转换openGL触摸点转成.tmx 地图或者其他近似的坐标。
+举例，`convertToNodeSpace`用于tile-based的游戏，即有一个大地图。convertToNodeSpace会
+将openGL触摸点转换成.tmx 地图或者其他近似的坐标。
 
 例子：
 
@@ -130,7 +131,7 @@ getVisibleSize（获取可视区域大小）会返回此点的OpenGL视图的可
 
 ###convertToWorldSpace：
 
-`convertToWorldSpace(const Point& nodePoint)` 转换node坐标为SCREEN坐标。convertToWorldSpace会经常返回你的精灵的SCREEN位置，如果你想捕获精灵的taps而且需要移动/缩放layer的时候，这可能非常有帮助。
+`convertToWorldSpace(const Point& nodePoint)` 转换node坐标为SCREEN坐标。convertToWorldSpace经常被用来返回你的精灵的SCREEN位置，如果你想捕获精灵的taps而且需要移动/缩放layer的时候，这可能非常有帮助。
 
 ```
 Point point = node1->convertToWorldSpace(node2->getPosition()); 
@@ -142,9 +143,9 @@ Point point = node1->convertToWorldSpace(node2->getPosition());
 
 ###convertToWorldSpaceAR
 
-`convertToWorldSpaceAR`返回相对锚点的位置：所以如果你的场景 – 根layer有一个锚点位于ccp(0.5f, 0.5f)。- 默认的，`convertToNodeSpaceAR`应返回相对于屏幕中心的位置。
+`convertToWorldSpaceAR`返回相对锚点的位置：所以如果在你的场景中，根layer有一个锚点位于ccp(0.5f, 0.5f)，那么默认的，`convertToNodeSpaceAR`应返回相对于屏幕中心的位置。
 
-`convertToNodeSpaceAR` – 和`convertToWorldSpaceAR`是一样的逻辑。
+`convertToNodeSpaceAR` 和`convertToWorldSpaceAR`是一样的逻辑。
 
 ###示例代码：
 
