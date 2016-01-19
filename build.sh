@@ -117,6 +117,8 @@ buildStaticHTMLPages() {
   ## replace the 404 content with our key
   cp ../site/404.html .
   mv 404.html template.orig
+
+  ${SED} -i .bak -e 's#href=\"index.html\"#href=\"../index.html\"#g' template.orig
   ${SED} -i .bak -e 's/.\/css\//..\/css\//g' template.orig
   ${SED} -i .bak -e 's/.\/js\//..\/js\//g' template.orig
   ${SED} -i .bak -e 's/.\/mkdocs..\/js\//..\/mkdocs\/js\//g' template.orig
