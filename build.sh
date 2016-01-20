@@ -3,7 +3,7 @@
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'cocos')
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'cocos' 'sdkbox')
 
 ### Cocos
 CocosAll=('cocos')
@@ -11,19 +11,22 @@ CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
 InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
-InstallationallChapters=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
 InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H')
 InstallationchaptersWithOutFolders=('A' 'E' 'I')
 
 ### Programmers Guide
 PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'J')
+'12' '13')
 PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'J')
-PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13' 'J')
+'12' '13')
+PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13')
 PGchaptersWithOutFolders=('1' '8' '10' '12')
 
-## Shared
+### Services
+ServicesallDocuments=('sdkbox')
+ServiceschaptersWithFolders=('sdkbox')
+
+### Shared
 misc=('blank' 'index' 'title')
 
 foundDirs=()
@@ -98,6 +101,14 @@ buildInstallationDocs() {
   done
 }
 
+buildServicesDocs() {
+  for i in ${ServiceschaptersWithFolders[@]}; do
+    rsync -a services/${i}-web docs/services/
+    mv docs/services/${i}-web docs/services/${i}-img
+    cp services/${i}.md docs/services/${i}.md
+  done
+}
+
 buildProgrammersGuide() {
   for i in ${PGchaptersWithFolders[@]}; do
     rsync -a programmers-guide/chapters/${i}-web docs/programmers-guide/
@@ -169,6 +180,7 @@ buildMarkdown() {
 
   buildCocosDocs
   buildInstallationDocs
+  buildServicesDocs
   buildProgrammersGuide
 
   ## this needs to happen each time
@@ -185,6 +197,15 @@ buildMarkdown() {
   ## Now, lets copy the img folder to each chapter, we need to do this for theme
   ## path issues in the fact each directory is treated separately.
   ## We will get some errors here for chapters that dont yet exist
+  for i in ${CocosAll[@]}; do
+    rsync -a theme/img site/cocos/${i}/
+  done
+  for i in ${InstallationallDocuments[@]}; do
+    rsync -a theme/img site/installation/${i}/
+  done
+  for i in ${ServicesallDocuments[@]}; do
+    rsync -a theme/img site/services/${i}/
+  done
   for i in ${PGallChapters[@]}; do
     rsync -a theme/img site/programmers-guide/${i}/
   done
@@ -231,8 +252,6 @@ buildPrint() {
   12.html \
   blank.html \
   13.html \
-  blank.html \
-  J.html \
   blank.html
 
   echo "building PDF..."
