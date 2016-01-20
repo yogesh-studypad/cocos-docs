@@ -6,6 +6,16 @@ pages:
 - Home: 'index.md'
 - Contents:
     - 'Cocos': 'cocos/cocos.md'
+    - 'Cocos2d-x Installation':
+        - 'A: Prerequisites': 'installation/A.md'
+        - 'B: Android (Terminal) Setup': 'installation/B.md'
+        - 'C: Android (Eclipse) Setup': 'installation/C.md'
+        - 'D: iOS Setup': 'installation/D.md'
+        - 'E: Mac OSX Setup': 'installation/E.md'
+        - 'F: Linux Setup': 'installation/F.md'
+        - 'G: Windows Setup': 'installation/G.md'
+        - 'H: Windows Phone Setup': 'installation/H.md'
+        - 'I: Command-line Integration': 'installation/I.md'
     - 'Programmers Guide':
         - '1: About Cocos2d-x': 'programmers-guide/1.md'
         - '2: Basic Concepts': 'programmers-guide/2.md'
@@ -20,15 +30,6 @@ pages:
         - '11: Physics': 'programmers-guide/11.md'
         - '12: Audio': 'programmers-guide/12.md'
         - '13: Advanced Topics': 'programmers-guide/13.md'
-        - 'A: Prerequisites': 'programmers-guide/A.md'
-        - 'B: Android (Terminal) Setup': 'programmers-guide/B.md'
-        - 'C: Android (Eclipse) Setup': 'programmers-guide/C.md'
-        - 'D: iOS Setup': 'programmers-guide/D.md'
-        - 'E: Mac OSX Setup': 'programmers-guide/E.md'
-        - 'F: Linux Setup': 'programmers-guide/F.md'
-        - 'G: Windows Setup': 'programmers-guide/G.md'
-        - 'H: Windows Phone Setup': 'programmers-guide/H.md'
-        - 'I: Command-line Integration': 'programmers-guide/I.md'
         - 'J: SDKBOX': 'programmers-guide/J.md'
 #- About: 'title.md'
 

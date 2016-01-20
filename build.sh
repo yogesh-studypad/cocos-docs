@@ -5,18 +5,23 @@
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 '12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'cocos')
 
-
 ### Cocos
 CocosAll=('cocos')
 CocoschaptersWithFolders=('cocos')
 
+### Installation Docs
+InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
+InstallationallChapters=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
+InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H')
+InstallationchaptersWithOutFolders=('A' 'E' 'I')
+
 ### Programmers Guide
 PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J')
+'12' '13' 'J')
 PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J')
-PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13' 'B' 'C' 'D' 'F' 'G' 'H' 'J')
-PGchaptersWithOutFolders=('1' '8' '10' '12' 'A' 'E' 'I')
+'12' '13' 'J')
+PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13' 'J')
+PGchaptersWithOutFolders=('1' '8' '10' '12')
 
 ## Shared
 misc=('blank' 'index' 'title')
@@ -78,6 +83,18 @@ buildCocosDocs() {
     rsync -a cocos/${i}-web docs/cocos/
     mv docs/cocos/${i}-web docs/cocos/${i}-img
     cp cocos/${i}.md docs/cocos/${i}.md
+  done
+}
+
+buildInstallationDocs() {
+  for i in ${InstallationchaptersWithFolders[@]}; do
+    rsync -a installation/${i}-web docs/installation/
+    mv docs/installation/${i}-web docs/installation/${i}-img
+    cp installation/${i}.md docs/installation/${i}.md
+  done
+
+  for i in ${InstallationchaptersWithOutFolders[@]}; do
+    cp installation/${i}.md docs/installation/${i}.md
   done
 }
 
@@ -151,6 +168,7 @@ buildMarkdown() {
   mkdir -p print
 
   buildCocosDocs
+  buildInstallationDocs
   buildProgrammersGuide
 
   ## this needs to happen each time
@@ -213,24 +231,6 @@ buildPrint() {
   12.html \
   blank.html \
   13.html \
-  blank.html \
-  A.html \
-  blank.html \
-  B.html \
-  blank.html \
-  C.html \
-  blank.html \
-  D.html \
-  blank.html \
-  E.html \
-  blank.html \
-  F.html \
-  blank.html \
-  G.html \
-  blank.html \
-  H.html \
-  blank.html \
-  I.html \
   blank.html \
   J.html \
   blank.html
