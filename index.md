@@ -10,7 +10,11 @@
   }
 
   p {
-    text-align:center
+    text-align:left;
+  }
+
+  .center {
+    text-align:center;
   }
 
  .section {
@@ -28,6 +32,7 @@
   .clearfix {overflow: auto;}
 
 </style>
+
 
 ## Welcome to the Cocos Docs!
 We know that learning something new can be hard. It doesn't help when you can't
