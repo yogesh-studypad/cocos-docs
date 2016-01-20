@@ -28,7 +28,8 @@ pages:
         - 'F: Linux Setup': 'programmers-guide/F.md'
         - 'G: Windows Setup': 'programmers-guide/G.md'
         - 'H: Windows Phone Setup': 'programmers-guide/H.md'
-        - 'I: SDKBOX': 'programmers-guide/I.md'
+        - 'I: Command-line Integration': 'programmers-guide/I.md'
+        - 'J: SDKBOX': 'programmers-guide/J.md'
 #- About: 'title.md'
 
 #theme: readable

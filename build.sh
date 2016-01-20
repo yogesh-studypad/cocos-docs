@@ -3,7 +3,7 @@
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'cocos')
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'cocos')
 
 
 ### Cocos
@@ -12,10 +12,10 @@ CocoschaptersWithFolders=('cocos')
 
 ### Programmers Guide
 PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J')
 PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
-PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13' 'B' 'C' 'D' 'F' 'G' 'H')
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J')
+PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13' 'B' 'C' 'D' 'F' 'G' 'H' 'J')
 PGchaptersWithOutFolders=('1' '8' '10' '12' 'A' 'E' 'I')
 
 ## Shared
@@ -231,6 +231,8 @@ buildPrint() {
   H.html \
   blank.html \
   I.html \
+  blank.html \
+  J.html \
   blank.html
 
   echo "building PDF..."
