@@ -1,7 +1,7 @@
 # Android (Terminal) Installation and Setup
 
 ## Environment Requirements
-* A Supported OS. See **[Appendix A](../A/index.html)**
+* A Supported OS. See **[Appendix A](A/index.html)**
 
 * Cocos2d-x v3.x [https://cocos2d-x.org/download](https://cocos2d-x.org/download "Cocos2d-x")
 
