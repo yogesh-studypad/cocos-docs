@@ -27,7 +27,7 @@ foundDirs=()
 shopt -s globstar
 
 hello() {
-  echo "Building the Cocos2d-x Documentation..."
+  echo "Building the Cocos2d Documentation..."
   echo ""
   echo "You can pass in --help for help on how to use this script."
   echo ""
@@ -54,7 +54,7 @@ cleanUp() {
   echo "cleaning up cruft..."
   rm -rf print/
   rm -rf _layout.html5
-  rm -rf static-pages/*.html static-pages/*.bak
+  rm -rf static-pages/*.html static-pages/*.bak static-pages/*.orig
 }
 
 exitScript() {
@@ -103,7 +103,7 @@ buildStaticHTMLPages() {
 
   SED="/usr/bin/sed"
 
-  cd static-pages
+  cd static-pages/
 
   ## Copy the build index.html page so that we can add the sections.
   ## We can't do this as part of MkDocs as it would require these pages
