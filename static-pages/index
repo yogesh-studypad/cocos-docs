@@ -20,6 +20,15 @@
   </a>
 </div>
 
+<!-- cocos -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="cocos/cocos/index.html">
+    <img src="static-pages/cocoslogo.png" align="middle" />
+    <h3>Cocos</h3>
+    <p>Cocos ecosystem</p>
+  </a>
+</div>
+
 <!-- Toolchain -->
 <!--<div class="section cocosBlueDarker1 clearfix">
   <a href="static-pages/toolchain.html">
