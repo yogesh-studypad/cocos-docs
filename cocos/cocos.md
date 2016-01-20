@@ -5,7 +5,8 @@ Cocos is a platform to create games: it includes an editor, a game engine, it al
 includes integration with the popular services every developer expects... everything
 is packaged in a convenient installer. It is a complete *ecosystem*.
 
-** [ add a graphic] **
+![](cocos-img/cocos-structure-v1.0-160116.png "Cocos ecosystem")
+
 Historically, developers would download either a __.zip__ of the latest
 release or become bleeding edge by staying in sync with our [GitHub](https://github.com/cocos2d/cocos2d-x) repo. When dealing with new releases, this was a manual integration effort for
 developers. If you had multiple projects, depending upon your setup, you may have
@@ -16,8 +17,8 @@ app with limited functionality for creating projects as well as compiling and
 running your applications. However, now, it is your simple solutions to managing
 your entire project base. __Cocos__ provides:
 
-* Auto-updates! __Cocos__ updates all the Cocos components, including Cocos2d-x,
-  Cocos Studio and SDK services.
+<!--* Auto-updates! __Cocos__ updates all the Cocos components, including Cocos2d-x,
+  Cocos Studio and SDK services.-->
 * A unified setup for both __Cocos2d-x__ and __Cocos__. This allows you to stay
   up to date with the latest __Cocos2d-x__ releases. This includes using precompiled
   binaries and source code, in a single place.
