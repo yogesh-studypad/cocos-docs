@@ -15,10 +15,8 @@ InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H')
 InstallationchaptersWithOutFolders=('A' 'E' 'I')
 
 ### Programmers Guide
-PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13')
-PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13')
+PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
+PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
 PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13')
 PGchaptersWithOutFolders=('1' '8' '10' '12')
 
@@ -29,34 +27,9 @@ ServiceschaptersWithFolders=('sdkbox')
 ### Shared
 misc=('blank' 'index' 'title')
 
-foundDirs=()
-
 ### Turn on globbing (BASH 4 required)
-shopt -s globstar
-
-hello() {
-  echo "Building the Cocos2d Documentation..."
-  echo ""
-  echo "You can pass in --help for help on how to use this script."
-  echo ""
-}
-
-help() {
-  ## State what we need for this script to run
-  echo "this script reqires: "
-  echo ""
-  echo "mkdocs: http://www.mkdocs.org/"
-  echo "Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html"
-  echo "A LaTex Distribution: http://www.tug.org/mactex/downloading.html"
-  echo "run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self"
-  echo "run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install collection-fontsrecommended"
-  echo "run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install ec ecc"
-  echo "export TEXROOT=/usr/local/texlive/2014basic/bin/universal-darwin/"
-  echo "export PATH=$TEXROOT:$PATH"
-  echo ""
-  echo "To Do: Be able to insert a page break at the end of each chapter. right now it is continuous"
-  echo ""
-}
+#foundDirs=()
+#shopt -s globstar
 
 cleanUp() {
   echo "cleaning up cruft..."
@@ -66,22 +39,104 @@ cleanUp() {
 }
 
 exitScript() {
-  echo "Staging version of the guide at: slackmoehrle.github.io"
   echo "exiting...."
   exit 0
 }
 
-deployToGitHub() {
+exitScriptAfterStaging() {
+  echo "staging version of the guide at: slackmoehrle.github.io"
+  exitScript
+}
+
+exitScriptIncorrectParameters() {
+  echo "incorrect parameter provided... use --help if you need to"
+  exitScript
+}
+
+exitScriptNotEnoughParameters() {
+  echo "you need to provide a parameter to run this script... use --help if you need to"
+  exitScript
+}
+
+deployToGitHub() { ## deploy docs to GitHub Pages
   echo "deploying to GitHub Pages: ..."
-  rsync -a site/ ../slackmoehrle.github.io
+  rsync -ah site/ ../slackmoehrle.github.io
   cd ../slackmoehrle.github.io
   git add .
-  git commit -m 'published automatically from script'
+  git commit -m 'published automatically from cocos-docs build script'
   git push
   cd ../cocos-docs
 }
 
-buildCocosDocs() {
+hello() {
+  echo "Building the Cocos Documentation..."
+  echo ""
+  echo "You can pass in --help for help on how to use this script."
+  echo ""
+  echo "output is in site/... and this is what is deployed."
+  echo ""
+}
+
+help() {
+  ## State what we need for this script to run
+  echo "this script reqires: "
+  echo ""
+  echo "mkdocs: http://www.mkdocs.org/"
+  echo "Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html"
+  echo "a LaTex Distribution: http://www.tug.org/mactex/downloading.html"
+  echo "run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self"
+  echo "run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install collection-fontsrecommended"
+  echo "run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install ec ecc"
+  echo "export TEXROOT=/usr/local/texlive/2014basic/bin/universal-darwin/"
+  echo "export PATH=\$TEXROOT:\$PATH"
+  echo ""
+  echo "available options: "
+  echo ""
+  echo "--help - get help with running this script"
+  echo "--all - build absolutely everything and deploy staging versions. This does not deploy to production"
+  echo ""
+}
+
+prep() { ## these things happen for any docs that are built.
+  echo "prepping environment..."
+  rm -rf docs/
+  mkdir -p docs
+}
+
+prepPost() { ## these things happen after mkdocs build so we have everything in site/ that
+## we need for deployment
+  echo "copying resources to site/..."
+  for i in ${CocosAll[@]}; do
+    rsync -a theme/img site/cocos/${i}/
+  done
+  for i in ${InstallationallDocuments[@]}; do
+    rsync -a theme/img site/installation/${i}/
+  done
+  for i in ${ServicesallDocuments[@]}; do
+    rsync -a theme/img site/services/${i}/
+  done
+  for i in ${PGallChapters[@]}; do
+    rsync -a theme/img site/programmers-guide/${i}/
+  done
+}
+
+buildAll() { ## build absolutely everything.
+  echo "building absolutely everything..."
+  prep
+  prepCocosDocs
+  prepInstallationDocs
+  prepServicesDocs
+  prepProgrammersGuide
+  buildMarkdown
+  prepPost
+  buildProgrammersGuidePrint
+  buildStaticHTMLPages
+  deployToGitHub
+  cleanUp
+}
+
+prepCocosDocs() { ## build Cocos Docs
+  echo "prepping Cocos docs..."
   for i in ${CocoschaptersWithFolders[@]}; do
     rsync -a cocos/${i}-web docs/cocos/
     mv docs/cocos/${i}-web docs/cocos/${i}-img
@@ -89,7 +144,8 @@ buildCocosDocs() {
   done
 }
 
-buildInstallationDocs() {
+prepInstallationDocs() { ## build Installation Docs
+  echo "prepping Installation docs..."
   for i in ${InstallationchaptersWithFolders[@]}; do
     rsync -a installation/${i}-web docs/installation/
     mv docs/installation/${i}-web docs/installation/${i}-img
@@ -101,7 +157,8 @@ buildInstallationDocs() {
   done
 }
 
-buildServicesDocs() {
+prepServicesDocs() { ## build Services Docs
+  echo "prepping Services docs..."
   for i in ${ServiceschaptersWithFolders[@]}; do
     rsync -a services/${i}-web docs/services/
     mv docs/services/${i}-web docs/services/${i}-img
@@ -109,24 +166,25 @@ buildServicesDocs() {
   done
 }
 
-buildProgrammersGuide() {
+prepProgrammersGuide() {
+  echo "prepping Programmers Guide..."
   for i in ${PGchaptersWithFolders[@]}; do
-    rsync -a programmers-guide/chapters/${i}-web docs/programmers-guide/
-    rsync -a programmers-guide/chapters/${i}-print print/
+    rsync -a programmers-guide/${i}-web docs/programmers-guide/
     mv docs/programmers-guide/${i}-web docs/programmers-guide/${i}-img
-    mv print/${i}-print print/${i}-img
-    cp programmers-guide/chapters/${i}.md docs/programmers-guide/${i}.md
-    cp programmers-guide/chapters/${i}.md print/${i}.md
+    cp programmers-guide/${i}.md docs/programmers-guide/${i}.md
   done
 
   for i in ${PGchaptersWithOutFolders[@]}; do
-    cp programmers-guide/chapters/${i}.md docs/programmers-guide/${i}.md
-    cp programmers-guide/chapters/${i}.md print/${i}.md
+    cp programmers-guide/${i}.md docs/programmers-guide/${i}.md
+  done
+
+  for i in ${misc[@]}; do
+    cp ${i}.md docs/${i}.md
   done
 }
 
 buildStaticHTMLPages() {
-  echo "building the static pages we need outside of the MKDocs build process."
+  echo "building the static pages we need outside of the MKDocs build process..."
   echo "output is in site/static-pages/..."
 
   SED="/usr/bin/sed"
@@ -171,49 +229,34 @@ buildStaticHTMLPages() {
 }
 
 buildMarkdown() {
-  echo "building the Markdown to HTML with MKDocs..."
-  echo "output is in site/..."
-  echo "copying resources to respective directories..."
-  rm -rf docs/
-  mkdir -p docs
-  mkdir -p print
-
-  buildCocosDocs
-  buildInstallationDocs
-  buildServicesDocs
-  buildProgrammersGuide
-
-  ## this needs to happen each time
-  for i in ${misc[@]}; do
-    cp ${i}.md docs/${i}.md
-    cp ${i}.md print/${i}.md
-  done
-
   ## Now we can use MKDocs to build the static content
+  echo "building all of the markdown files we use..."
   echo "MKDocs Build..."
   rm -rf site/
   mkdocs build
-
-  ## Now, lets copy the img folder to each chapter, we need to do this for theme
-  ## path issues in the fact each directory is treated separately.
-  ## We will get some errors here for chapters that dont yet exist
-  for i in ${CocosAll[@]}; do
-    rsync -a theme/img site/cocos/${i}/
-  done
-  for i in ${InstallationallDocuments[@]}; do
-    rsync -a theme/img site/installation/${i}/
-  done
-  for i in ${ServicesallDocuments[@]}; do
-    rsync -a theme/img site/services/${i}/
-  done
-  for i in ${PGallChapters[@]}; do
-    rsync -a theme/img site/programmers-guide/${i}/
-  done
 }
 
-buildPrint() {
+buildProgrammersGuidePrint() {
   ## create HTML docs from the markdown files in the above array
-  echo "building print versions..."
+  echo "prepping Programmers Guide print versions..."
+  echo "building Programmers Guide print versions..."
+  mkdir -p print
+
+  ## We need these items to build the print versions
+  for i in ${PGchaptersWithFolders[@]}; do
+    rsync -a programmers-guide/${i}-print print/
+    mv print/${i}-print print/${i}-img
+    cp programmers-guide/${i}.md print/${i}.md
+  done
+
+  for i in ${PGchaptersWithOutFolders[@]}; do
+    cp programmers-guide/${i}.md print/${i}.md
+  done
+
+  for i in ${misc[@]}; do
+    cp ${i}.md print/${i}.md
+  done
+
   cp styling/solarized-light.css styling/main.css styling/style.css styling/_layout.html5 print/.
 
   cd print/
@@ -222,7 +265,7 @@ buildPrint() {
   done
 
   ## create a PDF from the styled HTML
-  echo "building ePub..."
+  echo "building Programmers Guide ePub..."
 
   pandoc -S --epub-stylesheet="style.css" -o "ProgrammersGuide.epub" \
   index.html \
@@ -254,12 +297,13 @@ buildPrint() {
   13.html \
   blank.html
 
-  echo "building PDF..."
+  echo "building Programmers Guide PDF..."
   pandoc -s ProgrammersGuide.epub --variable mainfont=Arial --variable monofont="Andale Mono" -o ProgrammersGuide.pdf --latex-engine=xelatex
   echo ""
 
   cd ..
 
+  echo "copying Programmers Guide ePub and PDF to site/..."
   cp print/ProgrammersGuide.pdf print/ProgrammersGuide.epub site/.
 }
 
@@ -271,17 +315,16 @@ main() {
   if (( $# == 1 )); then
     if [[ "--help" =~ $1 ]]; then ## user asked for help
       help
-      exit 0
+      exitScript
+    elif [[ "--all" =~ $1 ]]; then ## builds absolutely every step
+      buildAll
+      exitScriptAfterStaging
+    else
+      exitScriptIncorrectParameters
     fi
+  else
+    exitScriptNotEnoughParameters
   fi
-
-  ## we don't need parameters to run the script so build the documentation
-  buildMarkdown
-  buildPrint
-  buildStaticHTMLPages
-  deployToGitHub
-  cleanUp
-  exitScript
 }
 
 ## run our script.
