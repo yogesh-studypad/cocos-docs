@@ -3,7 +3,14 @@
 This is the Cocos Documentation Repo. It is licensed under the
 [`Creative Commons BY-SA` license.]( https://creativecommons.org/licenses/by-sa/4.0/)
 
-You can read these docs [online](http://www.docos2d-x.org/docs).
+You can read these docs [online](http://www.cocos2d-x.org/docs).
+
+## This repo builds
+* Cocos docs
+* Installation docs
+* Programmers Guide
+* API-Reference
+* Services, like SDKBOX
 
 ## Directory layout
 * `blank.md` - a blank page that is used when building print versions
@@ -37,7 +44,7 @@ You can read these docs [online](http://www.docos2d-x.org/docs).
 
 ## How to run/test these docs
 * __cd <where you cloned this repo>__
-* run __build.sh__
+* run __build.sh --all__
 * run __mkdocs serve__
 
 Any changes made while __mkdocs serve__ is running are automatically rebuilt.
@@ -47,7 +54,7 @@ Any changes made while __mkdocs serve__ is running are automatically rebuilt.
 * run __deploy.sh__
 
 Content is built in __docs__ and deployed to __site__. This script also builds the
-ePub and PDF versions as well as deploys out to our staging server and http://www.Cocos2d-x.org/docs
+ePub and PDF versions as well as deploys out to our staging server and http://www.cocos2d-x.org/docs
 
 ## When contributing
 * make sure to break lines at 80 columns.
