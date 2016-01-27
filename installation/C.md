@@ -1,7 +1,7 @@
 # Android (Eclipse) Installation and Setup
 
-## Prerequisite
-* Complete steps in **[Appendix B](B/index.html)**
+## Prerequisites
+* Complete steps in **[Android (Terminal) Installation and Setup](B/index.html)**
 
 * Eclipse ADT Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 

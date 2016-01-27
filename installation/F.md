@@ -2,11 +2,11 @@
 
 ## Environment Requirements
 * Ubuntu 12.10+
-* Cocos2d-x v3.3 [https://cocos2d-x.org/download](https://cocos2d-x.org/download "Cocos2d-x")
-* CMake 2.6+
+* Cocos2d-x v3.3 [http://cocos2d-x.org/download](http://cocos2d-x.org/download "Cocos2d-x")
+* CMake 2.6+ [https://cmake.org](https://cmake.org)
 * gcc 4.9+
 
-## Prerequisite
+## Prerequisites
 * Download Cocos2d-x and unzip it. (maybe: ~/)
 
 * Install dependencies. The dependencies are:
@@ -26,7 +26,7 @@
 		libssl-dev
 
 * If you are using Ubuntu/Debian, there is a shell script __build/install-deps-linux.sh__
-for you to install the dependences easily. Run the commands below, in a terminal:  
+for you to install the dependences easily. Run the commands below, in a terminal:
 
     	> cd $cocos2dx_root/build
     	> ./install-deps-linux.sh
@@ -41,7 +41,7 @@ Otherwise, you should install the dependencies manually.
     	> cd linux-build
     	> cmake ../..
 
-* When __cmake__ returns correctly, many files & folders will be generated in  
+* When __cmake__ returns correctly, many files & folders will be generated in
 __coocs2dx_root/build/linux-build__
 
 ![](F-img/1.png "")

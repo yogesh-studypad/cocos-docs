@@ -1,9 +1,9 @@
 # Appendix I: Command-Line Integration
 
-## Prerequisite
-* Completed one of the Appendices **[A](A/index.html)**, **[B](B/index.html)**,
-**[C](C/index.html)**, **[D](D/index.html)**, **[E](E/index.html)**,
-**[F](F/index.html)**, **[G](G/index.html)**, **[H](H/index.html)**
+## Prerequisites
+* Completed one of the following setups: **[Installation Prerequisites](A/index.html)**, **[Android (Terminal)](B/index.html)**,
+**[Android (Eclipse)](C/index.html)**, **[iOS](D/index.html)**, **[Mac OS X](E/index.html)**,
+**[Linux](F/index.html)**, **[Windows](G/index.html)**, **[Windows Phone 8](H/index.html)**
 
 ## `cocos` command-line tool
 Cocos2d-x comes with a command-line tool called __cocos__. It is a cross-platform
