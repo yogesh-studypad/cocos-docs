@@ -5,9 +5,8 @@ site_author: The Cocos Teams
 pages:
 - Home: 'index.md'
 - Contents:
-    - 'API Reference': 'api-ref/index.md'
     - 'Cocos': 'cocos/cocos.md'
-    - 'Cocos2d-x Installation':
+    - 'Manual Installations':
         - 'Prerequisites': 'installation/A.md'
         - 'Android (Terminal) Setup': 'installation/B.md'
         - 'Android (Eclipse) Setup': 'installation/C.md'
@@ -33,6 +32,7 @@ pages:
         - 'Advanced Topics': 'programmers-guide/13.md'
     - 'Services':
       - 'SDKBOX': 'services/sdkbox.md'
+    - 'API Reference': 'api-ref/index.md'
 #- About: 'title.md'
 
 #theme: readable
