@@ -5,6 +5,9 @@
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 '12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'cocos' 'sdkbox')
 
+### API-Ref
+APIRefAll=('index')
+
 ### Cocos
 CocosAll=('cocos')
 CocoschaptersWithFolders=('cocos')
@@ -30,6 +33,9 @@ misc=('blank' 'index' 'title')
 ### Turn on globbing (BASH 4 required)
 #foundDirs=()
 #shopt -s globstar
+
+SED="/usr/bin/sed"
+
 
 cleanUp() {
   echo "cleaning up cruft..."
@@ -99,7 +105,7 @@ help() {
 
 prep() { ## these things happen for any docs that are built.
   echo "prepping environment..."
-  rm -rf docs/
+  rm -R docs/
   mkdir -p docs
 }
 
@@ -123,6 +129,7 @@ prepPost() { ## these things happen after mkdocs build so we have everything in 
 buildAll() { ## build absolutely everything.
   echo "building absolutely everything..."
   prep
+  prepAPIRefDocs
   prepCocosDocs
   prepInstallationDocs
   prepServicesDocs
@@ -130,12 +137,22 @@ buildAll() { ## build absolutely everything.
   buildMarkdown
   prepPost
   buildProgrammersGuidePrint
+  prepStaticHTMLPages
   buildStaticHTMLPages
+  buildAPIRef
   deployToGitHub
   cleanUp
 }
 
-prepCocosDocs() { ## build Cocos Docs
+prepAPIRefDocs() { ## prep API-Ref
+  echo "prepping API-Ref docs..."
+  mkdir -p docs/api-ref
+  for i in ${APIRefAll[@]}; do
+    cp api-ref/${i}.md docs/api-ref/${i}.md
+  done
+}
+
+prepCocosDocs() { ## prep Cocos Docs
   echo "prepping Cocos docs..."
   for i in ${CocoschaptersWithFolders[@]}; do
     rsync -a cocos/${i}-web docs/cocos/
@@ -144,7 +161,7 @@ prepCocosDocs() { ## build Cocos Docs
   done
 }
 
-prepInstallationDocs() { ## build Installation Docs
+prepInstallationDocs() { ## prep Installation Docs
   echo "prepping Installation docs..."
   for i in ${InstallationchaptersWithFolders[@]}; do
     rsync -a installation/${i}-web docs/installation/
@@ -157,7 +174,7 @@ prepInstallationDocs() { ## build Installation Docs
   done
 }
 
-prepServicesDocs() { ## build Services Docs
+prepServicesDocs() { ## prep Services Docs
   echo "prepping Services docs..."
   for i in ${ServiceschaptersWithFolders[@]}; do
     rsync -a services/${i}-web docs/services/
@@ -166,7 +183,7 @@ prepServicesDocs() { ## build Services Docs
   done
 }
 
-prepProgrammersGuide() {
+prepProgrammersGuide() { ## prep Programmers Guide
   echo "prepping Programmers Guide..."
   for i in ${PGchaptersWithFolders[@]}; do
     rsync -a programmers-guide/${i}-web docs/programmers-guide/
@@ -183,11 +200,9 @@ prepProgrammersGuide() {
   done
 }
 
-buildStaticHTMLPages() {
-  echo "building the static pages we need outside of the MKDocs build process..."
+prepStaticHTMLPages() {
+  echo "prepping the static pages we need outside of the MKDocs build process..."
   echo "output is in site/static-pages/..."
-
-  SED="/usr/bin/sed"
 
   cd static-pages/
 
@@ -210,16 +225,30 @@ buildStaticHTMLPages() {
   ${SED} -i .bak -e 's/.\/mkdocs..\/js\//..\/mkdocs\/js\//g' template.orig
   ${SED} -i .bak -e 's/cocos\/cocos\//..\/cocos\/cocos\//g' template.orig
   ${SED} -i .bak -e 's/programmers-guide\//..\/programmers-guide\//g' template.orig
+  ${SED} -i .bak -e 's/installation\//..\/installation\//g' template.orig
+  ${SED} -i .bak -e 's/services\//..\/services\//g' template.orig
+  ${SED} -i .bak -e 's/api-ref\//..\/api-ref\//g' template.orig
   ${SED} -i .bak -E -f template.sed template.orig
+
+  cd ..
+}
+
+buildStaticHTMLPages() {
+  echo "building the static pages we need outside of the MKDocs build process..."
+  echo "output is in site/static-pages/..."
+
+  cd static-pages/
 
   ## copy template to each page we need
   ## replace the key in each page with it's content
   cp template.orig installation.html
   cp template.orig theBasics.html
   cp template.orig toolchain.html
+  cp template.orig api-ref.html
   ${SED} -i .bak -f installation.sed installation.html
   ${SED} -i .bak -f theBasics.sed theBasics.html
   ${SED} -i .bak -f toolchain.sed toolchain.html
+  ${SED} -i .bak -f api-ref.sed api-ref.html
 
   ## sync html pages and images with site/ so they get published
   rsync -a *.html ../site/static-pages/
@@ -305,6 +334,28 @@ buildProgrammersGuidePrint() {
 
   echo "copying Programmers Guide ePub and PDF to site/..."
   cp print/ProgrammersGuide.pdf print/ProgrammersGuide.epub site/.
+}
+
+buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
+  echo "building the API References..."
+
+  echo "building the C++ API Reference..."
+  cd ../cocos2d-x
+  git checkout v3-doc
+  git pull chukong v3-doc
+  cd docs
+  doxygen doxygen_en.config
+  rsync -ah html/ ../../cocos-docs/site/api-ref/v3x
+  cd ../../cocos-docs
+
+  ## replace the api-ref index.html that MKDocs built with the one we build from SED
+  rm -rf site/api-ref/index.html
+  cp site/static-pages/api-ref.html site/api-ref/.
+  mv site/api-ref/api-ref.html site/api-ref/index.html
+
+  ## We still have v2.2.6 API ref that remains static, no need to build it again
+  ## but we need it here for completeness
+
 }
 
 main() {

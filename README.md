@@ -13,10 +13,11 @@ You can read these docs [online](http://www.cocos2d-x.org/docs).
 * Services, like SDKBOX
 
 ## Directory layout
+* `api-ref/` - API Reference, build.sh does a lot here that is not in this dir.
 * `blank.md` - a blank page that is used when building print versions
 * `build.sh` - BASH script that build web and print versions, deploys to staging server
-* `catalog` -
-* `cocos` - docs relating to Cocos
+* `catalog/` -
+* `cocos/` - docs relating to Cocos
 * `deploy.sh` - this script deploys the docs to cocos2d-x.org/docs
 * `index.md` - this is the main landing page, part static, part dynamically created in `build.sh`
 * `installation/` - docs relating to installation on supported platforms

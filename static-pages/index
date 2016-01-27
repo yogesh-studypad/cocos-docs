@@ -28,6 +28,16 @@
     <p class="center">Cocos ecosystem.</p>
   </a>
 </div>
+<br />
+
+<!-- api ref -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="api-ref/index.html">
+    <img src="static-pages/api-ref.png" align="middle" />
+    <h3>API Reference</h3>
+    <p class="center">Both C++ and JavaScript.</p>
+  </a>
+</div>
 
 <!-- Toolchain -->
 <!--<div class="section cocosBlueDarker1 clearfix">

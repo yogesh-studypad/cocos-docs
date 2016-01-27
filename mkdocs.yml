@@ -5,6 +5,7 @@ site_author: The Cocos Teams
 pages:
 - Home: 'index.md'
 - Contents:
+    - 'API Reference': 'api-ref/index.md'
     - 'Cocos': 'cocos/cocos.md'
     - 'Cocos2d-x Installation':
         - 'Prerequisites': 'installation/A.md'
