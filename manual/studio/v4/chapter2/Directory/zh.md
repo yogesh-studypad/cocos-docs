@@ -12,4 +12,4 @@
 
 ####&emsp;&emsp;[使用外部编辑器](../ExternalEditor/zh.md) 
 
-####&emsp;&emsp;[使用Android Studio编辑Cocos项目](../AndroidStudioOpenCocos/zh.md)  
+####&emsp;&emsp;[使用Android Studio编辑Cocos项目](../ASOpenCocos/zh.md)  
