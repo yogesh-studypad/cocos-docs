@@ -1,7 +1,7 @@
 # Cocos 帮助文档
 * [概述](../chapter1/Overview/zh.md)
 	* [Cocos简介](../chapter1/Overview/zh.md)
-	* [认识cocos](../chapter2/IntroductionCocos/zh.md)
+	* [认识cocos](../chapter2/NewProject/zh.md)
 	* [环境配置](../chapter1/EnvironmentConfiguration/zh.md)
     * [获取支持](../chapter1/Support/zh.md)
 * [Cocos2d-x用户向导](../chapter0/cocos2d-x/zh.md)
@@ -13,6 +13,7 @@
       * [编码与调试](../chapter2/CodeAndDebug/zh.md)
       * [打包与运行](../chapter2/PackageAndRun/zh.md)
       * [使用外部编辑器](../chapter2/ExternalEditor/zh.md)
+      * [使用AndroidStudio编辑Cocos项目](../chapter2/ASOpenCocos/zh.md)
   * [编辑器](../chapter3/Directory/zh.md)
 	  * [编辑器操作界面](../chapter3/Editor/UIOverview/zh.md)
 	  * [UI编辑](../chapter3/UI/Directory/zh.md)
