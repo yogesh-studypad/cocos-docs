@@ -42,7 +42,7 @@
 			action:gotoFrameAndPlay(0, true)
 		end
 
-**To load Lua** (download Lua export plugin at Cocos Store)
+**To load Lua** 
 
 	   -- src\app\views\MainScene.lua: 
 		   MainScene.RESOURCE_FILENAME = "MainScene.csb" change to  

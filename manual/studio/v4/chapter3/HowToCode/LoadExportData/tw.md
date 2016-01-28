@@ -49,7 +49,7 @@ Lua（僅能載入csb資料和lua檔）：
             action:gotoFrameAndPlay(0, true)
         end
 
-&emsp;&emsp;載入lua(去商店下載Lua匯出外掛程式)：
+&emsp;&emsp;載入lua：
 
        --相關代碼在src\app\views\MainScene.lua文件
        -- 注：這裡 MainScene.lua 為發佈出來的 Lua 代碼檔。您可以在發佈目錄中找到它。

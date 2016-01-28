@@ -52,7 +52,7 @@ Lua（仅能加载csb数据和lua文件）：
             self:addChild(self.resourceNode_)
 		end
 
-&emsp;&emsp;加载lua(去商店下载Lua导出插件)：
+&emsp;&emsp;加载lua：
 
 	   --相关代码在src\app\views\MainScene.lua文件
 	   -- 注：这里 MainScene.lua 为发布出来的 Lua 代码文件。您可以在发布目录中找到它。
