@@ -66,7 +66,7 @@ As new versions of __SDKs__ become available you can download directly from with
 __Cocos__ and __modify__ your projects settings to update to the latest version.
 
 Currently, __SDKBOX__ is integrated into __Cocos__. You can read more about
-__SDKBOX__ and the services it offers in [Appendix I](../I/index.html).
+__SDKBOX__ and the services it offers in the [Services Docs](../services/sdkbox/index.html).
 
 #Using Cocos
 

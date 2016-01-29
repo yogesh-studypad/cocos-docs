@@ -1,34 +1,38 @@
-site_name: Cocos2d-x Documentation
+site_name: Cocos Documentation
 site_url: http://cocos2d-x.org/documentation
-site_description: Cocos2d-x Documentation.
-site_author: The Cocos2d-x Team
+site_description: Cocos Documentation.
+site_author: The Cocos Teams
 pages:
 - Home: 'index.md'
 - Contents:
     - 'Cocos': 'cocos/cocos.md'
+    - 'Manual Installations':
+        - 'Prerequisites': 'installation/A.md'
+        - 'Android (Terminal) Setup': 'installation/B.md'
+        - 'Android (Eclipse) Setup': 'installation/C.md'
+        - 'IOS Setup': 'installation/D.md'
+        - 'Mac OSX Setup': 'installation/E.md'
+        - 'Linux Setup': 'installation/F.md'
+        - 'Windows Setup': 'installation/G.md'
+        - 'Windows Phone Setup': 'installation/H.md'
+        - 'Command-line Integration': 'installation/I.md'
     - 'Programmers Guide':
-        - '1: About Cocos2d-x': 'programmers-guide/1.md'
-        - '2: Basic Concepts': 'programmers-guide/2.md'
-        - '3: Sprites': 'programmers-guide/3.md'
-        - '4: Actions': 'programmers-guide/4.md'
-        - '5: Scenes': 'programmers-guide/5.md'
-        - '6: UI': 'programmers-guide/6.md'
-        - '7: Other Node Types': 'programmers-guide/7.md'
-        - '8: Event Dispatch': 'programmers-guide/8.md'
-        - '9: 3D': 'programmers-guide/9.md'
-        - '10: Scripting': 'programmers-guide/10.md'
-        - '11: Physics': 'programmers-guide/11.md'
-        - '12: Audio': 'programmers-guide/12.md'
-        - '13: Advanced Topics': 'programmers-guide/13.md'
-        - 'A: Prerequisites': 'programmers-guide/A.md'
-        - 'B: Android (Terminal) Setup': 'programmers-guide/B.md'
-        - 'C: Android (Eclipse) Setup': 'programmers-guide/C.md'
-        - 'D: iOS Setup': 'programmers-guide/D.md'
-        - 'E: Mac OSX Setup': 'programmers-guide/E.md'
-        - 'F: Linux Setup': 'programmers-guide/F.md'
-        - 'G: Windows Setup': 'programmers-guide/G.md'
-        - 'H: Windows Phone Setup': 'programmers-guide/H.md'
-        - 'I: SDKBOX': 'programmers-guide/I.md'
+        - 'About Cocos2d-x': 'programmers-guide/1.md'
+        - 'Basic Concepts': 'programmers-guide/2.md'
+        - 'Sprites': 'programmers-guide/3.md'
+        - 'Actions': 'programmers-guide/4.md'
+        - 'Scenes': 'programmers-guide/5.md'
+        - 'UI': 'programmers-guide/6.md'
+        - 'Other Node Types': 'programmers-guide/7.md'
+        - 'Event Dispatch': 'programmers-guide/8.md'
+        - '3D': 'programmers-guide/9.md'
+        - 'Scripting': 'programmers-guide/10.md'
+        - 'Physics': 'programmers-guide/11.md'
+        - 'Audio': 'programmers-guide/12.md'
+        - 'Advanced Topics': 'programmers-guide/13.md'
+    - 'Services':
+      - 'SDKBOX': 'services/sdkbox.md'
+    - 'API Reference': 'api-ref/index.md'
 #- About: 'title.md'
 
 #theme: readable

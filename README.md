@@ -1,19 +1,42 @@
 ﻿Documentation
 ===============
-This is the Cocos2d-x Documentation Repo. It is licensed under the
+This is the Cocos Documentation Repo. It is licensed under the
 [`Creative Commons BY-SA` license.]( https://creativecommons.org/licenses/by-sa/4.0/)
 
-You can read these docs [online](http://www.docos2d-x.org/documentation) at http://www.docos2d-x.org/documentation
+You can read these docs [online](http://www.cocos2d-x.org/docs).
+
+## This repo builds
+* Cocos docs
+* Installation docs
+* Programmers Guide
+* API-Reference
+* Services, like SDKBOX
 
 ## Directory layout
-* `theme/` - custom theme for web version
+* `api-ref/` - API Reference, build.sh does a lot here that is not in this dir.
 * `blank.md` - a blank page that is used when building print versions
-* `build.sh` - BASH script that build web and print versions, deploys to server
+* `build.sh` - BASH script that build web and print versions, deploys to staging server
+* `catalog/` -
+* `cocos/` - docs relating to Cocos
+* `deploy.sh` - this script deploys the docs to cocos2d-x.org/docs
+* `index.md` - this is the main landing page, part static, part dynamically created in `build.sh`
+* `installation/` - docs relating to installation on supported platforms
+* `LICENSE.md` - licensing
+* `manual/` -
 * `mkdocs.yml` - MKDocs configuration
+* `programmers-guide/` - The Cocos2d-x Programmers Guide
 * `README.md` - this file :-)
+* `release-notes/` - release notes
+* `services/` - docs relating to supported services, like SDKBOX
+* `static-pages/` - static pages that we need
+* `styling/` - CSS for print version of the Programmers Guide
+* `theme/` - custom theme for web version
+* `title.md` - title page
+* `tutorial/` - Tutorials
 
 ## What do you need to build for OS X?
 * Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html
+
 * A LaTex Distribution: http://www.tug.org/mactex/downloading.html
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr  install collection-fontsrecommended
@@ -21,18 +44,23 @@ You can read these docs [online](http://www.docos2d-x.org/documentation) at http
 * export TEXROOT=/usr/local/texlive/2014basic/bin/universal-darwin/
 * export PATH=$TEXROOT:$PATH
 
+* To build the c++ API Ref you need a customized Doxygen version from https://github.com/zilongshanren/doxygen
+
+* To build the JavaScript API Ref you need __jsdoc_toolkit__ which is usually placed in __<Cocos2d-x root>/web/tools__. It can be found here: http://cocos2d-x/org/docs/jsdoc_toolkit-2.4.0.zip
+
 ## How to run/test these docs
-* __cd <where you cloned this repo>/documentation__
+* __cd <where you cloned this repo>__
+* run __build.sh --all__
 * run __mkdocs serve__
 
-Any changes made while `mkdocs serve` is running are automatically rebuilt.
+Any changes made while __mkdocs serve__ is running are automatically rebuilt.
 
 ## How to build for deployment
-* __cd <where you cloned this repo>/documentation__
-* run __build.sh__
+* __cd <where you cloned this repo>__
+* run __deploy.sh__
 
-Content is build in __docs__ and deployed to __site__. This script also builds the
-ePub and PDF versions as well as deploys out to our staging server and http://www.Cocos2d-x.org/documentation
+Content is built in __docs__ and deployed to __site__. This script also builds the
+ePub and PDF versions as well as deploys out to our staging server and http://www.cocos2d-x.org/docs
 
 ## When contributing
 * make sure to break lines at 80 columns.

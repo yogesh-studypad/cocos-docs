@@ -11,11 +11,12 @@
 <h3>Installation</h3>
 
 <div>
-<p><a href="../programmers-guide/B/">Android (Terminal) Setup</a></p>
-<p><a href="../programmers-guide/C/">Android (Eclipse) Setup</a></p>
-<p><a href="../programmers-guide/D/">iOS Setup</a></p>
-<p><a href="../programmers-guide/E/">Mac OSX Setup</a></p>
-<p><a href="../programmers-guide/F/">Linux Setup</a></p>
-<p><a href="../programmers-guide/G/">Windows Setup</a></p>
-<p><a href="../programmers-guide/H/">Windows Phone Setup</a></p>
+<p><a href="../installation/B/">Android (Terminal) Setup</a></p>
+<p><a href="../installation/C/">Android (Eclipse) Setup</a></p>
+<p><a href="../installation/D/">iOS Setup</a></p>
+<p><a href="../installation/E/">Mac OSX Setup</a></p>
+<p><a href="../installation/F/">Linux Setup</a></p>
+<p><a href="../installation/G/">Windows Setup</a></p>
+<p><a href="../installation/H/">Windows Phone Setup</a></p>
+<p><a href="../installation/I/">Command-line Integration</a></p>
 </div>

@@ -7,7 +7,7 @@
   <a href="static-pages/installation.html">
     <img src="static-pages/installation.png" align="middle" />
     <h3>Installation</h3>
-    <p>Get your environment working!</p>
+    <p class="center">Get your environment working!</p>
   </a>
 </div>
 
@@ -16,7 +16,26 @@
   <a href="static-pages/theBasics.html">
     <img src="static-pages/logo.png" align="middle" />
     <h3>The Basics</h3>
-    <p>A good place to get started.</p>
+    <p class="center">A good place to get started.</p>
+  </a>
+</div>
+
+<!-- cocos -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="cocos/cocos/index.html">
+    <img src="static-pages/cocoslogo.png" align="middle" />
+    <h3>Cocos</h3>
+    <p class="center">Cocos ecosystem.</p>
+  </a>
+</div>
+<br />
+
+<!-- api ref -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="api-ref/index.html">
+    <img src="static-pages/api-ref.png" align="middle" />
+    <h3>API Reference</h3>
+    <p class="center">Both C++ and JavaScript.</p>
   </a>
 </div>
 
@@ -25,6 +44,6 @@
   <a href="static-pages/toolchain.html">
     <img src="static-pages/tools.png" align="middle" />
     <h3>Our editors and tools</h3>
-    <p>Find our more about these tools.</p>
+    <p class="center">Find our more about these tools.</p>
   </a>
 </div>-->
