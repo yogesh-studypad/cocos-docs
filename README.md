@@ -36,12 +36,17 @@ You can read these docs [online](http://www.cocos2d-x.org/docs).
 
 ## What do you need to build for OS X?
 * Pandoc: http://johnmacfarlane.net/pandoc/getting-started.html
+
 * A LaTex Distribution: http://www.tug.org/mactex/downloading.html
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr update --self
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr  install collection-fontsrecommended
 * run: sudo /usr/local/texlive/2014basic/bin/universal-darwin/tlmgr install ec ecc
 * export TEXROOT=/usr/local/texlive/2014basic/bin/universal-darwin/
 * export PATH=$TEXROOT:$PATH
+
+* To build the c++ API Ref you need a customized Doxygen version from https://github.com/zilongshanren/doxygen
+
+* To build the JavaScript API Ref you need __jsdoc_toolkit__ which is usually placed in __<Cocos2d-x root>/web/tools__. It can be found here: http://cocos2d-x/org/docs/jsdoc_toolkit-2.4.0.zip
 
 ## How to run/test these docs
 * __cd <where you cloned this repo>__
