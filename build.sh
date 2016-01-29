@@ -106,6 +106,7 @@ help() {
 prep() { ## these things happen for any docs that are built.
   echo "prepping environment..."
   rm -R docs/
+  rm -R site/
   mkdir -p docs
 }
 
@@ -140,6 +141,7 @@ buildAll() { ## build absolutely everything.
   prepStaticHTMLPages
   buildStaticHTMLPages
   buildAPIRef
+  deployLegacyDocs
   deployToGitHub
   cleanUp
 }
@@ -261,7 +263,6 @@ buildMarkdown() {
   ## Now we can use MKDocs to build the static content
   echo "building all of the markdown files we use..."
   echo "MKDocs Build..."
-  rm -rf site/
   mkdocs build
 }
 
@@ -339,23 +340,35 @@ buildProgrammersGuidePrint() {
 buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
   echo "building the API References..."
 
+  echo "copying older API-Ref versions, these don't change, static, no need to build..."
+  rsync -ah static-pages/api-refs/ site/api-ref
+
   echo "building the C++ API Reference..."
   cd ../cocos2d-x
   git checkout v3-doc
   git pull chukong v3-doc
   cd docs
   doxygen doxygen_en.config
-  rsync -ah html/ ../../cocos-docs/site/api-ref/v3x
-  cd ../../cocos-docs
+  rsync -ah html/ ../../cocos-docs/site/api-ref/cplusplus/v3x
+
+  echo "building the JavaScript API Reference..."
+  cd ../web/tools/jsdoc_toolkit/
+  ant
+  mkdir ../../../../cocos-docs/site/api-ref/js/v3x
+  rsync -ah out/jsdoc/ ../../../../cocos-docs/site/api-ref/js/v3x
+
+  cd ../../../../cocos-docs
 
   ## replace the api-ref index.html that MKDocs built with the one we build from SED
   rm -rf site/api-ref/index.html
   cp site/static-pages/api-ref.html site/api-ref/.
   mv site/api-ref/api-ref.html site/api-ref/index.html
+}
 
-  ## We still have v2.2.6 API ref that remains static, no need to build it again
-  ## but we need it here for completeness
-
+deployLegacyDocs() {
+  ## This deploys the legacy docs that are also needed until they are moved under
+  ## this new unified structure
+  rsync -ah catalog manual release-notes tutorial site/
 }
 
 main() {
