@@ -27,6 +27,10 @@ PGchaptersWithOutFolders=('1' '8' '10' '12')
 ServicesallDocuments=('sdkbox')
 ServiceschaptersWithFolders=('sdkbox')
 
+### Editors and Tools
+EditorsAndToolsallDocuments=('studio')
+EditorsAndToolschaptersWithFolders=('studio')
+
 ### Shared
 misc=('blank' 'index' 'title')
 
@@ -134,6 +138,7 @@ buildAll() { ## build absolutely everything.
   prepCocosDocs
   prepInstallationDocs
   prepServicesDocs
+  prepEditorsAndToolsDocs
   prepProgrammersGuide
   buildMarkdown
   prepPost
@@ -161,6 +166,16 @@ prepCocosDocs() { ## prep Cocos Docs
     mv docs/cocos/${i}-web docs/cocos/${i}-img
     cp cocos/${i}.md docs/cocos/${i}.md
   done
+}
+
+prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
+  echo "prepping Editors And Tools docs..."
+  #for i in ${EditorsAndToolschaptersWithFolders[@]}; do
+  #  rsync -a editors_and_tools/${i}-web docs/editors_and_tools/
+  #  mv docs/editors_and_tools/${i}-web docs/editors_and_tools/${i}-img
+  #  cp editors_and_tools/${i}.md docs/editors_and_tools/${i}.md
+  #done
+  rsync -ah editors_and_tools docs/
 }
 
 prepInstallationDocs() { ## prep Installation Docs
@@ -230,6 +245,7 @@ prepStaticHTMLPages() {
   ${SED} -i .bak -e 's/installation\//..\/installation\//g' template.orig
   ${SED} -i .bak -e 's/services\//..\/services\//g' template.orig
   ${SED} -i .bak -e 's/api-ref\//..\/api-ref\//g' template.orig
+  ${SED} -i .bak -e 's/editors_and_tools\//..\/editors_and_tools\//g' template.orig
   ${SED} -i .bak -E -f template.sed template.orig
 
   cd ..

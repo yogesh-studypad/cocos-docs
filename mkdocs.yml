@@ -30,6 +30,9 @@ pages:
         - 'Physics': 'programmers-guide/11.md'
         - 'Audio': 'programmers-guide/12.md'
         - 'Advanced Topics': 'programmers-guide/13.md'
+    - 'Editors & Tools':
+      - 'Studio': 'editors_and_tools/studio.md'
+      - '________': 'editors_and_tools/Workspace_Overview/en.md'
     - 'Services':
       - 'SDKBOX': 'services/sdkbox.md'
     - 'API Reference': 'api-ref/index.md'
