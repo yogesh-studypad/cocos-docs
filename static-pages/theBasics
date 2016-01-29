@@ -9,14 +9,14 @@
 </style>
 
 <h3>The Basics</h3>
-There are some important points in each chapter of this guide. If you are skimming
-the guide, please touch on these points.
-
+<p>There are some important points in each chapter of this guide. If you are skimming
+the guide, please touch on these points.</p>
+<br />
 <div>
 <p><a href="../programmers-guide/2/index.html">All of Chapter 2 :-)</a></p>
 <p><a href="../programmers-guide/3/index.html#creating-sprites">Sprite Creation</a></p>
 <p><a href="../programmers-guide/3/index.html#sprite-manipulation">Sprite Manipulation</a></p>
-<p><a href="../programmers-guide/4/index.html"></a>Actions and Sequences</p>
+<p><a href="../programmers-guide/4/index.html">Actions and Sequences</a></p>
 <p><a href="../programmers-guide/8/index.html">Events and Dispatching Events</a></p>
 <p><a href="../programmers-guide/11/index.html#physics-is-scary-do-i-really-need-it-please-tell-me-no">Do you really need Physics?</a></p>
 <p><a href="../programmers-guide/12/index.html">Working with Sound</a></p>
