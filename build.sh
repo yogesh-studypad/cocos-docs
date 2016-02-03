@@ -142,11 +142,11 @@ buildAll() { ## build absolutely everything.
   prepProgrammersGuide
   buildMarkdown
   prepPost
-  #buildProgrammersGuidePrint
+  buildProgrammersGuidePrint
   prepStaticHTMLPages
   buildStaticHTMLPages
-  #buildAPIRef
-  #deployLegacyDocs
+  buildAPIRef
+  deployLegacyDocs
   deployToGitHub
   cleanUp
 }
