@@ -142,11 +142,11 @@ buildAll() { ## build absolutely everything.
   prepProgrammersGuide
   buildMarkdown
   prepPost
-  buildProgrammersGuidePrint
+  #buildProgrammersGuidePrint
   prepStaticHTMLPages
   buildStaticHTMLPages
-  buildAPIRef
-  deployLegacyDocs
+  #buildAPIRef
+  #deployLegacyDocs
   deployToGitHub
   cleanUp
 }
@@ -219,7 +219,6 @@ prepProgrammersGuide() { ## prep Programmers Guide
 
 prepStaticHTMLPages() {
   echo "prepping the static pages we need outside of the MKDocs build process..."
-  echo "output is in site/static-pages/..."
 
   cd static-pages/
 
