@@ -7,6 +7,7 @@
 
         {% for toc_item in toc_item.children %}
 
+            <!-- slackmoehrle 2/1/2016 - added this so we can build docs but not be in menus -->
             {% if not toc_item.title.startswith("_") %}
               <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
             {% endif %}
@@ -14,7 +15,7 @@
         {% endfor %}
 
       {% endif %}
-      
+
     {% endfor %}
     </ul>
 </div>
