@@ -2,28 +2,28 @@
 
 ### Overview
 
-The following section provides guidance on how to custom Cocos2d-x precompiled library for your games. 
+The following section provides guidance on how to custom Cocos2d-x precompiled library for your games.
 
 ### Version Requirement
 
 Customizing cocos2d-x precompiled library requires Cocos v3.10 or higher. This document is used for version v3.10 or higher.
 
-The directories below are based on v3.10 and the installation of Cocos v3.10. 
+The directories below are based on v3.10 and the installation of Cocos v3.10.
 
 ### How to customize Cocos2d-x precompiled library
 
-Customizing cocos2d-x precompiled library is actually modifying its source codes. After the installation of Cocos 3.10, you can customize the cocos2d-x with IDE or code editors. 
+Customizing cocos2d-x precompiled library is actually modifying its source codes. After the installation of Cocos 3.10, you can customize the cocos2d-x with IDE or code editors.
 
-* On Mac, you can open projects `/Applications/Cocos/Cocos2d-x/cocos2d-x-v3.10/build/cocos2d_libs.xcodeproj` with XCode. Then you need to modify and debug codes. 
+* On Mac, you can open projects `/Applications/Cocos/Cocos2d-x/cocos2d-x-v3.10/build/cocos2d_libs.xcodeproj` with XCode. Then you need to modify and debug codes.
 * On Windows, you can open projects ` [installation directory]/Cocos/cocos2d-x-v3.10/build/cocos2d-win32.sln` with Visual Studio. Then you need to modify and debug codes.
 
 ### How to publish the custom Cocos2d-x
 
 #### Build a new precompiled library
 
-There is a scripting tool in Cocos2d-x-3.10 to compile source codes to precompiled library: `cocos gen-libs`. 
+There is a scripting tool in Cocos2d-x-3.10 to compile source codes to precompiled library: `cocos gen-libs`.
 
-The following is a detailed description of how to use this scripting tool: 
+The following is a detailed description of how to use this scripting tool:
 
 ```
 usage: cocos gen-libs [-h] [-c] [-e ENGINE_PATH] [-p {ios,mac,android,win32}]
@@ -58,16 +58,16 @@ Android Options:
 
 ```
 
-For example: 
+For example:
 
 1. `cocos gen-libs -c` : Clear previous precompiled library and compile all platforms.
 2. `cocos gen-libs -p win32 --vs 2013` : Compile Win32 platform with Visual Studio 2013.
 
-Precompiled library will be created in the following directory `Cocos2d-x/cocos2d-x-v3.10/prebuilt`. Include the new precompiled library to game projects.  
+Precompiled library will be created in the following directory `Cocos2d-x/cocos2d-x-v3.10/prebuilt`. Include the new precompiled library to game projects.
 
-**Note** 
+**Note**
 
 * To customize Cocos2d-x precompiled library, you need to modify source codes and maintain project files. Any problem in the custom codes or projects will lead to a failure in implementing compiling tools.
-* When you're genrating prebuilt libs with `-m debug`, you should modify the Visual Studio configuration of your game project like this:  
+* When you're genrating prebuilt libs with `-m debug`, you should modify the Visual Studio configuration of your game project like this:
 Change the value of `C/C++ -> Code Generation -> Runtime Library` from `/MD` to `/MDd`. Take a look at the image:
-![VS config](res/vs_config.jpg)
+![image](../../../studio-img/HowToCode/CustomizeFramework-v3.8/vs_config.jpg)

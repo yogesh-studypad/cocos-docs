@@ -16,7 +16,7 @@ Here is a simple to guide for getting started with Cocos Framework. Follow the s
 
 ***Note**: you need to quit cocos before creating the project.*
 
-![image](../../studio-img/HowToUseCocosFramework/image004.png)
+![image](../../../studio-img/HowToUseCocosFramework/image004.png)
 
 4 Create a new project, and then select version and language of Cocos Framework.
 
@@ -24,4 +24,4 @@ Here is a simple to guide for getting started with Cocos Framework. Follow the s
 
 After publishing the project to VS, click "Run" or F5 and you can see the following interface.
 
-![image](../../studio-img/HowToUseCocosFramework/image009.png)
+![image](../../../studio-img/HowToUseCocosFramework/image009.png)

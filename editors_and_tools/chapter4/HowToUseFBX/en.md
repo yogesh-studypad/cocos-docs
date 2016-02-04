@@ -6,10 +6,10 @@ How to convert:
 
 1 Locate tools/fbx-conv folder in engine directory, and find the converter;
 
-   ![image](../../studio-img/HowToUseFBX/image001.png)
+   ![image](../../../studio-img/HowToUseFBX/image001.png)
 
 2 Choose appropriate converter for different operating system;
 
-   ![image](../../studio-img/HowToUseFBX/image002.png)
+   ![image](../../../studio-img/HowToUseFBX/image002.png)
 
 3 Convert the .fbx file to a .c3b file. See   3D Models for more details.

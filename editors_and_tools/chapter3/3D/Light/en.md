@@ -4,35 +4,35 @@ Currently four 3D lighting techniques are supported in cocos, which are Directio
 
 Directional Light provides parallel light from one direction. It is often used to simulate light from one direction.
 
-![image](../../studio-img/3D/Light/image0005.png)
+![image](../../../studio-img/3D/Light/image0005.png)
 
 Point Light emits light in all directions equally from a central spot. Objects within the sphere can be lighted.
 
-![image](../../studio-img/3D/Light/image0006.png)
+![image](../../../studio-img/3D/Light/image0006.png)
 
 Spot Light provides light from a single point in a cone shape. Objects within the cone area can be affected. It is often used to simulate the effect of lamps.
 
-![image](../../studio-img/3D/Light/image0007.png)
+![image](../../../studio-img/3D/Light/image0007.png)
 
 Ambient Light is used to light up the whole scene evenly. It has no specific direction of the light source.
 
-![image](../../studio-img/3D/Light/image0008.png)
+![image](../../../studio-img/3D/Light/image0008.png)
 
 ### Add Light ###
 
 Drag Light from 3D Widgets to a 3D scene.
 
-&emsp;&emsp;&emsp;&emsp;![image](../../studio-img/3D/Light/image0001.png)
+&emsp;&emsp;&emsp;&emsp;![image](../../../studio-img/3D/Light/image0001.png)
 
 ### Modify Light Properties###
 
 Select the Light in the structure tree.
 
-&emsp;&emsp;&emsp;&emsp;![image](../../studio-img/3D/Light/image0003.png)
+&emsp;&emsp;&emsp;&emsp;![image](../../../studio-img/3D/Light/image0003.png)
 
 Modify the properties of the seleted object.
 
-&emsp;&emsp;&emsp;&emsp;![image](../../studio-img/3D/Light/image0004.png)
+&emsp;&emsp;&emsp;&emsp;![image](../../../studio-img/3D/Light/image0004.png)
 
 ### Notes of Light Properties ###
 
@@ -52,4 +52,4 @@ Modify the properties of the seleted object.
 
     - When there are more than one light of the same type and same light flag, objects will be affected by the light at the top of the structure tree. In the following example, object is lighted by Spot but Spot_0.
 
-&emsp;&emsp;![image](../../studio-img/3D/Light/image0010.png)
+&emsp;&emsp;![image](../../../studio-img/3D/Light/image0010.png)

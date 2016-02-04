@@ -10,7 +10,7 @@ Create a project (Project 1) based on the new matching Framework. Find the origi
 
 Different versions of Framework can be selected. Under Project in the menu bar, select Project Setting -> Package, as shown below,
 
-![image](../../studio-img/upgrade-framework/image001.png)
+![image](../../../studio-img/upgrade-framework/image001.png)
 
 After selecting the matching Framework, the project will upgrade automatically when you run or package them. Files in Classes, proj.android, proj,ios_mac, proj, win32 will redirect to those of the new matching Framework except files under project folder. If there are issues after upgrading Framework, you can try the following method:
 

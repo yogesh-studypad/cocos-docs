@@ -1,6 +1,6 @@
 #Armature (Skeleton)
 
-![image](../../studio-img/UI/Armature/image001.png)
+![image](../../../studio-img/UI/Armature/image001.png)
 
 Armature supports:
 - Importing animation files created by Cocos Studio v.1.x;
@@ -11,7 +11,7 @@ Armature supports:
 
 - Previewing the animation in the editor.
 
-![image](../../studio-img/UI/Armature/image002.png)
+![image](../../../studio-img/UI/Armature/image002.png)
 
 **Scenario 1: Importing and using animation files exported from v. 1. x**
 
@@ -21,7 +21,7 @@ To import previously edited animation files (**.ExportJson*) into Armature widge
 2. In the Properties panel, choose Base> Feature > File, and select the file(s) you want to import;
 3. In Canvas, right-click the Armature widget, choose "Select Armature File", and select the file(s) you want to import.
 
-![image](../../studio-img/UI/Armature/image003.png)
+![image](../../../studio-img/UI/Armature/image003.png)
 
 **Scenario 2: Set options for animation**
 

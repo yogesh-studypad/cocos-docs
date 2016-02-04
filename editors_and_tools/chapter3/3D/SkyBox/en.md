@@ -8,38 +8,38 @@ How to create a skybox
 
 2. Assign six pictures (jpg, png) to the skybox, including Left, Right, Front, Back, Up and Bottom. Match the pictures to the direction they represent.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image001.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image001.png)
 
 3. Display of skybox.
 
 &emsp;&emsp;a. When Skybox is enabled for the root node.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image002.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image002.png)
 
 - If  the skybox is disabled for all the cameras, skybox of the scene (root node) will be displayed in rendering section, camera preview window and simulator.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image003.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image003.png)
 
 - If  the skybox is enabled for multiple cameras, selecting one of these cameras, skybox of these camera will be displayed in camera preview window.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image004.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image004.png)
 
 - If the skybox is enabled for multiple cameras, selecting one camera that skybox is unchecked, skybox of the scene (root node) will be displayed in camera preview window, while skybox of a higher level camera (node at the bottom) will be displayed in simulator.
 
 &emsp;&emsp;b. When Skybox is not checked to display for the root node.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image005.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image005.png)
 
 - If the skybox is disabled for all the cameras, skybox cannot be previewed in rendering section, camera preview window and simulator.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image006.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image006.png)
 
 - If the skybox is enabled for multiple cameras, selecting one of these cameras, skybox of the camera will be displayed in camera preview window.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image008.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image008.png)
 
 - If the skybox is enabled for multiple cameras, selecting one camera that skybox is unchecked, nothing will be displayed in camera preview window, and skybox of a higher level camera (which Skybox is checked to display) will be displayed in simulator.
 
-&emsp;&emsp;![image](../../studio-img/3D/SkyBox/image007.png)
+&emsp;&emsp;![image](../../../studio-img/3D/SkyBox/image007.png)
 
 *Note: Only when the 6 sides of the skybox are assigned with pictures, can the skybox display. The six pictures should be same in size, filename extension and coding format.*

@@ -6,7 +6,7 @@ Parcles use a large number of small objects, controlled by emitter or scripts, t
 
 Drag and drop a 3D particle from 3D Objects to Scene.
 
-![image](../../studio-img/3D/3DParticle/image0001.png)
+![image](../../../studio-img/3D/3DParticle/image0001.png)
 
 **2 Modify objects' properties**
 
@@ -16,14 +16,14 @@ Modify basic properties, or move and dynamically adjust a particle's states with
 
 Import particle resources to a project, and then drag and drop them to scene.
 
-&emsp;&emsp;![image](../../studio-img/3D/3DParticle/image0002.png)
+&emsp;&emsp;![image](../../../studio-img/3D/3DParticle/image0002.png)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](../../studio-img/3D/3DParticle/image0003.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](../../../studio-img/3D/3DParticle/image0003.png)
 
-![image](../../studio-img/3D/3DParticle/image0004.png)
+![image](../../../studio-img/3D/3DParticle/image0004.png)
 
 To use particle resources, just drag and drop them to the Scene.
 
-![image](../../studio-img/3D/3DParticle/image0005.png)
+![image](../../../studio-img/3D/3DParticle/image0005.png)
 
 Drag and drop particle files to Particle widget to replace previous resources.

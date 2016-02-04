@@ -2,7 +2,7 @@
 
 Select Button-> Properties -> Advanced -> User Data. For example, type 123, as the following picture shows.
 
-![image](../../studio-img/HowToCode/UserData/image001.png)
+![image](../../../studio-img/HowToCode/UserData/image001.png)
 
 ### C++ ###
 

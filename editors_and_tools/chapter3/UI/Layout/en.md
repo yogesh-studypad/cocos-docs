@@ -4,7 +4,7 @@
 
 Auto-layout functionality mainly refers to "Pin & Sizing" property.
 
-![gif](../../studio-img/UI/Layout/gif001.gif)
+![image](../../../studio-img/UI/Layout/gif001.gif)
 
 You can have the effect in the above figure by setting Enable/ Disable the "Pins" around and the "Size bars" in the center.
 
@@ -12,15 +12,15 @@ You can have the effect in the above figure by setting Enable/ Disable the "Pins
 
 - When a pin is enabled, a widget will be arranged at the corresponding border of its parent widget. The margins between a widget and its parent widget maintain a proportion as the parent widget changes its size.
 
-![gif](../../studio-img/UI/Layout/gif002.gif)
+![image](../../../studio-img/UI/Layout/gif002.gif)
 
 - When two pins are enabled, a widget will be arranged at the corresponding borders of its parent widget.
 
-![gif](../../studio-img/UI/Layout/gif003.gif)
+![image](../../../studio-img/UI/Layout/gif003.gif)
 
 - When a size bar is enabled, the widget scales maintaining its margin proportions to its parent widget.
 
-![gif](../../studio-img/UI/Layout/gif004.gif)
+![image](../../../studio-img/UI/Layout/gif004.gif)
 
 #####Other important information
 
@@ -104,18 +104,18 @@ Adjust the ` ContentSize` of the loaded interface, call `ui::Helper::doLayout` f
 
 - The screen size is bigger than the design size, and choose FIXED_HEIGHT as the design resolution size.
 
-![image](../../studio-img/UI/Layout/image006.png)
+![image](../../../studio-img/UI/Layout/image006.png)
 
 - The screen size is bigger than the design size, and choose FIXED_WIDTH as the design resolution size.
 
-![image](../../studio-img/UI/Layout/image007.png)
+![image](../../../studio-img/UI/Layout/image007.png)
 
 - The screen size is smaller than the design size, and choose FIXED_ HEIGHT as the design resolution size.
 
-![image](../../studio-img/UI/Layout/image008.png)
+![image](../../../studio-img/UI/Layout/image008.png)
 
 - The screen size is smaller than the design size, and choose FIXED_WIDTH as the design resolution size.
 
-![image](../../studio-img/UI/Layout/image009.png)
+![image](../../../studio-img/UI/Layout/image009.png)
 
 ***Note** The example ResolutionPolicy is the default option provided by framework. You need to know the screen resolution, and adjust the design size according to different screen resolution.*

@@ -6,11 +6,11 @@ For a JS project, there may be something wrong with preview effect after clickin
 
    Original resource.js:
 
-![image](../../studio-img/debug-on-browser/image001.png)
+![image](../../../studio-img/debug-on-browser/image001.png)
 
    Modified resources. js:
 
-![image](../../studio-img/debug-on-browser/image002.png)
+![image](../../../studio-img/debug-on-browser/image002.png)
 
   Add the resources of current scene to g_resources=[...].
 
@@ -20,7 +20,7 @@ For a JS project, there may be something wrong with preview effect after clickin
 
    Customize and control Google Chrome -> More tools -> Developer tools
 
-![image](../../studio-img/debug-on-browser/image003.png)
+![image](../../../studio-img/debug-on-browser/image003.png)
 
 **360 Browser**
 
@@ -30,6 +30,6 @@ For a JS project, there may be something wrong with preview effect after clickin
 
 Settings -> Developer -> Browser Console -> JS
 
-![image](../../studio-img/debug-on-browser/image006.png) ![image](../../studio-img/debug-on-browser/image007.png)
+![image](../../../studio-img/debug-on-browser/image006.png) ![image](../../../studio-img/debug-on-browser/image007.png)
 
-![image](../../studio-img/debug-on-browser/image008.png)
+![image](../../../studio-img/debug-on-browser/image008.png)

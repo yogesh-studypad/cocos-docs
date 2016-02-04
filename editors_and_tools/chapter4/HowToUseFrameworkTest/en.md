@@ -28,8 +28,8 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; `vi .bash_profile`
 
-![image](../../studio-img/HowToUseFrameworkTest/img001.png)
-![image](../../studio-img/HowToUseFrameworkTest/img002.png)
+![image](../../../studio-img/HowToUseFrameworkTest/img001.png)
+![image](../../../studio-img/HowToUseFrameworkTest/img002.png)
 
 &emsp;&emsp;&emsp;&emsp;ii) Add the following commands:
 
@@ -39,7 +39,7 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Type the SDK and NDK path after `=`.
 
-![image](../../studio-img/HowToUseFrameworkTest/img003.png)
+![image](../../../studio-img/HowToUseFrameworkTest/img003.png)
 
 &emsp;&emsp;&emsp;&emsp;iii)&emsp;Save, exit and restart the terminal to complete the configuration of Android development environment.
 
@@ -58,10 +58,10 @@
     c. Configure `NDK_ROOT` and `Android _SDK_ROOT` with following method: right click Computer -> Properties -> Advanced system settings -> Advanced -> Environment Variables -> New
 
 &emsp;&emsp;
-&emsp;![image](../../studio-img/HowToUseFrameworkTest/img004.png)
+&emsp;![image](../../../studio-img/HowToUseFrameworkTest/img004.png)
 
 &emsp;&emsp;
-&emsp;![image](../../studio-img/HowToUseFrameworkTest/img005.png)
+&emsp;![image](../../../studio-img/HowToUseFrameworkTest/img005.png)
 
 &emsp;&emsp;&emsp;Set up the environment variable to where your SDK and NDK are installed.
 
@@ -73,7 +73,7 @@
 
 &emsp;&emsp;`TESTS_PATH` is where `test` file is unzipped.
 
-![image](../../studio-img/HowToUseFrameworkTest/img006.png)
+![image](../../../studio-img/HowToUseFrameworkTest/img006.png)
 
 &emsp;&emsp;For example,  the command for the file in my computer is:
 

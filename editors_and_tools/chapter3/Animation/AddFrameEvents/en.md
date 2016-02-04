@@ -4,26 +4,26 @@ Frame event property allows to customize each frame of a widget for back-end cal
 
 1 Select the "Begin to record frame" checkbox.
 
-&emsp;&emsp;&emsp;![image](../../studio-img/Animation/AddFrameEvents/image001.png)
+&emsp;&emsp;&emsp;![image](../../../studio-img/Animation/AddFrameEvents/image001.png)
 
 2 Select a widget, and then click on a desired position for a new frame event in the timeline.
 
-![image](../../studio-img/Animation/AddFrameEvents/image002.png)
+![image](../../../studio-img/Animation/AddFrameEvents/image002.png)
 
 3 On the Properties panel, select the Advanced option.
 
-&emsp;![image](../../studio-img/Animation/AddFrameEvents/image003.png)
+&emsp;![image](../../../studio-img/Animation/AddFrameEvents/image003.png)
 
 4 Personalize the frame event.
 
-&emsp;![image](../../studio-img/Animation/AddFrameEvents/image004.png)
+&emsp;![image](../../../studio-img/Animation/AddFrameEvents/image004.png)
 
 5 Move the timeline marker to another position.
 
-![image](../../studio-img/Animation/AddFrameEvents/image005.png)
+![image](../../../studio-img/Animation/AddFrameEvents/image005.png)
 
 6 Personalize the frame event again (This can be different from previous settings).
 
-![image](../../studio-img/Animation/AddFrameEvents/image006.png)
+![image](../../../studio-img/Animation/AddFrameEvents/image006.png)
 
-![image](../../studio-img/Animation/AddFrameEvents/image007.png)
+![image](../../../studio-img/Animation/AddFrameEvents/image007.png)

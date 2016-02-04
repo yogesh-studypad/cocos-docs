@@ -70,7 +70,7 @@ Precompiled library will be created in the following directory `frameworks/cocos
 * To customize Cocos Framework, you need to modify source codes and maintain project files. Any problem in the custom codes or projects will lead to a failure in implementing compiling tools.
 * When you're genrating prebuilt libs with `-m debug`, you should modify the Visual Studio configuration of your game project like this:
 Change the value of `C/C++ -> Code Generation -> Runtime Library` from `/MD` to `/MDd`. Take a look at the image:
-![VS config](../../studio-img/HowToCode/CustomizeFramework-v3.8/vs_config.jpg)
+![image](../../../studio-img/HowToCode/CustomizeFramework-v3.8/vs_config.jpg)
 
 #### Create a new simulator
 

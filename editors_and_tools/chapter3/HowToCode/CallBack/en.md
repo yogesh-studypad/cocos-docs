@@ -6,15 +6,15 @@ The section is an introduction to callback functions in C++ and Lua.
 
 1   Click the root node as illustrated.
 
-   ![image](../../studio-img/HowToCode/CallBack/image001.png)
+   ![image](../../../studio-img/HowToCode/CallBack/image001.png)
 
 2 In the Properties panel, choose Advanced -> CallBack Feature -> Custom Class, name the Custom class, for example, MyClass.
 
-   ![image](../../studio-img/HowToCode/CallBack/image002.png)
+   ![image](../../../studio-img/HowToCode/CallBack/image002.png)
 
 3 Select the widget that needs to add callback feature, then select Properties -> Advanced -> Callback method, and name the method. For example: select Touch, and name it as onTouch.
 
-   ![image](../../studio-img/HowToCode/CallBack/image003.png)
+   ![image](../../../studio-img/HowToCode/CallBack/image003.png)
 
 4 Create a customized class in C++. The class must conform the following requirements.
 

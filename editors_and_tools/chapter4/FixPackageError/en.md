@@ -4,19 +4,19 @@
 
 2 After the successful installation of JDK, in Java directory there will be two folders with the name starting with jdk and jre respectively. Add bin directory of the two folders to Environment Variables. New variable name is JAVA_HOME, and variable value is the folder path where JDK is installed.
 
-&emsp;&emsp;![image](../../studio-img/FixPackageError/image0001.png)
+&emsp;&emsp;![image](../../../studio-img/FixPackageError/image0001.png)
 
 Set variable Path, and append the location of the bin folder where the JRE is installed. You need to use a semicolon in English half-angle state, and then add bin directory. For example, C:\Program Files\Java\jre1.8.0_45\bin.
 
-&emsp;&emsp;![image](../../studio-img/FixPackageError/image0002.png)
+&emsp;&emsp;![image](../../../studio-img/FixPackageError/image0002.png)
 
 3 Add cpp files to Visual Studio and XCode projects. Meanwhile modify android.mk, which is located at proj.android/jni/Android.mk.
 
 4 Use UTF-8 to code Cpp. It is convenient to view the file encoding format with Visual Studio.
 
-&emsp;&emsp;![image](../../studio-img/FixPackageError/image0004.png)
+&emsp;&emsp;![image](../../../studio-img/FixPackageError/image0004.png)
 
-&emsp;&emsp;![image](../../studio-img/FixPackageError/image0003.png)
+&emsp;&emsp;![image](../../../studio-img/FixPackageError/image0003.png)
 
 5 Currently it is not supported to access files on a USB disk, for on Windows the path support in Python is flawed. Copy project files from the USB disk to your computer and run the project.
 
@@ -93,7 +93,7 @@ Solution: update .vxproject configuration.
 
 13 Missing type specifier (grammar error), for example:
 
-&emsp;&emsp;![image](../../studio-img/FixPackageError/image0005.png)
+&emsp;&emsp;![image](../../../studio-img/FixPackageError/image0005.png)
 
 Cause
 

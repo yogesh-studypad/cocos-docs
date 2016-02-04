@@ -6,7 +6,7 @@
 
 2 In 3D scene, there is a shortcut bar at the top of the wokrspace. See the following picture.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](../../studio-img/3D/3DShortcutKey/image0001.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](../../../studio-img/3D/3DShortcutKey/image0001.png)
 
 On Windows:
 
@@ -14,15 +14,15 @@ On Windows:
 
 - Move the selected object with keyboard shortcut W.
 
- &emsp;&emsp;&emsp;![image](../../studio-img/3D/3DShortcutKey/image0002.png)
+ &emsp;&emsp;&emsp;![image](../../../studio-img/3D/3DShortcutKey/image0002.png)
 
 - Rotate the selected object with keyboard shortcut E.
 
- &emsp;&emsp;&emsp;![image](../../studio-img/3D/3DShortcutKey/image0003.png)
+ &emsp;&emsp;&emsp;![image](../../../studio-img/3D/3DShortcutKey/image0003.png)
 
 - Scale the selected object with keyboard shortcut R.
 
-&emsp;&emsp;&emsp; ![image](../../studio-img/3D/3DShortcutKey/image0004.png)
+&emsp;&emsp;&emsp; ![image](../../../studio-img/3D/3DShortcutKey/image0004.png)
 
 **3D Camera Rotation**
 

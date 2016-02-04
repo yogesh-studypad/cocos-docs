@@ -2,11 +2,11 @@
 
 9-slice can be used to reduce projects' size. Among official examples, 9-slice is used frequently.
 
-![image](../../studio-img/UI/9Slice/image001.png)
+![image](../../../studio-img/UI/9Slice/image001.png)
 
 The yellow background is created by a picture of 482 byte size.
 
-![image](../../studio-img/UI/9Slice/image002.png)
+![image](../../../studio-img/UI/9Slice/image002.png)
 
 **How to use 9-Slice Scaling**
 
@@ -22,7 +22,7 @@ The yellow background is created by a picture of 482 byte size.
 
 - Drag the four guides within 9-slice to change the value.
 
-    ![image](../../studio-img/UI/9Slice/image003.png)
+    ![image](../../../studio-img/UI/9Slice/image003.png)
 
 - Modify the widget's size as needed.
 
@@ -30,6 +30,6 @@ The yellow background is created by a picture of 482 byte size.
 
 9-Slice scaling can keep a picture from distorting even though it is resized. When scaling, the slices in the center row will scale vertically, the slices in the middle column scale horizontally, the center slice scales horizontally and vertically, the four corner regions consistent with the original shape.
 
-![image](../../studio-img/UI/9Slice/image004.png)
+![image](../../../studio-img/UI/9Slice/image004.png)
 
 In Cocos Studio, you can specify the 9-slice margins to make sure some sections will not be distorted. 9-slice scaling is available by enabling it when you use a widget supporting 9-slice function.

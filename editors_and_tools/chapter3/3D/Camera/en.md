@@ -6,18 +6,18 @@ Cameras are used to capture and display the world of a game scene. Only the obje
 
 Drag and drop Camera from 3D Widgets to Scene.
 
-![image](../../studio-img/3D/Camera/image0001.png)
+![image](../../../studio-img/3D/Camera/image0001.png)
 
 **2 Modify camera's basic properties**
 
 Modify basic properties in Properties panel, or move and dynamically adjust the camera's position and rotation with mouse.
 
-&emsp;&emsp;![image](../../studio-img/3D/Camera/image0002.png)
+&emsp;&emsp;![image](../../../studio-img/3D/Camera/image0002.png)
 
 **3 Adjust the camera's frustum**
 
 Objects can be captured by camera when they are within the frustum. For example, in the following picture the bule diverging line defines the frustum, and the box on the left is not visible while the box on the right is visible to the camera.
 
-![image](../../studio-img/3D/Camera/image0003.png)
+![image](../../../studio-img/3D/Camera/image0003.png)
 
 Adjust the field of view to control the size of frustum, so that to control what is visible to the camera. The position of far clipping plane and near clipping plane decide what can be captured by the camera.
