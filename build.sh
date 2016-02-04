@@ -69,13 +69,20 @@ exitScriptNotEnoughParameters() {
 }
 
 deployToGitHub() { ## deploy docs to GitHub Pages
-  echo "deploying to GitHub Pages: ..."
+  echo "deploying to GitHub Pages..."
   rsync -ah site/ ../slackmoehrle.github.io
   cd ../slackmoehrle.github.io
   git add .
   git commit -m 'published automatically from cocos-docs build script'
   git push
   cd ../cocos-docs
+}
+
+deployToProduction() { ## deploy docs to Production
+  echo "deploying to Production, via rsync..."
+  rsync -avh site/* docops@cocos2dx:documentation/.
+
+  echo 'deployment is done, if no errors were shown above this line...'
 }
 
 hello() {
@@ -104,6 +111,9 @@ help() {
   echo ""
   echo "--help - get help with running this script"
   echo "--all - build absolutely everything and deploy staging versions. This does not deploy to production"
+  echo "--staging - deploys site/ to staging via rsync. This does NOT build anything. This does not deploy to production"
+  echo "--production - deploys site/ to production via rsync. This does NOT build anything."
+
   echo ""
 }
 
@@ -398,6 +408,10 @@ main() {
     elif [[ "--all" =~ $1 ]]; then ## builds absolutely every step
       buildAll
       exitScriptAfterStaging
+    elif [[ "--staging" =~ $1 ]]; then ## deploys site/ to staging
+      deployToGitHub
+    elif [[ "--production" =~ $1 ]]; then ## deploys site/ to production
+      deployToProduction
     else
       exitScriptIncorrectParameters
     fi
