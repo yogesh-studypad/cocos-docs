@@ -119,8 +119,8 @@ help() {
 
 prep() { ## these things happen for any docs that are built.
   echo "prepping environment..."
-  rm -R docs/
-  rm -R site/
+  rm -R docs/*
+  rm -R site/*
   mkdir -p docs
 }
 
@@ -288,7 +288,7 @@ buildMarkdown() {
   ## Now we can use MKDocs to build the static content
   echo "building all of the markdown files we use..."
   echo "MKDocs Build..."
-  mkdocs build
+  mkdocs build --clean
 }
 
 buildProgrammersGuidePrint() {
