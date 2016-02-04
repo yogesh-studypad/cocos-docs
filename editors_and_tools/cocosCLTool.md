@@ -1,11 +1,6 @@
 # Cocos command-line tool
 
-## Prerequisites
-* Completed one of the following setups: **[Installation Prerequisites](A/index.html)**, **[Android (Terminal)](B/index.html)**,
-**[Android (Eclipse)](C/index.html)**, **[iOS](D/index.html)**, **[Mac OS X](E/index.html)**,
-**[Linux](F/index.html)**, **[Windows](G/index.html)**, **[Windows Phone 8](H/index.html)**
-
-## `cocos` command-line tool
+## What is the `cocos` command-line tool?
 Cocos2d-x comes with a command-line tool called __cocos__. It is a cross-platform
 tool that allows you to create new cocos2d-x applications as well as __run__ them
 and _deploy_ them. __cocos__ works for all cocos2d-x supported platforms, which
