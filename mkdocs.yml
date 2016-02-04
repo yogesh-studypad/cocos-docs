@@ -15,7 +15,6 @@ pages:
         - 'Linux Setup': 'installation/F.md'
         - 'Windows Setup': 'installation/G.md'
         - 'Windows Phone Setup': 'installation/H.md'
-        - 'Command-line Integration': 'installation/I.md'
     - 'Programmers Guide':
         - 'About Cocos2d-x': 'programmers-guide/1.md'
         - 'Basic Concepts': 'programmers-guide/2.md'
@@ -31,6 +30,7 @@ pages:
         - 'Audio': 'programmers-guide/12.md'
         - 'Advanced Topics': 'programmers-guide/13.md'
     - 'Editors & Tools':
+        - 'Cocos command-line tool': 'editors_and_tools/cocosCLTool.md'
         - 'Studio': 'editors_and_tools/studio.md'
         - '_Workspace_Overview': 'editors_and_tools/Workspace_Overview/en.md'
         - '_CodeAndDebug': 'editors_and_tools/chapter2/CodeAndDebug/en.md'

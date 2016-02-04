@@ -3,7 +3,7 @@
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'cocos' 'sdkbox')
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'cocosCLTool' 'cocos' 'sdkbox')
 
 ### API-Ref
 APIRefAll=('index')
@@ -13,9 +13,9 @@ CocosAll=('cocos')
 CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
-InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
+InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H')
 InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H')
-InstallationchaptersWithOutFolders=('A' 'E' 'I')
+InstallationchaptersWithOutFolders=('A' 'E')
 
 ### Programmers Guide
 PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
@@ -28,7 +28,7 @@ ServicesallDocuments=('sdkbox')
 ServiceschaptersWithFolders=('sdkbox')
 
 ### Editors and Tools
-EditorsAndToolsallDocuments=('studio')
+EditorsAndToolsallDocuments=('studio' 'cocosCLTool')
 EditorsAndToolschaptersWithFolders=('studio')
 
 ### Shared

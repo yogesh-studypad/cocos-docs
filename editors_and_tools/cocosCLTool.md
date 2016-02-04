@@ -1,4 +1,4 @@
-# Appendix I: Command-Line Integration
+# Cocos command-line tool
 
 ## Prerequisites
 * Completed one of the following setups: **[Installation Prerequisites](A/index.html)**, **[Android (Terminal)](B/index.html)**,
