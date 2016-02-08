@@ -88,6 +88,17 @@ pages:
         - '_18 How to -> Fix cocos Run Error?': 'editors_and_tools/chapter4/runError/en.md'
     - 'Services':
         - 'SDKBOX': 'services/sdkbox.md'
+    - 'Tutorials':
+        - 'JavaScript': 'tutorials/javascript/javascript.md'
+        - '_Chapter2': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter2/en.md'
+        - '_Chapter3': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter3/en.md'
+        - '_Chapter4': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter4/en.md'
+        - '_Chapter5': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter5/en.md'
+        - '_Chapter6': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter6/en.md'
+        - '_Chapter7': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter7/en.md'
+        - '_Chapter8': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter8/en.md'
+        - '_Chapter9': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter9/en.md'
+        - '_Chapter10': 'tutorials/javascript/parkour-game-with-javascript-v3.0/chapter10/en.md'
     - 'API Reference': 'api-ref/index.md'
 #- About: 'title.md'
 

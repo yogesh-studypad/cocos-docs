@@ -27,6 +27,10 @@ PGchaptersWithOutFolders=('1' '8' '10' '12')
 ServicesallDocuments=('sdkbox')
 ServiceschaptersWithFolders=('sdkbox')
 
+### Tutorials
+TutorialsallDocuments=('javascript')
+TutorialschaptersWithFolders=('javascript')
+
 ### Editors and Tools
 EditorsAndToolsallDocuments=('studio' 'cocosCLTool')
 EditorsAndToolschaptersWithFolders=('studio')
@@ -146,9 +150,10 @@ buildAll() { ## build absolutely everything.
   prep
   prepAPIRefDocs
   prepCocosDocs
+  prepEditorsAndToolsDocs
   prepInstallationDocs
   prepServicesDocs
-  prepEditorsAndToolsDocs
+  prepTutorialsDocs
   prepProgrammersGuide
   buildMarkdown
   prepPost
@@ -208,6 +213,11 @@ prepServicesDocs() { ## prep Services Docs
     mv docs/services/${i}-web docs/services/${i}-img
     cp services/${i}.md docs/services/${i}.md
   done
+}
+
+prepTutorialsDocs() { ## prep Tutorials Docs
+  echo "prepping Tutorials docs..."
+  rsync -ah tutorials docs/
 }
 
 prepProgrammersGuide() { ## prep Programmers Guide
