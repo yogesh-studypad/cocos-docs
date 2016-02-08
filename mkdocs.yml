@@ -15,6 +15,7 @@ pages:
         - 'Linux Setup': 'installation/F.md'
         - 'Windows Setup': 'installation/G.md'
         - 'Windows Phone Setup': 'installation/H.md'
+    - 'Development Workflows': 'workflows/workflows.md'
     - 'Programmers Guide':
         - 'About Cocos2d-x': 'programmers-guide/1.md'
         - 'Basic Concepts': 'programmers-guide/2.md'
