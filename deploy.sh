@@ -2,7 +2,7 @@
 
 echo "this script builds and then deploys the Cocos2d-x documentation"
 echo "run the build.sh script just in case..."
-./build.sh
+./build.sh --all
 
 echo 'applying custom changes used only for production...'
 #cp search.html site/.

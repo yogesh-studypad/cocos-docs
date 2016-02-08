@@ -3,7 +3,7 @@
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'cocos' 'sdkbox')
+'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'cocosCLTool' 'cocos' 'sdkbox')
 
 ### API-Ref
 APIRefAll=('index')
@@ -13,9 +13,9 @@ CocosAll=('cocos')
 CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
-InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I')
+InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H')
 InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H')
-InstallationchaptersWithOutFolders=('A' 'E' 'I')
+InstallationchaptersWithOutFolders=('A' 'E')
 
 ### Programmers Guide
 PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
@@ -26,6 +26,10 @@ PGchaptersWithOutFolders=('1' '8' '10' '12')
 ### Services
 ServicesallDocuments=('sdkbox')
 ServiceschaptersWithFolders=('sdkbox')
+
+### Editors and Tools
+EditorsAndToolsallDocuments=('studio' 'cocosCLTool')
+EditorsAndToolschaptersWithFolders=('studio')
 
 ### Shared
 misc=('blank' 'index' 'title')
@@ -65,13 +69,20 @@ exitScriptNotEnoughParameters() {
 }
 
 deployToGitHub() { ## deploy docs to GitHub Pages
-  echo "deploying to GitHub Pages: ..."
+  echo "deploying to GitHub Pages..."
   rsync -ah site/ ../slackmoehrle.github.io
   cd ../slackmoehrle.github.io
   git add .
   git commit -m 'published automatically from cocos-docs build script'
   git push
   cd ../cocos-docs
+}
+
+deployToProduction() { ## deploy docs to Production
+  echo "deploying to Production, via rsync..."
+  rsync -avh site/* docops@cocos2dx:documentation/.
+
+  echo 'deployment is done, if no errors were shown above this line...'
 }
 
 hello() {
@@ -100,13 +111,16 @@ help() {
   echo ""
   echo "--help - get help with running this script"
   echo "--all - build absolutely everything and deploy staging versions. This does not deploy to production"
+  echo "--staging - deploys site/ to staging via rsync. This does NOT build anything. This does not deploy to production"
+  echo "--production - deploys site/ to production via rsync. This does NOT build anything."
+
   echo ""
 }
 
 prep() { ## these things happen for any docs that are built.
   echo "prepping environment..."
-  rm -R docs/
-  rm -R site/
+  rm -R docs/*
+  rm -R site/*
   mkdir -p docs
 }
 
@@ -134,6 +148,7 @@ buildAll() { ## build absolutely everything.
   prepCocosDocs
   prepInstallationDocs
   prepServicesDocs
+  prepEditorsAndToolsDocs
   prepProgrammersGuide
   buildMarkdown
   prepPost
@@ -161,6 +176,16 @@ prepCocosDocs() { ## prep Cocos Docs
     mv docs/cocos/${i}-web docs/cocos/${i}-img
     cp cocos/${i}.md docs/cocos/${i}.md
   done
+}
+
+prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
+  echo "prepping Editors And Tools docs..."
+  #for i in ${EditorsAndToolschaptersWithFolders[@]}; do
+  #  rsync -a editors_and_tools/${i}-web docs/editors_and_tools/
+  #  mv docs/editors_and_tools/${i}-web docs/editors_and_tools/${i}-img
+  #  cp editors_and_tools/${i}.md docs/editors_and_tools/${i}.md
+  #done
+  rsync -ah editors_and_tools docs/
 }
 
 prepInstallationDocs() { ## prep Installation Docs
@@ -204,7 +229,6 @@ prepProgrammersGuide() { ## prep Programmers Guide
 
 prepStaticHTMLPages() {
   echo "prepping the static pages we need outside of the MKDocs build process..."
-  echo "output is in site/static-pages/..."
 
   cd static-pages/
 
@@ -230,6 +254,7 @@ prepStaticHTMLPages() {
   ${SED} -i .bak -e 's/installation\//..\/installation\//g' template.orig
   ${SED} -i .bak -e 's/services\//..\/services\//g' template.orig
   ${SED} -i .bak -e 's/api-ref\//..\/api-ref\//g' template.orig
+  ${SED} -i .bak -e 's/editors_and_tools\//..\/editors_and_tools\//g' template.orig
   ${SED} -i .bak -E -f template.sed template.orig
 
   cd ..
@@ -263,7 +288,7 @@ buildMarkdown() {
   ## Now we can use MKDocs to build the static content
   echo "building all of the markdown files we use..."
   echo "MKDocs Build..."
-  mkdocs build
+  mkdocs build --clean
 }
 
 buildProgrammersGuidePrint() {
@@ -383,6 +408,10 @@ main() {
     elif [[ "--all" =~ $1 ]]; then ## builds absolutely every step
       buildAll
       exitScriptAfterStaging
+    elif [[ "--staging" =~ $1 ]]; then ## deploys site/ to staging
+      deployToGitHub
+    elif [[ "--production" =~ $1 ]]; then ## deploys site/ to production
+      deployToProduction
     else
       exitScriptIncorrectParameters
     fi

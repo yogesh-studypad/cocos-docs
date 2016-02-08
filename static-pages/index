@@ -30,6 +30,15 @@
 </div>
 <br />
 
+<!-- Toolchain -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="static-pages/toolchain.html">
+    <img src="static-pages/tools.png" align="middle" />
+    <h3>Our editors and tools</h3>
+    <p class="center">Find our more about these tools.</p>
+  </a>
+</div>
+
 <!-- api ref -->
 <div class="section cocosBlueDarker1 clearfix">
   <a href="api-ref/index.html">
@@ -38,12 +47,3 @@
     <p class="center">Both C++ and JavaScript.</p>
   </a>
 </div>
-
-<!-- Toolchain -->
-<!--<div class="section cocosBlueDarker1 clearfix">
-  <a href="static-pages/toolchain.html">
-    <img src="static-pages/tools.png" align="middle" />
-    <h3>Our editors and tools</h3>
-    <p class="center">Find our more about these tools.</p>
-  </a>
-</div>-->

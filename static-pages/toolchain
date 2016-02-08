@@ -9,11 +9,11 @@
 </style>
 
 <h3>Our editors and tools</h3>
-Besides the source code and prebuilt libraries, there are also more tools to aid
-in the development of your games.
-
+<p>Besides the source code and prebuilt libraries, there are also GUI tools available
+to aid in the development of your games.</p>
+<br />
 <div>
-<p><a href="">Cocos</a></p>
-<p><a href="">Cocos Creator</a></p>
-<p><a href="">Cocos Studio</a></p>
+<!--<p><a href="">Cocos</a></p>
+<p><a href="">Cocos Creator</a></p>-->
+<p><a href="../editors_and_tools/studio/">Studio</a></p>
 </div>
