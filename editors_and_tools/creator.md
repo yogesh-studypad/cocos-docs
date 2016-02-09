@@ -4,13 +4,13 @@ helps developers build 2D and 3D game scenes, edit game UI and other game resour
 quickly and efficiency.
 
 ## Getting Started
-###&emsp;&emsp;[Project Structure](getting-started/project-structure.md)
-###&emsp;&emsp;[Quick Start](getting-started/quick-start.md)
-###&emsp;&emsp;[Support](getting-started/support.md)
-###&emsp;&emsp;[Unity Guide](getting-started/unity-guide.md)
+###&emsp;&emsp;[Project Structure](creator-chapters/getting-started/project-structure.md)
+###&emsp;&emsp;[Quick Start](creator-chapters/getting-started/quick-start.md)
+###&emsp;&emsp;[Support](creator-chapters/getting-started/support.md)
+###&emsp;&emsp;[Unity Guide](creator-chapters/getting-started/unity-guide.md)
 
 ## Dashboard
-###&emsp;&emsp;[Dashboard](dashboard.md)
+###&emsp;&emsp;[Dashboard](creator-chapters/dashboard.md)
 
 <!--###&emsp;&emsp;[](basics/index.md)-->
 <!--###&emsp;&emsp;[](asset-workflow/index.md)-->
@@ -18,11 +18,11 @@ quickly and efficiency.
 <!--###&emsp;&emsp;[](scripting/index.md)-->
 
 ## Animation
-###&emsp;&emsp;[Animation](animation/animation.md)
-###&emsp;&emsp;[Animation Clip](animation/animation-clip.md)
+###&emsp;&emsp;[Animation](creator-chapters/animation/animation.md)
+###&emsp;&emsp;[Animation Clip](creator-chapters/animation/animation-clip.md)
 
 ## What? Where does this fit in?
-###&emsp;&emsp;[Cocos2d-x Guide](cocos2d-x-guide.md)
+###&emsp;&emsp;[Cocos2d-x Guide](creator-chapters/cocos2d-x-guide.md)
 
 <!--###&emsp;&emsp;[](ui/index.md)-->
 <!--###&emsp;&emsp;[](components/index.md)-->
