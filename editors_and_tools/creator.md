@@ -14,8 +14,13 @@ quickly and efficiency.
 ## Dashboard
 ###&emsp;&emsp;[Dashboard](creator-chapters/dashboard.md)
 
-<!--## Basics
-###&emsp;&emsp;[Introduction](creator-chapters/basics/index.md)-->
+## Basics
+<!--###&emsp;&emsp;[Introduction](creator-chapters/basics/index.md)-->
+###&emsp;&emsp;[assets](creator-chapters/basics/editor-panels/assets.md)
+###&emsp;&emsp;[consle](creator-chapters/basics/editor-panels/console.md)
+###&emsp;&emsp;[hierarchy](creator-chapters/basics/editor-panels/hierarchy.md)
+###&emsp;&emsp;[inspector](creator-chapters/basics/editor-panels/inspector.md)
+###&emsp;&emsp;[scene](creator-chapters/basics/editor-panels/scene.md)
 
 ## Asset Workflow
 ###&emsp;&emsp;[Introduction](creator-chapters/asset-workflow/index.md)
