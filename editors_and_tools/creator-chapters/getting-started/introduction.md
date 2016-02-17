@@ -1,27 +1,22 @@
 # About Cocos Creator
 
 - **Q**: Is Cocos Creator a game engine?
-- **A**: It's a complete game development solution, which includes the JavaScript realization of Cocos2d-x(no need to learn a new engine), and various kinds of graph interface tools that can help you develop games more quickly
-
+- **A**: It's a complete game development solution, which includes the JavaScript realization of Cocos2d-x (no need to learn a new engine) and various kinds of graph interface tools that can help you develop games more quickly.
 
 - **Q**: What kind of editor does Cocos Creator have?
-- **A**: It's completely customized for the engine. It's a all-in-one editor that can serve the whole workflow from design, development, preview, adjustment to release
+- **A**: It's completely customized for the engine. It's a all-in-one editor that can serve the whole workflow from design, development, preview, all the way to releasing.
 
+- **Q**: Can I use Cocos Creator even if I don't know how to write a program?
+- **A**: Of course! Cocos Creator provides two kinds of workflows: a design and develop
+oriented, and a simple and smooth cooperative method (with an appropriate division of labor).
 
-- **Q**: Can I use Cocos Creator even if I don't know how to write a program? 
-- **A**: Of course! Cocos Creator editor provides two kinds of workflows:a design-oriented and develop-oriented, and a simple and smooth cooperative method(with an appropriate division of labor).
+- **Q**: Which platform can the games developed by Cocos Creator support?
+- **A**: Currently, Cocos Creator can release games on web, Android, iOS, and the Cocos Play smartphone.
 
-
-- **Q**: Which platform can the games developed by Cocos Creator support? 
-- **A**: Currently, Cocos Creator can release games on Web, Android, iOS, and the click&play Cocos Play smartphone web-based game platform with original functions. It can truly achieve the goal of one development for all platforms.
-
-
-## Product positioning
-
-Cocos Creator is a game development tool focused on content creation, which has realized features like thorough scriptability, componentization and data driven, etc. on the basis of Cocos2d-x. 
+<!--## Product positioning
+Cocos Creator is a game development tool focused on content creation, which has realized features like thorough scriptability, componentization and data driven, etc. on the basis of Cocos2d-x.-->
 
 ## Framework freatures
-
 Cocos Creator contains the whole set of functions needed for game development like game engine, resource management, scene editing, game preview and release, etc. It has assembled all the functions and toolchains in a unified application program.
 
 It makes data driven and componentization the core game development methods, and seamlessly integrates the mature JavaScript API system of the Cocos engine. It can adapt to the user habit of the Cocos engine developer on one hand, and provide an unprecedented level of content creation and realtime preview&test environment for artworkers and directors.
@@ -39,7 +34,7 @@ What the combination of engine and editor brings is the functional development m
 - Designers set up all the data and resources using the graphic interface
 - (In this way, from the simple to the complex, all the workflows that you can imagine can be realized)
 
-The development idea that focused on workflows can help developers of different duties quickly find the breakthrough point to maximize their function at work and smoothly cooperate with other group members. 
+The development idea that focused on workflows can help developers of different duties quickly find the breakthrough point to maximize their function at work and smoothly cooperate with other group members.
 
 ## Workflow introduction
 
