@@ -1,30 +1,34 @@
-# Create Animation components and animation clips
+# Creating Animation components and animation clips
 
-## Create an Animation component
+## Creating an Animation component
 
-We can add different components to each node. If we want to create an animation on a node, we must create a new Animation component for it.
+We can add different components to each Node. If you want to create an animation
+on a Node, we must create a new Animation component for it.
+
 There are 2 methods for creating an animation:
 
-1、Choose the corresponding node, click `+` on the top right corner or `Add component` below in the property checker and choose Animation in other components.
+1.Choose the Node that you want to use. Click __+__ on the top right corner or
+__Add component__ below in the property checker and choose __Animation__ in “other components”.
 
-2、Open the animation editor, choose the node that you want to add the animation to in the arrangement manager and click the `Add Animation component` button in the animation editor.
+2. Open the animation editor. Choose the Node that you want to add the animation to in the arrangement manager. Click the __Add Animation component__ button.
 <a href="animation-clip/add-component.png"><img src="animation-clip/add-component.png" alt="main"></a>
 
-## Create and mount anination clips
+## Create and mount animation clips
 
-Now we have an Animation component on the node, but we don't have the corresponding animation clip data. Also, there are 2 methods for creating an animation clip:
+We have an Animation component on the Node, but we don't have the corresponding Animation clip data. There are 2 methods for creating an Animation clip:
 
-1、Click `+` on the top left corner in the resource manager or right click the blank area, then choose Animation Clip. A clip document named 'New AnimationClip' will now be created in the manager.
-Only the creation of it is not enough. We click and choose the node in the arrangement manager again, find Animation in the property checker. The value of Clips is 0 now. We change it to 1.
-Then we drag the newly created 'New AnimationClip' from the resource manager into the newly emerged `animation-clip choice box`.
+1. Click __+__ on the top left corner in the resource manager or right click in the blank area and choose __Animation Clip__. A clip document named 'New AnimationClip' will be created.
 
-2、If the Animation component hasn't been added to any animation clip document, we can directly click the `Create an animationClip` button in the animation editor, and create a new animation clip document according to the pop up window.
-What we need to pay attention to is that if we choose to cover the existing clip document, the content of the covered document will be cleared up.
+Creating it is not enough. You need to   click and choose the Node in the arrangement manager again and find __Animation__ in the property checker. The current value of Clips  will be 0. Change it to 1.
+
+Drag the newly created 'New AnimationClip' from the resource manager into the newly emerged __animation-clip choice box__.
+
+2. If the Animation component hasn't been added to any Animation clip documents, you can click the __Create an Animation Clip__ button in the animation editor to create a new Animation clip document from the pop up window.
+
+You need to pay attention! If you choose to cover the existing clip document, the contents of the covered document will be erased.
+
 <a href="animation-clip/add-clip.png"><img src="animation-clip/add-clip.png" alt="main"></a>
-
-
-Now we have finished the preparation work before creating animations. Next we will create animation curves.
 
 ---
 
-Continue to read [animation-curve.md]
+Continue on to read about [Animation Curves](animation-curve.md).

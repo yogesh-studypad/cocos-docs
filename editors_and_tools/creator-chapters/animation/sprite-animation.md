@@ -1,22 +1,18 @@
-# Edit sequence frame animation
-
-We have just learnt about the operation of property frame. Now, let's see a concrete method for how to create a frame animation.
+# Editing Sprite animation
+Let's see a concrete method for creating a frame animation.
 
 ## Add a new Sprite component to node
-
-Firstly, we need to make the node display texture normally, therefore we need to add a Sprite component to the node.
-After choosing the node, choose `Add render component->Sprite` by clicking the **Add component** button in the property checker.
+First, we need to make the Node properly displays textures. To do this we need to add a Sprite component to the Node.
+After selecting the Node, choose __add render component->Sprite__ by clicking the **Add component** button in the property checker.
 
 ## Add a cc.Sprite.spriteFrame to property list
-
-After the node is able to display texture normally, we need to create an animation path for texture.
-Click `add property` in the animation editor, then choose `cc.Sprite.spriteFrame`
+Once the Node is able to properly display textures, we need to create an animation path for the texture. Click __add property__ in the animation editor, then choose `cc.Sprite.spriteFrame`
 
 ## Add a frame
-
-Drag texture from the resource manager to the property frame field and put it on the `cc.Sprite.spriteFrame` path.
-Then drag the texture needing to be displayed in the next frame to the designated position. Click 'Play' and the newly created animation can be previewed.
+Drag the texture from the resource manager to the property frame field and put it on the `cc.Sprite.spriteFrame`path. Then drag the texture that needs to be displayed in the
+next frame to the designated position. Click __Play__ and the newly created animation
+can be previewed.
 
 ---
 
-Continue to read [time-curve.md].
+Continue on to read [Time Curves](time-curve.md).

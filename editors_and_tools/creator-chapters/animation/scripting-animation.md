@@ -1,7 +1,7 @@
-# Use script to control animation
+# Using scripts to control animation
 
 ## Animation component
-Animation component provides some common animation control functions. If you only need simple animation control, you can do some operations by obtaining Animation component of node.
+Animation components provide some common animation control functions. If you only need simple animation control, you can do some operations by obtaining the Animation component of the Node.
 
 ### Play
 ```javascript
@@ -58,10 +58,10 @@ anim.stop('test');
 // anim.stop();
 ```
 
-The invoking of **Pause**, **Resume** and **Stop** functions is similar.
+Invoking **Pause**, **Resume** and **Stop** functions is similar.
 
-**Pause** will temporarily stop the playing of animation. When **Resume** the animation, animation will continue playing from the current time.
-But **Stop** will stop the playing of animation. When being played again, this animation will start playing from the beginning.
+**Pause** will temporarily stop playing the animation. **Resume**, the animation will continue playing from the current time.
+However, **Stop** will stop the playing of the animation. When being played again, this animation will start playing from the beginning.
 
 ### set up the current time of animation
 ```javascript
@@ -76,7 +76,7 @@ anim.setCurrentTime(1, 'test');
 // anim.setCurrentTime(1);
 ```
 
-You can set up the current time of animation at anytime. But the status of animation will not be immediately modified according to set time. Only in next **update** of animation will the playing status be re-calculated according to this time.
+You can set the current time of animation at anytime. But, the status of the animation will not be immediately modified according to set time. Only in next **update** of the animation will the playing status be re-calculated according to this time.
 
 ## AnimationState
 
@@ -85,7 +85,7 @@ You can set up the current time of animation at anytime. But the status of anima
 ### What is AnimationState?
 If **AnimationClip** is the carrier of animation data, then **AnimationState** is the concrete example of running **AnimationClip**, which decodes animation data into numeric values that are convenient to be calculated by program.
 When **Animation** is playing an **AnimationClip**, **AnimationClip** will be docoded into **AnimationState**.
-The playing state of **Animation** is actually calculated by **AnimationState**, which includes whether animation will loop or not, how to loop, playing speed, etc.. 
+The playing state of **Animation** is actually calculated by **AnimationState**, which includes whether animation will loop or not, how to loop, playing speed, etc..
 
 ### obtain AnimationState
 ```javascript
@@ -134,7 +134,7 @@ var frameRate = animState.frameRate;
 
 ```
 
-From **AnimationState**, all the animation information can be obtained. You can use these information to see what should be done. 
+From **AnimationState**, all the animation information can be obtained. You can use this information to see what should be done.
 
 ### Set up the playing speed of animation
 ```javascript
@@ -175,8 +175,7 @@ By default, when decoding animation clips, if the loop category of animation is:
  - **Normal** category, **repeatCount** will be set as 1
 
 ## Animation event
-Visual editing the frame event is supported in the animation editor (For the method of editing, please refer to [./animation-event.md]). Writing the callback of the animation event in the script is very simple too.
-The callback of the animation event is actually a normal function. The frame event added to the animation editor will map onto the component of animation root node.
+Visually editing the frame event is supported in the animation editor (For the methods of editing, please refer to [./animation-event.md]). Writing the callback of the animation event in the script is very simple too. The callback of the animation event is actually a normal function. The frame event added to the animation editor will map onto the component of animation root node.
 
 ### Concrete example:
 Suppose a frame event is added to the end of animation, which is as illustrated below:
@@ -199,4 +198,4 @@ Animation system will search in all the components of animation root node. If th
 
 ---
 
-Continue to read the next chapter [../components/index.md].
+Continue to read the next chapter [Components](../components/index.md).
