@@ -1,5 +1,4 @@
 # Basic editor information
-
 This chapter will provide an introduction to the main editor windows and panels. We recommend beginners start getting familiar with Cocos Creator's interface and operating methods by reading this chapter before getting into learning about workflow.
 
 - [Editor interface introduction](editor-overview.md)
@@ -14,4 +13,4 @@ This chapter will provide an introduction to the main editor windows and panels.
 
 <hr>
 
-Start from [editor interface introduction](editor-overview.md).
+Continue on to read about [editor interface introduction](editor-overview.md).

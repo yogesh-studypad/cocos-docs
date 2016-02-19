@@ -1,7 +1,7 @@
-# Construct and preview
+# Build and preview
 
 Coming soon...
 
 <hr>
 
-Keep moving on to the [asset workflow](../asset-workflow/index.md) file.
+Continue on to read about [Asset workflow](../asset-workflow/index.md).
