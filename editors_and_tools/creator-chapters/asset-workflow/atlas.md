@@ -5,4 +5,4 @@ Coming soon...
 
 <hr>
 
-Keep moving on to the [Font](font.md) file.
+Continue on to read about [Font](font.md).

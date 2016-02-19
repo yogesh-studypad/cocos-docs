@@ -1,27 +1,24 @@
-# Create and manage scene
+# Creating and managing scenes
 
-## Create scene
-
-Method one: choose main menu `file/new scene`
+## Creating a scene
+Method one: on the main menu select __File-->New scene__
 
 ![new-scene-main-menu](scene-managing/new-scene-main-menu.png)
 
-Method two: click create menu in **assets** to create new scene.
+Method two: click the create menu in **assets** to create a new scene.
 
 ![new-scene-assets-menu](scene-managing/new-scene-assets-menu.png)
 
-## Save scene
+## Saving a scene
+Method one: use keyboard shortcut __Ctrl + S__ (Windows) or __Command + S__ (Mac)
 
-Method one: use keyboard shortcuts `Ctrl + S` (Windows) or `Command + S` (Mac)
- 
-Method two: choose main menu `file/save scene`
+Method two: on the main menu select __File-->Save scene__
 
 ![save-scene-main-menu](scene-managing/save-scene-main-menu.png)
 
-## Switch scene
-
-Double click the scene that needs to be opened in **assets**.
+## Switching scenes
+Double click the scene that you want to open in **assets**.
 
 <hr>
 
-Keep moving on to the [Texture](sprite.md) file.
+Continue on to read about [Textures](sprite.md).

@@ -4,4 +4,4 @@ Coming soon...
 
 <hr>
 
-Keep moving on to the [Atlas](atlas.md) file.
+Continue on to read about [Atlas](atlas.md).

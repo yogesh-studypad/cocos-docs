@@ -5,4 +5,4 @@ Coming soon...
 
 <hr>
 
-Keep moving on to the [prefabricate asset](prefab.md) file.
+Continue on to read about [prefabricate asset](prefab.md).

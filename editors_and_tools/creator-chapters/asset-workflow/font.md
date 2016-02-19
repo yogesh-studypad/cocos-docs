@@ -5,4 +5,4 @@ Coming soon...
 
 <hr>
 
-Keep moving on to the [particle asset](particle.md) file.
+Continue on to read about [particle asset](particle.md).
