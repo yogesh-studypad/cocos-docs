@@ -2,6 +2,8 @@
 docs
 site
 print
+static-pages/api-refs/
+*.tar.gz
 
 # output formats we don't want to store in GitHub
 *.epub
