@@ -1,8 +1,8 @@
 # System built-in events
 
-As stated in the last file, `cc.Node` has a whole set of [event listener and dispatch mechanism](./events.md). Based on this mechanism, we provide some basic system events. This file will introduce how to use these events.
+As stated in the last file, `cc.Node` has a whole set of [event listener and dispatch mechanisms](./events.md). Based on this mechanism, we will provide some basic system events. This file will introduce how to use these events.
 
-System events follow the general register method, developers can register event listener not only by using enumeration type but also by using the event name directly, the definition for the event name follows DOM event standards.
+System events follow the general register method, developers can register event listener not only by using the enumeration type but also by using the event name directly, the definition for the event name follows DOM event standards.
 
 ```
 // Use enumeration type to register
@@ -17,15 +17,15 @@ node.on('mousedown', function (event) {
 
 ## Mouse event type and event object
 
-Mouse event will only be triggered on desktop platforms, the event types the system provides are as follows:
+The Mouse event will only be triggered on desktop platforms, the event types the system provides are as follows:
 
 | enumeration object definition | corresponding event name | event trigger timing |
 | ---------- |:----------:|:-----------:|
 | `cc.Node.EventType.MOUSE_DOWN` | 'mousedown' | trigger once when mouse down |
-| `cc.Node.EventType.MOUSE_ENTER` | 'mouseenter' | when the mouse enters the target node region, no matter it is down |
-| `cc.Node.EventType.MOUSE_MOVE` | 'mousemove' | when the mouse moves in the target node region, no matter it is down |
-| `cc.Node.EventType.MOUSE_LEAVE` | 'mouseleave' | when the mouse leaves the target node region, no matter it is down |
-| `cc.Node.EventType.MOUSE_UP` | 'mouseup' | trigger once when the mouse is released from down state |
+| `cc.Node.EventType.MOUSE_ENTER` | 'mouseenter' | when the mouse enters the target node region, regardless if it is down |
+| `cc.Node.EventType.MOUSE_MOVE` | 'mousemove' | when the mouse moves in the target node region, regardless if it is down |
+| `cc.Node.EventType.MOUSE_LEAVE` | 'mouseleave' | when the mouse leaves the target node region, regardless if it is down |
+| `cc.Node.EventType.MOUSE_UP` | 'mouseup' | trigger once when the mouse is released from the down state |
 | `cc.Node.EventType.MOUSE_WHEEL` | 'mousewheel' | when the mouse wheel rolls |
 
 The important APIs of mouse events（`cc.Event.EventMouse`）are as follows（`cc.Event` standard events API excluded）：
@@ -41,7 +41,7 @@ The important APIs of mouse events（`cc.Event.EventMouse`）are as follows（`c
 
 ## Touch event types and event objects
 
-Touch event can be triggered in both mobile platforms and desktop platforms. This is designed to serve developers to debug on desktop platforms better, all you need to do is listen to touch events, touch events from mobile platforms and  mouse events from desktop can be responded at the same time. Touch event types that the system provides are as follows:
+Touch event can be triggered in both mobile platforms and desktop platforms. This is designed to serve developers to debug on desktop platforms better, all you need to do is listen to touch events, touch events from mobile platforms and mouse events from desktop can be responded to at the same time. Touch event types that the system provides are as follows:
 
 | enumeration object definition | corresponding event name | event trigger timing |
 | ---------- |:----------:|:-----------:|
@@ -74,11 +74,11 @@ Mouse and touch events all support the event bubbles on the node tree, take the 
 
 ![propagation](./internal-events/propagation.png)
 
-In the scene shown in the picture, node A has a child node B which has a child node C. Suppose the developer set the touch event listeners for all these three nodes, when the mouse or finger pressed in the node B region, the event will be triggered at node B first and the node B listener will receive the event. Then the node B will pass this event to its parent node, so the node A listener will receive this event. This is a basic event bubble process.
+In the scene shown in the picture, node A has a child node B which has a child node C. Suppose the developer set the touch event listeners for all these three nodes, when the mouse or finger was applied in the node B region, the event will be triggered at node B first and the node B listener will receive the event. Then the node B will pass this event to its parent node, so the node A listener will receive this event. This is a basic event bubble process.
 
 When the mouse or finger presses in the node C region, the event will be triggered at node C first and notify the registered event listener at node C. Node C will notify node B of this event, and the logic in node B will check whether the touch spot is in its region. If the answer is yes, it will notify its listener, otherwise, it will do nothing. Node A will receive the event then, since node C is completely in node A, the event listener registered in node A will receive the touch down event. The above process explains the event bubble process and that the logic decides whether to dispatch the event or not based on the node region.
 
-Except for the node region to decide whether to dispatch the event or not, the bubble process of mouse and touch events is no different to the general events. So, the fuction`stopPropagation` to call `event` of `stopPropagation` can stop the bubbling process actively.
+Except for the node region to decide whether to dispatch the event or not, the bubble process of mouse and touch events is no different than the general events. So, the fuction`stopPropagation` to call `event` of `stopPropagation` can stop the bubbling process actively.
 
 ## Other events of `cc.Node` 
 
@@ -90,4 +90,4 @@ Except for the node region to decide whether to dispatch the event or not, the b
 | null | 'size-changed' | when the size property is changed |
 | null | 'anchor-changed' | when the anchor property is changed |
 | null | 'color-changed' | when the color property is changed |
-| null | 'opacity-changed' | when the tranparency property is changed |
+| null | 'opacity-changed' | when the transparency property is changed |

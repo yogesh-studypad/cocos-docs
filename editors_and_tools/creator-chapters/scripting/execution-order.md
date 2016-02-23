@@ -1,5 +1,5 @@
 # Script execution order
 
-File contents is completing...
+File contents are being completed at this time...
 
 

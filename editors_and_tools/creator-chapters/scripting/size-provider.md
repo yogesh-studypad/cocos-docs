@@ -3,7 +3,7 @@
 
 What is SizeProvider？
 
-For the convenience of editing, all Nodes in Cocos Creator come with a Content Size property whose behavior is not in full accord when the Nodes have different Components. Some Components need to forbid altering Size and sometimes they need to listen to the modification of Size but sometimes they need to make Size equal to the value set by itself. So, Node provides a mechanism called SizeProvider to meet these application scenarios.
+For the convenience of editing, all Nodes in Cocos Creator come with a Content Size property whose behavior is not in full accord when the Nodes have different Components. Some Components need to forbid altering Size and sometimes they need to listen to the modification of Size. However sometimes they need to make Size equal to the value set by itself. So, Node provides a mechanism called SizeProvider to meet these application scenarios.
 
 ## Definition of SizeProvider
 
@@ -66,11 +66,11 @@ getContentSize: function (ignoreSizeProvider) {
 }
 ```
 
-if _sizeProvider is null, it will return the _contentSize of Node itself. What we need to note is that _contentSize will synchronously update to the new size of _sizeProvider, but this update operation will only happen when the getContentSize of Node is being called.
+if _sizeProvider is null, it will return the _contentSize of Node itself. What we need to note is that _contentSize will synchronously update to the new size of _sizeProvider, but this update will only happen when the getContentSize of Node is being called.
 
 #### setContentSize
 
-When the setContentSize of Node is being called, if _sizeProvider is null, it will call setContentSize of the provider:
+When the setContentSize of Node is being called, if _sizeProvider is null, it will call setContentSize from the provider:
 
 ```js
 setContentSize: function (sizeOrX, y) {
@@ -109,7 +109,7 @@ onDestroy: function () {
 
 #### Make Node size completely synchronized with SGNode size of Component
 
-Refer to the ComponentInSG type, since SGNode itself has achieved several interfaces of SizeProvider, so it doesn't need to define its SizeProvider, instead, assign _sizeProvider as the SGNode object.
+Refer to the ComponentInSG type, since SGNode itself has achieved several interfaces of SizeProvider, it doesn't need to define its SizeProvider, instead, assign _sizeProvider as the SGNode object.
 
 ```js
 onLoad: function () {

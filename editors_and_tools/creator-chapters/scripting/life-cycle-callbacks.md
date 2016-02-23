@@ -60,7 +60,7 @@ cc.Class({
 
 ## update
 
-One of the key points for game development is to update an object's behavior, status and orientation before rendering every frame. These update operations are normally put in `update` call-back.
+One of the key points for game development is to update an object's behavior, status and orientation before rendering every frame. These update operations are normally put in the `update` call-back.
 
 ```js
 cc.Class({
@@ -75,7 +75,7 @@ cc.Class({
 ## lateUpdate
 
 `update` will execute before all the animations' update, but if we want to perform some extra operations after the animation update or
- want to perform other operations after `update` of all the components are done, then we'll need `lateUpdate` call-back.
+ want to perform other operations after `update` of all the components are done, then we'll need the `lateUpdate` call-back.
 
 ```js
 cc.Class({

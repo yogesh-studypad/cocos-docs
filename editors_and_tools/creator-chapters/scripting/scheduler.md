@@ -71,6 +71,6 @@ Below are all the functions of the timer in the component:
 
 These detailed descriptions about API can all be found in [Component API](http://fireball-x.com/api/classes/Component.html).
 
-Besides, if every frame needs to run a function, please add function `update` directly in to the component, so this function will be called by every frame. A detailed description can be found in [life cycle file](file:///Users/panda/StudyWork/Cocos/fireball/docs/html/scripting/life-cycle-callbacks.html#update).
+Besides this, if every frame needs to run a function, please add function `update` directly in to the component, so this function will be called by every frame. A detailed description can be found in [life cycle file](file:///Users/panda/StudyWork/Cocos/fireball/docs/html/scripting/life-cycle-callbacks.html#update).
 
 ### **Caution: `cc.Node` does not contain API related to the timer**

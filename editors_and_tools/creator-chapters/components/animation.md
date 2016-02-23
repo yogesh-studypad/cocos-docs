@@ -1,31 +1,31 @@
 # Animation component reference
-**Animation **component enables node and its child node to make animation.
+The **Animation **component enables a node and its child node to make an animation.
 
 ![animation.png](./animation/animation.png)
 
-Click the `add component` button at the bottom of **attribute inspector**, and then select `Animation` from `add other components` so you can add **Animation** component to node.
+Click the `add component` at the bottom of **attribute inspector** and select `Animation` from `add other components` in order to add the **Animation** component to the node.
 
 
 ## Animation attribute
 
-| Attribute |   Function Explanation
+| Attribute |   function explanation
 | -------------- | ----------- |
-| Default Clip | Default animation clip. If you set value for this one and **Play On Load** is true, then the animation will play the content of **Default Clip** automatically after loading.
-| Clips | Default list type is null, **AnimationClip** added in here will reflect into the **animation editor**, user can edit content of **Clips** in **animation editor**
-| Play On Load | Boolean type, whether auto-play the content of **Default Clip** after the animation has completed loading.
+| Default Clip | Default animation editing. If you set the value for this as one and **Play On Load** as true, then the animation will play the contents of **Default Clip** automatically after loading.
+| Clips | Default list type is null. If you add an **AnimationClip** in here, then it will be mirrored in the **animation editor**; users can edit the contents of **Clips** in the **animation editor**
+| Play On Load | Boolean type. Chooses whether to play the content of the **Default Clip** automatically after the animation loads.
 
-## Detailed explanation
+## Detailed description
 
-If we need to have many nodes contained in one animation, then normally we will create a new node as the animation's **root node**. Add **Animation ** component to this **root node**, then the other child nodes of this root node will come into this animation automatically.
+If we need to have many nodes contained in one animation, then normally we will create a new node as the **root node** of the animation and add the **Animation ** component to this **root node**. The other child nodes of the root node will then automatically enter this animation.
 
 If the following node tree is added:
 ![animation-hierarchy.png](./animation/animation-hierarchy.png)
 
-then the hierarchy in animation editor will show as:
+Then the hierarchy in the animation editor will show:
 ![animation-editor-hierarchy.png](./animation/animation-editor-hierarchy.png)
 
-More information about**Animation**, please keep moving on to [Animation system](../animation/index.md)
+For more information about**Animation**, please read [animation system](../animation/index.md).
 
 <hr>
 
-Keep moving on to [Canvas component reference](canvas.md) file.
+Keep moving on to the [Canvas component reference](canvas.md) file.

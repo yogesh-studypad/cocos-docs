@@ -1,7 +1,7 @@
-# Mangage node hierarchy and display order
+# Manage node hierarchy and display order
 
 
 
 <hr>
 
-Keep moving on to [Build scene graph with scene editor](scene-editing.md) file.
+Keep moving on to the [build scene graph with scene editor](scene-editing.md)file.

@@ -1,3 +1,3 @@
-# Debug script in browser
+# Debug script in the browser
 
 Coming soon...

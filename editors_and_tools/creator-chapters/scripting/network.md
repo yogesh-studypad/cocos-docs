@@ -62,7 +62,7 @@ Of course, browsers on the Web platform support these two interfaces originally.
 
 ## SocketIO
 
-Beyond these, SocketIO provides packaging based on WebSocket API which can be used on the Node.js server. If this library is needed, developers can reference SocketIO by themselves.
+Beyond these, SocketIO provides packaging based on the WebSocket API which can be used on the Node.js server. If this library is needed, developers can reference SocketIO on their own.
 
 Reference SocketIO in script:
 
@@ -82,4 +82,4 @@ Reference SocketIO in script:
     }
     ```
 
-4. Use SocketIO in the component can go to [SocketIO official website](http://socket.io/) for API and files
+4. To use SocketIO in the component you can go to [SocketIO official website](http://socket.io/) for API and files

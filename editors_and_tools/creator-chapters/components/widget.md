@@ -1,6 +1,6 @@
 # Widget component reference
 
-Widget is a frequently used UI layout component. It can make the current node align to an optional position of the parent object automatically or limit size to make your game adaptive to different resolution ratios.
+Widget is a frequently used UI layout component. It can make the current node automatically align to an optional position of the parent object or restrict dimensions to make your game adaptive to different resolution ratios.
 
 ![default](widget/widget-default.png)
 
@@ -8,16 +8,16 @@ Widget is a frequently used UI layout component. It can make the current node al
 
 Options | Explanation| Note
 --      | --         | --
-Top     | Upper border alignment | After the selection, an input field will appear to set the distance between the upper border of the current node and the upper border of the parent object.
-Bottom  | Lower border alignment | After the selection, an input field will appear to set the distance between the lower border of the current node and the lower border of the parent object.
-Left    | Left border alignment  | After the selection, an input field will appear to set the distance between the left border of the current node and the left border of the parent object.
-Right   | Right border alignment | After the selection, an input field will appear to set the distance between the right border of the current node and the right border of the parent object.
+Top     | Upper border alignment | After selecting, an input field will appear to set the distance between the upper border of the current node and the upper border of the parent object.
+Bottom  | Lower border alignment | After selecting, an input field will appear to set the distance between the lower border of the current node and the lower border of the parent object.
+Left    | Left border alignment  | After selecting, an input field will appear to set the distance between the left border of the current node and the left border of the parent object.
+Right   | Right border alignment | After selecting, an input field will appear to set the distance between the right border of the current node and the right border of the parent object.
 HorizontalCenter   | Horizontal center alignment |
 VerticalCenter     | Vertical center alignment   |
 
 ## Border alignment
 
-We can place a Widget below Canvas, and do the following tests:
+We can place a Widget below Canvas, and perform the following tests:
 
 #### Left alignment, left border distance 100 px：
 
@@ -44,8 +44,8 @@ The percentage will take the width or height of the parent object as a benchmark
 
 ## Limit size
 
-If you align the left and right side at the same time, or align the top and bottom at the same time, then the size of the corresponding direction will be stretched.
-The following is a demonstration. Place two rectangular Sprites in the scene and take the bigger one as the dialog box background, the smaller one as the button on the dialog box. Take the button node as the child node of the dialog box and set the button into Sliced mode so that you can observe the stretch effect.
+If you align the left and right side at the same time, or align the top and bottom at the same time, then the size will be stretched in the corresponding direction.
+Let us look at a demonstration. Place two rectangular Sprites in the scene and take the bigger one as the dialog box background and the smaller one as the button on the dialog box. Take the button node as the child node of the dialog box and set the button into Sliced mode so that you can observe the stretch effect.
 
 #### Horizontal stretch, left and right margin 10%：
 
@@ -55,11 +55,11 @@ The following is a demonstration. Place two rectangular Sprites in the scene and
 
 ![v-stretch](widget/widget-v-stretch.png)
 
-#### Stretch in horizontal and vertical direction, margin 50 px：
+#### Stretch in the horizontal and vertical directions, margin 50 px：
 
 ![margin-50px](widget/widget-margin-50px.png)
 
 
 ---
 
-Keep moving on to [Button component preference](button.md) file.
+Continue on to read about [Button component preference](button.md).

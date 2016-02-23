@@ -1,6 +1,6 @@
 # attribute declaration
 
-By attribute declaration in the component script, we can visually show the field of the script component in **attribute inspector** so that
+By employing attribute declaration in the component script, we can visually show the field of the script component in **attribute inspector** so that
 we can adjust the attribute value in the scene easily.
 
 To declare the attribute, all you need to do is put the attribute name and parameters in the cc.Class defining `properties` field, for instance:
@@ -15,7 +15,7 @@ To declare the attribute, all you need to do is put the attribute name and param
   });
 ```
 
-At this time, you can see in **attribute inspector**, the two properties you just defined show in the inspector panel:
+At this time, you can see in **attribute inspector** the two properties you just defined are shown in the inspector panel:
 
 ![properties-in-inspector](assets/properties-in-inspector.png)
 
@@ -25,7 +25,7 @@ In Cocos Creator, we provide two kinds of attribute declaration methods:
 
 ### Simple declaration
 
-In most cases, we can use simple declaration. When the attribute declared is Javascript built-in type `boolean`,
+In most cases, we can use simple declaration. When the attribute declared is the Javascript built-in type `boolean`,
 `string` and `number`, it can be written directly into:
 
 ```javascript
@@ -73,7 +73,7 @@ the attribute behavior in the serial scene process. For example:
   }
 ```
 
-The code above stipulates the attribute name of score in **attribute inspector** will be shown as “Score (player)”,
+The code above stipulates that the attribute name of the score in **attribute inspector** will be shown as “Score (player)”,
 and when the cursor moves on to the parameter, it will show the corresponding Tooltip.
 
 Below are the general parameters. For detailed usage please refer to[attribute parameter](/manual/scripting/attributes).
@@ -123,7 +123,7 @@ properties: {
 }
 ```
 
-**Note:** You can define the get method only so this is like one attribute of readonly.
+**Note:** You can define the get method only, so this is like one attribute of read only.
 
 For more attribute parameters, please read [attribute parameter](reference/attributes.md).
 

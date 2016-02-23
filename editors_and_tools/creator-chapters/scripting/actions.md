@@ -2,9 +2,9 @@
 
 ## Introduction to the action system 
 
-The action system that Cocos Creator provides originates from Cocos2d-x with both the API and usage having been inherited. The action system can complete displacement, zoom, rotate and all the other actions of the node within a certain time.
+The action system that Cocos Creator provides originates from Cocos2d-x with both the API and usage having been inherited. The action system can complete displacement, zoom, rotate and all the other actions of the node within a designated time.
 
-What needs to be noted is that the action system cannot replace the [animation system](../animation/index.md). What the action system provides is an API interface for programmers, while the animation system is designed within the editor. Meanwhile, they serve different usage scenarios — the action system is more suitable for making simple deformation and displacement animation while the animation system is much more powerful, you can make animation supporting all kinds of properties with the editor, including motion track and complicated animation in slow motion.
+What needs to be noted is that the action system cannot replace the [animation system](../animation/index.md). What the action system provides is an API interface for programmers, while the animation system is designed within the editor. Meanwhile, they serve different usages — the action system is more suitable for making simple deformation and displacement animation while the animation system is much more powerful, you can make animation supporting all kinds of properties with the editor, including motion track and complicated animation in slow motion.
 
 ## Action system
 

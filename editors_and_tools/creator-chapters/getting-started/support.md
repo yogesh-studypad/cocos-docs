@@ -1,8 +1,8 @@
 # Obtain help and support
 
-## Send problems and feedbacks
+## Send problems and feedback
 
-Apart from the information provided in this guide, you can also obtain information from or send feedbacks to the Cocos Creator development group through the following channels at anytime:
+Apart from the information provided in this guide, you can also obtain information from or send feedback to the Cocos Creator development group through the following channels at any time:
 
 - QQ group：246239860
 - [Cocos2d-JS API document](http://www.cocos2d-x.org/reference/html5-js/V3.8/index.html)
@@ -10,18 +10,18 @@ Apart from the information provided in this guide, you can also obtain informati
 
 ## Presentation and example projects
 
-- [Example collection](https://github.com/cocos-creator/example-cases): from basic components to interactive input, this project includes usage introductions to the functional points of case by case.
+- [Example collection](https://github.com/cocos-creator/example-cases): from basic components to interactive input, this project includes usage case by case introductions to the functional points.
 - [Your first Cocos Creator game: Star Catcher](https://github.com/cocos-creator/tutorial-first-game)
 - [21 points card game co-developed with Tencent](https://github.com/cocos-creator/tutorial-blackjack)
 
 ## Original release code library
 
-Cocos code library needed for zip and send to original platform(Windows, Mac, Android, iOS):
+Cocos code libraries that are needed for zipping and sending to native platforms (Windows, Mac, Android, iOS):
 
 - [Cocos Framework v3.9 Windows Edition](http://cocostudio.download.appget.cn/Cocos/CocosStore/CocosFramework-V3.9-Windows.exe)
 - [Cocos Framework v3.9 Mac Edition](http://cocostudio.download.appget.cn/Cocos/CocosStore/CocosFramework-V3.9-Mac.pkg)
 
-Code library needed for zip and send to Android platform: 
+Code libraries needed for zipping and sending to the Android platform: 
 
 - [Android SDK Windows](http://cocostudio.download.appget.cn/Cocos/CocosStore/Android-SDK-Windows.zip)
 - [Android SDK Mac](http://cocostudio.download.appget.cn/Cocos/CocosStore/android22-sdk-macosx.zip)

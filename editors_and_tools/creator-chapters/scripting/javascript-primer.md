@@ -6,7 +6,7 @@
 
 This text mainly introduces JavaScript. Beginners will have a general understanding about JavaScript and would have the right skills for Cocos Creator development after they master the contents of this text.
 
-JavaScript is a programming language full of controversy: it is named after Java, but in fact, it has nothing to do with Java. The creation of JavaScript [only took 10 days](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript), but it managed to develop into the most popular Web development language in the world in 20 years. If you are looking for a reason for the status and popularity of JavaScript nowadays, there's no doubt it is because of its easy-to-use language feature. Of course, mastering JavaScript is a tough task, but learning knowledge enough to develop Web Apps and games is easy. If you have some basic programming skills, then it won't take you too long to get familiar with JavaScript language features.
+JavaScript is a programming language full of controversy: it is named after Java, but in fact, it has nothing to do with Java. The creation of JavaScript [only took 10 days](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript), but it managed to develop into the most popular Web development language in the world in 20 years. If you are looking for the reason behind the status and popularity of JavaScript nowadays, there's no doubt it is because of its easy-to-use language features. Of course, mastering JavaScript is a tough task, but learning knowledge enough to develop Web Apps and games is easy. If you have some basic programming skills, then it won't take you too long to get familiar with JavaScript's language features.
 
 In addition, you may use some exsiting patterns while using Cocos Creator to develop a game under most circumstances. According to the Pareto principle (also known as the 80/20 principle), mastering  20% of one language is enough for you to handle more than 80% of situations. Now, let's learn enough JavaScript knowledge in the shortest time so that we can begin to develop a game with Cocos Creator.
 
@@ -14,7 +14,7 @@ In addition, you may use some exsiting patterns while using Cocos Creator to dev
 
 If you can see this article, then you already have a full-featured JavaScript development environment--I am talking about the browser you are using!
 
-All the examples on this page, you can type them into your browser's console and check their running results. If you don't know how to do this, you can read [Guidance of how to open the cosole in different browsers](http://webmasters.stackexchange.com/a/77337).
+All the examples on this page, you can type them into your browser's console and check their running results. If you don't know how to do this, you can read [Guidance of how to open the console in different browsers](http://webmasters.stackexchange.com/a/77337).
 
 Are you ready? Let's start learning JavaScript!
 
@@ -38,7 +38,7 @@ When reading JavaScript code from others, you may also see variable declaration 
 a = 12;
 ```
 
-If you try in the browser's console, you will find JavaScript won't report an error when the variable declaration omits `var`, but in the Cocos Creator project script, `var` of variable declaration can not be omitted, otherwise the compeler will report an error.
+If you try in the browser's console, you will find JavaScript won't report an error when the variable declaration omits `var`, but in the Cocos Creator project script, `var` of variable declaration can not be omitted, otherwise the compiler will report an error.
 
 
 ## Function
@@ -47,7 +47,7 @@ In JavaScript, we declare a function like this:
 
 ```js
 var myAwesomeFunction = function (myArgument) {
-    // do something
+    // does something
 }
 ```
 
@@ -57,7 +57,7 @@ Call the function like this:
 myAwesomeFunction(something);
 ```
 
-We can see that function declaration, same as variable declaration, also follows `var something = somethingElse` pattern. Because in JavaScript, function and variable are essentially the same, we can introduce one function as a parameter into another function like this:
+We can see that function declaration, same as variable declaration, also follows the `var something = somethingElse` pattern. Because in JavaScript, function and variable are essentially the same, we can introduce one function as a parameter into another function like this:
 
 ```js
 square = function (a) {
@@ -71,7 +71,7 @@ applyOperation (square, 10); // 100
 
 ## Returned value
 
-Returned value of a function is defined by a sentence beginning with `return`. Here, what we need to know it that the contents after the sentence beginning `return` in the function will not be executed.
+The returned value of a function is defined by a sentence beginning with `return`. Here, what we need to know is that the contents after the sentence beginning `return` in the function will not be executed.
 
 ```js
 myFunction = function (a) {
@@ -82,7 +82,7 @@ myFunction = function (a) {
 
 ## If
 
-In JavaScript, a conditional judgement statement `if` shoule be used like this:
+In JavaScript, a conditional judgement statement `if` should be used like this:
 
 ```js
 if (foo) {
@@ -132,7 +132,7 @@ else {
 
 ## JavaScript Array
 
- In JavaScript, declare array like this:
+ In JavaScript, declare an array like this:
 
 ```js
 a = [123, 456, 789];
@@ -157,7 +157,7 @@ myProfile = {
 }
 ```
 
-In the grammar for object declaration（`myProfile = {...}`）, there is one pair of key values separated by a comma. Each pair includes one key (character string type, sometimes quoted by double quotation marks) and a value (could be any type: including string, number, boolean, variable name, array, object, and even function). We call such pair of key values a property of the object, key is the property name and value is the property value.
+In the grammar for object declaration（`myProfile = {...}`）, there is one pair of key values separated by a comma. Each pair includes one key (character string type, sometimes quoted by double quotation marks) and a value (could be any type: including string, number, boolean, variable name, array, object, and even function). We call such pairs of key values a property of the object, key is the property name and value is the property value.
 
 You can nest other objects or arrays composed by a set of objects in the value
 
@@ -196,7 +196,7 @@ var MyComponent = cc.Class({
 });
 ```
 
-`{extends: cc.Component}` is an object being a function parameter. In most circumstances in JavaScript, we don't have to name an object when we use it and we may probably use it directly like this.
+`{extends: cc.Component}` is an object acting as a function parameter. In most circumstances in JavaScript, we don't have to name an object when we use it and we may probably use it directly like this.
 
 ## Anonymous function
 
@@ -264,9 +264,9 @@ n.double().square(); //100
 
 In short, `this` key word can give you access to the object being processed; like a chameleon,`this` can also change according to the execution environment.
 
-It is very complicated to explain the principle of `this`, so let's use two kind of tools to help us understand the value of `this` in practice:
+It is very complicated to explain the principle of `this`, so let's use two kinds of tools to help us understand the value of `this` in practice:
 
-First of all, the most common and frequently used is `console.log()`. It can output the information of an object to the browser console. Add one `console.log()` in the begginning of each function body to make sure we know what object the current operating environment is processing.
+First of all, the most common and frequently used is `console.log()`. It can output the information of an object to the browser console. Add one `console.log()` in the beginning of each function body to make sure we know what object the current operating environment is processing.
 
 ```js
 myFunction = function (a, b) {
@@ -284,11 +284,11 @@ myFunction = function (a, b) {
 }
 ```
 
-At first sight, it may seem to be having no effect, but it actually allows you to use the variable `myObject` to imply the initial execution function object safely without being concerned about `this` maybe turning into other stuff in the code after. 
+At first sight, it may seem to have no effect, but it actually allows you to use the variable `myObject` to imply the initial execution function object safely without being concerned about `this` maybe turning into other stuff in the code after. 
 
 ## Operator
 
-`=` is assigning operator, `a = 12` means to assign“12” to the variable `a`.
+`=` is the assigning operator, `a = 12` means to assign“12” to the variable `a`.
 
 If you need to compare two values, you can use `==`, for example, `a == 12`.
 

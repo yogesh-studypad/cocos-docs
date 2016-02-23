@@ -21,7 +21,7 @@ Therefore, as long as you get an Asset object, then this object must be the one 
 
 ### Raw Asset
 
-The object received by the existing API previously in Cocos2d is not the Asset object mentioned above but a URL presented by a character string. These former asset types that the API uses are called Raw Assets. `cc.Texture2D`, `cc.Font` and `cc.AudioClip` are all Raw Assets. If you are going to use Raw Asset in the engine, all you have to do is to pass the URL of the asset to the engine API, then the engine interior will automatically load the assets represented by this URL.
+The object received by the existing API previously in Cocos2d is not the Asset object mentioned above but a URL presented by a character string. These former asset types that the API uses are called Raw Assets. `cc.Texture2D`, `cc.Font` and `cc.AudioClip` are all Raw Assets. If you are going to use Raw Assets in the engine, all you have to do is to pass the URL of the asset to the engine API, then the engine interior will automatically load the assets represented by this URL.
 
 If you are going to declare a Raw Asset attribute type as `cc.Texture2D` in CCClass, you may want to define it first:
 

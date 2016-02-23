@@ -1,24 +1,24 @@
 # Button component reference
 
-Button component could respond to user's click action, when user click Button, the Button status itself will be changed. Besides, Button also enables user to respond to a self-defining action after click operation.
+The button component responds to a click from the user. When the user clicks a Button, its status will change. In addition, users can assign a custom behavior to buttons' click event.
 
 ![button.png](./button/button.png)
 
 ![button-color](./button/button-color.png)
 
-Click the `add component` button at the bottom of **attribute inspector** and select `Button` from `add UI component`, then you can add Button component to the node.
+Click the ‘add component’ button at the bottom of the **attribute inspector** and select ‘Button’ from ‘add UI component’. You can then add the Button component to the node.
 
 ## Button attribute
 
 | Attribute |   Function explanation
 | -------------- | ----------- |
-|interactable| Boolean type, if set false, then Button component enters forbidden state.
-|Transition| Enumeration type, including NONE, COLOR and SPRITE. Each type corresponds to a different Transition setting. Please check more detailed information in chapter `Button Transition`.
-|Click Event| Default list type is null, each event user added is composed of node reference, component name and a response function. Please check more detailed information in chapter `Button Event`
+|Interactable| Boolean type, if set to false then the Button component enters the forbidden state.
+|Transition| Enumeration type, including NONE, COLOR and SPRITE. Each type corresponds to a different Transition setting. Please check more detailed information in the chapter ‘Button Transition’.
+|Click Event| Default list type is null. Each event added by the user is composed of the node reference, component name and a response function. Please check more detailed information in the chapter ‘Button Event’.
 
 
 ### Button Transition
-Button Transition is used to designate status indicating when user click Button. Currently it has NONE,COLOR and SPRITE.
+Button Transition is used to indicate the status of the Button when clicked by the user. Currently the types available are NONE, COLOR and SPRITE.
 
 ![transition](./button/transition.png)
 
@@ -53,14 +53,14 @@ Button Transition is used to designate status indicating when user click Button.
 
 | Attribute |   Function Explanation
 | -------------- | ----------- |
-|Target| Node with script component.
+|Target| Node with the script component.
 |Component| Script component name.
-|Handler| Assign a callback function which will be triggered when user click Button and release.
+|Handler| Assign a call-back function which will be triggered when the user clicks and releases the Button.
 
 #### Detailed explanation
 
-Button currently only support On Click event, which means the corresponding callback function will be triggered only when users click and release Button.
+Button currently only supports the On Click event. This means only when users click and release the Button will the corresponding call-back function be triggered.
 
 ---
 
-Keep moving on to [ProgressBar component reference](progress.md) 。
+Keep moving on to read [ProgressBar Component reference](progress.md).

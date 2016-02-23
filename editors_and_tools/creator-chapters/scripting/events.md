@@ -3,7 +3,7 @@
 ## Listen to events
 
 Even processing is done in the `cc.Node`. Components can register and monitor events by visiting the node `this.node`. Listen to events
-can be registered by the function `this.node.on()`. Methods are as follows:
+can be registered by the function `this.node.on()`. The methods are as follows:
 
 ```javascript
 cc.Class({
@@ -39,7 +39,7 @@ Besides listening with `on`, we can also use the `once` method. The `once` liste
 
 ### Shut listener
 
-We can shut the corresponding event listener using `off` when we don't care about a certain event any more. One thing to note is that the parameter of
+We can shut the corresponding event listener using `off` when we don't care about a certain event anymore. One thing to note is that the parameter of
 `off` must be in one-to-one correspondence with the parameter of `on` in order to shut it.
 
 Below are what we recommend you to put in:
@@ -122,7 +122,7 @@ In the call-back of the event listener, the developer will receive an event obje
 | `currentTarget` | `cc.Node` | current object receiving the event; current object of the event in the bubble stage may be different from the primary object |
 | `getType` | `Funciton` | get the type of the event |
 | `stopPropagation` | `Function` | stop the bubble stage, the event will no longer pass on to the parent node while the rest of the listeners of the current node will still receive the event |
-| `stopPropagationImmediate` | `Function` | stop delivering the event, the event will not pass on to the parent node and the rest of the listeners of the current node |
+| `stopPropagationImmediate` | `Function` | stop delivering the event. The event will not pass on to the parent node and the rest of the listeners of the current node |
 | `getCurrentTarget` | `Function` | get the target node that is currently receiving the event |
 | `detail` | `Function` | custom event information（belongs to `cc.Event.EventCustom`） |
 | `setUserData` | `Function` | set custom event information（belongs to `cc.Event.EventCustom`） |
@@ -132,4 +132,4 @@ You can refer to the `cc.Event` and API files of its child category for a comple
 
 ## System built-in event
 
-Above are the general rules for listening to the even and launching the event. Cocos Creator has built in system events like mouse and touch for `cc.Node`. You can refer to [/internal-events.md]
+Above are the general rules for listening to the event and launching the event. Cocos Creator has built in system events like mouse and touch for `cc.Node`. You can refer to [/internal-events.md]

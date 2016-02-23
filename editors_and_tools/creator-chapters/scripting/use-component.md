@@ -1,6 +1,6 @@
-# Create and use component script
+# Creating and using component script
 
-## Create component script
+## Creating component script
 
 In Cocos Creator, script is also a part of the asset. You can add and select JavaScript or CoffeeScript to creat a component script
 by clicking the "create" button in the asset editor. By this time, you will get a new script in your asset editor:
@@ -26,23 +26,23 @@ cc.Class({
 });
 ```
 
-## Edit script
+## Editing script
 
-Cocos Creator internally installed a lightweight Code Editor for editors to edit script fast. Users can also choose
-their own favorite text tool (such as Vim, Sublime Text, Web Storm, Visual Studio...) to edit script according to their
+Cocos Creator has installed a lightweight Code Editor for editors to edit script fast. Users can also choose
+their preferred text tool (such as Vim, Sublime Text, Web Storm, Visual Studio...) to edit script according to their
 own need.
 
 By double clicking the script asset, users can open the built-in Code Editor to edit. If you need to use the external tools, the first thing you need to do is
-to locate asset catalog in the file system, then edit it with the help of its own text tool.
+to locate the asset catalog in the file system, then edit it with the help of its own text tool.
 
 Edit the script and save it, and Cocos Creator will automatically detect the alteration of the script and compile it quickly.
 
-## Add script into scene node
+## Adding script into the scene node
 
 Adding the script into the scene node is actually adding a component to this node. Let's rename the new “NewScript.js” to
-“say-hello.js”. Then select the scene node we would like to add, by this time the property of this node will show in **attribute inspector**.
+“say-hello.js”. Then select the scene node you would like to add, by this time the property of this node will be shown in **attribute inspector**.
 There's an "add component" button at the very bottom of **attribute inspector**. Click the button and choose: add user script -> say-hello
-to add our new script component.
+to add a new script component.
 
 ![add-script](assets/add-script.png)
 

@@ -99,7 +99,7 @@ cc.Class({
 ## Property definition
 
 In Cocos Creator, properties are defined in the `properties` field. But in Unity3D, properties are defined as
-member variables of MonoBehaviour. Apart from differences in the defining positions, Cocos Creator also imports the concept of the property parameter into property. These parameters can be used to control
+member variables of MonoBehaviour. Apart from differences in the defining positions, Cocos Creator also imports the concept of the property parameter into the property. These parameters can be used to control
 the display method of properties in Inspector, serialization, etc. For detailed parameters, please refer to: [/manual/scripting/attributes]
 
 The following are defining methods of some commonly used properties in Cocos Creator:
@@ -140,7 +140,7 @@ cc.Class({
 
 ## Life cycle
 
-The life cycle of Cocos Creator is basically the same with that of Unity3D, having only slight differences in the naming:
+The life cycle of Cocos Creator is basically the same as Unity3D, having only slight differences in the naming:
 
  Cocos Creator | Unity3D
  -------- | -------
@@ -158,7 +158,7 @@ The life cycle of Cocos Creator is basically the same with that of Unity3D, havi
 ## Message
 
 The message system of Cocos Creator uses the transmit&receive mode of dom, which can send a message upward, but you need to sign up for message in Node.
-But in Unity3D, message is realized by going through SendMessage and directly responding to the member function defined in the script.
+But in Unity3D, messages are realized by going through SendMessage and directly responding to the member function defined in the script.
 
 The following is the transmit&receive mode of message in Cocos Creator:
 

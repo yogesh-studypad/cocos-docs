@@ -1,20 +1,20 @@
 # Modularize script
 
-Cocos Creator allows you split the code into multiple script files and they can be called by each other. To realize this, you need to know how to define and use the module in Cocos Creator. This step is called **modularize** for short.
+Cocos Creator allows you to split the code into multiple script files and they can be called by each other. To implement this, you need to know how to define and use the module in Cocos Creator. This step is called **modularize** for short.
 
 If you are not sure what modularization can do, you can consider it as:
 - `include` in C/C++
-- C# 中的 `using`
+- `using` in C#
 - `import` in Java and Python
 - `<link>`in HTML
 
-Modularization enable you to reference other script files in Cocos Creator:
+Modularization enables you to reference other script files in Cocos Creator:
 - Access parameters exported from other files
-- Call method other files exported with
-- Use type other files exported in
+- Call method other files that have been exported
+- Use type other files that have been exported
 - Use or inherit other Components
 
-JavaScript in Cocos Creator uses the CommonJS standard that is almost the same asNode.js to realize modularization, in short:
+JavaScript in Cocos Creator uses the Common JS standard that is almost the same as Node.js to realize modularization, in short:
 - Each individual script file forms a module
 - Each module is an individual action scope
 - Reference other modules in the **synchronized** `require` method
@@ -22,14 +22,14 @@ JavaScript in Cocos Creator uses the CommonJS standard that is almost the same a
 
 If you still don't quite understand, don't worry, we will explain it in here.
 
-> In this article, the two terms "module" and "script" are equivalent. All the "comment" parts belong to advanced contents that don't need to understood at the very start.
-> No matter how we define the module, all user designation codes will eventually be compiled into native JavaScript by Cocos Creator and can be operated directly in browser.
+> In this article, the two terms "module" and "script" are equivalent. All the "comment" parts belong to advanced contents that don't need to be understood at the very start.
+> No matter how we define the module, all user designation codes will eventually be compiled into native JavaScript by Cocos Creator and can be operated directly in the browser.
 
 ## Reference module
 
 ### require
 
-Other than the interface provided by Cocos Creator, all the user-defined modules will need to call `require` to access. For instance, we have a component defined at `Rotate.js`:
+Other than the interface provided by Cocos Creator, all the user-defined modules will need to call `require` to be accessed. For instance, we have a component defined at `Rotate.js`:
 
 ```js
 // Rotate.js
@@ -71,7 +71,7 @@ Here, we define a new component named SinRotate, which is inherited from Rotate,
 
 Comments：
   - `require` could be called at any place in the script at any time.
-  - All of the script will be automatically required when the game is started. At this time, the defined code in each module will be executed once, so no matter it is required for how many times, the same example will be returned.
+  - All of the script will be automatically required when the game is started. At this time, the defined code in each module will be executed once, so no matter how many times it is required, the same example will be returned.
   - When debugging, any module in the project can be required in the **Console** of **Developer Tools**.
 
 ## Define module
@@ -98,7 +98,7 @@ When you declare a component in the script, Cocos Creator will acquiesce to expo
 
 ### Define regular JavaScript module
 
-You can not only define a component in the module, but you can also export any JavaScript object. Let's hypothesize there is a script `config.js`
+You can not only define a component in the module, but you can also export any JavaScript object. Let's imagine that there is a script `config.js`
 
 ```js
 // config.js
@@ -248,7 +248,7 @@ cc.log(foo.isDirty());           // true
 ```js
 // foobar.js:
 
-dirty = false;        // Do not recommend setting dirty as the global variable! Should add var before it!
+dirty = false;        // Setting dirty as the global variable is not recommended! One Should add var before it!
 module.exports = {
     setDirty: function () {
         dirty = true;

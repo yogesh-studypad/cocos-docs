@@ -1,4 +1,4 @@
-# The transplatform release of game
+# The cross-platform release of games
 
 - [publish-web.md]
 - [cocos-framework.md]
@@ -6,4 +6,4 @@
 
 <hr>
 
-Continue to read [publish-web.md] to start learning about the workflow of the transplatform release of game.
+Continue to read [publish-web.md] to start learning about the workflow of cross-platform releasing.

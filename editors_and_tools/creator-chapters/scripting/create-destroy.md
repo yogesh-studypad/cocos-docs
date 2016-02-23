@@ -2,7 +2,7 @@
 
 ## Creat new nodes
 
-Besides creating node by scene editor, we can creat node dynamically in script. Add it into the scene by `new cc.Node()`
+Besides creating nodes by using the scene editor, we can create nodes dynamically in script. Add it into the scene by `new cc.Node()`
 to complete the whole constructive process.
 
 Below is a simple example:
@@ -82,10 +82,10 @@ cc.Class({
 ## Destroy node
 
 Nodes can be destroyed by the function `node.destroy()`. It's worth mentioning that node destroying will not happen immediately, but
-will be executed after the logic update for present frame is done. After a node is destroyed, it is in the invalid state. By `cc.isValid`,
+will be executed after the logic update for the present frame is complete. After a node is destroyed, it is in the invalid state. By `cc.isValid`,
 the present node can be judged whether it is destroyed or not.
 
-Here is how to use:
+Here is how to use it:
 
 ```javascript
 cc.Class({

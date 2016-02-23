@@ -1,6 +1,5 @@
 # Canvas component reference
-
-The **Canvas** component can get the actual resolution of the device screen and zoom in or out on all render elements properly in the scene. Only one canvas can exist in the scene at a time. We recommend you set all the UI and renderable elements as Canvas' child nodes.
+The **Canvas** component can get the actual resolution of the device screen and zoom in and out of all the rendered elements in the scene. There can only exist one Canvas component in the scene at a time. We recommend you set all the UI and renderable elements as Canvas' child nodes.
 
 ![default](canvas/default.png)
 
@@ -8,10 +7,10 @@ The **Canvas** component can get the actual resolution of the device screen and 
 
 Options             | Explanation
 --                  | --
-Design Resolution   | Design resolution (the resolution blueprint which the content producer builds the scene with)
-Fit Height          | Auto-fit height (the height of the design resolution will auto-fit the screen height)
-Fit Width           | Auto-fit width (the width of the design resolution will auto-fit the screen width)
+Design Resolution   | Design resolution (the resolution blueprint used while the content producer builds the scene)
+Fit Height          | Auto-fit height (the height of the design resolution will auto-fit to the screen height)
+Fit Width           | Auto-fit width (the width of the design resolution will auto-fit to the screen width)
 
 <hr>
 
-Keep moving on to [Widget component reference](widget.md) file.
+Continue on to read about the [Widget component reference](widget.md).
