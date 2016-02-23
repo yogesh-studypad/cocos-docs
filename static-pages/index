@@ -20,6 +20,16 @@
   </a>
 </div>
 
+<!-- workflow -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="workflows/workflows/index.html">
+    <img src="static-pages/workflow.png" align="middle" />
+    <h3>Workflow</h3>
+    <p class="center">Get in a groove.</p>
+  </a>
+</div>
+<br />
+
 <!-- cocos -->
 <div class="section cocosBlueDarker1 clearfix">
   <a href="cocos/cocos/index.html">
@@ -28,7 +38,6 @@
     <p class="center">Cocos ecosystem.</p>
   </a>
 </div>
-<br />
 
 <!-- Toolchain -->
 <div class="section cocosBlueDarker1 clearfix">

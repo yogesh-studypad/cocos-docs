@@ -146,9 +146,11 @@ buildAll() { ## build absolutely everything.
   prep
   prepAPIRefDocs
   prepCocosDocs
+  prepEditorsAndToolsDocs
   prepInstallationDocs
   prepServicesDocs
-  prepEditorsAndToolsDocs
+  prepTutorialsDocs
+  prepWorkflowDocs
   prepProgrammersGuide
   buildMarkdown
   prepPost
@@ -156,7 +158,30 @@ buildAll() { ## build absolutely everything.
   prepStaticHTMLPages
   buildStaticHTMLPages
   buildAPIRef
+  fetchLegacyAPIRef
   deployLegacyDocs
+  deployToGitHub
+  cleanUp
+}
+
+buildSlim() { ## build a slimed version
+  echo "building everything, except print media and api-refs..."
+  prep
+  prepAPIRefDocs
+  prepCocosDocs
+  prepEditorsAndToolsDocs
+  prepInstallationDocs
+  prepServicesDocs
+  prepTutorialsDocs
+  prepWorkflowDocs
+  prepProgrammersGuide
+  buildMarkdown
+  prepPost
+  #buildProgrammersGuidePrint
+  prepStaticHTMLPages
+  buildStaticHTMLPages
+  #buildAPIRef
+  #deployLegacyDocs
   deployToGitHub
   cleanUp
 }
@@ -180,11 +205,6 @@ prepCocosDocs() { ## prep Cocos Docs
 
 prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
   echo "prepping Editors And Tools docs..."
-  #for i in ${EditorsAndToolschaptersWithFolders[@]}; do
-  #  rsync -a editors_and_tools/${i}-web docs/editors_and_tools/
-  #  mv docs/editors_and_tools/${i}-web docs/editors_and_tools/${i}-img
-  #  cp editors_and_tools/${i}.md docs/editors_and_tools/${i}.md
-  #done
   rsync -ah editors_and_tools docs/
 }
 
@@ -208,6 +228,16 @@ prepServicesDocs() { ## prep Services Docs
     mv docs/services/${i}-web docs/services/${i}-img
     cp services/${i}.md docs/services/${i}.md
   done
+}
+
+prepTutorialsDocs() { ## prep Tutorials Docs
+  echo "prepping Tutorials docs..."
+  rsync -ah tutorials docs/
+}
+
+prepWorkflowDocs() { ## prep Workflow Docs
+  echo "prepping Workflow docs..."
+  rsync -ah workflows docs/
 }
 
 prepProgrammersGuide() { ## prep Programmers Guide
@@ -365,8 +395,8 @@ buildProgrammersGuidePrint() {
 buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
   echo "building the API References..."
 
-  echo "copying older API-Ref versions, these don't change, static, no need to build..."
-  rsync -ah static-pages/api-refs/ site/api-ref
+  mkdir -p site/api-ref/cplusplus/v3x
+  mkdir -p site/api-ref/js
 
   echo "building the C++ API Reference..."
   cd ../cocos2d-x
@@ -393,8 +423,23 @@ buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
 deployLegacyDocs() {
   ## This deploys the legacy docs that are also needed until they are moved under
   ## this new unified structure
+
+  echo "copying legacy docs that still need a home for now...."
   rsync -ah catalog manual release-notes tutorial site/
 }
+
+fetchLegacyAPIRef() {
+  ## This downloads the legacy api-ref and puts it where it needs to go.
+  echo "downloading the legacy api-refs to deploy...."
+  cd static-pages/
+  wget http://cocos2d-x.org/docs/api-refs.tar.gz
+  tar xvf api-refs.tar.gz
+  cd ..
+
+  echo "copying older API-Ref versions, these don't change, static, no need to build..."
+  rsync -ah static-pages/api-refs/ site/api-ref
+}
+
 
 main() {
   ## display opening message to user
@@ -408,10 +453,18 @@ main() {
     elif [[ "--all" =~ $1 ]]; then ## builds absolutely every step
       buildAll
       exitScriptAfterStaging
+    elif [[ "--slim" =~ $1 ]]; then ## builds a trimmed down version
+      buildSlim
+      exitScriptAfterStaging
     elif [[ "--staging" =~ $1 ]]; then ## deploys site/ to staging
       deployToGitHub
+      exitScript
     elif [[ "--production" =~ $1 ]]; then ## deploys site/ to production
       deployToProduction
+      exitScript
+    elif [[ "--legacyapi" =~ $1 ]]; then ## brings down legacy site/
+      fetchLegacyAPIRef
+      exitScript
     else
       exitScriptIncorrectParameters
     fi

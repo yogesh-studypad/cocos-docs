@@ -46,7 +46,7 @@ You can read these docs [online](http://www.cocos2d-x.org/docs).
 
 * To build the c++ API Ref you need a customized Doxygen version from https://github.com/zilongshanren/doxygen
 
-* To build the JavaScript API Ref you need __jsdoc_toolkit__ which is usually placed in __<Cocos2d-x root>/web/tools__. It can be found here: http://cocos2d-x/org/docs/jsdoc_toolkit-2.4.0.zip
+* To build the JavaScript API Ref you need __jsdoc_toolkit__ which is usually placed in __<Cocos2d-x root>/web/tools__. It can be found here: http://cocos2d-x.org/docs/jsdoc_toolkit-2.4.0.zip
 
 ## How to run/test these docs
 * __cd <where you cloned this repo>__
