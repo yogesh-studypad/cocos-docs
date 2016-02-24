@@ -1,12 +1,12 @@
-> 所有“备注”都属于进阶内容，初学者不需要了解。
+> All the "Remarks" belong to advanced content. Beginners don't need to understand them.
 
-`cc.Class` 是一个很常用的 API，用于声明 Cocos Creator 中的类，为了方便区分，我们把使用 cc.Class 声明的类叫做 **FireClass**。相比其它 JavaScript 的类型系统，FireClass 的特别之处在于扩展性强，能够定义丰富的元数据。
+`cc.Class` is a common API, which is used to declare categories in Cocos Creator. For the convenience of categorization, we call the category that uses the cc.Class declaration **FireClass**. Compared to other Javascript category systems, the specialty of FireClass lies more within the metadata which has strong augmentability and can be plentifully defined.
 
-## 概述
+## Summary
 
-### 创建Fire.Class
+### Create Fire.Class
 
-调用 **cc.Class** 方法，传入一个原型对象，在原型对象中以键值对的形式设定所需的类型参数，就能创建出所需要的类。
+First invoke the **cc.Class** method, import an original object and set up the needed category parameters by way of a key-value pair in the original object, then the needed category can be created.
 
 ```js
     var Sprite = cc.Class({
@@ -14,20 +14,20 @@
     });
 ```
 
-这段代码将创建好的类赋值给了 Sprite 变量，另外还提供了 `name` 参数来作为类名，类名用于序列化，一般可以省略。
-为了论述方便，本文将这里传入的这个 `{ name: 'Sprite' }` 对象统称为**原型对象**，本文重点介绍如何定义原型对象。
+The above code assigns the created category to the Sprite variable. Besides, it provides the`name` parameter as the category name. Category name is used for serialization, which can normally be omitted.
+For the convenience of discussion, the `{ name: 'Sprite' }` object imported here is generally called the **original object** in this manual. This manual will mainly introduce how to define original object.
 
-### 创建对象
+### Create an object
 
-由于 FireClass 本身就是一个 JavaScript 构造函数，使用 new 就可以创建对象：
+Because FireClass is a JavaScript construct function itself. You can use ‘new’ to create an object:
 
 ```js
     var obj = new Sprite();
 ```
 
-### 构造函数
+### Construct a function
 
-如果在原型对象中声明了 `constructor`，指定的构造函数就将在每个实例的创建过程中调用，FireClass 的构造函数**不允许**定义**构造参数**。
+If `constructor` is declared in the original object, then the designated construct function will be invoked in the construction process for every instance. The construct function **not permitted** of FireClass defines the **construct parameter**.
 
 ```js
     var Sprite = cc.Class({
@@ -38,83 +38,83 @@
     var obj = new Sprite();
 ```
 
-注：Component 是特殊的 FireClass，不能定义构造函数，它的构造职能可由 `onLoad` 方法代替。
+Note: Component is special FireClass, which can't define a construct function. Its construct duty can be replaced by the `onLoad` method.
 
-### 判断类型
+### Judge category
 
-`instanceof` 可以用来判断对象的类型：
+`instanceof` can be used to judge the category of an object:
 
 ```js
     console.log(obj instanceof Sprite);     // true
 ```
 
-**备注**
+**Remark**
 
-- 如果不需要序列化，类名可以省略。类名可以是任意字符串，但不允许重复。可以使用 cc.js.getClassName 来获得类名，使用 cc.js.getClassByName 来查找对应的类。
-- 专业开发者如果确实需要使用构造参数，可以在 constructor 的 arguments 里获取。但如果这个类需要序列化，必须保证构造参数都缺省的情况下仍然能 new 出对象。
+- If serialization is not needed, the category name can be omitted. Category name could be an arbitrary string, but no repetition is permitted. cc.js.getClassName can be used to obtain the category name. cc.js.getClassByName can be used to look up the corresponding category.
+- If professional developers do need to use construction parameters, they can obtain them from arguments in the constructor. But if this category needs serialization, developers should make sure they can still create new objects when construct parameters are defaulted.
 
-## 成员
+## Member
 
-### 实例变量
+### Instance variable
 
-实例变量请统一在构造函数中声明：
+Please declare instance variables uniformly in the construct function:
 
 ```js
     var Sprite = cc.Class({
         ctor: function () {
-            // 声明实例变量并赋默认值
+            // Declare the instance variable and assign defaulted value
             this.url = "";
             this.id = 0;
         }
     });
     var obj = new Sprite();
-    // 赋值
+    // assign value
     obj.url = 'img/fb.png';
     obj.id = 1;
 ```
 
-### 实例方法
+### Instance method
 
-实例方法请在原型对象中声明：
+Please declare the instance method in the original object:
 
 ```js
     var Sprite = cc.Class({
         ctor: function () {
             // ...
         },
-        // 声明一个名叫"load"的实例方法
+        // Declare an instance method named "load"
         load: function () {
             // load this.url
         };
     });
     var obj = new Sprite();
-    // 调用实例方法
+    // Invoke the instance method
     obj.load();
 ```
 
-### 类变量和类方法
+### Category variable and category method
 
-静态的类变量或类方法可以直接添加到定义好的 Class：
+The static category variable or category method can be directly added to the defined Class:
 
 ```js
     var Sprite = cc.Class({ ... });
 
-    // 声明类变量
+    // Declare category variable
     Sprite.count = 0;
-    // 声明类方法
+    // Declare category method
     Sprite.getBounds = function (spriteList) {
         // ...
     };
 ```
 
-也可以在原型对象的 `statics` 中声明：
+It can also be declared in the `statics` of the original object:
 
 ```js
     var Sprite = cc.Class({
         statics: {
-            // 声明类变量
+            // Declare category variable
             count: 0,
-            // 声明类方法
+            // Declare category method
             getBounds: function (spriteList) {
                 // ...
             }
@@ -122,112 +122,112 @@
     });
 ```
 
-**完整代码如下：**
+**the complete code is as follows:**
 
 ```js
     var Sprite = cc.Class({
         name: 'Sprite',
         ctor: function () {
-            // 声明实例变量并赋默认值
+            // Declare the instance variable and assign the defaulted value
             this.url = "";
             this.id = 0;
         },
-        // 声明一个名叫"load"的实例方法
+        // Declare an instance method named "load"
         load: function () {
             // load this.url
         };
     });
-    // 实例化
+    // Instantiation
     var obj = new Sprite();
-    // 访问实例变量
+    // visit instance variable
     obj.url = 'sprite.png';
-    // 调用实例方法
+    // Invoke instance method
     obj.load();
 
-    // 声明类变量
+    // Declare category variable
     Sprite.count = 0;
-    // 声明类方法
+    // declare category method
     Sprite.getBounds = function (spriteList) {
         // ...
     };
 
-    // 调用类方法
+    // Invoke category method
     Sprite.getBounds([obj]);
 ```
 
-**备注**
+**Remark**
 
-- 如果是 **私有** 成员，建议在成员命名前面加上下划线 `_` 以示区分。
+- If it's a **private** member, we recommend you to add an underline `_` to the front of the name of the member for differentiation purposes.
 
     ```js
     var Sprite = cc.Class({
         name: 'Sprite',
         ctor: function () {
-            // 私有实例变量
+            // Privatize instance variable
             this._myData = 0;
         },
-        // 私有实例方法
+        // Privatize instance method
         _load: function () {
             // ...
         };
     });
-    // 私有类变量
+    // privatize category variable
     Sprite._list = [];
     ```
 
-- 如果是 **私有** 静态成员，也可以用闭包(Closure)实现。
+- If it's a **private** static member, developers can also use Closure to perform the same operation.
 
     ```js
-    // 私有静态方法
+    // privatize static method
     var doLoad = function (sprite) {
-        // do load ...
+        // Do load ...
     };
-    // 私有静态变量
+    // Privatize static variable
     var url = 'foo.png';
 
     var Sprite = cc.Class({
         load: function () {
-            // 调用局部作用域内的方法
+            // Invoke the method in part scope
             doLoad(this, url);
         };
     });
     ```
 
-- 这里所说的“实例成员”(instance member)包含了“实例变量”(member variable)和“实例方法”(instance method)。
-- 这里所说的“类成员”(static member)包含了“类变量”(static variable)和“类方法”(static method)。
-- 类变量的继承实现方式是将父类的静态变量**浅拷贝**给子类实现的。
+- "Instance member" discussed here includes the "member variable" and "instance method".
+- "Static member" discussed here includes the "static variable" and "static method".
+- The inheriting realization method of category variables is realized by "shallow copying" the static variable of the parent category to the child category.
 
-## 继承
+## Inheritance
 
-### 声明方式
+### Declaration method
 
-继承时请在原型对象里声明 `extends`：
+Please declare `extends` in the original object when inheriting:
 
 ```js
-    // define base class
+    // Define base class
     var Node = cc.Class();
 
-    // define sub class
+    // Define sub class
     var Sprite = cc.Class({
         extends: Node
     });
 
-    // test
+    // Test
     var obj = new Sprite();
 ```
 
-`instanceof` 也可以用来判断对象所在的类型是否继承自某个父类：
+`instanceof` can also be used to judge if the category of an object inherits from a certain parent category:
 
 ```js
     var sub = new Sprite();
-    console.log(sub instanceof Node);       // true
+    console.log(sub instanceof Node);       // True
     var base = new Node();
-    console.log(base instanceof Sprite);    // false
+    console.log(base instanceof Sprite);    // False
 ```
 
-### 父构造函数
+### Parent construct function
 
-请注意，不论子类的构造函数是否提供，子类实例化前父类的构造函数都会先被自动调用。
+Please pay attention! Whether the construct function of the child category is provided or not, the construct function of the parent category will be automatically invoked at first before the instantiation of the child category.
 
 ```js
     var Node = cc.Class({
@@ -238,9 +238,9 @@
     var Sprite = cc.Class({
         extends: Node,
         ctor: function () {
-            // 子构造函数被调用前，父构造函数已经被调用过，所以 this.name 已经被初始化过了
+            // Before the invoking of the child construct function, the parent construct function has already been invoked; therefore this.name has been initialized
             console.log(this.name);    // "node"
-            // 重新设置 this.name
+            // Reset this.name
             this.name = "sprite";
         }
     });
@@ -248,9 +248,9 @@
     console.log(obj.name);    // "sprite"
 ```
 
-### 重载
+### Reload
 
-所有实例方法都是虚方法，子类方法可以直接重载父类方法：
+All of the instance methods are virtual methods. The child category method can directly reload the parent method:
 
 ```js
     var Node = cc.Class({
@@ -267,7 +267,7 @@
     console.log(obj.getName());    // "sprite"
 ```
 
-如果想要调用父类方法，必须直接通过父类的 prototype，并且以 call 或 apply 的形式调用：
+If developers want to invoke the parent category method, they should invoke it in the form of call or apply, directly by using the prototype of the parent category:
 
 ```js
     var Node = cc.Class({
@@ -285,31 +285,31 @@
     console.log(obj.getName());    // "node>sprite"
 ```
 
-使用 `cc.isChildClassOf` 来判断两个类的继承关系：
+Use `cc.isChildClassOf` to judge the inheriting relation between two categories:
 
 ```js
     var Texture = cc.Class();
     var Texture2D = cc.Class({
         extends: Texture
     });
-    console.log(cc.isChildClassOf(Texture2D, Texture));   // true
+    console.log(cc.isChildClassOf(Texture2D, Texture));   // True
 ```
 
-请注意，两个传入参数都必须是类的构造函数，而不是类的对象实例。如果传入的两个类相等，`isChildClassOf` 也会返回 true。
+Please pay attention! Both the two imported parameters should be construct functions of the categories, but not object instances of the categories. If two imported categories are equivalent, `isChildClassOf` will return true.
 
-**备注**
+**Remark**
 
-- 可以通过子类的静态变量 `$super` 来访问父类。
-- 所有实例成员和类成员都将被子类继承。
-- 如果你想实现原生的 JavaScript 继承，也就是说你的父类和子类都不是 FireClass，那你可以通过 cc.js.extend 方法来继承。
+- The parent category can be visited by the static variable `$super` of the child category.
+- All the instance members and category members will be inherited by the child category.
+- If you want to realize original JavaScript inheritance, i.e., your parent category and child category are not FireClass, then you can inherit it by using the cc.js.extend method.
 
-## 属性
+## Property
 
-### 属性定义和访问
+### Property definition and visit
 
-属性(Property)是特殊的实例变量，能够显示在 Inspector 中，也能被序列化。属性不在构造函数里定义，而是声明在原型对象的 `properties` 字典里。
+Property is a special instance variable, which can display in Inspector and also can be deserialized. Property is not defined in the construct function, but declared in the `properties` dictionary of the original object.
 
-**下面在 Player 类定义一个 playerName 属性：**
+**Next, define a playerName property in the Player category:**
 
 ```js
     var Player = cc.Class({
@@ -323,16 +323,16 @@
     });
 ```
 
-这样一来 playerName 就能显示在 Inspector 面板里，并且当保存 Player 所在的场景时，playerName 也会被保存起来。
+In this way, playerName will display in the Inspector panel. When saving the scene that has Player, playerName will be saved.
 
-这里的 `default` 用来声明属性的默认值，同时也定义了值类型是字符串。默认值的类型不限，但只有在第一次创建对象的时候才会用到。
+Here `default` is used to declare the defaulted value of the property, which also defined the value category as string. The category of the defaulted value is not limited, which will be used only when creating an object for the first time.
 
-**属性本身也是实例变量，可以直接访问：**
+**property itself is an instance variable, which can be directly called on:**
 
 ```js
     var Sprite = cc.Class({
         ctor: function () {
-            console.log(this.width);    // 读取默认 width
+            console.log(this.width);    // Read default width
         },
 
         properties: {
@@ -347,11 +347,11 @@
     });
 ```
 
-在构造函数被调用前，属性已经被定义好了，可以在构造函数内访问或者重新给属性赋值。
+Before the construct function is invoked, the property has been defined. Developers can visit it in the construct function or re-assign a value to the property.
 
-### 属性参数
+### Property attribute
 
-每个属性可附带任意多个参数(Attribute)，用于指定在 Inspector 中的显示方式、序列化方式等。
+Each property can attach multiple attributes arbitrarily to designate the display method, serialization method, etc., in Inspector.
 
 ```js
     properties {
@@ -363,46 +363,46 @@
     }
 ```
 
-以上代码规定了 score 在 Inspector 里只能输入整数，并且当鼠标移到参数上时，显示对应 Tooltip。
+The above code stipulated that the score can only input a whole number in Inspector, and when the mouse rests upon a parameter, the corresponding Tooltip will display.
 
-下面是常用参数，详细用法请参阅[属性参数](/manual/scripting/attributes)。
+The following are common parameters. For detailed usage instructions, please refer to [/manual/scripting/attributes].
 
-- type: 限定属性的数据类型
-- url: 限定属性为指定类型的 url
-- visible: 设为 false 则不在 Inspector 面板中显示该属性
-- serializable: 设为 false 则不序列化该属性
-- displayName: 在 Inspector 面板中显示成指定名字
-- tooltip: 在 Inspector 面板中添加属性的 Tooltip
+- type: define the data category of a property
+- url: define the property as a URL of a designated category
+- visible: when it's set as false, the property will not display in the Inspector panel
+- serializable: when it's set as false, the property will not be serialized
+- displayName: the property will be displayed with a designated name in the Inspector panel
+- tooltip: add a property's Tooltip in the Inspector panel
 
-#### <a name="visible参数"></a>visible参数
+#### <a name="visible parameter"></a>visible parameter
 
-默认情况下，是否显示在 Inspector 取决于属性名是否以下划线 `_` 开头。如果以下划线开头，则默认不显示在 Inspector，否则默认显示。
+By default, whether a property displays in Inspector depends on whether its name begins with an underline `_`. If beginning with an underline, the property will not display in Inspector by default, otherwise it will display by default.
 
-如果要强制显示在 Inspector，可以设置`visible`参数为 true:
+If developers want to compulsorily display the property in Inspector, they can set the `visible` parameter as true:
 
 ```js
     properties {
-        _id: {      // 下划线开头原本会隐藏
+        _id: {      // The property whose name begins with an underline is invisible by default
             default: 0,
             visible: true
         }
     }
 ```
 
-如果要强制隐藏，可以设置`visible`参数为 false:
+If developers want to compulsorily hide the property in Inspector, they can set the `visible` parameter as false:
 
 ```js
     properties {
-        id: {       // 非下划线开头原本会显示
+        id: {       // The property whose name doesn't begin with an underline is visible by default
             default: 0,
             visible: false
         }
     }
 ```
 
-#### <a name="serializable"></a>serializable参数
+#### <a name="serializable"></a>serializable parameter
 
-属性默认情况下都会被序列化，如果不想序列化，可以设置`serializable: false`。
+By default, properties will be serialized. If developers don't want them to be serialized, they can set up `serializable: false`.
 
 ```js
     temp_url: {
@@ -411,25 +411,25 @@
     }
 ```
 
-#### <a name="type"></a>type参数
+#### <a name="type"></a>type parameter
 
-当`default`不能提供足够详细的类型信息时，为了能在 Inspector 里正确编辑属性，则需要用`type`显式声明具体的类型：
+When `default` can't provide category information that is detailed enough, then to correctly edit properties in Inspector, developers need to use `type` to visibly declare a concrete category:
 
-- 当默认值为 null 时，将 type 设置为指定类型的构造函数，这样才能在 Inspector 中给属性正确赋值。
+- When the default value is null, set the type as the construct function of the designated category, then you can correctly assign a value to the properties in Inspector.
     ```js
         enemy: {
             default: null,
             type: cc.Node
         }
     ```
-- 当默认值为数值(Number)类型时，将 type 设置为 `"Integer"`，用来表示这是一个整数，这样属性在 Inspector 里就不能输入小数点。
+- When the default value is the Number category, set type as `"Integer"` to indicate this is a whole number, then the property can't input decimal points into Inspector.
     ```js
         score: {
             default: 0,
             type: 'Integer'
         }
     ```
-- 将 type 设置为枚举类型，就能在 Inspector 中选择枚举值。
+- Set the type as the enumerating category, then you can choose an enumerating value in Inspector.
     ```js
         wrap: {
             default: cc.Texture2D.WrapMode.Clamp,
@@ -437,9 +437,9 @@
         }
     ```
 
-#### <a name="url"></a>url参数
+#### <a name="url"></a>url parameter
 
-如果属性是用来保存资源的 url，为了能在 Inspector 中设置资源，或者能正确序列化，你就需要提供 url 参数。
+If the property is a URL that is used to save resources, then to be able to set up resources in Inspector or correctly serialize code, developers need to provide correct URL parameters.
 ```js
     texture: {
         default: "",
@@ -447,13 +447,13 @@
     },
 ```
 
-### 数组定义
+### Digit group definition
 
-数组的 default 必须设置为 `[]`，如果要在 Inspector 中编辑，还需要设置 type 为构造函数、枚举，或者 `cc.Integer`, `cc.Float`, `cc.Boolean`, `cc.String`。
+Digit group's default should be set as `[]`. If you want to edit it in Inspector, you also need to set the type as construct function, enumeration, or `"Integer"`, `"Float"`, `"Boolean"`, `"String"`.
 ```js
     nameList: {
         default: [],
-        type: [cc.String]   // 声明数组的每个元素都是字符串类型
+        type: ["String"]     // Each element of the declaring digit group is string type
     },
     enemyList: {
         default: [],
@@ -461,10 +461,10 @@
     }
 ```
 
-**备注**
+**Remark**
 
-- 属性都能被子类继承，但子类和父类的属性不能重名。
-- 如果属性的默认值需要调用其它方法才能获得，可以在构造函数里重新赋值。
+- All the properties can be inherited by the child category. But the properties of the child category and parent category can't share names.
+- If the default value of the property can only be obtained by invoking other methods, developers can re-assign values in the construct function.
 
     ```js
     var Sprite = cc.Class({
@@ -477,13 +477,13 @@
     });
     ```
 
-## GetSet方法
+## GetSet method
 
-在属性中设置了 get 或 set 以后，访问属性的时候，就能触发预定义的 get 或 set 方法。
+After setting up get or set in properties, when visiting properties, the pre-set get or set method will be triggered.
 
 ### get
 
-在属性中设置 get 方法：
+Setting up the get method in properties:
 
 ```js
     properties: {
@@ -495,8 +495,8 @@
     }
 ```
 
-get 方法可以返回任意类型的值。
-这个属性同样能显示在 Inspector 中，并且可以在包括构造函数内的所有代码里直接访问。
+The get method can return values of any type. 
+This property can also display in Inspector, which can be directly visited in all the code that includes the construct function.
 
 ```js
     var Sprite = cc.Class({
@@ -514,9 +514,9 @@ get 方法可以返回任意类型的值。
     });
 ```
 
-请注意：
+Attention:
 
-- 设定了 get 以后，这个属性就不能被序列化，也不能指定默认值，但仍然可附带除了 "default", "serializable" 以外的任意参数。
+- After setting up get, this property can't be serialized or designated a default value, but developers can still attach any parameter other than "default" or "serializable".
 
     ```js
         width: {
@@ -528,7 +528,7 @@ get 方法可以返回任意类型的值。
         }
     ```
 
-- get 属性本身是只读的，但返回的对象并不是只读的。用户使用代码依然可以修改对象内部的属性，例如：
+- The get property itself is read-only, but the returned object is not read-only. Users still can use code to modify properties inside the object, for example:
 
     ```js
     var Sprite = cc.Class({
@@ -541,13 +541,13 @@ get 方法可以返回任意类型的值。
         ...
     });
     var obj = new Sprite();
-    obj.position = new cc.Vec2(10, 20);   // 错误！position 是只读的！
-    obj.position.x = 100;                 // 允许！position 对象本身可以修改！
+    obj.position = new cc.Vec2(10, 20);   // Wrong! Position is read-only!
+    obj.position.x = 100;                 // YesI! The position object itself can be modified!
     ```
 
 ### set
 
-在属性中设置 set 方法：
+Set up the set method in properties:
 
 ```js
     width: {
@@ -557,9 +557,9 @@ get 方法可以返回任意类型的值。
     }
 ```
 
-set 方法接收一个传入参数，这个参数可以是任意类型。
+The set method receives an importing parameter, which can be of any type.
 
-set 可以和 get 一起使用：
+Set can be used together with get:
 
 ```js
     width: {
@@ -574,6 +574,6 @@ set 可以和 get 一起使用：
     }
 ```
 
-请注意：
-- 如果没有和 get 一起定义，则 set 自身不能附带任何参数。
-- 和 get 一样，设定了 set 以后，这个属性就不能被序列化，也不能指定默认值。
+Attention:
+- If not defined together with get, set doesn't have any parameter attached to it.
+- Just like get, after setting up set, this property can't be serialized or designated a default value.
