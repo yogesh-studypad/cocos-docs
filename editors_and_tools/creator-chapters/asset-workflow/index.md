@@ -27,4 +27,4 @@ Next, we will introduce Cocos Creator's main asset types and the related workflo
 
 ---
 
-Continue on to read about [create and manage scene](scene-managing.md) file.
+Continue on to read about [create and manage scene](scene-managing.md).

@@ -181,4 +181,4 @@ cc.Class({
 
 ---
 
-Continue to read the introductory document of [project-structure.md].
+Continue on to read about [project-structure.md].

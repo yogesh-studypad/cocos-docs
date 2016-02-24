@@ -29,11 +29,11 @@ Next, we will use a simple example to explain it. Supposing we have a node hiera
 
 In the example above, `parent` is a panel, and `button` is a button. We can respectively add Widget component to these two nodes, and respectively set their alignment distance.
 
-For the `parent` node, the distance of aligning the top left corner of the `Canvas` node remains at 80px: 
+For the `parent` node, the distance of aligning the top left corner of the `Canvas` node remains at 80px:
 
 ![nested outer element](widget-align/nested-outer.png)
 
-For the `button` node, the distance of aligning the top left corner of the `parent` node remains at 50px: 
+For the `button` node, the distance of aligning the top left corner of the `parent` node remains at 50px:
 
 ![nested inner element](widget-align/nested-inner.png)
 
@@ -74,5 +74,4 @@ Making use of the percentage alignment distance, we can create UI elements that 
 
 ---
 
-Continue to read the introductory document of [label-layout.md].
-
+Continue on to read about [label-layout.md].

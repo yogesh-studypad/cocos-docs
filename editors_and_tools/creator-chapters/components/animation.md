@@ -28,4 +28,4 @@ For more information about**Animation**, please read [animation system](../anima
 
 <hr>
 
-Keep moving on to the [Canvas component reference](canvas.md) file.
+Continue on to read about [Canvas component reference](canvas.md).

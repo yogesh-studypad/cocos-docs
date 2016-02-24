@@ -19,4 +19,4 @@ When there are too much information in console, you can filter these information
 
 ---
 
-Keep moving on to [Tool bar](../toolbar.md) file.
+Keep moving on to [Tool bar](../toolbar.md).

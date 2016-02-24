@@ -64,4 +64,4 @@ The attribute column that needs to be assigned value by dragging assets will sho
 Note that script file is also a type of asset. Therefore the script asset reference attribute used by components shown on the top of the above picture is also represented by a yellow label.
 ---
 
-Continue to read the introductory document of [console.md].
+Continue on to read about [console.md].

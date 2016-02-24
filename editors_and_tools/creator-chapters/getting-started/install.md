@@ -31,4 +31,4 @@ After signing up, you can go back to the login interface of Cocos Creator to com
 
 ---
 
-Continue to read the introductory document [dashboard.md].
+Continue on to read about [dashboard.md].

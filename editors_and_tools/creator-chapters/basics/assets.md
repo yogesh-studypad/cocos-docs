@@ -84,4 +84,4 @@ Enter some text in the search box at the top right of **assets** to filter out f
 
 ---
 
-Keep moving on to the [Scene editor](scene.md) file.
+Continue on to read about [Scene editor](scene.md).

@@ -35,7 +35,7 @@ cc.Class({
 
 ## start
 
-The `start` call-back function will be triggered before the first activation of the component, which is before executing `update` for the first time. 
+The `start` call-back function will be triggered before the first activation of the component, which is before executing `update` for the first time.
 `start` is usually used to initialize some intermediate state data which may have changed during update and frequently enables and disables.
 
 **Note:** When the component shifts back from a disabled state to an enabled state, `start` will be called-back again.
@@ -103,4 +103,4 @@ When the component calls `destroy()`, they will be collected when this frame is 
 
 ---
 
-Keep moving to the[create and destroy nodes](create-destroy.md).
+Continue on to read about [create and destroy nodes](create-destroy.md).

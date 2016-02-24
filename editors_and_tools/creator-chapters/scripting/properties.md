@@ -129,4 +129,4 @@ For more attribute parameters, please read [attribute parameter](reference/attri
 
 ---
 
-Keep moving to [Access node and other component](access-node-component.md). 
+Continue on to read about [Access node and other component](access-node-component.md). 

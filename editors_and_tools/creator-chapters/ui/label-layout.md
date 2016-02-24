@@ -110,4 +110,4 @@ For properties of the Label component, you can also check [../components/label.m
 
 ---
 
-Continue to read the introductory document of [ui-components.md].
+Continue on to read about [ui-components.md].

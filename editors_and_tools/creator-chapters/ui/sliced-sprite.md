@@ -39,7 +39,7 @@ When using **rectangle tool** or directly modifying the `size` property of a Sli
 
 ---
 
-We have learnt the method of producing an image whose size can be arbitrarily designated now. Next, please continue to read the introductory document of [multi-resolution.md] to learn how to use an image of changeable size to realize multi-resolution adaptations and various alignment layout effects.
+We have learnt the method of producing an image whose size can be arbitrarily designated now. Next, please Continue on to read about [multi-resolution.md] to learn how to use an image of changeable size to realize multi-resolution adaptations and various alignment layout effects.
 
 
 

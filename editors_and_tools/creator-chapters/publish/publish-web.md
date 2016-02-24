@@ -31,4 +31,4 @@ For the construction of Web server, you can search for solutions such as Apache,
 
 ---
 
-To understand how to release games on original platforms, please continue to read [cocos-framework.md].
+Continue on to read about [cocos-framework.md].

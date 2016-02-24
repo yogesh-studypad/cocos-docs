@@ -6,4 +6,4 @@
 
 <hr>
 
-Continue to read [publish-web.md] to start learning about the workflow of cross-platform releasing.
+Continue on to read about [publish-web.md].

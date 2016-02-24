@@ -30,4 +30,4 @@ You can switch the layout container type by altering `Layout Type` in **attribut
 
 ---
 
-Keep moving on to the next chapter [Script development workflow](../scripting/index.md).
+Continue on to read about [Script development workflow](../scripting/index.md).

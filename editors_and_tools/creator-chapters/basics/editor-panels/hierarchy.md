@@ -41,4 +41,4 @@ Right click the node, the popup menu also includes the following operation:
 
 ---
 
-Keep moving on to [Attribute inspector](inspector.md) file.
+Keep moving on to [Attribute inspector](inspector.md).

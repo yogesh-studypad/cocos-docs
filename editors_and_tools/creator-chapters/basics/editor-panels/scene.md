@@ -114,4 +114,4 @@ In UI elements layout, **rectangle transform tool** is always used to precisely 
 
 ---
 
-Keep moving on to [hierarchy manager](hierarchy.md) file.
+Keep moving on to [hierarchy manager](hierarchy.md).

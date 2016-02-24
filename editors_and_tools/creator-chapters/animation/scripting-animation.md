@@ -198,4 +198,4 @@ Animation system will search in all the components of animation root node. If th
 
 ---
 
-Continue to read the next chapter [Components](../components/index.md).
+Continue on to read about [Components](../components/index.md).

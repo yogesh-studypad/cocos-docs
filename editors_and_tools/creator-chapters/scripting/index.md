@@ -38,4 +38,4 @@ Meanwhile, you can initialize, update and even destroy nodes by registering a ce
 
 <hr>
 
-Continue on to [Create and use component script](use-component.md) to start reading.
+Continue on to read about [Create and use component script](use-component.md).

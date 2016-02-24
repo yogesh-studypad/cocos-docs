@@ -14,4 +14,4 @@ This chapter will introduce the powerful and flexible UI (user interface) system
 
 <hr>
 
-Continue to read the introductory document of [sliced-sprite.md].
+Continue on to read about [sliced-sprite.md].

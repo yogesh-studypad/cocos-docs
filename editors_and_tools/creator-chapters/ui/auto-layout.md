@@ -42,4 +42,4 @@ For the properties of other Layout components, please check [../components/layou
 
 <hr>
 
-Continue to read the introductory document of [list-with-data.md].
+Continue on to read about [list-with-data.md].

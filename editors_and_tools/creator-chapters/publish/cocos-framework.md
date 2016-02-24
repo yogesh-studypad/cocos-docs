@@ -77,7 +77,7 @@ We have received lots of feedback about original packing in the public beta, and
     If JAVA SE displays, there is no problem. If JRE displays, then you need to install [JAVA SE running environment](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 5. Check if the C++ compiling environment is correctly installed in Visual Studio
-    
+
     When installing Visual Studio, the C++ compiling component is not ticked off by default. If Visual Studio wasn't installed, you need to install it and choose compiling components concerning C++.
 
 6. Package name issue
@@ -88,7 +88,4 @@ In the end, if zipping still fails, you can try to create a standard Cocos2d-x p
 
 ---
 
-Now you have finished all the configurations for the original development environment. Next, please continue to read [publish-native.md].
-
-
-
+Continue on to read about [publish-native.md].

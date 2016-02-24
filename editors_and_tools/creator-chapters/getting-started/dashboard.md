@@ -9,10 +9,10 @@ After starting Cocos Creator and logging in with your Cocos developer account, t
 What is listed above is the dashboard interface of Cocos Creator, which includes the following types of tabs:
 
 - **Recently Opened Projects**: List projects that have been opened recently. When running Cocos Creator for the first time, this list is blank and a 'Creat a new project' button will appear.
-- **Creat a New Project**: By clicking this tab, you can access the guide interface for creating a new project in Cocos Creator. 
+- **Creat a New Project**: By clicking this tab, you can access the guide interface for creating a new project in Cocos Creator.
 - **Open Other Projects**: If your project is not in the list of recently opened projects, you can click this button to browse and choose the project you want to open.
-- **Help**: Help information, which is a static page that includes various pieces of helpful information and guides for beginners and documents. 
-- **Quick Start**: Shows a video tutorial that can help you start using Cocos Creator to develop games quickly. 
+- **Help**: Help information, which is a static page that includes various pieces of helpful information and guides for beginners and documents.
+- **Quick Start**: Shows a video tutorial that can help you start using Cocos Creator to develop games quickly.
 
 Next, we will introduce these subpages one by one.
 
@@ -34,7 +34,7 @@ Also, when you click or hover over a project, you can see the path of this proje
 
 ### Create a New Project
 
-You can create a new Cocos Creator project with the **Creat a New Project** tab. 
+You can create a new Cocos Creator project with the **Creat a New Project** tab.
 
 In the **Creat a New Project** page, we first need to choose a project template. The project template includes various kinds of basic game frameworks and sample resources and scripts for learning, which can help you start creative work quicker.
 
@@ -52,10 +52,10 @@ After everything is set up, you can click the **Creat a New Project** button to 
 
 ### Open Other Projects
 
-If you can't find your project on the **Recently Opened Projects** page, or if you just downloaded a project that you have never opened before, you can 
+If you can't find your project on the **Recently Opened Projects** page, or if you just downloaded a project that you have never opened before, you can
 browse and open the project in the local file system by clicking the **Open Other Projects** button.
 
-After clicking **Open Other Projects**, a selective input field of the local file system will pop up. Choose your project folder in this input field and click "Open" and then you can open the project. 
+After clicking **Open Other Projects**, a selective input field of the local file system will pop up. Choose your project folder in this input field and click "Open" and then you can open the project.
 
 *Note: Cocos Creator uses a particularly structured folder as legitimate project marking, but not it is not a construction document. You only need to click the project folder when choosing the project.*
 
@@ -67,4 +67,4 @@ You can visit Cocos Creator User Manual and other helping documents by clicking 
 
 ---
 
-Continue to read [Hello World!](hello-world.md), you will understand how to create a new project and how to start using it.
+Continue on to read about [Hello World!](hello-world.md).

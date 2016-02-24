@@ -18,7 +18,7 @@ The Workflow cores of Cocos Creator are data driven. When opening a project for 
 
 ![open scene](hello-world/open_scene.jpg)
 
-Double click the `Hello World` scene document indicated by the arrow in the **Resource Manager**. All the scene documents in Cocos Creator use ![../asset-workflow/index/scene.png] as their icon. 
+Double click the `Hello World` scene document indicated by the arrow in the **Resource Manager**. All the scene documents in Cocos Creator use ![../asset-workflow/index/scene.png] as their icon.
 
 ## Hello World project decomposition
 
@@ -26,7 +26,7 @@ After opening the `Hello World` scene, we can see all the contents of this templ
 
 ![breakdown](hello-world/breakdown.jpg)
 
-The content of the scene will respectively appear in four core panels **resource manager, arrangement manager, scene editor and property checker** according to workflows. Introductions to the editor interface and main panel will be shown in detail in the following [../basics/editor-overview.md] section. 
+The content of the scene will respectively appear in four core panels **resource manager, arrangement manager, scene editor and property checker** according to workflows. Introductions to the editor interface and main panel will be shown in detail in the following [../basics/editor-overview.md] section.
 
 ## Preview scene
 
@@ -60,4 +60,4 @@ The content of this section lets us know how to start the workflows of Cocos Cre
 
 ---
 
-Continue to read the [quick-start.md] tutorial document.
+Continue on to read about [quick-start.md].

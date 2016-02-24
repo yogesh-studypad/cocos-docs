@@ -14,4 +14,4 @@ Except for the routine scene elements of editing and creating, we will introduce
 
 ---
 
-Keep moving on to the [node and component](node-component.md) file.
+Continue on to read about [node and component](node-component.md).

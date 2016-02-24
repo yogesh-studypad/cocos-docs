@@ -28,4 +28,4 @@ In the above engines, each node extends from the basic 'node' class and has fixe
 
 Cocos Creator makes it possible to attach scripts to a node with mixin. This way user can write scripts with modular behavior, and attach scripts with different behavior to a single node to grant it a combination of modular behaviors.
 
-Let's go over to next chapter [Attachable Script](/manual/scripting/attachable-script) for details.
+Continue on to read about [Attachable Script](/manual/scripting/attachable-script).

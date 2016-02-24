@@ -2,7 +2,7 @@
 
 Cocos Creator is a new type of game development tool oriented towards content creation that has completely integrated the componentized edition Cocos2d-x WEB, by which you can launch games on platforms like Web, iOS, Android, Mac, Windows, etc.. Moreover, you can use it to directly launch games on Cocos Play platform, grasping the new opportunity brought by the rapid development of the channel for mobile web games. For more introductions to Cocos Creator, please refer to [introduction.md].
 
-The aim of this document is to introduce the users of Cocos2d-x to Cocos Creator and help them learn how to use the new editor as soon as possible. 
+The aim of this document is to introduce the users of Cocos2d-x to Cocos Creator and help them learn how to use the new editor as soon as possible.
 This document will discuss possible problems that may occur in the transition from Cocos2d-x to Cocos Creator development and offer relative solutions, which will not go deep into framework details but provide links to detailed reference documents of different parts.
 
 ## 1. Typical Misconceptions
@@ -47,7 +47,7 @@ cc.director.loadScene('SampleScene');
 
 Serialization and deserialization supports most public properties in Cocos Creator. These properties are exposed to developers through the properties panel. Developers can arbitrarily modify and save properties in editor. The procedure of saving is to serialize resources and scene data into Asset Database. In contrast, in the procedure of loading scenes, the deserialization mechanism can instantiate corresponding objects according to scene data, and restore all properties set up in the editor.
 
-What's more, the power of data driven lies in the fact that components edited by users themselves can also make property declarations. These properties can be edited in editor, saved in scene data, and finally deserialized into game scenes when running. 
+What's more, the power of data driven lies in the fact that components edited by users themselves can also make property declarations. These properties can be edited in editor, saved in scene data, and finally deserialized into game scenes when running.
 
 _The source database is presented as [../basics/editor-panels/assets.md] in the editor._
 
@@ -82,7 +82,7 @@ var onLaunched = function () {
 cc.director.loadScene(sceneName, onLaunched);
 ```
 
-Besides, interface for visiting scene nodes is provided: 
+Besides, interface for visiting scene nodes is provided:
 
 ```
 // To obtain scene nodes of logic tree
@@ -93,7 +93,7 @@ var logicScene = cc.director.getScene();
 
 In Cocos Creator, 'cc.Node'is replaced by the logic node, and the old node is renamed as `_ccsg.Node` and becomes a private category that is not recommended to be used anymore. The reason for this is that developers only need to focus on logic nodes and they no longer need to care about render nodes at the bottom. Of course, we have preserved its API sets as much as possible. APIs like information concerning Transform, node tree, Action and properties remain unchanged.
 
-There used to be a crude mechanism of components. Developers could receive callbacks like onEnter, onExit, update, etc. by adding components to Node. In Cocos Creator, the same interface `addComponent` is used, but the component system becomes the core of the whole engine. Components can extend the function of the logic node in various ways. It could even be said that the logic node shouldn't include any actual game logic and it's logic should be completely assembled by various kinds of logic components. 
+There used to be a crude mechanism of components. Developers could receive callbacks like onEnter, onExit, update, etc. by adding components to Node. In Cocos Creator, the same interface `addComponent` is used, but the component system becomes the core of the whole engine. Components can extend the function of the logic node in various ways. It could even be said that the logic node shouldn't include any actual game logic and it's logic should be completely assembled by various kinds of logic components.
 
 And this leads to the biggst difference between Cocos2d-JS and Cocos Creator: How to extend node behavior?
 
@@ -136,11 +136,11 @@ Points to be noted:
 
 ### Event System
 
-In `cc.Node`, a series of wholly new event APIs are added. From logic nodes, various events can be distributed. The monitor's register of some kind of event is also allowed. The monitor could be a simple callback function, or an assembly of callback functions and its caller. List of important APIs: 
+In `cc.Node`, a series of wholly new event APIs are added. From logic nodes, various events can be distributed. The monitor's register of some kind of event is also allowed. The monitor could be a simple callback function, or an assembly of callback functions and its caller. List of important APIs:
 
 1. `node.emit(type, detail)`: Inform all the monitors to monitor `type` event. Capable of sending an additional parameter.
 2. `node.dispatchEvent(event)`: Send an event to its monitor. Support bubbling.
-3. `node.on(type, callback, target)`: Continuously monitor `type` event of `node`. 
+3. `node.on(type, callback, target)`: Continuously monitor `type` event of `node`.
 4. `node.once(type, callback, target)`: Monitor  `type` event of `node` once.
 5. `node.off(type, callback, target)`: Cancel the monitoring of all `type` events or cancel a certain monitor of `type` event (appointed by callback and target).
 
@@ -167,5 +167,4 @@ In a highly generalized way, the text above introduced some of the design ideas 
 
 ---
 
-Continue to read introduction to [project-structure.md].
-
+Continue on to read about [project-structure.md].
