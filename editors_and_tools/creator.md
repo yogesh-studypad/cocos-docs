@@ -12,7 +12,7 @@ quickly and efficiency.
 ###&emsp;&emsp;[Unity Guide](creator-chapters/getting-started/unity-guide.md)
 
 ## Dashboard
-###&emsp;&emsp;[Dashboard](creator-chapters/dashboard.md)
+###&emsp;&emsp;[Dashboard](creator-chapters/getting-started/dashboard.md)
 
 ## Basics
 <!--###&emsp;&emsp;[Introduction](creator-chapters/basics/index.md)-->
