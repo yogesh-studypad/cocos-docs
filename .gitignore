@@ -9,6 +9,8 @@ static-pages/api-refs/
 *.epub
 *.pdf
 
+*.html.bak
+
 # Mac system files
 .DS_Store
 .AppleDouble
