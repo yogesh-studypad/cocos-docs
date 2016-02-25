@@ -48,7 +48,7 @@ create_project.sh 命令会以 package name 的最后一节作为新项目的目
 
 ### 创建项目时指定屏幕方向 ###
 
-用 -o 参数指定屏幕方向，可用值有 landscape（横屏）、portrait（竖屏），例如：
+用 -o 参数指定屏幕方向，可用值有 landscape（横屏）,portrait（竖屏），例如：
 
 ~~~
 

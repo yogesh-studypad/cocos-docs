@@ -2,7 +2,7 @@
 
 Refactor all createWithXXX functions into unified create function with different parameters
 
-###1、Sprite (4 ways)###
+###1,Sprite (4 ways)###
 
 (1) create with a image path
 
@@ -31,7 +31,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0:texture,  param1:rectangle
     var sprite2 = cc.Sprite.create(texture,  cc.rect(0, 0, 480, 320));
 
-###2、LabelTTF (2 ways)###
+###2,LabelTTF (2 ways)###
 
 (1)  create with font, size and other parameters
 
@@ -46,7 +46,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0:text,  param1:cc.FontDefinition
     var myLabel = cc.LabelTTF.create('label text',  fontDef);
 
-###3、Animation (3 ways)###
+###3,Animation (3 ways)###
 
 (1) create en empty animation
 
@@ -78,7 +78,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0:animation frames, param1:delay time, param2:loop times
     var animation3 = cc.Animation.create(animationFrameArr,  0.2, 2);
 
-###4、SpriteBatchNode (2 ways)###
+###4,SpriteBatchNode (2 ways)###
 (1)create with a image path
 
     //param0:image path, param1:capacity
@@ -89,7 +89,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0:texture, param1:capacity
     var spriteBatchNode = cc.SpriteBatchNode.create(texture, 50);
 
-###5、SpriteFrame (2 ways)###
+###5,SpriteFrame (2 ways)###
 (1)create with a image path
 
     //param0:image path, param1:rectangle
@@ -104,7 +104,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0:image path, param1:rectangle, param2:rotated, param3:offset, param4:originalSize
     var frame2 = cc.SpriteFrame.create(texture,  cc.rect(0, 0, 90, 128), false, 0, cc.size(90, 128));
 
-###6、ParticleSystem (2 ways)###
+###6,ParticleSystem (2 ways)###
 (1)create with total
 
     //param0: total
@@ -114,7 +114,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0: plist file path
     var particle = cc.ParticleSystem.create("res/particle.plist");
 
-###8、PhysicsSprite (4 ways)###
+###8,PhysicsSprite (4 ways)###
 
 (1) create with a image path
 
@@ -143,7 +143,7 @@ Refactor all createWithXXX functions into unified create function with different
     //param0:texture, param1:rectangle
     var physicsSprite2 = cc.PhysicsSprite.create(texture,  cc.rect(0, 0, 480, 320));
 
-###9、TextureAtlas (2 ways)###
+###9,TextureAtlas (2 ways)###
 
 (1)create with a image path
 

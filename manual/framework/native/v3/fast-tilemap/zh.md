@@ -4,7 +4,7 @@
 
   在游戏中常常会有丰富的背景元素，如果直接使用大的背景图实现，这会造成资源浪费。TileMap就是为了解决这问题而产生的。Cocos2d-x支持使用[Tile地图编辑器](http://www.mapeditor.org/)创建的TMX格式的地图。
   
-  Cocos2d-x为我们提供了TMXTileMap和TMXLayer两个类来处理瓦片地图。通过使用TMXTileMap和TMXLayer，我们可以很方便的加载TMX格式的地图文件，获取地图上的图层、对象、属性等信息。
+  Cocos2d-x为我们提供了TMXTileMap和TMXLayer两个类来处理瓦片地图。通过使用TMXTileMap和TMXLayer，我们可以很方便的加载TMX格式的地图文件，获取地图上的图层,对象,属性等信息。
 
 新发布的3.2版本，对瓦片地图进行了大幅改进，通过自动裁剪不在视图范围内的瓦片来提升性能，并支持渲染更大尺寸的瓦片地图！我们称之为"Fast TileMap"，下面我们就来一起研究Fast TileMap。
 

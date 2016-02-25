@@ -8,7 +8,7 @@
 - 优化了“Performance Tests -> Sprites Test”，基准提升220%！比之前快了2.2倍哦！
 - 植入音频（CocosDenshion）API，现与Cocos2d JS API一样。
 - 增加NodeTests及TilemapTests自动测试功能
-- 改变了CCTextureCache成员函数如addImage(path)、addImageAysnc(path)及removeTextureForKey(key)，把使用相对路径改为使用绝对路径。
+- 改变了CCTextureCache成员函数如addImage(path),addImageAysnc(path)及removeTextureForKey(key)，把使用相对路径改为使用绝对路径。
 - 增加粒子批量节点支持。
 
 ### 修复问题

@@ -1,9 +1,9 @@
 # ARM DS-5 助力安卓游戏开发
 
 ## 1. DS-5是什么？
-DS-5是 ARM<sup>®</sup> Development Studio 5 的简称，基于标准 Eclipse 开发环境，提供一流的窗口管理、项目管理和 C/C++ 源代码编辑工具。DS-5 将特定于 ARM 的众多功能集成到 Eclipse 平台，使得它成为功能最强大的工具链，非常适用于 ARM 软件开发。
+DS-5是 ARM<sup>®</sup> Development Studio 5 的简称，基于标准 Eclipse 开发环境，提供一流的窗口管理,项目管理和 C/C++ 源代码编辑工具。DS-5 将特定于 ARM 的众多功能集成到 Eclipse 平台，使得它成为功能最强大的工具链，非常适用于 ARM 软件开发。
 
-DS-5分为旗舰版、专业版和社区版。Cocos Code IDE 获得 ARM Limited 授权，可以发布 DS-5 社区版给开发者使用。
+DS-5分为旗舰版,专业版和社区版。Cocos Code IDE 获得 ARM Limited 授权，可以发布 DS-5 社区版给开发者使用。
 
 [![](./res/arm-logo.png)](http://ds.arm.com/zh-cn/ds-5-community-edition/)
 
@@ -19,7 +19,7 @@ DS-5 社区版功能安装包:
 DS-5 社区版虽然没有专业版和旗舰版功能强大，但给安卓开发者提供的帮助可不小。
 
 ### 安卓平台C++代码调试
-支持基于ARM9、ARM11和Cortex-A (ARMv7-A)架构的处理器的安卓设备进行调试，注意某些基于安卓 2.2 版 (Froyo) 的产品尚未启用此功能。  
+支持基于ARM9,ARM11和Cortex-A (ARMv7-A)架构的处理器的安卓设备进行调试，注意某些基于安卓 2.2 版 (Froyo) 的产品尚未启用此功能。  
 ![](./res/ds-5-debug-feature.jpg)
 
 ### 安卓平台性能分析

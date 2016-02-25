@@ -302,4 +302,4 @@ And you also should make resolution policy to **SHOW_ALL**:
 在本教程中，我们已经谈到了目录结构和内置的测试和的cocos2d-HTML5的样例游戏。我们还基于Cocos2d-html5创建了第一个项目。在下一部分，我们会努力分析文件和模板的代码结构。
 ##下一章
 
-在下一章教程，、我将向你展示如何建立你的第一个游戏主菜单的场景。我们将做更多的cocos2d-html5编码.
+在下一章教程，,我将向你展示如何建立你的第一个游戏主菜单的场景。我们将做更多的cocos2d-html5编码.

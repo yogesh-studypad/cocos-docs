@@ -21,7 +21,7 @@
 
 &emsp;&emsp;![image](res_tw/image0004.png) 
 
-&emsp;&emsp;iii.重複以上兩個步驟，放入knight.c3b、mage.c3b和rat.c3b並配置其常規屬性，得出如下圖的場景。
+&emsp;&emsp;iii.重複以上兩個步驟，放入knight.c3b,mage.c3b和rat.c3b並配置其常規屬性，得出如下圖的場景。
 
 &emsp;&emsp;![image](res_tw/image0005.png) 
  

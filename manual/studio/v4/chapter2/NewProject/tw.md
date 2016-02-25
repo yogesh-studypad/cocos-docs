@@ -1,10 +1,10 @@
 #認識cocos
 
-使用cocos啟動器，您將可以快速新建項目、導入項目、SDK接入。
+使用cocos啟動器，您將可以快速新建項目,導入項目,SDK接入。
 
 ### 1.新建項目 ###
 
-打開啟動器，在面板右上角的位置，您可以看到“新建專案”的按鈕，點擊此按鈕，在彈出的“新建專案”介面，按照提示填寫專案名稱、專案路徑、引擎版本、引擎類型、專案語言、編輯器、SDK接入，然後點擊“完成”即可創建一個新項目。如圖1：
+打開啟動器，在面板右上角的位置，您可以看到“新建專案”的按鈕，點擊此按鈕，在彈出的“新建專案”介面，按照提示填寫專案名稱,專案路徑,引擎版本,引擎類型,專案語言,編輯器,SDK接入，然後點擊“完成”即可創建一個新項目。如圖1：
 
 ![image](res_tw/image0001.png)
 
@@ -24,11 +24,11 @@
 
 &emsp;&emsp;**專案語言**：
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Lua：指令碼語言，基於cocos2d-x luabinding（將cocos2d-x介面綁定到lua層並加入Quick Lua框架），可以運行在Android、iOS、Windows Phone、Windows、Mac。
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Lua：指令碼語言，基於cocos2d-x luabinding（將cocos2d-x介面綁定到lua層並加入Quick Lua框架），可以運行在Android,iOS,Windows Phone,Windows,Mac。
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;JavaScript：指令碼語言，基於cocos2d-js引擎，cocos2d-js引擎包含cocos2d-x JavaScript binding（將cocos2d-x的介面綁定到JavaScript層）和cocos2d-js（純JavaScript引擎），JavaScript binding和Html5介面相容，同一套JavaScript遊戲邏輯代碼既可以驅動cocos2d-x runtime，也可以驅動Html5原生引擎，當打包到Android、iOS、Windows Phone、Windows、Mac平臺的時候默認基於JavaScript binding，打包到HTML5基於cocos2d-js引擎。
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;JavaScript：指令碼語言，基於cocos2d-js引擎，cocos2d-js引擎包含cocos2d-x JavaScript binding（將cocos2d-x的介面綁定到JavaScript層）和cocos2d-js（純JavaScript引擎），JavaScript binding和Html5介面相容，同一套JavaScript遊戲邏輯代碼既可以驅動cocos2d-x runtime，也可以驅動Html5原生引擎，當打包到Android,iOS,Windows Phone,Windows,Mac平臺的時候默認基於JavaScript binding，打包到HTML5基於cocos2d-js引擎。
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C++：編譯型語言，基於cocos2d-x引擎，可以運行在Android、iOS、Windows Phone、Windows、Mac。
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C++：編譯型語言，基於cocos2d-x引擎，可以運行在Android,iOS,Windows Phone,Windows,Mac。
 
 &emsp;&emsp;**編輯器**：是否創建cocos2d-x官方編輯器Cocos Studio專案檔案。
 
@@ -58,7 +58,7 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**圖4. 導入項目** 
 
 ### 4.打開項目 ###
-在“我的專案”的專案路徑右側，有三個"打開"按鈕。按一下相應的圖示或文字表示,使用“Visual Studio”、“Android Studio”和“Cocos Studio”中打開專案，滑鼠懸停在圖示或者“打開”上，將會出現相應的提示資訊。如圖5：
+在“我的專案”的專案路徑右側，有三個"打開"按鈕。按一下相應的圖示或文字表示,使用“Visual Studio”,“Android Studio”和“Cocos Studio”中打開專案，滑鼠懸停在圖示或者“打開”上，將會出現相應的提示資訊。如圖5：
 
 ![image](res_tw/image0010.png)
 
@@ -81,7 +81,7 @@
 
 ### 7.其他側邊欄標籤 ###
 
-啟動器左側有3個標籤，分別為項目、文檔和回饋。
+啟動器左側有3個標籤，分別為項目,文檔和回饋。
 
 ### 文檔 ###
 

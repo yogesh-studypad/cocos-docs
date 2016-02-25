@@ -1,6 +1,6 @@
 Cocos2d-x lua 的基本调试原理
 ===
-Cocos2d-x 引擎内置了 Lua binding 的支持，开发者可以直接用 C++ 实现比较复杂的算法，又可以通过 lua 脚本来进行快速地实现游戏逻辑。C++ 调试工具当然首选 Xcode、VS，而 lua 的调试工具五花八门，LDT 和 Decoda 等等，但是它们都不是专门针对 Cocos2d-x 的工具，Cocos2d-x 工程要使用它们需要开发者对工程进行改造，同时工具的配置也非常的繁琐，于是 Cocos 官方推出了自己的 Cocos Code IDE。
+Cocos2d-x 引擎内置了 Lua binding 的支持，开发者可以直接用 C++ 实现比较复杂的算法，又可以通过 lua 脚本来进行快速地实现游戏逻辑。C++ 调试工具当然首选 Xcode,VS，而 lua 的调试工具五花八门，LDT 和 Decoda 等等，但是它们都不是专门针对 Cocos2d-x 的工具，Cocos2d-x 工程要使用它们需要开发者对工程进行改造，同时工具的配置也非常的繁琐，于是 Cocos 官方推出了自己的 Cocos Code IDE。
 
 选用 LDT 作为调试 lua 的基础
 -------

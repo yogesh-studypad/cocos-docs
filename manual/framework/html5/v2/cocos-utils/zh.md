@@ -169,9 +169,9 @@ cocos publish
 
 ## 注意事项
 
-当你有新增、删除资源文件，或者对资源重命名，或者改动资源文件路径的时候，切记执行`cocos genRes`命令。
+当你有新增,删除资源文件，或者对资源重命名，或者改动资源文件路径的时候，切记执行`cocos genRes`命令。
 
-当你有新增、删除js文件，或者对js重命名，或者改动js文件路径的时候，切记执行`cocos genJsRes`命令。
+当你有新增,删除js文件，或者对js重命名，或者改动js文件路径的时候，切记执行`cocos genJsRes`命令。
 
 当你安装/移除了引擎模块(`cocos.json`中的`dependencies`)或者第三方模块(`package.json`中的`dependencies`)的时候，切记执行`cocos genBaseCfg`命令。
 

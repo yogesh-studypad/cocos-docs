@@ -3,7 +3,7 @@
 ## 0. Overview概览
 
 - 使用Wizard工具可以生成**Cocos2d-x-win32**项目。
-- Wizard支持Visual Studio 2008、Visual Studio 2010(0.8.0及更新版)、Visual C++2008 Express(0.8.0及更新版) 以及Visual C++ 2010 Express(0.8.0及更新版)
+- Wizard支持Visual Studio 2008,Visual Studio 2010(0.8.0及更新版),Visual C++2008 Express(0.8.0及更新版) 以及Visual C++ 2010 Express(0.8.0及更新版)
 
 ## 1. 首先从Github获取Cocos2d-x源代码
 源码存档请点击：下载。   

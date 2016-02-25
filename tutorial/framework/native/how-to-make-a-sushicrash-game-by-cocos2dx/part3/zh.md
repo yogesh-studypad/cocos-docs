@@ -3,7 +3,7 @@
 
 ## 本章介绍
 
-前面第[一](http://www.ityran.com/archives/5839)、[二部分](http://www.ityran.com/archives/5929)教程中，我们已经实现了Sushi Crush游戏的基本逻辑部分，创建、检测、消除、填补空位以及特效依依到位。
+前面第[一](http://www.ityran.com/archives/5839),[二部分](http://www.ityran.com/archives/5929)教程中，我们已经实现了Sushi Crush游戏的基本逻辑部分，创建,检测,消除,填补空位以及特效依依到位。
 
 然而对于一款游戏而言，不管你的动画做得多么生动，特效做得多么炫，算法设计的多么牛逼，对它而言最重要的特性还是与玩家在游戏中的实时交互。所以接下来，我们将实现触摸控制寿司交换部分的功能，以及特效寿司的消除。
 
@@ -64,19 +64,19 @@ m_destSushi 表示移动到哪的那个寿司，即目标寿司。
 本部分代码在一定程度上将会有很大的改动，因为之前的代码逻辑并不是严谨的，我们需要根据具体情况加上一些控制变量和功能来完善它。例如上面的m_isNeedRemove变量，我们将使用它来标记代码中所有会被消除的寿司，这在之前地代码中是没有的。具体内容你可以下载[源码](https://github.com/iTyran/SushiCrush/)进行查看。
 
 ## 触摸事件的响应
-《辞海》中这样定义游戏：以直接获得快感为主要目的，且必须有主体参与互动的活动。由此可见，玩家与游戏的互动对于一款游戏是的多么的重要。在移动平台类游戏中，主要的互动动作基本上都是通过触摸屏幕、重力感应等方式体现的。
+《辞海》中这样定义游戏：以直接获得快感为主要目的，且必须有主体参与互动的活动。由此可见，玩家与游戏的互动对于一款游戏是的多么的重要。在移动平台类游戏中，主要的互动动作基本上都是通过触摸屏幕,重力感应等方式体现的。
 
 在我们的游戏中，玩家交换两个寿司的过程实际上就是**滑动屏幕**这一触屏动作的响应过程，所以，下面就让我们一起来学习触摸事件的响应和使用。
 
 让我们来看看代码怎么实现。首先我们需要让Layer能接收Touch事件。所以我们继承Layer处理事件的回调虚函数，并重写，下面是实现过程：
 
-####1、首先，在PlayLayer.h文件中声明成员函数。
+####1,首先，在PlayLayer.h文件中声明成员函数。
 
 ```
 virtual bool onTouchBegan(Touch *touch, Event *unused) override;
 virtual void onTouchMoved(Touch *touch, Event *unused) override;  
 ```
-####2、在PlayLayer.cpp文件中的init函数中创建并绑定触摸事件。      
+####2,在PlayLayer.cpp文件中的init函数中创建并绑定触摸事件。      
 
 ```
 // 1 创建一个事件监听器， OneByOne 为单点触摸
@@ -95,7 +95,7 @@ _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 	- 自定义事件 (EventListenerCustom)      
 其中的触摸监听类型触摸事件又分为 EventListenerTouchOneByOne 和 EventListenerTouchAllAtOnce 两种。EventListenerTouchOneByOne 表示的是单点触摸；而EventListenerTouchAllAtOnce 表示的就是多点触摸。       
 2. 我们以前的ccTouchBegan，ccTouchEnd，ccTouchMoved等方法在v3.0中都已经弃用（deprecated）了。取而代之的是让监听器绑定事件处理函数。上面绑定的onTouchBegan和onTouchMoved分别响应的是触摸点击开始事件和移动事件。onTouchEnded和onTouchCancelled没有写出来，反正本游戏用不着。  
-3. 监听器创建完成后我们把它绑定给_eventDispatcher事件分发器，_eventDispatcher 是 Node 的属性，通过它我们可以统一管理当前节点（如：场景、层、精灵等）的所有事件分发情况。但是它本身是一个单例模式值的引用，在 Node 构造函数中，通过 "Director::getInstance()->getEventDispatcher();" 获取，有了这个属性，我们能更为方便的调用。                     
+3. 监听器创建完成后我们把它绑定给_eventDispatcher事件分发器，_eventDispatcher 是 Node 的属性，通过它我们可以统一管理当前节点（如：场景,层,精灵等）的所有事件分发情况。但是它本身是一个单例模式值的引用，在 Node 构造函数中，通过 "Director::getInstance()->getEventDispatcher();" 获取，有了这个属性，我们能更为方便的调用。                     
 将事件监听器 touchListener 添加到事件调度器_eventDispatcher中有两种方法，即如下的两个函数：     
 ```
 void addEventListenerWithSceneGraphPriority(EventListener* listener, Node* node);              
@@ -103,7 +103,7 @@ void addEventListenerWithFixedPriority(EventListener* listener, int fixedPriorit
 ```    
 两者的主要区别在于它们加入到事件分发器中的优先级的差异。其中的使用 addEventListenerWithSceneGraphPriority 方法添加的事件监听器优先级固定为0；而使用 addEventListenerWithFixedPriority 方法添加的事件监听器的优先级则可以自己设置，但不可以设置为 0，因为这个是保留给 SceneGraphPriority使用的。    
 
-####3、最后在PlayLayer.cpp文件中实现触摸回调函数。       
+####3,最后在PlayLayer.cpp文件中实现触摸回调函数。       
 一旦玩家开始触碰屏幕，我们的程序就应该开始调用onTouchBegan获取玩家所触碰到得那个m_srcSushi寿司；当玩家移动屏幕的时候，调用onTouchMoved计算滑动点所在位置处的m_destSushi寿司，并交换m_srcSushi和m_destSushi。也就是说，在onTouchMoved中我们要计算m_srcSushi要和它四周的哪个寿司做交换。
 
 对于开始触碰屏幕时，我们要根据触碰的位置点来计算所选的寿司。m_srcSushi寿司的获取我们可以通过遍历场景内所有寿司，检测触摸点在不在某个寿司范围内来获得。
@@ -135,7 +135,7 @@ SushiSprite *PlayLayer::sushiOfPoint(Point *point)
 ```
 containsPoint方法检测point点在不在rect内。
 
-接下来，我们来计算玩家滑动的方向。如下图所示，upRect、downRect、leftRect、rightRect分别是m_srcSushi四周相邻寿司所在的矩形范围，当玩家向上滑动进入upRect时，我们就取upRect范围内的那个寿司为我们的目的寿司；同样地，当向左滑动进入leftRect时，目的寿司便成了leftRect范围内的寿司，以此类推。
+接下来，我们来计算玩家滑动的方向。如下图所示，upRect,downRect,leftRect,rightRect分别是m_srcSushi四周相邻寿司所在的矩形范围，当玩家向上滑动进入upRect时，我们就取upRect范围内的那个寿司为我们的目的寿司；同样地，当向左滑动进入leftRect时，目的寿司便成了leftRect范围内的寿司，以此类推。
 
 ![](./res/update.png)
 
@@ -178,7 +178,7 @@ void PlayLayer::onTouchMoved(Touch *touch, Event *unused)
         swapSushi();
         return;
     }
-    //downRect、leftRect、rightRect的计算方法类似。
+    //downRect,leftRect,rightRect的计算方法类似。
 }
 ```
 
@@ -191,7 +191,7 @@ Cocos2d-x是基于OpenGL ES实现的，所以在Touch中保存的用户触屏坐
 
 获得源寿司（m_srcSushi）与目的寿司（m_destSushi）后，我们只需要交换它们就可以实现寿司的交换了。实际上寿司的交换大致就分为以下两种情况：
 
-1、第一种是交换后的寿司可以被消除。
+1,第一种是交换后的寿司可以被消除。
 
 在这种情况下，我们需要交换 m_srcSushi 与 m_destSushi 在寿司矩阵中的行列号，并交换它们本身的位置。      
 让寿司互换位置我们依旧可以使用Cocos2d-x提供的Action动作来完成，这样我们能很轻松的让它动起来。这里，我们对目标对象使用MoveTo类型的Action动作，让它从原来的坐标位置移动到另一个寿司位置上。
@@ -211,7 +211,7 @@ void PlayLayer::swapSushi()
     Point posOfDest = m_destSushi->getPosition();
     float time = 0.2;
     
-    // 1.交换m_srcSushi与m_destSushi在寿司矩阵中的行、列号
+    // 1.交换m_srcSushi与m_destSushi在寿司矩阵中的行,列号
     m_matrix[m_srcSushi->getRow() * m_width + m_srcSushi->getCol()] = m_destSushi;
     m_matrix[m_destSushi->getRow() * m_width + m_destSushi->getCol()] = m_srcSushi;
     int tmpRow = m_srcSushi->getRow();
@@ -245,14 +245,14 @@ void PlayLayer::swapSushi()
     }
 }
 ```
-2、第二种是交换后的寿司不能被消除，它们又要被交换回原来的位置。
+2,第二种是交换后的寿司不能被消除，它们又要被交换回原来的位置。
 
 在这情况下，我们可以先将就着第一种情况——先交换 m_srcSushi 与 m_destSushi 在寿司矩阵中的行列号，然后再交换回它们原来的行列号，同时让它们顺序执行一对往返的MoveTo动作，即先让寿司移动到一端，再让它从那一端移动回原来位置。这一过程就好比两个寿司分别到对方家里窜了一下门一样。
 
 在swapSushi方法中添加以下代码实现：
 
 ```  
-    // 3.不满足消除条件时，交换回寿司本身在矩阵中的行、列号
+    // 3.不满足消除条件时，交换回寿司本身在矩阵中的行,列号
     m_matrix[m_srcSushi->getRow() * m_width + m_srcSushi->getCol()] = m_destSushi;
     m_matrix[m_destSushi->getRow() * m_width + m_destSushi->getCol()] = m_srcSushi;
     tmpRow = m_srcSushi->getRow();

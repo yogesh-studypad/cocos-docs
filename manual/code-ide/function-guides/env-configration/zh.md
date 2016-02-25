@@ -22,11 +22,11 @@
 
 - ### **引擎同IDE的依赖关系** ###
 
-	Cocos Code IDE需要依赖引擎的cocos-console来进行工程的建立、编译和打包等操作。
+	Cocos Code IDE需要依赖引擎的cocos-console来进行工程的建立,编译和打包等操作。
 
 - ### **引擎同Python的依赖关系** ###
 		
-	引擎依赖Python环境，引擎中的cocos-console在新建工程、编译和打包的过程中，都是需要调用相关的Python脚本来实现，所以用户需要正确安装Python环境后，才可以正常的使用这些功能。
+	引擎依赖Python环境，引擎中的cocos-console在新建工程,编译和打包的过程中，都是需要调用相关的Python脚本来实现，所以用户需要正确安装Python环境后，才可以正常的使用这些功能。
 
 - ### **Cocos2d-x** ###
 	- **引擎版本和Cocos Code IDE版本的对应关系**
@@ -91,7 +91,7 @@
 
 		Cocos2d-x 3.2和Cocos2d-x 3.3，支持r9d和r10c。
 
-		Cocos2d-x 3.0以上版本，Cocos2d-x 3.2以下版本，可以使用r9b、r9d。
+		Cocos2d-x 3.0以上版本，Cocos2d-x 3.2以下版本，可以使用r9b,r9d。
 
 	- **注意事项**
 		

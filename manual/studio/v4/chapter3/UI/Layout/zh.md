@@ -1,7 +1,7 @@
 #UI布局与多分辨率适配
 
 
-#####一、Cocos编辑器
+#####一,Cocos编辑器
 
 自动布局系统主要涉及固定与拉伸属性：
  
@@ -26,14 +26,14 @@
 #####其他
 &emsp;&emsp;1. 不开启上述任意属性时，对象默认相对左下角位置不变。
 
-&emsp;&emsp;2. 当前仅控件对象（文本、FNT字体也没有）和容器两种类型有拉伸条属性。
+&emsp;&emsp;2. 当前仅控件对象（文本,FNT字体也没有）和容器两种类型有拉伸条属性。
 
 
-#####二、Cocos 2d-x(Cocos Framework)中的相关概念及代码设置
+#####二,Cocos 2d-x(Cocos Framework)中的相关概念及代码设置
 
 设计分辨率和屏幕分辨率： 
 
-&emsp;&emsp;首先我们需要了解两个概念：在Cocos2d-x中有两种分辨率：设备分辨率、屏幕分辨率。设备分辨率即当前游戏所运行平台的实际分辨率；设计分辨率就是我们设计的游戏的分辨率。 
+&emsp;&emsp;首先我们需要了解两个概念：在Cocos2d-x中有两种分辨率：设备分辨率,屏幕分辨率。设备分辨率即当前游戏所运行平台的实际分辨率；设计分辨率就是我们设计的游戏的分辨率。 
 
 &emsp;&emsp;设计分辨率是可设置的，是我们的游戏程序能够“感知到”的分辨率大小，我们的界面超过这个区域的部分都不会显示。
 
@@ -55,25 +55,25 @@
 
 &emsp;&emsp;转到setDesignResolutionSize的定义看看。里边做了一些判断和赋值，最终调用了updateDesignResolutionSize，继续转到updateDesignResolutionSize里边，这个函数的部分代码如下：
 
-	//1.计算游戏界面在缩放至充满屏幕的情况下X、Y轴的缩放率:
+	//1.计算游戏界面在缩放至充满屏幕的情况下X,Y轴的缩放率:
     _scaleX= (float)_screenSize.width/ _designResolutionSize.width;
     _scaleY= (float)_screenSize.height/ _designResolutionSize.height;
   
     //2.根据设配策略，调整缩放率和设计分辨率:
     if(_resolutionPolicy== ResolutionPolicy::NO_BORDER)
-    {//将X、Y轴缩放值设置为其中的最大者
+    {//将X,Y轴缩放值设置为其中的最大者
         _scaleX = _scaleY = MAX(_scaleX,_scaleY);
     }
     else if(_resolutionPolicy== ResolutionPolicy::SHOW_ALL)
-    {//将X、Y轴缩放值设置为其中的最小者
+    {//将X,Y轴缩放值设置为其中的最小者
         _scaleX = _scaleY = MIN(_scaleX,_scaleY);
     }
     else if( _resolutionPolicy == ResolutionPolicy::FIXED_HEIGHT) {
-        _scaleX = _scaleY;//将X、Y轴缩放值固定为Y轴缩放值，调整设计分辨率的宽度，使设计分辨率的宽度在缩放后依然能够充满屏幕。
+        _scaleX = _scaleY;//将X,Y轴缩放值固定为Y轴缩放值，调整设计分辨率的宽度，使设计分辨率的宽度在缩放后依然能够充满屏幕。
         _designResolutionSize.width= ceilf(_screenSize.width/_scaleX);
     }
     else if( _resolutionPolicy == ResolutionPolicy::FIXED_WIDTH) {
-        _scaleY= _scaleX;//将X、Y轴缩放值固定为X轴缩放值，调整设计分辨率的高度，使设计分辨率的高度在缩放后依然能够充满屏幕。
+        _scaleY= _scaleX;//将X,Y轴缩放值固定为X轴缩放值，调整设计分辨率的高度，使设计分辨率的高度在缩放后依然能够充满屏幕。
         _designResolutionSize.height= ceilf(_screenSize.height/_scaleY);
     }
     //其他缩放策略：EXACT_FIT不作调整

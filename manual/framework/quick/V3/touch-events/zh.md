@@ -150,7 +150,7 @@ dialog:setTouchCaptureEnabled(false)
 
 ## 触摸事件的三个阶段
 
-quick 中触摸事件分为三个阶段：capturing（捕获）、targeting（触发）、bubbling（冒泡）。
+quick 中触摸事件分为三个阶段：capturing（捕获）,targeting（触发）,bubbling（冒泡）。
 
 当用户的一根手指触摸到屏幕时，将产生一个触摸事件：
 

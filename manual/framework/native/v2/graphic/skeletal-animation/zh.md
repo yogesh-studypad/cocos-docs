@@ -29,7 +29,7 @@
 
 
 
-在附加的代码中，我使用一个名叫Transformation的类，它含有2D变换的数据，如translation（平移）、rotation（旋转）和scale（缩放）。通过帧的编号和一个Transformation能定义一个关键帧。关键帧的集合定义了一个KeyFrameAnimation.最后，骨骼动画就是一个KeyFrameAnimation的集合，每个KeyFrameAnimation应用于骨骼中的每根骨头。
+在附加的代码中，我使用一个名叫Transformation的类，它含有2D变换的数据，如translation（平移）,rotation（旋转）和scale（缩放）。通过帧的编号和一个Transformation能定义一个关键帧。关键帧的集合定义了一个KeyFrameAnimation.最后，骨骼动画就是一个KeyFrameAnimation的集合，每个KeyFrameAnimation应用于骨骼中的每根骨头。
 
 
 
@@ -45,9 +45,9 @@
 
 
 
-据我们所知，在创建骨骼动画方面[CocosBuilder](http://cocosbuilder.com/)是一个不错的、免费（MIT协议）的工具。
+据我们所知，在创建骨骼动画方面[CocosBuilder](http://cocosbuilder.com/)是一个不错的,免费（MIT协议）的工具。
 
-CocosBuilder为Cocos2d的Javascript绑定而创建的。这意味着你的代码、动画和接口会无修改地在Cocos2d-x中运行。
+CocosBuilder为Cocos2d的Javascript绑定而创建的。这意味着你的代码,动画和接口会无修改地在Cocos2d-x中运行。
 
 Cocos2d-iphone的教程可以在[Zynga Engineering blog](http://code.zynga.com/2012/10/creating-a-game-with-cocosbuilder/)找到。
 
@@ -57,7 +57,7 @@ Cocos2d-iphone的教程可以在[Zynga Engineering blog](http://code.zynga.com/2
 
 
 
-你可以使用CocosBuilder创建人物动画，全场景动画或者你所想的任何动画。该动画编辑器已完全支持多分辨率、关键帧间的缓冲动画、骨骼动画和多时间轴等特性。
+你可以使用CocosBuilder创建人物动画，全场景动画或者你所想的任何动画。该动画编辑器已完全支持多分辨率,关键帧间的缓冲动画,骨骼动画和多时间轴等特性。
 
 基础
 
@@ -90,7 +90,7 @@ CocosBuilder中的动画是基于关键帧的。你可以添加关键帧以设�
 
 
 
-你可以选择关键帧并通过拖拉它们周围的选择框来移动它们。你也可以在node间复制、黏贴关键帧。当黏贴关键帧时，确保你只选择了一个node。关键帧会黏贴在时间标志线标志的时间。
+你可以选择关键帧并通过拖拉它们周围的选择框来移动它们。你也可以在node间复制,黏贴关键帧。当黏贴关键帧时，确保你只选择了一个node。关键帧会黏贴在时间标志线标志的时间。
 
 
 
@@ -129,7 +129,7 @@ CocosBuilder的动画编辑器有一个非常强大的特性就是在单个文�
 
 
 
-在编辑时间轴的对话框中，你可以获得时间轴的大致信息、重命名它们、添加新的时间轴以及（可选）设置时间轴中的一条在ccbi文件从你的应用程序加载后立即自动开始播放。
+在编辑时间轴的对话框中，你可以获得时间轴的大致信息,重命名它们,添加新的时间轴以及（可选）设置时间轴中的一条在ccbi文件从你的应用程序加载后立即自动开始播放。
 ![](./res/043424yxa.png)
 
 

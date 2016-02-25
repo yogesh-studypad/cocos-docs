@@ -24,7 +24,7 @@ $ ./create_project.py -project PROJECT_NAME -package PACKAGE_NAME -language PROG
 
 ## 详细信息
 
-运行 create-project.py脚本会在 cocos2d-x/projects目录下生成编译游戏所需的文件，可用于iOS、Android、Linux、Mac及Windows系统。    
+运行 create-project.py脚本会在 cocos2d-x/projects目录下生成编译游戏所需的文件，可用于iOS,Android,Linux,Mac及Windows系统。    
 源代码文件会在所有不同的编译器中共享。每一个平台都有一个各自的编译器，但是注意iOS平台与Mac平台共享一个编译器。    
 每个编译器都有各自的要求，并不是一直都能从一个host生成支持所有targets的编译文件。
 

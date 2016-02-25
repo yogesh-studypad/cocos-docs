@@ -3,7 +3,7 @@
 Cocos2d-x 3.0使用bindings-generator实现了大部分类成员函数的lua binding,但还是有一小部份类成员函数，对于这些函数，就需我们自己手动实现lua binding.
 
 ###类成员函数的手动绑定
-在Cocos2d-x 3.0中，lua_cocos2d_manual.h/.cpp、lua_cocos2dx_extension_manual.h/.cpp以及lua_cocos2dx_gui_manual.h/.cpp等文件名中包括`manual`的文件,它们的内容是一些类成员函数的手动lua binding。下面，我们将一步一步讲解如何手动实现类成员方法的lua binding。
+在Cocos2d-x 3.0中，lua_cocos2d_manual.h/.cpp,lua_cocos2dx_extension_manual.h/.cpp以及lua_cocos2dx_gui_manual.h/.cpp等文件名中包括`manual`的文件,它们的内容是一些类成员函数的手动lua binding。下面，我们将一步一步讲解如何手动实现类成员方法的lua binding。
 
 ####函数命名
 
@@ -11,7 +11,7 @@ Cocos2d-x 3.0使用bindings-generator实现了大部分类成员函数的lua bin
 
 static int lua_namespacename_classname_functionname(lua_State* tolua_S)
 
-其中，`namespacename`在引擎中可以是"cocos2dx"、"cocos2dx_extension"、"cocos2dx_studio"、"cocos2dx_spine"、"cocos2dx_gui"以及"cocos2dx_physics"中的一个。
+其中，`namespacename`在引擎中可以是"cocos2dx","cocos2dx_extension","cocos2dx_studio","cocos2dx_spine","cocos2dx_gui"以及"cocos2dx_physics"中的一个。
 
 ####函数实现
 
@@ -134,7 +134,7 @@ do
 
 ```
 |                                   | 判断方法          |    获取方法  |
-|int、float、unsigned int 等数字类型  | tolua_isnumber |  tolua_tonumber |
+|int,float,unsigned int 等数字类型  | tolua_isnumber |  tolua_tonumber |
 |string,const char*                 | tolua_isstring |  tolua_tostring |
 |lua function                       | toluafix_isfunction | toluafix_ref_function |
 |class object                       | tolua_isusertype | tolua_tousertype |
@@ -143,7 +143,7 @@ do
 5.不同返回值，调用方法也不同，具体如下:
 
 ```
-|int、float、unsigned int 等数字类型  | tolua_pushnumber  |
+|int,float,unsigned int 等数字类型  | tolua_pushnumber  |
 |string,const char*                 | tolua_pushstring |
 |class object(not inherit from Ref) | tolua_pushusertype |
 |class object                       | toluafix_pushusertype_ccobject

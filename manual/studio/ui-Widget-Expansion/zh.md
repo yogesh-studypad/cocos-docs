@@ -38,7 +38,7 @@ CustomImageViewWrap是C#项目，包括由Swig工具自动生成的C#封装代�
 ![image](./res/5.png)
 
 
-自定义扩展属性设置、获取文本的 set、get 方法：
+自定义扩展属性设置,获取文本的 set,get 方法：
 ![image](./res/6.png)
 
 
@@ -49,7 +49,7 @@ CustomImageViewWrap是C#项目，包括由Swig工具自动生成的C#封装代�
   CSCustomImageView类是对CustomImageView的封装，为了区分，添加了“CS”前缀，该类从CSImageView继承，与CustomImageView的继承关系一一对应，对于其他控件类型如Button等，则对应有CSButton封装类，如果编写CustomButton，则编写CSCustomButton需要对应的从CSButton类继承。所有默认的CocoStudio封装类型都在CocoStudio::EngineAdapter命名空间下。我们首先看CSCustomImageView的构造函数实现：
 ![image](./res/7.png)
 
-  其中m_GUI是在CSWidget中定义的Widget类型指针，需要子类进行初始化，然后调用Init（），完成初始化，所有子类必须进行这两步操作才能正常挂载。在CSCustomImageView中还定义了一些以“CS_”为前缀成对的Get、Set方法，如下所示：
+  其中m_GUI是在CSWidget中定义的Widget类型指针，需要子类进行初始化，然后调用Init（），完成初始化，所有子类必须进行这两步操作才能正常挂载。在CSCustomImageView中还定义了一些以“CS_”为前缀成对的Get,Set方法，如下所示：
 ![image](./res/8.png)
 
   这些方法就是用来提供给编辑器检索可配置属性使用的，因此对这些方法定义有一些要求，具体就是：
@@ -81,7 +81,7 @@ CustomImageViewReader 解析 CustomImageView 自定义属性的回调方法：
 
 
 
-  1、2 两部分的说明可参照 Cocos2d-x TestCpp 工程中 CustomImageView.cpp、CustomImageViewReader.cpp
+  1,2 两部分的说明可参照 Cocos2d-x TestCpp 工程中 CustomImageView.cpp,CustomImageViewReader.cpp
 
    在完成自定义控件，编辑器封装代码和自定义控件解析之后，就可以将自定义控件的类型信息，注册到解析工厂，使得解析工厂在读取Json数据时，能够识别这些自定义的类型，并完成创建。在CustomWidget项目中，有RegisterWidget类，在里面实现了自定义控件类型的注册。通过对静态变量的赋值操作，保证动态库在加载时直接将类型注册到解析工厂中。
  ![image](./res/13.png)

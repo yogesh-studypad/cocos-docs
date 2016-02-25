@@ -4,13 +4,13 @@
 
 3D模型控件使用方法
 
-1、创建基本3D对象
+1,创建基本3D对象
 
 &emsp;鼠标拖拽3D控件栏的模型控件，拖入到场景中。
 
 ![image](res/image0001.png)
  
-2、调整对象属性
+2,调整对象属性
 
 &emsp;调整基本属性值，或者通过在场景中进行自由变换操作
 
@@ -18,11 +18,11 @@
 
 ![image](res/image0003.png)
  
-3、导入模型并使用
+3,导入模型并使用
 
-&emsp;把模型、贴图文件导入到工程，然后把模型文件拖到场景使用导入三维资源图示如下：
+&emsp;把模型,贴图文件导入到工程，然后把模型文件拖到场景使用导入三维资源图示如下：
  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0004.png)、
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0004.png),
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res/image0005.png)
 

@@ -15,7 +15,7 @@
 定制预编译库实际上就是修改安装的源码。在Cocos 3.10安装完成后，可以使用XCode 6.0及其以上的版本 和 Visual Studio 2013版本进行修改和调试：
 
 * Mac系统可以使用XCode打开工程文件`/Applications/Cocos/Cocos2d-x/cocos2d-x-v3.10/build/cocos2d_libs.xcodeproj`，然后修改与调试代码即可定制引擎。
-* Windows系统可以使用Visual Studio打开工程文件`[安装目录]/Cocos/Cocos2d-x、Cocos2d-x-v3.10/build/cocos2d-win32.sln`，然后修改与调试代码即可定制引擎。
+* Windows系统可以使用Visual Studio打开工程文件`[安装目录]/Cocos/Cocos2d-x,Cocos2d-x-v3.10/build/cocos2d-win32.sln`，然后修改与调试代码即可定制引擎。
 
 ##如何生成定制后的预编译库
 

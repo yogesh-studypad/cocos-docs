@@ -1,7 +1,7 @@
 #UI佈局與多解析度適配
 
 
-#####一、Cocos編輯器
+#####一,Cocos編輯器
 
 自動佈局系統主要涉及固定與拉伸屬性：
  
@@ -26,14 +26,14 @@
 #####其他
 &emsp;&emsp;1. 不開啟上述任意屬性時，物件預設相對左下角位置不變。
 
-&emsp;&emsp;2. 當前僅控制項物件（文本、FNT字體也沒有）和容器兩種類型有拉伸條屬性。
+&emsp;&emsp;2. 當前僅控制項物件（文本,FNT字體也沒有）和容器兩種類型有拉伸條屬性。
 
 
-#####二、Cocos 2d-x(Cocos Framework)中的相關概念及代碼設置
+#####二,Cocos 2d-x(Cocos Framework)中的相關概念及代碼設置
 
 設計解析度和螢幕解析度： 
 
-&emsp;&emsp;首先我們需要瞭解兩個概念：在Cocos2d-x中有兩種解析度：設備解析度、螢幕解析度。設備解析度即當前遊戲所運行平臺的實際解析度；設計解析度就是我們設計的遊戲的解析度。 
+&emsp;&emsp;首先我們需要瞭解兩個概念：在Cocos2d-x中有兩種解析度：設備解析度,螢幕解析度。設備解析度即當前遊戲所運行平臺的實際解析度；設計解析度就是我們設計的遊戲的解析度。 
 
 &emsp;&emsp;設計解析度是可設置的，是我們的遊戲程式能夠“感知到”的解析度大小，我們的介面超過這個區域的部分都不會顯示。
 
@@ -55,25 +55,25 @@
 
 &emsp;&emsp;轉到setDesignResolutionSize的定義看看。裡邊做了一些判斷和賦值，最終調用了updateDesignResolutionSize，繼續轉到updateDesignResolutionSize裡邊，這個函數的部分代碼如下：
 
-    //1.計算遊戲介面在縮放至充滿螢幕的情況下X、Y軸的縮放率:
+    //1.計算遊戲介面在縮放至充滿螢幕的情況下X,Y軸的縮放率:
     _scaleX= (float)_screenSize.width/ _designResolutionSize.width;
     _scaleY= (float)_screenSize.height/ _designResolutionSize.height;
   
     //2.根據設配策略，調整縮放率和設計解析度:
     if(_resolutionPolicy== ResolutionPolicy::NO_BORDER)
-    {//將X、Y軸縮放值設置為其中的最大者
+    {//將X,Y軸縮放值設置為其中的最大者
         _scaleX = _scaleY = MAX(_scaleX,_scaleY);
     }
     else if(_resolutionPolicy== ResolutionPolicy::SHOW_ALL)
-    {//將X、Y軸縮放值設置為其中的最小者
+    {//將X,Y軸縮放值設置為其中的最小者
         _scaleX = _scaleY = MIN(_scaleX,_scaleY);
     }
     else if( _resolutionPolicy == ResolutionPolicy::FIXED_HEIGHT) {
-        _scaleX = _scaleY;//將X、Y軸縮放值固定為Y軸縮放值，調整設計解析度的寬度，使設計解析度的寬度在縮放後依然能夠充滿螢幕。
+        _scaleX = _scaleY;//將X,Y軸縮放值固定為Y軸縮放值，調整設計解析度的寬度，使設計解析度的寬度在縮放後依然能夠充滿螢幕。
         _designResolutionSize.width= ceilf(_screenSize.width/_scaleX);
     }
     else if( _resolutionPolicy == ResolutionPolicy::FIXED_WIDTH) {
-        _scaleY= _scaleX;//將X、Y軸縮放值固定為X軸縮放值，調整設計解析度的高度，使設計解析度的高度在縮放後依然能夠充滿螢幕。
+        _scaleY= _scaleX;//將X,Y軸縮放值固定為X軸縮放值，調整設計解析度的高度，使設計解析度的高度在縮放後依然能夠充滿螢幕。
         _designResolutionSize.height= ceilf(_screenSize.height/_scaleY);
     }
     //其他縮放策略：EXACT_FIT不作調整

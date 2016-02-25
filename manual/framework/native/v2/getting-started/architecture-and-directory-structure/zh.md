@@ -13,7 +13,7 @@
 |CocosDenshion	 | 音频支持。注意：Android平台中背景音乐和短音效所使用的系统API不同。|
 |cocos2dx	 | Cocos2d-x框架的主目录。|
 |document	 | 你可以下载doxygen文档系统，利用该系统打开本文档文件夹内的doxygen.config文件，然后再生成离线API文档。|
-|extensions	 | 如果需要更多图形用户界面的控制功能、网络访问、CocosBuilder支持甚至2.5D功能，你可以使用using namespace cocos2d::extension。|
+|extensions	 | 如果需要更多图形用户界面的控制功能,网络访问,CocosBuilder支持甚至2.5D功能，你可以使用using namespace cocos2d::extension。|
 |external	 | 包括box2d及Chipmunk库。|
 |licenses	 | cocos2d依赖很多其他开源项目。所有授权许可文件都在这个目录。|
 |samples	 	 | **重要！这是你该开始用到的文件。**从Cpp/HelloCpp开始学习，你会在TestCpp中发现所有类的用法。lua和js样本也在这个目录。|
@@ -43,7 +43,7 @@
 |box2d	 |	V2.1a版本的Box2dweb Physics引擎。|
 |chipmunk	 |	无版本号的Chipmunk Physic引擎|
 |Demo	 |	包括几个demo程序，你可以从这些demo程序入手。|
-|extensions	 |	如果需要更多图形用户界面的控制功能、EditBox、CocosBuilder支持、CocoStudio支持或任何第三方库，都在这里。|
+|extensions	 |	如果需要更多图形用户界面的控制功能,EditBox,CocosBuilder支持,CocoStudio支持或任何第三方库，都在这里。|
 |HelloHTML5Wrold |		预备的一个Hello World程序，你可以从这入手。|
 |lib	 |	包括一个MIN版本的引擎，当你使用ant工具运行/cocos2d/build.xml文件时，会将所有引擎文件打包成一个文件。|
 |licenses	 |	cocos2d依赖很多其他开源项目。所有授权许可文件都在这个目录。|
@@ -62,12 +62,12 @@
 2. Cocos2d-html5上的网页应用。
 
 ![](./res/jsbinding-1.jpg)     
-我们在Cocos2d-iphone、Cocos2d-x 和Cocos2d-html5框架中使用的API组合是一样的。所以，我们可以百分之百在本地Cocos2d-x或Cocos2d-iphone中创建javascript游戏。当你要在浏览器上运行时，你只需要将引擎切换至Cocos2d-html5，而无需修改源代码。
+我们在Cocos2d-iphone,Cocos2d-x 和Cocos2d-html5框架中使用的API组合是一样的。所以，我们可以百分之百在本地Cocos2d-x或Cocos2d-iphone中创建javascript游戏。当你要在浏览器上运行时，你只需要将引擎切换至Cocos2d-html5，而无需修改源代码。
 
 优势：
 
 1. 编码速度要比C++快得多
-2. 无需处理野指针、引用计数及内存泄露的问题
+2. 无需处理野指针,引用计数及内存泄露的问题
 3. 跨越本地及网络平台
 4. 在线更新
 

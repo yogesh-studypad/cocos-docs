@@ -2,7 +2,7 @@
 
 現在可以直接在編輯器裡邊指定某個控制項的事件的處理函數。 
 不再需要一個一個去get控制項啦。也不再需要因為修改了控制項名或者其他屬性後，就得去改程式了。 
-以下分別提供C++、Lua如何使用callback方法。
+以下分別提供C++,Lua如何使用callback方法。
 
 C++：
 
@@ -31,7 +31,7 @@ b.重寫如下介面：
       onLocateClickCallback 
       onLocateEventCallback 
 
-返回對Touch、Click、Event三種事件的處理函數。（可以只重寫你使用到的回檔類型）。 
+返回對Touch,Click,Event三種事件的處理函數。（可以只重寫你使用到的回檔類型）。 
 
 如： //.h file 
 

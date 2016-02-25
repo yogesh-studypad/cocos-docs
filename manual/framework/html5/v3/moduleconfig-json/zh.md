@@ -2,7 +2,7 @@
 
 ## 概述
 
-该配置文件相当于v2版本中的`jsloader.js`。改造的目的是为了使得配置纯粹化，同时也能比较好的支持`cocos-console`、`cocos-utils`甚至是用户自定义脚本工具。
+该配置文件相当于v2版本中的`jsloader.js`。改造的目的是为了使得配置纯粹化，同时也能比较好的支持`cocos-console`,`cocos-utils`甚至是用户自定义脚本工具。
 
 ## 字段说明
 

@@ -17,7 +17,7 @@
 - CocoShop: [http://www.cocos2d-iphone.org/forum/topic/15668](http://www.cocos2d-iphone.org/forum/topic/15668) (只能用于iOS游戏) -遗弃项目
 
 ### Map Editor 地图编辑器
-- Tiled Map Editor ,免费、跨平台、基于QT或Java、输出TMX文件
+- Tiled Map Editor ,免费,跨平台,基于QT或Java,输出TMX文件
 - "iTileMaps"
 	- iTunes链接: [http://itunes.apple.com/us/app/itilemaps/id432784227?mt=8](http://itunes.apple.com/us/app/itilemaps/id432784227?mt=8)
 	- 更多信息参考: [http://www.klemix.com/](http://www.klemix.com/)
@@ -26,22 +26,22 @@
 	- [译 - 在Tiled Map中使用碰撞检测(二) TMX地图中的碰撞检测](http://unclemao.orzstudio.com/programming/iphone/topic-403.html)
 
 ### SpriteSheet Editor 精灵表编辑器
-- [Zwoptex v1.0](http://www.zwoptexapp.com/) ,免费、仅用于OSX、输出.png & .plist文件
-- [SpritePacker](http://spritepacker.kernys.net/) , 免费、支持Windows及Mac OSX,输出 .png & .plist文件
+- [Zwoptex v1.0](http://www.zwoptexapp.com/) ,免费,仅用于OSX,输出.png & .plist文件
+- [SpritePacker](http://spritepacker.kernys.net/) , 免费,支持Windows及Mac OSX,输出 .png & .plist文件
 
 ### Particle Editor 粒子系统编辑器
 
-- 粒子系统编辑器: [Particle Designer](http://particledesigner.71squared.com/) , 仅限OSX系统、授权费8美元、输出.png & ,plist文件
-- 粒子系统编辑器: [Cocos2d-windows-particle-editor](http://code.google.com/p/cocos2d-windows-particle-editor/) , 仅限windows系统、免费、输出.png & ,plist文件
+- 粒子系统编辑器: [Particle Designer](http://particledesigner.71squared.com/) , 仅限OSX系统,授权费8美元,输出.png & ,plist文件
+- 粒子系统编辑器: [Cocos2d-windows-particle-editor](http://code.google.com/p/cocos2d-windows-particle-editor/) , 仅限windows系统,免费,输出.png & ,plist文件
 
 ### Font editor: 字体编辑器
 - Hiero (跨平台): [http://slick.cokeandcode.com/demos/hiero.jnlp](http://slick.cokeandcode.com/demos/hiero.jnlp) (免费)
 
 ### Texture atlas editor:纹理合并编辑器
-- TexturePacker (Windows, MacOSX): [http://www.texturepacker.com/](http://www.texturepacker.com/) (基本版免费、全功能版19.95美元)
+- TexturePacker (Windows, MacOSX): [http://www.texturepacker.com/](http://www.texturepacker.com/) (基本版免费,全功能版19.95美元)
 
 ### Physics object editor: 物理库对象编辑器
-- PhysicsEditor (Windows, MacOSX): [http://www.physicseditor.de/](http://www.physicseditor.de/) (基本版免费、全功能版19.95美元)
+- PhysicsEditor (Windows, MacOSX): [http://www.physicseditor.de/](http://www.physicseditor.de/) (基本版免费,全功能版19.95美元)
 
 ### Font editor: 字体编辑器
 

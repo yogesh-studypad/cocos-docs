@@ -46,24 +46,24 @@ Set the design size as 960 * 640, and choose fixed_width for the canvas. However
 
 Turn to "setDesignResolutionSize". Here we can see some judgement and assignment, and call `updateDesignResolutionSize` finally. Turn to `updateDesignResolutionSize`, part of the codes for this function is as follows:
 
-    > //1.计算游戏界面在缩放至充满屏幕的情况下X、Y轴的缩放率:
+    > //1.计算游戏界面在缩放至充满屏幕的情况下X,Y轴的缩放率:
     > _scaleX= (float)_screenSize.width/ _designResolutionSize.width;
     > _scaleY= (float)_screenSize.height/ _designResolutionSize.height;
     > //2.根据设配策略，调整缩放率和设计分辨率:
     > if(_resolutionPolicy== ResolutionPolicy::NO_BORDER)
-    > {//将X、Y轴缩放值设置为其中的最大者
+    > {//将X,Y轴缩放值设置为其中的最大者
     > _scaleX = _scaleY = MAX(_scaleX,_scaleY);
     > }
     > else if(_resolutionPolicy== ResolutionPolicy::SHOW_ALL)
-    > {//将X、Y轴缩放值设置为其中的最小者
+    > {//将X,Y轴缩放值设置为其中的最小者
     > _scaleX = _scaleY = MIN(_scaleX,_scaleY);
     > }
     > else if( _resolutionPolicy == ResolutionPolicy::FIXED_HEIGHT) {
-    > _scaleX = _scaleY;//将X、Y轴缩放值固定为Y轴缩放值，调整设计分辨率的宽度，使设计分辨率的宽度在缩放后依然能够充满屏幕。
+    > _scaleX = _scaleY;//将X,Y轴缩放值固定为Y轴缩放值，调整设计分辨率的宽度，使设计分辨率的宽度在缩放后依然能够充满屏幕。
     > _designResolutionSize.width= ceilf(_screenSize.width/_scaleX);
     > }
     > else if( _resolutionPolicy == ResolutionPolicy::FIXED_WIDTH) {
-    > _scaleY= _scaleX;//将X、Y轴缩放值固定为X轴缩放值，调整设计分辨率的高度，使设计分辨率的高度在缩放后依然能够充满屏幕。
+    > _scaleY= _scaleX;//将X,Y轴缩放值固定为X轴缩放值，调整设计分辨率的高度，使设计分辨率的高度在缩放后依然能够充满屏幕。
     > _designResolutionSize.height= ceilf(_screenSize.height/_scaleY);
     > }
     > //其他缩放策略:EXACT_FIT不作调整

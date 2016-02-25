@@ -1,6 +1,6 @@
 # 使用Cocos2d-x制作三消类游戏Sushi Crush——第一部分
 
-一直以来，消除类游戏以其简单明快的节奏、浓厚的趣味性和智慧性而被广大玩家所喜爱。其分支三消类游戏更是倍受广大游戏玩家的推崇，最近的CandyCrush、开心消消乐、天天爱消除等三消游戏🔥火的那是一个一塌糊涂啊。下面，我们就将和大家一起探讨一下如何制作一款属于自己的仿CandyCrush三消游戏——“SushiCrush”。
+一直以来，消除类游戏以其简单明快的节奏,浓厚的趣味性和智慧性而被广大玩家所喜爱。其分支三消类游戏更是倍受广大游戏玩家的推崇，最近的CandyCrush,开心消消乐,天天爱消除等三消游戏🔥火的那是一个一塌糊涂啊。下面，我们就将和大家一起探讨一下如何制作一款属于自己的仿CandyCrush三消游戏——“SushiCrush”。
 
 ## 项目介绍
 引擎版本：本教程使用当前最新版本的 Cocos2d-x-3.0rc0 引擎。
@@ -21,7 +21,7 @@
 在本章节教程中，我们将主要完成以下功能：      
 
 - 分辨率适配      
-- 寿司的创建、布局和下落
+- 寿司的创建,布局和下落
 
 ## 程序入口
 
@@ -123,7 +123,7 @@ bool PlayLayer::init()
 	spriteSheet = SpriteBatchNode::create("sushi.pvr.ccz");
 	addChild(spriteSheet);
     
-	// 初始化矩阵的宽和高，MATRIX_WIDTH、MATRIX_HEIGHT通过宏定义
+	// 初始化矩阵的宽和高，MATRIX_WIDTH,MATRIX_HEIGHT通过宏定义
 	m_width = MATRIX_WIDTH;
 	m_height = MATRIX_HEIGHT;
     
@@ -164,7 +164,7 @@ Texturepacker工具的每个设置项都给出了相应的提示信息，这里�
 
 plist文件是图片信息的属性列表文件。
 
-PVR图像是专门为ios设备上面的PowerVR图形芯片指定的图像容器。它们在ios设备上非常好用，因为可以直接加载到显卡上面，而不需要经过中间的转化。pvr.ccz文件则是pvr文件格式的压缩格式，使用这种图片格式的好处有两点：1、可以使你的应用程序更小，因为图片是被压缩过了的。2、你的游戏能够启动地更快。
+PVR图像是专门为ios设备上面的PowerVR图形芯片指定的图像容器。它们在ios设备上非常好用，因为可以直接加载到显卡上面，而不需要经过中间的转化。pvr.ccz文件则是pvr文件格式的压缩格式，使用这种图片格式的好处有两点：1,可以使你的应用程序更小，因为图片是被压缩过了的。2,你的游戏能够启动地更快。
 	
 ### 2. SpriteFrameCache和SpriteBatchNode
 

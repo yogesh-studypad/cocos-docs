@@ -81,7 +81,7 @@
 ### 安装NDK
 安装完Android SDK之后，还要安装“Android NDK”软件包，用户可前往[http://developer.android.com/tools/sdk/ndk/index.html](http://developer.android.com/tools/sdk/ndk/index.html)下载。下载完成之后，解压，并将其放置到相应路径，本机路径为 D:\android-ndk-r9，设置另一个名为“NDK_ROOT”同时指向存放路径的环境变量。
 
-Android NDK包含build、docs、samples、sources、GNUmakefile、ndk-build、ndk-gdb及readme等内容。
+Android NDK包含build,docs,samples,sources,GNUmakefile,ndk-build,ndk-gdb及readme等内容。
 
 
 ### 创建Cocos2d-x项目

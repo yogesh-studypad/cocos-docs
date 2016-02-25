@@ -62,15 +62,15 @@
 
 ![](./res/background.png)
 
-在上一篇文章中我们讲到过Quick框架中的display文件，里面放的是与显示相关的部分接口。比如我们想要新建一个精灵，我们会调用`display.newSprite`，类似的接口还有`display.newLayer`。基本的格式都是`display.newXXX`，"XXX"包括sprite、layer、node、scene等，详细的可以查看display文件。另外在display中还提供了很多实用的、方便的配置属性。比如：
+在上一篇文章中我们讲到过Quick框架中的display文件，里面放的是与显示相关的部分接口。比如我们想要新建一个精灵，我们会调用`display.newSprite`，类似的接口还有`display.newLayer`。基本的格式都是`display.newXXX`，"XXX"包括sprite,layer,node,scene等，详细的可以查看display文件。另外在display中还提供了很多实用的,方便的配置属性。比如：
 
 - `display.width`和`display.height`表示屏幕宽度
 - `display.cx`和`display.cy`表示屏幕的x轴中间位置和y轴中间位置
 - `display.left`和`display.right`表示屏幕的最左边和最右边(x轴坐标为0和display.width的点)
 - `display.top`和`display.bottom`表示屏幕的顶部和底部(y轴坐标为0和display.height的点)
-- `display.CENTER、display.LEFT_TOP、display.CENTER_TOP`等分别表示node的锚点位置。
+- `display.CENTER,display.LEFT_TOP,display.CENTER_TOP`等分别表示node的锚点位置。
 
-另外还有scene切换的效果、游戏的暂停和恢复等等一系列我们经常使用，代码重复量较多的方法，都在Quick中进行了一定程度的封装，大大方便了我们在开发过程中的使用。
+另外还有scene切换的效果,游戏的暂停和恢复等等一系列我们经常使用，代码重复量较多的方法，都在Quick中进行了一定程度的封装，大大方便了我们在开发过程中的使用。
 
 **在Quick中使用图片有个规则，如果使用的图片是以`#`开头的话表示是从SpriteFrameCache中读取，如果没有使用`#`开头的话表示是直接从文件读取。**
 
@@ -151,4 +151,4 @@
 ## 总结
 
 这篇文章里主要讲到了Quick里工程的结构，怎样创建新的类，和添加精灵到场景中。刚入门的同学可以参考着加入更多的元素到场景中。
-下篇文章我们会介绍怎么在场景里添加触摸事件、给角色添加动画等功能。
+下篇文章我们会介绍怎么在场景里添加触摸事件,给角色添加动画等功能。

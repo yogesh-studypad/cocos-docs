@@ -101,9 +101,9 @@ xcopy /Y /E .\Resources\*.* $(OutDir)每次编译完成，VistualStudio会复制
 
  但是数据结构的使用不遵循上面的规则。比如：在winSize结构中没有getter/setter方法来封装“width”和“height”。
 
- 我们曾经频繁地使用像CGRectMake、CGPointMake、CGSizeMake、CGPointZero、CGRectZero CGGeometry这样的函数。你可以在cocos2dx/include/CGGeometry.h中找到他们。他们的使用方法跟iOS一样，但是为了命名冲突，在Cocos2d-x中，以CG、NS、UI为前缀的类，都被换成了CC前缀。
+ 我们曾经频繁地使用像CGRectMake,CGPointMake,CGSizeMake,CGPointZero,CGRectZero CGGeometry这样的函数。你可以在cocos2dx/include/CGGeometry.h中找到他们。他们的使用方法跟iOS一样，但是为了命名冲突，在Cocos2d-x中，以CG,NS,UI为前缀的类，都被换成了CC前缀。
 
- 所有Cocos2d-x中的元素，像sprite、layer、scene、label、action，都能在堆中被分配。所以我们必须使用“->”来调用他们的方法。
+ 所有Cocos2d-x中的元素，像sprite,layer,scene,label,action，都能在堆中被分配。所以我们必须使用“->”来调用他们的方法。
 
  在ccp中使用“this”关键字来代替OC中的“self”关键字。
 

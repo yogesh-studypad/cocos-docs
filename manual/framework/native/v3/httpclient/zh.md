@@ -9,7 +9,7 @@ HttpClient是HTTP客户端的接口。HttpClient封装了各种对象，处理co
 HttpClient的使用一般包含下面6个步骤：
 
 - 创建 HttpRequest 的实例；   
-- 设置某种连接方法的类型（GET、POST等），这里通过setUrl传入待连接的地址；    
+- 设置某种连接方法的类型（GET,POST等），这里通过setUrl传入待连接的地址；    
 - 设置响应回调函数，读取response；  
 - 添加请求到HttpClient任务队列； 
 - 释放连接。无论执行方法是否成功，都必须释放连接；   

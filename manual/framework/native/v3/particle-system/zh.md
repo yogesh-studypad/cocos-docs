@@ -1,7 +1,7 @@
 # 粒子系统
 
 ## 简介
-粒子系统是指计算机图形学中模拟特定现象的技术，它在模仿自然现象、物理现象及空间扭曲上具备得天独厚的优势，为我们实现一些真实自然而又带有随机性的特效（如爆炸、烟花、水流）提供了方便。Cocos2d-x引擎中就为我们提供了强大的粒子系统，以下是粒子系统的继承关系图：
+粒子系统是指计算机图形学中模拟特定现象的技术，它在模仿自然现象,物理现象及空间扭曲上具备得天独厚的优势，为我们实现一些真实自然而又带有随机性的特效（如爆炸,烟花,水流）提供了方便。Cocos2d-x引擎中就为我们提供了强大的粒子系统，以下是粒子系统的继承关系图：
 
 
 ![](./res/particle_system_quad.png) 
@@ -66,11 +66,11 @@
 
 ### 位置属性:
 
-- _positionType			粒子位置类型，有自由模式（FREE）、相对模式（RELATIVE）和打组模式（GROUPED）三种
+- _positionType			粒子位置类型，有自由模式（FREE）,相对模式（RELATIVE）和打组模式（GROUPED）三种
 - _posVar				发射器位置的变化范围（横向和纵向）
 - _sourcePosition		发射器原始坐标位置
   
-Free自由模式，相对于屏幕自由，不会随粒子节点移动而移动（可产生火焰、蒸汽等效果）；Relative相对模式，相对于被绑定的Node静止，粒子发射器会随Node移动而移动，可用于制作移动角色身上的特效等等；Grouped打组模式是相对于发射点的，粒子随发射器移动而移动。
+Free自由模式，相对于屏幕自由，不会随粒子节点移动而移动（可产生火焰,蒸汽等效果）；Relative相对模式，相对于被绑定的Node静止，粒子发射器会随Node移动而移动，可用于制作移动角色身上的特效等等；Grouped打组模式是相对于发射点的，粒子随发射器移动而移动。
 
 
 ### 自旋属性：
@@ -83,7 +83,7 @@ Free自由模式，相对于屏幕自由，不会随粒子节点移动而移动�
 ### 纹理渲染属性:
 
 - _texture			粒子贴图纹理
-- _blendFunc		纹理的混合模式方法，有DISABLE、ALPHA_PREMULTIPLIED、ALPHA_NON_PREMULTIPLIED、ADDITIVE四种类型。
+- _blendFunc		纹理的混合模式方法，有DISABLE,ALPHA_PREMULTIPLIED,ALPHA_NON_PREMULTIPLIED,ADDITIVE四种类型。
 
 DISABLE = {GL_ONE, GL_ZERO};         
 ALPHA_PREMULTIPLIED = {GL_ONE, GL_ONE_MINUS_SRC_ALPHA};          
@@ -110,7 +110,7 @@ ParticleBatchNode 实例可以引用一个且只能引用一个 texture 的对�
 局限性: 
 
 - 目前只支持 ParticleSystemQuad  
-- 所有的系统都使用相同的参数被绘制：混合函数、纹理等
+- 所有的系统都使用相同的参数被绘制：混合函数,纹理等
 
 最为有效的用法 
 

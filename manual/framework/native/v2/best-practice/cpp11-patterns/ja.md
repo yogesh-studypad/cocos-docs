@@ -3,7 +3,7 @@
 ##Objective-C風の書き方から変更した点
 ###クラスや関数にCCの接頭辞は必要なくなりました
 ####クラス名の変更
-*cocos2d*という名前空間内に置かれているのは変わりませんが、*CC*という接頭辞を撤廃しました。
+*cocos2d*という名前空間内に置かれているのは変わりませんが,*CC*という接頭辞を撤廃しました。
 
 例:
 
@@ -14,7 +14,7 @@
 |CCDirector|Director|
 |etc...|etc...|
 
-*メモ* v2.1 では*CC*という接頭辞をつける必要がありましたが、それらは全て必要なくなります。
+*メモ* v2.1 では*CC*という接頭辞をつける必要がありましたが,それらは全て必要なくなります。
 
 ####フリーな関数も同様に
 例えばプリミティブを描画する関数について:
@@ -43,7 +43,7 @@ GLを使う関数について:
 ### インスタンスのコピーについて
 *clone()* はautorelease済のコピーを返します。
 
-*copy()* はサポートされないので、この関数を使用している場合、予期しない動作をする場合があります。
+*copy()* はサポートされないので,この関数を使用している場合,予期しない動作をする場合があります。
 
 例:
 
@@ -56,7 +56,7 @@ action->autorelease();
 auto action = move->clone();
 ```
 ### シングルトンの getInstance() 及び destroyInstance() について
-全てのシングルトンは *getInstance()* と *destroyInstance()* を利用する事でインスタンスの取得、解放が行えます。
+全てのシングルトンは *getInstance()* と *destroyInstance()* を利用する事でインスタンスの取得,解放が行えます。
 
 例:
 
@@ -81,7 +81,7 @@ v2.1 の記述のままだとエラーを引き起こします。
 |sprite->nodeToParentTransform()|sprite->getNodeToParentTransform()|
 |etc...|etc...|
 
-また、ゲッターは*const*宣言されています。
+また,ゲッターは*const*宣言されています。
 
 例:
 
@@ -96,7 +96,7 @@ v2.1 の書き方は撤廃されました。
 
 
 ### POD について
-今まではポインタを引数として渡すようにしていましたが、これからは（TexParams、Point、 Sizeなど) これらの *const* 参照を引数として渡せます。
+今まではポインタを引数として渡すようにしていましたが,これからは（TexParams,Point, Sizeなど) これらの *const* 参照を引数として渡せます。
 
 例:
 
@@ -113,7 +113,7 @@ void setTexParameters(const ccTexParams& texParams);
 ###概要
 C++11以降とCocos2d-xを組み合わせた記述:
 
-- *std::function* でラムダ式を格納し、コールバックとして使用する事が出来ます。
+- *std::function* でラムダ式を格納し,コールバックとして使用する事が出来ます。
 - *std::thread* で非同期化する事も可能。
 - *override* はオーバーライドする際に記述する。
 
@@ -121,7 +121,7 @@ C++11以降とCocos2d-xを組み合わせた記述:
 
 - *CallFunc* を作成したいときは std::function<void()> 
 - *CallFuncN* を作成したいときは std::function<void(Node*)>
-- *CallFuncND* や *CallFuncO* は、以降のバージョンでは削除されているので変わりに*CallFuncN* や *CallFunc*を使用してください。ActionTest.cpp が良い例になるでしょう。
+- *CallFuncND* や *CallFuncO* は,以降のバージョンでは削除されているので変わりに*CallFuncN* や *CallFunc*を使用してください。ActionTest.cpp が良い例になるでしょう。
 - *Menu Item* には std::function<void(Node*)> でコールバックを仕込む事が出来ます。
 
 *CallFunc* についての例:
@@ -169,7 +169,7 @@ auto item = MenuItemLabel::create(label,
 
 ###列挙型について
 
-列挙型は *k*から始まっていましたが、使用されるであろう名前空間内に配置することで接頭辞を外しました。
+列挙型は *k*から始まっていましたが,使用されるであろう名前空間内に配置することで接頭辞を外しました。
 
 変更例:
 
@@ -187,10 +187,10 @@ auto item = MenuItemLabel::create(label,
 |CCPointZero|Point::ZERO|
 |CCSizeZero|Size::ZERO|
 
-過去のバージョンでは現在も接頭辞がついていたりしますが、現在は撤廃されています。
+過去のバージョンでは現在も接頭辞がついていたりしますが,現在は撤廃されています。
 
 ###継承について
-overrideのキーワードを使用する事で、継承時におけるエラーを回避できる事があります。よってキーワードの使用を推奨します。
+overrideのキーワードを使用する事で,継承時におけるエラーを回避できる事があります。よってキーワードの使用を推奨します。
 
 例:
 
@@ -210,5 +210,5 @@ class Sprite : public Node {
 ##補足
 
 - Cocos2d-xのルールに則ったメモリ管理を選択すると問題点を減らす事が出来ます。
-- 命名規則や設計などについてはCocos2d-xのルールに従うと、より開発が楽になるでしょう。
+- 命名規則や設計などについてはCocos2d-xのルールに従うと,より開発が楽になるでしょう。
 - ルールについては[Cocos2d-x cpp programming guide](../cpp_coding_style/en.md)を参照してください。

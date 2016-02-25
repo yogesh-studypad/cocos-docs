@@ -2,7 +2,7 @@
 
 现在可以直接在编辑器里边指定某个控件的事件的处理函数。 
 不再需要一个一个去get控件啦。也不再需要因为修改了控件名或者其他属性后，就得去改程序了。 
-以下分别提供C++、Lua如何使用callback方法。
+以下分别提供C++,Lua如何使用callback方法。
 
 C++：
 
@@ -31,7 +31,7 @@ b.重写如下接口：
 	  onLocateClickCallback 
 	  onLocateEventCallback 
 
-返回对Touch、Click、Event三种事件的处理函数。（可以只重写你使用到的回调类型）。 
+返回对Touch,Click,Event三种事件的处理函数。（可以只重写你使用到的回调类型）。 
 
 如： //.h file 
 

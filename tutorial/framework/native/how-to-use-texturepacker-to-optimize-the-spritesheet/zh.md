@@ -51,7 +51,7 @@ ok,现在来熟悉一下左侧的**TextureSettings**栏：
 
 - **Min/max size** 让你为你的spritesheet指定一个最大值。如果你想设置特定大小的spritesheet的时候,这也是一个非常方便的特性。(因为对于特定的设备来说, 你可不想超过设备能够支持的最大限制,比如2代touch最大支持 texture大小为1024*1024)
 
-- **Scale** 可以用于保存一个比原始图片尺寸要大一点、或者小一点的spritesheet。如果你想在 spritesheet中加载“2x"的图片(也即为Retina-display设备或者ipad创建的)。但是你同时也想为不支持高清显示的iphone和 touch制作spritesheet,这时候只需要设置**scale**为0.5就可以了。也就是说,只需要提供@2x的高清图片,用TP你就可以生成高清和普清的图片。
+- **Scale** 可以用于保存一个比原始图片尺寸要大一点,或者小一点的spritesheet。如果你想在 spritesheet中加载“2x"的图片(也即为Retina-display设备或者ipad创建的)。但是你同时也想为不支持高清显示的iphone和 touch制作spritesheet,这时候只需要设置**scale**为0.5就可以了。也就是说,只需要提供@2x的高清图片,用TP你就可以生成高清和普清的图片。
 
 - **Algorithm** TexturePacker 支持的算法是 MaxRects,即按精灵尺寸大小排列；如果选择 Basic 则表示，当第一行排满之后再排到第二行。
 
@@ -67,7 +67,7 @@ ok,现在来熟悉一下左侧的**TextureSettings**栏：
 
 在Cocos2d-x里面,理解像素格式非常重要。因为,像素格式会影响你在游戏中加载一张图片所需内存。游戏通常要加载大量的图片资源,尽可能充分利用移动设备上的可用物理内存对我们来说是很重要的。
 
-默认情况下,当你在Cocos2d-x里面加载一张图片的时候,对于每一个像素点使用4个byte来表示。其中1个byte(8位)代表red,另外3个 byte分别代表green、blue和alpha透明通道。这个就简称RGBA8888。
+默认情况下,当你在Cocos2d-x里面加载一张图片的时候,对于每一个像素点使用4个byte来表示。其中1个byte(8位)代表red,另外3个 byte分别代表green,blue和alpha透明通道。这个就简称RGBA8888。
 
 因此,如果你使用默认的像素格式来加载图片的话,你可以通过下面的公式来计算出将要消耗多少内存:
  
@@ -100,7 +100,7 @@ btw,如果你注意看窗口的右下角,你会看到TexturePacker会基于你�
 
 ## PVRs 和压缩
  
-PVR 图像也可以包含许多种不同像素格式的图像数据。Cocos2d-x可以支持压缩了的 pvr图像格式pvr.ccz。使用这种图片格式的好处有两点:一、可以使你的应用程序更小,因为图片是压缩过了的。二、你的游戏能够启动地更快。
+PVR 图像也可以包含许多种不同像素格式的图像数据。Cocos2d-x可以支持压缩了的 pvr图像格式pvr.ccz。使用这种图片格式的好处有两点:一,可以使你的应用程序更小,因为图片是压缩过了的。二,你的游戏能够启动地更快。
 总而言之,对于 spritesheet 来说,你可能通过指定16位的像素格式来减少内存消耗, 同时保存为pvr.ccz格式来使程序加载速度更快。
 ## 在Cocos2d-x里面使用SpriteSheet
 现在回到我们之前创建好的-x项目，在Resources文件中加入我们刚刚生成好的文件**sprites-hd.plist**和**sprites-hd.pvr.ccz**，接下来在**HelloWorldScene.cpp**的**init()**方法中加入相应代码。源码放在github中可供[下载](https://github.com/cuit-zhaxin/ProjectsSpace/tree/master/doc-space/spritesheet)。

@@ -21,7 +21,7 @@ Cocos2d-x wp8平台上支持xaml后，方便了第三方Sdk的调用。本文以
 
 ![application](res/3.jpg)
 
-选择**Capabilities **，勾选 **ID_CAP_IDENTITY_USER**、 **ID_CAP_MEDIALIB_PHOTO**、**ID_CAP_PHONEDIALER**
+选择**Capabilities **，勾选 **ID_CAP_IDENTITY_USER**, **ID_CAP_MEDIALIB_PHOTO**,**ID_CAP_PHONEDIALER**
 
 ![application](res/4.jpg)
 
@@ -268,7 +268,7 @@ Deployment.Current.Dispatcher.BeginInvoke可以获取主线程，并在里面实
 
 ## 回调处理
 
-在Direct3DInterop实现文件中，可以发现，所有的点击、按键处理事件通过mInputEvents的事件队列来处理，只要向该线程投递该事件，然后由ProcessEvents函数来处理该事件。这样，我们定义一个AdControlEvent类继承InputEvent，如下：
+在Direct3DInterop实现文件中，可以发现，所有的点击,按键处理事件通过mInputEvents的事件队列来处理，只要向该线程投递该事件，然后由ProcessEvents函数来处理该事件。这样，我们定义一个AdControlEvent类继承InputEvent，如下：
 
 ``` c++
 namespace PhoneDirect3DXamlAppComponent

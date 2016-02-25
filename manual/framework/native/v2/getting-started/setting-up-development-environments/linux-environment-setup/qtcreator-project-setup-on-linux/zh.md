@@ -42,7 +42,7 @@
 
 1. box2d –集成Box2D物理学引擎
 2. chipmunk –集成另一个物理学引擎，不能与Box2D一起使用。
-3. extensions- 各种扩展如网络、GUI（图形用户界面）、AssetsManagers（资产管理）等
+3. extensions- 各种扩展如网络,GUI（图形用户界面）,AssetsManagers（资产管理）等
 4. CocosDenshion –音频引擎
 
 注意：Linux平台中的CocosDenshion音频引擎有两个音频后端——OpenAL和FMOD。FMOD对非商用用户免费，但对商用及开源游戏开发用户则需要授权，所以默认使用OpenAL。如果想用FMOD，则需要在包含cocos2dx.pri文件之前设置以下这个变量：     

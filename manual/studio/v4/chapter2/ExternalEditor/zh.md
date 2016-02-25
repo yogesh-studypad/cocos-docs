@@ -43,7 +43,7 @@
 
 ### 4.Particle Universe
 
-&emsp;&emsp;为了让广大开发者实现绚丽的3D粒子特效，我们Studio支持Particle Universe（基于OGRE的免费粒子编辑器）导出的3D粒子特效。首先，用户需要在Particle Universe制作好粒子的特效文件。如下图所示的pu文件，材质、贴图和脚本分别位于materials/texture/script文件夹中：
+&emsp;&emsp;为了让广大开发者实现绚丽的3D粒子特效，我们Studio支持Particle Universe（基于OGRE的免费粒子编辑器）导出的3D粒子特效。首先，用户需要在Particle Universe制作好粒子的特效文件。如下图所示的pu文件，材质,贴图和脚本分别位于materials/texture/script文件夹中：
 
 &emsp;&emsp;![image](res/image0007.png)
 

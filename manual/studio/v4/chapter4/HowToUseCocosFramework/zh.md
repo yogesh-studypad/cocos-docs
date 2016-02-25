@@ -6,15 +6,15 @@
 
 其实，Framework的使用步骤很简单，之所以有这个简略使用步骤，是怕浪费大家的时间。废话少说，步骤如下：
 
-&emsp;&emsp;1、下载framework，cocos商店可以下载
+&emsp;&emsp;1,下载framework，cocos商店可以下载
 
-&emsp;&emsp;2、安装framework（注意路径不要有空格和特殊字符，可改变默认路径）
+&emsp;&emsp;2,安装framework（注意路径不要有空格和特殊字符，可改变默认路径）
 
-&emsp;&emsp;3、重新启动cocos（要关闭电脑屏幕右下角的launcher）
+&emsp;&emsp;3,重新启动cocos（要关闭电脑屏幕右下角的launcher）
 
-&emsp;&emsp;4、新建项目、选择framework版本、语言等
+&emsp;&emsp;4,新建项目,选择framework版本,语言等
 
-&emsp;&emsp;5、发布项目到VS
+&emsp;&emsp;5,发布项目到VS
 
 ###Framework的详细使用步骤
 
@@ -34,11 +34,11 @@
 
 &emsp;&emsp;下载过Framework后，开始安装，同样有两种安装方式。（我习惯用第二种安装方式）
 
-&emsp;&emsp;第一种：自动安装。在Cocos Launcher中，选择“下载”、“已下载”，找到你下载的Framework，点击“安装”，下一步、下一步、直到安装完毕。
+&emsp;&emsp;第一种：自动安装。在Cocos Launcher中，选择“下载”,“已下载”，找到你下载的Framework，点击“安装”，下一步,下一步,直到安装完毕。
  
 ![image](res/image003.png) 
 
-&emsp;&emsp;第二种（如上图）：手动安装。Cocos Launcher右上角有个设置下载路径的地方，找到硬盘路径并打开，会有一个Framework的安装包，点击安装、并一步一步走下去就行。（注意：如果要自定义路径，那么路径不要有中文和空格等特殊字符。）
+&emsp;&emsp;第二种（如上图）：手动安装。Cocos Launcher右上角有个设置下载路径的地方，找到硬盘路径并打开，会有一个Framework的安装包，点击安装,并一步一步走下去就行。（注意：如果要自定义路径，那么路径不要有中文和空格等特殊字符。）
 
 ###使用Framework创建项目并运行
  

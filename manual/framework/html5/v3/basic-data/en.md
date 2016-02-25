@@ -2,7 +2,7 @@
 
 Create basic data  with a function .
 
-###1、cc.Point (3 ways)###
+###1,cc.Point (3 ways)###
 structure:{x:0,y:0}
 
     //1 fast create,return cc.p(0,0)
@@ -13,7 +13,7 @@ structure:{x:0,y:0}
     var point3 = cc.p(point2);
 
 
-###2、cc.Size  (3 ways)###
+###2,cc.Size  (3 ways)###
 structure:{width:0,height:0}
 
     //1 fast create,return cc.size(0,0)
@@ -23,7 +23,7 @@ structure:{width:0,height:0}
     //3 copy
     var size3 = cc.size(size2);
 
-###3、cc.Rect  (3 ways)###
+###3,cc.Rect  (3 ways)###
 structure:{x:0,y:0,width:0,height:0}
 
     //1 fast create,return cc.rect(0,0,0,0)
@@ -33,7 +33,7 @@ structure:{x:0,y:0,width:0,height:0}
     //3 copy
     var rect3 = cc.rect(rect2);
 
-###4、cc.Color (5 ways)###
+###4,cc.Color (5 ways)###
 structure:{r:0,g:0,b:0,a:0}
 
     //1 fast create,return cc.color(0,0,0,255);

@@ -15,7 +15,7 @@
 		animation->addSpriteFrameWithFileName(szImageFileName);  
 	}
 ```
-注意CCAnimation是由sprite frame帧组、单个frame延时，持续时间等组成的，它是一组”数据”. 而CCAnimate是一个action，它是基于CCAnimation对象创建的。
+注意CCAnimation是由sprite frame帧组,单个frame延时，持续时间等组成的，它是一组”数据”. 而CCAnimate是一个action，它是基于CCAnimation对象创建的。
 
 ## 序列帧动画 Sprite Sheet Animation
 

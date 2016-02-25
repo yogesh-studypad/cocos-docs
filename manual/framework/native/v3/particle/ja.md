@@ -8,27 +8,27 @@
 
 両方のクラスはNodeクラス(v2.xではCCNode)とTextureProtocolクラス(v2.xではCCTextureProtocol)を継承しています。
 
-**注意:** この記事の残りの部分は「v3.x」の概念を使用するので、CCプレフィックスをクラス名から削除して使用しています。
+**注意:** この記事の残りの部分は「v3.x」の概念を使用するので,CCプレフィックスをクラス名から削除して使用しています。
 
-ParticleBatchNodeは名前の通り、バッチノードのようなものです。  
-自身に子要素を持っている場合、1度のOpenGLコールで子要素も描画することができます。(BatchDraw処理として知られています)
+ParticleBatchNodeは名前の通り,バッチノードのようなものです。  
+自身に子要素を持っている場合,1度のOpenGLコールで子要素も描画することができます。(BatchDraw処理として知られています)
 
 ParticleBatchNodeは唯一のテクスチャ(イメージファイルまたはテクスチャアトラス)を参照しています。  
 テクスチャに含まれているParticleSystemのみParticleBatchNodeに追加することができます。
 
-ParticleBatchNodeに追加されている全てのParticleSystemは、1度のOpenGL ESのドローコールで描画されます。
+ParticleBatchNodeに追加されている全てのParticleSystemは,1度のOpenGL ESのドローコールで描画されます。
 
-**警告:** もしも、ParticleSystemがParticleBatchNodeに追加されていない場合、各ParticleSystemごとにドローコールが発生してしまう為、効率的ではありません。
+**警告:** もしも,ParticleSystemがParticleBatchNodeに追加されていない場合,各ParticleSystemごとにドローコールが発生してしまう為,効率的ではありません。
 
 ###*違いについて*
 
 -  CCプレフィックスの削除。
 -  C++11から追加された機能「override」キーワードを使用しています。 例として : ```virtual void addChild( Node* child ) override;```
-- ```CCDirector::shareDirector();```ではなく、```Director::getInstance();```を使用してシングルトンを取得します。
+- ```CCDirector::shareDirector();```ではなく,```Director::getInstance();```を使用してシングルトンを取得します。
 -  ```Director::getInstance()->getTextureCache()->addImage( const std::string& path );```を使用して画像をテクスチャキャッシュに追加します。
 -  ```CC_SYNTHESIZE( CCTextureAtlas*, m_pTextureAtlas, TextureAtlas );```の代わりにv3.xではインライン関数の```getTextureAtlas();```と```setTextureAtlas( TextureAtlas* atlas );```を使用します。
--  v2.xでは```objectAtIndex( unsigned int index );```を使用していましたが、v3.xでは```getObjectAtIndex( long index );```を使用することができます。
--  v3.xで使用する```BlendFunc::ALPHA_NON_PREMULTIPLIED```は以下のように定義されています : ```const BlendFunc BlendFunc::ALPHA_NON_PREMULTIPLIED = { GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA };``` これは、v2.xでマクロとして定義されていた```GL_SRC_ALPHAと GL_ONE_MINUS_SRC_ALPHA```の代わりになります。また、```CC_BLEND_SRC```と```CC_BLEND_DST ```の代わりに```BlendFunc::ALPHA_PREMULTIPLIED```を使用することができます。
+-  v2.xでは```objectAtIndex( unsigned int index );```を使用していましたが,v3.xでは```getObjectAtIndex( long index );```を使用することができます。
+-  v3.xで使用する```BlendFunc::ALPHA_NON_PREMULTIPLIED```は以下のように定義されています : ```const BlendFunc BlendFunc::ALPHA_NON_PREMULTIPLIED = { GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA };``` これは,v2.xでマクロとして定義されていた```GL_SRC_ALPHAと GL_ONE_MINUS_SRC_ALPHA```の代わりになります。また,```CC_BLEND_SRC```と```CC_BLEND_DST ```の代わりに```BlendFunc::ALPHA_PREMULTIPLIED```を使用することができます。
 
 ---
 ###CCParticleSystemとParticleSystem
@@ -67,7 +67,7 @@ Particle Systemの属性について :
 Cocos2d-xでは[ParticleDesigner](http://particledesigner.71squared.com/)で制作されたパーティクルをサポートしています。
 
 Particle Designerのラディウスモードは30ヘルツのエミットレートを使用しています。  
-ですが、Cocos2d-xでは別の方法をとっています。結果はほとんど変わりません。
+ですが,Cocos2d-xでは別の方法をとっています。結果はほとんど変わりません。
 
 Cocos2d-xではParticle Designerで使用された全ての変数とその他の要素をサポートしています。
 
@@ -138,7 +138,7 @@ Cocos2d-xではParticle Designerで使用された全ての変数とその他の
 
 ![](res/./ParticleSystem@2x.png)	![](res/./ParticleSystem@3.0.png)
 
-ParticleSystemQuadはParticleSystemのサブクラスであり、ParticleSystemの全ての機能が含まれています。
+ParticleSystemQuadはParticleSystemのサブクラスであり,ParticleSystemの全ての機能が含まれています。
 
 ParticleSystemQuadの独自機能と制限事項
 
@@ -150,7 +150,7 @@ ParticleSystemQuadの独自機能と制限事項
 
 ###*違いについて*
 
-v3.xはv2.xとは大きな差がないので、v2.xの操作をするような感覚で使用することができると思います。
+v3.xはv2.xとは大きな差がないので,v2.xの操作をするような感覚で使用することができると思います。
 詳しく閲覧したい場合はこの[リンク](http://cocos2d-x.org/wiki/Reference)をご覧になってください。
 
 ###*サンプル*

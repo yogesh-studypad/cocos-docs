@@ -349,7 +349,7 @@ Sprite *_spacialanomaly2;
 	newY = MIN(MAX(newY, minY), maxY);
 	_ship->setPosition(ccp(_ship->getPosition().x, newY));
 
-这里的onAcceleration回调函数包含一个Acceleration对象，它包含加速计的x、y和z三个方向的数据。我们目前只需要使用x方向的加速计数据就行了，因为我们是沿着设备的x轴进行运动的。
+这里的onAcceleration回调函数包含一个Acceleration对象，它包含加速计的x,y和z三个方向的数据。我们目前只需要使用x方向的加速计数据就行了，因为我们是沿着设备的x轴进行运动的。
 
 注意: Cocos2d-x3.0会根据你的设备是处于portait模式还是landscape模式来切换加速计的x和y方向的值。
 

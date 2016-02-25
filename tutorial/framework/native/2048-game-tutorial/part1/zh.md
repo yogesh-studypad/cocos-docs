@@ -75,14 +75,14 @@ IvenYangtekiMacBook-Pro-2:Documents zeroyang$
 
 ##游戏场景创建
 
-Cocos2d-x 使用Scene表示游戏的场景，类似于电影中的场景。场景大致可以分为以下几类：展示类场景。播放视频或简单的在图像上输出文字，来实现游戏的开场介绍、胜利和失败提示、帮助介绍，选项类场景，主菜单、设置游戏参数等，游戏场景。这是游戏的主要内容。
+Cocos2d-x 使用Scene表示游戏的场景，类似于电影中的场景。场景大致可以分为以下几类：展示类场景。播放视频或简单的在图像上输出文字，来实现游戏的开场介绍,胜利和失败提示,帮助介绍，选项类场景，主菜单,设置游戏参数等，游戏场景。这是游戏的主要内容。
 
-游戏的内容是通过层Layer,叠加展示的。Layer是写游戏的重点，精灵Sprite、标签Label、菜单Menu等都是add到层上展示。
+游戏的内容是通过层Layer,叠加展示的。Layer是写游戏的重点，精灵Sprite,标签Label,菜单Menu等都是add到层上展示。
 
 ### 新建GameScene
 
 
-新建GameScene类，创建游戏的主场景。GameScene 是Layer的子类，负责显示score、pause 菜单，以及 4*4 的数字卡片。管理游戏的交换逻辑和分数更新。
+新建GameScene类，创建游戏的主场景。GameScene 是Layer的子类，负责显示score,pause 菜单，以及 4*4 的数字卡片。管理游戏的交换逻辑和分数更新。
 
 createScene静态方法的实现。
 
@@ -170,7 +170,7 @@ Cocos2d-x用Director类管理场景，访问和改变场景。通过上面修改
 
 ### 新建Card 精灵
 
-新建CardSprite类来表示数字方块，CardSprite是Sprite的子类。由显示背景的LayerColor和显示数字的Label组合而成。 负责显示2、4、8...数字方块和不同的背景色。
+新建CardSprite类来表示数字方块，CardSprite是Sprite的子类。由显示背景的LayerColor和显示数字的Label组合而成。 负责显示2,4,8...数字方块和不同的背景色。
 
 数字卡片的创建
 
@@ -347,6 +347,6 @@ void GameScene::createCardNumber()
 ##小结
 
 在这节我们已经完成了游戏的主场景和4*4的数字卡片。但是还缺少游戏上下左右滑动移动数字卡片，得分，游戏结束等逻辑。
-在下一节我们将加入游戏的逻辑、数据存储和如何在android上运行。
+在下一节我们将加入游戏的逻辑,数据存储和如何在android上运行。
 
 你可以在[这里](https://github.com/iTyran/2048)获取游戏源码。

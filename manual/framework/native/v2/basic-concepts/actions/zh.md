@@ -1,6 +1,6 @@
 # Actions 动作
 
-动作（action）即赋予“CCNode”对象的指令。动作通常会改变对象的一些属性如位置、旋转、大小等。如果这些属性是在一段时间内被动作改变的，那么这种就是“CCIntervalAction”动作，否则即为“CCInstantAction”动作。例如“CCMoveBy”动作会在一段时间内修改对象的位置属性，因此为“CCIntervalAction”动作的子类。
+动作（action）即赋予“CCNode”对象的指令。动作通常会改变对象的一些属性如位置,旋转,大小等。如果这些属性是在一段时间内被动作改变的，那么这种就是“CCIntervalAction”动作，否则即为“CCInstantAction”动作。例如“CCMoveBy”动作会在一段时间内修改对象的位置属性，因此为“CCIntervalAction”动作的子类。
 
 你可以运行TestCpp->Actions 来测试动作的视觉效果。“cocos2d-x/samples/Cpp/TestCpp/Classes/ActionsTest”及“ActionsEaseTest”都是学习用法很好的样本代码。
 

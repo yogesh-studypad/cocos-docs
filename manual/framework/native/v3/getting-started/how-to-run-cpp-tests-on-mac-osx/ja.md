@@ -11,7 +11,7 @@
 * タブから`cpp-tests Mac`を選んでください。
   ![select project](res/select_project.png)
   
-* `run`をクリックして、コンパイルしそして `Test cpp` のサンプルを動作させます。
+* `run`をクリックして,コンパイルしそして `Test cpp` のサンプルを動作させます。
 
   ![select run button](res/select_run.png)
   

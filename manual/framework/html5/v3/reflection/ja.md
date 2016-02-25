@@ -1,16 +1,16 @@
 #Cocos2d-JSでJavaのメソッドを呼び出す方法
 
-Cocos2d-JS v3.0 βでは、JavaScript側から直接Javaの静的メソッドを呼び出すことができます。使い方は非常に簡単です。
+Cocos2d-JS v3.0 βでは,JavaScript側から直接Javaの静的メソッドを呼び出すことができます。使い方は非常に簡単です。
 
 ```
 var o = jsb.reflection.callStaticMethod( className, methodName, methodSignature, parameters... );
 ```
 
-`callStaticMethod`メソッドではJavaのクラス名のパス、メソッド名、メソッドシグネチャ、引数が必要になります。また、Javaのメソッドから戻り値の値を取得することができます。JNIの経験がない場合、クラス名やシグネチャなどを渡すことが少し奇妙に思うかもしれませんが、Javaの仕様です。
+`callStaticMethod`メソッドではJavaのクラス名のパス,メソッド名,メソッドシグネチャ,引数が必要になります。また,Javaのメソッドから戻り値の値を取得することができます。JNIの経験がない場合,クラス名やシグネチャなどを渡すことが少し奇妙に思うかもしれませんが,Javaの仕様です。
 
 ##クラス名
 
-クラス名のパスはJavaのパッケージも含める必要があります。次のサンプルでは`org.cocos2dx.javascript`というパッケージに、`Test`というクラスがあります。
+クラス名のパスはJavaのパッケージも含める必要があります。次のサンプルでは`org.cocos2dx.javascript`というパッケージに,`Test`というクラスがあります。
 
 ```
 package org.cocos2dx.javascript;
@@ -31,7 +31,7 @@ public class Test {
 }
 ```
 
-この場合、`Test`クラスのクラス名は`org/cocos2dx/javascript/Test`となります。`.`は全て`/`に置き換える必要があるので注意してください。
+この場合,`Test`クラスのクラス名は`org/cocos2dx/javascript/Test`となります。`.`は全て`/`に置き換える必要があるので注意してください。
 
 ##メソッド名
 
@@ -39,15 +39,15 @@ public class Test {
 
 ##メソッドシグネチャ
 
-メソッドシグネチャは少し複雑です。もっとも簡単なシグネチャは`()V`で、引数、戻り値なしのメソッドを表します。
+メソッドシグネチャは少し複雑です。もっとも簡単なシグネチャは`()V`で,引数,戻り値なしのメソッドを表します。
 
 例 :
 
-- `(I)V`  int型の引数があり、戻り値がないメソッド。
-- `(I)I`  int型の引数があり、戻り値がint型のメソッド。
-- `(IF)Z` int型の引数とfloat型の引数があり、戻り値がbool型のメソッド。
+- `(I)V`  int型の引数があり,戻り値がないメソッド。
+- `(I)I`  int型の引数があり,戻り値がint型のメソッド。
+- `(IF)Z` int型の引数とfloat型の引数があり,戻り値がbool型のメソッド。
 
-括弧内の記号は引数の種類を表し、その後の記号は戻り値を表します。Javaではメソッドのオーバーライドが可能なので、同じメソッド名で異なる戻り値、引数を持つメソッドを定義することができます。メソッドシグネチャはそれらのメソッドを特定するために使用されています。
+括弧内の記号は引数の種類を表し,その後の記号は戻り値を表します。Javaではメソッドのオーバーライドが可能なので,同じメソッド名で異なる戻り値,引数を持つメソッドを定義することができます。メソッドシグネチャはそれらのメソッドを特定するために使用されています。
 
 Cocos2d-JSではJavaの4つの型をサポートしています。
 
@@ -60,7 +60,7 @@ Cocos2d-JSではJavaの4つの型をサポートしています。
 
 ##引数
 
-引数は複数指定することも、指定しないことも可能です。`callStaticMethod`メソッドを呼び出して引数を指定する場合、JavaScriptのint型、bool型、string型の値を直接使用することができます。
+引数は複数指定することも,指定しないことも可能です。`callStaticMethod`メソッドを呼び出して引数を指定する場合,JavaScriptのint型,bool型,string型の値を直接使用することができます。
 
 ##使用方法
 
@@ -83,9 +83,9 @@ cc.log( result );	// 5と出力されます。
 
 ##注意
 
-スレッド関連に注意する必要があります。Cocos2dのAndroidアプリでは、エンジンとJavaScript VMは`GL`スレッドで更新され、Androidは`UI`スレッドでUIの更新を行っています。アプリのUIを更新するJavaのメソッドを呼び出すのであれば、`UI`スレッドで呼び出す必要があります。
+スレッド関連に注意する必要があります。Cocos2dのAndroidアプリでは,エンジンとJavaScript VMは`GL`スレッドで更新され,Androidは`UI`スレッドでUIの更新を行っています。アプリのUIを更新するJavaのメソッドを呼び出すのであれば,`UI`スレッドで呼び出す必要があります。
 
-次のサンプルは、AndroidのAlertDialogを表示するJavaのメソッドを呼び出します。
+次のサンプルは,AndroidのAlertDialogを表示するJavaのメソッドを呼び出します。
 
 ```
 // AppActivityクラスに少し変更を加えます。
@@ -126,11 +126,11 @@ AndroidのAlertDialogが表示されているはずです。
 
 ##Java側からJavaScriptのメソッドを呼ぶ
 
-JavaScript側からJavaのメソッドを呼び出すことが出来ましたが、反対にJava側からJavaScriptのメソッドを呼び出すことも可能です。
+JavaScript側からJavaのメソッドを呼び出すことが出来ましたが,反対にJava側からJavaScriptのメソッドを呼び出すことも可能です。
 
 プロジェクトに`Cocos2dxJavascriptJavaBridge`クラスを追加します。このクラスの`evalString`メソッドでJavaScriptのメソッドを呼び出すことができます。このクラスは`frameworks\js-bindings\bindings\manual\platform\android\java\src\org\cocos2dx\lib`フォルダにあります。
 
-AlertDialogのOKボタンを追加し、`OnClickListener`内で`evalString`メソッドを使用します。JavaScriptのコードを使用するので、必ず`GL`スレッドで実行するようにしてください。
+AlertDialogのOKボタンを追加し,`OnClickListener`内で`evalString`メソッドを使用します。JavaScriptのコードを使用するので,必ず`GL`スレッドで実行するようにしてください。
 
 ```
 alertDialog.setButton( "OK", new DialogInterface.OnClickListener() {
@@ -147,4 +147,4 @@ alertDialog.setButton( "OK", new DialogInterface.OnClickListener() {
 } );
 ```
 
-OKボタンをクリックすると文字列が出力されます。`evalString`メソッドはJavaScriptのコードを実行でき、変数にアクセスする事もできます。
+OKボタンをクリックすると文字列が出力されます。`evalString`メソッドはJavaScriptのコードを実行でき,変数にアクセスする事もできます。

@@ -2,7 +2,7 @@
 
 함수로 기본 데이터를 만들어보겠습니다.
 
-###1、cc.Point (3가지 방법)###
+###1,cc.Point (3가지 방법)###
 구조:{x:0,y:0}
 
     //1 빠른 생성, return cc.p(0,0)
@@ -13,7 +13,7 @@
     var point3 = cc.p(point2);
 
 
-###2、cc.Size  (3가지 방법)###
+###2,cc.Size  (3가지 방법)###
 구조:{width:0,height:0}
 
     //1 빠른 생성, return cc.size(0,0)
@@ -23,7 +23,7 @@
     //3 복사
     var size3 = cc.size(size2);
 
-###3、cc.Rect  (3가지 방법)###
+###3,cc.Rect  (3가지 방법)###
 structure:{x:0,y:0,width:0,height:0}
 
     //1 빠른 생성,return cc.rect(0,0,0,0)
@@ -33,7 +33,7 @@ structure:{x:0,y:0,width:0,height:0}
     //3 복사
     var rect3 = cc.rect(rect2);
 
-###4、cc.Color (5가지 방법)###
+###4,cc.Color (5가지 방법)###
 structure:{r:0,g:0,b:0,a:0}
 
     //1 빠른 생성,return cc.color(0,0,0,255);

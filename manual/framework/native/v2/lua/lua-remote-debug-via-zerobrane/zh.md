@@ -1,6 +1,6 @@
 如何使用ZeroBrane Studio远程调试Cocos2d-x的Lua脚本
 ===========================================
-ZeroBrane Studio做为一个轻量级的Lua IDE,因为它支持跨平台(支持`Windows`、`Mac`和`Linux`)和支持真机调试(`Andorid`、`IPhone`和`IPad`)，所以经常被用来调试Lua。目前，Cocos2d-x通过集成LuaSocket也支持应用ZeroBrane Studio进行测试例的调试(Linux除外)。我们以HelloLua为例，详细描述如何使用ZeroBrane Studio进行iOS模拟器和Android真机的调试。
+ZeroBrane Studio做为一个轻量级的Lua IDE,因为它支持跨平台(支持`Windows`,`Mac`和`Linux`)和支持真机调试(`Andorid`,`IPhone`和`IPad`)，所以经常被用来调试Lua。目前，Cocos2d-x通过集成LuaSocket也支持应用ZeroBrane Studio进行测试例的调试(Linux除外)。我们以HelloLua为例，详细描述如何使用ZeroBrane Studio进行iOS模拟器和Android真机的调试。
 ### 版本
 
 * Cocos2d-x Version 3.0 Beta2

@@ -39,7 +39,7 @@ public:
     cocos2d::Vector<cocos2d::Sprite *> movableSprites;
 ```
 
-　　你将使用这些变量来追踪你的背景图片、当前选中的精灵以及一个在处理touch事件时需要移动的精灵的数组。
+　　你将使用这些变量来追踪你的背景图片,当前选中的精灵以及一个在处理touch事件时需要移动的精灵的数组。
 
 　　现在，回到HelloWorldScene.cpp，找到init方法，把它替换成下面的代码：
 

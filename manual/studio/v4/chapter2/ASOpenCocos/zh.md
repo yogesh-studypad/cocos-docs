@@ -2,7 +2,7 @@
 
 接下来详细介绍一下如何使用Android Studio打开以及编辑cocos2d-x 3.10项目：
 
-### 一、新建项目：
+### 一,新建项目：
 
 &emsp;&emsp;新建源代码项目，预编译库项目不支持使用Android Stduio打开，见图1：
 
@@ -10,7 +10,7 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图1：新建项目。
 
-### 二、Android Studio下载与安装：
+### 二,Android Studio下载与安装：
 &emsp;&emsp;1）项目成功创建，如果未安装Android Studio，“Android Studio打开”图标禁用，点击“Android Studio打开”，弹出提示对话框，见图2：
 
 ![image](res/image0002.png)
@@ -46,7 +46,7 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图7：Android Studio安装完成界面。
 
 
-### 三、Android Studio打开项目：
+### 三,Android Studio打开项目：
 
 &emsp;&emsp;1）安装完成后，需要添加Android 5.1.1（API 22）SDK Platform 以及 Build-tools 22.0.1，打开SDK的安装目录，双击打开“SDK Manager.exe”，见图8：
 
@@ -78,7 +78,7 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图12：成功打开项目
 
-### 四、使用Android Studio调试Cocos项目
+### 四,使用Android Studio调试Cocos项目
 
 &emsp;&emsp;Android手机通过数据线与主机相连，点击菜单 Run -> Debug '项目名称'，弹出“Device Chooser”，见图13：
 
@@ -92,7 +92,7 @@
 
 &emsp;&emsp;选择好调试的设备，点击 “OK”，可以开始调试了。
 
-### 五、使用Android Studio生成APK：
+### 五,使用Android Studio生成APK：
 
 &emsp;&emsp;1）调试好程序之后，点击菜单：“Build” -> “Generate Signed APK”，弹出设置签名对话框，见图14：
 

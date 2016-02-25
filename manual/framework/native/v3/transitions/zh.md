@@ -1,7 +1,7 @@
 ###  场景转换（Transitions）
 Cocos2d-x最爽的一个特性之一就是提供了在两个不同场景之间直接转换的能力。例如：淡入淡出，放大缩小，旋转，跳动等。从技术上来说，一个场景转换就是在展示并控制一个新场景之前执行一个转换效果。
 
-场景之间通过TransitionScene系列类来实现过渡跳转的效果。TransitionScene继承于Scene，该系列类主要是与场景切换特效相关的一些使用类。如TransitionFadeDown、TransitionPageTurn、TransitionJumpZoom等等。
+场景之间通过TransitionScene系列类来实现过渡跳转的效果。TransitionScene继承于Scene，该系列类主要是与场景切换特效相关的一些使用类。如TransitionFadeDown,TransitionPageTurn,TransitionJumpZoom等等。
 
 下图是TransitionScene的类关系图： 
 

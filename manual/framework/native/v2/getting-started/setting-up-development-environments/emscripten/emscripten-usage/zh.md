@@ -25,7 +25,7 @@ git submodule update --init --recursive
 make -f Makefile.emscripten -j 8
 ```
 
-该命令会编译Cocos2d-x及所有样本。完成之后你即会在proj.emscripten/bin/release路径下发现生成的.js、.data及.html文件，如：    
+该命令会编译Cocos2d-x及所有样本。完成之后你即会在proj.emscripten/bin/release路径下发现生成的.js,.data及.html文件，如：    
 ```
 $ ls -1 samples/Cpp/TestCpp/proj.emscripten/bin/release/
 TestCpp.data

@@ -48,11 +48,11 @@ document.getElementById("myBtn").addEventListener("click", function(){
 
 ```
 DEBUG_MODE_NONE : 0                     //都不开启
-DEBUG_MODE_INFO : 1                     //用控制台输出INFO、WARN、ERROR级别日志
-DEBUG_MODE_WARN : 2                     //用控制台输出WARN、ERROR级别日志
+DEBUG_MODE_INFO : 1                     //用控制台输出INFO,WARN,ERROR级别日志
+DEBUG_MODE_WARN : 2                     //用控制台输出WARN,ERROR级别日志
 DEBUG_MODE_ERROR : 3                    //用控制台输出ERROR级别日志
-DEBUG_MODE_INFO_FOR_WEB_PAGE : 4        //用HTML界面（jsb为控制台）输出INFO、WARN、ERROR级别日志
-DEBUG_MODE_WARN_FOR_WEB_PAGE : 5        //用HTML界面（jsb为控制台）输出WARN、ERROR级别日志
+DEBUG_MODE_INFO_FOR_WEB_PAGE : 4        //用HTML界面（jsb为控制台）输出INFO,WARN,ERROR级别日志
+DEBUG_MODE_WARN_FOR_WEB_PAGE : 5        //用HTML界面（jsb为控制台）输出WARN,ERROR级别日志
 DEBUG_MODE_ERROR_FOR_WEB_PAGE : 6       //用HTML界面（jsb为控制台）输出ERROR级别日志
 ```
 

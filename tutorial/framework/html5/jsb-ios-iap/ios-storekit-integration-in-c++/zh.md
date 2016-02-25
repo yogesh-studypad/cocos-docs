@@ -26,7 +26,7 @@
 
 登录[iTunes Connect](http://itunesconnect.apple.com/), 切换到“Manage Your Apps ”，点击“Add New App”新建一个待发布程序， Bundle ID选择刚才创建的App ID。
 
-接下来的程序信息界面可随意填写，截图可使用符合大小要求的假图，先保证能创建成功、可测试，等到需要正式提交审核的时候再修改成最终截图。
+接下来的程序信息界面可随意填写，截图可使用符合大小要求的假图，先保证能创建成功,可测试，等到需要正式提交审核的时候再修改成最终截图。
 
 #### 为发布程序新建IAP付费项目
 
@@ -88,7 +88,7 @@ C++开发的游戏，付费点直接使用Object-c的IAP接口会有诸多不便
 
 ![Stages of the purchase process](./res/stagesOfThePurchaseProcess.png)
 
-首先，IAP付费首先需要客户端发起请求，获取服务器上的IAP条目信息。之所用需要这个步骤，是因为iTunes Connect后台可以修改付费条目的价格、说明等信息。
+首先，IAP付费首先需要客户端发起请求，获取服务器上的IAP条目信息。之所用需要这个步骤，是因为iTunes Connect后台可以修改付费条目的价格,说明等信息。
 
 然后，客户端根据获取到的IAP条目信息展示UI，当用户点击支付后发起payment请求。
 

@@ -1,21 +1,21 @@
 ## 「Container Layer」の使用方法
 
-GUIのウィジェットは**Normal Widget**と**Container Widget**と呼ばれる、大まかな２つの種類に分けられます。
+GUIのウィジェットは**Normal Widget**と**Container Widget**と呼ばれる,大まかな２つの種類に分けられます。
 
 Normal widgetsはUIButton, UILabel, UISlider や UITextField　等々の一般的なウィジェットです。
 
-一方で、container widgetsはUILayout, UIScrollView や UIPageView 等々のような特徴を持っています。
-そして、container widgetsはその他のウィジットを含んでいます。
-にもかかわらず、すべてのウィジェットは他を含むことができます。
-しかし、いくつかのものはラベルやボタンの様な一つの事を行うものとなっています。
+一方で,container widgetsはUILayout, UIScrollView や UIPageView 等々のような特徴を持っています。
+そして,container widgetsはその他のウィジットを含んでいます。
+にもかかわらず,すべてのウィジェットは他を含むことができます。
+しかし,いくつかのものはラベルやボタンの様な一つの事を行うものとなっています。
 それらにウィジェットを追加していく方法が一般的です。
 
-では、container widgetの使い方を学んでいきましょう。
+では,container widgetの使い方を学んでいきましょう。
 
 ### UILayout (Panel)
 
 パネルは最も重要な入れ子です。
-それはCocoStudio editorでUIを作る基礎となり、
+それはCocoStudio editorでUIを作る基礎となり,
 パネルやそのプロパティを知っておくことが重要となってきます。
 パネルに対応するウィジェットは「UILayout」という名前がつけられています。
 
@@ -60,14 +60,14 @@ Normal widgetsはUIButton, UILabel, UISlider や UITextField　等々の一般�
 
 上記のプログラムで`layout`ウィジェットを作成すると３つのウィジェットが追加されます。
 前述した通り`m_pUiLayer`は現在のシーンでのUILayerとなります。
-すべてのUI widgetsはUILayerに属しており、UILayerはそれらすべてを管理しています。
+すべてのUI widgetsはUILayerに属しており,UILayerはそれらすべてを管理しています。
 下図の様に実際に配置した結果をみる事ができます。
 
 
 ![uipanel_test](res/uipanel_test.png)
 
 レイアウトに“size”と言う名の値を設定し大きさを変更することができます。
-しかし、思った通りの結果は得られないと思います。
+しかし,思った通りの結果は得られないと思います。
 なぜならレイアウトのカラーの初期が透明化されているからです。
 ですがレイヤーのカラーを設定する事は可能です
 
@@ -94,7 +94,7 @@ Normal widgetsはUIButton, UILabel, UISlider や UITextField　等々の一般�
 
 
 上記のように背景の画像とサイズを設定できます。
-しかし、サイズを揃える場合、`setClippingEnabled`メソッドを呼ぶ事を覚えておいてください。
+しかし,サイズを揃える場合,`setClippingEnabled`メソッドを呼ぶ事を覚えておいてください。
 もしメソッドを呼ばなかった場合次の様な事がおこります。
 
 ![uipanel_background2](res/uipanel_background2.png)
@@ -122,8 +122,8 @@ UILayout には色を表示する 3 つのモードがあります。
 
 ### UIPanel Widget's Layout Strategies
 
-UILayoutはlayoutのためにあり、上記では背景の画像を変えるためだけに使われています。
-下部は、絶対位置の設定とレイアウトシステムです。
+UILayoutはlayoutのためにあり,上記では背景の画像を変えるためだけに使われています。
+下部は,絶対位置の設定とレイアウトシステムです。
 
 
 | LayoutType                | 説明        |
@@ -145,7 +145,7 @@ UILayoutはlayoutのためにあり、上記では背景の画像を変えるた
     
 ```
 
-コラム；絶対位置での配置を使用した場合、たとえ他の配置を適用していたとしても内部のウィジェットの位置の設定は無視されます。上記の状況で設定位置を反映させたい場合`UILinearLayoutParameter` と `UIRelativeLayoutParameter`という二つのパラメーターを持った`UILayoutParameter` を使う事によりそれが可能となります。
+コラム；絶対位置での配置を使用した場合,たとえ他の配置を適用していたとしても内部のウィジェットの位置の設定は無視されます。上記の状況で設定位置を反映させたい場合`UILinearLayoutParameter` と `UIRelativeLayoutParameter`という二つのパラメーターを持った`UILayoutParameter` を使う事によりそれが可能となります。
 この二つのパラメーターを使ったUIデザインを下記でやってみましょう。
 
 
@@ -179,9 +179,9 @@ UILayoutはlayoutのためにあり、上記では背景の画像を変えるた
 
 
 ここでは線形垂直方式を使用しています。
-しかし、すべての`Gravity` は'LINEAR_GRAVITY_CENTER_HORIZONTAL'の設定となっておりそれは水平方向を中心として表示され、
+しかし,すべての`Gravity` は'LINEAR_GRAVITY_CENTER_HORIZONTAL'の設定となっておりそれは水平方向を中心として表示され,
 余白や端の周りの間隔が表示されます。
- `lp2`の値は`UIMargin(20, 20, 0, 5)`かっこ内左から順に左、上、右、ボタンからの間隔となります。
+ `lp2`の値は`UIMargin(20, 20, 0, 5)`かっこ内左から順に左,上,右,ボタンからの間隔となります。
   
   左の間隔を20にした時`textButton`らの右に少しの間隔が空いてしまいます。
    方向以外はレイアウトの垂直方式の他の設定の水平体系と同じです。
@@ -215,7 +215,7 @@ UILayoutはlayoutのためにあり、上記では背景の画像を変えるた
 
 ### UIScrollView
 
-レイアウトコンテナに加えて、スクロールビューは、常にそれが表示ウィジェットを拡大することができ、コンテンツ要素が増加したときそれは非常に便利です。あなたは好きなようにそれを設定することができます。
+レイアウトコンテナに加えて,スクロールビューは,常にそれが表示ウィジェットを拡大することができ,コンテンツ要素が増加したときそれは非常に便利です。あなたは好きなようにそれを設定することができます。
 
 ``` c++
     UIScrollView* scrollView = UIScrollView::create();
@@ -248,15 +248,15 @@ UILayoutはlayoutのためにあり、上記では背景の画像を変えるた
 ![uiscrollview_vertical](res/uiscrollview_vertical.png)
 
 
-上記の画像の通り、スクロールウィジットを作成しそこに幾つかの内部要素を追加しました。
+上記の画像の通り,スクロールウィジットを作成しそこに幾つかの内部要素を追加しました。
 表示内容が画面に収まることはあまりありません。
-このような状況で、我々はコンテンツを表示するためにダウンビューを上下にドラッグしてすることができます。
+このような状況で,我々はコンテンツを表示するためにダウンビューを上下にドラッグしてすることができます。
 
 
 **コラム**:
 imageViewの位置はscrollviewの外側から設定することができます。
-それに加えてscrollviewのsetInnerContainerSizeをよびだせば表示領域を変更することができ、ドラックの境界うを確認することができます。
-もし水平方向のドラッグを設定する場合、InnerContainerSize'の幅よりも大きいウィジットとそれと高さが同じウィジットが必要です。
+それに加えてscrollviewのsetInnerContainerSizeをよびだせば表示領域を変更することができ,ドラックの境界うを確認することができます。
+もし水平方向のドラッグを設定する場合,InnerContainerSize'の幅よりも大きいウィジットとそれと高さが同じウィジットが必要です。
 
 
 この方法で水平方向にドラッグをすることができます。
@@ -265,7 +265,7 @@ imageViewの位置はscrollviewの外側から設定することができます�
 
 ListView は ScrollViewを継承しています。
 これによりScrollView'の文字がListViewでも見ることができるようになります。
-ListView、ScrollView の違いを見てみましょう:
+ListView,ScrollView の違いを見てみましょう:
 
 ``` c++
     UIListView* lv = UIListView::create();
@@ -293,22 +293,22 @@ ListView、ScrollView の違いを見てみましょう:
 `ItemsMargin` と `Gravity`を設定するとドラッグすることができる20のボタンを水平方向中央に表示させることができる 
 `ItemsMargin` and `Gravity`は水平方向中央に表示するために設定しました。
 `lv->setItemModel(model)`はListViewの初期Itemを設定してくれます。
-その後上記の文をfor文で20回、回します。
+その後上記の文をfor文で20回,回します。
 
-これは同じモデルを20回追加しますが、元のモデルのクローンである20のオブジェクトを追加するわけでないことに注意してください。
+これは同じモデルを20回追加しますが,元のモデルのクローンである20のオブジェクトを追加するわけでないことに注意してください。
 ListViewに追加することができるのは他にもたくさんあります。
 `pushBackDefaultItem()`だけではありません
 
 | 関数一覧　                                      | 説明                        |
 |-----------------------------------------------|----------------------------| 
 | pushBackDefaultItem()                         | Default Itemの追加          | 
-| insertDefaultItem(int index)                  | Default Itemのソート、挿入    |
+| insertDefaultItem(int index)                  | Default Itemのソート,挿入    |
 | pushBackCustomItem(UIWidget* item)            | new Itemの追加              | 
 | insertCustomItem(UIWidget* item, int index)   | new Itemの挿入              |
 
 
-上記で示したの追加、挿入する関数です。
-下記は削除、取得の関数です。
+上記で示したの追加,挿入する関数です。
+下記は削除,取得の関数です。
 
 | 関数一覧                       | 説明　　　　                     |
 |-------------------------------|-------------------------------| 
@@ -322,10 +322,10 @@ ListViewに追加することができるのは他にもたくさんあります
 ### UIPageView
 
 ここまでScrollViewと幾つかのウィジットについて勉強してきました。
-PageViewでは一度に全ての表示をすることができ、
+PageViewでは一度に全ての表示をすることができ,
 
-リストを表示することができ、またPageViewは、ページ全体を一度に表示することができます。
-その上、余白を自動で整えページをめくるようなことができます。
+リストを表示することができ,またPageViewは,ページ全体を一度に表示することができます。
+その上,余白を自動で整えページをめくるようなことができます。
 
 ``` c++
     UIPageView* pageView = UIPageView::create();
@@ -369,9 +369,9 @@ PageViewでは一度に全ての表示をすることができ、
 ![uipageview](res/uipageview.png)
 
 
-PageViewのオブジェクトはSize(240, 130)で作成し、それが表示領域となります。
-UILayout を追加するには、全体のコンテンツを表示できるサイズ「Size(240, 130)」でつくる必要があります。
-UILayout に必要なものを追加することができ、`pageView->addPage(layout)`でページを追加することができます。
+PageViewのオブジェクトはSize(240, 130)で作成し,それが表示領域となります。
+UILayout を追加するには,全体のコンテンツを表示できるサイズ「Size(240, 130)」でつくる必要があります。
+UILayout に必要なものを追加することができ,`pageView->addPage(layout)`でページを追加することができます。
 `UILayout` オブジェクトまたはその派生クラスのオブジェクトを追加する必要があるのを覚えておいてください。
 
 ScrollView が UILayout からは継承されないためPageViewのスクロールを実装の実装ができません。

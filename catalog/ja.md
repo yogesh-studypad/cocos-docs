@@ -16,7 +16,7 @@
 		- [Eclipse上におけるAndroidプロジェクトのビルド・実行方法](../manual/framework/native/v3/getting-started/how-to-build-android-project-with-eclipse/ja.md)
 	- グラフィックとアニメーション
 		- Cocos2dの座標系
-		- スプライト、レイヤー、シーン(Sprite, Layer and Scene)
+		- スプライト,レイヤー,シーン(Sprite, Layer and Scene)
 		- [パーティクルシステム(Particle System)](../manual/framework/native/v3/particle/ja.md)
 		- 画面遷移(Transitions)
 		- Flipbook Animation

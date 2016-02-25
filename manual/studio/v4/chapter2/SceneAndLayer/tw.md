@@ -1,7 +1,7 @@
 #製作場景與UI：
-&emsp;&emsp;[1、認識cocos編輯器主介面。](../../chapter3/Editor/UIOverview/tw.md)
+&emsp;&emsp;[1,認識cocos編輯器主介面。](../../chapter3/Editor/UIOverview/tw.md)
 
-&emsp;&emsp;2、製作新場景：
+&emsp;&emsp;2,製作新場景：
 
 &emsp;&emsp;1）打開我們新建的HelloCocos項目，新建場景名稱為“Scene1”，如下圖：           
  
@@ -15,7 +15,7 @@
   
 ![image](res_tw/image0003.png)
 
-&emsp;&emsp;4）導入了Common、LevelSelecttion資源檔夾，如下圖：
+&emsp;&emsp;4）導入了Common,LevelSelecttion資源檔夾，如下圖：
 
 ![image](res_tw/image0004.png)
  
@@ -29,9 +29,9 @@
 
 ![image](res_tw/image0008.png)
  
-&emsp;&emsp;Cocos Studio拼接場景、UI、動畫都是延續這個思路，先導入資源，然後創建控制項，再給控制項賦資源，改變控制項的屬性，達到效果，這一點要記清楚。
+&emsp;&emsp;Cocos Studio拼接場景,UI,動畫都是延續這個思路，先導入資源，然後創建控制項，再給控制項賦資源，改變控制項的屬性，達到效果，這一點要記清楚。
 
-&emsp;&emsp;3、製作新UI：
+&emsp;&emsp;3,製作新UI：
 
 &emsp;&emsp;1）新建圖層，命名為“Layer”，如下圖：
 
