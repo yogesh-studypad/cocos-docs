@@ -41,7 +41,7 @@ You can see the constraint box(in grey or blue) when hovering on or selecting th
 
 ![bounding box](scene/boundingbox.png)
 
-Node's `size` attribute plays an important role in multiresolution adapt and layout strategy. For more information about usage of node size, please read [multiresolution adapt and elements aligning](../..ui/multi-resolution-align.md).
+Node's `size` attribute plays an important role in multiresolution adapt and layout strategy. For more information about usage of node size, please read [multiresolution adapt and elements aligning](../../ui/multi-resolution.md).
 
 ### Multiselect nodes
 

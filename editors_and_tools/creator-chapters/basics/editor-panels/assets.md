@@ -4,7 +4,7 @@
 
 ## Introduction for the interface
 
-**assets** shows the contents in project assets folders in tree view, but be noticed that only the assets put under `assets` catalog in the project folder will be showed in here. Please read [Project structure] for project folder structure (../project-structure.md). Now let me introduce the elements in each interface:
+**assets** shows the contents in project assets folders in tree view, but be noticed that only the assets put under `assets` catalog in the project folder will be showed in here. Please read [Project structure](../../getting-started/project-structure.md) for project folder structure. Now let me introduce the elements in each interface:
 
 ![assets overview](assets/overview.png)
 
@@ -22,7 +22,7 @@ The rest showed in the list other than folders are all asset files. Files in the
 - ![javascript](assets/javascript.png)**script assets**: the JavaScript file programmer writes and uses `js` as the filename extension. We add function and game logic to the component by editing these scripts.
 - ![scene](assets/scene.png)**scene assets**: scene file opened by double click. Only the scene file is opened can we keep creating and making the contents.
 
-More common asset types and asset workflow, please read [Asset workflow](../asset-workflow/index.md).
+More common asset types and asset workflow, please read [Asset workflow](../../asset-workflow/index.md).
 
 ### Create assets
 
@@ -69,7 +69,7 @@ The right click menu of **assets** also includes the following operation:
 - `rename`: rename the asset
 - `create`: same function with **create** button, it will add asset to the current selected folder. If the current selected one is asset file, it will add new asset to the same folder with current selected asset.
 - `show in explorer（Windows）or Finder （Mac）`: open the asset folder in the file manager window of operating system.
-- `Go to the asset location in Library`: open the imported asset location in `Library` of project folder. Please read [project structure](../project-structure.md) for detailed information.
+- `Go to the asset location in Library`: open the imported asset location in `Library` of project folder. Please read [project structure](../../getting-started/project-structure.md) for detailed information.
 - `Show UUID`: show the current selected asset's UUID in**console** window.
 - `Refresh`: rerun the import operation of this asset.
 

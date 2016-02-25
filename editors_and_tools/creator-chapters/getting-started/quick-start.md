@@ -222,7 +222,7 @@ Next invoke the newly added `setJumpAction` method in the `onLoad` method and im
 
 The `onLoad` method will be immediately implemented after loading the scene. So we will put operations and logic concerning initialization into it.
 
-After the script is saved, we can start running the game for the first time! 
+After the script is saved, we can start running the game for the first time!
 
 Click the **preview** button at the top of Cocos Creator editor [preview](quick-start/preview_game.png)! Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character--a purple monster jumping lively and continuously in the scene.
 
@@ -306,7 +306,7 @@ In the end, modify the content of the `update` method by adding settings for the
             this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
         }
 
-        // update the position of the main character according to the current speed 
+        // update the position of the main character according to the current speed
         this.node.x += this.xSpeed * dt;
     },
 ```
@@ -359,7 +359,7 @@ The settings needed by Star Prefab are now finished. Now drag the `star` node fr
 ![star prefab](quick-start/prefab_asset.png)
 
 Now the `star` node can be deleted from the scene. We can dynamically use the Prefab resource of stars in the script to generate stars.
- 
+
 ### Adding game control script
 
 The generation of stars is a part of the game's main logic. Therefore we need to add a script named `Game` and make it the script of the game's main logic. Logic concerning scoring, failure and restarting will be added to this script later.
@@ -392,7 +392,7 @@ Add the `Game` script and put it under the `assets/scripts` folder. Double click
 
 After saving the script, add the `Game` component to the `Canvas` node in **arrangement editor** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from **resource manager** to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
 
-Next, drag the `ground` and `Player` nodes from **arrangement editor** to properties of the same name in the component to finish the node quotation. 
+Next, drag the `ground` and `Player` nodes from **arrangement editor** to properties of the same name in the component to finish the node quotation.
 
 Then set the values of the `Min Star Duration` and `Max Star Duration` properties as `3` and `5`. Later when generating stars, we will choose a random value between these two values, which is the duration of the star.
 
@@ -425,7 +425,7 @@ Next, we will continue to modify the `Game` script by adding the logic of genera
         // according to the width of the screen, randomly obtain an anchor point of star on the x axis
         var maxX = this.node.width/2;
         randX = cc.randomMinus1To1() * maxX;
-        // return to the anchor point of the star 
+        // return to the anchor point of the star
         return cc.p(randX, randY);
     }
 ```
@@ -457,9 +457,9 @@ Open the `Star` script after saving, now we can use the `player` node quoted in 
 ```js
 // Star.js
     getPlayerDistance: function () {
-        // judge the distance according to the position of the player node 
+        // judge the distance according to the position of the player node
         var playerPos = this.game.player.getPosition();
-        // calculate the distance between two nodes according to their positions 
+        // calculate the distance between two nodes according to their positions
         var dist = cc.pDistance(this.node.position, playerPos);
         return dist;
     },
@@ -723,7 +723,7 @@ Now we can fully enjoy the newly created game. How many scores can you get? Don'
 
 Congratulations! You have finished the first game created by Cocos Creator. We hope this quick start tutorial for beginners can help you understand the basic concepts and workflows in the game development process of Cocos Creator. If you are not interested in writing and learning script programming, you can directly copy and paste the completed script from the completed project.
 
-Next, you can continue to perfect this game. The following are some recommended improving methods: 
+Next, you can continue to perfect this game. The following are some recommended improving methods:
 
 - Add a simple start menu, display a start button when the game starts running. Only after clicking the button will the game start
 - Add a simple menu interface for the failure of the game. Only after clicking the button will the game restart after failure
@@ -743,10 +743,5 @@ Today's tutorial ends here. You can immediately start creating your second Cocos
 
 According to your experience of using the engine, you can continue to read:
 
-- [Cocos2d-x User Guide](cocos2d-js-guide.md)
+- [Cocos2d-x User Guide](cocos2d-x-guide.md)
 - [Unity User Guide](unity-guide.md)
-
-
-
-
-

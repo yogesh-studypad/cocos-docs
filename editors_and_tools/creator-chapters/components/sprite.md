@@ -10,8 +10,8 @@ Click the 慳dd component?button at the bottom of the **attribute inspector** an
 
 | Attribute |   Function Explanation
 | -------------- | ----------- |
-| Atlas | [Atlas resource](asset-workflow/atlas.md) which the Sprite display image resource belongs to.
-| Sprite Frame | [SpriteFrame image resource](asset-workflow/sprite.md) which is used to render the Sprite.
+| Atlas | [Atlas resource](../asset-workflow/atlas.md) which the Sprite display image resource belongs to.
+| Sprite Frame | [SpriteFrame image resource](../asset-workflow/sprite.md) which is used to render the Sprite.
 | Type | Rendering mode, currently includes Simple and Sliced rendering modes.
 | Use Original Size | Whether to use the original size of the image resource as the Sprite node size.
 

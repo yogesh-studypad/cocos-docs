@@ -30,10 +30,9 @@ Meanwhile, you can initialize, update and even destroy nodes by registering a ce
 - [JavaScript quick-start](javascript-primer.md)
 
 ## Reference
-
-- [Attribute parameter reference](reference/attributes.md)
-- [Recommend coding standards](reference/coding-standards.md)
-- [SizeProvider](reference/size-provider.md)
+- [Attribute parameter reference](attributes.md)
+- [Recommend coding standards](coding-standards.md)
+- [SizeProvider](size-provider.md)
 
 
 <hr>
