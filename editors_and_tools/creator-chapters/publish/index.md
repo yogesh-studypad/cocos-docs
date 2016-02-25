@@ -1,9 +1,9 @@
 # The cross-platform release of games
 
-- [publish-web.md]
-- [cocos-framework.md]
-- [publish-native.md]
+- [Publish -> Web](publish-web.md)
+- [Cocos Framework](cocos-framework.md)
+- [Publish -> native](publish-native.md)
 
 <hr>
 
-Continue on to read about [publish-web.md].
+Continue on to read about [Publish -> Web](publish-web.md).

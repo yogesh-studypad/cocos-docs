@@ -84,4 +84,4 @@ Enter text in the search box at the top right of **assets** to filter filenames 
 
 ---
 
-Keep moving on to [Scene editor](scene.md).
+Continue on to read about [Scene editor](scene.md).

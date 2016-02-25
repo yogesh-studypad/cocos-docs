@@ -63,4 +63,4 @@ Button currently only supports the On Click event. This means only when users cl
 
 ---
 
-Keep moving on to read [ProgressBar Component reference](progress.md).
+Continue on to read about [ProgressBar Component reference](progress.md).

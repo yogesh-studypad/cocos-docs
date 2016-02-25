@@ -4,13 +4,13 @@ Welcome to the Cocos Creator User Manual! This User Manual provides detailed ins
 
 ## General Introduction
 
-- (getting-started/index.md)
-- (basics/index.md)
-- (asset-workflow/index.md)
-- (content-workflow/index.md)
-- (scripting/index.md)
-- (animation/index.md)
-- (ui/index.md)
-- (components/index.md)
-- (publish/index.md)
-- (extension/index.md)
+- [Getting Started](getting-started/index.md)
+- [Basics](basics/index.md)
+- [Asset Workflow](asset-workflow/index.md)
+- [Content Workflow](content-workflow/index.md)
+- [Scripting](scripting/index.md)
+- [Animation](animation/index.md)
+- [UI](ui/index.md)
+- [Components](components/index.md)
+- [Publishing](publish/index.md)
+- [Extensions](extension/index.md)

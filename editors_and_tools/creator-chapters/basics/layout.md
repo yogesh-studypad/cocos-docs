@@ -32,4 +32,4 @@ Panels in a stack can be very practical when the desktop resolution is not enoug
 
 ---
 
-Continue on to read about [construct preview](preview-build.md).
+Continue on to read about [Construct Preview](preview-build.md).

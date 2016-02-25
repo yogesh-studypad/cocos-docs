@@ -74,4 +74,4 @@ Making use of the percentage alignment distance, we can create UI elements that 
 
 ---
 
-Continue on to read about [label-layout.md].
+Continue on to read about [Label Layout](label-layout.md).

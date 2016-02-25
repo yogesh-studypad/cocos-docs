@@ -48,4 +48,4 @@ Next we will introduce the function of each folder.
 
 ---
 
-Continue on to read [support.md].
+Continue on to read about [Support](support.md).

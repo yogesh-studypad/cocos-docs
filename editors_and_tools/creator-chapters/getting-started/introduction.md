@@ -8,17 +8,17 @@
 - **A**: It's completely customized for the engine. It's a all-in-one editor that can serve the whole workflow from design, development, preview, adjustment to release.
 
 
-- **Q**: Can I use Cocos Creator even if I don't know how to write a program? 
+- **Q**: Can I use Cocos Creator even if I don't know how to write a program?
 - **A**: Of course! Cocos Creator editor provides two kinds of workflows: one design-oriented and one develop-oriented, and a simple and smooth cooperative method(with an appropriate division of labor).
 
 
-- **Q**: Which platform can the games developed by Cocos Creator support? 
+- **Q**: Which platform can the games developed by Cocos Creator support?
 - **A**: Currently, Cocos Creator can release games on Web, Android, iOS, and the click&play Cocos Play smartphone web-based game platform with original functions. It can truly achieve the goal of one development for all platforms.
 
 
 ## Product positioning
 
-Cocos Creator is a game development tool focused on content creation, which has realized features like thorough scriptability, componentization and data driven, etc. on the basis of Cocos2d-x. 
+Cocos Creator is a game development tool focused on content creation, which has realized features like thorough scriptability, componentization and data driven, etc. on the basis of Cocos2d-x.
 
 ## Framework freatures
 
@@ -39,7 +39,7 @@ What the combination of engine and editor brings is the functional development m
 - Designers set up all the data and resources using the graphic interface
 - (In this way, from the simple to the complex, all the workflows that you can imagine can be realized)
 
-The development idea that focused on workflows can help developers of different duties quickly find the breakthrough point to maximize their function at work and smoothly cooperate with other group members. 
+The development idea that focused on workflows can help developers of different duties quickly find the breakthrough point to maximize their function at work and smoothly cooperate with other group members.
 
 ## Workflow introduction
 
@@ -76,4 +76,4 @@ In the end, the finished game can be released on various platforms by using the 
 
 ---
 
-Continue to read the instructory document of [install.md].
+Continue on to read about [Installation](install.md).

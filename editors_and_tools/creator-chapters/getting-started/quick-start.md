@@ -21,7 +21,7 @@ You can also download the completed project. If there is any confusion when foll
 
 ## Open the original project
 
-If you still don't know how to obtain and start Cocos Creator, please read the [install.md] section.
+If you still don't know how to obtain and start Cocos Creator, please read the [Install](install.md) section.
 
 1. Firstly, start Cocos Creator, and choose **Open other projects**
 2. In the pop up input field for selecting folder, choose `start_project` that has just been downloaded and decompressed, and click the **Open** button
@@ -31,7 +31,7 @@ If you still don't know how to obtain and start Cocos Creator, please read the [
 
 ## Check game resources
 
-Our original project has included all the game resources needed; therefore, you don't need to import any other resources. For details on importing resources, please read content related to [../asset-workflow/index.md].
+Our original project has included all the game resources needed; therefore, you don't need to import any other resources. For details on importing resources, please read content related to [Asset Workflow](../asset-workflow/index.md).
 
 Next, let's get to know the resources of the project. Please pay attention to a panel named **Resource manager**, on which all the resource allocation graphs of the project are shown.
 
@@ -44,7 +44,7 @@ We can see that the root directory of the project resources is named as **assets
 Every resource is a document, which, after being imported into the project, will be recognized as different types of resources according to the differences in extension name. Its icon will be differentiated too. Next, let's take a look at the respective types and usages of the resources in the project.
 
 - ![audioclip](quick-start/audio-clip.png) audio document, which is an mp3 document generally. Audio documents named as `jump` and `score` will be played respectively when the character jumps and scores.
-- ![bmfont](quick-start/bitmap-font.png) bitmap font, which is jointly formed by a fnt document and png document. Bitmap font is a commonly used font resource in game development. For detailed information, please read[../asset-workflow/font.md]
+- ![bmfont](quick-start/bitmap-font.png) bitmap font, which is jointly formed by a fnt document and png document. Bitmap font is a commonly used font resource in game development. For detailed information, please read [Font](../asset-workflow/font.md)
 - There are various kinds of abbreviated icons, all of which are image resources, normally a png or jpg document. After being imported into the project, the image document will be crudely processed into the resource of **texture** type. Then these resources can be dragged into scenes or component properties for use.
 
 
@@ -74,7 +74,7 @@ The `Design Resolution` property here stipulates the design resolution of the ga
 
 Being provided with the function of adjusting to different resolutions, we will normally put all the nodes in charge of image display in the scene under **Canvas**. In this way, when the `scale` property of **Canvas** changes, all the images, as its subnodes, will zoom together to adjust to the sizes of different screens.
 
-For more detailed information, please read [../components/canvas.md]. Currently, we only need to know that the scene images added next will all be put under the **Canvas** node.
+For more detailed information, please read [Canvas](../components/canvas.md). Currently, we only need to know that the scene images added next will all be put under the **Canvas** node.
 
 
 ## Set ting up a scene image
@@ -332,7 +332,7 @@ The main character can jump freely now so we need to set up a goal for players. 
 
 ### Create Prefab
 
-As for the nodes that need to be created repeatedly, we can save it as a **Prefab** resource, which can be a template for the dynamic generation of nodes. For more information about **Prefab**, please read [../asset-workflow/prefab.md].
+As for the nodes that need to be created repeatedly, we can save it as a **Prefab** resource, which can be a template for the dynamic generation of nodes. For more information about **Prefab**, please read [Prefab](../asset-workflow/prefab.md).
 
 Firstly, drag the `assets/textures/star` resource from **resource manager** into the scene, the position of which is not restricted. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
 
@@ -735,7 +735,7 @@ Next, you can continue to perfect this game. The following are some recommended 
 
 For editions that have been improved in all the above aspects, you can download [evolution edition project](https://github.com/cocos-creator/tutorial-first-game/releases/download/0.7.0/polished_project.zip) for reference and learning, which will not be discussed in detail here.
 
-Moreover, if you want to release the completed game on a server to share with your friends, you can read the content of the [../basics/preview-build.md] section.
+Moreover, if you want to release the completed game on a server to share with your friends, you can read the content of the [Preview Build](../basics/preview-build.md) section.
 
 Today's tutorial ends here. You can immediately start creating your second Cocos Creator game or continue reading this guide. For any questions on this quick start tutorial, you can send feedback on [Warehouse of this tutorial on Github](https://github.com/cocos-creator/tutorial-first-game).
 

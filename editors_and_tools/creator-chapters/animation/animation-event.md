@@ -32,4 +32,4 @@ If you want add imported parameters, you can click ??or ??near Params. Only thre
 
 ---
 
-Continue on to read about [Scripting animations](scripting-animation.md).
+Continue on to read about [Scripting Animations](scripting-animation.md).

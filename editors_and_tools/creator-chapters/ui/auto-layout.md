@@ -20,7 +20,7 @@ In the horizontal layout type, the Layout component will not interfere with the 
 
 When `Layout Type` is set as `Vertical`, all the subnodes will automatically be arrayed vertically and the height of the Layout node will be set up according to the sum total of the subnodes' `Height`.
 
-In the vertical layout type, the Layout component will not modify the position or width properties of the node on the x axis. Subnodes can only be neatly arrayed by adding the Widget and opening the Left or Right alignment mode. 
+In the vertical layout type, the Layout component will not modify the position or width properties of the node on the x axis. Subnodes can only be neatly arrayed by adding the Widget and opening the Left or Right alignment mode.
 
 ## Node Direction
 
@@ -38,8 +38,8 @@ You can set up two directions:  `Top to Bottom` or `Bottom to Top`. The former w
 
 We will update this part of the document in the next edition.
 
-For the properties of other Layout components, please check [../components/layout.md] document.
+For the properties of other Layout components, please check [Layout](../components/layout.md) document.
 
 <hr>
 
-Continue on to read about [list-with-data.md].
+Continue on to read about [List with Data](list-with-data.md).

@@ -1,6 +1,6 @@
 # Cocos2d-x User Guide
 
-Cocos Creator is a new type of game development tool oriented towards content creation that has completely integrated the componentized edition Cocos2d-x WEB, by which you can launch games on platforms like Web, iOS, Android, Mac, Windows, etc.. Moreover, you can use it to directly launch games on Cocos Play platform, grasping the new opportunity brought by the rapid development of the channel for mobile web games. For more introductions to Cocos Creator, please refer to [introduction.md].
+Cocos Creator is a new type of game development tool oriented towards content creation that has completely integrated the componentized edition Cocos2d-x WEB, by which you can launch games on platforms like Web, iOS, Android, Mac, Windows, etc.. Moreover, you can use it to directly launch games on Cocos Play platform, grasping the new opportunity brought by the rapid development of the channel for mobile web games. For more introductions to Cocos Creator, please refer to [Introduction](introduction.md).
 
 The aim of this document is to introduce the users of Cocos2d-x to Cocos Creator and help them learn how to use the new editor as soon as possible.
 This document will discuss possible problems that may occur in the transition from Cocos2d-x to Cocos Creator development and offer relative solutions, which will not go deep into framework details but provide links to detailed reference documents of different parts.
@@ -49,7 +49,7 @@ Serialization and deserialization supports most public properties in Cocos Creat
 
 What's more, the power of data driven lies in the fact that components edited by users themselves can also make property declarations. These properties can be edited in editor, saved in scene data, and finally deserialized into game scenes when running.
 
-_The source database is presented as [../basics/editor-panels/assets.md] in the editor._
+_The source database is presented as [Assets](../basics/editor-panels/assets.md) in the editor._
 
 ### Understanding workflows of Cocos Creator from the angle of data driven
 
@@ -67,7 +67,7 @@ In Cocos2d-JS, the Render device will traverse the scene's node tree to generate
 
 The most essential difference is: What the logic tree concerns is game logic but not render relation.
 
-Th logic tree will generate the scene's render tree and decide rendering order. But developers don't need to worry about these, they only need to make sure the correctness of the displaying effect in editor. In [../basics/editor-panels/hierarchy.md] of editor, developers can adjust the order and parent-child relationship of the logic tree.
+Th logic tree will generate the scene's render tree and decide rendering order. But developers don't need to worry about these, they only need to make sure the correctness of the displaying effect in editor. In [Hierarchy](../basics/editor-panels/hierarchy.md) of editor, developers can adjust the order and parent-child relationship of the logic tree.
 
 ### Scene Management
 
@@ -99,7 +99,7 @@ And this leads to the biggst difference between Cocos2d-JS and Cocos Creator: Ho
 
 In Cocos2d-JS, developers can realize behavior extensions for various types of nodes. But in Cocos Creator, such operation is forbidden. All the extensions should be realized by adding components. The contest between inheritance and assembly is long-standing, which will not be discussed in detail here. But in componentized framework like Cocos Creator, assembly is the most natural extension method.
 
-For more information on the component system, please refer to chapters like [../content-workflow/node-component.html] and [../components/index.html], etc..
+For more information on the component system, please refer to chapters like [Node Component](../content-workflow/node-component.md) and [Components](../components/index.md), etc..
 
 ### Coordinate System and Anchor Point
 
@@ -122,8 +122,8 @@ In Cocos Creator, we preserved the behaviors of lots of important categories and
 - `cc.textureCache`
 - `cc.sys`
 - `cc.visibleRect`
-- [../scripting/actions.md]
-- Some types of render nodes: Menu and MenuItem、ClippingNode、ProgressTimer、MotionStreak、ParallaxNode、RenderTexture、DrawNode、relative categories of Tile map, etc.
+- [scripting actions](../scripting/actions.md)
+- Some types of render nodes: Menu and MenuItem,ClippingNode,ProgressTimer,MotionStreak,ParallaxNode,RenderTexture,DrawNode,relative categories of Tile map, etc.
 - Chipmunk physics engine and PhysicsDebugNode
 - Types of basic data
 
@@ -131,7 +131,7 @@ Points to be noted:
 
 1. Those types of preserved render nodes listed above can only interact with the render tree and can't be used together with logic nodes and components.
 2. Action system supports not just render nodes, but all the actions operated on Transform support logic nodes too.
-3. `cc.scheduler` supports components, which contain interfaces like `schedule`、`scheduleOnce`、`unschedule`、`unscheduleAllCallbacks`
+3. `cc.scheduler` supports components, which contain interfaces like `schedule`,`scheduleOnce`,`unschedule`,`unscheduleAllCallbacks`
 4. Though event manager is preserved, logic nodes have a set of new event API. Direct use of event manager is not recommended. For detailed information, please refer to the introduction of the event system that follows
 
 ### Event System
@@ -159,7 +159,7 @@ Such an event distribution method has changed from centralized distribution by `
 | `cc.Node.EventType.MOUSE_UP` | 'mouseup' |
 | `cc.Node.EventType.MOUSE_WHEEL` | 'mousewheel' |
 
-Henceforth, developers can directly respond to various MOUSE and TOUCH events of nodes. They no longer need to judge whether contact points are included in nodes. Moreover, the new event system supports event bubbling. Suppose the TOUCH event is triggered on a node, if the event monitor didn't stop bubbling, its parent node would trigger the same TOUCH event as well. For a concrete method of use for the event system, please refer to [../scripting/events.md]
+Henceforth, developers can directly respond to various MOUSE and TOUCH events of nodes. They no longer need to judge whether contact points are included in nodes. Moreover, the new event system supports event bubbling. Suppose the TOUCH event is triggered on a node, if the event monitor didn't stop bubbling, its parent node would trigger the same TOUCH event as well. For a concrete method of use for the event system, please refer to [Scripting Events](../scripting/events.md)
 
 ## 4. Next step
 
@@ -167,4 +167,4 @@ In a highly generalized way, the text above introduced some of the design ideas 
 
 ---
 
-Continue on to read about [project-structure.md].
+Continue on to read about [Project Structure](project-structure.md).

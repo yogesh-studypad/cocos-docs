@@ -60,4 +60,4 @@ Code libraries needed for zipping and sending to the Android platform:
 
 ---
 
-Continue on to read about [../basics/index.md].
+Continue on to read about [Basics](../basics/index.md).

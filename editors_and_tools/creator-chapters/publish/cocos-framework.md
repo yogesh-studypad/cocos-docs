@@ -88,4 +88,4 @@ In the end, if zipping still fails, you can try to create a standard Cocos2d-x p
 
 ---
 
-Continue on to read about [publish-native.md].
+Continue on to read about [Publising -> Native](publish-native.md).

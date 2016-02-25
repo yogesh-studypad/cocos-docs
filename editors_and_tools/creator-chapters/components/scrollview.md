@@ -42,4 +42,4 @@ To build a connection, you can drag a node with the ScrollBar component in the *
 
 ---
 
-Keep moving on to [ScrollBar component reference](scrollbar.md).
+Continue on to read about [ScrollBar component reference](scrollbar.md).

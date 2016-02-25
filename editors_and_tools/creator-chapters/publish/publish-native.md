@@ -48,7 +48,7 @@ Click the **open** button near the release path, the constructing release path w
 
 ![native projects](publish-native/native_projects.png)
 
-The red frames in the picture indicate projects of different original platforms. Next, only by using IDE(such as: Xcode、Eclipse、Visual Studio) that corresponds to the original platform to open these projects, can you make further operations like compilation, preview and release. For the usage instructions for original platform's IDE, please search related information on your own, which will not be discussed in detail here.
+The red frames in the picture indicate projects of different original platforms. Next, only by using IDE(such as: Xcode,Eclipse,Visual Studio) that corresponds to the original platform to open these projects, can you make further operations like compilation, preview and release. For the usage instructions for original platform's IDE, please search related information on your own, which will not be discussed in detail here.
 
 
 

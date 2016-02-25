@@ -25,4 +25,4 @@ Normally we will also designate a background picture to ScrollBar. This can be u
 
 ---
 
-Keep moving on to [Layout component reference](layout.md).
+Continue on to read about [Layout component reference](layout.md).

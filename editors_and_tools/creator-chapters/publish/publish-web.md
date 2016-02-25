@@ -31,4 +31,4 @@ For the construction of Web server, you can search for solutions such as Apache,
 
 ---
 
-Continue on to read about [cocos-framework.md].
+Continue on to read about [Cocos Framework](cocos-framework.md).

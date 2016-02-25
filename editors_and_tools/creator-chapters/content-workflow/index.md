@@ -1,7 +1,7 @@
 # Content creation workflow
 
 
-- [Node and component](node-component.md)
+- [Node and Component](node-component.md)
 - [Coordinate system and transformation](transform.md)
 - [Manage node hierarchy and display order](node-tree.md)
 - [Create scene image with scene editor](scene-editing.md)
@@ -14,4 +14,4 @@ Except for the routine scene elements of editing and creating, we will introduce
 
 ---
 
-Continue on to read about [node and component](node-component.md).
+Continue on to read about [Node and Component](node-component.md).

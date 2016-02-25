@@ -26,7 +26,7 @@ After opening the `Hello World` scene, we can see all the contents of this templ
 
 ![breakdown](hello-world/breakdown.jpg)
 
-The content of the scene will respectively appear in four core panels **resource manager, arrangement manager, scene editor and property checker** according to workflows. Introductions to the editor interface and main panel will be shown in detail in the following [../basics/editor-overview.md] section.
+The content of the scene will respectively appear in four core panels **resource manager, arrangement manager, scene editor and property checker** according to workflows. Introductions to the editor interface and main panel will be shown in detail in the following [Editor Overview](../basics/editor-overview.md) section.
 
 ## Preview scene
 
@@ -60,4 +60,4 @@ The content of this section lets us know how to start the workflows of Cocos Cre
 
 ---
 
-Continue on to read about [quick-start.md].
+Continue on to read about [Quick Start](quick-start.md).

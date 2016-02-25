@@ -41,4 +41,4 @@ For further information please read the [attribute inspector](editor-panels/insp
 
 **Toolbar** includes the scene editing tool and operating button for game preview. The far right side shows the access address for remote testing and debugging and the device number of the connected device.
 
-Continue on to read about [toolbar](toolbar.md).
+Continue on to read about [Toolbar](toolbar.md).

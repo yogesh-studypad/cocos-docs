@@ -66,4 +66,4 @@ It's worth mentioning that a single node can only add one rendering component in
 
 <hr>
 
-Continue on to read about [coordinate system and transform](transform.md).
+Continue on to read about [Coordinate system and Transform](transform.md).

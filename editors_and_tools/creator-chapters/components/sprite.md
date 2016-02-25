@@ -32,4 +32,4 @@ Currently, the Sprite component supports two rendering modes:
 
 ---
 
-Keep moving on to [Label component reference](label.md).
+Continue on to read about [Label component reference](label.md).

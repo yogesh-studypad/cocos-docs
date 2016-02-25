@@ -16,7 +16,7 @@ cc.Class({
     this.node.on('mousedown', function ( event ) {
       console.log('Hello!');
     });
-  },  
+  },
 });
 ```
 
@@ -132,4 +132,4 @@ You can refer to the `cc.Event` and API files of its child category for a comple
 
 ## System built-in event
 
-Above are the general rules for listening to the event and launching the event. Cocos Creator has built in system events like mouse and touch for `cc.Node`. You can refer to [/internal-events.md]
+Above are the general rules for listening to the event and launching the event. Cocos Creator has built in system events like mouse and touch for `cc.Node`. You can refer to [Internal Events](internal-events.md).
