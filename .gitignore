@@ -9,6 +9,10 @@ static-pages/api-refs/
 *.epub
 *.pdf
 
+# scripts create these, ignore
+*.orig
+*.html
+*.orig.bak
 *.html.bak
 
 # Mac system files
