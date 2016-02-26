@@ -1,10 +1,10 @@
-# Attribute inspector
+# Inspector
 
 ![scene-panel](../index/inspector.png)
 
-**Attribute inspector** is the working area where we check and edit the current selected nodes and component attributes. Select the node in **Scene editor** or **hierarchy manager**, attributes of this node and attributes of all the components of this node will display in **attribute inspector** for your inquiry and editing.
+**Attribute inspector** is the working area where we check and edit the current selected nodes and component attributes. Select the node in **Scene editor** or **Hierarchy**, attributes of this node and attributes of all the components of this node will display in **Inspector** for your inquiry and editing.
 
-From top to bottom, the attribute inspector panel displays:
+From top to bottom, the Inspector panel displays:
 
 - node activating switch and node name
 - node attribute
@@ -14,7 +14,7 @@ From top to bottom, the attribute inspector panel displays:
 
 The check box on the top left corner indicates the activating state of node. When the used node is not activated, all the components related to image rendering on the node will be shut down. The whole node including child nodes will be hidden efficiently.
 
-What displays at the right side of the node activating switch is node name, which is in accordance with the node name showed in **hierarchy manager**.
+What displays at the right side of the node activating switch is node name, which is in accordance with the node name showed in **Hierarchy**.
 
 ## Node attribute
 
@@ -28,11 +28,11 @@ For more details on node attribute, please read [Transform](../../content-workfl
 
 All the components mounted to a node and their attributes will be listed under node attribute. Just like node attribute, you can switch the fold/unfold status of a component attribute by clicking its name. When there are many components mounted to a node, you can get larger working area by folding the component attributes that are not frequently modified.
 
-Users create a component by script, the attribute of which is declared by the script. Different types of attributes have different widget appearances and editing methods in **attribute inspector**. The defining method of attribute will be introduced in detail in [Scripting Properties](../../scripting/properties.md).
+Users create a component by script, the attribute of which is declared by the script. Different types of attributes have different widget appearances and editing methods in **Inspector**. The defining method of attribute will be introduced in detail in [Scripting Properties](../../scripting/properties.md).
 
 ## Edit an attribute
 
-**Attribute** is a public variable that declared in the component script and can be serialized and stored in the scene and animation data. We can quickly modify the attribute settings by **attribute inspector** to realize the goal of adjusting game data and playing method with out programming.
+**Attribute** is a public variable that declared in the component script and can be serialized and stored in the scene and animation data. We can quickly modify the attribute settings by **Inspector** to realize the goal of adjusting game data and playing method with out programming.
 
 Normally we can divide attributes into **value type** and **reference type** according to the different memory location used by variables.
 

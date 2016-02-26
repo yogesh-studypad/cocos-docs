@@ -7,7 +7,7 @@ along with the `Task` component and the `ScrollBar` component can also be added 
 
 ![scrollview-inspector](./scrollview/scrollview-inspector.png)
 
-Click the `add component` button at the bottom of the **attribute inspector** and select `ScrollView` from `add UI component` You can then add the ScrollView component to the node.
+Click the `add component` button at the bottom of the **Inspector** and select `ScrollView` from `add UI component` You can then add the ScrollView component to the node.
 
 
 ## ScrollView attribute
@@ -38,7 +38,7 @@ Here, the Viewport is used to define a scroll area that can be displayed. As a r
 
 ScrollBar is optional. You can choose to set either a horizontal or vertical ScrollBar or of course set them both.
 
-To build a connection, you can drag a node with the ScrollBar component in the **hierarchy manager** over to the corresponding field in ScrollView.
+To build a connection, you can drag a node with the ScrollBar component in the **Hierarchy** over to the corresponding field in ScrollView.
 
 ---
 

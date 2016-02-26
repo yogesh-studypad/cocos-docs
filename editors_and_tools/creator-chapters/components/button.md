@@ -6,7 +6,7 @@ The button component responds to a click from the user. When the user clicks a B
 
 ![button-color](./button/button-color.png)
 
-Click the ‘add component’ button at the bottom of the **attribute inspector** and select ‘Button’ from ‘add UI component’. You can then add the Button component to the node.
+Click the ‘add component’ button at the bottom of the **Inspector** and select ‘Button’ from ‘add UI component’. You can then add the Button component to the node.
 
 ## Button attribute
 

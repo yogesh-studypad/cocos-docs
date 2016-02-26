@@ -5,11 +5,11 @@
 Parameter name  | Explanation | Type | Default
 --- | --- |:---:|:---:
 type | restrict the data type for attribute | (Any) | undefined
-visible | show or hide in the **attribute inspector** panel| boolean | (note 1)
-displayName | show another name in the **attribute inspector** panel | string |
-tooltip | add Tooltip for attribute in the **attribute inspector** panel | string |
-multiline | use multiple lined text box in the **attribute inspector** panel | boolean | false
-readonly | read-only in the **attribute inspector** panel | boolean | false
+visible | show or hide in the **Inspector** panel| boolean | (note 1)
+displayName | show another name in the **Inspector** panel | string |
+tooltip | add Tooltip for attribute in the **Inspector** panel | string |
+multiline | use multiple lined text box in the **Inspector** panel | boolean | false
+readonly | read-only in the **Inspector** panel | boolean | false
 range | restrict the maximum and minimum values in slider form | [min, max] |
 
 ### Serialization associated attributes

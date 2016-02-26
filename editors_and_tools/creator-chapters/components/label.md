@@ -6,7 +6,7 @@ The Label component is used to show a piece of text in the system font, TrueType
 
 ![label-property](./label/label-property.png)
 
-Click the 慳dd component?button at the bottom of the **attribute inspector** and select 慙abel?from 慳dd rendering component? then add the Label component to the node.
+Click the **Add Component** button at the bottom of the **Inspector** and select `Label` from `Add Rendering Component` to add the Label component to the node.
 
 # Label attribute
 
@@ -32,7 +32,7 @@ Click the 慳dd component?button at the bottom of the **attribute inspector** an
 
 # Detailed explanation
 
-By dragging the TTF font file and BMFont font file into the `file` attribute in the `attribute inspector` the Label component can alter the rendering font type. If you want to stop using a font file, you can use the system font again by checking `Use System Font`?
+By dragging the TTF font file and BMFont font file into the `file` attribute in the `Inspector` the Label component can alter the rendering font type. If you want to stop using a font file, you can use the system font again by checking `Use System Font`?
 
 ---`
 

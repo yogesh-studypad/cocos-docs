@@ -25,8 +25,8 @@ Code libraries needed for zipping and sending to the Android platform:
 
 - [Android SDK Windows](http://cocostudio.download.appget.cn/Cocos/CocosStore/Android-SDK-Windows.zip)
 - [Android SDK Mac](http://cocostudio.download.appget.cn/Cocos/CocosStore/android22-sdk-macosx.zip)
-- [Android NDK Windows 32位](http://cocostudio.download.appget.cn/Cocos/CocosStore/android-ndk-r10d-windows-x86.zip)
-- [Android NDK Windows 64位](http://cocostudio.download.appget.cn/Cocos/CocosStore/android-ndk-r10e-Windows.zip)
+- [Android NDK Windows 32bit](http://cocostudio.download.appget.cn/Cocos/CocosStore/android-ndk-r10d-windows-x86.zip)
+- [Android NDK Windows 64bit](http://cocostudio.download.appget.cn/Cocos/CocosStore/android-ndk-r10e-Windows.zip)
 - [Android NDK Mac](http://cocostudio.download.appget.cn/Cocos/CocosStore/android-ndk-r10e-macosx.zip)
 
 ## Other third-party tools and resources

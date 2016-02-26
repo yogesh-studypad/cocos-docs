@@ -4,7 +4,7 @@ Using Sprites is the most common way to display images in a 2D game. By adding t
 
 ![add sprite](sprite/sprite_component.png)
 
-Click the 慳dd component?button at the bottom of the **attribute inspector** and select `Sprite` from `add rendering component` You can then add the Sprite component to the node.
+Click the **Add Component** button at the bottom of the **Inspector** and select `Sprite` from `Add Rendering Component` to add the Sprite component to the node.
 
 ## Sprite attribute
 

@@ -7,7 +7,7 @@ Layout is a container component. The container can unlock the auto-layout functi
 ![vertical-layout](./layout/vertical-layout.png)
 
 
-Click `add component` button at the bottom of **attribute inspector** and then select `Layout` from `add UI component`, then you add the Layout component to the node.
+Click `add component` button at the bottom of **Inspector** and then select `Layout` from `add UI component`, then you add the Layout component to the node.
 
 
 ## Layout attribute
@@ -26,7 +26,7 @@ Click `add component` button at the bottom of **attribute inspector** and then s
 
 The default layout type is NONE after adding the Layout component. It indicates that the container won't change size and location of the sub-object. When the user places sub-object manually, the container will take the minimum rectangular region that can contain all the sub-objects as its own size.
 
-You can switch the layout container type by altering `Layout Type` in **attribute inspector**, all the layout types currently only support `Auto Resize` of the container itself.
+You can switch the layout container type by altering `Layout Type` in **Inspector**, all the layout types currently only support `Auto Resize` of the container itself.
 
 ---
 

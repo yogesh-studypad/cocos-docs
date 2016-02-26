@@ -4,7 +4,7 @@ ScrollBar allows the user to scroll a picture (not currently supported in the pu
 
 ![scrollbar.png](./scrollbar/scrollbar.png)
 
-Click the ‘add component’ button at the bottom of the **attribute inspector** and select ‘ScrollBar’ from ‘add UI component’. You can then add the ScrollBar component to the node.
+Click the ‘add component’ button at the bottom of the **Inspector** and select ‘ScrollBar’ from ‘add UI component’. You can then add the ScrollBar component to the node.
 
 
 ## ScrollBar attribute

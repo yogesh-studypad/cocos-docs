@@ -1,6 +1,6 @@
 # Coordinate system and node transformation attribute
 
-In the [Scene editor](../basics/editor-panels/scene.md) and [Node and component](node-component.md) files, we introduced that we can change a node's display behaviour by using **change tools** and editing the node's attributes in the **attribute inspector** . We will learn more about the coordinate system of where the node is and the operating principles of the node's four transformation attributes of Position, Rotation, Scale and Size in this section.
+In the [Scene editor](../basics/editor-panels/scene.md) and [Node and component](node-component.md) files, we introduced that we can change a node's display behaviour by using **change tools** and editing the node's attributes in the **Inspector** . We will learn more about the coordinate system of where the node is and the operating principles of the node's four transformation attributes of Position, Rotation, Scale and Size in this section.
 
 ## Cocos Creator coordinates system
 

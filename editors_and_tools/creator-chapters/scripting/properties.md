@@ -1,6 +1,6 @@
 # attribute declaration
 
-By employing attribute declaration in the component script, we can visually show the field of the script component in **attribute inspector** so that
+By employing attribute declaration in the component script, we can visually show the field of the script component in **Inspector** so that
 we can adjust the attribute value in the scene easily.
 
 To declare the attribute, all you need to do is put the attribute name and parameters in the cc.Class defining `properties` field, for instance:
@@ -15,7 +15,7 @@ To declare the attribute, all you need to do is put the attribute name and param
   });
 ```
 
-At this time, you can see in **attribute inspector** the two properties you just defined are shown in the inspector panel:
+At this time, you can see in **Inspector** the two properties you just defined are shown in the inspector panel:
 
 ![properties-in-inspector](assets/properties-in-inspector.png)
 
@@ -60,7 +60,7 @@ by writing its constructor in the delaration, such as:
 
 ### Complete declaration
 
-Under some circumstances, we need to add parameters for the attribute declaration. These parameters control the attribute display mode in **attribute inspector** , and
+Under some circumstances, we need to add parameters for the attribute declaration. These parameters control the attribute display mode in **Inspector** , and
 the attribute behavior in the serial scene process. For example:
 
 ```javascript
@@ -73,7 +73,7 @@ the attribute behavior in the serial scene process. For example:
   }
 ```
 
-The code above stipulates that the attribute name of the score in **attribute inspector** will be shown as “Score (player)”,
+The code above stipulates that the attribute name of the score in **Inspector** will be shown as “Score (player)”,
 and when the cursor moves on to the parameter, it will show the corresponding Tooltip.
 
 Below are the general parameters. For detailed usage please refer to[attribute parameter](attributes.md).
@@ -89,7 +89,7 @@ Below are the general parameters. For detailed usage please refer to[attribute p
 
 ### Array declaration
 
-The default of array must be set to `[]`, if you are about to edit in **attribute inspector**, then you also need to set the type into constructor, enumeration,
+The default of array must be set to `[]`, if you are about to edit in **Inspector**, then you also need to set the type into constructor, enumeration,
 or `'Integer'`,`'Float'`,`'Boolean'` and `'String'`.
 
 ```js

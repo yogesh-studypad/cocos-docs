@@ -40,17 +40,17 @@ Edit the script and save it, and Cocos Creator will automatically detect the alt
 ## Adding script into the scene node
 
 Adding the script into the scene node is actually adding a component to this node. Let's rename the new “NewScript.js” to
-“say-hello.js”. Then select the scene node you would like to add, by this time the property of this node will be shown in **attribute inspector**.
-There's an "add component" button at the very bottom of **attribute inspector**. Click the button and choose: add user script -> say-hello
+“say-hello.js”. Then select the scene node you would like to add, by this time the property of this node will be shown in **Inspector**.
+There's an "add component" button at the very bottom of **Inspector**. Click the button and choose: add user script -> say-hello
 to add a new script component.
 
 ![add-script](assets/add-script.png)
 
-If everything goes well, you will see your script shown in **attribute inspector** :
+If everything goes well, you will see your script shown in **Inspector** :
 
 ![script-in-inspector](assets/script-in-inspector.png)
 
-**Note:** You can also add script by dragging script asset into **attribute inspector**.
+**Note:** You can also add script by dragging script asset into **Inspector**.
 
 
 ---

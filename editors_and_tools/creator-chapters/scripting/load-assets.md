@@ -3,7 +3,7 @@
 Cocos Creator has a whole set of uniform asset management mechanisms. In this tutorial, we will introduce
 
 - Classification of assets
-- How to set assets in the **attribute inspector** 
+- How to set assets in the **Inspector** 
 - How to dynamically load assets by URL
 - How to get the URL of Raw Assets
 
@@ -54,9 +54,9 @@ cc.Class({
 });
 ```
 
-## How to set assets in the **attribute inspector**
+## How to set assets in the **Inspector**
 
-No matter whether using Assets or Raw Assets, as long as you define the type in the script, you can set assets easily in the**attribute inspector**. Hypothetically, we could have a component like this:
+No matter whether using Assets or Raw Assets, as long as you define the type in the script, you can set assets easily in the**Inspector**. Hypothetically, we could have a component like this:
 
 ```js
 // NewScript.js
@@ -78,11 +78,11 @@ cc.Class({
 });
 ```
 
-Here is how it looks like in the **attribute inspector** after adding it into the scene:
+Here is how it looks like in the **Inspector** after adding it into the scene:
 
 ![asset-in-inspector-null](load-assets/asset-in-inspector-null.png)
 
-Then we drag an image and a SpriteFrame separately from **assets** to the corresponding attribute in the **attribute inspector**:
+Then we drag an image and a SpriteFrame separately from **assets** to the corresponding attribute in the **Inspector**:
 
 ![asset-in-inspector-dnd](load-assets/asset-in-inspector-dnd.png)
 
@@ -101,7 +101,7 @@ In this way you can get the set asset directly from the script:
     }
 ```
 
-Although it is very straight forward to set assets in the **attribute inspector**, assets can only be pre-set in the scene without dynamic switching. If you need dynamic switching, you need to check the following contents out.
+Although it is very straight forward to set assets in the **Inspector**, assets can only be pre-set in the scene without dynamic switching. If you need dynamic switching, you need to check the following contents out.
 
 ## How to dynamically load assets by URL
 
