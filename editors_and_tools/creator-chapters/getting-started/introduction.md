@@ -28,7 +28,7 @@ It makes data driven and componentization the core game development methods, and
 
 The editor provides not only strong and complete toolchains, but also a open plugin framework. Developers can use generic front end technologies like Html + JavaScript, etc. to conveniently extend functions of the editor and customize personalized workflows.
 
-<a href="introduction/structure.png"><img src="introduction/structure.png" alt="Cocos Creator structure"></a>
+![structure](introduction/structure.png)
 
 What the combination of engine and editor brings is the functional development method of data driven and componentization, and the perfect cooperation (with an appropriate division of labor) of designers and programmers:
 
@@ -45,7 +45,7 @@ The development idea that focused on workflows can help developers of different 
 
 In the development phase, Cocos Creator has already been able to greatly improve efficiency and creativity for users. But the workflows we provided are not limited to a development level. For a successful game, not only the whole set of workflows that form development and adjustment, the assembly of commercialized SDK, multi-platform release, test to going online can't lose a part, but also these workflows need inerations of lots of times.
 
-<a href="introduction/cocos-workflow-user.jpg"><img src="introduction/cocos-workflow-user.jpg" alt="Cocos Creator workflow"></a>
+![cocos workflow user](introduction/cocos-workflow-user.jpg)
 
 Cocos Creator integrates the whole set of smartphone web-based games of Cocos Play into editor tools, so there is no need to switch between various softwares. Just open the Cocos Creator editor, various one-click automatic flows can solve all the above problems with the least time and energy. Therefore developers can focus on the development phase, and improve the competitiveness and creativity of products!
 

@@ -5,7 +5,7 @@ curves in your Animation clips.
 First, you need to understand Animation properties. These include the existing properties of the Node, such as, position rotation, etc. and the user-defined properties of the component.
 Properties that are included in a component will add the name of the component to the beginning of their own name, such as: `cc.Sprite.spriteFrame`.
 
-<a href="animation-curve/main.png"><img src="animation-curve/main.png" alt="main"></a>
+![Animation Curve](animation-curve/main.png)
 
 For example, in the image above, the position curve is the property path and the
 corresponding blue dots are animation frames.
@@ -27,12 +27,12 @@ Direct modifications of properties in recording status can automatically add cor
 
 You can also directly click the ??sign on the right side of the corresponding property in the property list, then a frame will be added to the currently selected point in time.
 
-<a href="animation-curve/add.png"><img src="animation-curve/add.png" alt="main"></a>
+![add](animation-curve/add.png)
 
 ## Choose an animation frame
 Click the created sequence frame and it will be displayed in the selected state. Now the sequence frame will turn from blue to white. If you need to select multiple sequence frames at once, you can hold down the Ctrl key and select the ones you need or directly drag and highlight them in the property field.
 
-<a href="animation-curve/selected.png"><img src="animation-curve/selected.png" alt="main"></a>
+![selected](animation-curve/selected.png)
 
 ## Move an animation frame
 If you move the mouse to any randomly chosen Node, the mouse will display left and right arrows.

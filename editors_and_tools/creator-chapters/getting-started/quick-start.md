@@ -27,7 +27,7 @@ If you still don't know how to obtain and start Cocos Creator, please read the [
 2. In the pop up input field for selecting folder, choose `start_project` that has just been downloaded and decompressed, and click the **Open** button
 3. The main window of Cocos Creator editor will be opened, and you will see the project status as follows
 
-<a href="quick-start/init_start_project.png"><img src="quick-start/init_start_project.png" alt="start project"></a>
+![start project](quick-start/init_start_project.png)
 
 ## Check game resources
 
@@ -39,7 +39,7 @@ We can see that the root directory of the project resources is named as **assets
 
 **Resource manager** can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, **Resourse manager** will present itself as illustrated below.
 
-<a href="quick-start/assets_overview.png"><img src="quick-start/assets_overview.png" alt="assets overview"></a>
+![assets overview](quick-start/assets_overview.png)
 
 Every resource is a document, which, after being imported into the project, will be recognized as different types of resources according to the differences in extension name. Its icon will be differentiated too. Next, let's take a look at the respective types and usages of the resources in the project.
 
@@ -105,7 +105,7 @@ By using this tool we can conveniently modify the size of the image node. Move t
 
 Then we need to drag the upper and lower sides to make the size of the background image fully cover the frame of the designing resolution.
 
-<a href="quick-start/background_finish.png"><img src="quick-start/background_finish.png" alt="background"></a>
+![background finish](quick-start/background_finish.png)
 
 When using **rectangle tool** to modify the size of the background image, we can see the `Size`  property of **Node** in **property checker** is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
 
@@ -117,7 +117,7 @@ In **arrangement manager**, the render order of nodes shown below will follow th
 
 According to the method of modifying the background, we can also use **rectangle tool** to set a suitable size for the ground node. When activating **rectangle tool**, by dragging the vertices and the parts other than the four sides of nodes, we can change the position of nodes. The state of set ground nodes is as illustrated below:
 
-<a href="quick-start/ground_finish.png"><img src="quick-start/ground_finish.png" alt="ground"></a>
+![ground finish](quick-start/ground_finish.png)
 
 Apart from **rectangle tool**, we can also use **move tool** ![translate gizmo](quick-start/translate_gizmo.png) to change the positions of the nodes. Try to hold down the arrow of **move tool** shown on the node and drag it, then we can change the position of the node on a single coordinate axis at one time.
 
@@ -352,7 +352,7 @@ Next, double click this script to start editing. Only one property is needed for
 
 After saving the script, add this script to the newly created `star` node. Then set up the property value of `Pick Radius` in **property checker** as `60`:
 
-<a href="quick-start/star_property.png"><img src="quick-start/star_property.png" alt="star property"></a>
+![quick start](quick-start/star_property.png)
 
 The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager**  and put it under the `star` folder in **resource manager**, then a Prefab resource named `star` will be generated.
 
@@ -505,7 +505,7 @@ The score will start from 0 when the game is started. 1 point will be added for 
 
 The completed effect is as illustrated below:
 
-<a href="quick-start/score_label.png"><img src="quick-start/score_label.png" alt="score label"></a>
+![score label](quick-start/score_label.png)
 
 ### Adding scoring logic to Game script
 

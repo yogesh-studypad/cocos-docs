@@ -2,7 +2,7 @@
 
 This chapter will introduce the powerful and flexible UI (user interface) system of Cocos Creator. By assembling different UI components, we were able to produce a UI that can adapt to screens with various resolutions, dynamically generate and update displaying content by data, and support various layout methods.
 
-<a href="index/ui_cover.png"><img src="index/ui_cover.png" alt="ui cover"></a>
+![ui cover](index/ui_cover.png)
 
 - [Sliced Sprite](sliced-sprite.md)
 - [Multi-resolution](multi-resolution.md)
