@@ -61,7 +61,8 @@ The attribute column that needs to be assigned value by dragging assets will sho
 
 ![reference types](inspector/reference_type.png)
 
-Note that script file is also a type of asset. Therefore the script asset reference attribute used by components shown on the top of the above picture is also represented by a yellow label.
+  Note: that script file is also a type of asset. Therefore the script asset reference attribute used by components shown on the top of the above picture is also represented by a yellow label.
+
 ---
 
 Continue on to read about [Console](console.md).
