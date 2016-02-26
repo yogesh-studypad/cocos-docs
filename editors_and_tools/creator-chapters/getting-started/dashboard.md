@@ -4,7 +4,7 @@ After starting Cocos Creator and logging in with your Cocos developer account, t
 
 ## Overview of the interface
 
-<a href="dashboard/overview.png"><img src="dashboard/overview.png" alt="dashboard overview"></a>
+![Dashboard Overview](dashboard/overview.png)
 
 What is listed above is the dashboard interface of Cocos Creator, which includes the following types of tabs:
 
