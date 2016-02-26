@@ -95,7 +95,7 @@ The container action can organize actions in different ways, below are several o
     node.runAction(action);
     ```
 
-You can see from the above example, different container types can be combined. Besides, we provide a more convenient link-form API for the container type actions. The action objects support these three API - `repeat`、`repeatForever`、`speed`- which will return to the action object itself and support the continued link-form call. Let's see a more complicated action example:
+You can see from the above example, different container types can be combined. Besides, we provide a more convenient link-form API for the container type actions. The action objects support these three API - `repeat`,`repeatForever`,`speed`- which will return to the action object itself and support the continued link-form call. Let's see a more complicated action example:
 
 ```
 // a complicated jump animation

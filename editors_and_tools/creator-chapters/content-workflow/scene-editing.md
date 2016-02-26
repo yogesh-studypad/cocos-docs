@@ -5,4 +5,4 @@ Coming soon...
 
 <hr>
 
-Keep moving on to the next chapter [UI system](../ui/index.md).
+Continue on to read about [UI system](../ui/index.md).

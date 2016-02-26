@@ -186,7 +186,7 @@ bool GameScene::doLeft()
 
 ```
 
-在移动、合并和得分处理完成后，我们需要判断为空白矩阵位置加入新的数字卡片。实际上是，查找4*4的矩阵区域中数字为0的卡片，随机赋值为2或4.新的数字卡片加入后，我们进行判断游戏是否结束。
+在移动,合并和得分处理完成后，我们需要判断为空白矩阵位置加入新的数字卡片。实际上是，查找4*4的矩阵区域中数字为0的卡片，随机赋值为2或4.新的数字卡片加入后，我们进行判断游戏是否结束。
 
 游戏结束的边界，4*4的数字卡片中没有数字0且相邻数字卡片没有相等的数字。
 
@@ -280,7 +280,7 @@ bool GameScene::isWin()
 游戏中需要提示玩家胜利或游戏结束，这类的提示都可以使用popLayer实现。新建一个新的Layer对象，add到当前场景上。
 下面我们来添加游戏的暂停和game over的popLayer。他们都是LayerColor的子类。
 
-1. game over层显示GameOver标题和得分、最高分和重玩菜单。关键代码如下：
+1. game over层显示GameOver标题和得分,最高分和重玩菜单。关键代码如下：
 
 	```
 	bool GameOverLayer::initWithColor(const Color4B& color)
@@ -329,7 +329,7 @@ bool GameScene::isWin()
     return true;
 }
 	```
-2. 暂停层显示继续、重玩、退出菜单。关键代码如下：
+2. 暂停层显示继续,重玩,退出菜单。关键代码如下：
 
 	```
 	bool PopLayer::initWithColor(const Color4B& color)

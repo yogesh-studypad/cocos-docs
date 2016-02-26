@@ -124,7 +124,7 @@ _eventDispatcher->addEventListenerWithSceneGraphPriority(contactListener, this);
 
 _eventDispatcher是基类Node的成员，Layer初始化后就可直接使用。
 
-你还可以使用`EventListenerPhysicsContactWithBodies`, `EventListenerPhysicsContactWithShapes`, `EventListenerPhysicsContactWithGroup` 来监听你感兴趣的两个物体、两个形状，或者某组物体的碰撞事件，但是要注意设置物体碰撞相关的mask值（下面会详细说明），因为物体碰撞事件在默认情况下是不接收的，即使你创建了相应的EventListener。
+你还可以使用`EventListenerPhysicsContactWithBodies`, `EventListenerPhysicsContactWithShapes`, `EventListenerPhysicsContactWithGroup` 来监听你感兴趣的两个物体,两个形状，或者某组物体的碰撞事件，但是要注意设置物体碰撞相关的mask值（下面会详细说明），因为物体碰撞事件在默认情况下是不接收的，即使你创建了相应的EventListener。
 
 PhysicsBody碰撞相关的mask设置和group设置跟Box2D的设置是一致的。
 

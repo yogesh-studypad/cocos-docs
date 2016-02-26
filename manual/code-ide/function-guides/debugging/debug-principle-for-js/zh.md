@@ -2,7 +2,7 @@ Cocos2d-js 的基本调试原理
 ===
 Cocos2d-js 包含了 HTML5 和 JavaScript Binding 两部分，使用 HTML5 可以开发网页游戏，而 JavaScript Binding 可以开发运行于 iOS 和 Android 设备上的原生游戏。
 
-而 Cocos Code IDE 当前的重点是在支持 JavaScript Binding 的游戏开发工作流上。即支持打包 apk、ipa，同时支持调试 JavaScript 代码。
+而 Cocos Code IDE 当前的重点是在支持 JavaScript Binding 的游戏开发工作流上。即支持打包 apk,ipa，同时支持调试 JavaScript 代码。
 
 高大上一下
 ---------

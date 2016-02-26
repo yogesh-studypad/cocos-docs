@@ -105,7 +105,7 @@ Mac平臺的快速鍵為Command+Shift+A。
 
  &emsp;&emsp;【優化】匯出Lua以外掛程式形式在Cocos Store提供。
 
- &emsp;&emsp;【優化】優化Launcher介面，支援打開專案、打開專案所在資料夾。
+ &emsp;&emsp;【優化】優化Launcher介面，支援打開專案,打開專案所在資料夾。
 
  &emsp;&emsp;【優化】Launcher教程頁添加cocos入門英文教程。
 
@@ -119,7 +119,7 @@ Mac平臺的快速鍵為Command+Shift+A。
 
 ##Cocos 2.2.5版本更新內容：
                                     
- &emsp;&emsp;【新增】一鍵部署並運行app在iOS、Android、win32、Mac以及流覽器平臺上。
+ &emsp;&emsp;【新增】一鍵部署並運行app在iOS,Android,win32,Mac以及流覽器平臺上。
 
  &emsp;&emsp;【新增】JS項目可以打包成Html5 App。
 
@@ -129,7 +129,7 @@ Mac平臺的快速鍵為Command+Shift+A。
 
  &emsp;&emsp;【新增】按兩下嵌套的csd檔， 直接進入編輯狀態。
 
- &emsp;&emsp;【新增】按鈕和文本控制項增加描邊、陰影屬性設置。(**Cocos 2d-x 3.6支持解析**)
+ &emsp;&emsp;【新增】按鈕和文本控制項增加描邊,陰影屬性設置。(**Cocos 2d-x 3.6支持解析**)
 
  &emsp;&emsp;【新增】動畫緩動設置。（Cocos 2d-x 3.6支持解析）。
 
@@ -169,11 +169,11 @@ Mac平臺的快速鍵為Command+Shift+A。
 
 ##Cocos 2.2版本更新內容：
     
- &emsp;&emsp;【重磅推出】3D場景編輯——新增模型支援、粒子特效、攝像機控制項，遊戲製作功能更強大（**Cocos 2d-x 3.5支援解析**）。
+ &emsp;&emsp;【重磅推出】3D場景編輯——新增模型支援,粒子特效,攝像機控制項，遊戲製作功能更強大（**Cocos 2d-x 3.5支援解析**）。
 
  &emsp;&emsp;【萬眾期待】支援基於Lua腳本的自訂控制項，擴展隨心所欲 。
 
- &emsp;&emsp;【新增】Cocos商店華麗變身，下載、安裝、卸載一鍵搞定，資訊和評論與你分享。
+ &emsp;&emsp;【新增】Cocos商店華麗變身，下載,安裝,卸載一鍵搞定，資訊和評論與你分享。
 
  &emsp;&emsp;【新增】支援修改動畫播放速度，預覽演示更方便 （**cocos2d-x 3.5支援解析**）。
 

@@ -119,7 +119,7 @@ cocos2dx v2.2.2中，UI库做了以下改变：
 - 删除原有ListView控件，推荐使用新ListView; 
 - Widget::getChildByName不再查找整个结构树，改为只查找一层子节点，UIHelper::seekWidgetByName可查找整个结构树； 
 - Widget::addRenderer/Widget::getRenderer已删除，改为Widget::addNode/Widget::getNode; 
-- 增添layout裁切模式切换，现有裁切模式为stencil裁切、glscissor裁切，后者效率更高，但不支持旋转； 
+- 增添layout裁切模式切换，现有裁切模式为stencil裁切,glscissor裁切，后者效率更高，但不支持旋转； 
 - Button功能增添，当没有“按下状态”的图片时，点击Button将自动放大； 
             
 同在场景中播放动画一样，我们同样需要手动获得按钮组件，然后为按钮添加相应的触控事件，代码如下：

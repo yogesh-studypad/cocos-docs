@@ -21,7 +21,7 @@ Cocos code libraries that are needed for zipping and sending to native platforms
 - [Cocos Framework v3.9 Windows Edition](http://cocostudio.download.appget.cn/Cocos/CocosStore/CocosFramework-V3.9-Windows.exe)
 - [Cocos Framework v3.9 Mac Edition](http://cocostudio.download.appget.cn/Cocos/CocosStore/CocosFramework-V3.9-Mac.pkg)
 
-Code libraries needed for zipping and sending to the Android platform: 
+Code libraries needed for zipping and sending to the Android platform:
 
 - [Android SDK Windows](http://cocostudio.download.appget.cn/Cocos/CocosStore/Android-SDK-Windows.zip)
 - [Android SDK Mac](http://cocostudio.download.appget.cn/Cocos/CocosStore/android22-sdk-macosx.zip)
@@ -60,4 +60,4 @@ Code libraries needed for zipping and sending to the Android platform:
 
 ---
 
-Continue to read the next chapter [../basics/index.md].
+Continue on to read about [Basics](../basics/index.md).

@@ -163,7 +163,7 @@ Including: absolute layout mode, relative layout mode, horizontal linear pattern
 -------
 - Vertical Alignment
 
-	Sets the widget horizontal alignment mode relative to parent.Including “top”、“middle” and “bottom” three modes.
+	Sets the widget horizontal alignment mode relative to parent.Including “top”,“middle” and “bottom” three modes.
 
 - Edge
 
@@ -192,7 +192,7 @@ Including: absolute layout mode, relative layout mode, horizontal linear pattern
 -------
 - Horizontal Alignment
 
-	Sets the widget horizontal alignment mode relative to parent.Including“left”、“middle” and “right” three modes.
+	Sets the widget horizontal alignment mode relative to parent.Including“left”,“middle” and “right” three modes.
 
 - Edge
 

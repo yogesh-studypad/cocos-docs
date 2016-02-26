@@ -57,7 +57,7 @@
 
 　　现在，让我们回到XCode，然后把刚刚这两个文件加进去。或击点击Resources文件夹，选择”Add\Existing　Files。。。“，选择AnimBear.png和AnimBear.plist文件，然后点增加。
 
-　　好了，让我们打开AnimBear.plist文件，看看Zwoptex到底为我们做了些什么事。你将会看到它仅仅是一个包含两个section的属性文件--两个部分分别为frames和metadata。在frames部分，包含了一系列的对spritesheet中每个图片的描述信息，这些描述信息里面包含了图片在spritesheet中的位置、大小和名字等信息。很cool，不是吗？        
+　　好了，让我们打开AnimBear.plist文件，看看Zwoptex到底为我们做了些什么事。你将会看到它仅仅是一个包含两个section的属性文件--两个部分分别为frames和metadata。在frames部分，包含了一系列的对spritesheet中每个图片的描述信息，这些描述信息里面包含了图片在spritesheet中的位置,大小和名字等信息。很cool，不是吗？        
 	![][p5]     
 　　但是，如果你能让这只熊动起来，那将会更酷！下面就跟着我，一步步地让熊动起来！
 

@@ -81,7 +81,7 @@ resCfg[jsRes.MySprite_js] = {
 
 ##### TEST_BASE
 
-当我们需要为所有的测试例引入公用的测试资源、测试js文件时，可以在`resCfg[TEST_BASE]`中进行配置：
+当我们需要为所有的测试例引入公用的测试资源,测试js文件时，可以在`resCfg[TEST_BASE]`中进行配置：
 
 ```script
 resCfg[TEST_BASE] = {

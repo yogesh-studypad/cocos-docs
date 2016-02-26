@@ -4,12 +4,12 @@
 
 このドキュメントはカスタムのcppクラスをJsのランタイムにバインドする方法を解説していきます。**jsバインディングに関する説明ではありません。**.
 
-実行するために、全てのプラットフォームに対するシュミレーターを実行できるMacランタイムを使用して解説します。
+実行するために,全てのプラットフォームに対するシュミレーターを実行できるMacランタイムを使用して解説します。
 
 ### ランタイムのソースコードを作成
 ここではCocos Code IDE で CocosJsGame という名前の cocos js project を作ることを仮定して解説します。
-* ソースコードが置かれるのは\<projectLocation\>/frameworks/runtime-srcで、もし既に作成されている場合は以下の手順はスキップして構いません。
-* 新たに作成する必要がある場合、以下の手順に沿って操作してください:
+* ソースコードが置かれるのは\<projectLocation\>/frameworks/runtime-srcで,もし既に作成されている場合は以下の手順はスキップして構いません。
+* 新たに作成する必要がある場合,以下の手順に沿って操作してください:
   * CocosJSGame projectを右クリックします
   * Cocos Tools->Add Native Codes Supportを選択
   * **Create Native Source Wizard** の **Generate** をクリック 
@@ -73,10 +73,10 @@ std::string CustomClass::helloMsg() {
 
 ```
 
-**frameworks/runtime-src/proj.ios_mac/CocosJSGame.xcodeproj**を開き、CustomClass.h/CustomClass.cpp を cocos2d_libs.xcodeprojに追加します。また、以下の画像のように**cocos2dx iOS**にチェックが入っているか確認してください:
+**frameworks/runtime-src/proj.ios_mac/CocosJSGame.xcodeproj**を開き,CustomClass.h/CustomClass.cpp を cocos2d_libs.xcodeprojに追加します。また,以下の画像のように**cocos2dx iOS**にチェックが入っているか確認してください:
 ![](./res/select_files_in_targets.png)
 
-以上をふまえ、以下の画像のようになっていればOKです: 
+以上をふまえ,以下の画像のようになっていればOKです: 
 
 ![](./res/customClassXCode.png)
 
@@ -84,13 +84,13 @@ std::string CustomClass::helloMsg() {
 
 ![](./res/searchPath.png)
 
-バインドするファイルのパスを探し、追加します:
+バインドするファイルのパスを探し,追加します:
 
 ![](./res/binding_search_path.png)
 
 ### cocos2dx_custom.iniを追加する
 
-`tools/tojs` を開き、`cocos2dx_custom.ini`というファイルを作成、追加します:
+`tools/tojs` を開き,`cocos2dx_custom.ini`というファイルを作成,追加します:
 
 ![](./res/custom_ini_directory.png)
 
@@ -102,7 +102,7 @@ std::string CustomClass::helloMsg() {
 #  通常は以下のようになっています
 prefix = cocos2dx_custom
 
-# 入れ子とする名前空間を作成 (javascriptは、これと同じようないくつかのコードを作成します。`ns = ns || {}`)
+# 入れ子とする名前空間を作成 (javascriptは,これと同じようないくつかのコードを作成します。`ns = ns || {}`)
 # これによって全てのクラスを名前空間内に配置出来ます。
 target_namespace = cc
 
@@ -124,14 +124,14 @@ extra_arguments = %(android_headers)s %(clang_headers)s %(cxxgenerator_headers)s
 headers = %(cocosdir)s/cocos/my/CustomClass.h
 
 # classesはコードを作成するためのものです。ここには正規表現を使用する事が出来ます。
-# 正規表現は、"^$"によって囲まれた文になります。...例: "^Menu*$"
+# 正規表現は,"^$"によって囲まれた文になります。...例: "^Menu*$"
 classes = CustomClass.*
 
 # 何をスキップするかの指定。フォーマット: ClassName::[function function]
-# クラス名の正規表現については、次のように使用します: "^ClassName$"
-# 正規表現は、それらが全て"^$"に囲まれる事はありません。ただし、全てのクラスをスキップしたいという場合は例外です。
+# クラス名の正規表現については,次のように使用します: "^ClassName$"
+# 正規表現は,それらが全て"^$"に囲まれる事はありません。ただし,全てのクラスをスキップしたいという場合は例外です。
 # "*"でもスキップの対象となります。いくつかの例については以下の項目を参照してください。基底クラス名は"*"となります。
-# 全てのクラス名に適用されます。これはとても便利で、似た名前のものをスキップするのに役立ちます。
+# 全てのクラス名に適用されます。これはとても便利で,似た名前のものをスキップするのに役立ちます。
 # 全てのクラスからの機能
 
 skip = 
@@ -140,7 +140,7 @@ rename_functions =
 
 rename_classes = 
 
-# 全てのクラス名において、ターゲットのVMに登録する際に削除する必要があるか？
+# 全てのクラス名において,ターゲットのVMに登録する際に削除する必要があるか？
 remove_prefix = 
 
 # クラスの親をルックアップしません。
@@ -161,7 +161,7 @@ script_control_cpp = no
 
 ### tools/tojs/genbindings.py　を書き換える
 
-tools/tojs/genbindings.pyの中から`custom_cmd_args`(Cocos2d-js 3.0 alpha 2以前のバージョンで行う場合、`cmd_args`です。)という文を探し、以下の一文を追加します:
+tools/tojs/genbindings.pyの中から`custom_cmd_args`(Cocos2d-js 3.0 alpha 2以前のバージョンで行う場合,`cmd_args`です。)という文を探し,以下の一文を追加します:
 
 ```
   'cocos2dx_custom.ini' : ('cocos2dx_custom', 'jsb_cocos2dx_custom'), \
@@ -170,7 +170,7 @@ tools/tojs/genbindings.pyの中から`custom_cmd_args`(Cocos2d-js 3.0 alpha 2以
 
 ### tools/tojs/genbindings.pyを実行
 
-tools/tojs/genbindings.pyを実行したら、`jsb_cocos2dx_custom.cpp` と `jsb_cocos2dx_custom.h` が frameworks/custom/auto directory(もしくはframeworks/js-bindings/bindings/auto directory if you use `cmd_args` replace `custom_cmd_args`)に作成されたのを確認してください:
+tools/tojs/genbindings.pyを実行したら,`jsb_cocos2dx_custom.cpp` と `jsb_cocos2dx_custom.h` が frameworks/custom/auto directory(もしくはframeworks/js-bindings/bindings/auto directory if you use `cmd_args` replace `custom_cmd_args`)に作成されたのを確認してください:
 ![](./res/auto_generate_directory.png)
 
 Xcodeプロジェクトに追加します:
@@ -179,11 +179,11 @@ Xcodeプロジェクトに追加します:
 
 ### jsの記録をとる
 
-`jsb_cocos2dx_custom.hpp`をインクルードし、以下のように関数を呼び出します --> 
+`jsb_cocos2dx_custom.hpp`をインクルードし,以下のように関数を呼び出します --> 
 
 `register_all_cocos2dx_custom(JSContext* cx, JSObject* obj);`
 
-以下が、この関数をカスタムクラスで呼び出した例になります。:
+以下が,この関数をカスタムクラスで呼び出した例になります。:
 
 ```
     ...
@@ -208,10 +208,10 @@ Cocos Code IDEの操作:
 
  * CocosJSGame を右クリック
  * Cocos Tools->Build Runtime を選択
- * プラットフォームを選択肢し、ビルドを実行。
+ * プラットフォームを選択肢し,ビルドを実行。
 
 ### カスタムクラスを使う場合
-main.jsを編集し、以下のように使いたいクラスを宣言します:
+main.jsを編集し,以下のように使いたいクラスを宣言します:
 
 ```
 	var customClass = cc.CustomClass.create();
@@ -220,7 +220,7 @@ main.jsを編集し、以下のように使いたいクラスを宣言します:
 ```
 
 ### テスト実行
-ランタイムの設定を完了した`CocosJSGame`を実行し、以下がコンソールに表示されれば成功です:
+ランタイムの設定を完了した`CocosJSGame`を実行し,以下がコンソールに表示されれば成功です:
 
 `customClass's msg is : Hello from CustomClass::sayHello`
 

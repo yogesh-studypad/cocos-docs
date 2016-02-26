@@ -22,13 +22,13 @@ Next, **Attribute inspector** will show the attributes of node, which are listed
 
 Other than the transforming attributes like Position, Rotation, Scale and Size, node attributes also include Anchor, Color, Opacity. Generally, modifications of node attributes will immediately reflect in the changes in the appearance or position of node in scene editor.
 
-For more details on node attribute, please read [../../content-workflow/transform.md] section.
+For more details on node attribute, please read [Transform](../../content-workflow/transform.md) section.
 
 ## Component attribute
 
 All the components mounted to a node and their attributes will be listed under node attribute. Just like node attribute, you can switch the fold/unfold status of a component attribute by clicking its name. When there are many components mounted to a node, you can get larger working area by folding the component attributes that are not frequently modified.
 
-Users create a component by script, the attribute of which is declared by the script. Different types of attributes have different widget appearances and editing methods in **attribute inspector**. The defining method of attribute will be introduced in detail in [../../scripting/properties.md].
+Users create a component by script, the attribute of which is declared by the script. Different types of attributes have different widget appearances and editing methods in **attribute inspector**. The defining method of attribute will be introduced in detail in [Scripting Properties](../../scripting/properties.md).
 
 ## Edit an attribute
 
@@ -44,7 +44,7 @@ Normally we can divide attributes into **value type** and **reference type** acc
 - Vec2: the widget of Vec2 is the combination of two input values. And the input field will mark the corresponding child attribute name of each value with `x` and `y`.
 - String: directly use keyboard to input string into textbox. The input widget of string can be divided into two types: single line and multiple lines. Users can press Enter button to wrap in Multiple lines textbox.
 - Boolean: It can be edited in the form of check box. The selected state indicates the attribute value is `true`; and the non-selected state indicates the attribute value is `false`.
-- Enum: It can be edited in the form of drop-down menu. Click enum menu and choose one option from the popp up menu list, then the modification of enum can be finished. 
+- Enum: It can be edited in the form of drop-down menu. Click enum menu and choose one option from the popp up menu list, then the modification of enum can be finished.
 - Color: click color attribute preview box and **color picker** window will popped out. You can click to choose the color you need in this window, or directly enter specified color in the RGBA color input box below. Click any position outside the **color picker** window will close the window and the color selected in the end will be took as the attribute color.
 
 ![value types](inspector/value_type.png)
@@ -61,7 +61,8 @@ The attribute column that needs to be assigned value by dragging assets will sho
 
 ![reference types](inspector/reference_type.png)
 
-Note that script file is also a type of asset. Therefore the script asset reference attribute used by components shown on the top of the above picture is also represented by a yellow label.
+  Note: that script file is also a type of asset. Therefore the script asset reference attribute used by components shown on the top of the above picture is also represented by a yellow label.
+
 ---
 
-Continue to read the introductory document of [console.md].
+Continue on to read about [Console](console.md).

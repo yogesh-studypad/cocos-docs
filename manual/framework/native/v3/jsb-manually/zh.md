@@ -6,7 +6,7 @@ Cocos2d-x内置了一套JavaScript的解析引擎[SpiderMonkey](https://develope
 
 ## 绑定实现
 
-### 一、创建待绑定的类
+### 一,创建待绑定的类
 
 - XObject.h头文件
 
@@ -42,7 +42,7 @@ XObjectCallFunc 定义了一个函数指针，作为回调函数类型。
 
 构造函数简单记录回调函数指针和回调对象，在logAndCallBack中会使用到。
 
-### 二、JSB环境初始化
+### 二,JSB环境初始化
 
 在applicationDidFinishLaunching中使用了很多类似于
 
@@ -56,7 +56,7 @@ sc->addRegisterCallback(XXX);
 sc->addRegisterCallback(JSB_register_XObject);
 ```
 	
-### 三、实现绑定
+### 三,实现绑定
 
 添加头文件 **JSB_Manual_XObject.h** ，并在其中声明函数JSB手动绑定注册回调函数
 
@@ -67,7 +67,7 @@ void JSB_register_XObject(JSContext* cx, JSObject* obj);
 接下来我们需要做的就是根据自己的需要在**JSB_Manual_XObject.cpp**中实现绑定,我们需要完成以下几点：
 
 1. 注册一个JS的类
-2. 一个JS的类有构造器、析构器以及一个create方法
+2. 一个JS的类有构造器,析构器以及一个create方法
 3. 把C++类中的方法绑定到JS类
 
 先贴上部分代码，然后再做详细解释：
@@ -237,7 +237,7 @@ JSB_XObject_createClass(cx, myBinding, "XObject");
 
 更多**JS API**信息，参考[JSAPI](https://developer.mozilla.org/en-US/docs/SpiderMonkey/JSAPI_User_Guide)。
 
-### 四、测试
+### 四,测试
 
 打开**Resources/res**文件夹下的**myApp.js**文件。在**MyScene**的**onEnter**方法中添加如下代码：
 

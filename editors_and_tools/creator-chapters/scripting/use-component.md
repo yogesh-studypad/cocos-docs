@@ -55,4 +55,4 @@ If everything goes well, you will see your script shown in **attribute inspector
 
 ---
 
-Keep moving to [property declaration](properties.md).
+Continue on to read about [property declaration](properties.md).

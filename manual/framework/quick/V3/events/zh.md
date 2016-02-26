@@ -13,7 +13,7 @@ Quick 中的事件按照功能和用途分为：
 
 ## 节点事件
 
-节点事件在一个 Node 对象进入、退出场景时触发。
+节点事件在一个 Node 对象进入,退出场景时触发。
 
 ~~~lua
 local node = display.newNode()

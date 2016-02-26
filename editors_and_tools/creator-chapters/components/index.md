@@ -15,4 +15,4 @@
 
 <hr>
 
-Keep moving on to the [Sprite component reference](sprite.md) file.
+Continue on to read about [Sprite component reference](sprite.md).

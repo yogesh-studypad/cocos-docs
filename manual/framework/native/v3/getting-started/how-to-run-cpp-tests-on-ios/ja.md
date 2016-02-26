@@ -13,7 +13,7 @@
   
   ![select project](res/select_project.png)
   
-* 実行ボタンをクリックしサンプルコードをコンパイル、実行します。
+* 実行ボタンをクリックしサンプルコードをコンパイル,実行します。
 
   ![select run button](res/select_run.png)
   
@@ -21,14 +21,14 @@
 
   ![run](res/run.png)
   
-* 停止ボタンをクリックし、サンプルの実行を終了します。
+* 停止ボタンをクリックし,サンプルの実行を終了します。
 
   ![stop](res/select_stop.png)
 
   
 ### 実機（iOS）で動作させたい場合
 
-シミュレータで実行したものを、同じように実機で動作させる場合デベロッパー登録を完了させる必要があります。
+シミュレータで実行したものを,同じように実機で動作させる場合デベロッパー登録を完了させる必要があります。
 [IOS Developer Program](https://developer.apple.com/programs/ios/)
 
 

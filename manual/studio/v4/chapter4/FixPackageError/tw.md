@@ -10,7 +10,7 @@
 
 &emsp;&emsp;![image](res_tw/image0002.png)
 
-&emsp;&emsp;3，增加cpp檔，需要添加到VS工程、XCode工程，同時必須需要修改android.mk檔，位置在proj.android/jni/Android.mk。
+&emsp;&emsp;3，增加cpp檔，需要添加到VS工程,XCode工程，同時必須需要修改android.mk檔，位置在proj.android/jni/Android.mk。
 
 &emsp;&emsp;4，Cpp代碼編碼格式一定要是UTF-8，使用Visual Studio可以方便的查看檔編碼格式，如下圖：
 
@@ -75,7 +75,7 @@
 
 
 &emsp;&emsp;解決辦法：cocos命令，是否是你當時創建這個項目時的同一個cocos.py。如果系統裡裝有多個引擎版本，注意不要混用它們的cocos console
-如果你用Cocos裡帶的framework創建的專案，而用引擎裡的console去編譯，那就很可能出現問題。所以你要注意一個原則：如果你電腦裡有多個引擎版本、framework等，那麼你用哪個創建的，就要用哪個下面的tools/cocos2d-console/bin下面的去編譯它。
+如果你用Cocos裡帶的framework創建的專案，而用引擎裡的console去編譯，那就很可能出現問題。所以你要注意一個原則：如果你電腦裡有多個引擎版本,framework等，那麼你用哪個創建的，就要用哪個下面的tools/cocos2d-console/bin下面的去編譯它。
 
 &emsp;&emsp;10，JSB綁定導致編譯錯誤，案例：
 
@@ -121,7 +121,7 @@ PS:3.6的BOX2D-TEST有BUG，修復地址：[https://github.com/cocos2d/cocos2d-x
 
 &emsp;&emsp;14，sh: cocos: command not found, 案例：
 
-    //3.5、3.6的話，將工程導入到Eclipse中，會報sh: cocos: command not found的錯誤，但是用控制台能正常打包。這是一個Bug。
+    //3.5,3.6的話，將工程導入到Eclipse中，會報sh: cocos: command not found的錯誤，但是用控制台能正常打包。這是一個Bug。
     **** Build of configuration Release for project CocosProjectTest ****
     python /Users/zhongcs/dev/cocosworkspace/CocosProjectTest/proj.android/build_native.py -b release all 
     sh: cocos: command not found

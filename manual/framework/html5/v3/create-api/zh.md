@@ -2,7 +2,7 @@
 
 所有的对象统一使用create方法创建，不再存在createXXX之类的方法
 
-###1、精灵Sprite 一共4种创建方式###
+###1,精灵Sprite 一共4种创建方式###
 
 (1) 根据图片资源路径创建
 
@@ -31,9 +31,9 @@
     //参数1：纹理，参数2：显示区域
     var sprite2 = cc.Sprite.create(texture, cc.rect(0,0,480,320));
 
-###2、文字LabelTTF 一共2种创建方式###
+###2,文字LabelTTF 一共2种创建方式###
 
-(1) 根据字体、大小等多参数创建
+(1) 根据字体,大小等多参数创建
 
     //参数1：显示字符串，参数2：字体，参数3：字号，参数4：宽高，参数5：定位
     var myLabel = cc.LabelTTF.create('label text', 'Times New Roman', 32, cc.size(320,32), cc.TEXT_ALIGNMENT_LEFT);
@@ -46,7 +46,7 @@
     //参数1：显示字符串，参数2：自定义对象cc.FontDefinition
     var myLabel = cc.LabelTTF.create('label text', fontDef);
 
-###3、动画Animation一共3种创建方式###
+###3,动画Animation一共3种创建方式###
 
 (1) 空创建
 
@@ -78,7 +78,7 @@
     //参数1：动画帧数组，参数2：延续时间,单位为秒，参数3：循环次数
     var animation3 = cc.Animation.create(animationFrameArr, 0.2,2);
 
-###4、批量SpriteBatchNode一共2种创建方式###
+###4,批量SpriteBatchNode一共2种创建方式###
 (1)根据图片资源路径
 
     //参数1：图片路径,参数2：容量
@@ -89,7 +89,7 @@
     //参数1：纹理,参数2：容量
     var spriteBatchNode = cc.SpriteBatchNode.create(texture,50);
 
-###5、精灵SpriteFrame一共2种创建方式###
+###5,精灵SpriteFrame一共2种创建方式###
 (1)根据图片资源路径
 
     //参数1：图片路径，参数2:区域
@@ -104,7 +104,7 @@
     //参数1：图片路径，参数2:区域，参数3：是否旋转，参数4：偏移量，参数5：原区域
     var frame2 = cc.SpriteFrame.create(texture, cc.rect(0,0,90,128),false,0,cc.size(90,128));
 
-###6、粒子效果ParticleSystem一共2种创建方式###
+###6,粒子效果ParticleSystem一共2种创建方式###
 (1)根据图片资源路径
 
     //参数1：粒子数量
@@ -114,7 +114,7 @@
     //参数1：粒子工具particleDesigner导出的文件
     var particle = cc.ParticleSystem.create("res/particle.plist");
 
-###8、物理PhysicsSprite 一共4种创建方式###
+###8,物理PhysicsSprite 一共4种创建方式###
 
 (1) 根据图片资源路径创建
 
@@ -143,7 +143,7 @@
     //参数1：纹理，参数2：显示区域
     var physicsSprite2 = cc.PhysicsSprite.create(texture, cc.rect(0,0,480,320));
 
-###9、大纹理TextureAtlas一共2种创建方式###
+###9,大纹理TextureAtlas一共2种创建方式###
 
 (1)根据图片资源路径
 

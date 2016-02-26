@@ -5,7 +5,7 @@
 
 ![游戏截图][p1]
 
-　　[Cocos2d-x](http://www.cocos2d-x.org "Cocos2d-x") 是一个支持多平台的开源框架，用于构建游戏、应用程序和其他图形界面交互应用。Cocos2d-x项目可以很容易地建立和运行在iOS，Android的三星Bada，黑莓Blackberry操作系统。Cocos2d-x还支持Windows、Mac和Linux等桌面操作系统，因此，我们可以编写的源代码很容易在桌面操作系统中编辑和调试。
+　　[Cocos2d-x](http://www.cocos2d-x.org "Cocos2d-x") 是一个支持多平台的开源框架，用于构建游戏,应用程序和其他图形界面交互应用。Cocos2d-x项目可以很容易地建立和运行在iOS，Android的三星Bada，黑莓Blackberry操作系统。Cocos2d-x还支持Windows,Mac和Linux等桌面操作系统，因此，我们可以编写的源代码很容易在桌面操作系统中编辑和调试。
 
 Cocos2d-x 具有以下特称:
 
@@ -14,11 +14,11 @@ Cocos2d-x 具有以下特称:
   * 易用
   * 社区支持
 
-　　目前支持精灵（sprite）、动画、物理引擎、声音引擎以及许许多多非常酷的图像效果等等。
+　　目前支持精灵（sprite）,动画,物理引擎,声音引擎以及许许多多非常酷的图像效果等等。
 
-　　目前已经有许多非常好的教程来教你如何使用Cocos2d-x了。但关于Cocos2d-x 3.0的资料非常少。同时很多人真正想要的是一个非常简单，但是可以跑起来的游戏。这个游戏包括怎么使用动画、碰撞检测和播放声音，这就够了，并不需要使用太多高级的特性。
+　　目前已经有许多非常好的教程来教你如何使用Cocos2d-x了。但关于Cocos2d-x 3.0的资料非常少。同时很多人真正想要的是一个非常简单，但是可以跑起来的游戏。这个游戏包括怎么使用动画,碰撞检测和播放声音，这就够了，并不需要使用太多高级的特性。
 
-　　这篇教程将会从头至尾、一步一步地教你如何使用cocos2d来制作一个简单的iphone游戏。你可以按照教程一步步来，或者干脆直接跳到文章的最后，下载样例程序。没错！游戏里面有忍者。	
+　　这篇教程将会从头至尾,一步一步地教你如何使用cocos2d来制作一个简单的iphone游戏。你可以按照教程一步步来，或者干脆直接跳到文章的最后，下载样例程序。没错！游戏里面有忍者。	
 
 ##Hello, Cocos2d-x!
 
@@ -51,7 +51,7 @@ $ ./project-creator.py -n SampleGame -k com.MyCompany.SampleGame -l cpp -p /Coco
   4. 点编译并运行这个工程，如何一切都ok的话，那么你会看到下面的内容： 
 	![HelloWorld场景][p3]
 
-　　cocos2d是按照“场景”（scene）的概念组织的，对一个游戏来说，就好像某个关卡或者屏幕之类的。比如，你可能需要一个场景来为你的游戏建立初使化菜单界面，另外一个场景当作玩游戏的主要界面，还有一个游戏结束的时候的界面。在一个场景里面，你可以有许多“层”（layer）（这个和photoshop有点类似）。每一个层又可以包含一些结点，比如精灵、标签、菜单等。而且一个结点也可以包含其它的结点。（比如，一个精灵可以包含一个子精灵）
+　　cocos2d是按照“场景”（scene）的概念组织的，对一个游戏来说，就好像某个关卡或者屏幕之类的。比如，你可能需要一个场景来为你的游戏建立初使化菜单界面，另外一个场景当作玩游戏的主要界面，还有一个游戏结束的时候的界面。在一个场景里面，你可以有许多“层”（layer）（这个和photoshop有点类似）。每一个层又可以包含一些结点，比如精灵,标签,菜单等。而且一个结点也可以包含其它的结点。（比如，一个精灵可以包含一个子精灵）
 
 　　如果你看一下样例工程，你会看到只有一个场景HelloWorldScene--我们接下来将会在这个场景里面实现我们的游戏逻辑。继续打开它，你会在init方法里面看到，从关闭按钮也就是声明closeItem变量那里到return语句之前全部删掉。我们将把这些代码去掉，并且放一个自己的精灵在上面。
 
@@ -236,7 +236,7 @@ void HelloWorld::onEnter()
 
 　　其中的触摸监听类型触摸事件分为EventListenerTouchOneByOne和EventListenerTouchAllAtOnce。EventListenerTouchOneByOne 表示的是单点触摸；而EventListenerTouchAllAtOnce 表示的就是多点触摸。  
 　　而我们以前的ccTouchBegan，ccTouchEnd，ccTouchMoved等方法都已经deprecated了。取而代之的是让监听器绑定事件处理函数。上面绑定的onTouchEnded我在后面马上会添加进去。onTouchEnded响应的是触摸点击结束事件。onTouchMove没有写出来，反正本游戏用不着。至于哪个看起来高端大气得onTouchBegan，其实是为了用一下3.0引入了C++11得特征，哪个东西在C++11里学名叫Lambda函数，其实就是匿名函数。跟onTouchEnded那种绑定个类函数得写法效果一样。主要是这里必须写onTouchBegan并且返回true，表示监听器已经接收到了。
-　　监听器创建完成后我们把它绑定给_eventDispatcher事件分发器，_eventDispatcher 是 Node 的属性，通过它管理当前节点（如 场景 、层、精灵等 ）的所有事件分发情况。
+　　监听器创建完成后我们把它绑定给_eventDispatcher事件分发器，_eventDispatcher 是 Node 的属性，通过它管理当前节点（如 场景 ,层,精灵等 ）的所有事件分发情况。
 
   
 在HelloWorldScene.h添加声明：	
@@ -608,7 +608,7 @@ if (_projectilesDestroyed >3) {
 ```
 </pre> 
 
-　　最后，让我们这样设计，只要有一个怪物穿过了屏幕左边，你就输了。修改spriteMoveFinished方法，通过在tag==１里面、_targets.eraseObject(sprite)后面添加下面的代码：
+　　最后，让我们这样设计，只要有一个怪物穿过了屏幕左边，你就输了。修改spriteMoveFinished方法，通过在tag==１里面,_targets.eraseObject(sprite)后面添加下面的代码：
 
 <pre>
 ```cpp

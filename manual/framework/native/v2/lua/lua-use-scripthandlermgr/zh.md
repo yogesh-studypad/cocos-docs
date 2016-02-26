@@ -1,6 +1,6 @@
 如何使用ScriptHandlerMgr回调lua函数
 ===========================================
-在Cocos2d-x V2.x中，c++对象回调lua函数需要在相应类内增加成员变量以及一些成员函数，这些代码大大增加了lua脚本引擎和c++引擎的耦合度。因此，Cocos2d-x V3.0对此机制进行了优化，对于从Ref类派生出来的类，通过建立`c++对象`、`HandlerType`和`lua函数索引`的映射关系，应用`ScriptHandlerMgr`进行统一管理。
+在Cocos2d-x V2.x中，c++对象回调lua函数需要在相应类内增加成员变量以及一些成员函数，这些代码大大增加了lua脚本引擎和c++引擎的耦合度。因此，Cocos2d-x V3.0对此机制进行了优化，对于从Ref类派生出来的类，通过建立`c++对象`,`HandlerType`和`lua函数索引`的映射关系，应用`ScriptHandlerMgr`进行统一管理。
 
 假设现在有一个类TestCallback,基于该类分别用V2.x和V3.0的机制实现对lua函数的回调，从而详解使用V3.0`ScriptHanderMgr`回调lua函数的好处。
     

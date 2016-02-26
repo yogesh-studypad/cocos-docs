@@ -216,7 +216,7 @@ int CatSprite::computeHScoreFromCoordToCoord(const Point &fromCoord, const Point
 int CatSprite::costToMoveFromStepToAdjacentStep(const ShortestPathStep *fromStep, const ShortestPathStep *toStep)
 {
     // 因为不能斜着走，而且由于地形就是可行走和不可行走的成本都是一样的
-    // 如果能够对角移动，或者有沼泽、山丘等等，那么它必须是不同的
+    // 如果能够对角移动，或者有沼泽,山丘等等，那么它必须是不同的
     return 1;
 }
 ```
@@ -604,7 +604,7 @@ this->stopActionByTag(1);
 - walkableAdjacentTilesCoordForTileCoord：更改以便包括对角线方块
 - costToMoveFromStepToAdjacentStep：更改以让对角线移动跟水平/垂直移动有不一样的成本
 
-如何计算出在对角线方向上的成本值？使用简单的数学即可。猫从一个方块的中心移动到另一个方块的中心，并且因为方块是正方形，A、B和C形成了一个三角形，如下图所示：
+如何计算出在对角线方向上的成本值？使用简单的数学即可。猫从一个方块的中心移动到另一个方块的中心，并且因为方块是正方形，A,B和C形成了一个三角形，如下图所示：
 
 ![](./res/triangle1.jpg)
 

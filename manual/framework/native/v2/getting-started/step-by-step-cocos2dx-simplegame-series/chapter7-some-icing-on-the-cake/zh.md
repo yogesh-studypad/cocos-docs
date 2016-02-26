@@ -45,7 +45,7 @@
 *导入提示：*
 
 1. 类成员函数无需在头文件声明便可在.m文件中实现，但是在C++无法这么做，所以在“GameOverScene.h”文件中有“bool init();”部分。
-2. “node()”函数用起来很方便，因为这个函数融合了“new”、“ init”及“autorelease”等。但是在C++中没有像“self(objc)”这样的关键字，所以“CCLayer::node()”和“CCScene::node()”函数应该在各自的继承类中实现。“node()”的实现方法也类似，通过构建“LAYER_NODE_FUNC”和“SCENE_NODE_FUNC”这两个宏来实现会更简单。如果要用这两个宏，“init()”函数必须在继承类中实现。
+2. “node()”函数用起来很方便，因为这个函数融合了“new”,“ init”及“autorelease”等。但是在C++中没有像“self(objc)”这样的关键字，所以“CCLayer::node()”和“CCScene::node()”函数应该在各自的继承类中实现。“node()”的实现方法也类似，通过构建“LAYER_NODE_FUNC”和“SCENE_NODE_FUNC”这两个宏来实现会更简单。如果要用这两个宏，“init()”函数必须在继承类中实现。
 3. 关于构造器（constructor）和“init()”函数。Cocos2d-x不会将objc中的“init()”函数直接导入到C++的构造器中，因为C++构造器没有返回值。在这种情况下，我们得使用“try-catch”（捕获异常）语句来处理异常，但是Android SDK不支持“try-catch”。Cocos2d-x会分两个阶段初始化类，首先调用构造器，然后再在“init()”函数中初始化。这种方法也用于iOS平台界面的设计如“[[NSString alloc] init]”以及三星Bada平台C++类的使用。
 4. “_label”和“_layer”的“setter”和“getter”在objc的“@synthesize”中实现。我们已经在“cocos2dx\include\Cocos2dDefine.h”文件中创建了一些宏以模拟“@property”和“@synthesize”。在以上代码中，“CCX_SYNTHESIZE_READONLY”定义只有一个“getter”而没有“setter”的只读成员变量。在C++中，“inline”函数只能在头文件中定义，所以一般而言“@synthesize”是在头文件中实现的。
 
@@ -189,7 +189,7 @@
 
 ## 尽情享受
 
-现在万事已备，编译并运行，所有的附加效果即会显示，怪物、子弹、背景音乐以及赢输条幅。
+现在万事已备，编译并运行，所有的附加效果即会显示，怪物,子弹,背景音乐以及赢输条幅。
 至此，整个游戏开发完成！
 
 iPhone界面

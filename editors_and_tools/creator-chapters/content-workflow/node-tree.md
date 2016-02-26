@@ -4,4 +4,4 @@
 
 <hr>
 
-Keep moving on to the [build scene graph with scene editor](scene-editing.md)file.
+Continue on to read about [build scene graph with scene editor](scene-editing.md).

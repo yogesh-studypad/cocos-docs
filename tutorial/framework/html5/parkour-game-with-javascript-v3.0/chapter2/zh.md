@@ -14,7 +14,7 @@
 #### 第一部分: 引擎相关文件
 
 * **frameworks** 目录包含了 Cocos2d-html5 引擎和 Cocos2d-x JavaScript 代码的汇集.
-    * **Cocos2d-html5** 目录包含了所有 Cocos2d-html5 的引擎模块,例如引擎核心模块、音频模块、外部物理库，CocosBuilder Reader, CocoStudio Reader 和其他的模块。所有的模块都用JS实现并且可以在WEB环境中运行。 
+    * **Cocos2d-html5** 目录包含了所有 Cocos2d-html5 的引擎模块,例如引擎核心模块,音频模块,外部物理库，CocosBuilder Reader, CocoStudio Reader 和其他的模块。所有的模块都用JS实现并且可以在WEB环境中运行。 
     * **js-bindings** 目录包含了 Cocos2d-x 引擎, 绑定的和外部预置 SpiderMonkey 库的项目文件。外部接口采用 JS 编写,但是基础模块使用 Cpp 实现，可以在许多不同的本地平台上运行，例如IOS,android,MAC,win32等平台。 
     
 #### 第二部分: 测试文件，游戏样本和模板

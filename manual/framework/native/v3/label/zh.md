@@ -3,16 +3,16 @@
 -------------
 
 
-在Cocos2d-x3.0之前的版本中，可以向场层和精灵上添加文字的类有三个：CCLabelTTF、CCLabelBMFont和CCLabelAtlas。
+在Cocos2d-x3.0之前的版本中，可以向场层和精灵上添加文字的类有三个：CCLabelTTF,CCLabelBMFont和CCLabelAtlas。
 
-3.0版本对文本显示这一块有所改进的是，新增Label类中有四个可添加文字的类：Label、LabelTTF、LabelBMFont和LabelAtlas。其中LabelTTF、LabelBMFont和LabelAtlas在功能上承续之前的版本，只是在命名方式等有所调整。
+3.0版本对文本显示这一块有所改进的是，新增Label类中有四个可添加文字的类：Label,LabelTTF,LabelBMFont和LabelAtlas。其中LabelTTF,LabelBMFont和LabelAtlas在功能上承续之前的版本，只是在命名方式等有所调整。
 
-Label类可以代替LabelTTF和LabelBMFont类，它使用freetype库进行字体绘制，可以做到各平台相同的文本效果，同时使用了更快的缓存策略，效率更高，提供了追踪(tracing)、阴影和更多的功能。
+Label类可以代替LabelTTF和LabelBMFont类，它使用freetype库进行字体绘制，可以做到各平台相同的文本效果，同时使用了更快的缓存策略，效率更高，提供了追踪(tracing),阴影和更多的功能。
 
 变化：
 
-1. 去掉了类、结构体和宏的CC前缀和一些其他类似匈牙利命名方式的前缀，例如m、p等等；
-2. 改变了成员函数中某些参数和返回值的数据类型，比如char换成了string、unsigned int换成了long等等；
+1. 去掉了类,结构体和宏的CC前缀和一些其他类似匈牙利命名方式的前缀，例如m,p等等；
+2. 改变了成员函数中某些参数和返回值的数据类型，比如char换成了string,unsigned int换成了long等等；
 3. 改变了某些枚举类型的名字和属性值；
 4. 将引擎中不会被修改数据成员的函数都声明成了const 类型，提高了程序的健壮性。
 
@@ -125,7 +125,7 @@ LabelTTF这个类使用的是系统中的字体，如上图所示。
 ![](./res/bmfont1.png)
 
 LabelBMFont这个类在使用之前，需要添加好字体文件，包括一个图片文件(**.png) 和一个字体描述文件（**.fnt），Label类调用createWithBMFont函数创建label时同样需要这两个文件。
-fnt文件中包含了对应图片的名字(图片包含了所有你要绘制的字符)、图片中的字符对应的unicode编码、字符在图片中的坐标、宽和高等。
+fnt文件中包含了对应图片的名字(图片包含了所有你要绘制的字符),图片中的字符对应的unicode编码,字符在图片中的坐标,宽和高等。
 
 下面利用上面新建的label4来调用Label的成员函数，看看它的一些成员函数。
 

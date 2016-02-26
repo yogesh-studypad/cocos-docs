@@ -2,7 +2,7 @@
 
 ##概述
 
-在Cocos2d-x中，简单数据存储，可以使用UserDefault。那么如何存储大量，不规则的数据？我们可以使用SQLite数据库存储数据。SQLite是使用非常广泛的嵌入式数据库，它有小巧 、高效、跨平台、开源免费和易操作的特点。
+在Cocos2d-x中，简单数据存储，可以使用UserDefault。那么如何存储大量，不规则的数据？我们可以使用SQLite数据库存储数据。SQLite是使用非常广泛的嵌入式数据库，它有小巧 ,高效,跨平台,开源免费和易操作的特点。
 
 SQLite数据库是使用C语言来编写的，那么在Cocos2d-x使用SQLite也是得心应手。
 
@@ -117,7 +117,7 @@ Android系统没有自带sqlite库，我们需要手动添加。
 
 ```
     char **re;//查询结果
-    int r,c;//行、列
+    int r,c;//行,列
     sqlite3_get_table(pdb,"select * from student",&re,&r,&c,NULL);//1
     log("row is %d,column is %d",r,c);
     

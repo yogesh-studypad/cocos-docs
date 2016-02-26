@@ -1,6 +1,6 @@
 # Label Layout
 
-The **Label** component is one of the key rendering components. You need to learn about how to set up label layout in order to have a perfect display when the UI system adapts to various resolutions and sets up alignment. 
+The **Label** component is one of the key rendering components. You need to learn about how to set up label layout in order to have a perfect display when the UI system adapts to various resolutions and sets up alignment.
 
 ## Alignment of labels in the bounding box
 
@@ -17,17 +17,17 @@ The horizontal/vertical alignment positions in the above pictures are all set as
 
 ## Label Size and Line Height
 
-`Font Size` determines the display size of labels. Its unit is Point (it can also be called 'pound'), which is the size unit for fonts commonly used in most image editing softwares and font editing softwares. For dynamic fonts, `Font Size` can be zoomed in losslessly. But the display of bitmap fonts will be more and more vague when the set value of `Font Size` exceeds the font size stipulated by the font. 
+`Font Size` determines the display size of labels. Its unit is Point (it can also be called 'pound'), which is the size unit for fonts commonly used in most image editing softwares and font editing softwares. For dynamic fonts, `Font Size` can be zoomed in losslessly. But the display of bitmap fonts will be more and more vague when the set value of `Font Size` exceeds the font size stipulated by the font.
 
 `Line Height` determines the height occupied by each line when multiple lines of labels display, the unit of which is also Point. The displaying of multiple lines of labels can be carried out by using two methods:
 
-- When inputting labels in the `String` property, manually input ‘\r’ or ‘\n’ 
+- When inputting labels in the `String` property, manually input ‘\r’ or ‘\n’
 - Open the `Enable Wrap Text` property, which will be introduced in detail later
 
 Relation of label size and line height:
 
-- If the values of `Font Size` and `Line Height` are the same, labels will occupy the height of the most part of one line. 
-- If the value of `Font Size` is less than that of `Line Height`, space between multiple lines of labels will be enlarged 
+- If the values of `Font Size` and `Line Height` are the same, labels will occupy the height of the most part of one line.
+- If the value of `Font Size` is less than that of `Line Height`, space between multiple lines of labels will be enlarged
 - If the value of `Font Size` is larger than that of `Line Height`, space between multiple lines of labels will be narrowed between multiple lines of labels. Overlapping of labels may appear.
 
 ![font equal](label-layout/font_equal_line_height.jpg)  ![font smaller](label-layout/font_smaller.jpg)  ![font bigger](label-layout/font_bigger.jpg)
@@ -99,15 +99,15 @@ Add a **Widget** component to the node with the Label component, then you can ma
 
 ![widget](label-layout/widget.jpg)
 
-In the above picture, two Label subnodes are added to the background nodes. After respectively adding the Widget component to them, set the `Right` property of the Widget for the labels on the left side as `50%`, and set the `Left` property of the Widget for the labels on the right side as `60%`, then the multi-column layout of labels in the picture above can be realized. 
+In the above picture, two Label subnodes are added to the background nodes. After respectively adding the Widget component to them, set the `Right` property of the Widget for the labels on the left side as `50%`, and set the `Left` property of the Widget for the labels on the right side as `60%`, then the multi-column layout of labels in the picture above can be realized.
 
 And by setting margins on the aWidget, plus the layout type of labels, a flexible and beautiful layout for labels can be easily realized without concrete and minor adjustments to the bounding box.
 
 
 ## Reference for checking components
 
-For properties of the Label component, you can also check [../components/label.md] document.
+For properties of the Label component, you can also check [Label Component](../components/label.md) document.
 
 ---
 
-Continue to read the introductory document of [ui-components.md].
+Continue on to read about [UI Components](ui-components.md).

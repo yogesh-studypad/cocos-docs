@@ -5,11 +5,11 @@
 - [SpriteFrameCache](#SpriteFrameCache)
     * [c++](#c++)
 	* [lua](#lua)
-- [SpriteFrameCache、 SpriteBatchNode 、Modern renderer[3.0版本]](#SpriteFrameCache vs. SpriteBatchNode vs. Modern renderer[3.0版本])
+- [SpriteFrameCache, SpriteBatchNode ,Modern renderer[3.0版本]](#SpriteFrameCache vs. SpriteBatchNode vs. Modern renderer[3.0版本])
 - [结论](#结论)
 
 ## 概论
-纹理缓存起来是为了稍后绘制，缓存的内容包括大小、颜色和不能被修改图片的数据。这些信息被存储到内存中，不需要每次绘制时都发送到GPU中处理。
+纹理缓存起来是为了稍后绘制，缓存的内容包括大小,颜色和不能被修改图片的数据。这些信息被存储到内存中，不需要每次绘制时都发送到GPU中处理。
 
 ## TextureCache
 Cocos2d用调用TextureCache和SpriteFrameCache创建纹理缓存来维护Sprite。你可以预加载纹理到缓存中，他们将会在整个scene中都有效。怎么加载他们由你做主。比如：你可以选择异步加载资源，让他们在加载界面中预加载，用进度条来显示加载进度。
@@ -73,4 +73,4 @@ b1) 你不能执行这个因为batch node渲染它的子节点。如果你添加
 c) SpriteBatchNode是一个普通的node。你可以像其他node一样移除掉。纹理和精灵帧可以缓存到TextureCache和SpriteFrameCache中。如果你想从内存中移除纹理或者精灵帧，你必须通过缓存来删除。
 
 ## 总结
-这个话题适用于精灵对象，但是基本所有的cocos2d的资源都有缓存(纹理、精灵帧、动画和预加载的音效)。大部分没有缓存的资源可以很轻易的被重复加载或更新。
+这个话题适用于精灵对象，但是基本所有的cocos2d的资源都有缓存(纹理,精灵帧,动画和预加载的音效)。大部分没有缓存的资源可以很轻易的被重复加载或更新。

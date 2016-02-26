@@ -175,7 +175,7 @@ By default, when decoding animation clips, if the loop category of animation is:
  - **Normal** category, **repeatCount** will be set as 1
 
 ## Animation event
-Visually editing the frame event is supported in the animation editor (For the methods of editing, please refer to [./animation-event.md]). Writing the callback of the animation event in the script is very simple too. The callback of the animation event is actually a normal function. The frame event added to the animation editor will map onto the component of animation root node.
+Visually editing the frame event is supported in the animation editor (For the methods of editing, please refer to [Animation event](./animation-event.md)). Writing the callback of the animation event in the script is very simple too. The callback of the animation event is actually a normal function. The frame event added to the animation editor will map onto the component of animation root node.
 
 ### Concrete example:
 Suppose a frame event is added to the end of animation, which is as illustrated below:
@@ -198,4 +198,4 @@ Animation system will search in all the components of animation root node. If th
 
 ---
 
-Continue to read the next chapter [Components](../components/index.md).
+Continue on to read about [Components](../components/index.md).

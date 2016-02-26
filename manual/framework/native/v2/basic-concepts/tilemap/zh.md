@@ -2,12 +2,12 @@
 
 ## 瓷砖地图
 
-瓷砖地图的制作很简单，不管你是在开发RPG游戏、平台游戏还是突破风格（Breakout）的游戏，瓷砖地图跟Cocos2D-x配合起来非常灵活。Cocos2D-x支持由开源瓷砖地图编辑器（Tiled Map Editor）制作并以TXM格式保存的地图。
+瓷砖地图的制作很简单，不管你是在开发RPG游戏,平台游戏还是突破风格（Breakout）的游戏，瓷砖地图跟Cocos2D-x配合起来非常灵活。Cocos2D-x支持由开源瓷砖地图编辑器（Tiled Map Editor）制作并以TXM格式保存的地图。
 ## TMX瓷砖地图格式
 Cocos2d支持瓷砖地图编辑器制作的TXM瓷砖地图。
 ### 瓷砖地图编辑器分两个版本
 
-- 一个是运行于Mac OS X、Windows及Linux平台的Java应用，为稳定版。
+- 一个是运行于Mac OS X,Windows及Linux平台的Java应用，为稳定版。
 
 - 一个是支持几乎所有java版本功能的QT（本地）应用。本指南撰写时，最新QT版本为0.4.0，支持除六边形地图以外的所有功能。
 
@@ -144,10 +144,10 @@ GID0用于代表空瓷砖。
 
 - 打开瓷砖编辑器
 - 选择背景层（如草）
-- 依次选择“Tiled”、“Layer”、“Layer Properties”
+- 依次选择“Tiled”,“Layer”,“Layer Properties”
 - 增加“cc_vertexz = -1000”
 - 选择前景层（如树）
-- 依次选择“Tiled”、“Layer”、“Layer Properties”
+- 依次选择“Tiled”,“Layer”,“Layer Properties”
 - 增加“cc_vertexz = automatic”
 
 ## 样例

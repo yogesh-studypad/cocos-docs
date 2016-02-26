@@ -13,4 +13,4 @@ This chapter will provide an introduction to the main editor windows and panels.
 
 <hr>
 
-Continue on to read about [editor interface introduction](editor-overview.md).
+Continue on to read about [Editor Interface Introduction](editor-overview.md).

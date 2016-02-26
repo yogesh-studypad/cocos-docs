@@ -7,7 +7,7 @@
 
 各种资源类型的loader可以在外部注册进来，而不是直接将所有的代码杂揉在`cc.Loader`中，更好的方便管理以及用户自定义loader的创建。
 
-`cc.loader`中包含了一些网络资源获取的基本api，例如加载js、加载image等。
+`cc.loader`中包含了一些网络资源获取的基本api，例如加载js,加载image等。
 
 ## API描述
 
@@ -249,7 +249,7 @@ cc.loader.loadAliases("res/lookup-html5.plist", function(){
 extNames        后缀名（String数组或者String）
 loader          loader对象，
                 必须包含一个名为"load"的方法，
-                方法将接受四个个参数：realUrl, url, res, cb，分别表示资源全路径、原来的路径、res对象（就是cc.loader.load方法的资源列表的项），回调函数。
+                方法将接受四个个参数：realUrl, url, res, cb，分别表示资源全路径,原来的路径,res对象（就是cc.loader.load方法的资源列表的项），回调函数。
                 可能包含一个名为"getBasePath"的方法，该方法返回该类型资源的根路径，不设置该方法默认为cc.loader.resPath。
 
 返回值：无

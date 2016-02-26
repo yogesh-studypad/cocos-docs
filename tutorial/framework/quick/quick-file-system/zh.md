@@ -30,7 +30,7 @@
 	+ `Store.lua`:提供了游戏内的计费功能。现在已经弃用，推荐使用`cc.sdk.pay`。
 	+ `Timer.lua`:这个是基于 2D-X 中 scheduler 计时器的一个扩展，他可以方便的管理各个计时器，并添加了一些方便的功能，例如：100秒的时间，每5秒调用触发一次计时器事件。推荐使用`cc.utils.Timer`。
 
-- `cc`：cc扩展在Cocos2d-x C++ API和quick基本模块的基础上，提供了符合脚本风格的事件接口、组件架构等扩展。
+- `cc`：cc扩展在Cocos2d-x C++ API和quick基本模块的基础上，提供了符合脚本风格的事件接口,组件架构等扩展。
 	+ `init.lua`:初始化cc扩展
 	+ `GameObject.lua`:quick现在使用的一套类似Unity3D的GameObject的框架
 	+ `Registry.lua`:quick中GameObject的注册器
@@ -43,19 +43,19 @@
 	+ `net`:网络接口封装，使用Socket连接
 	+ `push`:push SDK封装，目前包含友盟push和cocopush两个push的SDK
 	+ `share`:分享SDK封装，目前包含友盟分享SDK
-	+ `ui`:quick封装的Cocos2d-x控件，包含:UIGroup、UIImage，UIPushButton，UICheckBoxButton，UICheckBoxButtonGroup，UILabel，UISlider，UIBoxLayout
+	+ `ui`:quick封装的Cocos2d-x控件，包含:UIGroup,UIImage，UIPushButton，UICheckBoxButton，UICheckBoxButtonGroup，UILabel，UISlider，UIBoxLayout
 	+ `update`:自动更新组件的封装，使用的是友盟的更新SDK
 	+ `utils`:quick中其他的封装的功能
 
 - `cocos2dx`:quick对Cocos2d-x中的扩展
 - `platform`:平台移植代码
-- `audio.lua`:音乐、音效管理
+- `audio.lua`:音乐,音效管理
 - `cocos2dx.lua`:导入Cocos2d-x的库
-- `crypto.lua`:加解密、数据编码库
+- `crypto.lua`:加解密,数据编码库
 - `debug.lua`:提供调试接口
 - `deprecated.lua`:定义所有已经废弃的 API
 - `device.lua`:提供设备相关属性的查询，以及设备功能的访问
-- `display.lua`:与显示图像、场景有关的功能
+- `display.lua`:与显示图像,场景有关的功能
 - `filter.lua`:滤镜功能
 - `functions.lua`:提供一组常用函数，以及对 Lua 标准库的扩展
 - `init.lua`:quick framework的初始化
@@ -63,7 +63,7 @@
 - `luaj.lua`:Lua与Java之间的交互接口
 - `luaoc.lua`:Lua与Objective-c之间的交互接口
 - `network.lua`:网络接口封装，检查wifi和3G网络情况等
-- `schduler.lua`:全局计时器、计划任务，该模块在框架初始化时不会自动载入
+- `schduler.lua`:全局计时器,计划任务，该模块在框架初始化时不会自动载入
 - `shortcode.lua`:一些经常使用的短小的代码，比如设置旋转角度之类
 - `transition.lua`:为动作和对象添加效果
 - `ui.lua`:创建和管理用户界面

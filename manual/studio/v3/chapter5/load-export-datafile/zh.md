@@ -1,7 +1,7 @@
 #如何加载cocos 2.0版本生成的数据
-使用Cocos v2.0发布的CSB资源更换了加载方式，需要用CSLoader来加载。CSLoader在Cocos2d-x 3.3 RC0开始提供。目前的cocos支持的语言有C++、js、lua：
+使用Cocos v2.0发布的CSB资源更换了加载方式，需要用CSLoader来加载。CSLoader在Cocos2d-x 3.3 RC0开始提供。目前的cocos支持的语言有C++,js,lua：
  
-下面提供的分别为C++、js、lua的代码
+下面提供的分别为C++,js,lua的代码
 ###1.	C++
     #include "ui/CocosGUI.h"//UI相关的头文件 
     #include"cocostudio/CocoStudio.h"//在CocosStudio.h 头文件中已经包含了cocos所需要的各个头文件(除CocosGUI)因此我们使用Cocos仅需要包含他就可以 

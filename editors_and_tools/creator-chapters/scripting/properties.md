@@ -21,7 +21,7 @@ At this time, you can see in **attribute inspector** the two properties you just
 
 ## Declaration method
 
-In Cocos Creator, we provide two kinds of attribute declaration methods: 
+In Cocos Creator, we provide two kinds of attribute declaration methods:
 
 ### Simple declaration
 
@@ -76,7 +76,7 @@ the attribute behavior in the serial scene process. For example:
 The code above stipulates that the attribute name of the score in **attribute inspector** will be shown as “Score (player)”,
 and when the cursor moves on to the parameter, it will show the corresponding Tooltip.
 
-Below are the general parameters. For detailed usage please refer to[attribute parameter](/manual/scripting/attributes).
+Below are the general parameters. For detailed usage please refer to[attribute parameter](attributes.md).
 
 - default: set default value for attribute
 - type: restrict data type of attribute
@@ -125,8 +125,8 @@ properties: {
 
 **Note:** You can define the get method only, so this is like one attribute of read only.
 
-For more attribute parameters, please read [attribute parameter](reference/attributes.md).
+For more attribute parameters, please read [attribute parameter](attributes.md).
 
 ---
 
-Keep moving to [Access node and other component](access-node-component.md). 
+Continue on to read about [Access node and other component](access-node-component.md).

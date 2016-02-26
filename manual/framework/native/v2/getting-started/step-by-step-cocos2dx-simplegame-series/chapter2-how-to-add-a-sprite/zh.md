@@ -94,8 +94,8 @@ xcopy /Y /E .\Resources\*.* $(OutDir)
 2. C++与objc不同的是，不像objc，C++没有“属性（property）”这个概念。所以在C++中请使用“get/set”方法。例如，如果你想要获取“`CCSprite`”的“`contentSize`”属性，必须调用“`sprite->getContentSize()`”方法。记得第一个字母大写，然后再加上“get”前缀。     
 3. 请用“setter”来设置属性值。所以“`player.position = …`”转换成“`player->setPosition(…)`”。
 4. 但是访问结构成员不用遵循这个规则。例如在“winSize”结构中是没有包装了“width”和“height”的“getter/setter”包装类的。     
-5. 我们已经安装了一些频繁用到的CGGeometry功能，例如CGRectMake、CGPointMake、CGSizeMake、CGPointZero、CGSizeZero以及CGRectZero。你可以在“`cocos2dx/include/CCGeometry.h`”文件中看到这些功能，且功能与iOS平台一样。至于命名冲突，在Cocos2d-x中CG、NS及UI前缀的类名字已经改为CC前缀。     
-6. Cocos2d-x中所有游戏元素如精灵、层、场景、标签及动作均位于堆内存（heap）。所以必须通过“->”来调用它们的方法。
+5. 我们已经安装了一些频繁用到的CGGeometry功能，例如CGRectMake,CGPointMake,CGSizeMake,CGPointZero,CGSizeZero以及CGRectZero。你可以在“`cocos2dx/include/CCGeometry.h`”文件中看到这些功能，且功能与iOS平台一样。至于命名冲突，在Cocos2d-x中CG,NS及UI前缀的类名字已经改为CC前缀。     
+6. Cocos2d-x中所有游戏元素如精灵,层,场景,标签及动作均位于堆内存（heap）。所以必须通过“->”来调用它们的方法。
 7. 在Cpp文件中使用“this”关键字，而不是objc中使用的“self”。     
 8. 现在“init”方法的返回类型是“bool”。在Cpp中没有“id”关键字，所以所有返回“id”的方法均会被转换为目标指针（object pointer）或者bool。    
 9. 对于Android平台，标题栏会占据一些空间，所以需要将角色位置设置为“`ccp(player.contentSize.width/2 + 40, winSize.height/2)`”。   

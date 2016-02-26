@@ -1,6 +1,6 @@
 # アクションの新しいデザイン
 
-Cocos2d-JS v3.0 betaでは、アクションを簡単に使用できるようにいくつかの点が改善されています。
+Cocos2d-JS v3.0 betaでは,アクションを簡単に使用できるようにいくつかの点が改善されています。
 
 ### アクションを生成する為のショートカット ###
 
@@ -19,9 +19,9 @@ var action = cc.moveBy( 2, cc.p( 10, 10 ) )
 
 ### easeアクションの新しいデザイン ###
 
-easeアクションは装飾的なアクションで、個別に使用することはできません。ターゲットにアタッチして使用することができます。cc.ActionEaseとそのサブクラスは`update`関数を所有しているので、`cc.ActionInterval`から継承する必要はありません。また、デルタ時間を変更する`easing`関数もラップされています。
+easeアクションは装飾的なアクションで,個別に使用することはできません。ターゲットにアタッチして使用することができます。cc.ActionEaseとそのサブクラスは`update`関数を所有しているので,`cc.ActionInterval`から継承する必要はありません。また,デルタ時間を変更する`easing`関数もラップされています。
 
-1つ以上のオブジェクトを受け取るために、`cc.ActionInterval`に`easing`関数を追加しました。
+1つ以上のオブジェクトを受け取るために,`cc.ActionInterval`に`easing`関数を追加しました。
 
 以下に古い使用方法と新しい使用方法を記述しています。
 
@@ -39,7 +39,7 @@ var easeMoveBy = cc.moveBy( 2, cc.p( 100, 50 ) ).easing( cc.easeIn( 0.3 );
 
 ### cc.Repeat, cc.RepeatForever, cc.Speedの新しいデザイン ###
 
-cc.Repeat, cc.RepeatForever, cc.Speedなども装飾的なアクションなので、`cc.ActionInterval`に`repeat`関数, `repeatForever`関数, `speed`関数, `getSpeed`関数, `setSpeed`関数を追加しました。これらの変更により、複雑なアクションを明確にわかりやすく記述することが可能になりました。
+cc.Repeat, cc.RepeatForever, cc.Speedなども装飾的なアクションなので,`cc.ActionInterval`に`repeat`関数, `repeatForever`関数, `speed`関数, `getSpeed`関数, `setSpeed`関数を追加しました。これらの変更により,複雑なアクションを明確にわかりやすく記述することが可能になりました。
 
 以下に古い使用方法と新しい使用方法を記述しています。
 

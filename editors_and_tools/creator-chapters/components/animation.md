@@ -8,7 +8,7 @@ Click the `add component` at the bottom of **attribute inspector** and select `A
 
 ## Animation attribute
 
-| Attribute |   function explanation
+| Attribute |   Function explanation
 | -------------- | ----------- |
 | Default Clip | Default animation editing. If you set the value for this as one and **Play On Load** as true, then the animation will play the contents of **Default Clip** automatically after loading.
 | Clips | Default list type is null. If you add an **AnimationClip** in here, then it will be mirrored in the **animation editor**; users can edit the contents of **Clips** in the **animation editor**
@@ -28,4 +28,4 @@ For more information about**Animation**, please read [animation system](../anima
 
 <hr>
 
-Keep moving on to the [Canvas component reference](canvas.md) file.
+Continue on to read about [Canvas component reference](canvas.md).

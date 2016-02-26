@@ -4,13 +4,13 @@
 
 3D模型控制項使用方法
 
-1、創建基本3D物件
+1,創建基本3D物件
 
 &emsp;滑鼠拖拽3D控制項欄的模型控制項，拖入到場景中。
 
 ![image](res_tw/image0001.png)
  
-2、調整物件屬性
+2,調整物件屬性
 
 &emsp;調整基本屬性值，或者通過在場景中進行自由變換操作
 
@@ -18,11 +18,11 @@
 
 ![image](res_tw/image0003.png)
  
-3、導入模型並使用
+3,導入模型並使用
 
-&emsp;把模型、貼圖檔導入到工程，然後把模型檔拖到場景使用導入三維資源圖示如下：
+&emsp;把模型,貼圖檔導入到工程，然後把模型檔拖到場景使用導入三維資源圖示如下：
  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_tw/image0004.png)、
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_tw/image0004.png),
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](res_tw/image0005.png)
 

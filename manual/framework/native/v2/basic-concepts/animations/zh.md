@@ -21,7 +21,7 @@
 	sprite->runAction(action);  // run action on sprite object
 
 
-注意区别：“CCAnimation”由精灵帧、每帧延迟时间及持续时间等组成。因此相当于一个“数据”包。而“CCAnimate”是一个动作，是基于“CCAnimation”对象而创建的动作。
+注意区别：“CCAnimation”由精灵帧,每帧延迟时间及持续时间等组成。因此相当于一个“数据”包。而“CCAnimate”是一个动作，是基于“CCAnimation”对象而创建的动作。
 
 ### 精灵表（Sprite Sheet）动画
 
@@ -82,7 +82,7 @@
 
 ### 文件动画
 
-“CCAnimationCache”可以载入“xml”或“plist”文件，这种文件可以很好地描述批处理节点（batch node）、精灵帧名称及相应的矩形区域。界面也更易使用：
+“CCAnimationCache”可以载入“xml”或“plist”文件，这种文件可以很好地描述批处理节点（batch node）,精灵帧名称及相应的矩形区域。界面也更易使用：
 
 	CCAnimationCache *cache = CCAnimationCache::sharedAnimationCache(); // "caches" are always singletons in cocos2d
 	cache->addAnimationsWithFile("animations/animations-2.plist");

@@ -2,16 +2,16 @@
 
 This chapter will introduce the powerful and flexible UI (user interface) system of Cocos Creator. By assembling different UI components, we were able to produce a UI that can adapt to screens with various resolutions, dynamically generate and update displaying content by data, and support various layout methods.
 
-<a href="index/ui_cover.png"><img src="index/ui_cover.png" alt="ui cover"></a>
+![ui cover](index/ui_cover.png)
 
-- [sliced-sprite.md]
-- [multi-resolution.md]
-- [widget-align.md]
-- [label-layout.md]
-- [ui-components.md]
-- [auto-layout.md]
-- [list-with-data.md]
+- [Sliced Sprite](sliced-sprite.md)
+- [Multi-resolution](multi-resolution.md)
+- [Widget Alignment](widget-align.md)
+- [Label Layout](label-layout.md)
+- [UI Components](ui-components.md)
+- [Auto Layout](auto-layout.md)
+- [List with Data](list-with-data.md)
 
 <hr>
 
-Continue to read the introductory document of [sliced-sprite.md].
+Continue on to read about [Sliced Sprite](sliced-sprite.md).

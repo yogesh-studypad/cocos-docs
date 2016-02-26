@@ -8,16 +8,16 @@
 
 其實，Framework的使用步驟很簡單，之所以有這個簡略使用步驟，是怕浪費大家的時間。廢話少說，步驟如下：
 
-&emsp;&emsp;1、下載framework
+&emsp;&emsp;1,下載framework
 
-&emsp;&emsp;2、安裝framework（注意路徑不要有空格和特殊字元，可改變預設路徑）
+&emsp;&emsp;2,安裝framework（注意路徑不要有空格和特殊字元，可改變預設路徑）
 
-&emsp;&emsp;3、重新開機cocos（要關閉電腦螢幕右下角的launcher）
+&emsp;&emsp;3,重新開機cocos（要關閉電腦螢幕右下角的launcher）
 
 &emsp;&emsp;![image](res/image004.png) 
 
-&emsp;&emsp;4、新建專案、選擇framework版本、語言等
+&emsp;&emsp;4,新建專案,選擇framework版本,語言等
 
-&emsp;&emsp;5、發佈項目到VS。發佈到VS後，點擊運行或F5即可運行出這個介面。
+&emsp;&emsp;5,發佈項目到VS。發佈到VS後，點擊運行或F5即可運行出這個介面。
  
 &emsp;&emsp;![image](res/image009.png) 

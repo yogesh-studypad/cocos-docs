@@ -21,7 +21,7 @@
 
 &emsp;&emsp;![image](res/image0004.png) 
 
-&emsp;&emsp;iii.重复以上两个步骤，放入knight.c3b、mage.c3b和rat.c3b并配置其常规属性，得出如下图的场景。
+&emsp;&emsp;iii.重复以上两个步骤，放入knight.c3b,mage.c3b和rat.c3b并配置其常规属性，得出如下图的场景。
 
 &emsp;&emsp;![image](res/image0005.png) 
  

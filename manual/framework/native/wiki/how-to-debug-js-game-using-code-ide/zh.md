@@ -5,7 +5,7 @@
 
 
 
-在 Windows 上你可以调试Windows和Android游戏，在 Mac 上你可以调试Mac、iOS和Android游戏。我们以 Mac 作为开发环境来演示 Code IDE 的使用，Windows上的流程和这里所介绍的几乎一样，不再赘述。
+在 Windows 上你可以调试Windows和Android游戏，在 Mac 上你可以调试Mac,iOS和Android游戏。我们以 Mac 作为开发环境来演示 Code IDE 的使用，Windows上的流程和这里所介绍的几乎一样，不再赘述。
 
 {{toc}}
 
@@ -25,7 +25,7 @@ IDE 配置
 假设你发现我们提供给你的预编译的Android runtime不能满足你的要求，你就需要重新定制，那么你就需要提供给 IDE 几个 Android 编译需要用到的工具。这可以通过打开 **Preferences/Cocos** 页面进行配置。
 ![](./res/PreferencesCocos.png)
 
-运行、测试游戏
+运行,测试游戏
 ===
 ---
 1. 新建一个名为 CocosJSGame 的 Cocos JavaScript 工程
@@ -41,7 +41,7 @@ IDE 配置
 ## 断点支持
 + 可以在 javascript 脚本文件中增加断点，比如下在 app.js 的第25行
 + 当屏幕右下角的关闭按钮被点击的时候，断点就会被触发
-+ 此时选择 “Yes” 打开 **Debug Perspective** 透视图，可以看到很多与调试相关的视图，调用栈、变量和断点等等
++ 此时选择 “Yes” 打开 **Debug Perspective** 透视图，可以看到很多与调试相关的视图，调用栈,变量和断点等等
   ![](./res/js_breakpoint_triggered.png)
 + 支持 **Step over, Step into, Step out** 等调试方式
 

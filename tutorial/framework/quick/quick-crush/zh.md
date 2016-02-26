@@ -69,7 +69,7 @@ end
 
 为了更形象和生动，我们给图片增加了两个缩放的动画。
 
-接下来的几个函数是获取SpriteItem的一些成员变量的信息，包括`active`、`col`、`row`、`ImageIndex`信息。`getContentWidth`返回的是每个元素的宽度。事实上，上面的写法更类似于C/C++中的写法，在Lua中更多的会使用table的写法。
+接下来的几个函数是获取SpriteItem的一些成员变量的信息，包括`active`,`col`,`row`,`ImageIndex`信息。`getContentWidth`返回的是每个元素的宽度。事实上，上面的写法更类似于C/C++中的写法，在Lua中更多的会使用table的写法。
 
 ## 主场景
 

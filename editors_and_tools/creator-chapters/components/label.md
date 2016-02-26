@@ -36,4 +36,4 @@ By dragging the TTF font file and BMFont font file into the `file` attribute in 
 
 ---`
 
-Keep moving on to the [Animation component reference](animation.md) file.
+Continue on to read about [Animation component reference](animation.md).

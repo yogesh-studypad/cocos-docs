@@ -2,7 +2,7 @@
 
 &emsp;&emsp;1.自定义数据导出格式
 
-&emsp;&emsp;Cocos Studio默认支持三种导出格式：CSB、Json、Lua。用户可能选择自己需要的格式进行导出，如果有特殊的需求，可以自定制导出，相应的读取部分也需要自己实现。只需要实现 `CocoStudio.Projects.IGameProjectSerializer` 接口（在 Cocos v2.3.3 版本之后为 `CocoStudio.Projects.IGameFileSerializer`, 请以实际代码为准。参见示例工程中的 `PublishExtend` 目录里的 `CustomSerializer` 类）。接口的定义如下：
+&emsp;&emsp;Cocos Studio默认支持三种导出格式：CSB,Json,Lua。用户可能选择自己需要的格式进行导出，如果有特殊的需求，可以自定制导出，相应的读取部分也需要自己实现。只需要实现 `CocoStudio.Projects.IGameProjectSerializer` 接口（在 Cocos v2.3.3 版本之后为 `CocoStudio.Projects.IGameFileSerializer`, 请以实际代码为准。参见示例工程中的 `PublishExtend` 目录里的 `CustomSerializer` 类）。接口的定义如下：
 
     [TypeExtensionPoint]
 	// 在 Cocos v2.3.3 版本之后为 IGameFileSerializer

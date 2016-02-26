@@ -8,7 +8,7 @@
 
 * 原来的`cocos2d.js`中参杂了一些逻辑代码，无法很好体现其就是作为项目的配置文件。
 
-* 用json格式作为配置文件会更友好。也可以使得`cocos-console`、`cocos-utils`，甚至是用户自定义脚本工具能够使用同一个配置文件。
+* 用json格式作为配置文件会更友好。也可以使得`cocos-console`,`cocos-utils`，甚至是用户自定义脚本工具能够使用同一个配置文件。
 
 ## 字段说明
 
@@ -47,7 +47,7 @@
 
 用于指定加载模块。
 
-在v2版本中，只能通过`loadExtension`、`box2d`、`chipmunk`、`pluginx`等开关来指定是否使用某个模块。
+在v2版本中，只能通过`loadExtension`,`box2d`,`chipmunk`,`pluginx`等开关来指定是否使用某个模块。
 
 在v3版本中则使用`modules`字段，灵活进行配置，这也能较好的支持今后引擎进行模块裁剪。配置如下：
 

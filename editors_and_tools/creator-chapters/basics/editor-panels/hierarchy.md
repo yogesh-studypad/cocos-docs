@@ -14,7 +14,7 @@ There are two ways to create node in hierarchy manager:
 - Click  `+` button on the top left corner or right click the mouse to enter the **create node** submenu in right click menu. In this submenu, you can select different node types including Sprite, Label, Button and other nodes with different functions and expressions.
 - Drag assets like image, font or particle from **explorer** to hierarchy manager. Then you can create corresponding image rendering node with the selected assets.
 
-## Delete node 
+## Delete node
 
 After select node, you can delete the selected node by the `delete` option in the right click menu or press the hot key <kbd>Delete</kbd>（Windows）or <kbd>Cmd + Backspace</kbd>. If the selected node contains child node, then the child node will be deleted along with it.
 
@@ -41,4 +41,4 @@ Right click the node, the popup menu also includes the following operation:
 
 ---
 
-Keep moving on to [Attribute inspector](inspector.md) file.
+Continue on to read about [Attribute inspector](inspector.md).

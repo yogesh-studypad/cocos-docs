@@ -115,4 +115,4 @@ cc.Class({
 
 ---
 
-Keep moving to the [launch and monitor events](events.md) instruction file.
+Continue on to read about [launch and monitor events](events.md).

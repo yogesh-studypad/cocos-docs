@@ -16,11 +16,11 @@
 - Linux用户可以参考
 	- [《Linux平台Cocos2d-x Android开发指南》](http://blog.plicatibu.com/developing-with-cocos2d-x-for-android-on-linux/)以及
 	- [《使用Eclipse调试指南》](http://blog.plicatibu.com/how-to-debug-cocos2d-x-and-java-code-using-eclipse/)
-- 最后安装和初次运行章节也介绍了如何运行“HelloWorld”及测试项目、如何用各平台支持的脚本创建Cocos2d-x项目。
+- 最后安装和初次运行章节也介绍了如何运行“HelloWorld”及测试项目,如何用各平台支持的脚本创建Cocos2d-x项目。
 
 ### 概念须知
 
-- [Cocos2d基本概念](http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:basic_concepts)基本涵盖了cocos2d各个分支，包括Cocos2d-iphone、Cocos2d-x及Cocos2d-html5。欲了解更多信息可参考Cocos2d-iphone[编程指南](http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:index)。
+- [Cocos2d基本概念](http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:basic_concepts)基本涵盖了cocos2d各个分支，包括Cocos2d-iphone,Cocos2d-x及Cocos2d-html5。欲了解更多信息可参考Cocos2d-iphone[编程指南](http://www.cocos2d-iphone.org/wiki/doku.php/prog_guide:index)。
 - 许多开发人员不明白“标准触摸代表和目标触摸代表”（  [Standard Touch Delegate & Targeted Touch Delegate](http://www.cocos2d-iphone.org/wiki/doku.php/tips:touchdelegates?s[]=touch&s[]=delegate)）。
 - Cocos2d-x在[内存管理](http://)中会用到引用计数（reference count）。类似于Objective-C的“NSAutoreleasePool”工具。用户需要小心使用“retain/release/autorelease”以防止崩溃。
 

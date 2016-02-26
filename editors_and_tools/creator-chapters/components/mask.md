@@ -19,4 +19,4 @@ After adding the Mask component to a node, all the child nodes of this node will
 
 ---
 
-Keep moving on to [ScrollView component reference](scrollview.md).
+Continue on to read about [ScrollView component reference](scrollview.md).

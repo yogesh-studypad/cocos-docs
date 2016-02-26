@@ -113,4 +113,4 @@ In the scene editor, you can always use [rectangle transform tools](../basics/ed
 
 ---
 
-Keep moving on to the [manage node hierarchy and display order](node-tree.md) file.
+Continue on to read about [manage node hierarchy and display order](node-tree.md).

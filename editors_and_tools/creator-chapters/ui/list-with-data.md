@@ -5,4 +5,4 @@ The content of this document is coming soon...
 
 <hr>
 
-Continue to read next chapter [../animation/index.md] introductory document.
+Continue on to read about [Animation](../animation/index.md).

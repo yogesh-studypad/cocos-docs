@@ -55,11 +55,11 @@
 
 ## 注意
 
-在OC的实现中，如果方法的参数需要使用float、int、bool的，请使用如下类型进行转换：
+在OC的实现中，如果方法的参数需要使用float,int,bool的，请使用如下类型进行转换：
 
 - **float，int 请使用NSNumber类型**
 - **bool请使用BOOL类型。**
-- 例如下面代码，我们传入2个浮点数，然后计算他们的合并返回，我们使用NSNumber而不是int、float去作为参数类型。
+- 例如下面代码，我们传入2个浮点数，然后计算他们的合并返回，我们使用NSNumber而不是int,float去作为参数类型。
 
 ```
 +(float) addTwoNumber:(NSNumber *)num1 and:(NSNumber *)num2{

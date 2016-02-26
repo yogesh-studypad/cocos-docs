@@ -116,7 +116,7 @@ NDK-R4不支持STL。但我们的引擎需要依赖STL，所以我们要找一�
 
 ## 2. 编译
 
-改变变量ANDROID_NDK_ROOT和COCOS2DX_ROOT的值，这两个变量的定义在$COCOS2DX_ROOT/HelloWorld/android/build_native.sh文件中有所说明。COCOS2DX_ROOT是指Cocos2d-x的目录路径，其中包括Box2D、Chipmunk等库的路径。这部分将介绍如何在没有集成开发环境（IDE）的情况下编译项目。
+改变变量ANDROID_NDK_ROOT和COCOS2DX_ROOT的值，这两个变量的定义在$COCOS2DX_ROOT/HelloWorld/android/build_native.sh文件中有所说明。COCOS2DX_ROOT是指Cocos2d-x的目录路径，其中包括Box2D,Chipmunk等库的路径。这部分将介绍如何在没有集成开发环境（IDE）的情况下编译项目。
 
 ### Linux平台
 

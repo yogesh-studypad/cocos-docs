@@ -6,21 +6,21 @@ Cocos Creator is a componentized structure. Animation is no exception, it is a c
 ## Understanding animation editor
 The Animation editor can be divided into 7 parts.
 
-<a href="animation/main.png"><img src="animation/main.png" alt="main"></a>
+![main](animation/main.png)
 
-1、Common button field, which displays some common functional buttons, such as: (from left to right) recording status switch, back to the first frame, last frame, play/stop, next frame, create a new animation clip and insert animation event.
+1. Common button field, which displays some common functional buttons, such as: (from left to right) recording status switch, back to the first frame, last frame, play/stop, next frame, create a new animation clip and insert animation event.
 
-2、Timeline and event, which mainly displays timeline. The added user defined events will display here too.
+2. Timeline and event, which mainly displays timeline. The added user defined events will display here too.
 
-3、Hierarchy management(node tree), which includes node data that can be influenced by the current animation clip.
+3. Hierarchy management(node tree), which includes node data that can be influenced by the current animation clip.
 
-4、The preview field of the animation frame in nodes, which mainly displays the preview timeline of all the frames in each node.
+4. The preview field of the animation frame in nodes, which mainly displays the preview timeline of all the frames in each node.
 
-5、Property list, which displays the property lists of the currently chosen node that has been included in the chosen animation clip.
+5. Property list, which displays the property lists of the currently chosen node that has been included in the chosen animation clip.
 
-6、Key frame. The frame corresponding to each property will display here.
+6. Key frame. The frame corresponding to each property will display here.
 
-7、Basic properties of animation clip. After choosing the animation clip, the basic data will display here and can be modified.
+7. Basic properties of animation clip. After choosing the animation clip, the basic data will display here and can be modified.
 
 ## Basic operation
 

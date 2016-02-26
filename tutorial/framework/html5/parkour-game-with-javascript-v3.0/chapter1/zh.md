@@ -6,7 +6,7 @@
 
 ## 下载所需的软件包
 
-1. 下载并安装 WebStorm 7。目前 [WebStorm 7](http://www.jetbrains.com/webstorm/download/index.html) 最稳定的发布版本是 7.0.3。我们为什么 WebStorm 呢？因为它提供了很多特性，例如Javascript代码的语法实现、调试、语法高亮以及版本管理等等。你可以去WebStorm的官网获取更多的信息。
+1. 下载并安装 WebStorm 7。目前 [WebStorm 7](http://www.jetbrains.com/webstorm/download/index.html) 最稳定的发布版本是 7.0.3。我们为什么 WebStorm 呢？因为它提供了很多特性，例如Javascript代码的语法实现,调试,语法高亮以及版本管理等等。你可以去WebStorm的官网获取更多的信息。
 
 2. 从Cocos2d-x的官网下载[cocos2d-js-v3.0 alpha2](http://cocos2d-x.org/download )。下载完成后解压到适当的路径。以我的为例，我将它解压在 ~/work/Cocos2d-js-v3.0-alpha2 里。这里的 ~ 符号代表我们的 home 文件路径，于我而言就是 /Users/linshun。
 
@@ -185,7 +185,7 @@ Cocos console是一个可以为Cocos2d-html5和Cocos2d-x JavaScript Binding（JS
 	
 	![debugview](res/debugview.png)
 
-3. 现在你可以进行步出、步入、单步执行和继续执行等调试操作。
+3. 现在你可以进行步出,步入,单步执行和继续执行等调试操作。
 
 ## 总结
 

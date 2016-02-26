@@ -3,7 +3,7 @@
 ##Overview
 
 WP8 是微软公司最新一代的手机操作系统，由于采用和 Win8 相同的 NT 内核并拥有多项有
-别于 iOS、Android 的优点，使得它发展迅速。目前已拥有超过 17 万个应用，并且数量还在
+别于 iOS,Android 的优点，使得它发展迅速。目前已拥有超过 17 万个应用，并且数量还在
 不断增加中。现在看来越来越多的开发者包括游戏开发者正向 WP8 平台迁移，想在这个平
 台上一显身手。
 
@@ -24,7 +24,7 @@ windows phone，我们开始吧！
 ![](res/1.png)
 
 按步骤填写 windows 账号和注册 Windows phone 开发者账号
-Windows 账号说明：就是 Hotmail、SkyDrive、Xbox LIVE 的用户
+Windows 账号说明：就是 Hotmail,SkyDrive,Xbox LIVE 的用户
 开发者账号的费用：$19 一年；学生账号免费但不能发布收费应用
 
 ### 安装编译环境
@@ -211,7 +211,7 @@ CocosDenshion，物理库 Box2D 等并没有导入，所以我们需要手动将
 ![](res/21.png)
 
 XAP 文件就是 windows phone 的包文件格式，相当于 Android 的 APK 和 iOS 的 APP。
-它是一个标准的 zip 压缩文件，包括了 WP 应用程序所需的一切文件，如程序集、资源
+它是一个标准的 zip 压缩文件，包括了 WP 应用程序所需的一切文件，如程序集,资源
 文件等。通过项目的“输出路径”，我们可以找到生成的 XAP 的文件。
 
 ![](res/22.png)
@@ -220,9 +220,9 @@ XAP 文件就是 windows phone 的包文件格式，相当于 Android 的 APK �
 
 ![](res/23.png)
 
-左图是 XAP 文件包含的内容，看上去和 Android 有点类似，包括程序文件(exe)、应用配
-置文件 WMAppManifest.xml（类似于安卓的 AndroidManifest.xml）、一些 dll 和一个
-Assets 目录。中图是 Assets 目录、右图是 Assets/Resources 目录包含的内容，可以看
+左图是 XAP 文件包含的内容，看上去和 Android 有点类似，包括程序文件(exe),应用配
+置文件 WMAppManifest.xml（类似于安卓的 AndroidManifest.xml）,一些 dll 和一个
+Assets 目录。中图是 Assets 目录,右图是 Assets/Resources 目录包含的内容，可以看
 到主要是游戏资源。
 
 由此可见，和 Android 一样，WP 的程序会把需要用到的资源放在 Assets 目录下。
@@ -289,7 +289,7 @@ WP8 工程里的 Assets/Resources 目录：
 
 **VS 里面引用的都是 B 目录下的资源，即真正打入到 XAP 包的是 B 目录下的资源；**
 
-**VS 编译时会把 A 目录下的资源拷贝到 B 目录下；只会增加、覆盖，不会删除；**
+**VS 编译时会把 A 目录下的资源拷贝到 B 目录下；只会增加,覆盖，不会删除；**
 
 为了证实有拷贝这个过程，再次仔细查看编译后的输出，发现有如下提示
 
@@ -301,12 +301,12 @@ WP8 工程里的 Assets/Resources 目录：
 根据以上结论，我们可以用如下顺序来处理资源【Tip4】：
 
  	清空 B 目录
- 	在 A 目录下增加、删除、修改资源
+ 	在 A 目录下增加,删除,修改资源
  	打开并编译工程，确保 A 拷贝到 B
  	在打开工程的 Assets 下引用 B 目录的资源，并做修改
 	（如果引用 A 目录下的资源情况会是怎样呢？读者可以自己去测试一下）
  	再次编译并生成 XAP
-我们用上述方法，请读者试着增加 HelloWorld1.png、删除 HelloWorld.png，并创建加入
+我们用上述方法，请读者试着增加 HelloWorld1.png,删除 HelloWorld.png，并创建加入
 一个文本文件 1.txt。成功后 VS 工程的 Assets 内容和 XAP/Assets/Resources 内容应如
 下所示：
 
@@ -336,7 +336,7 @@ Assets 下。编译后，查看一下 XAP 文件，看看 1.123 有没有。
 恭喜，相信你已经完全了解 Assets 了！
 
 ##推荐一些常用的游戏资源转换工具
-###利用 TexturePacker 软件来组合、整理图片【Tip5】
+###利用 TexturePacker 软件来组合,整理图片【Tip5】
 [http://www.codeandweb.com/texturepacker](http://www.codeandweb.com/texturepacker)
 ###利用格式工厂等软件转换声音文件
 [http://www.pcfreetime.com/](http://www.pcfreetime.com/)

@@ -61,7 +61,7 @@ Scene* PhysicsLayer::createScene()
 
 `Scene`类有一个新的static 工厂方法`createWithPhysics()`创建一个带物理世界的场景。你可以通过 `Scene`的 `getPhysicsWorld()`方法获取`PhysicsWorld`实例。
 
-在调试物理引擎时`PhysicsWorld`的 `setDebugDrawMask()` 非常有用。它可以使物理世界中的形状(shape)、关节(joint)、接触(contact)可见。记得在发布你的游戏时关闭该调试功能。 
+在调试物理引擎时`PhysicsWorld`的 `setDebugDrawMask()` 非常有用。它可以使物理世界中的形状(shape),关节(joint),接触(contact)可见。记得在发布你的游戏时关闭该调试功能。 
 
 你可以使用`setPhyWorld()`方法传递PhysicsWorld到ChildLayer，在一个场景中只有一个PhysicsWorld实例。各个层之间共享。
 

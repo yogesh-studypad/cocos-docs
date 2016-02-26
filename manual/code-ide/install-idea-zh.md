@@ -1,6 +1,6 @@
 
 ##代码编辑器
-Cocos Code IDE 2.0.0 是一个基于 IntelliJ IDEA 的跨平台IDE，专门为 Cocos2d-x Lua & JavaScript 开发人员准备，通过IDE 你可以方便的创建游戏工程、编写并且支持在不同平台上调试代码、实时查看代码被改变后的效果，最终直接发布成一个可上架的安装包。
+Cocos Code IDE 2.0.0 是一个基于 IntelliJ IDEA 的跨平台IDE，专门为 Cocos2d-x Lua & JavaScript 开发人员准备，通过IDE 你可以方便的创建游戏工程,编写并且支持在不同平台上调试代码,实时查看代码被改变后的效果，最终直接发布成一个可上架的安装包。
 
 特别告知：IDE 1.x版本的用户们，2.0.0版本并不是在1.2.0版本上的升级，而是把IDE的原有功能从Eclipse框架下迁移到Intellij IDEA的一个版本。
 
@@ -21,8 +21,8 @@ IDE的定位为Cocos2d Lua&JavaScript 调试工具，而代码编辑和调试又
 IDE在1.x版本中提供了这些主要功能：
 
 	1 新建JS/Lua工程，同时支持-x/js/quick/cocos等产品
-	2 代码提示、自动完成、资源提示
-	3 调试功能，断点设置、步进步出、堆栈、变量查看，包括模拟器和真机。
+	2 代码提示,自动完成,资源提示
+	3 调试功能，断点设置,步进步出,堆栈,变量查看，包括模拟器和真机。
 	4 代码热更新
 	5 一键发布，支持mac/iOS/Android/win32/
 
@@ -38,8 +38,8 @@ IDE在1.x版本中提供了这些主要功能：
 ###IDE 2.0.0beta版本说明
 
 	1 新建JS/Lua工程，支持-x/js/cocos(已完成)，支持quick（未完成）
-	2 代码提示（JS已完成，Lua未完成）、自动完成(Lua未完成)
-	3 调试功能，断点设置、步进步出、堆栈、包括模拟器和真机（已完成）。变量查看（未完成）
+	2 代码提示（JS已完成，Lua未完成）,自动完成(Lua未完成)
+	3 调试功能，断点设置,步进步出,堆栈,包括模拟器和真机（已完成）。变量查看（未完成）
 	4 代码热更新（未完成）
 	5 一键发布（未完成）
 	6 添加本地代码(已完成)
@@ -399,7 +399,7 @@ IntelliJ官方对Js提示已经非常好用，我们延用了这个功能；`但
 
 	请到配置引擎，设置成Engine Mode模式
 
-3 console新建工程，怎么导入工程（包括Studio创建、Cocos Console创建以及Cocos创建的工程）？
+3 console新建工程，怎么导入工程（包括Studio创建,Cocos Console创建以及Cocos创建的工程）？
 
 	导入功能在下个版本就能提供。不过要注意，console新建工程记得加-t runtime参数(cocos new -l js/lua -t runtime)，才能被IDE支持。
 	http://cn.cocos2d-x.org/article/index?type=code-ide&url=/doc/cocos-docs-master/manual/code-ide/install-idea-zh.md

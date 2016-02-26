@@ -27,4 +27,4 @@ Sliced rendering modes.
 
 ---
 
-Keep moving on to [Mask component reference](mask.md).
+Continue on to read about [Mask component reference](mask.md).

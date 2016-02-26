@@ -2,7 +2,7 @@
 
 모든 createWithXXX 함수를 통합된 create 함수와 다른 파라메터로 재설계했습니다.
 
-###1、Sprite (4 ways)###
+###1,Sprite (4 ways)###
 
 (1) 이미지 경로로 스프라이트 생성
 
@@ -31,7 +31,7 @@
     //파라메터:texture,  cc.rect
     var sprite2 = cc.Sprite.create(texture,  cc.rect(0, 0, 480, 320));
 
-###2、LabelTTF (2 ways)###
+###2,LabelTTF (2 ways)###
 
 (1) 폰트, 사이즈, 다른 파라메터로 라벨 생성
 
@@ -46,7 +46,7 @@
     //파라메터:문자열, cc.FontDefinition
     var myLabel = cc.LabelTTF.create('label text',  fontDef);
 
-###3、Animation (3 ways)###
+###3,Animation (3 ways)###
 
 (1) 빈 애니메이션 생성
 
@@ -78,7 +78,7 @@
     //파라메터:애니메이션 프레임, 지연 시간, 반복 횟수
     var animation3 = cc.Animation.create(animationFrameArr,  0.2, 2);
 
-###4、SpriteBatchNode (2 ways)###
+###4,SpriteBatchNode (2 ways)###
 
 (1) 이미지 경로로 생성
 
@@ -91,7 +91,7 @@
     //파라메터:텍스쳐, 최대 자식 용량
     var spriteBatchNode = cc.SpriteBatchNode.create(texture, 50);
 
-###5、SpriteFrame (2 ways)###
+###5,SpriteFrame (2 ways)###
 
 (1) 이미지 경로로 생성
 
@@ -108,7 +108,7 @@
     //파라메터:이미지 경로, cc.rect, 회전, 오프셋, 원래 사이즈
     var frame2 = cc.SpriteFrame.create(texture,  cc.rect(0, 0, 90, 128), false, 0, cc.size(90, 128));
 
-###6、ParticleSystem (2 ways)###
+###6,ParticleSystem (2 ways)###
 
 (1) 총합으로 생성
 
@@ -120,7 +120,7 @@
     //파라메터: plist 파일 경로
     var particle = cc.ParticleSystem.create("res/particle.plist");
 
-###8、PhysicsSprite (4 ways)###
+###8,PhysicsSprite (4 ways)###
 
 (1) 이미지 경로로 생성
 
@@ -149,7 +149,7 @@
     //파라메터:텍스쳐, cc.rect
     var physicsSprite2 = cc.PhysicsSprite.create(texture,  cc.rect(0, 0, 480, 320));
 
-###9、TextureAtlas (2 ways)###
+###9,TextureAtlas (2 ways)###
 
 (1) 이미지 경로로 생성
 

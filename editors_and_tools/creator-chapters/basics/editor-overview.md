@@ -1,7 +1,7 @@
 # Editor interface overview
 This chapter will introduce the editor interface and get familiar with each of the panels, menus and functional buttons that make up the editor. The Cocos Creator editor is composed of multiple panels which can be moved and combined freely to meet the needs of different projects and developers. Here we will take the default editor layout as an example to quickly browse the name and function of each panel:
 
-<a href="index/editor-overview.png"><img src="index/editor-overview.png" alt="editor overview"></a>
+![Editor Overview](index/editor-overview.png)
 
 ## Asset manager
 
@@ -41,4 +41,4 @@ For further information please read the [attribute inspector](editor-panels/insp
 
 **Toolbar** includes the scene editing tool and operating button for game preview. The far right side shows the access address for remote testing and debugging and the device number of the connected device.
 
-Continue on to read about [toolbar](toolbar.md).
+Continue on to read about [Toolbar](toolbar.md).

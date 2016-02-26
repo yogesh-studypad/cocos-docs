@@ -23,7 +23,7 @@
 
 ### 社区支持
 
-使用、学习过程中可以在以下社区查看已知问题的解决方法，对于未知问题可以发布新的问题贴寻求帮助
+使用,学习过程中可以在以下社区查看已知问题的解决方法，对于未知问题可以发布新的问题贴寻求帮助
 
 中文论坛 : [http://www.cocoachina.com](http://www.cocoachina.com/bbs/thread.php?fid=48)
 英文论坛：[http://www.cocos2d-x.org](http://www.cocos2d-x.org/forums/24)
@@ -35,4 +35,4 @@ weibo: [@cocos2d-x](http://weibo.com/cocos2dx)
 
 ###邮件支持
 
-如果在使用Cocos Studio过程中遇到问题，包括但不限于以下情况：异常退出、与预期不一致、安装失败、生成文件在程序中调用失败或异常等，请将出问题时系统环境、具体表现、复现操作等信息发送至：[CocoStudio@chukong-inc.com]()，提供更多的关键信息将会是使问题更快的被解决。
+如果在使用Cocos Studio过程中遇到问题，包括但不限于以下情况：异常退出,与预期不一致,安装失败,生成文件在程序中调用失败或异常等，请将出问题时系统环境,具体表现,复现操作等信息发送至：[CocoStudio@chukong-inc.com]()，提供更多的关键信息将会是使问题更快的被解决。

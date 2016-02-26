@@ -49,4 +49,4 @@ Open the project folder in the operating system explorer or finder.
 
 ---
 
-Continue on to read about the [editor layout](layout.md).
+Continue on to read about the [Editor Layout](layout.md).

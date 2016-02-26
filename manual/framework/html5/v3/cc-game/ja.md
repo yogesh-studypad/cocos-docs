@@ -2,7 +2,7 @@
 
 ## 概要
 
-ゲームを実行するためのコードを簡略化するために`cc.Application`と`cc.AppControl`は削除され、`cc.game`に変更されています。
+ゲームを実行するためのコードを簡略化するために`cc.Application`と`cc.AppControl`は削除され,`cc.game`に変更されています。
 
 ## 使用方法
 
@@ -70,11 +70,11 @@ jsList : "jsList",
 classReleaseMode : "classReleaseMode"
 ```
 
-`cc.game.config[cc.game.CONFIG_KEY.***]`を使用して、ゲームに使用される設定値を取得することができます。
+`cc.game.config[cc.game.CONFIG_KEY.***]`を使用して,ゲームに使用される設定値を取得することができます。
 
 ## EVENT\_HIDE & EVENT\_SHOWについて
 
-Cocos2d-JS v3.0ではブラウザのタブ切り替え時、バックグラウンド移動時、フォアグラウンド移動時、スマートフォンのホームボタンが押下時などのイベントを受け取るイベントリスナを追加することができます。
+Cocos2d-JS v3.0ではブラウザのタブ切り替え時,バックグラウンド移動時,フォアグラウンド移動時,スマートフォンのホームボタンが押下時などのイベントを受け取るイベントリスナを追加することができます。
 
 	cc.eventManager.addCustomListener( cc.game.EVENT_HIDE, function() {
 	

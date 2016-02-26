@@ -20,7 +20,7 @@ ps. 如果你是新手，请先阅读[Cocos2d-x的Android环境搭建]()
 
 ### 介绍
 
-JNI是JVM实现中的一部分，因此Native语言和Java代码都运行在JVM的宿主环境。JNI的出现使得开发者既可以利用Java语言跨平台、类库丰 富、开发便捷等特点，又可以利用Native语言的高效。
+JNI是JVM实现中的一部分，因此Native语言和Java代码都运行在JVM的宿主环境。JNI的出现使得开发者既可以利用Java语言跨平台,类库丰 富,开发便捷等特点，又可以利用Native语言的高效。
 
 JNI是一个双向的接口：开发者不仅可以通过JNI在Java代码中访问Native模块，还可以在 Native代码中嵌入一个JVM，并通过JNI访问运行于其中的Java模块。可见，JNI担任了一个桥梁的角色，它将JVM与Native模块联系起来，从而实现了Java代码与Native代码的互访。
 
@@ -99,7 +99,7 @@ public static void WeiboLogin(String clientID, String redirector) {
 
 
 #### 最重要的两个方法：
-getStaticMethodInfo、getMethodInfo
+getStaticMethodInfo,getMethodInfo
 
 ##### getStaticMethodInfo
 

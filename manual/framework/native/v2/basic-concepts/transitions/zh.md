@@ -2,7 +2,7 @@
 
 ## 介绍
 
-Cocos2d-x引擎很酷的一点就是提供两个不同场景之间的过渡功能，例如滑动、淡进淡出、变焦及分离。“Transition Sceneclass”场景过渡类是从“CocosNode”继承而来的类，类似于层（Layer）。
+Cocos2d-x引擎很酷的一点就是提供两个不同场景之间的过渡功能，例如滑动,淡进淡出,变焦及分离。“Transition Sceneclass”场景过渡类是从“CocosNode”继承而来的类，类似于层（Layer）。
 
 技术层面上讲，一个过渡场景就是一个在新场景进入之前演示过渡效果的场景。
 

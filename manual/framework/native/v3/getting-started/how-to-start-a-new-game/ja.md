@@ -37,7 +37,7 @@
 
 ![folder structure](res/folder_structure.png)
 
-（注意：プロジェクトのタイプがluaである場合、ディレクトリーが異なる可能性があります。）
+（注意：プロジェクトのタイプがluaである場合,ディレクトリーが異なる可能性があります。）
 
 
 ## 新しいプロジェクトをビルド及び実行
@@ -48,8 +48,8 @@
 * `-s`: 新しいプロジェクトのディレクトリー。　これは絶対パスもしくは相対パスになると思われます。
 * `-p`: どのプラットフォームで実行するか。　選択できるものは　ios, android, win32, mac, linux　です 
 
-(注意：あなたはtmuxをユーザーですか？もしそうなら、reattach-to-user-namespaceのコマンド前にcoocsを追加する必要があります。
-詳細については、このリンクを [this link](https://github.com/phonegap/ios-sim) ご参照ください。)
+(注意：あなたはtmuxをユーザーですか？もしそうなら,reattach-to-user-namespaceのコマンド前にcoocsを追加する必要があります。
+詳細については,このリンクを [this link](https://github.com/phonegap/ios-sim) ご参照ください。)
 
 より詳細な情報については `cocos run --help` を実行することをお勧めします。
 

@@ -117,7 +117,7 @@
 - [如何使用 bindings-generator 自动生成 lua绑定](./how-to-use-bindings-generator/zh.md)
 - [Lua 绑定的文件结构](./folder-structure-of-lua-binding/zh.md)
 - [如何运行Lua的例子](./how-to-run-lua-samples/zh.md)
-- [如何使用Cocos2d console创建、编译、运行一个Lua工程](./how-to-createcompile-and-run-a-new-lua-project-with-cocos2d-console/zh.md) 
+- [如何使用Cocos2d console创建,编译,运行一个Lua工程](./how-to-createcompile-and-run-a-new-lua-project-with-cocos2d-console/zh.md) 
 
 ## How to教程
 

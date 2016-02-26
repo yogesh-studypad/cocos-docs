@@ -1,6 +1,6 @@
 # Unity User Guide
 
-For users who have used Unity3D before, they will find it extremely easy when starting to use Cocos Creator because many concepts are interlinked between the two. However, 
+For users who have used Unity3D before, they will find it extremely easy when starting to use Cocos Creator because many concepts are interlinked between the two. However,
 there still are some differences between Cocos Creator and Unity3D on some detailed concepts. This document will enumerate the differences
 between Cocos Creator and Unity3D to help Unity3D users learn to use Cocos Creator more quickly.
 
@@ -181,4 +181,4 @@ cc.Class({
 
 ---
 
-Continue to read the introductory document of [project-structure.md].
+Continue on to read about [Project Structure](project-structure.md).

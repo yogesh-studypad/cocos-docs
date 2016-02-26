@@ -1,6 +1,6 @@
 # 使用Cocos2d-x实现一款类似《Flappy Bird》的游戏
 
-最近，一只8比特位像素的小鸟霸占了IOS免费游戏排行榜的第一名，这款《Flappy Bird》游戏可谓是一夜爆红，简单并不粗糙的画面、超级玛丽游戏中的绿色通道、眼神有些呆滞的小鸟和几朵白云便构成了游戏的一切。不过可惜的是，如此受欢迎的笨鸟又在一夜之间火速下架了，让很多还没来得及被《Flappy Bird》虐过的玩家千方百计下载《Flappy Bird》，不过，就算如此也没关系，一只囧鸟倒下了，立马会有千千万万只高仿真山寨货崛起，下面，就和大家分享一款类似《Flappy Bird》的游戏Demo。
+最近，一只8比特位像素的小鸟霸占了IOS免费游戏排行榜的第一名，这款《Flappy Bird》游戏可谓是一夜爆红，简单并不粗糙的画面,超级玛丽游戏中的绿色通道,眼神有些呆滞的小鸟和几朵白云便构成了游戏的一切。不过可惜的是，如此受欢迎的笨鸟又在一夜之间火速下架了，让很多还没来得及被《Flappy Bird》虐过的玩家千方百计下载《Flappy Bird》，不过，就算如此也没关系，一只囧鸟倒下了，立马会有千千万万只高仿真山寨货崛起，下面，就和大家分享一款类似《Flappy Bird》的游戏Demo。
 
 源代码下载地址：[点此下载](./FlyingBird.zip)     
 
@@ -11,7 +11,7 @@
 为了使项目的代码结构清晰，好的前期规划是很有必要的，下图是该游戏工程的主要类结构。先从整体看一下，项目的组织结构，然后会对其中内部实现做些必要的解说。    
 ![](./res/classes.jpg)   
 
-游戏共有3个场景，主菜单场景、游戏场景、结束场景，其中主菜单场景和结束场景都很简单，下面的介绍中将一笔带过，我们的重点会放到游戏场景。下图是该游戏的逻辑场层关系图：   
+游戏共有3个场景，主菜单场景,游戏场景,结束场景，其中主菜单场景和结束场景都很简单，下面的介绍中将一笔带过，我们的重点会放到游戏场景。下图是该游戏的逻辑场层关系图：   
 
 ![](./res/2.png)
 
@@ -47,7 +47,7 @@ setDesignResolutionSize()设计分辨率大小及模式，setContentScaleFactor(
 
 ## 4 游戏场景 
 
-游戏的主场景中包括了物理世界层（PhysicWorldLayer）、暂停层（PauseLayer）、分数层（ScoreLayer）和结束场景层（GameOverLayer），在物理世界层中又加入了游戏背景层（BackgroundLayer）。其中物理世界层（PhysicWorldLayer）是整个游戏的主要逻辑层，也是游戏的灵魂。其余几个层都非常简单，这里不做详细的讲解。
+游戏的主场景中包括了物理世界层（PhysicWorldLayer）,暂停层（PauseLayer）,分数层（ScoreLayer）和结束场景层（GameOverLayer），在物理世界层中又加入了游戏背景层（BackgroundLayer）。其中物理世界层（PhysicWorldLayer）是整个游戏的主要逻辑层，也是游戏的灵魂。其余几个层都非常简单，这里不做详细的讲解。
  
 ### 4.1 物理世界层
 #### 4.1.1 chipmunk
@@ -399,7 +399,7 @@ cpBodyApplyForce会在刚体上施加一个力，可以让刚体慢慢动起来�
 
 **摄像机的更新**
 
-本例中利用移动摄像机来实现地图的循环滚动，摄像机对应的类是CCCamera类。所有节点都拥有一个该摄像机类的对象属性，只有通过摄像机类，节点才会被渲染出来。CCCamera类可以实现节点对象的移动、旋转和缩放等等。所以，我们可以通过控制物理世界层（PhysicWorldLayer）的摄像机属性来实现相应的视觉效果。这里可以用getCamera方法来获得节点的摄像机。CCCamera使用OpenGL的gluLookAt函数来设置位置。gluLookAt 函数有三组关于坐标的参数，其中“Eye”系列的x、y、z 坐标参数是视角的位置，而“Center”系列的x、y、z 坐标参数是所视目标的坐标位置，“Up”系列的x、y、z 坐标参数是摄像机方向的向量坐标。
+本例中利用移动摄像机来实现地图的循环滚动，摄像机对应的类是CCCamera类。所有节点都拥有一个该摄像机类的对象属性，只有通过摄像机类，节点才会被渲染出来。CCCamera类可以实现节点对象的移动,旋转和缩放等等。所以，我们可以通过控制物理世界层（PhysicWorldLayer）的摄像机属性来实现相应的视觉效果。这里可以用getCamera方法来获得节点的摄像机。CCCamera使用OpenGL的gluLookAt函数来设置位置。gluLookAt 函数有三组关于坐标的参数，其中“Eye”系列的x,y,z 坐标参数是视角的位置，而“Center”系列的x,y,z 坐标参数是所视目标的坐标位置，“Up”系列的x,y,z 坐标参数是摄像机方向的向量坐标。
 
 在update函数中添加：
 
@@ -473,7 +473,7 @@ collisionBegin是碰撞开始前的回调方法：
 		return 0;
 	}
 
-CP_ARBITER_GET_SHAPES取出发生碰撞的两个cpShape，a代表用cpSpaceAddCollisionHandler添加碰撞回调时的碰撞对象类型a，b亦然。a、b与cpSpaceAddCollisionHandler函数的第2，3个参数的顺序有关。
+CP_ARBITER_GET_SHAPES取出发生碰撞的两个cpShape，a代表用cpSpaceAddCollisionHandler添加碰撞回调时的碰撞对象类型a，b亦然。a,b与cpSpaceAddCollisionHandler函数的第2，3个参数的顺序有关。
 
 cpSpaceAddPostStepCallback 设置cpSpace在结束当前动作时的回调函数，用于安全释放对象，此调用只会在完成当前动作后调用一次。
 return 0 表示不需要chipmunk再处理后续的回调过程了。 

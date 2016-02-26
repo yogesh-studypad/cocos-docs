@@ -11,7 +11,7 @@ cc.assert <-- cc.Assert
 
 此次改造有以下几点原因：
 
-* 添加原来没有的api：cc.warn、cc.error。
+* 添加原来没有的api：cc.warn,cc.error。
 
 * 修改cc.Assert名称，使其符合开发规范。
 

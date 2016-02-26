@@ -129,7 +129,7 @@ var BackgroundLayer = cc.Layer.extend({
 
 ![runner](res/runner.png)
 
-在这一节中,我将向您展示如何运行角色行为。我们将运行**移至**行动将角色(80、85)在两秒内移至(300、85)。这里是AnimationLayer的代码片段:
+在这一节中,我将向您展示如何运行角色行为。我们将运行**移至**行动将角色(80,85)在两秒内移至(300,85)。这里是AnimationLayer的代码片段:
 
 ``` 
 var AnimationLayer = cc.Layer.extend({

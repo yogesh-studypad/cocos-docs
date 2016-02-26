@@ -23,7 +23,7 @@ $ export PATH=$PATH:$NACL_SDK_ROOT/toolchain/linux_x86_newlib/bin:$NACL_SDK_ROOT
 
 ## 编译
 
-Cocos2dx在本地客户端（NaCI）的编译系统与Linux上的编译系统相似。最佳做法是先在顶级cocos2dx目录下运行“build-nacl.sh”脚本文件。之后会编译三种本地客户端架构体系（x86_64、i686及arm）的所有cocos2dx组件及示例。   
+Cocos2dx在本地客户端（NaCI）的编译系统与Linux上的编译系统相似。最佳做法是先在顶级cocos2dx目录下运行“build-nacl.sh”脚本文件。之后会编译三种本地客户端架构体系（x86_64,i686及arm）的所有cocos2dx组件及示例。   
 ```
 $ ./build-nacl.sh
 ```

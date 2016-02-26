@@ -31,7 +31,7 @@ Supposing the screen resolution is `1024x768`, a red frame is used in the follow
 
 ![fit height](multi-resolution/fit_height.png)
 
-This is a fairly good adaptation mode when the ratio of width to height of the design resolution is larger than that of the screen resolution. As illustrated above, although some parts of the background image will be cut down on the two sides of the screen, it can be ensured that no goof or black borders will appear in the visible area of the screen. Then the position of UI elements can be adjusted by the Widget, which makes sure that the UI elements will appear in the visible area of the screen. We will introduce this in detail in the next section [widget-align.md].
+This is a fairly good adaptation mode when the ratio of width to height of the design resolution is larger than that of the screen resolution. As illustrated above, although some parts of the background image will be cut down on the two sides of the screen, it can be ensured that no goof or black borders will appear in the visible area of the screen. Then the position of UI elements can be adjusted by the Widget, which makes sure that the UI elements will appear in the visible area of the screen. We will introduce this in detail in the next section [Widget Align](widget-align.md).
 
 ### When the ratio of width to height of the design resolution is larger than that of the screen resolution, the width should be adjusted to avoid black borders
 
@@ -90,4 +90,4 @@ Because Canvas can precisely obtain the size of the visible area of the screen w
 
 ---
 
-Next, please continue to read[widget-align.md] for detailed information. 
+Continue on to read about [Widget alignment](widget-align.md).
