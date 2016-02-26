@@ -120,6 +120,7 @@ pages:
         - '_Publish --> Web': 'editors_and_tools/creator-chapters/publish/publish-web.md'
         - '_Cocos Framework': 'editors_and_tools/creator-chapters/publish/cocos-framework.md'
         - '_Publish --> Native': 'editors_and_tools/creator-chapters/publish/publish-native.md'
+        - '_Extensions': 'editors_and_tools/creator-chapters/extension/index.md'
         - 'Studio': 'editors_and_tools/studio.md'
         - '_Workspace_Overview': 'editors_and_tools/studio-chapters/Workspace_Overview/en.md'
         - '_CodeAndDebug': 'editors_and_tools/studio-chapters/chapter2/CodeAndDebug/en.md'
