@@ -4,7 +4,7 @@ This chapter will provide an introduction to the main editor windows and panels.
 - [Editor interface introduction](editor-overview.md)
 - [Asset manager](editor-panels/assets.md)
 - [Scene editor](editor-panels/scene.md)
-- [Hierarchy manager](editor-panels/hierarchy.md)
+- [Hierarchy](editor-panels/hierarchy.md)
 - [Hierarchy inspector](editor-panels/inspector.md)
 - [Console](editor-panels/console.md)
 - [Toolbar](toolbar.md)

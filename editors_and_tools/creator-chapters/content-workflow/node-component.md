@@ -6,23 +6,23 @@ In Cocos Creator, a **Node** is an entity carrying component. We will make nodes
 
 ## Create Node
 
-To get a node having a specific function fastest, you can use the **create node** button on the left corner of the **hierarchy manager**. We can make a very simple Sprite node as an example. Click the **create node** button and then choose ’create rendering node/Sprite’:
+To get a node having a specific function fastest, you can use the **create node** button on the left corner of the **Hierarchy**. We can make a very simple Sprite node as an example. Click the **create node** button and then choose ’create rendering node/Sprite’:
 
 ![create](node-component/create.png)
 
-Then we can see the new Sprite node in the **scene editor** and **hierarchy manager**. The new node is named ‘New Sprite’, meaning this is a node whose function is mainly provided by the Sprite component. You can also try clicking the **create node** button again to choose other node types so that you can find their different names and expressions.
+Then we can see the new Sprite node in the **scene editor** and **Hierarchy**. The new node is named ‘New Sprite’, meaning this is a node whose function is mainly provided by the Sprite component. You can also try clicking the **create node** button again to choose other node types so that you can find their different names and expressions.
 
 ## Component
 
 ### Sprite component
 
-Now since we have some nodes, let's see what a component is and the connections between the components and nodes. Select the ‘New Sprite’ that we just created and you can see what the **attribute inspector** says:
+Now since we have some nodes, let's see what a component is and the connections between the components and nodes. Select the ‘New Sprite’ that we just created and you can see what the **Inspector** says:
 
 ![inspector](node-component/inspector.png)
 
-The part starting with ‘Node’ in the **attribute inspector** is the property of the node. The property of the node includes changeable information about the node like position, rotation, scale and size as well other information such as anchor, color and opacity. We will introduce each in detail in the [node properties](node-properties.md) section.
+The part starting with ‘Node’ in the **Inspector** is the property of the node. The property of the node includes changeable information about the node like position, rotation, scale and size as well other information such as anchor, color and opacity. We will introduce each in detail in the [node properties](node-properties.md) section.
 
-In the following picture, the part starting with ‘Sprite’ is the property of the Sprite component. In 2D games, the Sprite component is responsible for most of the image rendering. The most important property of the Sprite component is ‘Sprite Frame’ where we can designate the image files that Sprite is going to render in the game. Let's try to drag a picture resource from the **resource manager** to the ‘Sprite Frame’ property in the **attribute inspector**:
+In the following picture, the part starting with ‘Sprite’ is the property of the Sprite component. In 2D games, the Sprite component is responsible for most of the image rendering. The most important property of the Sprite component is ‘Sprite Frame’ where we can designate the image files that Sprite is going to render in the game. Let's try to drag a picture resource from the **resource manager** to the ‘Sprite Frame’ property in the **Inspector**:
 
 ![drag spriteframe](node-component/drag_spriteframe.png)
 
@@ -46,7 +46,7 @@ These two properties will multiply the content of the rendering component itself
 
 ## Add other components
 
-We can add multiple components on one node to add more functions to the node. In the example above, we can continue to select the ‘New Sprite’ node, click the **add component** button at the bottom of the **attribute inspector** panel and select ‘add UI component/Button’ to add a Button component.
+We can add multiple components on one node to add more functions to the node. In the example above, we can continue to select the ‘New Sprite’ node, click the **add component** button at the bottom of the **Inspector** panel and select ‘add UI component/Button’ to add a Button component.
 
 Then set the Button component according to the following picture (the actual color attribute can be set freely according to your own taste):
 

@@ -33,7 +33,7 @@ There will be wireframe in blue around the selected node to prompt the constrain
 
 When the mouse is hovering on the node, the node name will be displayed together with the node constraint frame. You can decide your target before clicking to confirm your selection according to the suspend prompt at places where nodes are gathering.
 
-About the naming of nodes, please read the introduction in [hierarchy manager](hierarchy.md).
+About the naming of nodes, please read the introduction in [Hierarchy](hierarchy.md).
 
 ### The node constraint box
 
@@ -114,4 +114,4 @@ In UI elements layout, **rectangle transform tool** is always used to precisely 
 
 ---
 
-Continue on to read about [Hierarchy Manager](hierarchy.md).
+Continue on to read about [Hierarchy](hierarchy.md).

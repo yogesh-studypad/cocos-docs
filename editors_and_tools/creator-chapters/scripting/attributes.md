@@ -47,3 +47,4 @@ animatable | whether this attribute can be altered by animation | boolean | defa
     },
   }
 ```
+

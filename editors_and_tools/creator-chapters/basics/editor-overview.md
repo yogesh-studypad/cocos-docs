@@ -19,13 +19,13 @@ For further information please read the [asset manager](editor-panels/assets.md)
 
 For further information please read the [scene editor](editor-panels/scene.md) section.
 
-## Hierarchy manager
+## Hierarchy
 
 ![hierarchy](index/hierarchy.png)
 
-**Hierarchy manager** displays all the nodes and their hierarchy in the form of a list tree. For all the content you can see in the **scene editor**, the corresponding node entry can be found in the **hierarchy manager**. The content in these two panels when editing the scene will synchronize the display and we normally use these two panels at the same time to build the scene.
+**Hierarchy** displays all the nodes and their hierarchy in the form of a list tree. For all the content you can see in the **scene editor**, the corresponding node entry can be found in the **Hierarchy**. The content in these two panels when editing the scene will synchronize the display and we normally use these two panels at the same time to build the scene.
 
-For further information please read the [hierarchy manager](editor-panels/hierarchy.md) section.
+For further information please read the [Hierarchy](editor-panels/hierarchy.md) section.
 
 ## Attribute inspector
 
@@ -33,7 +33,7 @@ For further information please read the [hierarchy manager](editor-panels/hierar
 
 **Attribute inspector** is the working area where we view and edit the currently selected node and component attribute. This panel will display and edit the attribute data defined by the script in the most suitable way.
 
-For further information please read the [attribute inspector](editor-panels/inspector.md) section.
+For further information please read the [Inspector](editor-panels/inspector.md) section.
 
 ## Toolbar
 

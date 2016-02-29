@@ -5,7 +5,7 @@ Bar Sprite to this component. The Bar Sprite can then be controlled to show prog
 
 ![add-progressbar](./progress/add-progressbar.png)
 
-Click the `add component` button at the bottom of the **attribute inspector** and select `ProgressBar` from `add UI component`? You can then add the ProgressBar component to the node.
+Click the `add component` button at the bottom of the **Inspector** and select `ProgressBar` from `add UI component`? You can then add the ProgressBar component to the node.
 
 
 ## ProgressBar attribute
@@ -20,7 +20,7 @@ Click the `add component` button at the bottom of the **attribute inspector** an
 
 ## Detailed explanation
 
-After adding the ProgressBar component, drag a node with the `Sprite` component from the **hierarchy manager** to the Bar Sprite attribute. You can then control the display of the ProgressBar by dragging the progress sliding block.
+After adding the ProgressBar component, drag a node with the `Sprite` component from the **Hierarchy** to the Bar Sprite attribute. You can then control the display of the ProgressBar by dragging the progress sliding block.
 
 Bar Sprite could be its own node, child node or any node that comes with the `Sprite` component. Also, Bar Sprite can freely choose the Simple or
 Sliced rendering modes.

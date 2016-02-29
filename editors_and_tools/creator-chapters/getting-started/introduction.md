@@ -28,7 +28,7 @@ It makes data driven and componentization the core game development methods, and
 
 The editor provides not only strong and complete toolchains, but also a open plugin framework. Developers can use generic front end technologies like Html + JavaScript, etc. to conveniently extend functions of the editor and customize personalized workflows.
 
-![structure](introduction/structure.png)
+![structure](introduction/structure.jpg)
 
 What the combination of engine and editor brings is the functional development method of data driven and componentization, and the perfect cooperation (with an appropriate division of labor) of designers and programmers:
 
