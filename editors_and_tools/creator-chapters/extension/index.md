@@ -1,29 +1,6 @@
 # Extend the editor
-
-The extension of the Cocos Creator editor is realized by adding the plugin package to `~/.CocosCreator/packages`.
-The plugins of Cocos Creator follow the package designing method of the node.js community, which describes your plugins
-by `package.json` document.
-
-## Structure
-
-The structure of a plugin package is generally as follows:
-
-```
-MyPackage
-  |--(optional)panel
-  |   |--mypanel.html
-  |   |--(optional)mypanel.js
-  |   |--(optional)mypanel.css
-  |--(optional)assets
-  |     |--my-asset
-  |       |--my-asset-inspector.html
-  |--main.js
-  |--package.json
-```# Extend the editor
-
 Extension of the Cocos Creator editor is achieved by adding plugin packages to `~/.CocosCreator/packages`.
-The Cocos Creator plugins follow the package designing method of the node.js community, which describes your plugins
-using the `package.json` document.
+The Cocos Creator plugins follow the package designing method of the node.js community, which describes your plugins using the __package.json__ document.
 
 ## Structure
 
