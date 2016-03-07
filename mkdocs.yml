@@ -32,7 +32,7 @@ pages:
         - 'Advanced Topics': 'programmers-guide/13.md'
     - 'Editors & Tools':
         - 'Command-line tool': 'editors_and_tools/cocosCLTool.md'
-        - 'Creator': 'editors_and_tools/creator.md'
+        - 'Cocos Creator': 'editors_and_tools/creator.md'
         - '_Getting Started': 'editors_and_tools/creator-chapters/getting-started/index.md'
         - '_Introduction': 'editors_and_tools/creator-chapters/getting-started/introduction.md'
         - '_Install': 'editors_and_tools/creator-chapters/getting-started/install.md'
@@ -121,7 +121,7 @@ pages:
         - '_Cocos Framework': 'editors_and_tools/creator-chapters/publish/cocos-framework.md'
         - '_Publish --> Native': 'editors_and_tools/creator-chapters/publish/publish-native.md'
         - '_Extensions': 'editors_and_tools/creator-chapters/extension/index.md'
-        - 'Studio': 'editors_and_tools/studio.md'
+        - 'Cocos Studio': 'editors_and_tools/studio.md'
         - '_Workspace_Overview': 'editors_and_tools/studio-chapters/Workspace_Overview/en.md'
         - '_CodeAndDebug': 'editors_and_tools/studio-chapters/chapter2/CodeAndDebug/en.md'
         - '_PackageAndRun': 'editors_and_tools/studio-chapters/chapter2/PackageAndRun/en.md'
