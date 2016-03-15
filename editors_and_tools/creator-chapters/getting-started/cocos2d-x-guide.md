@@ -1,5 +1,4 @@
 # Cocos2d-x User Guide
-
 Cocos Creator is a new type of game development tool oriented towards content creation that has completely integrated the componentized edition Cocos2d-x WEB, by which you can launch games on platforms like Web, iOS, Android, Mac, Windows, etc.. Moreover, you can use it to directly launch games on Cocos Play platform, grasping the new opportunity brought by the rapid development of the channel for mobile web games. For more introductions to Cocos Creator, please refer to [Introduction](introduction.md).
 
 The aim of this document is to introduce the users of Cocos2d-x to Cocos Creator and help them learn how to use the new editor as soon as possible.
@@ -97,7 +96,7 @@ There used to be a crude mechanism of components. Developers could receive callb
 
 And this leads to the biggst difference between Cocos2d-JS and Cocos Creator: How to extend node behavior?
 
-In Cocos2d-JS, developers can realize behavior extensions for various types of nodes. But in Cocos Creator, such operation is forbidden. All the extensions should be realized by adding components. The contest between inheritance and assembly is long-standing, which will not be discussed in detail here. But in componentized framework like Cocos Creator, assembly is the most natural extension method.
+In Cocos2d-JS, developers can extend Nodes. Cocos Creator does not allow this. All the extensions should be done by adding components. In a componentized framework like Cocos Creator, composition is the preferred extension method.
 
 For more information on the component system, please refer to chapters like [Node Component](../content-workflow/node-component.md) and [Components](../components/index.md), etc..
 
