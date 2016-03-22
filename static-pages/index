@@ -27,8 +27,8 @@
     <h3>Workflow</h3>
     <p class="center">Get in a groove.</p>
   </a>
-</div>-->
-<br />
+</div>
+<br />-->
 
 <!-- cocos -->
 <div class="section cocosBlueDarker1 clearfix">
@@ -38,6 +38,7 @@
     <p class="center">Cocos ecosystem.</p>
   </a>
 </div>
+<br />
 
 <!-- Toolchain -->
 <div class="section cocosBlueDarker1 clearfix">
