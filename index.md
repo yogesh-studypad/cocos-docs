@@ -39,7 +39,7 @@ We know that learning something new can be hard. It doesn't help when you can't
 find useful documentation to help you through the issues you are having. These docs
 are designed to help you learn how to write games using the Cocos family of products,
 from basic to advanced techniques. It can be read from start to finish or used as a reference.
-We also have a very active [community](http://discuss.cocos2d-x.org/) that can help to.
+We also have a very active [community](http://discuss.cocos2d-x.org/) that can help too.
 
 <br />
 ## Search
