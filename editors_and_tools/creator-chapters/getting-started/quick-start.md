@@ -1,5 +1,4 @@
-# Quick Start：Create the first game
-
+# Quick Start：Creating your first game
 The document you are reading now includes systematic introductions of the editor panel, functions and workflows of Cocos Creator. However, if you want to quickly learn the general flow and method of developing games by Cocos Creator, this chapter will meet your needs. After finishing the tutorial in this chapter, you might obtain enough information for creating games. But we still recommend you to continue reading this guide to understand the details of each functional block and the complete workflows.
 
 Now, let's begin! Following the tutorial, we will create a deceiving game that is named **Pick Up the Stars**. Players of this game need to manipulate an **obtuse** monster that never stops jumping to touch the continuously appearing stars. The dazzling acceleration will bring great challenges to players. Play with your friends and see who can obtain the most stars!
@@ -77,7 +76,7 @@ Being provided with the function of adjusting to different resolutions, we will 
 For more detailed information, please read [Canvas](../components/canvas.md). Currently, we only need to know that the scene images added next will all be put under the **Canvas** node.
 
 
-## Set ting up a scene image
+## Setting up a scene image
 
 ### Adding a background
 

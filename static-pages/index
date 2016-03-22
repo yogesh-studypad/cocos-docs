@@ -21,14 +21,14 @@
 </div>
 
 <!-- workflow -->
-<div class="section cocosBlueDarker1 clearfix">
+<!--<div class="section cocosBlueDarker1 clearfix">
   <a href="workflows/workflows/index.html">
     <img src="static-pages/workflow.png" align="middle" />
     <h3>Workflow</h3>
     <p class="center">Get in a groove.</p>
   </a>
 </div>
-<br />
+<br />-->
 
 <!-- cocos -->
 <div class="section cocosBlueDarker1 clearfix">
@@ -38,6 +38,7 @@
     <p class="center">Cocos ecosystem.</p>
   </a>
 </div>
+<br />
 
 <!-- Toolchain -->
 <div class="section cocosBlueDarker1 clearfix">

@@ -1,5 +1,5 @@
-# Creator
-Creator, a free cross-platform game development editor supporting Cocos2d-js,
+# Cocos Creator
+Cocos Creator, a free cross-platform game development editor supporting Cocos2d-js,
 helps developers build 2D and 3D game scenes, edit game UI and other game resources
 quickly and efficiency.
 
