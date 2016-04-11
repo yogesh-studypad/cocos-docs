@@ -48,7 +48,7 @@ Lua（仅能加载csb数据和lua文件）：
 	        --从第0帧循环播放动画
 			action:gotoFrameAndPlay(0, true)
 
-		    assert(self.resourceNode_, string.format("ViewBase:createResoueceNode() - load resouce node from file \"%s\" failed", resourceFilename))
+		    assert(self.resourceNode_, string.format("ViewBase:createResoueceNode() - load resource node from file \"%s\" failed", resourceFilename))
             self:addChild(self.resourceNode_)
 		end
 
@@ -78,7 +78,7 @@ Lua（仅能加载csb数据和lua文件）：
 
 		   self.resourceNode_=gameScene.root
 
-		   assert(self.resourceNode_, string.format("ViewBase:createResoueceNode() - load resouce node from file \"%s\" failed", resourceFilename))
+		   assert(self.resourceNode_, string.format("ViewBase:createResoueceNode() - load resource node from file \"%s\" failed", resourceFilename))
            self:addChild(self.resourceNode_)
 	    end    
 

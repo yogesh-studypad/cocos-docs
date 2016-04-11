@@ -69,7 +69,7 @@ Cocos console是一个可以为Cocos2d-html5和Cocos2d-x JavaScript Binding（JS
     -p platform : The platform can be ios|mac|android|web.
     -s source   : Your project directory, if not specified the current directory will be used.
     -q          : Quiet mode, remove log messages.
-    -m mode     : Mode debug or relearnase, debug is default
+    -m mode     : Mode debug or release, debug is default
     --source-map: General source-map file. (Web platform only)
     ```
 
@@ -94,8 +94,8 @@ Cocos console是一个可以为Cocos2d-html5和Cocos2d-x JavaScript Binding（JS
 
 1. 选择已创建的MyJSGame项目
 
-	正如上图所示，你应该选择**Create New Project from Exisiting Files** 
-	
+	正如上图所示，你应该选择**Create New Project from Existing Files**
+
 	然后将会提示你下面这些选项
 		
 	**图 2**

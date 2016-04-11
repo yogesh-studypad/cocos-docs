@@ -1,8 +1,8 @@
-# Creat and destroy nodes
+# Create and destroy nodes
 
 ## Create new node
 
-Besides creating nodes by using the scene editor, we can creat nodes dynamically in the script. Add it into the scene by `new cc.Node()`
+Besides creating nodes by using the scene editor, we can create nodes dynamically in the script. Add it into the scene by `new cc.Node()`
 to achieve the whole constructive process.
 
 Below is a simple example:
@@ -29,9 +29,9 @@ cc.Class({
 });
 ```
 
-## Clone the exisiting node
+## Clone the existing node
 
-Sometimes we want to clone the exisiting node dynamically in the scene, it can be done by `cc.instantiate`. Here is how to use it:
+Sometimes we want to clone the existing node dynamically in the scene, it can be done by `cc.instantiate`. Here is how to use it:
 
 ```javascript
 cc.Class({
@@ -56,7 +56,7 @@ cc.Class({
 
 ## Create preset node
 
-Like cloning the exisiting node, you set your prefab node and create using `cc.instantiate`. Here is how to use it:
+Like cloning the existing node, you set your prefab node and create using `cc.instantiate`. Here is how to use it:
 
 ```javascript
 cc.Class({

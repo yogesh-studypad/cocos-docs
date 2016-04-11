@@ -36,7 +36,7 @@ Next, let's get to know the resources of the project. Please pay attention to a 
 
 We can see that the root directory of the project resources is named as **assets**, which is in accordance with the `assets` directory in the decompressed original project. Only resources under this directory can be imported by Cocos Creator into the project and be managed.
 
-**Resource manager** can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, **Resourse manager** will present itself as illustrated below.
+**Resource manager** can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, **Resource manager** will present itself as illustrated below.
 
 ![assets overview](quick-start/assets_overview.png)
 
@@ -681,7 +681,7 @@ Then rewrite the `setJumpAction` method, insert the callback of playing the soun
 
 ### Scoring sound effect
 
-After saving the `Player` script, open the `Game` script to add the scoring sound effect. Firstly, we still add a property to `properties` to quote the sound document resouce:
+After saving the `Player` script, open the `Game` script to add the scoring sound effect. Firstly, we still add a property to `properties` to quote the sound document resource:
 
 ```js
 // Game.js
@@ -728,7 +728,7 @@ Next, you can continue to perfect this game. The following are some recommended 
 - Add a simple menu interface for the failure of the game. Only after clicking the button will the game restart after failure
 - Restrict the movement of the main character to the window's boundaries
 - Add more exquisite animation performance to the jumping action of the main character
-- Add a countdown progess bar to the state when a star disappears
+- Add a countdown progress bar to the state when a star disappears
 - Add more gorgeous effects when collecting stars
 - Add input controls for touch screen devices
 

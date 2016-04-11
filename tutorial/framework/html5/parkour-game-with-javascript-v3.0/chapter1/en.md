@@ -79,8 +79,8 @@ Here is a screenshot of launching WebStorm:
 
 Now, let's get Cocos2d-JS working with WebStorm.
 
-1. Choose **Create New Project from Exisiting Files** 
-	
+1. Choose **Create New Project from Existing Files** 
+
 	You will be prompted with the following options:
 	
 	**Figure 2**

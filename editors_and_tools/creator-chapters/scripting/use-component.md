@@ -2,7 +2,7 @@
 
 ## Creating component script
 
-In Cocos Creator, script is also a part of the asset. You can add and select JavaScript or CoffeeScript to creat a component script
+In Cocos Creator, script is also a part of the asset. You can add and select JavaScript or CoffeeScript to create a component script
 by clicking the "create" button in the asset editor. By this time, you will get a new script in your asset editor:
 
 ![create-script](assets/create-script.png)
