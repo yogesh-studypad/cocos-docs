@@ -116,7 +116,7 @@ Note: Some widgets can not enable touch, such as UILabel and UIImageView, howeve
 
 ### General properties and Usages of UIImageView
 
-To enrich the UI we added a image display widget-UIImageView, as following code:
+To enrich the UI we added an image display widget-UIImageView, as following code:
 
 ```
     UIImageView *imageView = UIImageView::create();

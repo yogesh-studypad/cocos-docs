@@ -13,9 +13,9 @@ One more thing, Facebook Integration for Cocos2d-JS have brought a huge opportun
 ## Highlights
 
 * Supported [Cocos Studio 2.x](http://cocos2d-x.org/download) with its JSON format export, the web engine and native engine share exactly the same parser, so that its result's consistency will be guaranteed for all platforms.
-* Supported latest versioin of [Spine animation editor](http://esotericsoftware.com/).
+* Supported latest version of [Spine animation editor](http://esotericsoftware.com/).
 * Upgraded UI system with the new flow layout system and added full featured test cases.
-* Provided [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/index-en.html). It's a web based playground for manipulating all coocs nodes in runtime. It will greatly improve your developement and debug experience.
+* Provided [Cocos Dev Tool](http://h5.cocoachina.com/static/cocos-devtools/index-en.html). It's a web based playground for manipulating all cocos nodes in runtime. It will greatly improve your development and debug experience.
 
 ![](../../res/devtool.jpg)
 
@@ -43,7 +43,7 @@ We are very glad to share some plans for the future versions of Cocos2d-JS:
 - Upgrade SpiderMonkey to v33, this will improve native engine performance and stability.
 - Support Windows Phone 8 for the native engine.
 - Add 3D module bindings for the native engine.
-- Add Box2d engine with a emscripten version in both web and native engine.
+- Add Box2d engine with an emscripten version in both web and native engine.
 - Upgrade Spine runtime's API.
 - Improve Web engine UI system performance.
 

@@ -173,4 +173,4 @@ In WebStorm double click **MyJSGame/src/myApp.js** to view the source code.
 You have taken the basic steps to configure Cocos2d-html5 with WebStorm 7. Like auto completion and debugging. If you have any questions or suggestion about this tutorials, please let us know. We appreciate your contribution.
 
 ## Where to go from here
-In the next tutorial, you will learn how to set up an new Cocos2d-JS project. We will also take a look at built-in tests and sample games made with Cocos2d-JS.
+In the next tutorial, you will learn how to set up a new Cocos2d-JS project. We will also take a look at built-in tests and sample games made with Cocos2d-JS.

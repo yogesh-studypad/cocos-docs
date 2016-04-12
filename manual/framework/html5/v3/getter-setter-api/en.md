@@ -29,7 +29,7 @@ As for the name of the properties, we proposed names close to CSS style which is
 2. `attr` function of cc.Node
 -----------------------------
 
-Individually, the property API is just a replacement of functions which permit to have more compact code, it's not so exiting. But along with the properties access API, we also provided a even more useful function to cc.Node: `attr` function. Quite similar to jQuery's `attr` function, it helps you to config all the properties you want together with just one function call.
+Individually, the property API is just a replacement of functions which permit to have more compact code, it's not so exiting. But along with the properties access API, we also provided an even more useful function to cc.Node: `attr` function. Quite similar to jQuery's `attr` function, it helps you to config all the properties you want together with just one function call.
 
 ```javascript
 node.attr({
@@ -49,7 +49,7 @@ It support not only all properties available in the list of the end, but also yo
 3. Why and what changed
 -----------------------
 
-Why we want to do such a enormous change to our stable API? I think the obvious answer is already in the previous examples: The new API is far easier to code than the old API.
+Why we want to do such an enormous change to our stable API? I think the obvious answer is already in the previous examples: The new API is far easier to code than the old API.
 
 But what we really want to change, is not just the simplicity. Cocos2d-JS has been complained for a long time by web developers about how difficult it is to learn and use. After compared with other html5 game engines, we found our engine is not designed for JavaScript developers. And indeed, the API of Cocos2d-JS has always been the same with Cocos2d-x which serves C++ developers, and the original Cocos2d-iPhone also leaves its objective-C style API everywhere in the engine. Obviously, those APIs, which have been ported to Cocos2d-JS, are sometimes very strange for JavaScript developers.
 

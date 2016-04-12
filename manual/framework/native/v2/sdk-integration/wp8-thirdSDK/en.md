@@ -2,7 +2,7 @@
 
 ## introduction
 
- With the support of xaml in Cocos2d-x wp8，it's much convenient to invoke third SDK. I will show you how to integrate third SDK using Microsoft's advertise system and IAP as a example, integrated in the XAML project. 
+ With the support of xaml in Cocos2d-x wp8，it's much convenient to invoke third SDK. I will show you how to integrate third SDK using Microsoft's advertise system and IAP as an example, integrated in the XAML project. 
 
 ### Microsoft's official doc of Integrating the AdControl
 
@@ -327,7 +327,7 @@ It has better to return to the game thread, so we have to deal with the call bac
 
 ## deal with call back
 
-in the Direct3DInterop implement, we can find that, all the click and keyboard event handle by the mInputEvents queue, just throw event to the thread, and use ProcessEvents function to handle. So we define a AdControlEvent  class and derived from InputEvent as following:
+in the Direct3DInterop implement, we can find that, all the click and keyboard event handle by the mInputEvents queue, just throw event to the thread, and use ProcessEvents function to handle. So we define an AdControlEvent  class and derived from InputEvent as following:
 
 ``` c++
 namespace PhoneDirect3DXamlAppComponent

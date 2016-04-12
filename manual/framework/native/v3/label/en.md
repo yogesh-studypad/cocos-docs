@@ -80,7 +80,7 @@ Let's look at the hierarchy chart of the Label class:
 ![](./res/classcocos2d_1_1_label.png)
 
 
-In the chart above, LabelTextFormatProtocol is also a new class. It is similar as LabelProtocol,  they are all pure virtual base classes which provide a interface to store strings.
+In the chart above, LabelTextFormatProtocol is also a new class. It is similar as LabelProtocol,  they are all pure virtual base classes which provide an interface to store strings.
 
 Here is the inheritance graph:
 
@@ -160,7 +160,7 @@ You can change some attributes of your label4 by calling the member function jus
 	label4->setScale(2.0f);							//Changes both X and Y scale factor of the label4
 	label4->setColor(Color3B::GREEN);				//Changes the color
 	label4->setOpacity(127);						//Changes the opacity. 
-	auto CChar = (Sprite*)label4->getLetter(0);		//get the first letter of label, each letter of the label can be treated like an CCSprite.
+	auto CChar = (Sprite*)label4->getLetter(0);		//get the first letter of label, each letter of the label can be treated like a CCSprite.
 	auto jump = JumpBy::create(0.5f, Point::ZERO, 60, 1);
 	auto jump_4ever = RepeatForever::create(jump);
 	CChar->runAction(jump_4ever);

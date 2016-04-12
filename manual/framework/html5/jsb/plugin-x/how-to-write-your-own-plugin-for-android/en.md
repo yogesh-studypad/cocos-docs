@@ -38,7 +38,7 @@ The project directory looks like this :
 3. sdk : Place .jar files of the third party SDK here.
 4. src : Place the java code here. You must write a class which implements the relevant interface. It must be in package org.cocos2dx.plugin. 
  
-###Write a class implement at least a interface
+###Write a class implement at least an interface
 
 The class need a constructor with Context parameter. For example:
 

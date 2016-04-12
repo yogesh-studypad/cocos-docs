@@ -89,7 +89,7 @@ Arguments:
 |   name   |  type   |  remark |
 |:--------:|:-------:|:-------:|
 |tasks|Array/Object|Required. Each item of tasks should be a function.|
-|option|Object/Function|Required. Not exist in the async module of nodejs. It can be a function as a iterator or an object like : {cb:function, cbTarget:object/null, iterator:function, iteratorTarget:object/null}|
+|option|Object/Function|Required. Not exist in the async module of nodejs. It can be a function as an iterator or an object like : {cb:function, cbTarget:object/null, iterator:function, iteratorTarget:object/null}|
 |cb|Function|Optional. Final callback of all tasks. When tasks is an array, then results is an array. But when tasks is an object, then results is an object with the same keys of tasks.|
 
 Usage1:

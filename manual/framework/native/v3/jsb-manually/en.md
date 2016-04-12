@@ -207,7 +207,7 @@ Let's familiar with the procedures:
 2. It's the callback method of the JS class, which is named as **callback**. Remember **callback** is a method of JS class, which means you can use this method call C++ class's callback function. You can name it whatever you want.
 3. The constructor of the JS class, it does some initializing works.
 4. This method is for binding C++ class's callback function-**logAndCallBck**.
-5. Create a JS class by this method. In this method, you have to define all the functions in C++ class. It's a important step. Don't miss the name of parameters. For instance, **logAndCallBack** is the name of C++ function, and **JSB_XObject_logAndCallBack** is the name of bound C++ function.
+5. Create a JS class by this method. In this method, you have to define all the functions in C++ class. It's an important step. Don't miss the name of parameters. For instance, **logAndCallBack** is the name of C++ function, and **JSB_XObject_logAndCallBack** is the name of bound C++ function.
 6. In this method, you gave the C++ class a new name-**MyBinding**. So **MyBinding** can be treated as a JS class. And register the JS class.
 
 You are almost complete the procedure. The last step is test the class, let's check out if the C++ class have bound to JS object - **MyBinding**.

@@ -20,7 +20,7 @@ After your click the **Download** tab in the navigation bar, you will find a Coc
 
 From the above picture, we can see that there are two versions available, one is called Cocos2d-x 2.2 and the other is called Cocos2d-x 3.0 pre-alpha0.
 
-In this tutorial, I will take Cocos2d-x 2.2 as a example.
+In this tutorial, I will take Cocos2d-x 2.2 as an example.
 
 (Note: If you want to download any old version of Cocos2d-x, you can go to the link named "looking for an old version?". But I highly recommend you to try out the latest version of Cocos2d-x, it has many new features and bug fixes.).
 
@@ -48,7 +48,7 @@ Congratulations! You have successfully made Cocos2d-x running on your Win7. Now 
 Since we are targeting Android development, so the first software package we need to install is definitely JDK. If you are running a 64 bit win7, you should download the responding [64 bit JDK for windows 64bit](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html), the current latest
 version of JDK for window7 64bit is jdk-7u45-windows-x64.exe. 
 
-Once your have finished the download, you can install the JDK. After installation, you'd better to setup a environment variable named JAVA_HOME, in our case it is: C:\Program Files\Java\jdk1.7.0_45
+Once your have finished the download, you can install the JDK. After installation, you'd better to setup an environment variable named JAVA_HOME, in our case it is: C:\Program Files\Java\jdk1.7.0_45
 
 (Note: If you have any problems with environment variable setup, you can refer to [this post](https://kb.wisc.edu/cae/page.php?id=24500) for help.)
 
@@ -60,7 +60,7 @@ Now let's download  [ Android SDK ](http://developer.android.com/sdk/index.html#
 - The latest Android platform
 - The latest Android system image for the emulator
 
-It will take you several minutes to finish it, depending on your network bandwidth. After download, you can unzip it and put it on the following director:C:\adt-bundle-windows-x86_64. In the folder, there is a eclipse.exe file under C:\adt-bundle-windows-x86_64\eclipse folder, I sent it to the desktop as a shortcut.
+It will take you several minutes to finish it, depending on your network bandwidth. After download, you can unzip it and put it on the following director:C:\adt-bundle-windows-x86_64. In the folder, there is an eclipse.exe file under C:\adt-bundle-windows-x86_64\eclipse folder, I sent it to the desktop as a shortcut.
 
 Now we can double click the shortcut on the desktop, then the eclipse will be launched along with a prompt dialog appearing. It asks us to set a default workspace. You can just choose OK to accept the default settings. 
 

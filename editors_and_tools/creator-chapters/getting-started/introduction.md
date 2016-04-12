@@ -5,7 +5,7 @@
 
 
 - **Q**: What kind of editor does Cocos Creator have?
-- **A**: It's completely customized for the engine. It's a all-in-one editor that can serve the whole workflow from design, development, preview, adjustment to release.
+- **A**: It's completely customized for the engine. It's an all-in-one editor that can serve the whole workflow from design, development, preview, adjustment to release.
 
 
 - **Q**: Can I use Cocos Creator even if I don't know how to write a program?
@@ -26,7 +26,7 @@ Cocos Creator contains a whole set of functions needed for game development like
 
 It makes data driven and componentization the core game development methods, and seamlessly integrates the mature JavaScript API system of the Cocos engine. It can adapt to the user habits of the Cocos engine developer on one hand, and provide an unprecedented level of content creation and realtime preview&test environment for artworkers and directors on the other.
 
-The editor provides not only strong and complete toolchains, but also a open plugin framework. Developers can use generic front end technologies like Html + JavaScript, etc. to conveniently extend functions of the editor and customize personalized workflows.
+The editor provides not only strong and complete toolchains, but also an open plugin framework. Developers can use generic front end technologies like Html + JavaScript, etc. to conveniently extend functions of the editor and customize personalized workflows.
 
 ![structure](introduction/structure.jpg)
 

@@ -20,11 +20,11 @@ One of the background is made by a size of 16x32 image. Here we show you how to 
 
  ![image](res/image073.png)
 
-#### Scenario 1: How to use a image widget
+#### Scenario 1: How to use an image widget
   
  ![image](res/image074.png)
 
-After you add a image widget on the canvas, check its "image" attribute for the asset, it shows a thumbnails of assets, you can modify the widget by double-clicking the thumbnail, you can also drag the image onto the property to replace the current style for new assets. In addition you can also use right-click menu of 9-slice to add new assets.
+After you add an image widget on the canvas, check its "image" attribute for the asset, it shows a thumbnails of assets, you can modify the widget by double-clicking the thumbnail, you can also drag the image onto the property to replace the current style for new assets. In addition you can also use right-click menu of 9-slice to add new assets.
 
 Then open the "9-slice" property and modify the margins to 0,0,10,0, and then modify the widget size is 70,32, these margins will affect the 9-slice stretch the definition of the effect, and achieve the desired effect. About 9-slice principles and detailed instructions, see [how to use the 9-slice](../).
 

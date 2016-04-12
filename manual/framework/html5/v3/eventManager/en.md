@@ -431,7 +431,7 @@ optional parameters:
 |:------:|:--:|:----------:|:-------:|
 | pauseTarget | void | node, recursive | Pauses all listeners which are associated the specified target. |
 | resumeTarget | void | node, recursive | Resumes all listeners which are associated the specified target. |
-| addListener | void | json object|cc.EventListener, node|priority | Adds a event listener for a specified event. |
+| addListener | void | json object|cc.EventListener, node|priority | Adds an event listener for a specified event. |
 | addCustomListener | void | eventName, callback | Adds a Custom event listener. |
 | removeListener | void | listener | Remove a listener |
 | removeListeners | void | listenerType|cc.Node, recursive | Removes all listeners with the same event listener type or removes all listeners of a node |
@@ -441,4 +441,4 @@ optional parameters:
 | setEnabled | void | enabled | Whether to enable dispatching events |
 | isEnabled | boolean | no | Checks whether dispatching events is enabled |
 | dispatchEvent | void | event | Dispatches the event, also removes all EventListeners marked for deletion from the event dispatcher list. |
-| dispatchCustomEvent | void | eventName, optionalUserData | Dispatches a Custom Event with a event name an optional user data |
+| dispatchCustomEvent | void | eventName, optionalUserData | Dispatches a Custom Event with an event name an optional user data |

@@ -217,7 +217,7 @@ In a conclusion, WP's application we conclude all the resources file under the f
 
 ### much familiar with Assets folder （you can jump to next step）
 
-With the feature of Cocos2d-x cross platform, we make a experiment:
+With the feature of Cocos2d-x cross platform, we make an experiment:
 build and run the MyDemo's proj.win32 project and proj.wp8 project respectively, and meet with the result as following:
 
 ![](res/24.png)

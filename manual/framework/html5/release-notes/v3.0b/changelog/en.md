@@ -45,7 +45,7 @@ Cocos2d-JS-v3.0 beta @ May.23, 2014
     11. Fixed ClippingNode's DrawNode stencil bug on Canvas.
     12. Fixed a typo 'cc.radiansToDegress' function to 'cc.radiansToDegrees'.
     13. Fixed a bug of ccui.ImageView that its setSize is invalid when the picture without pre-load.
-    14. Fixed a bug of cc.ParticleSystem that it throws a error when create from CocosBuilder.
+    14. Fixed a bug of cc.ParticleSystem that it throws an error when create from CocosBuilder.
     15. Fixed a bug of cc.LabelAtlas that it can't display its children.
     16. Fixed a bug of cc.fontLoader that it can't load custom font.
     17. Fixed a bug of ccui.Widget that its setOpacity is invalid.
@@ -62,8 +62,8 @@ Cocos2d-JS-v3.0 beta @ May.23, 2014
     28. [JSB]Fixed API inconsistence of EventMouse and EventTouch.
     
 * Known Issues:
-    1. [JSB]Property's getter/setter functions can not be overrided automatically in custom subclasses.
+    1. [JSB]Property's getter/setter functions can not be overridden automatically in custom subclasses.
     2. [JSB]CocoStudio's scene reloading may cause memory release issues and crash.
-    3. [JSB]OpenGL test is not functionnable in JSB.
+    3. [JSB]OpenGL test is not functioning in JSB.
     4. EventListener is not extendable.
     5. [JSB]ccui.TextField's is not responding to keyboard backspace button.

@@ -26,7 +26,7 @@ In this article, I will show you how to run cpp-tests on your windows PC.
 
 ![](res/9.png)
 
-## How to Create a Empty Project
+## How to Create an Empty Project
 
 ### Prerequisite
 
