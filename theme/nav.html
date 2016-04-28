@@ -14,7 +14,7 @@
             {% endif %}
 
             <!-- Main title -->
-            <a class="navbar-brand" href="{{ homepage_url }}">{{ site_name }}</a>
+            <a style="padding: 12px 0px;" class="navbar-brand" href="{{ homepage_url }}">Documentation</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -23,23 +23,27 @@
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
                 {% for nav_item in nav %}
-
-                      {% if nav_item.children %}
-                          <li class="dropdown{% if nav_item.active %} active{% endif %}">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ nav_item.title }} <b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                              {% for nav_item in nav_item.children %}
-                                  {% include "nav-sub.html" %}
-                              {% endfor %}
-                              </ul>
-                          </li>
-                      {% else %}
-                          <li {% if nav_item.active %}class="active"{% endif %}>
-                              <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
-                          </li>
-                      {% endif %}
-
+                {% if nav_item.children %}
+                    <li class="dropdown{% if nav_item.active %} active{% endif %}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ nav_item.title }} <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        {% for nav_item in nav_item.children %}
+                            {% include "nav-sub.html" %}
+                        {% endfor %}
+                        </ul>
+                    </li>
+                {% else %}
+                    <li {% if nav_item.active %}class="active"{% endif %}>
+                        <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+                    </li>
+                {% endif %}
                 {% endfor %}
+
+                <!-- new add for language button -->
+                <!--<li>
+                    <a href="http://sdkbox-doc.github.io/zh/">中文</a>
+                </li>-->
+
                 </ul>
             {% endif %}
 
@@ -48,11 +52,6 @@
                     <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                         <i class="fa fa-search"></i> Search
                     </a>
-                    <!--<form role="form">
-                        <div class="form-group">
-                            <input type="text" class="form-control navbar-search" placeholder="Search..." id="mkdocs-search-query">
-                        </div>
-                    </form>-->
                 </li>
                 {% if include_next_prev %}
                     <li {% if not previous_page %}class="disabled"{% endif %}>
