@@ -1,3 +1,15 @@
+# Cocos Studio is EOL'd
+Cocos Studio has been EOL'd as of __April 2016__.  There will be no more releases of Cocos Studio.
+
+The last version of Cocos Studio is v3.10 and can be downloaded for [Mac](http://www.cocos2d-x.org/filedown/CocosForMac-v3.10.dmg) and [Windows](http://www.cocos2d-x.org/filedown/CocosForWin-v3.10.exe).
+This version of Cocos Studio requires version [v3.10](http://www.cocos2d-x.org/filedown/cocos2d-x-3.10.zip) of Cocos2d-x.
+This version of Cocos Studio works best in Windows 7 and OS X 10.10.
+
+If you update Cocos2d-x to a version greater than v3.10, you may experience compatibility issues.
+If you run Cocos Studio on Windows 10 or OS X 10.11, you may experience compatibility issues.
+
+# --------------------------------------------------------------
+
 # Studio
 Cocos Studio, a free cross-platform game development editor supporting Cocos2d-x,
 helps developers build 2D and 3D game scenes, edit game UI and other game resources
