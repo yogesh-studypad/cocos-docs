@@ -44,6 +44,8 @@ You can read these docs [online](http://www.cocos2d-x.org/docs).
 * export TEXROOT=/usr/local/texlive/2014basic/bin/universal-darwin/
 * export PATH=$TEXROOT:$PATH
 
+* MkDocs: http://www.mkdocs.org/
+
 * To build the c++ API Ref you need a customized Doxygen version from https://github.com/zilongshanren/doxygen
 
 * To build the JavaScript API Ref you need __jsdoc_toolkit__ which is usually placed in __<Cocos2d-x root>/web/tools__. It can be found here: http://cocos2d-x.org/docs/jsdoc_toolkit-2.4.0.zip
