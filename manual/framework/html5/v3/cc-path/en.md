@@ -54,7 +54,7 @@ Arguments
 |   name   |  type   |  remark |
 |:--------:|:-------:|:-------:|
 |pathStr|String|Required|
-|extname|String|The new extname you want. Default to be a empty string.|
+|extname|String|The new extname you want. Default to be an empty string.|
 
 
 #### cc.path.changeBasename

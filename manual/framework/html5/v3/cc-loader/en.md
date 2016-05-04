@@ -249,7 +249,7 @@ The way to register a resource loader plugin.
 
 ```script
 Arguments:
-extNames        A string or an string array which means the extname of resources.
+extNames        A string or a string array which means the extname of resources.
 loader          The loader plugin object which must has a function named "load".
                 `realUrl`, `url`, `res`, `cb` will be pass into the `load` function as arguments.
                 If there is a function named `getBasePath` in this loader plugin,
@@ -304,7 +304,7 @@ Usage:
 cc.loader.release("a.png");
 ```
 
-##### releaseAlll
+##### releaseAll
 
 Release all data of resources cached.
 

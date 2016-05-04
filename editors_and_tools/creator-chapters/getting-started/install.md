@@ -19,7 +19,7 @@ You can set up quick start, Dock or a shortcut according to your preference for 
 
 ## Use Cocos developer account to login
 
-If you don't need to release games on original platforms, the above two simple steps can prepare for you a full developing environment fordeveloping games using Cocos Creator.
+If you don't need to release games on original platforms, the above two simple steps can prepare for you a full developing environment for developing games using Cocos Creator.
 
 After starting Cocos Creator, you will access the login interface for Cocos developer accounts. After logging in, you can enjoy various kinds of online services, product upgrade information and various developer benefits provided for developers.
 

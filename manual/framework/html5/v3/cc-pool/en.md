@@ -11,7 +11,7 @@ When you have a class whose instance requires frequent creation and deletion, th
 
     Firstly, you mast have a class with `unuse` and `reuse` functions, `cc.pool` will call `unuse` function when you put it into the pool, and call `reuse` function when you retrieve an object from the pool to reinitialize it with the given parameters.
 
-    Here is a example class `MySprite`, we will use it later on to explain other functionalities.
+    Here is an example class `MySprite`, we will use it later on to explain other functionalities.
 
     ```
 	var MySprite = cc.Sprite.extend({

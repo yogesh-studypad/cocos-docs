@@ -22,7 +22,7 @@ Some useful links:
 * [Ant binary release](http://ant.apache.org/)
     - Download Ant.
     - Uncompress the downloaded file into a directory.
-    - Set environment variables JAVA\_HOME to your Java environment, ANT\_HOME to the directory you uncompressed Ant to, and add ${ANT\_HOME}/bin (Unix) or %ANT\_HOME%/bin (Windows) to your PATH. (Set environment variables means export a executable file path to a usable command in terminal or command line tool)
+    - Set environment variables JAVA\_HOME to your Java environment, ANT\_HOME to the directory you uncompressed Ant to, and add ${ANT\_HOME}/bin (Unix) or %ANT\_HOME%/bin (Windows) to your PATH. (Set environment variables means export an executable file path to a usable command in terminal or command line tool)
      
     ```
     // How to set environment variables: Execute in console or add into .bash_profile(Mac)

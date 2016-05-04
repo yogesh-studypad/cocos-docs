@@ -56,7 +56,7 @@ If you do want to dynamic allocate `cocos2d::Map<K,V>` on the heap due to some o
 
 ##Basic Usage
 
-**WARNING** The `cocos2d::Map<K,V>` doesn't overload `operator[]`, so you can't get a element from `cocos2d::Map<K,V>` using subscrit operator like `map[i]`.
+**WARNING** The `cocos2d::Map<K,V>` doesn't overload `operator[]`, so you can't get an element from `cocos2d::Map<K,V>` using subscript operator like `map[i]`.
 
 For more APIs usage, please refer to the source code and the tests distributed with Cocos2d-x 3.0 beta archive.
 
@@ -122,5 +122,5 @@ cocos2d: After remove sp0, size of map is 1.
 
 ##Best practice
 
-- When pass `cocos2d::Map<K, V>()` as a argument, declare it as a const reference like `const cocos2d::Map<K, V>()&`
+- When pass `cocos2d::Map<K, V>()` as an argument, declare it as a const reference like `const cocos2d::Map<K, V>()&`
 - T must be the a pointer to `cocos2d::Object` descendant object type. No other data type or primitives are allowed.

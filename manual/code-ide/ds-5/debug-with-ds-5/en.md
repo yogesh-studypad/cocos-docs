@@ -2,7 +2,7 @@
 
 Before debugging C++ code in Cocos Code IDE, ARM DS-5 should be installed. [Click here to install DS-5](../zh.md).
 
-Initial configuration of DS-5 need to be done before debugging Andorid C++ code.Glad to tell you that configuration wizard of DS-5 have built in from Cocos Code IDE 1.1.0 to help you to configure DS-5 automatically.
+Initial configuration of DS-5 need to be done before debugging Android C++ code.Glad to tell you that configuration wizard of DS-5 have built in from Cocos Code IDE 1.1.0 to help you to configure DS-5 automatically.
 
 In addition, the following tools also needed:
 
@@ -26,11 +26,11 @@ In addition, the following tools also needed:
 4. You can click "Generate" button to start the build after the compiler options set. The compile operation will take a while, and after a successful compilation, click on "Debug ..." to enter the configuration dialog of the DS-5.  
     ![](./res/ds-5-config-compile-finish.jpg)
 
-5. All necessary options has been filled up, the only thing before start debugging is to connect a Android device which debug mode has been turned on with a USB cabble.  
+5. All necessary options has been filled up, the only thing before start debugging is to connect an Android device which debug mode has been turned on with a USB cable.  
     ![](./res/ds-5-config-config.jpg)
 
 
-6. DS-5 will break down automatically when bebug began, then you can select one file, which is in the left corner of the project management view, for breakpoint insertion.   
+6. DS-5 will break down automatically when debug began, then you can select one file, which is in the left corner of the project management view, for breakpoint insertion.   
     ![](./res/ds-5-project-view.jpg)
 
 7. Double click to open the file, then double click the left column of the code window to set breakpoints. 

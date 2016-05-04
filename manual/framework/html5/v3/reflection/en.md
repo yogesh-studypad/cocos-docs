@@ -42,9 +42,9 @@ The method name is very simple. For example, the method names of two sum methods
 
 The method signature is a little complex. The most simple signature is `()V`, it represents a method which has no parameters and no return value. Some other examples:
 
-- `(I)V` represents a method which has a int parameter and no return value.
-- `(I)I` represents a method which has a int parameter and a int return value.
-- `(IF)Z` represents a method which has a int parameter and a float parameter, and returns boolean.
+- `(I)V` represents a method which has an int parameter and no return value.
+- `(I)I` represents a method which has an int parameter and an int return value.
+- `(IF)Z` represents a method which has an int parameter and a float parameter, and returns boolean.
 
 Now I think you have understood it. The symbols in brackets represent the type of parameters, and the symbol after bracket represent the type of return value. Because we are allowed to overload methods in Java, there can be multiple methods which hava the same method name, but different parameters and return value. The method signature is used to help identifying these methods.
 
@@ -121,7 +121,7 @@ Then we call `showAlertDialog` in js:
 jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "showAlertDialog", "(Ljava/lang/String;Ljava/lang/String;)V", "title", "hahahahha");
 ```
 
-You should see a Android native AlertDialog now.
+You should see an Android native AlertDialog now.
 
 ##What's more
 
@@ -129,7 +129,7 @@ Now we have successfully called Java methods in JavaScript, so can we call js in
 
 In your project add the `Cocos2dxJavascriptJavaBridge`, this class has a `evalString` method which can evaluate JavaScript. It's in the folder `frameworks\js-bindings\bindings\manual\platform\android\java\src\org\cocos2dx\lib`.
 
-We will add a OK button for the AlertDialog, and use `evalString` in its `OnClickListener`. Note that this time we should run js code in `gl` thread.
+We will add an OK button for the AlertDialog, and use `evalString` in its `OnClickListener`. Note that this time we should run js code in `gl` thread.
 
 ```
 alertDialog.setButton("OK", new DialogInterface.OnClickListener() {

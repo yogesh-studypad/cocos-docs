@@ -15,7 +15,7 @@ Our official example, (SelectLevel.csd) make use of atlas label
  ![image](res/image076.png)
  
 #### Scenario 1: Modify the image resources for Atlas label
-Adding a atlas label on canvas, select the atlas label, properties will display the current resource thumbnail, you can modify it by double-clicking a thumbnail, as well as drag image to it.
+Adding an atlas label on canvas, select the atlas label, properties will display the current resource thumbnail, you can modify it by double-clicking a thumbnail, as well as drag image to it.
 In addition you can also use right mouse.
 When you modify the button text simply select the button, modify text attributes in the Properties, same can be done though right mouse.
   

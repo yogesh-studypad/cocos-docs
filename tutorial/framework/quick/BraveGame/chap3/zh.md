@@ -71,7 +71,7 @@ Quick下的状态机是从Javascript的状态机改过来的，但是充分的�
         assert(type(cfg) == "table", "StateMachine:ctor() - invalid config")
 
         -- cfg.initial allow for a simple string,
-        -- or an table with { state = "foo", event = "setup", defer = true|false }
+        -- or a table with { state = "foo", event = "setup", defer = true|false }
         if type(cfg.initial) == "string" then
             self.initial_ = {state = cfg.initial}
         else

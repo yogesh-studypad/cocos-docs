@@ -1375,7 +1375,7 @@ Code should be 64-bit and 32-bit friendly. Bear in mind problems of printing, co
 Note that the `PRI*` macros expand to independent strings which are concatenated by the compiler. Hence if you are using a non-constant format string, you need to insert the value of the macro into the format, rather than the name. It is still possible, as usual, to include length specifiers, etc., after the % when using the PRI* macros. So, e.g. `printf("x = %30"PRIuS"\n", x)` would expand on 32-bit Linux to `printf("x = %30" "u" "\n", x)`, which the compiler will treat as `printf("x = %30u\n", x)`.
 
 * Remember that `sizeof(void *) != sizeof(int)`. Use `intptr_t` if you want a pointer-sized integer.
-* You may need to be careful with structure alignments, particularly for structures being stored on disk. Any class/structure with a int64_t/uint64_t member will by default end up being 8-byte aligned on a 64-bit system. If you have such structures being shared on disk between 32-bit and 64-bit code, you will need to ensure that they are packed the same on both architectures. Most compilers offer a way to alter structure alignment. For gcc, you can use `__attribute__((packed))`. MSVC offers `#pragma pack()` and `__declspec(align())`.
+* You may need to be careful with structure alignments, particularly for structures being stored on disk. Any class/structure with an int64_t/uint64_t member will by default end up being 8-byte aligned on a 64-bit system. If you have such structures being shared on disk between 32-bit and 64-bit code, you will need to ensure that they are packed the same on both architectures. Most compilers offer a way to alter structure alignment. For gcc, you can use `__attribute__((packed))`. MSVC offers `#pragma pack()` and `__declspec(align())`.
 * Use the `LL` or `ULL` suffixes as needed to create 64-bit constants. For example:
 
 ```cpp
@@ -2150,7 +2150,7 @@ If your TODO is of the form "At a future date do something" make sure that you e
 
 ## Deprecation Comments
 
-Use the `CC_DEPRECATED_ATTRIBUTE` macro to mark an methods as deprecated.
+Use the `CC_DEPRECATED_ATTRIBUTE` macro to mark a method as deprecated.
 
 Also use the ` ``deprecated ` doxygen docstring to mark it as deprecated in the documentation.
 
@@ -2174,7 +2174,7 @@ We recognize that this rule is controversial, but so much existing code already 
 
 **Pros:** Those who favor this rule argue that it is rude to force them to resize their windows and there is no need for anything longer. Some folks are used to having several code windows side-by-side, and thus don't have room to widen their windows in any case. People set up their work environment assuming a particular maximum window width, and 80 columns has been the traditional standard. Why change it?
 
-**Cons:** Proponents of change argue that a wider line can make code more readable. The 80-column limit is an hidebound throwback to 1960s mainframes; modern equipment has wide screens that can easily show longer lines.
+**Cons:** Proponents of change argue that a wider line can make code more readable. The 80-column limit is a hidebound throwback to 1960s mainframes; modern equipment has wide screens that can easily show longer lines.
 
 **Decision:**
 

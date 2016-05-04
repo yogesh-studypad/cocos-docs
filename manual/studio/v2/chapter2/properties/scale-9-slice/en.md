@@ -4,7 +4,7 @@ Use 9-Slice can help you save a lot of asset as well as bundle size, in the exam
 
 ![Image](res/image125.png)
 
-Its yellow background is to use a image just 482 bytes, here is how we made it:
+Its yellow background is to use an image just 482 bytes, here is how we made it:
 
 ![Image](res/image133.gif)
 

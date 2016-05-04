@@ -56,8 +56,8 @@ OK,接下来我们将要介绍如何配置WebStorm 7.1进行开发和调试我�
 
 1. 从Cocos2d-html5中创建一个项目
 
-	正如上图所示，你应该选择**Create New Project from Exisiting Files** 
-	
+	正如上图所示，你应该选择**Create New Project from Existing Files** 
+
 	然后将会提示你下面这些选项
 		
 	**图 2**
