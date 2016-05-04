@@ -4,7 +4,7 @@ Refactor all createWithXXX functions into unified create function with different
 
 ###1,Sprite (4 ways)###
 
-(1) create with a image path
+(1) create with an image path
 
     //param0:image path
     var sprite1 = cc.Sprite.create("res/HelloHTML5World.png");
@@ -48,7 +48,7 @@ Refactor all createWithXXX functions into unified create function with different
 
 ###3,Animation (3 ways)###
 
-(1) create en empty animation
+(1) create an empty animation
 
     //no parameter
     var animation1 = cc.Animation.create();
@@ -79,7 +79,7 @@ Refactor all createWithXXX functions into unified create function with different
     var animation3 = cc.Animation.create(animationFrameArr,  0.2, 2);
 
 ###4,SpriteBatchNode (2 ways)###
-(1)create with a image path
+(1)create with an image path
 
     //param0:image path, param1:capacity
     var spriteBatchNode = cc.SpriteBatchNode.create("res/animations/grossini.png",  50);
@@ -90,7 +90,7 @@ Refactor all createWithXXX functions into unified create function with different
     var spriteBatchNode = cc.SpriteBatchNode.create(texture, 50);
 
 ###5,SpriteFrame (2 ways)###
-(1)create with a image path
+(1)create with an image path
 
     //param0:image path, param1:rectangle
     var frame1 = cc.SpriteFrame.create("res/grossini_dance.png", cc.rect(0, 0, 90, 128));
@@ -116,7 +116,7 @@ Refactor all createWithXXX functions into unified create function with different
 
 ###8,PhysicsSprite (4 ways)###
 
-(1) create with a image path
+(1) create with an image path
 
     //param0:image path
     var physicsSprite1 = cc.PhysicsSprite.create("res/HelloHTML5World.png");
@@ -145,7 +145,7 @@ Refactor all createWithXXX functions into unified create function with different
 
 ###9,TextureAtlas (2 ways)###
 
-(1)create with a image path
+(1)create with an image path
 
     //param0:image path, param1:capacity
     var textureAtlas = cc.TextureAtlas.create("res/animations/grossini.png",  50);

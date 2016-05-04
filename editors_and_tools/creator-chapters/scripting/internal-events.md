@@ -30,7 +30,7 @@ The Mouse event will only be triggered on desktop platforms, the event types the
 
 The important APIs of mouse events（`cc.Event.EventMouse`）are as follows（`cc.Event` standard events API excluded）：
 
-| fuction name | returned value type | meaning |
+| function name | returned value type | meaning |
 | ------ |:-------:|:----:|
 | `getScrollY` | `Number` | get the y axis distance wheel scrolled, effective only when scrolling  |
 | `getLocation` | `Object` | get mouse location object which includes x and y properties |
@@ -61,7 +61,7 @@ Note, touch events support multi-touch, each touch spot will send one event to t
 | function name | return value type | meaning |
 | ------ |:-------:|:----:|
 | `getID` | `Number` | identification ID of the touch spot, can be used in multi-touch to track the touch spot |
-| `getLocation` | `Object` | get location object of the touch spot which includes x and y propertites |
+| `getLocation` | `Object` | get location object of the touch spot which includes x and y properties |
 | `getLocationX` | `Number` | get X axis location of the touch spot |
 | `getLocationY` | `Number` | get Y axis location of the touch spot |
 | `getDelta` | `Object` | get the distance object the touch spot moves since the last event, which includes x and y properties |
@@ -78,7 +78,7 @@ In the scene shown in the picture, node A has a child node B which has a child n
 
 When the mouse or finger presses in the node C region, the event will be triggered at node C first and notify the registered event listener at node C. Node C will notify node B of this event, and the logic in node B will check whether the touch spot is in its region. If the answer is yes, it will notify its listener, otherwise, it will do nothing. Node A will receive the event then, since node C is completely in node A, the event listener registered in node A will receive the touch down event. The above process explains the event bubble process and that the logic decides whether to dispatch the event or not based on the node region.
 
-Except for the node region to decide whether to dispatch the event or not, the bubble process of mouse and touch events is no different than the general events. So, the fuction`stopPropagation` to call `event` of `stopPropagation` can stop the bubbling process actively.
+Except for the node region to decide whether to dispatch the event or not, the bubble process of mouse and touch events is no different than the general events. So, the function `stopPropagation` to call `event` of `stopPropagation` can stop the bubbling process actively.
 
 ## Other events of `cc.Node` 
 

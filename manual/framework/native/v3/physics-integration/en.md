@@ -127,9 +127,9 @@ contactListener->onContactBegin = CC_CALLBACK_1(HelloWorld::onContactBegin, this
 _eventDispatcher->addEventListenerWithSceneGraphPriority(contactListener, this);
 ```
 
-Every collision detect event is listened by **EventListenerPhysicsContact**. Create a instance, then set its callback function **conContactBegin**. **CC_CALLBACK_1** is callback pointer transform function used by C++ 11. Because **onContactBegin** callback function has two parameters, we use **CC_CALLBACK_1** to transform them.
+Every collision detect event is listened by **EventListenerPhysicsContact**. Create an instance, then set its callback function **conContactBegin**. **CC_CALLBACK_1** is callback pointer transform function used by C++11. Because **onContactBegin** callback function has two parameters, we use **CC_CALLBACK_1** to transform them.
 
-_eventDispatcher is a member of base class Node, it can be used by a initialized Layer.
+_eventDispatcher is a member of base class Node, it can be used by an initialized Layer.
 
 You can also use `EventListenerPhysicsContactWithBodies`, `EventListenerPhysicsContactWithShapes`, `EventListenerPhysicsContactWithGroup` to listen to the particular event you are interested in depending on bodys, shapes or group. But you also need to set the physics contact related bitmask value, because the contact event won't be received by default, even when you create the relative EventListener.
 

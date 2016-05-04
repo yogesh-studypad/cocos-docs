@@ -46,7 +46,7 @@ Type _type;
 
 ##基本用法
 
-`ocos2d::Value`的用法非常简单直接。
+`cocos2d::Value`的用法非常简单直接。
 下面就是使用的例子：
 ```cpp
 Value val;   // call the default constructor
@@ -57,7 +57,7 @@ if (val.isNull()) {
     log("The description of val0:%s",str.c_str());
 }
 //----------------------------------------------------
-Value val1(65);   // initialize with a integer
+Value val1(65);   // initialize with an integer
 //Value val1(3.4f);   // initialize with a float value
 //Value val1(3.5);   // initialize with a double value
 log("The description of the integer value:%s",val1.getDescription().c_str());

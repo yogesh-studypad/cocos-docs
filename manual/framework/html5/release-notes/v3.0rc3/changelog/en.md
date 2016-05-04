@@ -66,7 +66,7 @@ Cocos2d-JS-v3.0 RC3 @ Aug.29, 2014
     31. [JSB] Fixed an Android platform crash issue when handleOnPause get invoked before onSurfaceCreated
     32. [JSB] Fixed an issue that cc.Menu.create doesn't accept array as parameter.
     33. [JSB] Fixed an "Invalid Native Object" issue in RenderTextureTest.
-    34. [JSB] Fixed an crash issue in assets manager test.
+    34. [JSB] Fixed a crash issue in assets manager test.
 
 * Known issues:
     1. [JSB] jsb.AssetsManager have issues on Windows platform and iOS simulator.

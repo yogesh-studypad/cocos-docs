@@ -131,7 +131,7 @@ cc.Class({
     // in Unity3D, it is defined as: public float[] idList;
     idList: { default: [],  type: cc.Float },
 
-    // define a enumerated category
+    // define an enumerated category
     // in Unity3D, it is defined as: public MyEnum myEnum = MyEnum.Foo;
     myEnum: { default: MyEnum.Foo,  type: MyEnum },
   }

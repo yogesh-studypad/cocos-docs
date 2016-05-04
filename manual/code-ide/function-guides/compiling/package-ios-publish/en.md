@@ -15,7 +15,7 @@
 
 #####1. Distribution Certificates: Apple authorized certification for developers;Unlike Development Certificates, distribution certificates can only be used to distribute and not for real device debugging.
 
-#####2. App ID: All Apps have to have a App ID before releasing. It's the one and only valid identification of Apple that usually requires of a Product name and Bundle ID.
+#####2. App ID: All Apps have to have an App ID before releasing. It's the one and only valid identification of Apple that usually requires of a Product name and Bundle ID.
 
 #####Note that Bundle ID is a reverse DNS string. For example: com.company.name; it contains information of the developer and the application. The name section can be specified as the name of a single application or of multiple applications; if former, fill in the app name to the name section as the mentioned example; if latter, name section can be substituted with "*". However, Bundle IDs with "\*" would be unable to use a few features such as pushing.
 
@@ -23,7 +23,7 @@
 
 ## 3. Add Distribution Certificates
 
-#####First，we need to enter [Apple Developer Center](http://developer.apple.com)，click the MemberCenter and login(of course you'll need a iOS Developer account) into where shown in the picture
+#####First，we need to enter [Apple Developer Center](http://developer.apple.com)，click the MemberCenter and login(of course you'll need an iOS Developer account) into where shown in the picture
 ![image](res/certificate1.png)
 
 #####Select the Certificates option

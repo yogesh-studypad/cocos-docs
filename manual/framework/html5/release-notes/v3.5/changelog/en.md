@@ -4,12 +4,12 @@ Cocos2d-JS v3.5 @ April 1 2015
 * Updated Cocos2d-x v3.5.
 * Upgraded Cocos Studio parser to support Cocos Studio v2.2.
 * Supported Cocos Studio 3D scene editing.
-* Upgraded runtime tempalte to support Cocos Code IDE 1.2.0.
+* Upgraded runtime template to support Cocos Code IDE 1.2.0.
 * Upgraded Spine support to v2.1, added spine test case with FFD. FFD is supported in native but not in web, both engine can parse the new version file correctly, but the web engine will ignore FFD informations.
 * Replaced '==' with '===' for better performance.
 * Added `path` parameter in `ccs.load` to support modifying cocostudio project resource path.
 * Added animationList to Cocostudio ActionTimeline to support playing animation by name.
-* Made ParticleSystem support creation from an map object. 
+* Made ParticleSystem support creation from a map object. 
 * Added missing functions to `cc.Grid3D` and `cc.PageTurn3D`.
 * Added tip message functions to `cc.TextFieldTTF` for mobile browser. 
 * Added a function `cc.sys.openURL`.
@@ -22,7 +22,7 @@ Cocos2d-JS v3.5 @ April 1 2015
 * [JSB] Supported setting custom scheduler or action manager for node.
 * [JSB] Added `enableStroke`, `setBoundingWidth`, `setBoundingHeight` to `cc.Label` to fit web engine API.
 * [JSB] Supported ArrayBuffer and ArrayBufferView in `XMLHTTPRequest`'s `send` function.
-* [JSB] Made remote image loading fully asynchonous.
+* [JSB] Made remote image loading fully asynchronous.
 * [JSB] Made `cc.Camera`'s `unproject` function support one argument.
 
 * Bug fixes:
@@ -36,11 +36,11 @@ Cocos2d-JS v3.5 @ April 1 2015
 	8. Fixed a bug of Cocos Studio parser that the background color of `ccui.Layout` can't be parsed correctly.
 	9. Fixed a bug of `cc.ClippingNode` that it doesn't work when set `inverted` to true in Canvas Mode.
 	10. Fixed a bug of `ccs.Armature` that its name was modified to animation name when loading from json files.
-	11. Fixed a bug of `ccui.PageView` that it cancel child touch during movment of page view. 
+	11. Fixed a bug of `ccui.PageView` that it cancel child touch during movement of page view. 
 	12. Fixed a bug of `cc.Scheduler` that its parameter `repeat` is invalid in schedule function.
 	13. Fixed a bug of `cc.Scheduler` that `unschedule` function may fail.
     14. [JSB] Fixed a crash issue that `ccui.Checkbox` will crash due to conflict usage of `setUserObject`.
-    15. [JSB] Fixed an issue that `cc.Node`'s `init` function is empty implemented and can't be overrided.
+    15. [JSB] Fixed an issue that `cc.Node`'s `init` function is empty implemented and can't be overridden.
     16. [JSB] Fixed `cc.ClippingNode`'s `init` function issue that it didn't support arguments.
     17. [JSB] Fixed an issue that TTF Cocos Studio parser can not correctly set TTF font for widgets.
     18. [JSB] Fixed relocation overflow compilation issue by adding `LOCAL_ARM_MODE := arm`.

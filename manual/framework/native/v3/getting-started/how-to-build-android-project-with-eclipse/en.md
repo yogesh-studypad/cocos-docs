@@ -87,7 +87,7 @@ The path of the libcocos2dx project is `[your Cocos2d-x root]cocos/2d/platform/a
 
 
 ### Build and Run the Android Project
-Now you could build an run you Android project. But it still need some effects to get it done.
+Now you could build and run you Android project. But it still need some effects to get it done.
 
 At first, you should connect your Android phone with `USB remote debugging` option enabled.
 

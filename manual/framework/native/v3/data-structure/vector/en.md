@@ -61,7 +61,7 @@ So the `pushBack()` method now will retain the ownership of the function argumen
 
 When you use these operations, you should pay extra attention to the underlying memory management stuff which are the common traps for many newbie Cocos2d-x developers.
 
-**WARNING**: The `cocos2d::Vector<T>` doesn't overload `operator[]`, so you can't get a element from `cocos2d::Vector<T>` using subscript operator like `vec[i]`.
+**WARNING**: The `cocos2d::Vector<T>` doesn't overload `operator[]`, so you can't get an element from `cocos2d::Vector<T>` using subscript operator like `vec[i]`.
 
 The `cocos2d::Vector<T>` container provides many different kinds of iterators. Thus we benefit from the standard infrastructure of the C++ standard library; for example, the exclusive huge amount of standard generic algorithms and the `for_each` loop.
 

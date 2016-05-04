@@ -24,7 +24,7 @@
 
 跟其他动作一样，效果也是由“runAction”来执行，例如：
 
-	// Create an sprite
+	// Create a sprite
 	CCSprite* grossini = CCSprite::create("grossini.png");
 	grossini->runAction(CCLiquid::create(4, 20, ccg(10,10), 5));
 
@@ -38,7 +38,7 @@
 	// create a Waved3D action
 	CCActionInterval* waves = CCWaves3D::create(18,80,ccg(15,10),10);
 	
-	// create a sequence an repeat it forever
+	// create a sequence a repeat it forever
 	grossini->runAction(CCRepeatForever::create((CCSequence*)CCSequence::create(waves, lens, NULL ) ) );
 
 以下列表为V2.1.0版本中存在的Grid3D（非瓷砖）动作：

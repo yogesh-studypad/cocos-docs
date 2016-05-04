@@ -145,7 +145,7 @@ Following image shows the displaying effect:
 
 ![uipanel_vertical](res/uipanel_vertical.png)
 
-Settd three parameters for layout-`UILinearLayoutParameter`, `Gravity` and `Margin`, then setted layout parameters for three UIPanel's inner widgets, so you saw the result above.
+Set three parameters for layout-`UILinearLayoutParameter`, `Gravity` and `Margin`, then set layout parameters for three UIPanel's inner widgets, so you saw the result above.
 
 Here we used Linear Vertical scheme, but every `Gravity` set as `LINEAR_GRAVITY_CENTER_HORIZONTAL` that is displaying as center horizontally. Margin shows the spacing around the edges, notice that the value of `lp2` is `UIMargin(20, 20, 0, 5)`, which means the spacing from left, top, right and button. When left spacing is 20 you can see `textButton`'s position has little offset to right. Except for the direction, other setting of layout vertical scheme is same as horizontal scheme. And two schemes are called **Linear Layout**, they using the same parameters. Checking out following layout:
 
@@ -170,7 +170,7 @@ Here we used Linear Vertical scheme, but every `Gravity` set as `LINEAR_GRAVITY_
 ```
 ![uipanel_relative](res/uipanel_relative.png)
 
-Here created three layout properties, and setted different `Align` parameters.
+Here created three layout properties, and set different `Align` parameters.
 
 ### UIScrollView
 
@@ -208,9 +208,9 @@ In addition to layout container, scroll view is always been used, it can enlarge
 
 As the image shows, we created a ScrollView widget and added some inner elements to it. The content is too much that out of the display area, in this situation we can drag the view up and down to show the content.
 
-**Note**: imageView's position is setted outside of scrollview, besides you can call the scrollview's setInnerContainerSize method resize the content displaying area. Checking boundary when dragging.
+**Note**: imageView's position is set outside of scrollview, besides you can call the scrollview's setInnerContainerSize method resize the content displaying area. Checking boundary when dragging.
 
-If horizontal drag is setted, then we just need to set InnerContainerSize's width larger than widget's, height equal to widget's. In this way you can drag it horizontally.
+If horizontal drag is set, then we just need to set InnerContainerSize's width larger than widget's, height equal to widget's. In this way you can drag it horizontally.
 
 ### UIListView
 
@@ -240,7 +240,7 @@ ListView inherited from ScrollView, so ScrollView's characters also can be shown
 
 As shown above, it's the implementation like ScrollView. There are twenty buttons can be dragged, by setting every element's space with `ItemsMargin` and `Gravity` make them displaying in the center horizontally.
 
-`lv->setItemModel(model)` setted Default Item for ListView, then added twenty times this Default Item by a for loop. Notice that it doesn't mean the same model has been added twenty times but there are twenty new object which are the clone of the original model.
+`lv->setItemModel(model)` set Default Item for ListView, then added twenty times this Default Item by a for loop. Notice that it doesn't mean the same model has been added twenty times but there are twenty new object which are the clone of the original model.
 
 `pushBackDefaultItem()` is not the only item that can be added to ListView, there are others:
 
@@ -255,11 +255,11 @@ Some method to add Item already described in above table, now introduce you some
 
 | Method                        | Description                   |
 |-------------------------------|-------------------------------|
-| removeItem(int index)         | Remove a Item                 |
+| removeItem(int index)         | Remove an Item                 |
 | removeLastItem()              | Remove the last Item          |
-| getItem(unsigned int index)   | Get a Item by Index           |
+| getItem(unsigned int index)   | Get an Item by Index           |
 | getItems()                    | Get all the Items and return Array  |
-| getIndex(UIWidget *item)      | Get a Item's Index            |
+| getIndex(UIWidget *item)      | Get an Item's Index            |
 
 
 ### UIPageView
@@ -307,7 +307,7 @@ We talked about ScrollView and some widget can display list, still PageView can 
 
 ![uipageview](res/uipageview.png)
 
-As shown, a PageView object created and size is "Size(240, 130)", which is display area. We added three same UILayout and each of them has the same size "Size(240, 130)" so PageView can display the entire content of a Item one time. You can added what you need in UILayout, then add a page by `pageView->addPage(layout)`. You should remember you have to add `UILayout` object or its derived class object.
+As shown, a PageView object created and size is "Size(240, 130)", which is display area. We added three same UILayout and each of them has the same size "Size(240, 130)" so PageView can display the entire content of an Item one time. You can added what you need in UILayout, then add a page by `pageView->addPage(layout)`. You should remember you have to add `UILayout` object or its derived class object.
 
 Although PageView implemented scroll, it is not inherited from ScrollView but UILayout. It implemented `UIScrollInterface`, this makes it such property. So does ScrollView.
 

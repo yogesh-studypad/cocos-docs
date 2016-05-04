@@ -188,7 +188,7 @@ In addition to UILabelAtlas, you can also display a label by UILabelBMFont.
 
 ![uibmfont](res/uibmfont.png)
 
-Just like UILabelAtlas, UILabelBMFont store the disply information by a image, but Atlas is smaller than BMFont. You can set the parameters of the cutting, but BMFont has to be with a ".fnt" file. There are many information in it, and it also provide many display effect.
+Just like UILabelAtlas, UILabelBMFont store the display information by an image, but Atlas is smaller than BMFont. You can set the parameters of the cutting, but BMFont has to be with a ".fnt" file. There are many information in it, and it also provide many display effect.
 
 ### UITextArea
 

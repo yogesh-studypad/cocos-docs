@@ -4,7 +4,7 @@
 
 If you like movies, I'm sure you can name some of your favourite directors. Even if they don't actually show up in their movies, they give a life to a movie. The director is the most important role for making a movie.
 
-So what's the director of a game? Of course as a developer, we can say that you are the real director, but you also need a executive director to accomplish everything you want in the game engine. This is exactly the responsibility of the director in Cocos2d-JS, your best friend for making great games.
+So what's the director of a game? Of course as a developer, we can say that you are the real director, but you also need an executive director to accomplish everything you want in the game engine. This is exactly the responsibility of the director in Cocos2d-JS, your best friend for making great games.
 
 More specifically, the director in Cocos2d-JS is the object which sets up the running environment for the game, controls the main game loop and manages transitions between scenes. This chapter will introduce you the main tasks of the director and how the director works.
 

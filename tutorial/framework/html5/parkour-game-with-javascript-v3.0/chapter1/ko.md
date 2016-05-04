@@ -80,8 +80,8 @@ WebStorm을 처음 실행했다면 Recent Project 부분은 비어있습니다.
 
 1. Open an exsiting project - MyJSGame
 
-	**Create New Project from Exisiting Files** 선택하시면 다음과 같은 화면을 보실 수 있습니다.
-	
+	**Create New Project from Existing Files** 선택하시면 다음과 같은 화면을 보실 수 있습니다.
+
 	그러면 다음과 같은 옵션들을 볼 수 있습니다:
 	
 	**Figure 2**

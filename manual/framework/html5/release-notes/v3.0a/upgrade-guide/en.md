@@ -609,7 +609,7 @@ if (cc.sys.isNative) {
     
     - cc.CallFunc's `initWithTarget` function have been renamed to `initWithFunction`
     
-    - cc.MoveBy's `create` function now support also `x` and `y` seperated as position parameter
+    - cc.MoveBy's `create` function now support also `x` and `y` separated as position parameter
     
     ```
     cc.MoveBy.create(duration, x, y);
@@ -641,7 +641,7 @@ if (cc.sys.isNative) {
 
 * **12.2 Refactor ease actions design**
 
-    The ease actions are actually decorative actions, they must be attached with target actions and cann't be used individually. All useful codes of the cc.ActionEase and its subclasses are in update functions, so they don't need to inhert from `cc.ActionInterval`, and could be wrapped into a object that provide an `easing` function to change the delta time.
+    The ease actions are actually decorative actions, they must be attached with target actions and can't be used individually. All useful codes of the cc.ActionEase and its subclasses are in update functions, so they don't need to inherit from `cc.ActionInterval`, and could be wrapped into an object that provide an `easing` function to change the delta time.
 
     We added a function `easing` to `cc.ActionInterval`, it can be receive one ore more ease objects.
 

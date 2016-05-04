@@ -88,7 +88,7 @@ cocos new projectName -l js -d ./Projects
 
 1. 打开已经创建好的项目 MyJSGame
 
-	正如我们可以从上面的图片中看到，你应该选择`Create New Project from Exisiting Files`(从已存在的文件创建新项目)
+	正如我们可以从上面的图片中看到，你应该选择`Create New Project from Existing Files`(从已存在的文件创建新项目)
 
 	然后，它会提示你以下选项： 
 

@@ -24,7 +24,7 @@ grid에는 tiled gird와 non-tiled grid의 두 종류가 있습니다. tiled gri
 
 다른 Action과 마찬가지로, “runAction”에 의해 실행됩니다. 예제:
 
-	// Create an sprite
+	// Create a sprite
 	CCSprite* grossini = CCSprite::create("grossini.png");
 	grossini->runAction(CCLiquid::create(4, 20, ccg(10,10), 5));
 
@@ -38,7 +38,7 @@ Effect들은 “IntervalAction”으로 다른 Action 처럼 사용할 수 있�
 	// create a Waved3D action
 	CCActionInterval* waves = CCWaves3D::create(18,80,ccg(15,10),10);
 	
-	// create a sequence an repeat it forever
+	// create a sequence and repeat it forever
 	grossini->runAction(CCRepeatForever::create((CCSequence*)CCSequence::create(waves, lens, NULL ) ) );
 
 아래는 v2.1.0의 Grid3D(non-tiled) Action입니다.
