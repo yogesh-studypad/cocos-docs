@@ -6,6 +6,21 @@
 </div>
 {% endif %}
 
+<ol class="breadcrumb">
+<li><a href="{{ homepage_url }}">Docs</a></li>
+{% if current_page %}
+  {% for doc in current_page.ancestors %}
+    {% if doc.link %}
+      <li><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+    {% else %}
+      <li>{{ doc.title }}</li>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if current_page %}<li>{{ current_page.title }}</li>{% endif %}
+</ol>
+
+
 <!-- we can put this here if we want it on all content pages, but we don't at this point -->
 <!--<div class="langs">
   <ul>
