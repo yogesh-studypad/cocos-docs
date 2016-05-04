@@ -8,7 +8,7 @@ This version of Cocos Studio works best in Windows 7 and OS X 10.10.
 If you update Cocos2d-x to a version greater than v3.10, you may experience compatibility issues.
 If you run Cocos Studio on Windows 10 or OS X 10.11, you may experience compatibility issues.
 
-# --------------------------------------------------------------
+# ----------------------------------------------------
 
 # Studio
 Cocos Studio, a free cross-platform game development editor supporting Cocos2d-x,
