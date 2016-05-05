@@ -57,7 +57,7 @@
         <footer class="col-md-12">
             <hr>
             {% if copyright %}
-                <p>{{ copyright }}</p>
+                <p style="text-align:center">{{ copyright }}</p>
             {% endif %}
            <!-- <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>-->
         </footer>
@@ -85,7 +85,7 @@
           switch_lang(c);
         });
         </script>
-        
+
         <script data-main="{{ base_url }}/mkdocs/js/search.js" src="{{ base_url }}/mkdocs/js/require.js"></script>
         <script src="{{ base_url }}/js/base.js"></script>
         {%- for path in extra_javascript %}

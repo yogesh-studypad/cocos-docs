@@ -20,6 +20,20 @@
 {% if current_page %}<li>{{ current_page.title }}</li>{% endif %}
 </ol>
 
+<ul class="nav navbar-nav navbar-right">
+    {% if include_next_prev %}
+        <li {% if not previous_page %}class="disabled"{% endif %}>
+            <a rel="next" {% if previous_page %}href="{{ previous_page.url }}"{% endif %}>
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li {% if not next_page %}class="disabled"{% endif %}>
+            <a rel="prev" {% if next_page %}href="{{ next_page.url }}"{% endif %}>
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    {% endif %}
+</ul>
 
 <!-- we can put this here if we want it on all content pages, but we don't at this point -->
 <!--<div class="langs">
@@ -31,3 +45,18 @@
 </div>-->
 
 {{ content }}
+
+<ul class="nav navbar-nav navbar-right">
+    {% if include_next_prev %}
+        <li {% if not previous_page %}class="disabled"{% endif %}>
+            <a rel="next" {% if previous_page %}href="{{ previous_page.url }}"{% endif %}>
+                <i class="fa fa-arrow-left"></i> Previous
+            </a>
+        </li>
+        <li {% if not next_page %}class="disabled"{% endif %}>
+            <a rel="prev" {% if next_page %}href="{{ next_page.url }}"{% endif %}>
+                Next <i class="fa fa-arrow-right"></i>
+            </a>
+        </li>
+    {% endif %}
+</ul>
