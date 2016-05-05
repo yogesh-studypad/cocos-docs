@@ -44,7 +44,7 @@
 * Windows Phone/Store 8.0 VS 2012+
 * Windows Phone/Store 8.1 VS 2013 Update 3+
 
-#### v3.0, v3.1, 3.1.1, 3.2
+#### v3.0, v3.1, v3.1.1, v3.2
 ---
 * Mac OS X 10.7+, Xcode 4.6+
 * Ubuntu 12.10+, CMake 2.6+
