@@ -6,6 +6,7 @@
 </div>
 {% endif %}
 
+<!-- bread crumb trail -->
 <ol class="breadcrumb">
 <li><a href="{{ homepage_url }}">Docs</a></li>
 {% if current_page %}
@@ -20,6 +21,8 @@
 {% if current_page %}<li>{{ current_page.title }}</li>{% endif %}
 </ol>
 
+<!-- previous/next buttons for everything but the home page -->
+{% if not current_page.title.startswith("Home") %}
 <ul class="nav navbar-nav navbar-right">
     {% if include_next_prev %}
         <li {% if not previous_page %}class="disabled"{% endif %}>
@@ -34,6 +37,7 @@
         </li>
     {% endif %}
 </ul>
+{% endif %}
 
 <!-- we can put this here if we want it on all content pages, but we don't at this point -->
 <!--<div class="langs">
@@ -46,6 +50,8 @@
 
 {{ content }}
 
+<!-- previous/next buttons for everything but the home page -->
+{% if not current_page.title.startswith("Home") %}
 <ul class="nav navbar-nav navbar-right">
     {% if include_next_prev %}
         <li {% if not previous_page %}class="disabled"{% endif %}>
@@ -60,3 +66,4 @@
         </li>
     {% endif %}
 </ul>
+{% endif %}
