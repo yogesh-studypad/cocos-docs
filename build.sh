@@ -309,10 +309,12 @@ buildStaticHTMLPages() {
   cp template.orig theBasics.html
   cp template.orig toolchain.html
   cp template.orig api-ref.html
+  cp template.orig programmers-guide.html
   ${SED} -i .bak -f installation.sed installation.html
   ${SED} -i .bak -f theBasics.sed theBasics.html
   ${SED} -i .bak -f toolchain.sed toolchain.html
   ${SED} -i .bak -f api-ref.sed api-ref.html
+  ${SED} -i .bak -f programmers-guide.sed programmers-guide.html
 
   ## sync html pages and images with site/ so they get published
   rsync -a *.html ../site/static-pages/
