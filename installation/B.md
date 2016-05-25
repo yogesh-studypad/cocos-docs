@@ -95,7 +95,7 @@ available to build for:
 
 ![](B-img/win-step10.png "")
 
-* run: __python android-build.py -p <a target from above> cpp-tests__, using the
+* run: __python android-build.py -p (a target from above) cpp-tests__, using the
 screenshot above, as an example, run:
 
 		> python android-build.py -p 21 cpp-tests
@@ -127,15 +127,10 @@ screenshot above, as an example, run:
 
 * install __Apache Ant__ and verify that it works.
 
-* run: __setup.py__ to configure your Android development environment. This will
-set the necessary environment variables needed. If you haven't configured this
-environment before, you will be prompted to enter paths for variables that are
-not found.
+* in your __Cocos2d-x__ directory run: __python setup.py__
 
 	__caution__: You must **not** use the `~` sign. Use the full path to your **home**
 directory. Otherwise, the scripts will fail due to error path value.
-
-* in your __Cocos2d-x__ directory run: __python setup.py__
 
 * after setting the environment variables run:
 

@@ -13,8 +13,8 @@ CocosAll=('cocos')
 CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
-InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H')
-InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H')
+InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'Tizen')
+InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H' 'Tizen')
 InstallationchaptersWithOutFolders=('A' 'E')
 
 ### Programmers Guide
@@ -147,6 +147,7 @@ buildAll() { ## build absolutely everything.
   prepAPIRefDocs
   prepCocosDocs
   prepEditorsAndToolsDocs
+  prepDeprecatedDocs
   prepInstallationDocs
   prepServicesDocs
   prepTutorialsDocs
@@ -170,6 +171,7 @@ buildSlim() { ## build a slimed version
   prepAPIRefDocs
   prepCocosDocs
   prepEditorsAndToolsDocs
+  prepDeprecatedDocs
   prepInstallationDocs
   prepServicesDocs
   prepTutorialsDocs
@@ -206,6 +208,11 @@ prepCocosDocs() { ## prep Cocos Docs
 prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
   echo "prepping Editors And Tools docs..."
   rsync -ah editors_and_tools docs/
+}
+
+prepDeprecatedDocs() { ## prep Deprecated Docs
+  echo "prepping Deprecated docs..."
+  rsync -ah deprecated docs/
 }
 
 prepInstallationDocs() { ## prep Installation Docs
@@ -432,7 +439,7 @@ fetchLegacyAPIRef() {
   ## This downloads the legacy api-ref and puts it where it needs to go.
   echo "downloading the legacy api-refs to deploy...."
   cd static-pages/
-  wget http://cocos2d-x.org/docs/api-refs.tar.gz
+  #wget http://cocos2d-x.org/docs/api-refs.tar.gz
   tar xvf api-refs.tar.gz
   cd ..
 
