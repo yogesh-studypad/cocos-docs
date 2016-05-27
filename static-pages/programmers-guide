@@ -1,28 +1,59 @@
 <style>
   h3 {
+      color: #008cba;
+      text-align: center;
+  }
+  h4 {
+      color: #008cba;
       text-align: center;
   }
 
-  p {
-    text-align:center
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  p {
+    text-align:center;
+  }
+
+  .center {
+    text-align:center;
+  }
+
+ .section {
+    width: 265px;
+    float: left;
+    padding: 10px;
+    margin: 3px;
+  }
+
+  .cocosBlue {background-color: #61cee0;}
+  .cocosBlueDarker1 {background-color: #57b9c9;}
+  .cocosBlueDarker2 {background-color: #4da4b3;}
+  .cocosBlueDarker3 {background-color: #43909c;}
+
+  .clearfix {overflow: auto;}
+
 </style>
 
-## Cocos2d-x Programmers Guide v3.10
-v2016.05.26
+<h3>Cocos2d-x Programmers Guide v3.10</h3>
+<h4>v2016.05.26</h4>
+<br /><br />
+<b>Authors:</b> SlackMoehrle, Ricardo, Justin, Nite, Kai, Minggo, Wenhai, Tony, Yingtao, Rao, Huabin, Zhe
+<br /><br />
+<b>Contributors/Editors:</b> stevetranby, Maxxx, smitpatel88, IQD, Michael, Meir_yanovich, catch_up, kidproquo, EMebane, reyanthonyrenacia, Fradow, pabitrapadhy, Manny_Dev, ZippoLag, kubas121, bjared, grimfate, DarioDP
+<br /><br />
+<b>Special Thanks:</b> To our users! Without you there is no reason to even write this guide.
+<br /><br />
+<a href="http://www.cocos2d-x.org/programmersguide/ProgrammersGuide.pdf">PDF Version</a>
+<br /><br />
+<a href="http://www.cocos2d-x.org/programmersguide/ProgrammersGuide.epub">eBook Version</a>
+<br /><br />
+Please provide feedback for this guide on <a href="https://github.com/chukong/programmers-guide">GitHub</a>.
+<br /><br />
+You can download the samples for this guide on <a href="https://github.com/chukong/programmers-guide-samples">GitHub</a>.
+<br /><br />
 
- __Authors:__ SlackMoehrle, Ricardo, Justin, Nite, Kai, Minggo, Wenhai, Tony, Yingtao, Rao, Huabin, Zhe
-
-__CSS enhancements:__ Nico
-
-__Contributors/Editors:__ stevetranby, Maxxx, smitpatel88, IQD, Michael, Meir_yanovich, catch_up, kidproquo, EMebane, reyanthonyrenacia, Fradow, pabitrapadhy, Manny_Dev, ZippoLag, kubas121, bjared, grimfate, DarioDP
-
-__Special Thanks:__ To our users! Without you there is no reason to even write this guide.
-
-[PDF Version](http://www.Cocos2d-x.org/programmersguide/ProgrammersGuide.pdf)
-
-[eBook Version](http://www.Cocos2d-x.org/programmersguide/ProgrammersGuide.epub)
-
-Please provide feedback for this guide on [GitHub](https://github.com/chukong/programmers-guide)
-
-You can download the samples for this guide on [GitHub](https://github.com/chukong/programmers-guide-samples)
+<h3><a href="../programmers-guide/1">Start Learning --></a></h3>
