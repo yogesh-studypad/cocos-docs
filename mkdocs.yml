@@ -5,7 +5,6 @@ site_author: The Cocos Teams
 pages:
 - Home: 'index.md'
 - Contents:
-    - 'Cocos': 'cocos/cocos.md'
     - 'Manual Installations':
         - 'Prerequisites': 'installation/A.md'
         - 'Android (Terminal) Setup': 'installation/B.md'
@@ -122,6 +121,7 @@ pages:
         - '_Cocos Framework': 'editors_and_tools/creator-chapters/publish/cocos-framework.md'
         - '_Publish --> Native': 'editors_and_tools/creator-chapters/publish/publish-native.md'
         - '_Extensions': 'editors_and_tools/creator-chapters/extension/index.md'
+        - 'Cocos Launcher': 'editors_and_tools/cocos.md'
     - 'Services':
         - 'SDKBOX': 'services/sdkbox.md'
     #- 'Tutorials':
