@@ -32,7 +32,7 @@ EditorsAndToolsallDocuments=('studio' 'cocosCLTool' 'cocos')
 EditorsAndToolschaptersWithFolders=('studio' 'cocos')
 
 ### Shared
-misc=('blank' 'index' 'title')
+misc=('blank' 'index')
 
 ### Turn on globbing (BASH 4 required)
 #foundDirs=()
@@ -352,9 +352,10 @@ buildProgrammersGuidePrint() {
   done
 
   cp styling/solarized-light.css styling/main.css styling/style.css styling/_layout.html5 print/.
+  cp programmers-guide/title.md print/index.md
+
 
   cd print/
-  cp title.md index.md
 
   for i in "${PGallDocuments[@]}"; do
     pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o ${i}.html ${i}.md
