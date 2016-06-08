@@ -8,6 +8,26 @@ include: __ios__, __android__, __mac__, __linux__, __win32__, __wp8_1__, __wp10_
 and __web__. You don't need to use an IDE unless you want to. It has many options,
 so let's go through them grouped by function.
 
+## Setting up `cocos`
+it is a good idea to run __<cocos2d-x root>/setup.py__ to properly setup your
+__PATH__. Doing so ensures that you can run Cocos2d-x and its related tools. Example:
+```sh
+# Option 1
+> ./setup.py
+
+# Option 2
+> python setup.py
+```
+
+On OS X, it is also a good idea to add a few lines to your __~/.bash_profile__ to
+ensure your character encoding is set to __UTF-8__. Example:
+```sh
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+After adding these lines, it is necessary to run __source ~/.bash_profile__ or 
+restart your shell.
+
 ## Testing your path for `cocos`
 It is necessary for __cocos__ to be in your path or to specify the complete path
 to it when using it. An easy test:
@@ -16,7 +36,9 @@ to it when using it. An easy test:
 ```
 
 If you see output like __1.2__ you are all set. If you see anything else you need
-to either add the location to your __PATH__, run __source ~/.bash_profile__ or
+to either add the location to your __PATH__.
+
+On __OS X__ run __source ~/.bash_profile__ after updating your __PATH__ or
 specify the full path to __<cocos2d-x root>\tools\cocos2d-console\bin__.
 
 ## Creating a new project
