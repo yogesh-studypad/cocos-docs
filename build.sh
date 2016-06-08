@@ -9,8 +9,8 @@ allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 APIRefAll=('index')
 
 ### Cocos
-CocosAll=('cocos')
-CocoschaptersWithFolders=('cocos')
+##CocosAll=('cocos')
+##CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
 InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'Tizen')
@@ -28,8 +28,8 @@ ServicesallDocuments=('sdkbox')
 ServiceschaptersWithFolders=('sdkbox')
 
 ### Editors and Tools
-EditorsAndToolsallDocuments=('studio' 'cocosCLTool')
-EditorsAndToolschaptersWithFolders=('studio')
+EditorsAndToolsallDocuments=('studio' 'cocosCLTool' 'cocos')
+EditorsAndToolschaptersWithFolders=('studio' 'cocos')
 
 ### Shared
 misc=('blank' 'index' 'title')
@@ -127,9 +127,9 @@ prep() { ## these things happen for any docs that are built.
 prepPost() { ## these things happen after mkdocs build so we have everything in site/ that
 ## we need for deployment
   echo "copying resources to site/..."
-  for i in ${CocosAll[@]}; do
-    rsync -a theme/img site/cocos/${i}/
-  done
+  #for i in ${CocosAll[@]}; do
+  #  rsync -a theme/img site/cocos/${i}/
+  #done
   for i in ${InstallationallDocuments[@]}; do
     rsync -a theme/img site/installation/${i}/
   done
@@ -145,7 +145,7 @@ buildAll() { ## build absolutely everything.
   echo "building absolutely everything..."
   prep
   prepAPIRefDocs
-  prepCocosDocs
+  #prepCocosDocs
   prepEditorsAndToolsDocs
   prepDeprecatedDocs
   prepInstallationDocs
@@ -169,7 +169,7 @@ buildSlim() { ## build a slimed version
   echo "building everything, except print media and api-refs..."
   prep
   prepAPIRefDocs
-  prepCocosDocs
+  #prepCocosDocs
   prepEditorsAndToolsDocs
   prepDeprecatedDocs
   prepInstallationDocs
@@ -196,14 +196,14 @@ prepAPIRefDocs() { ## prep API-Ref
   done
 }
 
-prepCocosDocs() { ## prep Cocos Docs
-  echo "prepping Cocos docs..."
-  for i in ${CocoschaptersWithFolders[@]}; do
-    rsync -a cocos/${i}-web docs/cocos/
-    mv docs/cocos/${i}-web docs/cocos/${i}-img
-    cp cocos/${i}.md docs/cocos/${i}.md
-  done
-}
+#prepCocosDocs() { ## prep Cocos Docs
+#  echo "prepping Cocos docs..."
+#  for i in ${CocoschaptersWithFolders[@]}; do
+#    rsync -a cocos/${i}-web docs/cocos/
+#    mv docs/cocos/${i}-web docs/cocos/${i}-img
+#    cp cocos/${i}.md docs/cocos/${i}.md
+#  done
+#}
 
 prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
   echo "prepping Editors And Tools docs..."
@@ -354,6 +354,8 @@ buildProgrammersGuidePrint() {
   cp styling/solarized-light.css styling/main.css styling/style.css styling/_layout.html5 print/.
 
   cd print/
+  cp title.md index.md
+
   for i in "${PGallDocuments[@]}"; do
     pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o ${i}.html ${i}.md
   done
