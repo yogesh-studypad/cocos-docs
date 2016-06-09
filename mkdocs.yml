@@ -7,14 +7,14 @@ pages:
 - Contents:
     - 'Manual Installations':
         - 'Prerequisites': 'installation/A.md'
-        - 'Android (Terminal) Setup': 'installation/B.md'
-        - 'Android (Eclipse) Setup': 'installation/C.md'
-        - 'IOS Setup': 'installation/D.md'
-        - 'Mac OSX Setup': 'installation/E.md'
-        - 'Linux Setup': 'installation/F.md'
+        - 'Android (Terminal) Setup': 'installation/Android-terminal.md'
+        - 'Android (Eclipse) Setup': 'installation/Android-Eclipse.md'
+        - 'IOS Setup': 'installation/iOS.md'
+        - 'Mac OSX Setup': 'installation/OSX.md'
+        - 'Linux Setup': 'installation/Linux.md'
         #- 'Tizen Setup': 'installation/Tizen.md'
-        - 'Windows Setup': 'installation/G.md'
-        - 'Windows Phone Setup': 'installation/H.md'
+        - 'Windows Setup': 'installation/Windows.md'
+        - 'Windows Phone Setup': 'installation/Windows-Phone.md'
     #- 'Development Workflows': 'workflows/workflows.md'
     - 'Programmers Guide':
         - 'About Cocos2d-x': 'programmers-guide/1.md'
