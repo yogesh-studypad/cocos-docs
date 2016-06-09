@@ -1,7 +1,7 @@
 site_name: Cocos Documentation
 site_url: http://cocos2d-x.org/documentation
 site_description: Cocos Documentation.
-site_author: The Cocos Teams
+site_author: The Cocos Team
 pages:
 - Home: 'index.md'
 - Contents:
