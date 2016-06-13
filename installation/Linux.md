@@ -44,7 +44,7 @@ Otherwise, you should install the dependencies manually.
 * When __cmake__ returns correctly, many files & folders will be generated in
 __coocs2dx_root/build/linux-build__
 
-![](F-img/1.png "")
+    ![](Linux-img/1.png "")
 
 ## Compile
 

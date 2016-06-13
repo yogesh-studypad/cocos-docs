@@ -1,4 +1,4 @@
-# Android (Terminal) Installation and Setup
+# Android with Command-line Installation and Setup
 
 ## Environment Requirements
 * A Supported OS. See **[Installation Prerequisites](A/index.html)**
@@ -31,25 +31,25 @@
 ## Windows Instructions
 * unzip __Cocos2d-x__
 
-![](B-img/win-step1.png "")
+    ![](Android-terminal-img/win-step1.png "")
 
-![](B-img/win-step2.png "")
+    ![](Android-terminal-img/win-step2.png "")
 
-![](B-img/win-step3.png "")
+    ![](Android-terminal-img/win-step3.png "")
 
 * install the **JDK** and verify it works
 
-![](B-img/win-step4.png "")
+    ![](Android-terminal-img/win-step4.png "")
 
 * install the **Android Studio Bundle** taking note of where you specify the
 __Android SDK Installation Location__
 
-![](B-img/win-step5.png "")
+    ![](Android-terminal-img/win-step5.png "")
 
 * unzip the **Android NDK** to the same location as the __Android SDK Installation Location__
 used from above.
 
-![](B-img/win-step6.png "")
+    ![](Android-terminal-img/win-step6.png "")
 
 * extract **Apache Ant** and place the entire folder where you wish to keep it.
 Take note of where you placed it.
@@ -58,12 +58,12 @@ Take note of where you placed it.
 
 * add the paths for **Apache Ant** and **Python** to your __PATH__ variable.
 
-![](B-img/win-step7.png "")
+    ![](Android-terminal-img/win-step7.png "")
 
 * at the same time create a new variable called: __JAVA_HOME__ and give it the
 path to where you installed the JDK above.
 
-![](B-img/win-step8.png "")
+    ![](Android-terminal-img/win-step8.png "")
 
 * reboot
 
@@ -73,7 +73,7 @@ path to where you installed the JDK above.
 
 		> python
 
-![](B-img/win-step9.png "")
+    ![](Android-terminal-img/win-step9.png "")
 
 * if everything works it is time to run __setup.py__ to configure your Android
 development environment. This will set the necessary environment variables needed.
@@ -93,7 +93,7 @@ __build__ directory
 * run __android list targets__ from __sdk/tools__ to see what targets you have
 available to build for:
 
-![](B-img/win-step10.png "")
+    ![](Android-terminal-img/win-step10.png "")
 
 * run: __python android-build.py -p (a target from above) cpp-tests__, using the
 screenshot above, as an example, run:
@@ -102,21 +102,21 @@ screenshot above, as an example, run:
 
 * this will take a while and you will see a lot of source files compiling.
 
-![](B-img/win-step11.png "")
+    ![](Android-terminal-img/win-step11.png "")
 
 * once complete you will get a __success__ message!
 
-![](B-img/win-step12.png "")
+    ![](Android-terminal-img/win-step12.png "")
 
 
 ## OS X, Linux Instructions
 * unzip Cocos2d-x
 
-![](B-img/1.png "")
+    ![](Android-terminal-img/1.png "")
 
-![](B-img/2.png "")
+    ![](Android-terminal-img/2.png "")
 
-![](B-img/3.png "")
+    ![](Android-terminal-img/3.png "")
 
 * install the __JDK__ if your platform requires it.
 
@@ -136,11 +136,11 @@ directory. Otherwise, the scripts will fail due to error path value.
 
 		> source ~/.bash_profile
 
-![](B-img/setuppy01.png "")
+    ![](Android-terminal-img/setuppy01.png "")
 
-![](B-img/setuppy02.png "")
+    ![](Android-terminal-img/setuppy02.png "")
 
-![](B-img/setuppy03.png "")
+    ![](Android-terminal-img/setuppy03.png "")
 
 * change your directory to the where the __android-build.py__ script is located.
 (usually __Cocos2d-x/build__)
@@ -149,7 +149,7 @@ directory. Otherwise, the scripts will fail due to error path value.
 
 		> android list targets
 
-![](B-img/android-list-targets1.png "")
+    ![](Android-terminal-img/android-list-targets1.png "")
 
 * execute:
 
@@ -157,7 +157,7 @@ directory. Otherwise, the scripts will fail due to error path value.
 
 * everything should build successfully:
 
-![](B-img/buildsuccess.png "")
+    ![](Android-terminal-img/buildsuccess.png "")
 
 ## How to deploy it on your Android phone via command line
 

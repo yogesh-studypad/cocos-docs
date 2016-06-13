@@ -11,13 +11,13 @@
 * Download Cocos2d-x and unzip it. (maybe: ~/). Right click on the __.zip__ file
 and unzip it:
 
-![](D-img/unzip.png "")
+    ![](OSX-img/unzip.png "")
 
-![](D-img/unzipping.png "")
+    ![](OSX-img/unzipping.png "")
 
 * After unzipping you should have a folder structure similar to:
 
-![](D-img/contents.png "")
+    ![](OSX-img/contents.png "")
 
 ## Build and Run
 * Enter __Cocos2d-x/build__ and open __cocos2d_tests.xcodeproj__

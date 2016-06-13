@@ -9,15 +9,15 @@
 ## Prerequisites
 * Download Cocos2d-x and unzip it. (maybe: ~/)
 
-![](G-img/1.png "")
+    ![](Windows-img/1.png "")
 
 ## Compile and run the `cpp-tests` project
 * Open __cocos2d-win32.vc2012.sln__ in the __build__ folder
 
-![](G-img/2.png "")
+    ![](Windows-img/2.png "")
 
 * Right click the __TestCpp__ project, and select __Set as StartUp Project__.
 
-![](G-img/3.png "")
+    ![](Windows-img/3.png "")
 
 * Compile and run the __TestCpp__ project.
