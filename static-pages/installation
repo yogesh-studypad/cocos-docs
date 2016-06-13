@@ -11,13 +11,13 @@
 <h3>Installation</h3>
 <br />
 <div>
-<p><a href="../installation/B/">Android (Terminal) Setup</a></p>
-<p><a href="../installation/C/">Android (Eclipse) Setup</a></p>
-<p><a href="../installation/D/">iOS Setup</a></p>
-<p><a href="../installation/E/">Mac OSX Setup</a></p>
-<p><a href="../installation/F/">Linux Setup</a></p>
+<p><a href="../installation/Android-terminal/">Android (Terminal) Setup</a></p>
+<p><a href="../installation/Android-Eclipse/">Android (Eclipse) Setup</a></p>
+<p><a href="../installation/iOS/">iOS Setup</a></p>
+<p><a href="../installation/OSX/">Mac OSX Setup</a></p>
+<p><a href="../installation/Linux/">Linux Setup</a></p>
 <p><a href="../installation/Tizen/">Tizen Setup</a></p>
-<p><a href="../installation/G/">Windows Setup</a></p>
-<p><a href="../installation/H/">Windows Phone Setup</a></p>
-<p><a href="../installation/I/">Command-line Integration</a></p>
+<p><a href="../installation/Windows/">Windows Setup</a></p>
+<p><a href="../installation/Windows-Phone/">Windows Phone Setup</a></p>
+<p><a href="../editors_and_tools/cocosCLTool/">Command-line Integration</a></p>
 </div>
