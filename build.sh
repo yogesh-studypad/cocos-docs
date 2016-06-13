@@ -3,7 +3,8 @@
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
 allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'Android-terminal' 'Android-Eclipse' 'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'cocosCLTool' 'cocos' 'sdkbox')
+'12' '13' 'A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse' 'iOS' 'OSX'
+'Linux' 'Windows' 'Windows-Phone' 'cocosCLTool' 'cocos' 'sdkbox')
 
 ### API-Ref
 APIRefAll=('index')
@@ -13,8 +14,10 @@ APIRefAll=('index')
 ##CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
-InstallationallDocuments=('A' 'Android-terminal' 'Android-Eclipse' 'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
-InstallationchaptersWithFolders=('Android-terminal' 'Android-Eclipse' 'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+InstallationallDocuments=('A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse'
+'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+InstallationchaptersWithFolders=('Android-terminal' 'Android-Studio' 'Android-Eclipse'
+'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
 InstallationchaptersWithOutFolders=('A' 'OSX')
 
 ### Programmers Guide

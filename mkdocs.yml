@@ -7,8 +7,9 @@ pages:
 - Contents:
     - 'Manual Installations':
         - 'Prerequisites': 'installation/A.md'
-        - 'Android (Terminal) Setup': 'installation/Android-terminal.md'
-        - 'Android (Eclipse) Setup': 'installation/Android-Eclipse.md'
+        - 'Android Command-line Setup': 'installation/Android-terminal.md'
+        - 'Android Studio Setup': 'installation/Android-Studio.md'
+        - 'Android Eclipse Setup': 'installation/Android-Eclipse.md'
         - 'IOS Setup': 'installation/iOS.md'
         - 'Mac OSX Setup': 'installation/OSX.md'
         - 'Linux Setup': 'installation/Linux.md'
