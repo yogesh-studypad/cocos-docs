@@ -1,579 +1,237 @@
-> All the "Remarks" belong to advanced content. Beginners don't need to understand them.
+# Declare class with cc.Class
 
-`cc.Class` is a common API, which is used to declare categories in Cocos Creator. For the convenience of categorization, we call the category that uses the cc.Class declaration **FireClass**. Compared to other Javascript category systems, the specialty of FireClass lies more within the metadata which has strong augmentability and can be defined.
+`cc.Class` is a useful API, which is used to declare Class in Cocos Creator. For the convenience of categorization, we call the Class that uses the cc.Class declaration **CCClass**.
 
-## Summary
+## Define CCClass
 
-### Create Fire.Class
+First invoke the **cc.Class** method, passing in an prototype object and set up the needed type parameters by way of a key-value pair in the prototype object, then the needed class can be created.
 
-First invoke the **cc.Class** method, import an original object and set up the needed category parameters by way of a key-value pair in the original object, then the needed category can be created.
-
-```js
-    var Sprite = cc.Class({
-        name: 'Sprite'
-    });
+```javascript
+var Sprite = cc.Class({
+    name: "sprite"
+});
 ```
 
-The above code assigns the created category to the Sprite variable. Besides, it provides the`name` parameter as the category name. Category name is used for serialization, which can normally be omitted.
-For the convenience of discussion, the `{ name: 'Sprite' }` object imported here is generally called the **original object** in this manual. This manual will mainly introduce how to define the original object.
+The above code assigns the created class to the Sprite variable. Besides, it set the class name to "sprite". Class name is used for serialization, which can normally be omitted.
 
-### Create an object
+## Instantiation
 
-Because FireClass is a JavaScript construct function itself, you can use ‘new’ to create an object:
+The above `Sprite` variable is assigned to a JavaScript constructor, which can be used to create new object:
 
-```js
-    var obj = new Sprite();
+```javascript
+var obj = new Sprite();
 ```
 
-### Construct a function
+## Judge class
 
-If `constructor` is declared in the original object, then the designated construct function will be invoked in the construction process for every instance. The construct function **not permitted** of FireClass defines the **construct parameter**.
+When you need to judget the class of an object, you can use the JavaScript built-in `instanceof`:
 
-```js
-    var Sprite = cc.Class({
-        ctor: function () {
-            console.log(this instanceof Sprite);    // true
-        }
-    });
-    var obj = new Sprite();
+```javascript
+cc.log(obj instanceof Sprite);       // true
 ```
 
-Note: Component is a special FireClass, which can't define a construct function. Its construct duty can be replaced by the `onLoad` method.
+## Constructor
 
-### Judge category
+Use `ctor` to declare constructor:
 
-`instanceof` can be used to judge the category of an object:
-
-```js
-    console.log(obj instanceof Sprite);     // true
+```javascript
+var Sprite = cc.Class({
+    ctor: function () {
+        cc.log(this instanceof Sprite);    // true
+    }
+});
 ```
 
-**Remark**
+> Component is special CCClass, which can't define a constructor. Its construct duty can be replaced by the `onLoad` method.
 
-- If serialization is not needed, the category name can be omitted. Category name could be an arbitrary string, but no repetition is permitted. cc.js.getClassName can be used to obtain the category name. cc.js.getClassByName can be used to look up the corresponding category.
-- If professional developers need to use construction parameters, then they can obtain them from arguments in the constructor. But if this category needs serialization, developers should make sure they can still create new objects when construct parameters are defaulted.
+## Instance method
 
-## Member
-
-### Instance variable
-
-Please declare instance variables uniformly in the construct function:
-
-```js
-    var Sprite = cc.Class({
-        ctor: function () {
-            // Declares the instance variable and assigns defaulted value
-            this.url = "";
-            this.id = 0;
-        }
-    });
-    var obj = new Sprite();
-    // assign value
-    obj.url = 'img/fb.png';
-    obj.id = 1;
+```javascript
+var Sprite = cc.Class({
+    // declare a instance method called "print"
+    print: function () { }
+});
 ```
-
-### Instance method
-
-Please declare the instance method in the original object:
-
-```js
-    var Sprite = cc.Class({
-        ctor: function () {
-            // ...
-        },
-        // Declares an instance method named "load"
-        load: function () {
-            // load this.url
-        };
-    });
-    var obj = new Sprite();
-    // Invokes the instance method
-    obj.load();
-```
-
-### Category variable and category method
-
-The static category variable or category method can be directly added to the defined Class:
-
-```js
-    var Sprite = cc.Class({ ... });
-
-    // Declare category variable
-    Sprite.count = 0;
-    // Declare category method
-    Sprite.getBounds = function (spriteList) {
-        // ...
-    };
-```
-
-It can also be declared in the `statics` of the original object:
-
-```js
-    var Sprite = cc.Class({
-        statics: {
-            // Declare category variable
-            count: 0,
-            // Declare category method
-            getBounds: function (spriteList) {
-                // ...
-            }
-        }
-    });
-```
-
-**the complete code is as follows:**
-
-```js
-    var Sprite = cc.Class({
-        name: 'Sprite',
-        ctor: function () {
-            // Declare the instance variable and assign the defaulted value
-            this.url = "";
-            this.id = 0;
-        },
-        // Declare an instance method named "load"
-        load: function () {
-            // load this.url
-        };
-    });
-    // Instantiation
-    var obj = new Sprite();
-    // visit instance variable
-    obj.url = 'sprite.png';
-    // Invoke instance method
-    obj.load();
-
-    // Declare category variable
-    Sprite.count = 0;
-    // declare category method
-    Sprite.getBounds = function (spriteList) {
-        // ...
-    };
-
-    // Invoke category method
-    Sprite.getBounds([obj]);
-```
-
-**Remark**
-
-- If it's a **private** member, we recommend you to add an underline `_` to the front of the name of the member for differentiation purposes.
-
-    ```js
-    var Sprite = cc.Class({
-        name: 'Sprite',
-        ctor: function () {
-            // Privatize instance variable
-            this._myData = 0;
-        },
-        // Privatize instance method
-        _load: function () {
-            // ...
-        };
-    });
-    // privatize category variable
-    Sprite._list = [];
-    ```
-
-- If it's a **private** static member, developers can also use Closure to perform the same operation.
-
-    ```js
-    // privatize static method
-    var doLoad = function (sprite) {
-        // Do load ...
-    };
-    // Privatize static variable
-    var url = 'foo.png';
-
-    var Sprite = cc.Class({
-        load: function () {
-            // Invoke the method in part scope
-            doLoad(this, url);
-        };
-    });
-    ```
-
-- The "Instance member" discussed here includes the "member variable" and "instance method".
-- The "Static member" discussed here includes the "static variable" and "static method".
-- The inheriting realization method of category variables is realized by "shallow copying" the static variable of the parent category to the child category.
 
 ## Inheritance
 
-### Declaration method
+Use `extends` to extends an already declared class:
 
-Please declare `extends` in the original object when inheriting:
+```javascript
+// base class
+var Shape = cc.Class();
 
-```js
-    // Define base class
-    var Node = cc.Class();
-
-    // Define sub class
-    var Sprite = cc.Class({
-        extends: Node
-    });
-
-    // Test
-    var obj = new Sprite();
+// sub class
+var Rect = cc.Class({
+    extends: Shape
+});
 ```
 
-`instanceof` can also be used to judge if the category of an object inherits from a certain parent category:
+### Superclass constructor
 
-```js
-    var sub = new Sprite();
-    console.log(sub instanceof Node);       // True
-    var base = new Node();
-    console.log(base instanceof Sprite);    // False
-```
+The constructor of the super class will be automatically invoked at first before the instantiation of the child class, you do **not** need to call it explicitly by yourself.
 
-### Parent construct function
-
-Please pay attention! Whether the construct function of the child category is provided or not, the construct function of the parent category will be automatically invoked at first before the instantiation of the child category.
-
-```js
-    var Node = cc.Class({
-        ctor: function () {
-            this.name = "node";
-        }
-    });
-    var Sprite = cc.Class({
-        extends: Node,
-        ctor: function () {
-            // Before invoking the child construct function, the parent construct function has already been invoked; therefore this.name has been initialized
-            console.log(this.name);    // "node"
-            // Reset this.name
-            this.name = "sprite";
-        }
-    });
-    var obj = new Sprite();
-    console.log(obj.name);    // "sprite"
-```
-
-### Reload
-
-All of the instance methods are virtual methods. The child category method can directly reload the parent method:
-
-```js
-    var Node = cc.Class({
-        getName: function () {
-            return "node";
-        }
-    });
-    var Sprite = cc.Class({
-        getName: function () {
-            return "sprite";
-        }
-    });
-    var obj = new Sprite();
-    console.log(obj.getName());    // "sprite"
-```
-
-If developers want to invoke the parent category method, they should invoke it in the form of call or apply, directly by using the prototype of the parent category:
-
-```js
-    var Node = cc.Class({
-        getName: function () {
-            return "node";
-        }
-    });
-    var Sprite = cc.Class({
-        getName: function () {
-            var baseName = Node.prototype.getName.call(this);
-            return baseName + ">sprite";
-        }
-    });
-    var obj = new Sprite();
-    console.log(obj.getName());    // "node>sprite"
-```
-
-Use `cc.isChildClassOf` to judge the inheriting relation between two categories:
-
-```js
-    var Texture = cc.Class();
-    var Texture2D = cc.Class({
-        extends: Texture
-    });
-    console.log(cc.isChildClassOf(Texture2D, Texture));   // True
-```
-
-Please pay attention! Both the two imported parameters should be construct functions of the categories, but not object instances of the categories. If two imported categories are equivalent, `isChildClassOf` will return true.
-
-**Remark**
-
-- The parent category can be visited by the static variable `$super` of the child category.
-- All the instance members and category members will be inherited by the child category.
-- If you want to realize original JavaScript inheritance, i.e., your parent category and child category are not FireClass, then you can inherit it by using the cc.js.extend method.
-
-## Property
-
-### Property definition and visit
-
-Property is a special instance variable, which can be displayed in Inspector and also can be deserialized. Property is not defined in the construct function, but declared in the `properties` dictionary of the original object.
-
-**Next, define a playerName property in the Player category:**
-
-```js
-    var Player = cc.Class({
-        extends: cc.Component,
-
-        properties {
-            playerName: {
-                default: 'Jare'
-            }
-        }
-    });
-```
-
-In this way, playerName will display in the Inspector panel. When saving the scene that has Player, playerName will be saved.
-
-Here `default` is used to declare the defaulted value of the property, which also defined the value category as string. The category of the defaulted value is not limited, and will be used only when creating an object for the first time.
-
-**property itself is an instance variable, which can be directly called on:**
-
-```js
-    var Sprite = cc.Class({
-        ctor: function () {
-            console.log(this.width);    // Read default width
-        },
-
-        properties: {
-            width: {
-                default: 128
-            },
-        },
-
-        getWidth: function () {
-            return this.width;
-        }
-    });
-```
-
-Before the construct function is invoked, the property has to be been defined. Developers can visit it in the construct function or re-assign a value to the property.
-
-### Property attribute
-
-Each property can attach multiple attributes arbitrarily to designate the display method, serialization method, etc., in Inspector.
-
-```js
-    properties {
-        score: {
-            default: 0,
-            type: 'Integer',
-            tooltip: 'The score of player'
-        }
+```javascript
+var Shape = cc.Class({
+    ctor: function () {
+        cc.log("Shape");    // The superclass constructor will be automatically invoked
+                            // during instantiation,
     }
-```
+});
 
-The above code stipulated that the score can only input a whole number in Inspector, and when the mouse rests upon a parameter, the corresponding Tooltip will display.
+var Rect = cc.Class({
+    extends: Shape
+});
 
-The following are common parameters. For detailed usage instructions, please refer to [/manual/scripting/attributes].
-
-- type: define the data category of a property
-- url: define the property as a URL of a designated category
-- visible: when it's set as false, the property will not display in the Inspector panel
-- serializable: when it's set as false, the property will not be serialized
-- displayName: the property will be displayed with a designated name in the Inspector panel
-- tooltip: add a property's Tooltip in the Inspector panel
-
-#### <a name="visible parameter"></a>visible parameter
-
-By default, whether a property displays in Inspector depends on whether its name begins with an underline `_`. If it begins with an underline, then the property will not display in Inspector by default, otherwise it will display by default.
-
-If developers want to display the property in Inspector, they can set the `visible` parameter as true:
-
-```js
-    properties {
-        _id: {      // The property whose name begins with an underline is invisible by default
-            default: 0,
-            visible: true
-        }
+var Square = cc.Class({
+    extends: Rect,
+    ctor: function () {
+        cc.log("Square");   // then call the child constructor.
     }
+});
+
+var square = new Square();
 ```
 
-If developers want to hide the property in Inspector, they can set the `visible` parameter as false:
+The output of the above code is "Shape" and "Square".
 
-```js
-    properties {
-        id: {       // The property whose name doesn't begin with an underline is visible by default
-            default: 0,
-            visible: false
-        }
-    }
-```
+## <a name="properties"></a> Property declaration
 
-#### <a name="serializable"></a>serializable parameter
+By employing attribute declaration in the component script, we can visually show the field of the script component in **Properties** panel so that we can adjust the attribute value in the scene easily.
 
-By default, properties will be serialized. If developers don't want them to be serialized, they can set up `serializable: false`.
+To declare the attribute, all you need to do is put the attribute name and parameters in the cc.Class defining `properties` field, for instance:
 
-```js
-    temp_url: {
-        default: '',
-        serializable: false
-    }
-```
-
-#### <a name="type"></a>type parameter
-
-When `default` can't provide category information that is detailed enough, developers need to use `type` to visibly declare a concrete category in order to correctly edit properties in Inspector,:
-
-- When the default value is null, set the type as the construct function of the designated category, then you can correctly assign a value to the properties in Inspector.
-    ```js
-        enemy: {
-            default: null,
-            type: cc.Node
-        }
-    ```
-- When the default value is the Number category, set type as `"Integer"` to indicate this is a whole number, then the property can't input decimal points into Inspector.
-    ```js
-        score: {
-            default: 0,
-            type: 'Integer'
-        }
-    ```
-- Set the type as the enumerating category, then you can choose an enumerating value in Inspector.
-    ```js
-        wrap: {
-            default: cc.Texture2D.WrapMode.Clamp,
-            type: cc.Texture2D.WrapMode
-        }
-    ```
-
-#### <a name="url"></a>url parameter
-
-If the property is a URL that is used to save resources, then to be able to set up resources in Inspector or correctly serialize code, developers need to provide correct URL parameters.
-```js
-    texture: {
-        default: "",
-        url: cc.Texture2D
-    },
-```
-
-### Digit group definition
-
-Digit group's default should be set as `[]`. If you want to edit it in Inspector, you also need to set the type as construct function, enumeration, or `"Integer"`, `"Float"`, `"Boolean"`, `"String"`.
-```js
-    nameList: {
-        default: [],
-        type: ["String"]     // Each element of the declaring digit group is string type
-    },
-    enemyList: {
-        default: [],
-        type: [cc.Node]
-    }
-```
-
-**Remark**
-
-- All the properties can be inherited by the child category. But the properties of the child category and parent category can't share names.
-- If the default value of the property can only be obtained by invoking other methods, developers can re-assign values in the construct function.
-
-    ```js
-    var Sprite = cc.Class({
-        ctor: function () {
-            this.img = LoadImage();
-        },
-        properties: {
-            img: null
-        }
-    });
-    ```
-
-## GetSet method
-
-After setting up get or set in properties, when visiting properties, the pre-set get or set method will be triggered.
-
-### get
-
-Setting up the get method in properties:
-
-```js
+```javascript
+cc.Class({
+    extends: cc.Component,
     properties: {
-        width: {
-            get: function () {
-                return this.__width;
-            }
-        }
+        userID: 20,
+        userName: "Foobar"
     }
+});
 ```
 
-The get method can return values of any type. 
-This property can also display in Inspector, which can be directly visited in all the code that includes the construct function.
+At this time, you can see in **Properties** panel the two properties you just defined:
 
-```js
-    var Sprite = cc.Class({
-        ctor: function () {
-            this.__width = 128;
-            console.log(this.width);    // 128
-        },
-        properties: {
-            width: {
-                get: function () {
-                    return this.__width;
-                }
-            }
-        }
-    });
-```
+![properties-in-inspector](assets/properties-in-inspector.png)
 
-Attention:
+In Cocos Creator, we provide two kinds of attribute declaration methods:
 
-- After setting up get, this property can't be serialized or designated a default value, but developers can still attach any parameter other than "default" or "serializable".
+### Simple declaration
 
-    ```js
-        width: {
-            get: function () {
-                return this.__width;
-            },
-            type: 'Integer',
-            tooltip: "The width of sprite"
-        }
+In most cases, we can use simple declaration.
+
+- When the property declared is the JavaScript primitive type, it can be written directly into:
+
+    ```javascript
+    properties: {
+        height: 20,       // number
+        type: "actor",    // string
+        loaded: false,    // boolean
+        target: null,     // object
+    }
     ```
 
-- The get property itself is read-only, but the returned object is not read-only. Users can still use code to modify properties inside the object, for example:
+- When the property delared has type (such as `cc.Node`, `cc.Vec2` etc.), you can finish the declaration by writing its constructor in the delaration, such as:
 
-    ```js
-    var Sprite = cc.Class({
-        ...
-        position: {
-            get: function () {
-                return this.__position;
-            },
-        }
-        ...
-    });
-    var obj = new Sprite();
-    obj.position = new cc.Vec2(10, 20);   // Wrong! Position is read-only!
-    obj.position.x = 100;                 // YesI! The position object itself can be modified!
+    ```javascript
+    properties: {
+        target: cc.Node,
+        pos: cc.Vec2,
+    }
     ```
 
-### set
+- When the delared property type is inherited from `cc.ValueType` (such as `cc.Vec2`, `cc.Color`, `cc.Size` etc.), in addition to using constructor above, it can also be assigned with an instance, such as:
 
-Set up the set method in properties:
-
-```js
-    width: {
-        set: function (value) {
-            this.__width = value;
-        }
+    ```javascript
+    properties: {
+        pos: new cc.Vec2(10, 20),
+        color: new cc.Color(255, 255, 255, 128),
     }
+    ```
+
+- When the property delared is an array, you can finish the declaration by writing its type or constructor in the delaration, such as:
+
+    ```javascript
+    properties: {
+        any: [],      // array of arbitrary type
+        bools: [cc.Boolean],
+        strings: [cc.String],
+        floats: [cc.Float],
+        ints: [cc.Integer],
+
+        values: [cc.Vec2],
+        nodes: [cc.Node],
+        frames: [cc.SpriteFrame],
+    }
+    ```
+
+**Note:** Other than the situations above, we all need to use **complete declaration** to write for other types.
+
+### Complete declaration
+
+Under some circumstances, we need to add attributes for the property declaration. These attributes control the property display mode in **Properties** panel, and the property behavior in the scene serialization process. For example:
+
+```javascript
+properties: {
+    score: {
+        default: 0,
+        displayName: "Score (player)",
+        tooltip: "The score of player",
+    }
+}
 ```
 
-The set method receives an importing parameter, which can be of any type.
+The code above specified three attributes `default`, `displayName` and `tooltip`. They specify the default value of `score` is 0, and its property name in **Properties** panel will be shown as “Score (player)”, and when the cursor moves on to the property, it will show the corresponding Tooltip.
 
-Set can be used together with get:
+Below are the general attributes.
 
-```js
+- **default**: set default value for property, the default value will be used only when the component attaching to a node for the first time.
+- **type**: restrict data type of property, see [CCClass Advanced Reference: type attribute](reference/class.md#type) for details
+- **visible**: the property is invisible in the **Properties** panel if set to false
+- **serializable**: do not serialize this property if set to false
+- **displayName**: display the assigned name on the **Properties** panel
+- **tooltip**: add Tooltip of property in the **Properties** panel
+
+For detailed usage please refer to [Property attribute](reference/attributes.md).
+
+#### Array declaration
+
+The default of array must be set to `[]`, if you are about to edit in **Properties** panel, then you also need to set the type into constructor, enumeration, or `cc.Integer`, `cc.Float`, `cc.Boolean` and `cc.String`.
+
+```javascript
+properties: {
+    names: {
+        default: [],
+        type: [cc.String]   // use type to spectify that each element in array must be type string
+    },
+
+    enemies: {
+        default: [],
+        type: [cc.Node]     // type can also defined as an array to imporve readability
+    },
+}
+```
+
+### get/set declaration
+
+After setting get or set in the property, when you access the property, the pre-defined get or set method will be triggered. Defining the method is as follows:
+
+```javascript
+properties: {
     width: {
         get: function () {
-            return this.__width;
+            return this._width;
         },
         set: function (value) {
-            this.__width = value;
-        },
-        type: 'Integer',
-        tooltip: "The width of sprite"
+            this._width = value;
+        }
     }
+}
 ```
 
-Attention:
-- If not defined together with get, set doesn't have any parameter attached to it.
-- Just like get, after setting up set, this property can't be serialized or designated a default value.
+> You can define the get method only, so this is like one property of read only.<br>
+
+---
+
+Continue on to read about [Access node and other component](access-node-component.md) or [CCClass Advanced Reference](reference/class.md).

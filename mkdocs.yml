@@ -50,6 +50,10 @@ pages:
         - '_Hierarchy': 'editors_and_tools/creator-chapters/basics/editor-panels/hierarchy.md'
         - '_Inspector': 'editors_and_tools/creator-chapters/basics/editor-panels/inspector.md'
         - '_Console': 'editors_and_tools/creator-chapters/basics/editor-panels/console.md'
+        - '_Preferences': 'editors_and_tools/creator-chapters/basics/editor-panels/preferences.md'
+        - '_Node-Library': 'editors_and_tools/creator-chapters/basics/editor-panels/node-library.md'
+        - '_Node-Tree': 'editors_and_tools/creator-chapters/basics/editor-panels/node-tree.md'
+        - '_Properties': 'editors_and_tools/creator-chapters/basics/editor-panels/properties.md'
         - '_Toolbar': 'editors_and_tools/creator-chapters/basics/toolbar.md'
         - '_Layout': 'editors_and_tools/creator-chapters/basics/layout.md'
         - '_Preview Build': 'editors_and_tools/creator-chapters/basics/preview-build.md'
@@ -120,6 +124,7 @@ pages:
         - '_Publish --> Web': 'editors_and_tools/creator-chapters/publish/publish-web.md'
         - '_Cocos Framework': 'editors_and_tools/creator-chapters/publish/cocos-framework.md'
         - '_Publish --> Native': 'editors_and_tools/creator-chapters/publish/publish-native.md'
+        - '_Publish --> Setup-Native-Development': 'editors_and_tools/creator-chapters/publish/setup-native-development.md'
         - '_Extensions': 'editors_and_tools/creator-chapters/extension/index.md'
         - 'Cocos Launcher': 'editors_and_tools/cocos.md'
     - 'Services':
