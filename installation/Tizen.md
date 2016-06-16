@@ -76,5 +76,6 @@ Once everything is built __cpp-tests__ will run and you can experiment with it's
 
   ![](Tizen-img/cpp-tests.png "")
 
-<!--## Creating a project.
-Use the `cocos` command-line tool to create a new Tizen based project.-->
+## Starting a new project
+Once everything above works, you can start a new project! To do this, read our
+document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**.

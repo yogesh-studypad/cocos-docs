@@ -1,17 +1,20 @@
 # Windows Phone 8 Installation and Setup
 
-## Environment Requirements
-* Windows 8.0/8.1
-* Cocos2d-x v3.3 [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
-* Visual Studio 2012+ * Visual Studio 2012+ [https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)
-* Windows Phone SDK 8.0 [http://dev.windowsphone.com/en-US/downloadsdk](http://dev.windowsphone.com/en-US/downloadsdk)
-
 ## Prerequisites
+* A supported environment. See **[Installation Prerequisites](A/index.html)**
+
+* Cocos2d-x v3.x [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
+
+* Register to be a Windows Phone Developer [http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105](http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105)
+
+## Setting up Cocos2d-x
 * Download Cocos2d-x and unzip it. (maybe: ~/)
 
     ![](Windows-Phone-img/1.png "")
 
-* Register to be a Windows Phone Developer [http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105](http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105)
+* Make sure you have a working environment see __Prerequisites__ above. This means
+a working __Python__, having run __<cocos2d-x root>/setup.py>__ and updated your
+__$PATH__.
 
 ## Compile and run the `cpp-tests` project
 * Open `cocos2d-wp8.vc2012.sln` in the `build` folder
@@ -40,3 +43,7 @@ If you select __Native Only__ and want to use __CCLog__ function, right click
 __cpp-testsComponent__ and define __COCOS2D_DEBUG=1__ in __Preprocessor Definitions__.
 
     ![](Windows-Phone-img/6.png "")
+
+## Starting a new project
+Once everything above works, you can start a new project! To do this, read our
+document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**.

@@ -9,8 +9,8 @@
 * Windows 7+, VS 2013 or VS 2015
 * Python 2.7.5
 * NDK r10c+ is required to build Android games
-* Windows Phone/Store 8.1 VS 2013 Update 4+ or VS 2015
-* Windows Phone/Store 10.0 VS 2015
+* Windows Phone/Store 8.1, VS 2013 Update 4+ or VS 2015
+* Windows Phone/Store 10.0, VS 2015
 
 #### v3.7
 ---
@@ -19,7 +19,7 @@
 * Windows 7+, VS 2013+
 * Python 2.7.5
 * NDK r10c+ is required to build Android games
-* Windows Phone/Store 8.1 VS 2013 Update 4+
+* Windows Phone/Store 8.1, VS 2013 Update 4+
 * JRE or JDK 1.6+ is required for web publishing
 
 #### v3.4, v3.5, v3.6

@@ -1,26 +1,23 @@
 # Mac OS X Installation and Setup
 
-## Environment Requirements
-* Mac OS X 10.8+
-
-* Cocos2d-x v3.3 [http://cocos2d-x.org/download](http://cocos2d-x.org/download "Cocos2d-x")
-
-* Xcode 5.1.1+ [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
-
 ## Prerequisites
-* Download Cocos2d-x and unzip it. (maybe: ~/). Right click on the __.zip__ file
-and unzip it:
+* A supported environment. See **[Installation Prerequisites](A/index.html)**
+
+* Cocos2d-x v3.x [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
+
+## Setting up Cocos2d-x
+* Download Cocos2d-x and unzip it. (maybe: ~/)
 
     ![](OSX-img/unzip.png "")
 
     ![](OSX-img/unzipping.png "")
 
-* After unzipping you should have a folder structure similar to:
-
-    ![](OSX-img/contents.png "")
+* Make sure you have a working environment see __Prerequisites__ above. This means
+a working __Python__, having run __<cocos2d-x root>/setup.py>__, updated your
+__$PATH__ and run __source ~/.bash_profile__.
 
 ## Build and Run
-* Enter __Cocos2d-x/build__ and open __cocos2d_tests.xcodeproj__
+* In __<cocos2d-x root>/build__, open __cocos2d_tests.xcodeproj__
 * Choose __cpp-tests Mac__ from targets drop-down box
 * Click __run__ to compile and run __cpp-tests__
 
@@ -29,3 +26,7 @@ and unzip it:
 You can purchase one from Apple: [https://developer.apple.com/programs/ios/](https://developer.apple.com/programs/ios/).
 The steps to run on iOS device are the same as running in a simulator except you
 select you device from the device list.
+
+## Starting a new project
+Once everything above works, you can start a new project! To do this, read our
+document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**.

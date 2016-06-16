@@ -1,7 +1,7 @@
 # Android with Eclipse Installation and Setup
 
 ## Prerequisites
-* Complete steps in **[Android (Terminal) Installation and Setup](B/index.html)**
+* Complete steps in **[Android Command-Line Installation and Setup](Android-terminal/index.html)**
 
 * Eclipse ADT Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
 

@@ -1,61 +1,70 @@
 # Linux Installation and Setup
 
-## Environment Requirements
-* Ubuntu 12.10+
-* Cocos2d-x v3.3 [http://cocos2d-x.org/download](http://cocos2d-x.org/download "Cocos2d-x")
-* CMake 2.6+ [https://cmake.org](https://cmake.org)
-* gcc 4.9+
-
 ## Prerequisites
+* A supported environment. See **[Installation Prerequisites](A/index.html)**
+
+* Cocos2d-x v3.x [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
+
+## Setting up Cocos2d-x
 * Download Cocos2d-x and unzip it. (maybe: ~/)
 
-* Install dependencies. The dependencies are:
+* Install dependencies. If you are using Ubuntu/Debian, there is a shell script
+__build/install-deps-linux.sh__ for you to install the dependences easily. Run
+the commands below, in a terminal:
 
-		libx11-dev
-		libxmu-dev
-		libglu1-mesa-dev
-		libgl2ps-dev
-		libxi-dev
-		g++
-		libzip-dev
-		libpng12-dev
-		libcurl4-gnutls-dev
-		libfontconfig1-dev
-		libsqlite3-dev
-		libglew*-dev
-		libssl-dev
+    ```sh
+    > cd $cocos2dx_root/build
+    > ./install-deps-linux.sh
+    ```
 
-* If you are using Ubuntu/Debian, there is a shell script __build/install-deps-linux.sh__
-for you to install the dependences easily. Run the commands below, in a terminal:
+    Otherwise, you should install the dependencies manually. The dependencies are:
 
-    	> cd $cocos2dx_root/build
-    	> ./install-deps-linux.sh
+    ```sh
+    libx11-dev
+    libxmu-dev
+    libglu1-mesa-dev
+    libgl2ps-dev
+    libxi-dev
+    g++
+    libzip-dev
+    libpng12-dev
+    libcurl4-gnutls-dev
+    libfontconfig1-dev
+    libsqlite3-dev
+    libglew*-dev
+    libssl-dev
+    ```
 
-Otherwise, you should install the dependencies manually.
-
-## Generate Makefile
-
+## Building Cocos2d-x
 * Run __cmake__ to generate __makefile__:
 
-    	> mkdir linux-build
-    	> cd linux-build
-    	> cmake ../..
+    ```sh
+    > mkdir linux-build
+    > cd linux-build
+    > cmake ../..
+    ```
 
-* When __cmake__ returns correctly, many files & folders will be generated in
+* When __cmake__ finishes, many files & folders will be generated in
 __coocs2dx_root/build/linux-build__
 
     ![](Linux-img/1.png "")
 
-## Compile
-
 * Run __make__ to compile:
 
-    	> make
+    ```sh
+    > make
+    ```
 
-Application will be generated in __cocos2dx_root/build/linux-build/bin/cpp-tests/__
-if compiled successfully.
+    Everything will be generated in __cocos2dx_root/build/linux-build/bin/cpp-tests/__
+    if compiled successfully.
 
-## Run
+* Run `cpp-tests`
 
-		> cd bin/cpp-tests/
-		> ./cpp-tests
+    ```sh
+    > cd bin/cpp-tests/
+    > ./cpp-tests
+    ```
+
+## Starting a new project
+Once everything above works, you can start a new project! To do this, read our
+document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**.
