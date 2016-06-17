@@ -208,7 +208,6 @@ pages:
       - '_16 How to -> Simplify Widgets Initial Resources': 'deprecated/studio-chapters/chapter4/SimplifyWidgetsRes/en.md'
       - '_17 How to -> Run Previous Versions of Addins in cocos': 'deprecated/studio-chapters/chapter4/PluginLoadError/en.md'
       - '_18 How to -> Fix cocos Run Error?': 'deprecated/studio-chapters/chapter4/runError/en.md'
-#- About: 'title.md'
 
 #theme: readable
 theme_dir: 'theme'
