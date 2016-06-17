@@ -1,4 +1,4 @@
-# Chapter 12: Audio
+# Audio
 
 Your game will surely need sound! Cocos2d-x provides an audio engine called
 `SimpleAudioEngine`. It can be used to play background

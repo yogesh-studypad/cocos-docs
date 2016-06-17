@@ -1,4 +1,4 @@
-# Chapter  13: Advanced Topics
+# Advanced Topics
 Wow! You are on the last chapter. Good Job! By now you should feel comfortable
 creating your games with Cocos2d-x. However, please realize there is no limit to
 what you can create. This chapter covers __advanced__ concepts. Note that this
@@ -205,15 +205,15 @@ way to do it is by using `Material` objects.
 
 Assume that you want to draw a sphere like this one:
 
-![](13-img/model.jpg)
+![](advanced_topics-img/model.jpg)
 
 The first thing that you have to do is to define its geometry, something like this:
 
-![](13-img/geometry.jpg)
+![](advanced_topics-img/geometry.jpg)
 
 ...and then define the brick texture, like:
 
-![](13-img/brick.jpg)
+![](advanced_topics-img/brick.jpg)
 
 
 - But what if you want to use a lower quality texture when the sphere is far away

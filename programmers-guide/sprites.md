@@ -1,4 +1,4 @@
-# Chapter 3: Sprites
+# Sprites
 
 ## What are Sprites
 A Sprite is a 2D image that can be animated or transformed by changing its
@@ -37,7 +37,7 @@ A `Sprite` can be created by specifying an image file to use.
 
   </div>
 
-![](3-img/i1.png "")
+![](sprites-img/i1.png "")
 
 The statement above creates a `Sprite` using the __mysprite.png__ image. The result
 is that the created `Sprite` uses the whole image. `Sprite` has the same dimensions
@@ -76,7 +76,7 @@ var mySprite = new cc.Sprite(res.mySprite_png, cc.rect(0,0,40,40));
 
   </div>
 
-![](3-img/i4.png "")
+![](sprites-img/i4.png "")
 
 `Rect` starts at the top left corner. This is the opposite of what you might be
 used to when laying out screen position as it starts from the lower left corner.
@@ -132,11 +132,11 @@ once and retained in the `SpriteFrameCache`
 
 Here is an example sprite sheet:
 
-![](3-img/3_1.png "example SpriteSheet")
+![](sprites-img/3_1.png "example SpriteSheet")
 
 It doesn't look like much but let's take a closer look at what is happening:
 
-![](3-img/spritesheet.png "example SpriteSheet")
+![](sprites-img/spritesheet.png "example SpriteSheet")
 
 As you can see the __sprite sheet__, at a minimum it reduces unneeded space and
 consolidates all sprites into a single file.
@@ -212,7 +212,7 @@ var mysprite = cc.Sprite.createWithSpriteFrameName(res.mySprite_png);
 
   </div>
 
-![](3-img/i3.png "")
+![](sprites-img/i3.png "")
 
 ### Creating a Sprite from a SpriteFrame
 Another way to create the same `Sprite` is by fetching the `SpriteFrame` from the
@@ -248,7 +248,7 @@ var newSprite = cc.Sprite.createWithSpriteFrame(newspriteFrame);
 
   </div>
 
-![](3-img/i3.png "")
+![](sprites-img/i3.png "")
 
 ### Tools for creating Sprite Sheets
 Creating a __sprite sheet__ manually is a tedious process. Fortunately there are
@@ -292,7 +292,7 @@ var mySprite = new Sprite(res.mysprite_png);
 
   </div>
 
-![](3-img/i1.png "")
+![](sprites-img/i1.png "")
 
 ### Anchor Point and Position
 __Anchor Point__ is a point that you set as a way to specify what part of
@@ -358,7 +358,7 @@ mySprite.setAnchorPoint(cc._p(1, 1));
 
 To represent this visually:
 
-![](3-img/i6.png "")
+![](sprites-img/i6.png "")
 
 ### Sprite properties effected by anchor point
 Using __anchor point__ effects only properties that can be transformed. This includes
@@ -372,7 +372,7 @@ to it. Notice, as we change the __anchor point__ values, the _sprite's_ position
 changes. It is important to note that all it took was changing the __anchor point__
 value. We did not use a `setPosition()` statement to achieve this:
 
-![](3-img/i9.png "")
+![](sprites-img/i9.png "")
 
 There are more ways to set position than just __anchor point__. `Sprite` objects
 can also be set using the `setPosition()` method.
@@ -451,7 +451,7 @@ mySprite.setRotation(cc._p(-60.0));
 
   </div>
 
-![](3-img/i8.png "")
+![](sprites-img/i8.png "")
 
 #### Scale
 Changes the __sprite's__ scale, either by x, y or uniformly for both x and y.
@@ -495,7 +495,7 @@ mySprite.setScaleY(cc._p(2.0));
 
   </div>
 
-![](3-img/i5.png "")
+![](sprites-img/i5.png "")
 
 #### Skew
 Changes the __sprite's__ skew, either by x, y or uniformly for both x and y.
@@ -533,7 +533,7 @@ mySprite.setSkewY(cc._p(20.0));
 
   </div>
 
-![](3-img/i7.png "")
+![](sprites-img/i7.png "")
 
 ### Sprite properties not affected by anchor point
 There are a few properties of `Sprite` objects that are not affected by
@@ -580,7 +580,7 @@ mySprite.setColor(cc.color(255, 255, 255)); // Same as Color3B::WHITE
 
   </div>
 
-![](3-img/i10.png "")
+![](sprites-img/i10.png "")
 
 #### Opacity
 Changes the _sprite's_ opacity by the specified value. An opaque object is not
@@ -616,7 +616,7 @@ mySprite.setOpacity(30);
 
   </div>
 
-![](3-img/i11.png "")
+![](sprites-img/i11.png "")
 
 ## Polygon Sprite
 A __Polygon Sprite__ is also a `Sprite`, that is used to display a 2d image.
@@ -631,7 +631,7 @@ but the take home lesson is that a `PolygonSprite` draws based upon the shape of
 your `Sprite`, not a simple rectangle around the largest width and height. This
 saves a lot of unnecessary drawing. Consider this example:
 
-![](3-img/polygonsprite.png "")
+![](sprites-img/polygonsprite.png "")
 
 Notice the difference between the left and right versions?
 
@@ -645,7 +645,7 @@ Less triangles means more pixels saved and therefore less to draw!
 
 Take the above Grossini example, the left side is a normal Sprite, the right side is the same image but with 18 triangles and 20 vertices. Because the triangles were such a "tight fit", the 18 triangles counts only 4089 pixels surface area compared to the quad version which is 10285 pixels, that is 60% pixels saved!
 
-![](3-img/polygonsprite.png "")
+![](sprites-img/polygonsprite.png "")
 
 Here is a performance test.The test keep on adding dynamic sprite to the screen until it reach down to 40 fps, the numbers are how many SpritePolygon or Sprite it can run stably at 40PS.
 

@@ -2,7 +2,7 @@
 
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
-allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+allDocuments=('blank' 'index' 'about' 'basic_concepts' '3' '4' '5' '6' '7' '8' '9' '10' '11'
 '12' '13' 'A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse' 'iOS' 'OSX'
 'Linux' 'Windows' 'Windows-Phone' 'cocosCLTool' 'cocos' 'sdkbox')
 
@@ -21,10 +21,14 @@ InstallationchaptersWithFolders=('Android-terminal' 'Android-Studio' 'Android-Ec
 InstallationchaptersWithOutFolders=('A' 'OSX')
 
 ### Programmers Guide
-PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
-PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
-PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13')
-PGchaptersWithOutFolders=('1' '8' '10' '12')
+PGallDocuments=('blank' 'index' 'about' 'basic_concepts' 'sprites' 'actions' 'scenes'
+'ui_components' 'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics'
+'audio' 'advanced_topics')
+PGallChapters=('about' 'basic_concepts' 'sprites' 'actions' 'scenes' 'ui_components'
+'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics' 'audio' 'advanced_topics')
+PGchaptersWithFolders=('basic_concepts' 'sprites' 'actions' 'scenes' 'ui_components'
+'other_node_types' '3d' 'physics' 'advanced_topics')
+PGchaptersWithOutFolders=('about' 'event_dispatch' 'scripting' 'audio')
 
 ### Services
 ServicesallDocuments=('sdkbox')

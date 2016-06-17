@@ -1,4 +1,4 @@
-# Chapter 10: Scripting
+# Scripting
 
 ## Script component
 __Script component__ is used to extend c++ `Node` objects. You can add a

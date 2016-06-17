@@ -1,4 +1,4 @@
-# Chapter 11: Physics
+# Physics
 Your game is coming along nicely. You have `Sprite` objects, gameplay mechanics
 and your coding efforts are paying off. You are starting to feel like your game
 is playable. What do you do when you realize your game needs to simulate real
@@ -229,7 +229,7 @@ for (int i = 0; i < 5; ++i)
 The result is a stationary `PhysicsBody` with 5 additional `PhysicsBody` objects
 colliding around it.
 
-![](11-img/CorrelationSprite.gif)
+![](physics-img/CorrelationSprite.gif)
 
 ##Collision
 Have you ever been in a car accident? What did you collide with? Just like with
@@ -273,7 +273,7 @@ if ((shapeA->getCategoryBitmask() & shapeB->getCollisionBitmask()) == 0
 }
 ```
 
-![](11-img/CollisionFiltering.gif )
+![](physics-img/CollisionFiltering.gif )
 
 Collision groups let you specify an integral group index. You can have all shapes
 with the same group index always collide (positive index) or never collide (negative
@@ -318,7 +318,7 @@ on the joint type.
  >-PhysicsJointMotor: Keeps the relative angular velocity of a pair of bodies
  constant
 
-![](11-img/joints.PNG )
+![](physics-img/joints.PNG )
 
 ###Collision detection
 Contacts are objects created by the __physics engine__ to manage the collision
@@ -420,7 +420,7 @@ bool onContactBegin(PhysicsContact& contact)
 }
 ```
 
-![](11-img/CollisionProcessing.gif)
+![](physics-img/CollisionProcessing.gif)
 
 
 ###Queries
@@ -478,7 +478,7 @@ void tick(float dt)
 }
 ```
 
-![](11-img/RayTest.gif)
+![](physics-img/RayTest.gif)
 
 ####Rect Queries
 __Rect queries__ provide a fast way to check roughly which shapes are in an area.
@@ -496,9 +496,9 @@ scene->getPhysicsWorld()->queryRect(func, Rect(0,0,200,200), nullptr);
 
 A few examples of using a __rect query__ while doing a *logo smash*:
 
-![](11-img/rectQuery1.gif)
+![](physics-img/rectQuery1.gif)
 
-![](11-img/rectQuery2.gif)
+![](physics-img/rectQuery2.gif)
 
 
 #### Disabling Physics

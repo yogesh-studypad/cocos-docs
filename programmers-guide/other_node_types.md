@@ -1,4 +1,4 @@
-# Chapter 7: Other Node Types
+# Other Node Types
 You are using `Sprite`, `Label` and `Action` objects in your game and it is making
 progress. Besides the basic `Node` types described in previous chapters, Cocos2d-x also
 provides more advanced `Node` types to help build special functionality. Perhaps
@@ -38,9 +38,9 @@ unsigned int gid = layer->getTileGIDAt(Vec2(0, 63));
 
 Example tiled-map layouts:
 
-![](7-img/tilemap1.png "timemap1")
+![](other_node_types-img/tilemap1.png "timemap1")
 
-![](7-img/tilemap2.png "timemap2")
+![](other_node_types-img/tilemap2.png "timemap2")
 
 How do you make a tiled-map? There are many tools that do this. [Tiled](http://mapeditor.org)
 is a popular tool. It is actively developed and has a great user community. The
@@ -56,7 +56,7 @@ to reproduce with conventional rendering techniques. Some realistic examples
 might include highly chaotic systems, natural phenomena, or processes caused by
 chemical reactions. Here are a few examples of __particle effects__:
 
-![](7-img/particle1.png "snow") ![](2-img/smallSpacer.png "") ![](7-img/particle3.png "sun")
+![](other_node_types-img/particle1.png "snow") ![](2-img/smallSpacer.png "") ![](other_node_types-img/particle3.png "sun")
 
 ### Tools for creating Particle Effects
 Even though you can always create _particle effects_ by hand, massaging each
@@ -114,7 +114,7 @@ addChild(emitter, 10);
 
 The result is a _particle effect_ that looks something like:
 
-![](7-img/particle2.png "particle fireworks")
+![](other_node_types-img/particle2.png "particle fireworks")
 
 But what do you do if your __particle effect__ isn't quite the way you want?
 That's right, you can manually manipulate it! Let's take the same fireworks example
@@ -182,7 +182,7 @@ _Particle systems_ have two modes of operation. _Gravity Mode_ and _Radius Mode_
 _Gravity Mode_ lets particles fly toward or away from a center point. It's strength
 is that it allows very dynamic, organic effects.
 
-![](7-img/particle6.png "Gravity Mode")
+![](other_node_types-img/particle6.png "Gravity Mode")
 
 _Gravity Mode_ only has a few properties that you can change. They are:
 
@@ -204,7 +204,7 @@ _Gravity Mode_ only has a few properties that you can change. They are:
 _Radius Mode_ causes particles to rotate in a circle. It also allows you to create
 spiral effects with particles either rushing inward or rotating outward.
 
-![](7-img/particle5.png "Radius Mode")
+![](other_node_types-img/particle5.png "Radius Mode")
 
 _Radius Mode_ only has a few properties that you can change. They are:
 
@@ -243,7 +243,7 @@ particleSystem->setEndRadiusVar(0);    // not used when start == end
 particleSystem->setRotatePerSecond(45);
 particleSystem->setRotatePerSecondVar(0);
 ```
-![](7-img/particle4.png)
+![](other_node_types-img/particle4.png)
 
 ** JASON - Replace the above screenshot with example from chapter 7 demo code
 -->

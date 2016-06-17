@@ -1,4 +1,4 @@
-# Chapter 5: Building and Transitioning Scenes
+# Building and Transitioning Scenes
 
 ## What is a Scene?
 A `Scene` is a container that holds `Sprites`, `Labels`, `Nodes` and other
@@ -123,7 +123,7 @@ Vec2 point = node1->convertToNodeSpace(node2->getPosition());
 
  convert node2’s SCREEN coordinates to node1’s local.As the result, node2 with the position of (-25，-60).
 
-![](5-img/5_10.jpg)
+![](scenes-img/5_10.jpg)
 
 #### convertToWorldSpace
 
@@ -142,7 +142,7 @@ left corner of the node1, but not necessarily on the screen. This will convert
 the position of the node2 which is to the screen coordinate of the point relative
 to node1 ). The result shows in the following picture:
 
-![](5-img/5_11.jpg)
+![](scenes-img/5_11.jpg)
 
 #### convertToWorldSpaceAR
 

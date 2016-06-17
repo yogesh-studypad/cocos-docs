@@ -1,4 +1,4 @@
-# Chapter 2: Basic Cocos2d-x Concepts
+# Basic Cocos2d-x Concepts
 
 This chapter assumes you've just gotten started with Cocos2d-x, and are ready to
 start working on the game of your dreams. Don't worry, it will be fun!
@@ -37,12 +37,12 @@ see all of these components in one form or another!
 Let's have a look. This might look a bit similar to a very popular game you might have
 played:
 
-![](2-img/2n_main.png "")
+![](basic_concepts-img/2n_main.png "")
 
 Let's take another look, but splitting up the screenshot and identifying the
 components used to build it:
 
-![](2-img/2n_annotated_scaled.png "")
+![](basic_concepts-img/2n_annotated_scaled.png "")
 
 You can see a menu, some sprites and labels, which all have an equivalent in
 Cocos2d-x.  Take a look at a few of your own game design documents,and see what
@@ -60,7 +60,7 @@ code.
 Here is an example of a typical game flow. The `Director` takes care of
 transitioning through this as your game criteria decides:
 
-![](2-img/scenes.png "")
+![](basic_concepts-img/scenes.png "")
 
 You are the director of your game. You decide what happens, when and how.
 Take charge!
@@ -75,7 +75,7 @@ scenes no matter how simple the game is.
 
 Taking another look at the familiar image from earlier:
 
-![](2-img/2n_main.png "")
+![](basic_concepts-img/2n_main.png "")
 
 This is a main menu and it is a single `Scene`. This scene is made up of
 several pieces that all fit together to give us the end result. Scenes are drawn
@@ -88,7 +88,7 @@ A __scene graph__ is a data structure that arranges a graphical scene. A
 __scene graph__ contains `Node` objects in a tree (yes, it is called
 __scene graph__, but it is actually represented by a __tree__) structure.
 
-![](2-img/tree.jpg "Simple Tree")
+![](basic_concepts-img/tree.jpg "Simple Tree")
 
 It sounds and looks complicated. I'm sure you are asking why should you care
 about this technical detail if Cocos2d-x does the heavy lifting for you? It
@@ -106,16 +106,16 @@ tree being walked, then the root node, then the right side of the tree. Since
 the right side of the tree is rendered last, it is displayed first on the
 __scene graph__.
 
-![](2-img/in-order-walk.png "in-order walk")
+![](basic_concepts-img/in-order-walk.png "in-order walk")
 
 The __scene graph__ is easily demonstrated, let's take a look at our game scene
 broken down:
 
-![](2-img/2n_main.png "")
+![](basic_concepts-img/2n_main.png "")
 
 Would be rendered as a tree, simplified to the following:
 
-![](2-img/2n_mainScene-sceneGraph.png "")
+![](basic_concepts-img/2n_mainScene-sceneGraph.png "")
 
 Another point to think about is elements with a negative __z-order__ are on the
 left side of the tree, while elements with a positive __z-order__ are on the right
@@ -127,7 +127,7 @@ Building on this concept, we can think of a `Scene` as a collection of
 `Node` objects. Let's break the scene above down to see the __scene graph__ uses
 the __z-order__ to layout the `Scene`:
 
-![](2-img/layers.png "")
+![](basic_concepts-img/layers.png "")
 
 The `Scene` on the left is actually made up of multiple `Node` objects
 that are given a different __z-order__ to make them "stack" on top of each other.
@@ -187,7 +187,7 @@ don't move it around it is just a `Node`.
 Taking another look at the image from above, let's point out what are
 Sprites and what are Nodes:
 
-![](2-img/2n_main_sprites_nodes.png "")
+![](basic_concepts-img/2n_main_sprites_nodes.png "")
 
 Sprites are important in all games. Writing a platformer, you probably have
 a main character that is made by using an image of some sort. This is
@@ -243,25 +243,25 @@ mySprite.setAnchorPoint(cc._p(0, 0));
 Let's illustrate each property, consider the following screenshot from
 the example code for this chapter:
 
-![](2-img/2n_level1_action_start.png "")
+![](basic_concepts-img/2n_level1_action_start.png "")
 
 If we set the position using `mySprite->setPosition(Vec2(500, 0));`:
 
-![](2-img/2n_level1_action_end.png "")
+![](basic_concepts-img/2n_level1_action_end.png "")
 
 Note that the `Sprite` position has changed from its original position to the
 new position that we specified.
 
 If we now set a new rotation, using `mySprite->setRotation(40);`:
 
-![](2-img/2n_level1_action_end_rotation.png "")
+![](basic_concepts-img/2n_level1_action_end_rotation.png "")
 
 ... you can see that the `Sprite` has been rotated to the new amount that was
 specified.
 
 If we now specify a new scale using `mySprite->setScale(2.0);`:
 
-![](2-img/2n_level1_action_end_scale.png "")
+![](basic_concepts-img/2n_level1_action_end_scale.png "")
 
 Again, we can see that the `Sprite` now has changed according to our code
 changes.
@@ -301,7 +301,7 @@ mySprite.setAnchorPoint(cc._p(0, 0));
 would result in the lower left corner of our sprite being used as the basis for
 any __setPosition()__ call. Let's see a few of these in action:
 
-![](2-img/2n_level1_anchorpoint_0_0.png "") ![](2-img/smallSpacer.png "") ![](2-img/2n_level1_anchorpoint_05_05.png "") ![](2-img/smallSpacer.png "") ![](2-img/2n_level1_anchorpoint_1_1.png "")
+![](basic_concepts-img/2n_level1_anchorpoint_0_0.png "") ![](basic_concepts-img/smallSpacer.png "") ![](basic_concepts-img/2n_level1_anchorpoint_05_05.png "") ![](basic_concepts-img/smallSpacer.png "") ![](basic_concepts-img/2n_level1_anchorpoint_1_1.png "")
 
 Take a look at the red dot in each picture. This red dot illustrates where
 the anchor point is!
@@ -327,11 +327,11 @@ Example Actions: `MoveBy`, `Rotate`, `Scale`. All games use __Actions__.
 Taking a look at the [sample code](https://github.com/chukong/programmers-guide-samples)
 for this chapter, here are __Actions__ in work:
 
-![](2-img/2n_level1_action_start.png "")
+![](basic_concepts-img/2n_level1_action_start.png "")
 
 and after 5 seconds the sprite will move to a new position:
 
-![](2-img/2n_level1_action_end.png "")
+![](basic_concepts-img/2n_level1_action_end.png "")
 
 `Action` objects are easy to create:
 
@@ -387,7 +387,7 @@ this with no additional work.
 Take a look at the flow of an example `Sequence` for moving a `Sprite`
 gradually:
 
-![](2-img/2_sequence_scaled.png "")
+![](basic_concepts-img/2_sequence_scaled.png "")
 
 This `Sequence` is easy to make:
 
@@ -497,12 +497,12 @@ Cocos2d-x uses a __parent and child__ relationship. This means that properties
 and changes to the parent node are applied to its children. Consider a single
 `Sprite` and then a `Sprite` that has children:
 
-![](2-img/2n_parent.png "")
+![](basic_concepts-img/2n_parent.png "")
 
 With children, changing the rotation of the parent will also change the
 rotation to all children:
 
-![](2-img/2n_parent_rotation.png "")
+![](basic_concepts-img/2n_parent_rotation.png "")
 
 <div class="langs">
   <ul>
@@ -537,7 +537,7 @@ myNode.setRotation(50);
 Just like with rotation, if you change the scale of the parent the children
 will also get scaled:
 
-![](2-img/2n_parent_scaled.png "")
+![](basic_concepts-img/2n_parent_scaled.png "")
 
 <div class="langs">
   <ul>

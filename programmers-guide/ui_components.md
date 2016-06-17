@@ -1,4 +1,4 @@
-# Chapter 6: UI
+# UI Components
 Taking a look at the common apps you might use, I bet that you can spot UI
 widgets without necessarily knowing what they are. They aren't specific to games,
 every application probably uses a few widgets. What does __UI__ stand for? What do
@@ -34,7 +34,7 @@ __Glyph Designer__ these files are created automatically for you. Creating a
 auto myLabel = Label::createWithBMFont("bitmapRed.fnt", "Your Text");
 ```
 
-![](6-img/LabelBMFont.png "")
+![](ui_components-img/LabelBMFont.png "")
 
 All of the characters in the string parameter should be found in the provided
 __.fnt__ file, otherwise they won't be rendered. If you render a `Label` object and
@@ -53,7 +53,7 @@ font files. Example, using a __true type font__:
 auto myLabel = Label::createWithTTF("Your Text", "Marker Felt.ttf", 24);
 ```
 
-![](6-img/LabelTTF.png "")
+![](ui_components-img/LabelTTF.png "")
 
 Although it is more flexible than a __bitmap font__, a _true type font_ is slower
 to render and changing properties like the __font face__ and __size__ is an expensive
@@ -81,7 +81,7 @@ labelConfig.distanceFieldEnabled = false;
 auto myLabel = Label::createWithTTF(labelConfig, "My Label Text");
 ```
 
-![](6-img/LabelTTFWithConfig.png "")
+![](ui_components-img/LabelTTFWithConfig.png "")
 
 A `TTFConfig` can also be used for displaying Chinese, Japanese and Korean
 characters.
@@ -95,7 +95,7 @@ of it as __system font, system rules__. Creating a `SystemFont` label:
 auto myLabel = Label::createWithSystemFont("My Label Text", "Arial", 16);
 ```
 
-![](6-img/LabelWithSystemFont.png "")
+![](ui_components-img/LabelWithSystemFont.png "")
 
 ## Label Effects
 After you have your `Label` objects on screen you might want to make them a bit
@@ -113,7 +113,7 @@ auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 myLabel->enableShadow();
 ```
 
-![](6-img/LabelWithShadow.png "")
+![](ui_components-img/LabelWithShadow.png "")
 
 Label with a __outline__ effect:
 
@@ -124,7 +124,7 @@ auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 myLabel->enableOutline(Color4B::WHITE, 1));
 ```
 
-![](6-img/LabelWithOutline.png "")
+![](ui_components-img/LabelWithOutline.png "")
 
 Label with a __glow__ effect:
 
@@ -135,7 +135,7 @@ auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 myLabel->enableGlow(Color4B::YELLOW);
 ```
 
-![](6-img/LabelWithGlow.png "")
+![](ui_components-img/LabelWithGlow.png "")
 
 ## Menu and Menu Items
 We are all probably familiar with what a menu is. We see these in every application
@@ -189,7 +189,7 @@ this->addChild(menu, 1);
 If you run the sample code for this chapter you will see a `Menu` containing
 `Label` objects for `MenuItems`:
 
-![](6-img/menu.png "")
+![](ui_components-img/menu.png "")
 
 ### Lambda functions as Menu callbacks
 Above we just learned that when you click a __menu item__ it triggers a __callback__.
@@ -252,12 +252,12 @@ As you can see in the above example we specify a _.png_ image for each of the
 possible states the button can be in. A `Button` is made up of 3 graphics that
 might look like this:
 
-![](6-img/Button_Normal.png "") ![](2-img/smallSpacer.png "") ![](6-img/Button_Press.png "") ![](2-img/smallSpacer.png "")
-![](6-img/Button_Disable.png "")
+![](ui_components-img/Button_Normal.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/Button_Press.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/Button_Disable.png "")
 
 On screen a `Button` might look like this:
 
-![](6-img/Button_example.png "")
+![](ui_components-img/Button_example.png "")
 
 ## CheckBox
 We are all used to filling out __checkboxes__ on paper forms like job applications
@@ -298,14 +298,14 @@ possible states the `Checkbox` can be in. Since there are 5 possible states that
 a `CheckBox` can be in, it is up 5 graphics, one for each of its states. Example
 graphics:
 
-![](6-img/CheckBox_Normal.png "") ![](2-img/smallSpacer.png "") ![](6-img/CheckBox_Press.png "") ![](2-img/smallSpacer.png "")
-![](6-img/CheckBox_Disable.png "") ![](2-img/smallSpacer.png "")
-![](6-img/CheckBoxNode_Normal.png "") ![](2-img/smallSpacer.png "")
-![](6-img/CheckBoxNode_Disable.png "")
+![](ui_components-img/CheckBox_Normal.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/CheckBox_Press.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/CheckBox_Disable.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/CheckBoxNode_Normal.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/CheckBoxNode_Disable.png "")
 
 On screen a `Checkbox` might look like this:
 
-![](6-img/Checkbox_example.png "")
+![](ui_components-img/Checkbox_example.png "")
 
 ## LoadingBar
 Have you ever played a game where you had to wait while it loaded up all the
@@ -347,11 +347,11 @@ this->addChild(loadingBar);
 As you can see in the above example we specify a _.png_ image for the `LoadingBar`
 objects texture:
 
-![](6-img/LoadingBarFile.png "")
+![](ui_components-img/LoadingBarFile.png "")
 
 On screen a `LoadingBar` might look like this:
 
-![](6-img/LoadingBar_example.png "")
+![](ui_components-img/LoadingBar_example.png "")
 
 ## Slider
 Sometimes it is necessary to change a value slightly. Perhaps you have a character
@@ -386,13 +386,13 @@ As you can see in the above example we specify a _.png_ image for each of the
 possible states the slider can be in. A `Slider` is made up of 5 graphics that
 might look like this:
 
-![](6-img/Slider_Back.png "") ![](2-img/smallSpacer.png "") ![](6-img/Slider_PressBar.png "") ![](2-img/smallSpacer.png "")
-![](6-img/SliderNode_Normal.png "") ![](2-img/smallSpacer.png "") ![](6-img/SliderNode_Press.png "") ![](2-img/smallSpacer.png "")
-![](6-img/SliderNode_Disable.png "")
+![](ui_components-img/Slider_Back.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/Slider_PressBar.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/SliderNode_Normal.png "") ![](2-img/smallSpacer.png "") ![](ui_components-img/SliderNode_Press.png "") ![](2-img/smallSpacer.png "")
+![](ui_components-img/SliderNode_Disable.png "")
 
 On screen a `Slider` might look like this:
 
-![](6-img/Slider_example.png "")
+![](ui_components-img/Slider_example.png "")
 
 ## TextField
 What if you wanted the player of your game to type in a special name to call the
@@ -439,11 +439,11 @@ this->addChild(textField);
 
 On screen a `TextField` might look like this:
 
-![](6-img/TextField_example.png "")
+![](ui_components-img/TextField_example.png "")
 
 When you are editing a `TextField`, the onscreen keyboard comes up:
 
-![](6-img/TextField_example_keyboard.png "")
+![](ui_components-img/TextField_example_keyboard.png "")
 
 <!--
 #### ImageView

@@ -1,4 +1,4 @@
-# Chapter 8: Event Dispatcher
+# Event Dispatcher
 
 ## What is the EventDispatch mechanism?
 __EventDispatch__ is a mechanism for responding to user events.
@@ -38,7 +38,7 @@ would expect.
 Remember Chapter 2? Where we talked about the __scene graph__ and we talked about
 this diagram?
 
-![](2-img/in-order-walk.png "in-order walk")
+![](basic_concepts-img/in-order-walk.png "in-order walk")
 
 Well, when use __Scene Graph Priority__ you are actually walking this above tree
 backwards... __I__, __H__, __G__, __F__, __E__, __D__, __C__, __B__, __A__. If

@@ -1,4 +1,4 @@
-# Chapter 4: Actions
+# Actions
 `Action` objects are just like they sound. They make a `Node` perform a change
 to its properties. `Action` objects allow the transformation of `Node` properties
 in time. Any object with a base class of `Node` can have `Action` objects performed
@@ -107,7 +107,7 @@ mySprite.runAction(seq);
 
   </div>
 
-![](4-img/i0.png "")
+![](actions-img/i0.png "")
 
 ## Basic Actions and how to run them
 Basic actions are usually a singular action, thus accomplishing a single objective.
@@ -160,7 +160,7 @@ mySprite.runAction(moveBy);
 
   </div>
 
-![](4-img/i1.png "")
+![](actions-img/i1.png "")
 
 ### Rotate
 __Rotate__ a `Node` clockwise over 2 seconds.
@@ -205,7 +205,7 @@ mySprite.runAction(rotateBy);
 
   </div>
 
-![](4-img/i3.png "")
+![](actions-img/i3.png "")
 
 ### Scale
 __Scale__ a `Node` by 10 over 2 seconds.
@@ -266,7 +266,7 @@ mySprite.runAction(scaleTo);
 
   </div>
 
-![](4-img/i4.png "")
+![](actions-img/i4.png "")
 
 ### Fade In/Out
 __Fade__ a `Node`.
@@ -313,7 +313,7 @@ mySprite.runAction(fadeOut);
 
   </div>
 
-![](4-img/i2.png "")
+![](actions-img/i2.png "")
 
 ### Tint
 `Tint` a `Node` that implements the `NodeRGB` protocol from current the tint to \
@@ -360,7 +360,7 @@ mySprite.runAction(tintBy);
   </div>
 
 
-![](4-img/i5.png "")
+![](actions-img/i5.png "")
 
 ### Animate
 With `Animate` it is possible to do simple __flipbook__ animation with your `Sprite`
@@ -449,7 +449,7 @@ good example is to animate menus and buttons.
 
 Here are common easing functions displayed over a graph:
 
-![](4-img/easing-functions.png "")
+![](actions-img/easing-functions.png "")
 
 Cocos2d-x supports most of the easing function in the above graph. They are also
 simple to implement. Lets look at a specific use case. Lets drop a `Sprite` object
@@ -508,7 +508,7 @@ __function()__ and pass it in to be run in your `Sequence`. This allows you to a
 your own functionality to your `Sequence` objects besides just the stock `Action`
 objects that Cocos2d-x provides. This is what a `Sequence` looks like when executing:
 
-![](4-img/sequence.png "")
+![](actions-img/sequence.png "")
 
 ### An example sequence
 
@@ -568,7 +568,7 @@ Run the example __Programmer Guide Sample__ code to see this in action!
 __Spawn__ is very similar to `Sequence`, except that all actions will run at the same
 time. You can have any number of `Action` objects and even other `Spawn` objects!
 
-![](4-img/spawn.png "")
+![](actions-img/spawn.png "")
 
 `Spawn` produces the same result as running multiple consecutive __runAction()__
 statements. However, the benefit of spawn is that you can put it in a `Sequence`
@@ -664,7 +664,7 @@ mySprite->runAction(fadeTo);
 Both would produce the same result. However, one can use `Spawn` in a `Sequence`.
 This flowchart shows how this might look:
 
-![](4-img/spawn_in_a_sequence.png "")
+![](actions-img/spawn_in_a_sequence.png "")
 
   <div class="langs">
   <ul>
