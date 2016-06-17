@@ -13,7 +13,7 @@ pages:
         - 'IOS Setup': 'installation/iOS.md'
         - 'Mac OSX Setup': 'installation/OSX.md'
         - 'Linux Setup': 'installation/Linux.md'
-        #- 'Tizen Setup': 'installation/Tizen.md'
+        - 'Tizen Setup': 'installation/Tizen.md'
         - 'Windows Setup': 'installation/Windows.md'
         - 'Windows Phone Setup': 'installation/Windows-Phone.md'
     #- 'Development Workflows': 'workflows/workflows.md'
