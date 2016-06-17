@@ -7,7 +7,7 @@
 
 * JDK/SDK 1.6+ [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-* Android Studio Bundle [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+* Android command-line tools [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
 
 * NDK r10c [https://developer.android.com/tools/sdk/ndk/index.html](https://developer.android.com/tools/sdk/ndk/index.html)
 
@@ -16,17 +16,8 @@
 * Python 2.7.5 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 ## Prerequisites
-* Download **Cocos2d-x**
-
-* Download the **JDK**
-
-* Download the **Android Studio Bundle**
-
-* Download the **NDK**
-
-* Download **Apache Ant**
-
-* Download **Python**
+* Download **Cocos2d-x**, the **JDK**, **Android command-line tools**, **NDK**,
+**Apache Ant** and **Python**
 
 ## Windows Instructions
 * unzip __Cocos2d-x__
@@ -41,10 +32,10 @@
 
     ![](Android-terminal-img/win-step4.png "")
 
-* install the **Android Studio Bundle** taking note of where you specify the
+* install the **Android command-line tools** taking note of where you specify the
 __Android SDK Installation Location__
 
-    ![](Android-terminal-img/win-step5.png "")
+    ![](Android-terminal-img/android-cl-tools.png "")
 
 * unzip the **Android NDK** to the same location as the __Android SDK Installation Location__
 used from above.
@@ -158,6 +149,10 @@ directory. Otherwise, the scripts will fail due to error path value.
 * everything should build successfully:
 
     ![](Android-terminal-img/buildsuccess.png "")
+
+## Starting a new project
+Once everything above works, you can start a new project! To do this, read our
+document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**.
 
 ## How to deploy it on your Android phone via command line
 
