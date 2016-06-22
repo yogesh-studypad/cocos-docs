@@ -27,7 +27,7 @@ much or as little of the heavy lifting as you want.
 Cocos2d-x provides `Scene`, `Transition`, `Sprite`, `Menu`, `Sprite3D`, `Audio`
 objects and much more. Everything you need to create your games are included.
 
-##Main Components
+## Main Components
 It might seem overwhelming at first, but getting started with Cocos2d-x is
 simple. Before we dive into depth we must understand some of the concepts
 Cocos2d-x utilizes. At the heart of Cocos2d-x are `Scene`, `Node`, `Sprite`,
@@ -48,7 +48,7 @@ You can see a menu, some sprites and labels, which all have an equivalent in
 Cocos2d-x.  Take a look at a few of your own game design documents,and see what
 components you have, you'll probably have a few that match up.
 
-##Director
+## Director
 Cocos2d-x uses the concept of a `Director`, just like in a movie! The `Director`
 controls the flow of operations and tells the necessary recipient what to do.
 Think of yourself as the _Executive Producer_ and you tell the `Director` what
@@ -65,7 +65,7 @@ transitioning through this as your game criteria decides:
 You are the director of your game. You decide what happens, when and how.
 Take charge!
 
-##Scene
+## Scene
 In your game you probably want a main menu, a few levels and an ending scene.
 How do you organize all of these into the separate pieces they are? You guessed
 it, `Scene`. When you think about your favorite movie you can see that it's
@@ -83,7 +83,7 @@ by the __renderer__. The __renderer__ is responsible for rendering sprites and
 other objects into the screen. To better understand this we need to talk a bit
 about the __scene graph__.
 
-##Scene Graph
+## Scene Graph
 A __scene graph__ is a data structure that arranges a graphical scene. A
 __scene graph__ contains `Node` objects in a tree (yes, it is called
 __scene graph__, but it is actually represented by a __tree__) structure.
@@ -176,7 +176,7 @@ scene.addChild(sprite_node, 1);
 
   </div>
 
-##Sprites
+## Sprites
 All games have `Sprite` objects, and you may or may not realize what they are.
 Sprites are the objects that you move around the screen.
 You can manipulate them. The main character in your game is probably a
@@ -314,7 +314,7 @@ We really can tweak just about every aspect of the `Sprite`. But, what if we
 wanted to have these same types of changes occur in an automated, time
 determined manner? Well, keep reading...
 
-##Actions
+## Actions
 Creating a `Scene` and adding `Sprite` objects on the screen is only part
 of what we need to do. For a game to be a game we need to make things move
 around! `Action` objects are an integral part of every game. __Actions__ allow the
@@ -375,7 +375,7 @@ mySprite.runAction(moveTo);
 
   </div>
 
-##Sequences and Spawns
+## Sequences and Spawns
 With moving `Sprite` objects on the screen we have everything we need to create
 our game, right? Not quite. What about running multiple __Actions__? Yes,
 Cocos2d-x handles this too in a few different ways.
@@ -492,7 +492,7 @@ character has multiple __Actions__ when obtaining a power up? Maybe beating
 the boss at the end of a level has multiple __Actions__ that need to happen
 to end the level.
 
-##Parent Child Relationship
+## Parent Child Relationship
 Cocos2d-x uses a __parent and child__ relationship. This means that properties
 and changes to the parent node are applied to its children. Consider a single
 `Sprite` and then a `Sprite` that has children:
@@ -568,7 +568,12 @@ myNode.setScale(2.0); // scales uniformly by 2.0
 
   </div>
 
-##Logging as a way to output messages
+Not all changes to the __parent__ are passed down to its __children__. Changing the 
+__parent__ __anchor point__ only affects transform operations (scale, position,
+rotate, skew, etc...) and does not affect children positioning. In fact, children
+will be always added to the bottom-left (0,0) corner of its parent.
+
+## Logging as a way to output messages
 Sometimes, when your app is running, you might wish to see messages being written
 to the console for informational or debug purposes. This is built into the
 engine, using __log()__. Example:
@@ -628,8 +633,8 @@ cc.log("Position x: " + pos.x + ' y:' + pos.y);
 
   </div>
 
-##Conclusion
+## Conclusion
 We have gone through a lot of Cocos2d-x concepts. Take a deep breath.
 Don't worry. Just dive in with your ideas and take it one step at a time.
 Cocos2d-x and programming in general are not skills that are learned
-overnight. These take practice and understanding. Remember that the [forums](http://discuss.Cocos2d-x.org) are also there to help you with questions.
+overnight. These take practice and understanding. Remember that the [forums](http://discuss.cocos2d-x.org) are also there to help you with questions.
