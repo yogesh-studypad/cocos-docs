@@ -117,17 +117,16 @@ var mySprite = new cc.Sprite(res.mySprite_png, cc.rect(0,0,200,200));
   </div>
 
 ## Creating a Sprite from a Sprite Sheet
-A __sprite sheet__ is a way to combine sprites into a single file. This reduces the
-overall file size compared to having individual files for each `Sprite`. This
-means you will significantly reduce memory usage, file size and loading time.
-
-Also, using sprite sheets helps achieve better performance by __batching__ the
-__draw calls__. You will read more about this in the Advanced Chapter, but it is
-one of many standard methods in the industry for increasing game performance.
+A __sprite sheet__ is a way to combine sprites into a single file. Using a
+__sprite sheet__ helps achieve better performance by __batching__ the
+__draw calls__. They can also save disk and video memory in cases where the
+sprites can be packed on a sheet more efficiently (generally requires special tools).
+You will read more about this in the Advanced Chapter, but it is but it is one of many
+standard methods in the industry for increasing game performance.
 
 When using a __sprite sheet__ it is first loaded, in its entirety, into the
 `SpriteFrameCache`. `SpriteFrameCache` is a caching class that retains the `SpriteFrame`
-objects, added to it, for future quicker access. The `SpriteFrame` is loaded
+objects added to it, for future quicker access. The `SpriteFrame` is loaded
 once and retained in the `SpriteFrameCache`
 
 Here is an example sprite sheet:
@@ -635,11 +634,14 @@ saves a lot of unnecessary drawing. Consider this example:
 
 Notice the difference between the left and right versions?
 
-On the left, a typical `Sprite` drawn in rectangular fashion by the use of 2 triangles.
+On the left, a typical `Sprite` drawn in rectangular fashion by the use of 2
+triangles.
 
 On the right, a `PolygonSprite` drawn with many smaller triangles.
 
-Less triangles means more pixels saved and therefore less to draw!
+Whether or not this trade-off is worth it for purely performance reasons depends
+on a number of factors (sprite shape/detail, size, quantity drawn on screen, etc.),
+but in general, *vertices are cheaper than pixels* on modern GPUs.
 
 <!--Now more and more GPUs were tailor designed to do 3d graphics, which can handle loads of vertices, but limited in Pixel Fill-Rate. But by representing almost always "None-rectangular" 2d images with a rectangular quad, GPU wastes precious bandwidth drawing totally transparent part of the sprite.
 
