@@ -568,9 +568,9 @@ myNode.setScale(2.0); // scales uniformly by 2.0
 
   </div>
 
-Not all changes to the __parent__ are passed down to its __children__. Changing the 
-__parent__ __anchor point__ only affects transform operations (scale, position,
-rotate, skew, etc...) and does not affect children positioning. In fact, children
+Not all changes to the __parent__ are passed down to its __children__. Changing the
+__parent__ __anchor point__ only affects transform operations (*scale*, *position*,
+*rotate*, *skew*, etc...) and does not affect children positioning. In fact, children
 will be always added to the bottom-left (0,0) corner of its parent.
 
 ## Logging as a way to output messages
