@@ -30,6 +30,7 @@ pages:
         - 'Scripting': 'programmers-guide/scripting.md'
         - 'Physics': 'programmers-guide/physics.md'
         - 'Audio': 'programmers-guide/audio.md'
+        - 'VR': 'programmers-guide/vr.md'
         - 'Advanced Topics': 'programmers-guide/advanced_topics.md'
     - 'Editors & Tools':
         - 'Command-line tool': 'editors_and_tools/cocosCLTool.md'

@@ -23,11 +23,11 @@ InstallationchaptersWithOutFolders=('A' 'OSX')
 ### Programmers Guide
 PGallDocuments=('blank' 'index' 'about' 'basic_concepts' 'sprites' 'actions' 'scenes'
 'ui_components' 'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics'
-'audio' 'advanced_topics')
+'audio' 'advanced_topics' 'vr')
 PGallChapters=('about' 'basic_concepts' 'sprites' 'actions' 'scenes' 'ui_components'
-'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics' 'audio' 'advanced_topics')
+'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics' 'audio' 'advanced_topics' 'vr')
 PGchaptersWithFolders=('basic_concepts' 'sprites' 'actions' 'scenes' 'ui_components'
-'other_node_types' '3d' 'physics' 'advanced_topics')
+'other_node_types' '3d' 'physics' 'advanced_topics' 'vr')
 PGchaptersWithOutFolders=('about' 'event_dispatch' 'scripting' 'audio')
 
 ### Services
