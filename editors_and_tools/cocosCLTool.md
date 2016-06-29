@@ -25,7 +25,7 @@ ensure your character encoding is set to __UTF-8__. Example:
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
-After adding these lines, it is necessary to run __source ~/.bash_profile__ or 
+After adding these lines, it is necessary to run __source ~/.bash_profile__ or
 restart your shell.
 
 ## Testing your path for `cocos`
@@ -210,9 +210,10 @@ cocos gen-libs -c -p ios -m debug
 You can run __cocos gen-libs --help__ to see all available options broken down by
 platform.
 
-## Installing SDKBOX plugins
-Using the __cocos__ __package manager__ you can install SDKBOX plugins to further
-enhance your games. There are a variety of commands to assist with this. Examples:
+## Installing additional plugins
+Using the __cocos package manager__ you can easily add additional functionality
+to your games, including __VR__ and __SDKBOX__. There are a variety of commands
+to assist with this. Examples:
 ```sh
 # list available packages
 cocos package list
@@ -229,3 +230,14 @@ cocos package update
 
 You can run __cocos package --help__ to see all available options broken down by
 platform.
+
+## Unique command-line options
+__cocos__ has a number of unique options you can use to help build your games. To
+see all of these options, please run __cocos --help__. Let's us talk about these optios.
+
+| Command| Description|
+| ----|----|
+|__luacompile__| Encrypt the lua scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
+|__jscompile__| Encrypt the JavaScript scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
+| __gen-simulator__| The simulator powers the  __preview__ function in Cocos Creator. |
+| __gen-templates__| is used for generating the binary templates you can use to get started on a project that uses the __pre-built libraries__. Binary templates are required by Cocos Bundle package and also Cocos Creator.|
