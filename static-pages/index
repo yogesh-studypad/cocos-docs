@@ -57,3 +57,12 @@
     <p class="center">Both C++ and JavaScript.</p>
   </a>
 </div>
+
+<!-- programmers guide -->
+<div class="section cocosBlueDarker1 clearfix">
+  <a href="static-pages/programmers-guide.html">
+    <img src="static-pages/pg.png" align="middle" />
+    <h3>Programmers Guide</h3>
+    <p class="center">Learn the engine</p>
+  </a>
+</div>

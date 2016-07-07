@@ -8,6 +8,26 @@ include: __ios__, __android__, __mac__, __linux__, __win32__, __wp8_1__, __wp10_
 and __web__. You don't need to use an IDE unless you want to. It has many options,
 so let's go through them grouped by function.
 
+## Setting up `cocos`
+it is a good idea to run __<cocos2d-x root>/setup.py__ to properly setup your
+__PATH__. Doing so ensures that you can run Cocos2d-x and its related tools. Example:
+```sh
+# Option 1
+> ./setup.py
+
+# Option 2
+> python setup.py
+```
+
+On OS X, it is also a good idea to add a few lines to your __~/.bash_profile__ to
+ensure your character encoding is set to __UTF-8__. Example:
+```sh
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+After adding these lines, it is necessary to run __source ~/.bash_profile__ or
+restart your shell.
+
 ## Testing your path for `cocos`
 It is necessary for __cocos__ to be in your path or to specify the complete path
 to it when using it. An easy test:
@@ -16,7 +36,9 @@ to it when using it. An easy test:
 ```
 
 If you see output like __1.2__ you are all set. If you see anything else you need
-to either add the location to your __PATH__, run __source ~/.bash_profile__ or
+to either add the location to your __PATH__.
+
+On __OS X__ run __source ~/.bash_profile__ after updating your __PATH__ or
 specify the full path to __<cocos2d-x root>\tools\cocos2d-console\bin__.
 
 ## Creating a new project
@@ -34,6 +56,16 @@ cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany
 
 cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany
 ```
+
+In the above examples, a new project is created using the Cocos2d-x source code.
+If you want to create a new project using the pre-built libraries you need to pass
+an additional flag of __-t binary__. Example:
+```sh
+cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany -t binary
+```
+
+If you haven't generated the pre-built libraries, please see the section below on
+doing so.
 
 You can run __cocos new --help__ to see even more options as well as platform
 specific options.
@@ -178,9 +210,10 @@ cocos gen-libs -c -p ios -m debug
 You can run __cocos gen-libs --help__ to see all available options broken down by
 platform.
 
-## Installing SDKBOX plugins
-Using the __cocos__ __package manager__ you can install SDKBOX plugins to further
-enhance your games. There are a variety of commands to assist with this. Examples:
+## Installing additional plugins
+Using the __cocos package manager__ you can easily add additional functionality
+to your games, including __VR__ and __SDKBOX__. There are a variety of commands
+to assist with this. Examples:
 ```sh
 # list available packages
 cocos package list
@@ -197,3 +230,14 @@ cocos package update
 
 You can run __cocos package --help__ to see all available options broken down by
 platform.
+
+## Unique command-line options
+__cocos__ has a number of unique options you can use to help build your games. To
+see all of these options, please run __cocos --help__. Let's us talk about these optios.
+
+| Command| Description|
+| ----|----|
+|__luacompile__| Encrypt the lua scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
+|__jscompile__| Encrypt the JavaScript scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
+| __gen-simulator__| The simulator powers the  __preview__ function in Cocos Creator. |
+| __gen-templates__| is used for generating the binary templates you can use to get started on a project that uses the __pre-built libraries__. Binary templates are required by Cocos Bundle package and also Cocos Creator.|

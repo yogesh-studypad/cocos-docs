@@ -2,37 +2,44 @@
 
 ### Define variables that we need for this script
 ### These are the chapters are are currently done. Add chapters here.
-allDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'cocosCLTool' 'cocos' 'sdkbox')
+allDocuments=('blank' 'index' 'about' 'basic_concepts' '3' '4' '5' '6' '7' '8' '9' '10' '11'
+'12' '13' 'A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse' 'iOS' 'OSX'
+'Linux' 'Windows' 'Windows-Phone' 'cocosCLTool' 'cocos' 'sdkbox')
 
 ### API-Ref
 APIRefAll=('index')
 
 ### Cocos
-CocosAll=('cocos')
-CocoschaptersWithFolders=('cocos')
+##CocosAll=('cocos')
+##CocoschaptersWithFolders=('cocos')
 
 ### Installation Docs
-InstallationallDocuments=('A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'Tizen')
-InstallationchaptersWithFolders=('B' 'C' 'D' 'F' 'G' 'H' 'Tizen')
-InstallationchaptersWithOutFolders=('A' 'E')
+InstallationallDocuments=('A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse'
+'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+InstallationchaptersWithFolders=('Android-terminal' 'Android-Studio' 'Android-Eclipse'
+'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+InstallationchaptersWithOutFolders=('A' 'OSX')
 
 ### Programmers Guide
-PGallDocuments=('blank' 'index' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
-PGallChapters=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13')
-PGchaptersWithFolders=('2' '3' '4' '5' '6' '7' '9' '11' '13')
-PGchaptersWithOutFolders=('1' '8' '10' '12')
+PGallDocuments=('blank' 'index' 'about' 'basic_concepts' 'sprites' 'actions' 'scenes'
+'ui_components' 'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics'
+'audio' 'advanced_topics' 'vr')
+PGallChapters=('about' 'basic_concepts' 'sprites' 'actions' 'scenes' 'ui_components'
+'other_node_types' 'event_dispatch' '3d' 'scripting' 'physics' 'audio' 'advanced_topics' 'vr')
+PGchaptersWithFolders=('basic_concepts' 'sprites' 'actions' 'scenes' 'ui_components'
+'other_node_types' '3d' 'physics' 'advanced_topics' 'vr')
+PGchaptersWithOutFolders=('about' 'event_dispatch' 'scripting' 'audio')
 
 ### Services
 ServicesallDocuments=('sdkbox')
 ServiceschaptersWithFolders=('sdkbox')
 
 ### Editors and Tools
-EditorsAndToolsallDocuments=('studio' 'cocosCLTool')
-EditorsAndToolschaptersWithFolders=('studio')
+EditorsAndToolsallDocuments=('studio' 'cocosCLTool' 'cocos')
+EditorsAndToolschaptersWithFolders=('studio' 'cocos')
 
 ### Shared
-misc=('blank' 'index' 'title')
+misc=('blank' 'index')
 
 ### Turn on globbing (BASH 4 required)
 #foundDirs=()
@@ -127,9 +134,9 @@ prep() { ## these things happen for any docs that are built.
 prepPost() { ## these things happen after mkdocs build so we have everything in site/ that
 ## we need for deployment
   echo "copying resources to site/..."
-  for i in ${CocosAll[@]}; do
-    rsync -a theme/img site/cocos/${i}/
-  done
+  #for i in ${CocosAll[@]}; do
+  #  rsync -a theme/img site/cocos/${i}/
+  #done
   for i in ${InstallationallDocuments[@]}; do
     rsync -a theme/img site/installation/${i}/
   done
@@ -145,7 +152,7 @@ buildAll() { ## build absolutely everything.
   echo "building absolutely everything..."
   prep
   prepAPIRefDocs
-  prepCocosDocs
+  #prepCocosDocs
   prepEditorsAndToolsDocs
   prepDeprecatedDocs
   prepInstallationDocs
@@ -169,7 +176,7 @@ buildSlim() { ## build a slimed version
   echo "building everything, except print media and api-refs..."
   prep
   prepAPIRefDocs
-  prepCocosDocs
+  #prepCocosDocs
   prepEditorsAndToolsDocs
   prepDeprecatedDocs
   prepInstallationDocs
@@ -196,14 +203,14 @@ prepAPIRefDocs() { ## prep API-Ref
   done
 }
 
-prepCocosDocs() { ## prep Cocos Docs
-  echo "prepping Cocos docs..."
-  for i in ${CocoschaptersWithFolders[@]}; do
-    rsync -a cocos/${i}-web docs/cocos/
-    mv docs/cocos/${i}-web docs/cocos/${i}-img
-    cp cocos/${i}.md docs/cocos/${i}.md
-  done
-}
+#prepCocosDocs() { ## prep Cocos Docs
+#  echo "prepping Cocos docs..."
+#  for i in ${CocoschaptersWithFolders[@]}; do
+#    rsync -a cocos/${i}-web docs/cocos/
+#    mv docs/cocos/${i}-web docs/cocos/${i}-img
+#    cp cocos/${i}.md docs/cocos/${i}.md
+#  done
+#}
 
 prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
   echo "prepping Editors And Tools docs..."
@@ -309,10 +316,12 @@ buildStaticHTMLPages() {
   cp template.orig theBasics.html
   cp template.orig toolchain.html
   cp template.orig api-ref.html
+  cp template.orig programmers-guide.html
   ${SED} -i .bak -f installation.sed installation.html
   ${SED} -i .bak -f theBasics.sed theBasics.html
   ${SED} -i .bak -f toolchain.sed toolchain.html
   ${SED} -i .bak -f api-ref.sed api-ref.html
+  ${SED} -i .bak -f programmers-guide.sed programmers-guide.html
 
   ## sync html pages and images with site/ so they get published
   rsync -a *.html ../site/static-pages/
@@ -350,8 +359,11 @@ buildProgrammersGuidePrint() {
   done
 
   cp styling/solarized-light.css styling/main.css styling/style.css styling/_layout.html5 print/.
+  cp programmers-guide/title.md print/index.md
+
 
   cd print/
+
   for i in "${PGallDocuments[@]}"; do
     pandoc -s --template "_layout" --css "solarized-light.css" -f markdown -t html5 -o ${i}.html ${i}.md
   done
