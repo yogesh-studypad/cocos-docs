@@ -374,31 +374,33 @@ buildProgrammersGuidePrint() {
   pandoc -S --epub-stylesheet="style.css" -o "ProgrammersGuide.epub" \
   index.html \
   blank.html \
-  1.html \
+  about.html \
   blank.html \
-  2.html \
+  basic_concepts.html \
   blank.html \
-  3.html \
+  sprites.html \
   blank.html \
-  4.html \
+  actions.html \
   blank.html \
-  5.html \
+  scenes.html \
   blank.html \
-  6.html \
+  ui_components.html \
   blank.html \
-  7.html \
+  other_node_types.html \
   blank.html \
-  8.html \
+  event_dispatch.html \
   blank.html \
-  9.html \
+  3d.html \
   blank.html \
-  10.html \
+  scripting.html \
   blank.html \
-  11.html \
+  physics.html \
   blank.html \
-  12.html \
+  audio.html \
   blank.html \
-  13.html \
+  vr.html \
+  blank.html \
+  advanced_topics.html \
   blank.html
 
   echo "building Programmers Guide PDF..."
@@ -420,7 +422,7 @@ buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
   echo "building the C++ API Reference..."
   cd ../cocos2d-x
   git checkout v3-doc
-  git pull chukong v3-doc
+  git pull origin v3-doc
   cd docs
   doxygen doxygen_en.config
   rsync -ah html/ ../../cocos-docs/site/api-ref/cplusplus/v3x
