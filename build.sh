@@ -1,18 +1,5 @@
 #!/bin/bash
 
-### Define variables that we need for this script
-### These are the chapters are are currently done. Add chapters here.
-allDocuments=('blank' 'index' 'about' 'basic_concepts' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse' 'iOS' 'OSX'
-'Linux' 'Windows' 'Windows-Phone' 'cocosCLTool' 'cocos' 'sdkbox')
-
-### API-Ref
-APIRefAll=('index')
-
-### Cocos
-##CocosAll=('cocos')
-##CocoschaptersWithFolders=('cocos')
-
 ### Installation Docs
 InstallationallDocuments=('A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse'
 'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
@@ -46,7 +33,6 @@ misc=('blank' 'index')
 #shopt -s globstar
 
 SED="/usr/bin/sed"
-
 
 cleanUp() {
   echo "cleaning up cruft..."
@@ -198,19 +184,8 @@ buildSlim() { ## build a slimed version
 prepAPIRefDocs() { ## prep API-Ref
   echo "prepping API-Ref docs..."
   mkdir -p docs/api-ref
-  for i in ${APIRefAll[@]}; do
-    cp api-ref/${i}.md docs/api-ref/${i}.md
-  done
+  cp api-ref/index.md docs/api-ref/index.md
 }
-
-#prepCocosDocs() { ## prep Cocos Docs
-#  echo "prepping Cocos docs..."
-#  for i in ${CocoschaptersWithFolders[@]}; do
-#    rsync -a cocos/${i}-web docs/cocos/
-#    mv docs/cocos/${i}-web docs/cocos/${i}-img
-#    cp cocos/${i}.md docs/cocos/${i}.md
-#  done
-#}
 
 prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
   echo "prepping Editors And Tools docs..."
