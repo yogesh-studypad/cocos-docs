@@ -2,9 +2,9 @@
 
 ### Installation Docs
 InstallationallDocuments=('A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse'
-'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+'Android-VisualStudio' 'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
 InstallationchaptersWithFolders=('Android-terminal' 'Android-Studio' 'Android-Eclipse'
-'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+'Android-VisualStudio' 'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
 InstallationchaptersWithOutFolders=('A' 'OSX')
 
 ### Programmers Guide
