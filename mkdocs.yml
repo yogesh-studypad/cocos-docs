@@ -8,6 +8,7 @@ pages:
     - 'Manual Installations':
         - 'Prerequisites': 'installation/A.md'
         - 'Android Command-line Setup': 'installation/Android-terminal.md'
+        - 'Android Visual Studio Setup': 'installation/Android-VisualStudio.md'
         - 'Android Studio Setup': 'installation/Android-Studio.md'
         - 'Android Eclipse Setup': 'installation/Android-Eclipse.md'
         - 'IOS Setup': 'installation/iOS.md'
