@@ -20,12 +20,14 @@ proof-of-concept. You can use this in a simulator or with a __Google Cardboard__
 correct results. It is always necessary to test with a supported SDK and
 supported hardware.
 
-We will be adding additional support for the following SDK's:
+We support the popular __VR SDKs__:
 
-  * [Google Cardboard](https://vr.google.com/cardboard/index.html)
-  * [Oculus Rift](https://www.oculus.com/en-us/rift/)
-  * [Deepoon E2](http://en.deepoon.com/)
-  * [Samsung Gear VR](https://www.oculus.com/en-us/gear-vr/)
+| SDK           |  Company       | Runtime Platform |
+|---------------|----------------|------------------|
+| GearVR        | Samsung        | Galaxy Note 5/S6/S6 Edge/S6 Edge+ |
+| GVR(Cardboard And Daydream)           | Google         | Android 4.4 (KitKat) or higher  |
+| DeepoonVR      | Deepoon        | Galaxy Note 5/S6/S6 Edge/S6 Edge+ |
+| OculusVR       | Oculus         | Oculus Rift(Windows 7+) |
 
 ## Is your game a good VR candidate?
 If, late on a Friday evening, after a night of dinner, dance and drink, you find
@@ -60,75 +62,112 @@ supports __VR__. VR needs two things:
 
   * headset input: available only on iOS and Android
 
-You need to __enable__ the __VR__ SDK and let that take over rendering your game.
-In typical Cocos2d-x fashion, enabling __VR__ takes just a few lines of code. It
-is important to note that enabling __VR__ is best done in __AppDelegate.cpp__.
-```cpp
-// implementing the "generic" VR renderer
-auto vrImpl = new VRGenericRenderer;
-glview->setVR(vrImpl);
+Second, use the [__Cocos Package Manager__](../editors_and_tools/cocosCLTool/), which is part 
+of the [__Cocos Command-Line Tool__](../editors_and_tools/cocosCLTool/) to add __VR__ to your project:
+  
+  * You always need to __import__ the `vrsdkbase`. This step takes care of modifying your projects
+  to support __VR__.
+    ```sh
+    $ cocos package import -v -b vrsdkbase
+    ```
+    
+	Notice in `AppDelegate.cpp` code has been added to enable __VR__:
+    ```cpp
+    // VR_PLATFORM_SOURCES_BEGIN
+    auto vrImpl = new VRGenericRenderer;
+    glview->setVR(vrImpl);
+    // VR_PLATFORM_SOURCES_END
+    ```
+    
+  * Import the __VR SDK__ that you need. Currently, __Gear__, __Deepoon__, __GVR__ and __Oculus__
+  are supported.
+  
+    ```sh
+    $ cocos package import -v -b SDK_NAME
+    ```
+    
+ 	Examples:
+ 	```sh
+ 	# add the GearVR package
+ 	$ cocos package import -v -b gearvr
+ 	
+ 	# add the Deepoon VR package
+ 	$ cocos package import -v -b deepoon
+ 	
+ 	# add the Google VR package
+ 	$ cocos package import -v -b gvr
+ 	
+ 	# add the Oculus VR package
+ 	$ cocos package import -v -b oculus
+ 	```
+ 	
+## Compiling and Running with VR
+
+If you are using just the __vrsdkbase__ then compiling and running is just like you would expect using
+__cocos compile__ and __cocos run__. 
+
+If you are planning on targeting a specific __VR SDK__ you need to perform a few additional steps. 
+Running __switchVRPlatform.py__ from your projects root directory will take care of everything. 
+Here is an example for installing __GearVR__ in C++, JavaScript and Lua:
+
+```sh
+## in C++
+
+# first, install vrsdkbase
+$ cocos package import -v -b vrsdkbase
+
+# second, install GearVR
+$ cocos package import -v -b gearvr
+
+# third, switch to using GearVR
+$ python vrsdks/switchVRPlatform.py -p gearvr
 ```
 
-## Where to go from here?
-If you are really looking to get started with __VR__, start with the above and
-learn and play around with your ideas using the __generic renderer__.
+```sh
+## in JavaScript and Lua
 
+# first, install vrsdkbase
+$ cocos package import -v -b vrsdkbase
 
+# second, install GearVR
+$ cocos package import -v -b gearvr
 
-<!--Second, you need to decide what __VR__ implementation you want to use. This decision
-largely requires you to think about what *head-tracking* hardware you have available
-to you. There are several __VR__ implementations that Cocos2d-x provides *drop-in* support
-for:
-
-  * [Google Cardboard](https://vr.google.com/cardboard/index.html)
-  * [Oculus Rift](https://www.oculus.com/en-us/rift/)
-  * [Deepoon E2](http://en.deepoon.com/)
-  * [Samsung Gear VR](https://www.oculus.com/en-us/gear-vr/)
-
-Plus, there is also a *generic* __VR__ implementation you can get started with to
-learn concepts and test. It isn't suitable to only use this generic implementation.
-It is completely software based and as a result has limitations the other SDK's
-that are coupled with hardware do not have.
-
-Third, you need to add the __VR__ implementation you picked into your game's project.
-By default Cocos2d-x doesn't ship with __VR__ by default. It is necessary to use
-the __Cocos Package Manager__ to add __VR__ to your game. If you are unfamiliar
-with __Cocos Package Manager__, please refer to our chapter on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**. Add __VR__ in a few easy steps:
-
-  * first, make sure you can use the `cocos` command-line tool by testing it.
-```cpp
-$ which cocos
-/Volumes/GitHub/cocos2d-x/tools/cocos2d-console/bin/cocos
+# third, switch to using GearVR
+$ python frameworks/runtime-src/vrsdks/switchVRPlatform.py -p gearvr
 ```
 
-  If you get a return value, `cocos` is available.
+![](vr-img/gvr.png "")
 
-  * second, install the __VR__ SDK you wish to use:
-```cpp
-$ cocos package ##__to do here__
-```
+If you are running iOS, you are ready to use __cocos run__ as you typically would. For Android there
+are a few special steps that must happen. These are dependent upon your __Runtime Platform__. Please refer
+to the table at the start of this document.
 
-Fourth, you need to __enable__ the __VR__ SDK and let that take over rendering your game.
-In typical Cocos2d-x fashion, enabling __VR__ takes just a few lines of code. It
-is important to note that enabling __VR__ is best done in __AppDelegate.cpp__.
-```cpp
-// implementing the "generic" VR renderer
-auto vrImpl = new VRGenericRenderer;
-glview->setVR(vrImpl);
+  * __GearVR/DeepoonVR/GVR__:
+	```sh
+	# from a command-line
+	$ cocos run -p android --app-abi armeabi-v7a
+	
+	# using Android Studio
+	$ cocos run -p android --android-studio --app-abi armeabi-v7a
+	```
+	If __GearVR__ or __DeepoonVR__ crashes at runtime, please check to ensure you have an 
+	[Oculus signature file](https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-submission-sig-file/) in **assets** folder.
+	
+  * __OculusVR__ Oculus is for the desktop PC platform. This requires __Visual Studio 2015__.
+	
+	* First, import **liboculus.vcxproj** into your project(in `oculus-sdk/oculus/proj.win32/` folder) 
+	and add a reference to it:
 
-// implementing the "Cardboard" VR renderer
-auto vrImpl = new VRCardboardRenderer;
-glview->setVR(vrImpl);
+		![](vr-img/img1.png "")
+		
+		![](vr-img/img2.png "")
+		
+	* Second, import the `CCVROculusRenderer` and `CCVROculusHeadTracker` classes(in `oculus-sdk/` folder):
 
-// implementing the "Gear" VR renderer
-auto vrImpl = new VRGearRenderer;
-glview->setVR(vrImpl);
+		![](vr-img/img3.png "")
 
-// implementing the "Oculus" VR renderer
-auto vrImpl = new VROculusRenderer;
-glview->setVR(vrImpl);
+	* Finally, add the search path of VR-SDK (`..\vrsdks`) to your project:
 
-// implementing the "Deepoon" VR renderer
-auto vrImpl = new VRDepoonRenderer;
-glview->setVR(vrImpl);
-```-->
+		![](vr-img/img4.png "")
+
+	If __Oculus__ crashes at runtime, please check your installation of the [Oculus Rift Runtime](https://developer.oculus.com/).
