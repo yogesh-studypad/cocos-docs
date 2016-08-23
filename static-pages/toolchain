@@ -13,7 +13,7 @@
 to aid in the development of your games.</p>
 <br />
 <div>
-<!--<p><a href="">Cocos</a></p>-->
+<p><a href="../editors_and_tools/cocosCLTool/index.html">Command-line Tool</a></p>
 <p><a href="../editors_and_tools/creator/">Cocos Creator</a></p>
 <p><a href="../deprecated/studio/">Cocos Studio</a> (Deprecated)</p>
 </div>
