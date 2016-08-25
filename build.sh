@@ -396,10 +396,10 @@ buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
 
   echo "building the C++ API Reference..."
   cd ../cocos2d-x
-  git checkout v3-doc
-  git pull origin v3-doc
+  git checkout v3.13
+  git pull origin v3.13
   cd docs
-  doxygen doxygen_en.config
+  doxygen doxygen.config
   rsync -ah html/ ../../cocos-docs/site/api-ref/cplusplus/v3x
 
   echo "building the JavaScript API Reference..."
