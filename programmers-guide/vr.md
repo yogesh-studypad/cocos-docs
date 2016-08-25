@@ -70,7 +70,7 @@ You always need to __import__ the `vrsdkbase`. This step takes care of modifying
 to support __VR__.
 
 ```sh
-$ cocos package import -v -b vrsdkbase
+$ cocos package import -v -b vrsdkbase --anysdk
 ```
 
 Notice in `AppDelegate.cpp` code has been added to enable __VR__:
@@ -86,23 +86,23 @@ Import the __VR SDK__ that you need. Currently, __Gear__, __Deepoon__, __GVR__ a
 are supported.
 
 ```sh
-$ cocos package import -v -b SDK_NAME
+$ cocos package import -v -b SDK_NAME --anysdk
 ```
 
 Examples:
 
 ```sh
 # add the GearVR package
-$ cocos package import -v -b gearvr
+$ cocos package import -v -b gearvr --anysdk
 
 # add the Deepoon VR package
-$ cocos package import -v -b deepoon
+$ cocos package import -v -b deepoon --anysdk
 
 # add the Google VR package
-$ cocos package import -v -b gvr
+$ cocos package import -v -b gvr --anysdk
 
 # add the Oculus VR package
-$ cocos package import -v -b oculus
+$ cocos package import -v -b oculus --anysdk
 ```
 
 ## Compiling and Running with VR
@@ -121,10 +121,10 @@ installing __GearVR__ in C++, JavaScript and Lua:
 ## in C++
 
 # first, install vrsdkbase
-$ cocos package import -v -b vrsdkbase
+$ cocos package import -v -b vrsdkbase --anysdk
 
 # second, install GearVR
-$ cocos package import -v -b gearvr
+$ cocos package import -v -b gearvr --anysdk
 
 # third, switch to using GearVR
 $ python vrsdks/switchVRPlatform.py -p gearvr
@@ -134,10 +134,10 @@ $ python vrsdks/switchVRPlatform.py -p gearvr
 ## in JavaScript and Lua
 
 # first, install vrsdkbase
-$ cocos package import -v -b vrsdkbase
+$ cocos package import -v -b vrsdkbase --anysdk
 
 # second, install GearVR
-$ cocos package import -v -b gearvr
+$ cocos package import -v -b gearvr --anysdk
 
 # third, switch to using GearVR
 $ python frameworks/runtime-src/vrsdks/switchVRPlatform.py -p gearvr

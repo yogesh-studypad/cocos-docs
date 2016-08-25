@@ -210,7 +210,7 @@ cocos gen-libs -c -p ios -m debug
 You can run __cocos gen-libs --help__ to see all available options broken down by platform.
 
 ## Installing additional plugins
-Using the __Cocos Package Manager__ you can easily add additional functionality to your games, 
+Using the __Cocos Package Manager__ you can easily add additional functionality to your games,
 including __VR__ and __SDKBOX__. There are a variety of commands to assist with this. Examples:
 
 ```sh
@@ -231,23 +231,23 @@ __VR__ is easily added to your project! Every __VR__ project needs __vrsdkbase__
 of setting up your project to use __VR__. It is easy to import:
 
 ```sh
-$ cocos package import -v -b vrsdkbase
+$ cocos package import -v -b vrsdkbase --anysdk
 ```
 
 If you are using a supported __VR SDK__ make sure to import it. Examples:
 
 ```sh
 # add the GearVR package
-$ cocos package import -v -b gearvr
- 	
+$ cocos package import -v -b gearvr --anysdk
+
 # add the Deepoon VR package
-$ cocos package import -v -b deepoon
- 	
+$ cocos package import -v -b deepoon --anysdk
+
 # add the Google VR package
-$ cocos package import -v -b gvr
- 	
+$ cocos package import -v -b gvr --anysdk
+
 # add the Oculus VR package
-$ cocos package import -v -b oculus
+$ cocos package import -v -b oculus --anysdk
 ```
 
 For more information, please see our chapter on [__VR__](../programmers-guide/vr/index.html).
