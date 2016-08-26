@@ -102,3 +102,6 @@
 	- [Android设备Cocos2d-x性能测试](../../../manual/framework/native/v2/benchmark-reports/performance-test-of-cocos2d-x-on-android-devices/zh.md)
 	- [Android设备Edge版本性能测试](../../../manual/framework/native/v2/benchmark-reports/performance-test-of-edge-version-on-android-devices/zh.md)
 	- [iOS设备性能测试](../../../manual/framework/native/v2/benchmark-reports/performance-test-of-edge-version-on-ios-devices/zh.md)
+	
+## 虚拟现实VR
+- [VR插件的集成与使用](../../../manual/framework/native/v3/vr-plugin/zh.md)
