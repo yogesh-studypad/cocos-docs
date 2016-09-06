@@ -104,3 +104,7 @@ quickly and efficiency.
 ###&emsp;&emsp;[Publish --> Web](creator-chapters/publish/publish-web/)
 ###&emsp;&emsp;[Cocos Framework](creator-chapters/publish/cocos-framework/)
 ###&emsp;&emsp;[Publish --> Native](creator-chapters/publish/publish-native/)
+
+## Advanced Topics
+###&emsp;&emsp;[Getting Started](creator-chapters/advanced-topics/index.html)
+###&emsp;&emsp;[Build To Lua](creator-chapters/advanced-topics/build-to-lua/)

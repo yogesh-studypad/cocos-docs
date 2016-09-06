@@ -39,7 +39,7 @@
 </style>
 
 <h3>Cocos2d-x Programmers Guide v3.12</h3>
-<h4>v2016.07.07</h4>
+<h4>v2016.08.08</h4>
 <br /><br />
 <b>Authors:</b> SlackMoehrle, Ricardo, Justin, Nite, Kai, Minggo, Wenhai, Tony, Yingtao, Rao, Huabin, Zhe
 <br /><br />
@@ -51,7 +51,7 @@
 <br /><br />
 <a href="http://www.cocos2d-x.org/docs/ProgrammersGuide.epub">eBook Version</a>
 <br /><br />
-Please provide feedback for this guide on <a href="https://github.com/chukong/programmers-guide">GitHub</a>.
+Please provide feedback for this guide on <a href="https://github.com/chukong/cocos-docs">GitHub</a>.
 <br /><br />
 You can download the samples for this guide on <a href="https://github.com/chukong/programmers-guide-samples">GitHub</a>.
 <br /><br />

@@ -207,33 +207,61 @@ cocos gen-libs -c -p ios -p android
 cocos gen-libs -c -p ios -m debug
 ```
 
-You can run __cocos gen-libs --help__ to see all available options broken down by
-platform.
+You can run __cocos gen-libs --help__ to see all available options broken down by platform.
 
 ## Installing additional plugins
-Using the __cocos package manager__ you can easily add additional functionality
-to your games, including __VR__ and __SDKBOX__. There are a variety of commands
-to assist with this. Examples:
+Using the __Cocos Package Manager__ you can easily add additional functionality to your games,
+including __VR__ and __SDKBOX__. There are a variety of commands to assist with this. Examples:
+
 ```sh
 # list available packages
 cocos package list
 
-# install a package, in this example, Facebook
-cocos package import facebook
-
-# show all package imported into your project
+# show all packages imported into your project
 cocos package info
 
 # update installed packages to the latest versions
 cocos package update
 ```
 
-You can run __cocos package --help__ to see all available options broken down by
-platform.
+You can run __cocos package --help__ to see all available options broken down by platform.
+
+### Installing VR
+__VR__ is easily added to your project! Every __VR__ project needs __vrsdkbase__, it takes care
+of setting up your project to use __VR__. It is easy to import:
+
+```sh
+$ cocos package import -v -b vrsdkbase --anysdk
+```
+
+If you are using a supported __VR SDK__ make sure to import it. Examples:
+
+```sh
+# add the GearVR package
+$ cocos package import -v -b gearvr --anysdk
+
+# add the Deepoon VR package
+$ cocos package import -v -b deepoon --anysdk
+
+# add the Google VR package
+$ cocos package import -v -b gvr --anysdk
+
+# add the Oculus VR package
+$ cocos package import -v -b oculus --anysdk
+```
+
+For more information, please see our chapter on [__VR__](../programmers-guide/vr/index.html).
+
+### Installing SDKBOX plugins
+__SDKBOX__ plugins can be installed using the __Cocos Package Manager__. Example:
+
+```sh
+# install a package, in this example, Facebook
+cocos package import facebook
+```
 
 ## Unique command-line options
-__cocos__ has a number of unique options you can use to help build your games. To
-see all of these options, please run __cocos --help__. Let's us talk about these optios.
+__cocos__ has a number of unique options you can use to help build your games. To see all of these options, please run __cocos --help__. Let's us talk about these optios.
 
 | Command| Description|
 | ----|----|

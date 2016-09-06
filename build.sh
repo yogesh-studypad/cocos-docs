@@ -1,23 +1,10 @@
 #!/bin/bash
 
-### Define variables that we need for this script
-### These are the chapters are are currently done. Add chapters here.
-allDocuments=('blank' 'index' 'about' 'basic_concepts' '3' '4' '5' '6' '7' '8' '9' '10' '11'
-'12' '13' 'A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse' 'iOS' 'OSX'
-'Linux' 'Windows' 'Windows-Phone' 'cocosCLTool' 'cocos' 'sdkbox')
-
-### API-Ref
-APIRefAll=('index')
-
-### Cocos
-##CocosAll=('cocos')
-##CocoschaptersWithFolders=('cocos')
-
 ### Installation Docs
 InstallationallDocuments=('A' 'Android-terminal' 'Android-Studio' 'Android-Eclipse'
-'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+'Android-VisualStudio' 'iOS' 'OSX' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
 InstallationchaptersWithFolders=('Android-terminal' 'Android-Studio' 'Android-Eclipse'
-'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
+'Android-VisualStudio' 'iOS' 'Linux' 'Windows' 'Windows-Phone' 'Tizen')
 InstallationchaptersWithOutFolders=('A' 'OSX')
 
 ### Programmers Guide
@@ -46,7 +33,6 @@ misc=('blank' 'index')
 #shopt -s globstar
 
 SED="/usr/bin/sed"
-
 
 cleanUp() {
   echo "cleaning up cruft..."
@@ -198,19 +184,8 @@ buildSlim() { ## build a slimed version
 prepAPIRefDocs() { ## prep API-Ref
   echo "prepping API-Ref docs..."
   mkdir -p docs/api-ref
-  for i in ${APIRefAll[@]}; do
-    cp api-ref/${i}.md docs/api-ref/${i}.md
-  done
+  cp api-ref/index.md docs/api-ref/index.md
 }
-
-#prepCocosDocs() { ## prep Cocos Docs
-#  echo "prepping Cocos docs..."
-#  for i in ${CocoschaptersWithFolders[@]}; do
-#    rsync -a cocos/${i}-web docs/cocos/
-#    mv docs/cocos/${i}-web docs/cocos/${i}-img
-#    cp cocos/${i}.md docs/cocos/${i}.md
-#  done
-#}
 
 prepEditorsAndToolsDocs() { ## prep Editors And Tools Docs
   echo "prepping Editors And Tools docs..."
@@ -374,31 +349,33 @@ buildProgrammersGuidePrint() {
   pandoc -S --epub-stylesheet="style.css" -o "ProgrammersGuide.epub" \
   index.html \
   blank.html \
-  1.html \
+  about.html \
   blank.html \
-  2.html \
+  basic_concepts.html \
   blank.html \
-  3.html \
+  sprites.html \
   blank.html \
-  4.html \
+  actions.html \
   blank.html \
-  5.html \
+  scenes.html \
   blank.html \
-  6.html \
+  ui_components.html \
   blank.html \
-  7.html \
+  other_node_types.html \
   blank.html \
-  8.html \
+  event_dispatch.html \
   blank.html \
-  9.html \
+  3d.html \
   blank.html \
-  10.html \
+  scripting.html \
   blank.html \
-  11.html \
+  physics.html \
   blank.html \
-  12.html \
+  audio.html \
   blank.html \
-  13.html \
+  vr.html \
+  blank.html \
+  advanced_topics.html \
   blank.html
 
   echo "building Programmers Guide PDF..."
@@ -419,10 +396,10 @@ buildAPIRef() { ## builds the API Reference from the Cocos2d-x/v3-docs repo
 
   echo "building the C++ API Reference..."
   cd ../cocos2d-x
-  git checkout v3-doc
-  git pull chukong v3-doc
+  git checkout v3.13
+  git pull origin v3.13
   cd docs
-  doxygen doxygen_en.config
+  doxygen doxygen.config
   rsync -ah html/ ../../cocos-docs/site/api-ref/cplusplus/v3x
 
   echo "building the JavaScript API Reference..."
