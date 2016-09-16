@@ -2,6 +2,16 @@
 
 **Build Requirements**
 ------------------
+#### v3.13, v3.13.1
+---
+* Mac OS X 10.7+, Xcode 7+
+* Ubuntu 14.04+, gcc, CMake 2.6+
+* Windows 7+, VS 2013 or VS 2015
+* Python 2.7.5
+* NDK r11+ and API level 19 is required to build Android games
+* Windows Phone/Store 8.1, VS 2013 Update 4+ or VS 2015
+* Windows Phone/Store 10.0, VS 2015
+
 #### v3.12
 ---
 * Mac OS X 10.7+, Xcode 7+
