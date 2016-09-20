@@ -178,17 +178,17 @@ Now we can add the `Player` component to the node of the main character. Choose 
 
 ![add player component](quick-start/add_player_component.png)
 
-Now we can see the newly added `Player` component in the **Properties** panel (need to choose `Player` node). Set up properties related to the jumping and movement of the main character according to the image below:
+Now we can see the newly added `Player` component in the **Properties** panel of the `Player` node. Set up properties related to the jumping and movement of the main character according to the image below:
 
 ![player properties](quick-start/player_properties.png)
 
 Only jumpDuration's unit is seconds. The unit of the other values is pixels. According to the current setting of the `Player` component: Our main character will have a jump height of 200 pixels. The time needed for jumping to the highest point is 0.3 seconds. Its maximum horizontal movement speed is 400 pixels per second. Its horizontal acceleration is 350 pixels per second.
 
-All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in the **Properties** panel at anytime according to your preference, no need to change any codes. How convenient it is, right!
+All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in the **Properties** panel at anytime according to your preference, no need to change any codes. How convenient it is, right?
 
 ### Writing code for jumping and movement
 
-Next we will add a method to make the main character jump. Add a method called `setJumpAction` and put it under the `properties: {...},` code block:
+Next we will add a method to make the main character jump. Add a method called `setJumpAction` and put it below the `properties: {...},` code block:
 
 ```js
 // Player.js
