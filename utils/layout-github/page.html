@@ -32,7 +32,7 @@
               <li class="<?php echo is_archive()?'current':'' ?>"><a href="<?php bloginfo('url'); ?>/?cat=10" class="<?php echo is_archive()?'current':'' ?>">博客</a></li>
               <li class="<?php echo is_page(439)||is_page(441)||is_page(443)?'current':'' ?>"><a href="<?php bloginfo('url'); ?>/creator" class="<?php echo  is_page(439)||is_page(441)||is_page(443)?'current':'' ?>">产品</a></li>
               <li class="<?php echo is_page(185)?'current':'' ?>"><a href="<?php bloginfo('url'); ?>/?page_id=185" class="<?php echo is_page(185)?'current':'' ?>">下载</a></li>
-              <li class="<?php echo is_page(179)?'current':'' ?>"><a href="/docs/" class="<?php echo is_page(179)?'current':'' ?>">文档</a></li>
+              <li class="<?php echo is_page(179)?'current':'' ?>"><a href="http://www.cocos.com/docs/" class="<?php echo is_page(179)?'current':'' ?>">文档</a></li>
               <li><a href="http://forum.cocos.com">论坛</a></li>
           </ul>
       </div>
@@ -41,14 +41,15 @@
   </header>
       <div class="document-nav" style='z-index:500'>
       <ul>
-          <li class='now-tab'>Cocos Creator<b><i></i></b></li>
-          <li class='fl'><a class="creator">Cocos Creator</a></li>
-          <li class='fl current'><a class="cocos2d">Cocos2d-x</a></li>
-          <li class='fl'><a href="">AnySDK</a></li>
+          <li class='now-tab'>Cocos2d-x<b><i></i></b></li>
+          <li class='fl'><a href="http://www.cocos.com/docs/creator/" class="creator">Cocos Creator</a></li>
+          <li class='fl current'><a href="http://www.cocos.com/docs/cocos2d-x/" class="cocos2d">Cocos2d-x</a></li>
+          <li class='fl'><a href="http://www.cocos.com/docs/anysdk/">AnySDK</a></li>
           <li class='fl' style='display:none;'><a href="#">其它</a></li>
-
+{{!--
           <li class='fr'><span class='now-tab' href="javascript:;">文档<b><i></i></b></span><a href="{{{linkTo @root.relative "index.html"}}}">文档</a><a href="{{{linkTo @root.relative "video-tutorial/index.html"}}}">视频</a><a href="{{{linkTo @root.relative "api/index.html"}}}">API</a>
           </li>
+ --}}
       </ul>
       </div>
       <div class='document-container' style='min-height:500px;'>
@@ -108,9 +109,9 @@
         </ul>
         <ul>
             <li><a href="javascript:;">文档</a></li>
-            <li><a href="/docs/">帮助文档</a></li>
-            <li><a href="/docs/index.html">教程</a></li>
-            <li><a href="/docs/api/index.html">API</a></li>
+            <li><a href="http://www.cocos.com/docs/">帮助文档</a></li>
+            <li><a href="http://www.cocos.com/docs/tutorial">教程</a></li>
+            <li><a href="http://www.cocos.com/docs/api">API</a></li>
         </ul>
         <ul>
             <li><a href="javascript:;">论坛</a></li>
@@ -129,7 +130,7 @@
       <div class='bah'>
           2015 @ Cocos.com 沪ICP备14008742号-5
       </div>
-  </footer> 
+  </footer>
   <script src="{{asset 'js/anchor.min.js'}}"></script>
   <script src="{{asset 'js/scroll-restore.js'}}"></script>
   <script src="{{asset 'wp-content/themes/cocos/js/zepto.js'}}"></script>
