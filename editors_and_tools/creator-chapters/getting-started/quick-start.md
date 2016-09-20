@@ -32,11 +32,11 @@ If you still don't know how to obtain and start Cocos Creator, please read the [
 
 Our original project has included all the game resources needed; therefore, you don't need to import any other resources. For details on importing resources, please read content related to [Asset Workflow](../asset-workflow/index.md).
 
-Next, let's get to know the resources of the project. Please pay attention to a panel named **Resource manager**, on which all the resource allocation graphs of the project are shown.
+Next, let's get to know the resources of the project. Please pay attention to a panel named **Assets**, on which all the resource allocation graphs of the project are shown.
 
 We can see that the root directory of the project resources is named as **assets**, which is in accordance with the `assets` directory in the decompressed original project. Only resources under this directory can be imported by Cocos Creator into the project and be managed.
 
-**Resource manager** can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, **Resource manager** will present itself as illustrated below.
+The **Assets** panel can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, the **Assets** panel will present itself as illustrated below.
 
 ![assets overview](quick-start/assets_overview.png)
 
@@ -57,8 +57,8 @@ In Cocos Creator, the game scene is the core of organizing the game contents whe
 
 When players run the game, the game scene will be loaded. After that, the game scripts of included components will automatically run to realize various kinds of logic functions set up by developers. Therefore, apart from resources, the game scene is the foundation of all content creation. Now let's create a new scene.
 
-1. Click the **assets** directory in the resource manager, making sure the scene will be created under this directory
-2. Click the plus sign on the top left corner of resource manager, and choose **Scene** in the pop up menu
+1. Click the **assets** directory in the **Assets** panel, making sure the scene will be created under this directory
+2. Click the plus sign on the top left corner of the **Assets** panel, and choose **Scene** in the pop up menu
 ![create scene](quick-start/create_scene.png)
 3. We created a scene document named as `New Scene`. Right click it and choose **Rename** to rename it as `game`.
 4. Double click `game` and the scene will be opened in the **scene editor** and **arrangement editor**.
@@ -80,7 +80,7 @@ For more detailed information, please read [Canvas](../components/canvas.md). Cu
 
 ### Adding a background
 
-First, find the background image resource according to the path of `assets/textures/background` in **resource manager**. Click and drag this resource to the **Canvas** node in **Arrangement editor**. Don't release the mouse until the **Canvas** node is highlighted orange, which means a subnode using `background` as the image resource will be added.
+First, find the background image resource according to the path of `assets/textures/background` in the **Assets** panel. Click and drag this resource to the **Canvas** node in **Arrangement editor**. Don't release the mouse until the **Canvas** node is highlighted orange, which means a subnode using `background` as the image resource will be added.
 
 ![drag to canvas](quick-start/drag_to_canvas.png)
 
@@ -110,7 +110,7 @@ When using **rectangle tool** to modify the size of the background image, we can
 
 ### Add ground
 
-Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the `assets/textures/ground` resource in **resource manager** to `Canvas` in **arrangement manager**. When dragging, we can choose the order relation of newly added nodes and `background` nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the `background` node until a highlighted orange frame appears on `Canvas` and a green line representing the insert position appears below `background`, and then release the mouse. In this way, `ground` will be put under the `background` in the scene hierarchy, which is also a subnode of `Canvas`.
+Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the `assets/textures/ground` resource in the **Assets** panel to `Canvas` in **arrangement manager**. When dragging, we can choose the order relation of newly added nodes and `background` nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the `background` node until a highlighted orange frame appears on `Canvas` and a green line representing the insert position appears below `background`, and then release the mouse. In this way, `ground` will be put under the `background` in the scene hierarchy, which is also a subnode of `Canvas`.
 
 In **arrangement manager**, the render order of nodes shown below will follow that of nodes shown above. We can see the `ground` object at the bottom is the first to appear in **scene editor**. Besides, the subnode will permanently display before the parent node. We can adjust the hierarchical order and relation of nodes at anytime to control their show order.
 
@@ -124,7 +124,7 @@ When setting up the position and size of the background and ground, we don't nee
 
 ### Adding a main character
 
-Next our main character the little monster will make its debut. Drag `assets/texture/PurpleMonster` from **resource manager** and put it under `Canvas` in **arrangement manager**, and make sure its position is below `ground`, in this way our main character will be shown at the very front.
+Next our main character the little monster will make its debut. Drag `assets/texture/PurpleMonster` from the **Assets** panel and put it under `Canvas` in **arrangement manager**, and make sure its position is below `ground`, in this way our main character will be shown at the very front.
 
 To highlight the aura of the main character in the scene nodes, we right click the newly added `PurpleMonster` node, choose `rename` and rename it as `Player`.
 
@@ -145,7 +145,7 @@ Even if you have never written a program before, there's no need to worry. We wi
 
 ### Create script
 
-1. First, right click the `assets` folder in **resource manager** and choose `Create->folder` ![new folder](quick-start/new_folder.png)
+1. First, right click the `assets` folder in the **Assets** panel and choose `Create->folder` ![new folder](quick-start/new_folder.png)
 2. Right click `New Folder`, choose `Rename` and rename it as `scripts`, under which all our scripts will be saved.
 3. Right click the `scripts` folder, choose `Create->JavaScript` and create a JavaScript script
 4. Rename the newly created script as `Player`. Double click this script and open the code editor.
@@ -333,7 +333,7 @@ The main character can jump freely now so we need to set up a goal for players. 
 
 As for the nodes that need to be created repeatedly, we can save it as a **Prefab** resource, which can be a template for the dynamic generation of nodes. For more information about **Prefab**, please read [Prefab](../asset-workflow/prefab.md).
 
-Firstly, drag the `assets/textures/star` resource from **resource manager** into the scene, the position of which is not restricted. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
+Firstly, drag the `assets/textures/star` resource from the **Assets** panel into the scene, the position of which is not restricted. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
 
 We don't need to modify the position of the stars or render property. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the `Player` script, add a JavaScript script named `Star` to `assets/scripts/`.
 
@@ -353,7 +353,7 @@ After saving the script, add this script to the newly created `star` node. Then 
 
 ![quick start](quick-start/star_property.png)
 
-The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager**  and put it under the `star` folder in **resource manager**, then a Prefab resource named `star` will be generated.
+The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager**  and put it under the `star` folder in the **Assets** panel, then a Prefab resource named `star` will be generated.
 
 ![star prefab](quick-start/prefab_asset.png)
 
@@ -389,7 +389,7 @@ Add the `Game` script and put it under the `assets/scripts` folder. Double click
     },
 ```
 
-After saving the script, add the `Game` component to the `Canvas` node in **arrangement editor** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from **resource manager** to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
+After saving the script, add the `Game` component to the `Canvas` node in **arrangement editor** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from the **Assets** panel to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
 
 Next, drag the `ground` and `Player` nodes from **arrangement editor** to properties of the same name in the component to finish the node quotation.
 
@@ -500,7 +500,7 @@ The score will start from 0 when the game is started. 1 point will be added for 
 3. Set the size of the `score` node（`size`property）as `(300, 80)`.
 4. Choose the node, edit `string` property of the **Label** component and input `Score: 0`.
 5. Set the `Font Size` property of the **Label** component as `50`.
-4. Drag the `assets/mikado_outline_shadow` bitmap font resource from **resource manager** （pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `File` property of the **Label** component, and replace the font of the words with the bitmap font in the project resource.
+4. Drag the `assets/mikado_outline_shadow` bitmap font resource from the **Assets** panel （pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `File` property of the **Label** component, and replace the font of the words with the bitmap font in the project resource.
 
 The completed effect is as illustrated below:
 
@@ -708,7 +708,7 @@ Then insert the code of playing the sound into the `gainScore` method:
     },
 ```
 
-Save the script. Go back to **arrangement editor**, choose the `Player` node, and drag the `assets/audio/jump` resource from **resource manager** to the `Jump Audio` property of the `Player` component.
+Save the script. Go back to **arrangement editor**, choose the `Player` node, and drag the `assets/audio/jump` resource from the **Assets** panel to the `Jump Audio` property of the `Player` component.
 
 Then choose the `Canvas` node, drag the `assets/audio/score` resource to the `Score Audio` property of the `Game` component.
 
