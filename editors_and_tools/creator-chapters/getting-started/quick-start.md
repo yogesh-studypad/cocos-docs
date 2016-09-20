@@ -223,7 +223,9 @@ The `onLoad` method will be immediately implemented after loading the scene. So 
 
 After the script is saved, we can start running the game for the first time!
 
-Click the **preview** button at the top of Cocos Creator editor [preview](quick-start/preview_game.png)! Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character--a purple monster jumping lively and continuously in the scene.
+Click the **preview** button at the top of Cocos Creator editor, which looks like a "play" button. Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character--a purple monster jumping lively and continuously in the scene.
+
+![preview](quick-start/preview_game.png)
 
 ### Manipulation of movement
 
