@@ -407,7 +407,7 @@ Next, we will continue to modify the `Game` script by adding the logic of genera
 // Game.js
     onLoad: function () {
         // obtain the anchor point of ground level on the y axis
-        this.groundY = this.ground.y + this.ground.height/2;
+        this.groundY = this.ground.y + this.ground.height/2;   // this.ground.top may also work
         // generate a new star
         this.spawnNewStar();
     },
