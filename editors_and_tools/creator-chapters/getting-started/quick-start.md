@@ -106,7 +106,7 @@ Then we need to drag the upper and lower sides to make the size of the backgroun
 
 ![background finish](quick-start/background_finish.png)
 
-When using **rectangle tool** to modify the size of the background image, we can see the `Size`  property of **Node** in **property checker** is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
+When using **rectangle tool** to modify the size of the background image, we can see the `Size` property of **Node** in **property checker** is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
 
 ### Add ground
 
@@ -353,7 +353,7 @@ After saving the script, add this script to the newly created `star` node. Then 
 
 ![quick start](quick-start/star_property.png)
 
-The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager**  and put it under the `star` folder in the **Assets** panel, then a Prefab resource named `star` will be generated.
+The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager** and put it under the `star` folder in the **Assets** panel, then a Prefab resource named `star` will be generated.
 
 ![star prefab](quick-start/prefab_asset.png)
 
@@ -500,7 +500,7 @@ The score will start from 0 when the game is started. 1 point will be added for 
 3. Set the size of the `score` node（`size`property）as `(300, 80)`.
 4. Choose the node, edit `string` property of the **Label** component and input `Score: 0`.
 5. Set the `Font Size` property of the **Label** component as `50`.
-4. Drag the `assets/mikado_outline_shadow` bitmap font resource from the **Assets** panel （pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `File` property of the **Label** component, and replace the font of the words with the bitmap font in the project resource.
+4. Drag the `assets/mikado_outline_shadow` bitmap font resource from the **Assets** panel（pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `File` property of the **Label** component, and replace the font of the words with the bitmap font in the project resource.
 
 The completed effect is as illustrated below:
 
