@@ -335,9 +335,9 @@ The main character can jump freely now so we need to set up a goal for players. 
 
 As for the nodes that need to be created repeatedly, we can save it as a **Prefab** resource, which can be a template for the dynamic generation of nodes. For more information about **Prefab**, please read [Prefab](../asset-workflow/prefab.md).
 
-Firstly, drag the `assets/textures/star` resource from the **Assets** panel into the scene. Anywhere in the scene will do. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
+Firstly, drag the `assets/textures/star` resource from the **Assets** panel into the scene. Anywhere in the **Node Tree** is fine. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
 
-We don't need to modify the position of the stars or render property. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the `Player` script, add a JavaScript script named `Star` to `assets/scripts/`.
+We don't need to modify the position of the stars or its render properties. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the `Player` script, add a JavaScript script named `Star` to `assets/scripts/` (in the **Properties** panel of the `star`, select **Add component** and then **Add custom component** and then **`Star`**).
 
 ![star script](quick-start/star_script.png)
 
@@ -365,7 +365,7 @@ Now the `star` node can be deleted from the scene. We can dynamically use the Pr
 
 The generation of stars is a part of the game's main logic. Therefore we need to add a script named `Game` and make it the script of the game's main logic. Logic concerning scoring, failure and restarting will be added to this script later.
 
-Add the `Game` script and put it under the `assets/scripts` folder. Double click to open the script. First, add the properties needed for generating stars:
+Add a new `Game` script inside the `assets/scripts` folder (next to `Star` and `Player`). Double click to open the script. First, add the properties needed for generating stars:
 
 ```js
 // Game.js
@@ -391,15 +391,17 @@ Add the `Game` script and put it under the `assets/scripts` folder. Double click
     },
 ```
 
-After saving the script, add the `Game` component to the `Canvas` node in the **Node Tree** (After choosing the `Canvas` node, drag the script to the **Properties** panel or click the **Add component** button in the **Properties** panel and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from the **Assets** panel to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
+After saving the script, add the `Game` component to the `Canvas` node in the **Node Tree** (after choosing the `Canvas` node, drag the script to the **Properties** panel or click the **Add component** button in the **Properties** panel and choose `Game` in `Add Custom Component`).
 
-Next, drag the `ground` and `Player` nodes from the **Node Tree** to properties of the same name in the component to finish the node quotation.
+Next, drag the `star` Prefab resource from the **Assets** panel into the `Star Prefab` property of the newly created `Game` component. This is the first time we have set up a quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can an asset or a node be dragged to the property.)
 
-Then set the values of the `Min Star Duration` and `Max Star Duration` properties as `3` and `5`. Later when generating stars, we will choose a random value between these two values, which is the duration of the star.
+Then, drag the `ground` and `Player` nodes from the **Node Tree** to properties of the same name in the component, to finish the node quotation.
+
+Finally, set the values of the `Min Star Duration` and `Max Star Duration` properties as `3` and `5`. Later when generating stars, we will choose a random value between these two values, for the duration of each star.
 
 ### Generate stars at a random position
 
-Next, we will continue to modify the `Game` script by adding the logic of generating stars and putting it behind the `onLoad` method:
+Next, we will continue to modify the `Game` script by adding the logic of generating stars and putting it after the `onLoad` method:
 
 ```js
 // Game.js
