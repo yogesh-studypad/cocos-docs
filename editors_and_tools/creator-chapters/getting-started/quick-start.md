@@ -223,13 +223,13 @@ The `onLoad` method will be immediately implemented after loading the scene. So 
 
 After the script is saved, we can start running the game for the first time!
 
-Click the **preview** button at the top of Cocos Creator editor, which looks like a "play" button. Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character--a purple monster jumping lively and continuously in the scene.
+Click the **preview** button at the top of Cocos Creator editor, which looks like a "play" button. Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character --- a purple monster jumping lively and continuously in the scene.
 
 ![preview](quick-start/preview_game.png)
 
 ### Manipulation of movement
 
-A main character that can only jump foolishly up and down on the same spot is not very promising. Let us add keyboard input for the main character, using <kbd>A</kbd> and <kbd>D</kbd> to manipulate its jump direction. Under the `setJumpAction` method, add the `setInputControl` method:
+A main character that can only jump foolishly up and down on the same spot is not very promising. Let us add keyboard input for the main character, using <kbd>A</kbd> and <kbd>D</kbd> to manipulate its jump direction. Below the `setJumpAction` method, add a new `setInputControl` method:
 
 ```js
 // Player.js
@@ -290,7 +290,7 @@ Then modify the `onLoad` method, into which we add the switch of accelerating to
     },
 ```
 
-In the end, modify the content of the `update` method by adding settings for the acceleration, speed and the current position of the main character:
+Finally, modify the content of the `update` method by adding settings for the acceleration, speed and the current position of the main character:
 
 ```js
 // Player.js
@@ -329,13 +329,13 @@ This set of property settings will make the main character as agile as possible.
 
 ## Making stars
 
-The main character can jump freely now so we need to set up a goal for players. The stars will appear continuously in the scene and players need to manipulate the monster to touch the stars for collecting points. The star touched by the main character will disappear and a new one will be immediately re-created at a random position.
+The main character can jump freely now so we need to set up a goal for players. The stars will appear continuously in the scene and players need to manipulate the monster to touch the stars to collect points. The star touched by the main character will disappear and a new one will be immediately re-created at a random position.
 
 ### Create Prefab
 
 As for the nodes that need to be created repeatedly, we can save it as a **Prefab** resource, which can be a template for the dynamic generation of nodes. For more information about **Prefab**, please read [Prefab](../asset-workflow/prefab.md).
 
-Firstly, drag the `assets/textures/star` resource from the **Assets** panel into the scene, the position of which is not restricted. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
+Firstly, drag the `assets/textures/star` resource from the **Assets** panel into the scene. Anywhere in the scene will do. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
 
 We don't need to modify the position of the stars or render property. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the `Player` script, add a JavaScript script named `Star` to `assets/scripts/`.
 
