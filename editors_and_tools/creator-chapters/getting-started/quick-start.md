@@ -61,11 +61,11 @@ When players run the game, the game scene will be loaded. After that, the game s
 2. Click the plus sign on the top left corner of the **Assets** panel, and choose **Scene** in the pop up menu
 ![create scene](quick-start/create_scene.png)
 3. We created a scene document named as `New Scene`. Right click it and choose **Rename** to rename it as `game`.
-4. Double click `game` and the scene will be opened in the **scene editor** and **arrangement editor**.
+4. Double click `game` and the scene will be opened in the **scene editor** and the **Node Tree**.
 
 ### To understand Canvas
 
-After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the **arrangement manager**. The newly created scene has only one node called `Canvas`. **Canvas** can be called the canvas node or rendering root node. Click **Canvas**, its properties will display in **property checker**.
+After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the the **Node Tree**. The newly created scene has only one node called `Canvas`. **Canvas** can be called the canvas node or rendering root node. Click **Canvas**, its properties will display in **property checker**.
 
 ![canvas](quick-start/canvas.png)
 
@@ -110,9 +110,9 @@ When using **rectangle tool** to modify the size of the background image, we can
 
 ### Add ground
 
-Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the `assets/textures/ground` resource in the **Assets** panel to `Canvas` in **arrangement manager**. When dragging, we can choose the order relation of newly added nodes and `background` nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the `background` node until a highlighted orange frame appears on `Canvas` and a green line representing the insert position appears below `background`, and then release the mouse. In this way, `ground` will be put under the `background` in the scene hierarchy, which is also a subnode of `Canvas`.
+Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the `assets/textures/ground` resource in the **Assets** panel to `Canvas` in the **Node Tree**. When dragging, we can choose the order relation of newly added nodes and `background` nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the `background` node until a highlighted orange frame appears on `Canvas` and a green line representing the insert position appears below `background`, and then release the mouse. In this way, `ground` will be put under the `background` in the scene hierarchy, which is also a subnode of `Canvas`.
 
-In **arrangement manager**, the render order of nodes shown below will follow that of nodes shown above. We can see the `ground` object at the bottom is the first to appear in **scene editor**. Besides, the subnode will permanently display before the parent node. We can adjust the hierarchical order and relation of nodes at anytime to control their show order.
+In the **Node Tree**, the render order of nodes shown below will follow that of nodes shown above. We can see the `ground` object at the bottom is the first to appear in **scene editor**. Besides, the subnode will permanently display before the parent node. We can adjust the hierarchical order and relation of nodes at anytime to control their show order.
 
 According to the method of modifying the background, we can also use **rectangle tool** to set a suitable size for the ground node. When activating **rectangle tool**, by dragging the vertices and the parts other than the four sides of nodes, we can change the position of nodes. The state of set ground nodes is as illustrated below:
 
@@ -124,7 +124,7 @@ When setting up the position and size of the background and ground, we don't nee
 
 ### Adding a main character
 
-Next our main character the little monster will make its debut. Drag `assets/texture/PurpleMonster` from the **Assets** panel and put it under `Canvas` in **arrangement manager**, and make sure its position is below `ground`, in this way our main character will be shown at the very front.
+Next our main character the little monster will make its debut. Drag `assets/texture/PurpleMonster` from the **Assets** panel and put it under `Canvas` in the **Node Tree**, and make sure its position is below `ground`, in this way our main character will be shown at the very front.
 
 To highlight the aura of the main character in the scene nodes, we right click the newly added `PurpleMonster` node, choose `rename` and rename it as `Player`.
 
@@ -174,7 +174,7 @@ Find the portion of `properties` in the `Player` script in **code editor**, chan
 
 These newly added properties will stipulate the movement of the main character. In code, we don't have to care about how much these numeric values are, because we will directly set up these numeric values in **property checker** later.
 
-Now we can add the `Player` component to the node of the main character. Choose the `Player` node in **arrangement editor**, click the **add component** button in **property checker** and choose `add user's script component->Player` to add the `Player` component to the node of the main character.
+Now we can add the `Player` component to the node of the main character. Choose the `Player` node in the **Node Tree**, click the **add component** button in **property checker** and choose `add user's script component->Player` to add the `Player` component to the node of the main character.
 
 ![add player component](quick-start/add_player_component.png)
 
@@ -353,7 +353,7 @@ After saving the script, add this script to the newly created `star` node. Then 
 
 ![quick start](quick-start/star_property.png)
 
-The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager** and put it under the `star` folder in the **Assets** panel, then a Prefab resource named `star` will be generated.
+The settings needed by Star Prefab are now finished. Now drag the `star` node from the **Node Tree** and put it under the `star` folder in the **Assets** panel, then a Prefab resource named `star` will be generated.
 
 ![star prefab](quick-start/prefab_asset.png)
 
@@ -389,9 +389,9 @@ Add the `Game` script and put it under the `assets/scripts` folder. Double click
     },
 ```
 
-After saving the script, add the `Game` component to the `Canvas` node in **arrangement editor** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from the **Assets** panel to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
+After saving the script, add the `Game` component to the `Canvas` node in the **Node Tree** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from the **Assets** panel to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
 
-Next, drag the `ground` and `Player` nodes from **arrangement editor** to properties of the same name in the component to finish the node quotation.
+Next, drag the `ground` and `Player` nodes from the **Node Tree** to properties of the same name in the component to finish the node quotation.
 
 Then set the values of the `Min Star Duration` and `Max Star Duration` properties as `3` and `5`. Later when generating stars, we will choose a random value between these two values, which is the duration of the star.
 
@@ -493,7 +493,7 @@ The little monster makes a great effort to collect the stars. But how come it re
 
 ### Adding a score label（Label）
 
-The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in **arrangement manager**, right click and choose `create a new node->create a render node->Label（word）`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
+The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in the **Node Tree**, right click and choose `create a new node->create a render node->Label（word）`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
 
 1. Change the node's name to `score`
 2. Set the position of the `score` node（`position`property）as`(0, 180)`.
@@ -708,7 +708,7 @@ Then insert the code of playing the sound into the `gainScore` method:
     },
 ```
 
-Save the script. Go back to **arrangement editor**, choose the `Player` node, and drag the `assets/audio/jump` resource from the **Assets** panel to the `Jump Audio` property of the `Player` component.
+Save the script. Go back to the **Node Tree**, choose the `Player` node, and drag the `assets/audio/jump` resource from the **Assets** panel to the `Jump Audio` property of the `Player` component.
 
 Then choose the `Canvas` node, drag the `assets/audio/score` resource to the `Score Audio` property of the `Game` component.
 
