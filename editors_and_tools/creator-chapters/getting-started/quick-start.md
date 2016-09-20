@@ -422,7 +422,7 @@ Next, we will continue to modify the `Game` script by adding the logic of genera
     getNewStarPosition: function () {
         var randX = 0;
         // According to the position of the ground level and the main character's jump height, randomly obtain an anchor point of the star on the y axis
-        var randY = this.ground + cc.random0To1() * this.player.getComponent('Player').jumpHeight + 50;
+        var randY = this.groundY + cc.random0To1() * this.player.getComponent('Player').jumpHeight + 50;
         // according to the width of the screen, randomly obtain an anchor point of star on the x axis
         var maxX = this.node.width/2;
         randX = cc.randomMinus1To1() * maxX;
