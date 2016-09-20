@@ -65,7 +65,7 @@ When players run the game, the game scene will be loaded. After that, the game s
 
 ### To understand Canvas
 
-After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the the **Node Tree**. The newly created scene has only one node called `Canvas`. **Canvas** can be called the canvas node or rendering root node. Click **Canvas**, its properties will display in **property checker**.
+After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the the **Node Tree**. The newly created scene has only one node called `Canvas`. **Canvas** can be called the canvas node or rendering root node. Click **Canvas**, its properties will display in the **Properties** panel.
 
 ![canvas](quick-start/canvas.png)
 
@@ -106,7 +106,7 @@ Then we need to drag the upper and lower sides to make the size of the backgroun
 
 ![background finish](quick-start/background_finish.png)
 
-When using **rectangle tool** to modify the size of the background image, we can see the `Size` property of **Node** in **property checker** is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
+When using **rectangle tool** to modify the size of the background image, we can see the `Size` property of **Node** in the **Properties** panel is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
 
 ### Add ground
 
@@ -128,7 +128,7 @@ Next our main character the little monster will make its debut. Drag `assets/tex
 
 To highlight the aura of the main character in the scene nodes, we right click the newly added `PurpleMonster` node, choose `rename` and rename it as `Player`.
 
-Next we will set up the properties of the main character. First, we change the position of **Anchor**. The anchor point of any node will be at the center of itself by default, which means the position of the center of the node is the position of the node. We hope to manipulate the position of the base of the main character to simulate the effect of jumping on the ground; therefore, we need to set up the anchor point of the main character under its foot now. Find **Anchor** property in **property checker** and set up the value of `y` as `0`. We will see that in **scene editor**, the arrow of the **move tool** that represents the position of the main character appears under the foot of the main character.
+Next we will set up the properties of the main character. First, we change the position of **Anchor**. The anchor point of any node will be at the center of itself by default, which means the position of the center of the node is the position of the node. We hope to manipulate the position of the base of the main character to simulate the effect of jumping on the ground; therefore, we need to set up the anchor point of the main character under its foot now. Find **Anchor** property in the **Properties** panel and set up the value of `y` as `0`. We will see that in **scene editor**, the arrow of the **move tool** that represents the position of the main character appears under the foot of the main character.
 
 Next, drag `Player` from **scene editor** and put it on the ground. The effect is as illustrated below:
 
@@ -172,19 +172,19 @@ Find the portion of `properties` in the `Player` script in **code editor**, chan
     //...
 ```
 
-These newly added properties will stipulate the movement of the main character. In code, we don't have to care about how much these numeric values are, because we will directly set up these numeric values in **property checker** later.
+These newly added properties will stipulate the movement of the main character. In code, we don't have to care about how much these numeric values are, because we will directly set up these numeric values in the **Properties** panel later.
 
-Now we can add the `Player` component to the node of the main character. Choose the `Player` node in the **Node Tree**, click the **add component** button in **property checker** and choose `add user's script component->Player` to add the `Player` component to the node of the main character.
+Now we can add the `Player` component to the node of the main character. Choose the `Player` node in the **Node Tree**, click the **add component** button in the **Properties** panel and choose `add user's script component->Player` to add the `Player` component to the node of the main character.
 
 ![add player component](quick-start/add_player_component.png)
 
-Now we can see the newly added `Player` component in **property checker** (need to choose `Player` node). Set up properties related to the jumping and movement of the main character according to the image below:
+Now we can see the newly added `Player` component in the **Properties** panel (need to choose `Player` node). Set up properties related to the jumping and movement of the main character according to the image below:
 
 ![player properties](quick-start/player_properties.png)
 
 Only jumpDuration's unit is seconds. The unit of the other values is pixels. According to the current setting of the `Player` component: Our main character will have a jump height of 200 pixels. The time needed for jumping to the highest point is 0.3 seconds. Its maximum horizontal movement speed is 400 pixels per second. Its horizontal acceleration is 350 pixels per second.
 
-All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in **property checker** at anytime according to your preference, no need to change any codes. How convenient it is, right!
+All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in the **Properties** panel at anytime according to your preference, no need to change any codes. How convenient it is, right!
 
 ### Writing code for jumping and movement
 
@@ -349,7 +349,7 @@ Next, double click this script to start editing. Only one property is needed for
     },
 ```
 
-After saving the script, add this script to the newly created `star` node. Then set up the property value of `Pick Radius` in **property checker** as `60`:
+After saving the script, add this script to the newly created `star` node. Then set up the property value of `Pick Radius` in the **Properties** panel as `60`:
 
 ![quick start](quick-start/star_property.png)
 
@@ -389,7 +389,7 @@ Add the `Game` script and put it under the `assets/scripts` folder. Double click
     },
 ```
 
-After saving the script, add the `Game` component to the `Canvas` node in the **Node Tree** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from the **Assets** panel to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
+After saving the script, add the `Game` component to the `Canvas` node in the **Node Tree** (After choosing the `Canvas` node, drag the script to the **Properties** panel or click the **Add component** button in the **Properties** panel and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from the **Assets** panel to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
 
 Next, drag the `ground` and `Player` nodes from the **Node Tree** to properties of the same name in the component to finish the node quotation.
 
