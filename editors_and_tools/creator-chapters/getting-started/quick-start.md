@@ -355,7 +355,7 @@ After saving the script, add this script to the newly created `star` node. Then 
 
 ![quick start](quick-start/star_property.png)
 
-The settings needed by Star Prefab are now finished. Now drag the `star` node from the **Node Tree** and put it under the `star` folder in the **Assets** panel, then a Prefab resource named `star` will be generated.
+The settings needed by Star Prefab are now finished. Now drag the `star` node from the **Node Tree** and drop it into the `assets` folder in the **Assets** panel. This should generate a Prefab resource named `star`, as shown below.
 
 ![star prefab](quick-start/prefab_asset.png)
 
