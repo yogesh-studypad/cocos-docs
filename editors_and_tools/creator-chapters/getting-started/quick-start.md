@@ -439,7 +439,7 @@ After saving the script, click the **preview** button. Then in the browser you w
 
 ### Adding the action of the main character's touching and collecting of stars
 
-Now we will add the action logic of the main character's collecting of stars. The essential point here lies in the fact that the star needs to obtain the position of the main character's node at anytime to judge if the distance between them is shorter than the collectable distance. How do we obtain the quotation of the main character's node? Don't forget that we have done two things before:
+Now we will add the action logic of the main character's collecting of stars. The essential point here lies in the fact that the star needs to obtain the position of the main character's node at any time to judge if the distance between them is shorter than the collectable distance. How do we obtain the quotation of the main character's node? Don't forget that we have done two things before:
 
 1. There is a property named `player` in the `Game` component, which saved the quotation of the main character's node.
 2. Each star is dynamically generated in the `Game` script.
@@ -455,7 +455,7 @@ Therefore, we only need to deliver the concrete example in the `Game` component 
     },
 ```
 
-Open the `Star` script after saving, now we can use the `player` node quoted in the `Game` component to judge the distance. Add the methods named `getPlayerDistance` and `onPicked` and put them behind the `onLoad` method:
+Open the `Star` script after saving, now we can use the `player` node quoted in the `Game` component to judge the distance. Add the methods named `getPlayerDistance` and `onPicked` and put them below the `onLoad` method:
 
 ```js
 // Star.js
@@ -493,7 +493,7 @@ Save the script, then preview and test again. You will see that when the main ch
 
 ## Adding score
 
-The little monster makes a great effort to collect the stars. But how come it receive no reward? Now, let's add the logic and display of scoring when collecting stars.
+The little monster makes a great effort to collect the stars. But how come it receives no reward? Now, let's add the logic and display of scoring when collecting stars.
 
 ### Adding a score label（Label）
 
