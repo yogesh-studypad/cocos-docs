@@ -497,14 +497,14 @@ The little monster makes a great effort to collect the stars. But how come it re
 
 The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in the **Node Tree**, right click and choose `Create -> Create Renderer Nodes -> Node With Label`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
 
-1. Change the node's name to `score`
-2. Set the position of the `score` node（`position`property）as`(0, 180)`.
-3. Set the size of the `score` node（`size`property）as `(300, 80)`.
-4. Choose the node, edit `string` property of the **Label** component and input `Score: 0`.
-5. Set the `Font Size` property of the **Label** component as `50`.
-4. Drag the `assets/mikado_outline_shadow` bitmap font resource from the **Assets** panel（pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `File` property of the **Label** component, and replace the font of the words with the bitmap font in the project resource.
+1. Change the node's name to `score`.
+2. Select the `score` node, and set the X,Y of the `position` property to `(0, 180)`.
+<!-- 0. Set the X,Y of the `size` property to `(300, 80)`. -->
+3. Edit the `String` property of the **Label** component and input `Score: 0`.
+4. Set the `Font Size` property of the **Label** component to `50`.
+5. Drag the `assets/mikado_outline_shadow` bitmap font resource from the **Assets** panel（pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `Font` property of the **Label** component, to change the font used to render the score.
 
-The completed effect is as illustrated below:
+The completed effect is as illustrated below (don't worry about the `Size`):
 
 ![score label](quick-start/score_label.png)
 
