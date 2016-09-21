@@ -495,7 +495,7 @@ The little monster makes a great effort to collect the stars. But how come it re
 
 ### Adding a score label（Label）
 
-The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in the **Node Tree**, right click and choose `create a new node->create a render node->Label（word）`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
+The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in the **Node Tree**, right click and choose `Create -> Create Renderer Nodes -> Node With Label`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
 
 1. Change the node's name to `score`
 2. Set the position of the `score` node（`position`property）as`(0, 180)`.
