@@ -33,7 +33,7 @@
 - [系统信息](v3/cc-sys/zh.md)
 - [单例对象](v3/singleton-objs/zh.md)
 - [对象构造与类继承](v3/inheritance/zh.md)
-- [属性风格API](v3/getter-setter-api/zh.md)R
+- [属性风格API](v3/getter-setter-api/zh.md)
 - [统一create函数](v3/create-api/zh.md)
 
 ## Cocos2d-JS v3.x核心功能
