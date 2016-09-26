@@ -32,11 +32,11 @@ If you still don't know how to obtain and start Cocos Creator, please read the [
 
 Our original project has included all the game resources needed; therefore, you don't need to import any other resources. For details on importing resources, please read content related to [Asset Workflow](../asset-workflow/index.md).
 
-Next, let's get to know the resources of the project. Please pay attention to a panel named **Resource manager**, on which all the resource allocation graphs of the project are shown.
+Next, let's get to know the resources of the project. Please pay attention to a panel named **Assets**, on which all the resource allocation graphs of the project are shown.
 
 We can see that the root directory of the project resources is named as **assets**, which is in accordance with the `assets` directory in the decompressed original project. Only resources under this directory can be imported by Cocos Creator into the project and be managed.
 
-**Resource manager** can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, **Resource manager** will present itself as illustrated below.
+The **Assets** panel can display the directory structure of any hierarchy. An icon like ![folder](quick-start/folder.png) represents a folder. Clicking the triangle icon on the left side of the folder, you can unfold the contents of the folder. After completely unfolding the folder, the **Assets** panel will present itself as illustrated below.
 
 ![assets overview](quick-start/assets_overview.png)
 
@@ -57,15 +57,15 @@ In Cocos Creator, the game scene is the core of organizing the game contents whe
 
 When players run the game, the game scene will be loaded. After that, the game scripts of included components will automatically run to realize various kinds of logic functions set up by developers. Therefore, apart from resources, the game scene is the foundation of all content creation. Now let's create a new scene.
 
-1. Click the **assets** directory in the resource manager, making sure the scene will be created under this directory
-2. Click the plus sign on the top left corner of resource manager, and choose **Scene** in the pop up menu
+1. Click the **assets** directory in the **Assets** panel, making sure the scene will be created under this directory
+2. Click the plus sign on the top left corner of the **Assets** panel, and choose **Scene** in the pop up menu
 ![create scene](quick-start/create_scene.png)
 3. We created a scene document named as `New Scene`. Right click it and choose **Rename** to rename it as `game`.
-4. Double click `game` and the scene will be opened in the **scene editor** and **arrangement editor**.
+4. Double click `game` and the scene will be opened in the **scene editor** and the **Node Tree**.
 
 ### To understand Canvas
 
-After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the **arrangement manager**. The newly created scene has only one node called `Canvas`. **Canvas** can be called the canvas node or rendering root node. Click **Canvas**, its properties will display in **property checker**.
+After opening the scene, all the nodes (and their hierarchical relations) of the current scene will be shown in the the **Node Tree**. The newly created scene has only one node called `Canvas`. **Canvas** can be called the canvas node or rendering root node. Click **Canvas**, its properties will display in the **Properties** panel.
 
 ![canvas](quick-start/canvas.png)
 
@@ -80,7 +80,7 @@ For more detailed information, please read [Canvas](../components/canvas.md). Cu
 
 ### Adding a background
 
-First, find the background image resource according to the path of `assets/textures/background` in **resource manager**. Click and drag this resource to the **Canvas** node in **Arrangement editor**. Don't release the mouse until the **Canvas** node is highlighted orange, which means a subnode using `background` as the image resource will be added.
+First, find the background image resource according to the path of `assets/textures/background` in the **Assets** panel. Click and drag this resource to the **Canvas** node in **Arrangement editor**. Don't release the mouse until the **Canvas** node is highlighted orange, which means a subnode using `background` as the image resource will be added.
 
 ![drag to canvas](quick-start/drag_to_canvas.png)
 
@@ -106,13 +106,13 @@ Then we need to drag the upper and lower sides to make the size of the backgroun
 
 ![background finish](quick-start/background_finish.png)
 
-When using **rectangle tool** to modify the size of the background image, we can see the `Size`  property of **Node** in **property checker** is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
+When using **rectangle tool** to modify the size of the background image, we can see the `Size` property of **Node** in the **Properties** panel is changing accordingly. After completion, the size of the background image is approximately `(1360, 760)`. You can also directly input a numeric value into the input field of the `Size` property, which will achieve the same effect as that of using **rectangle tool**. A background image of this size can cover the whole screen of all the phones on the market, with no exceptions.
 
 ### Add ground
 
-Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the `assets/textures/ground` resource in **resource manager** to `Canvas` in **arrangement manager**. When dragging, we can choose the order relation of newly added nodes and `background` nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the `background` node until a highlighted orange frame appears on `Canvas` and a green line representing the insert position appears below `background`, and then release the mouse. In this way, `ground` will be put under the `background` in the scene hierarchy, which is also a subnode of `Canvas`.
+Our main character needs a ground that it can jump on. We will add one instantly. By the same method of adding a background image, drag the `assets/textures/ground` resource in the **Assets** panel to `Canvas` in the **Node Tree**. When dragging, we can choose the order relation of newly added nodes and `background` nodes. When in the state of dragging the resource, move the mouse pointer to the bottom of the `background` node until a highlighted orange frame appears on `Canvas` and a green line representing the insert position appears below `background`, and then release the mouse. In this way, `ground` will be put under the `background` in the scene hierarchy, which is also a subnode of `Canvas`.
 
-In **arrangement manager**, the render order of nodes shown below will follow that of nodes shown above. We can see the `ground` object at the bottom is the first to appear in **scene editor**. Besides, the subnode will permanently display before the parent node. We can adjust the hierarchical order and relation of nodes at anytime to control their show order.
+In the **Node Tree**, the render order of nodes shown below will follow that of nodes shown above. We can see the `ground` object at the bottom is the first to appear in **scene editor**. Besides, the subnode will permanently display before the parent node. We can adjust the hierarchical order and relation of nodes at anytime to control their show order.
 
 According to the method of modifying the background, we can also use **rectangle tool** to set a suitable size for the ground node. When activating **rectangle tool**, by dragging the vertices and the parts other than the four sides of nodes, we can change the position of nodes. The state of set ground nodes is as illustrated below:
 
@@ -124,11 +124,11 @@ When setting up the position and size of the background and ground, we don't nee
 
 ### Adding a main character
 
-Next our main character the little monster will make its debut. Drag `assets/texture/PurpleMonster` from **resource manager** and put it under `Canvas` in **arrangement manager**, and make sure its position is below `ground`, in this way our main character will be shown at the very front.
+Next our main character the little monster will make its debut. Drag `assets/texture/PurpleMonster` from the **Assets** panel and put it under `Canvas` in the **Node Tree**, and make sure its position is below `ground`, in this way our main character will be shown at the very front.
 
 To highlight the aura of the main character in the scene nodes, we right click the newly added `PurpleMonster` node, choose `rename` and rename it as `Player`.
 
-Next we will set up the properties of the main character. First, we change the position of **Anchor**. The anchor point of any node will be at the center of itself by default, which means the position of the center of the node is the position of the node. We hope to manipulate the position of the base of the main character to simulate the effect of jumping on the ground; therefore, we need to set up the anchor point of the main character under its foot now. Find **Anchor** property in **property checker** and set up the value of `y` as `0`. We will see that in **scene editor**, the arrow of the **move tool** that represents the position of the main character appears under the foot of the main character.
+Next we will set up the properties of the main character. First, we change the position of **Anchor**. The anchor point of any node will be at the center of itself by default, which means the position of the center of the node is the position of the node. We hope to manipulate the position of the base of the main character to simulate the effect of jumping on the ground; therefore, we need to set up the anchor point of the main character under its foot now. Find **Anchor** property in the **Properties** panel and set up the value of `y` as `0`. We will see that in **scene editor**, the arrow of the **move tool** that represents the position of the main character appears under the foot of the main character.
 
 Next, drag `Player` from **scene editor** and put it on the ground. The effect is as illustrated below:
 
@@ -145,7 +145,7 @@ Even if you have never written a program before, there's no need to worry. We wi
 
 ### Create script
 
-1. First, right click the `assets` folder in **resource manager** and choose `Create->folder` ![new folder](quick-start/new_folder.png)
+1. First, right click the `assets` folder in the **Assets** panel and choose `Create->folder` ![new folder](quick-start/new_folder.png)
 2. Right click `New Folder`, choose `Rename` and rename it as `scripts`, under which all our scripts will be saved.
 3. Right click the `scripts` folder, choose `Create->JavaScript` and create a JavaScript script
 4. Rename the newly created script as `Player`. Double click this script and open the code editor.
@@ -172,23 +172,23 @@ Find the portion of `properties` in the `Player` script in **code editor**, chan
     //...
 ```
 
-These newly added properties will stipulate the movement of the main character. In code, we don't have to care about how much these numeric values are, because we will directly set up these numeric values in **property checker** later.
+These newly added properties will stipulate the movement of the main character. In code, we don't have to care about how much these numeric values are, because we will directly set up these numeric values in the **Properties** panel later.
 
-Now we can add the `Player` component to the node of the main character. Choose the `Player` node in **arrangement editor**, click the **add component** button in **property checker** and choose `add user's script component->Player` to add the `Player` component to the node of the main character.
+Now we can add the `Player` component to the node of the main character. Choose the `Player` node in the **Node Tree**, click the **add component** button in the **Properties** panel and choose `add user's script component->Player` to add the `Player` component to the node of the main character.
 
 ![add player component](quick-start/add_player_component.png)
 
-Now we can see the newly added `Player` component in **property checker** (need to choose `Player` node). Set up properties related to the jumping and movement of the main character according to the image below:
+Now we can see the newly added `Player` component in the **Properties** panel of the `Player` node. Set up properties related to the jumping and movement of the main character according to the image below:
 
 ![player properties](quick-start/player_properties.png)
 
 Only jumpDuration's unit is seconds. The unit of the other values is pixels. According to the current setting of the `Player` component: Our main character will have a jump height of 200 pixels. The time needed for jumping to the highest point is 0.3 seconds. Its maximum horizontal movement speed is 400 pixels per second. Its horizontal acceleration is 350 pixels per second.
 
-All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in **property checker** at anytime according to your preference, no need to change any codes. How convenient it is, right!
+All these numeric values are suggestions. Later when the game is running, you can modify these numeric values in the **Properties** panel at anytime according to your preference, no need to change any codes. How convenient it is, right?
 
 ### Writing code for jumping and movement
 
-Next we will add a method to make the main character jump. Add a method called `setJumpAction` and put it under the `properties: {...},` code block:
+Next we will add a method to make the main character jump. Add a method called `setJumpAction` and put it below the `properties: {...},` code block:
 
 ```js
 // Player.js
@@ -223,11 +223,13 @@ The `onLoad` method will be immediately implemented after loading the scene. So 
 
 After the script is saved, we can start running the game for the first time!
 
-Click the **preview** button at the top of Cocos Creator editor [preview](quick-start/preview_game.png)! Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character--a purple monster jumping lively and continuously in the scene.
+Click the **preview** button at the top of Cocos Creator editor, which looks like a "play" button. Cocos Creator will automatically open your default browser and run the game in it. Now we should see the main character --- a purple monster jumping lively and continuously in the scene.
+
+![preview](quick-start/preview_game.png)
 
 ### Manipulation of movement
 
-A main character that can only jump foolishly up and down on the same spot is not very promising. Let us add keyboard input for the main character, using <kbd>A</kbd> and <kbd>D</kbd> to manipulate its jump direction. Under the `setJumpAction` method, add the `setInputControl` method:
+A main character that can only jump foolishly up and down on the same spot is not very promising. Let us add keyboard input for the main character, using <kbd>A</kbd> and <kbd>D</kbd> to manipulate its jump direction. Below the `setJumpAction` method, add a new `setInputControl` method:
 
 ```js
 // Player.js
@@ -288,7 +290,7 @@ Then modify the `onLoad` method, into which we add the switch of accelerating to
     },
 ```
 
-In the end, modify the content of the `update` method by adding settings for the acceleration, speed and the current position of the main character:
+Finally, modify the content of the `update` method by adding settings for the acceleration, speed and the current position of the main character:
 
 ```js
 // Player.js
@@ -327,15 +329,15 @@ This set of property settings will make the main character as agile as possible.
 
 ## Making stars
 
-The main character can jump freely now so we need to set up a goal for players. The stars will appear continuously in the scene and players need to manipulate the monster to touch the stars for collecting points. The star touched by the main character will disappear and a new one will be immediately re-created at a random position.
+The main character can jump freely now so we need to set up a goal for players. The stars will appear continuously in the scene and players need to manipulate the monster to touch the stars to collect points. The star touched by the main character will disappear and a new one will be immediately re-created at a random position.
 
 ### Create Prefab
 
 As for the nodes that need to be created repeatedly, we can save it as a **Prefab** resource, which can be a template for the dynamic generation of nodes. For more information about **Prefab**, please read [Prefab](../asset-workflow/prefab.md).
 
-Firstly, drag the `assets/textures/star` resource from **resource manager** into the scene, the position of which is not restricted. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
+Firstly, drag the `assets/textures/star` resource from the **Assets** panel into the scene. Anywhere in the **Node Tree** is fine. We only need the scene to be the operating platform for creating Prefab. After creation we will delete this node from the scene.
 
-We don't need to modify the position of the stars or render property. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the `Player` script, add a JavaScript script named `Star` to `assets/scripts/`.
+We don't need to modify the position of the stars or its render properties. But to make the stars disappear after being touched by the main character, we need to add a special component to the star. By the same method of adding the `Player` script, add a JavaScript script named `Star` to `assets/scripts/` (in the **Properties** panel of the `star`, select **Add component** and then **Add custom component** and then **`Star`**).
 
 ![star script](quick-start/star_script.png)
 
@@ -349,11 +351,11 @@ Next, double click this script to start editing. Only one property is needed for
     },
 ```
 
-After saving the script, add this script to the newly created `star` node. Then set up the property value of `Pick Radius` in **property checker** as `60`:
+After saving the script, add this script to the newly created `star` node. Then set up the property value of `Pick Radius` in the **Properties** panel as `60`:
 
 ![quick start](quick-start/star_property.png)
 
-The settings needed by Star Prefab are now finished. Now drag the `star` node from **arrangement manager**  and put it under the `star` folder in **resource manager**, then a Prefab resource named `star` will be generated.
+The settings needed by Star Prefab are now finished. Now drag the `star` node from the **Node Tree** and drop it into the `assets` folder in the **Assets** panel. This should generate a Prefab resource named `star`, as shown below.
 
 ![star prefab](quick-start/prefab_asset.png)
 
@@ -363,7 +365,7 @@ Now the `star` node can be deleted from the scene. We can dynamically use the Pr
 
 The generation of stars is a part of the game's main logic. Therefore we need to add a script named `Game` and make it the script of the game's main logic. Logic concerning scoring, failure and restarting will be added to this script later.
 
-Add the `Game` script and put it under the `assets/scripts` folder. Double click to open the script. First, add the properties needed for generating stars:
+Add a new `Game` script inside the `assets/scripts` folder (next to `Star` and `Player`). Double click to open the script. First, add the properties needed for generating stars:
 
 ```js
 // Game.js
@@ -389,21 +391,23 @@ Add the `Game` script and put it under the `assets/scripts` folder. Double click
     },
 ```
 
-After saving the script, add the `Game` component to the `Canvas` node in **arrangement editor** (After choosing the `Canvas` node, drag the script to **property checker** or click the **Add component** button in **property checker** and choose `Game` in `User-defined script`. Next, drag the Prefab resource of `star` from **resource manager** to `Star Prefab` the property of `Game` component. This is our first time to set up quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can a resource or a node be dragged to the property.)
+After saving the script, add the `Game` component to the `Canvas` node in the **Node Tree** (after choosing the `Canvas` node, drag the script to the **Properties** panel or click the **Add component** button in the **Properties** panel and choose `Game` in `Add Custom Component`).
 
-Next, drag the `ground` and `Player` nodes from **arrangement editor** to properties of the same name in the component to finish the node quotation.
+Next, drag the `star` Prefab resource from the **Assets** panel into the `Star Prefab` property of the newly created `Game` component. This is the first time we have set up a quotation for the property. Only when setting `type` as quote type when declaring a property (such as the `cc.Prefab` type written here) can an asset or a node be dragged to the property.)
 
-Then set the values of the `Min Star Duration` and `Max Star Duration` properties as `3` and `5`. Later when generating stars, we will choose a random value between these two values, which is the duration of the star.
+Then, drag the `ground` and `Player` nodes from the **Node Tree** to properties of the same name in the component, to finish the node quotation.
+
+Finally, set the values of the `Min Star Duration` and `Max Star Duration` properties as `3` and `5`. Later when generating stars, we will choose a random value between these two values, for the duration of each star.
 
 ### Generate stars at a random position
 
-Next, we will continue to modify the `Game` script by adding the logic of generating stars and putting it behind the `onLoad` method:
+Next, we will continue to modify the `Game` script by adding the logic of generating stars and putting it after the `onLoad` method:
 
 ```js
 // Game.js
     onLoad: function () {
         // obtain the anchor point of ground level on the y axis
-        this.groundY = this.ground.y + this.ground.height/2;
+        this.groundY = this.ground.y + this.ground.height/2;   // this.ground.top may also work
         // generate a new star
         this.spawnNewStar();
     },
@@ -420,7 +424,7 @@ Next, we will continue to modify the `Game` script by adding the logic of genera
     getNewStarPosition: function () {
         var randX = 0;
         // According to the position of the ground level and the main character's jump height, randomly obtain an anchor point of the star on the y axis
-        var randY = this.ground + cc.random0To1() * this.player.getComponent('Player').jumpHeight + 50;
+        var randY = this.groundY + cc.random0To1() * this.player.getComponent('Player').jumpHeight + 50;
         // according to the width of the screen, randomly obtain an anchor point of star on the x axis
         var maxX = this.node.width/2;
         randX = cc.randomMinus1To1() * maxX;
@@ -435,7 +439,7 @@ After saving the script, click the **preview** button. Then in the browser you w
 
 ### Adding the action of the main character's touching and collecting of stars
 
-Now we will add the action logic of the main character's collecting of stars. The essential point here lies in the fact that the star needs to obtain the position of the main character's node at anytime to judge if the distance between them is shorter than the collectable distance. How do we obtain the quotation of the main character's node? Don't forget that we have done two things before:
+Now we will add the action logic of the main character's collecting of stars. The essential point here lies in the fact that the star needs to obtain the position of the main character's node at any time to judge if the distance between them is shorter than the collectable distance. How do we obtain the quotation of the main character's node? Don't forget that we have done two things before:
 
 1. There is a property named `player` in the `Game` component, which saved the quotation of the main character's node.
 2. Each star is dynamically generated in the `Game` script.
@@ -451,7 +455,7 @@ Therefore, we only need to deliver the concrete example in the `Game` component 
     },
 ```
 
-Open the `Star` script after saving, now we can use the `player` node quoted in the `Game` component to judge the distance. Add the methods named `getPlayerDistance` and `onPicked` and put them behind the `onLoad` method:
+Open the `Star` script after saving, now we can use the `player` node quoted in the `Game` component to judge the distance. Add the methods named `getPlayerDistance` and `onPicked` and put them below the `onLoad` method:
 
 ```js
 // Star.js
@@ -489,20 +493,20 @@ Save the script, then preview and test again. You will see that when the main ch
 
 ## Adding score
 
-The little monster makes a great effort to collect the stars. But how come it receive no reward? Now, let's add the logic and display of scoring when collecting stars.
+The little monster makes a great effort to collect the stars. But how come it receives no reward? Now, let's add the logic and display of scoring when collecting stars.
 
 ### Adding a score label（Label）
 
-The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in **arrangement manager**, right click and choose `create a new node->create a render node->Label（word）`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
+The score will start from 0 when the game is started. 1 point will be added for 1 star collected. To display the score, we should first create a **Label** node. Choose the `Canvas` node in the **Node Tree**, right click and choose `Create -> Create Renderer Nodes -> Node With Label`. A new Label node will be created under `Canvas`, and it will be located at the bottom. Next we will use the following steps to set up this Label node:
 
-1. Change the node's name to `score`
-2. Set the position of the `score` node（`position`property）as`(0, 180)`.
-3. Set the size of the `score` node（`size`property）as `(300, 80)`.
-4. Choose the node, edit `string` property of the **Label** component and input `Score: 0`.
-5. Set the `Font Size` property of the **Label** component as `50`.
-4. Drag the `assets/mikado_outline_shadow` bitmap font resource from **resource manager** （pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `File` property of the **Label** component, and replace the font of the words with the bitmap font in the project resource.
+1. Change the node's name to `score`.
+2. Select the `score` node, and set the X,Y of the `position` property to `(0, 180)`.
+<!-- 0. Set the X,Y of the `size` property to `(300, 80)`. -->
+3. Edit the `String` property of the **Label** component and input `Score: 0`.
+4. Set the `Font Size` property of the **Label** component to `50`.
+5. Drag the `assets/mikado_outline_shadow` bitmap font resource from the **Assets** panel（pay attention! the icon is ![bmfont](quick-start/bitmap-font.png)）into the `Font` property of the **Label** component, to change the font used to render the score.
 
-The completed effect is as illustrated below:
+The completed effect is as illustrated below (don't worry about the `Size`):
 
 ![score label](quick-start/score_label.png)
 
@@ -708,7 +712,7 @@ Then insert the code of playing the sound into the `gainScore` method:
     },
 ```
 
-Save the script. Go back to **arrangement editor**, choose the `Player` node, and drag the `assets/audio/jump` resource from **resource manager** to the `Jump Audio` property of the `Player` component.
+Save the script. Go back to the **Node Tree**, choose the `Player` node, and drag the `assets/audio/jump` resource from the **Assets** panel to the `Jump Audio` property of the `Player` component.
 
 Then choose the `Canvas` node, drag the `assets/audio/score` resource to the `Score Audio` property of the `Game` component.
 
