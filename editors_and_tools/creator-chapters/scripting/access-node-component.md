@@ -50,7 +50,7 @@ There is also a `getComponent` method on node, they are the same thing.
     }
 ```
 
-If the component is not exists in the node, `getComponent` will return null. If you are trying to access a null value at runtime, the "TypeError" exception will be thrown. So always remember to check if you are not sure of it.
+If the component does not exist in the node, `getComponent` will return null. If you are trying to access a null value at runtime, the "TypeError" exception will be thrown. So always remember to check if you are not sure of it.
 
 ```js
     start: function () {
@@ -199,7 +199,7 @@ If you already have the reference of a node or component in somewhere, you can a
 
 > You should use global variable with care and understanding, we do not recommend using it, you had better keep them readonly if really need to do that.
 
-Let's define a global object `window.Global`, it will cantain two properties, `backNode` and `backLabel`.
+Let's define a global object `window.Global`, it will contain two properties, `backNode` and `backLabel`.
 
 ```js
 // Globals.js, this file can have any name
