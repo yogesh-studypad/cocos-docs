@@ -29,3 +29,11 @@ mds.render(mds.resolveArgs({
     console.log('html5 done!');
 });
 
+mds.render(mds.resolveArgs({
+    input: Path.normalize(process.cwd() + '/manual/framework/quick'),
+    output: Path.normalize(process.cwd() + '/output/lua'),
+    layout: Path.normalize(process.cwd() + '/utils/layout-github')
+}), function() {
+    console.log('lua done!');
+});
+

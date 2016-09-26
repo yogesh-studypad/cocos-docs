@@ -33,7 +33,7 @@
 - [系统信息](../html5/v3/cc-sys/zh.md)
 - [单例对象](../html5/v3/singleton-objs/zh.md)
 - [对象构造与类继承](../html5/v3/inheritance/zh.md)
-- [属性风格API](../html5/v3/getter-setter-api/zh.md)R
+- [属性风格API](../html5/v3/getter-setter-api/zh.md)
 - [统一create函数](../html5/v3/create-api/zh.md)
 - [持续更新中](#)
 
