@@ -106,3 +106,6 @@
 
 ## 虚拟现实VR
 - [VR插件的集成与使用](v3/vr-plugin/zh.md)
+
+## Tizen
+- [Tizen中文文档](v3/tizen/zh.md)

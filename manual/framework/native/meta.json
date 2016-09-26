@@ -372,6 +372,15 @@
             {
                 "name": "VR插件的集成与使用",
                 "link": "v3/vr-plugin/zh.html"
+            },
+            {
+                "name": "Tizen",
+                "link": "#",
+                "header": true
+            },
+            {
+                "name": "Tizen中文文档",
+                "link": "v3/tizen/zh.html"
             }
         ]
     }
