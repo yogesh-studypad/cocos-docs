@@ -412,7 +412,7 @@ mySprite->runAction(RepeatForever::create(animate));
 var mySprite = new Sprite(res.mysprite_png);
 
 // now lets animate the sprite we moved.
-var animFrames;
+var animFrames = new Array();
 animFrames.push(new cc.SpriteFrame(res.Blue_Front1_png), cc.Rect(0,0,65,81)));
 animFrames.push(new cc.SpriteFrame(res.Blue_Front2.png), cc.Rect(0,0,65,81)));
 animFrames.push(new cc.SpriteFrame(res.Blue_Front3.png), cc.Rect(0,0,65,81)));
