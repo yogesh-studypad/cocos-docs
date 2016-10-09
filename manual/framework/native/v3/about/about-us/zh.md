@@ -7,7 +7,7 @@
 1. Cocos2d-x
 2. Cocos2d-html5
 3. 许可证
-4. 主要贡献者及维护者
+4. Cocos产品架构
 5. 财力支持者
 
 # 1.Cocos2d-x
@@ -28,7 +28,7 @@ Cocos2d-x用户不仅包括个人开发者和游戏开发爱好者，还包括�
 
 上述所有分支游戏引擎均是**MIT**许可证下发布的。
 
-利用cocos2d系列框架，我们可以容易地在iOS, Android, Windows Phone 8, WindowsXP/Windows7, Linux, Mac OSX, WindowsPhone Universal及Web平台上创建游戏或将游戏导入其中。
+利用Cocos2d系列框架，我们可以容易地在iOS, Android, Windows Phone 8, WindowsXP/Windows7, Linux, Mac OSX, Windows Phone Universal及Web平台上创建游戏或将游戏导入其中。
 
 # 4.Cocos产品架构
 
