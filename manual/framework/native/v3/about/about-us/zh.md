@@ -22,7 +22,7 @@ Cocos2d-x用户不仅包括个人开发者和游戏开发爱好者，还包括�
 
 ![](./res/Cocos2d-html5.png)
 
-2012年3月，Cocos2d-html5项目在Google的赞助下正式立项，成为Cocos2d-x旗下分支游戏引擎，针对台式电脑、平板电脑及手机中支持HTML5的浏览器而设计。一年之后，技术团队在Cocos2d-htnk5的基础上，整合了Cocos2d-x JavaScript Bindings方案，推出了跨平台能力更强的Cocos2d-JS引擎，实现多端发布，可同时支持原生游戏平台和web平台，同时拥有便捷的开发和调试工具支持，开发效率远高于传统的Cpp游戏项目，率先推出热更新功能。由于战略发展的需要，Cocos2d-JS产品随后被进一步整合，于2015年7月1日被合并进入Cocos2d-x。因此，从Cocos2d-x v3.7版本开始，融合版本ß的Cocos2d-x引擎已经包括了Cocos2d-x JSB和Cocos2d-html5，支持Cpp，JS，Lua，可发布游戏到主流ßweb平台。
+2012年3月，Cocos2d-html5项目在Google的赞助下正式立项，成为Cocos2d-x旗下分支游戏引擎，针对台式电脑、平板电脑及手机中支持HTML5的浏览器而设计。一年之后，技术团队在Cocos2d-htnk5的基础上，整合了Cocos2d-x JavaScript Bindings方案，推出了跨平台能力更强的Cocos2d-JS引擎，实现多端发布，可同时支持原生游戏平台和web平台，同时拥有便捷的开发和调试工具支持，开发效率远高于传统的Cpp游戏项目，率先推出热更新功能。由于战略发展的需要，Cocos2d-JS产品随后被进一步整合，于2015年7月1日被合并进入Cocos2d-x。因此，从Cocos2d-x v3.7版本开始，融合版本ß的Cocos2d-x引擎已经包括了Cocos2d-x JSB和Cocos2d-html5，支持Cpp，JS，Lua，可发布游戏到主流web平台。
 
 # 3.许可证
 
