@@ -7,6 +7,8 @@
 
 * Cocos2d-x v3.x [http://cocos2d-x.org/download](http://cocos2d-x.org/download)
 
+* Android Studio 2.1 [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
+
 ## Setup
 * unzip the __Android Studio Bundle__
 
