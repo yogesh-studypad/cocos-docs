@@ -127,10 +127,11 @@ $ cocos package import -v -b vrsdkbase --anysdk
 $ cocos package import -v -b gearvr --anysdk
 
 # third, switch to using GearVR
-$ python vrsdks/switchVRPlatform.py -p gearvr
+$ python vrsdks/switchVRPlatform.py -p gearvr-sdk
 ```
 
 ```sh
+
 ## in JavaScript and Lua
 
 # first, install vrsdkbase
@@ -140,8 +141,10 @@ $ cocos package import -v -b vrsdkbase --anysdk
 $ cocos package import -v -b gearvr --anysdk
 
 # third, switch to using GearVR
-$ python frameworks/runtime-src/vrsdks/switchVRPlatform.py -p gearvr
+$ python frameworks/runtime-src/vrsdks/switchVRPlatform.py -p gearvr-sdk
 ```
+
+**Attention:** you should using `$ python vrsdks/switchVRPlatform.py -h` to check the name of SDK, here is `gearvr-sdk`.
 
 ![](vr-img/gvr.png "")
 
@@ -159,6 +162,8 @@ $ cocos run -p android --app-abi armeabi-v7a
 # using Android Studio
 $ cocos run -p android --android-studio --app-abi armeabi-v7a
 ```
+**Attention:** All mobile VRSDK(GearVR/Deepoon VR/GVR) only support armeabi-v7a architecture. GVR only support Android Studio. So it can only use the second command to compilation. 
+
 If __GearVR__ or __Deepoon VR__ crashes at runtime, please check to ensure you have an
 [Oculus signature file](https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-submission-sig-file/) in **assets** folder.
 
