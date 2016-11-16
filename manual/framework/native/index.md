@@ -4,8 +4,8 @@
 - [关于我们](v3/about/about-us/zh.md)
 - [Cocos2d系列产品关系](v3/about/relationships-in-cocos2d-family/zh.md)
 - [Cocos2d-x API风格说明](v3/easy-to-learn-api-style/zh.md)
-- [Cocos2d-x支持的平台和编程语言](v2/getting-started/supported-platforms-and-programming-languages/zh.md)
-- [架构和目录结构](v2/getting-started/architecture-and-directory-structure/zh.md)
+- [Cocos2d-x支持的平台和编程语言](v3/getting-started/supported-platforms-and-programming-languages/zh.md)
+- [架构和目录结构](v3/getting-started/architecture-and-directory-structure/zh.md)
 - [获取支持](v3/about/support/zh.md)
 
 ## 开发环境
@@ -50,10 +50,9 @@
 - [声音和音效](v3/audio-and-effect/zh.md)
 
 ## 内存管理
-- [Cocos2d-x的引用计数和AutoreleasePool](v2/memory/refcount-autoreleasepool/zh.md)
-- [纹理缓存 Texture Cache](v2/memory/texture-cache/zh.md)
-- [各平台硬件所允许的最大纹理尺寸](v2/memory/max-texture-size/zh.md)
-- [如何优化内存使用](v2/optimizations/how-to-optimise-memory-usage/zh.md)
+- [Cocos2d-x的引用计数和AutoreleasePool](v3/refcount-autoreleasepool/zh.md)
+- [纹理缓存 Texture Cache](v3/texture-cache/zh.md)
+- [如何优化内存使用](v3/how-to-optimise-memory-usage/zh.md)
 
 ## 人机交互
 - [事件分发机制 Event Dispatcher](v3/event-dispatcher/zh.md)
