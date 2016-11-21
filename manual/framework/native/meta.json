@@ -41,14 +41,6 @@
                 "subheader": true
             },
             {
-                "name": "如何在iPhone模拟器上运行Cocos2d-x HelloWorld项目-v2.x",
-                "link": "v2/getting-started/setting-up-development-environments/mac-osx-environment-setup/how-to-run-helloworld-of-cocos2d-x-on-iphone-emulator/zh.html"
-            },
-            {
-                "name": "Mac OS X平台搭建Android开发环境-v2.x",
-                "link": "v2/getting-started/setting-up-development-environments/mac-osx-environment-setup/setting-up-android-development-environment-on-mac-osx/zh.html"
-            },
-            {
                 "name": "如何在Mac下搭建Cocos2d-x iPhone开发环境-v3.x",
                 "link": "v3/getting-started/setting-up-development-environments-on-mac-with-xcode/zh.html"
             },
@@ -64,14 +56,6 @@
                 "name": "Windows环境搭建",
                 "link": "#",
                 "subheader": true
-            },
-            {
-                "name": "在Windows7上搭建Cocos2d-x win32开发环境-v2.x",
-                "link": "v2/getting-started/setting-up-development-environments/windows-7-environment-setup/setup-win32-development-environment/zh.html"
-            },
-            {
-                "name": "如何在Windows7平台搭建Cocos2d-x Android开发环境-v2.x",
-                "link": "v2/getting-started/setting-up-development-environments/windows-7-environment-setup/how-to-set-up-the-android-cocos2d-x-development-environment-on-windows7/zh.html"
             },
             {
                 "name": "在Windows7上搭建Cocos2d-x win32开发环境-v3.x",
@@ -90,23 +74,11 @@
                 "link": "#",
                 "subheader": true
             },
-            {
-                "name": "如何在Linux平台运行HelloWorld及测试项目-v2.x",
-                "link": "v2/getting-started/setting-up-development-environments/linux-environment-setup/how-to-run-helloworld-and-tests-on-linux/zh.html"
-            },
 
             {
                 "name": "其他",
                 "link": "#",
                 "subheader": true
-            },
-            {
-                "name": "如何在Tizen平台中运行HelloWorld及测试项目",
-                "link": "v2/getting-started/setting-up-development-environments/tizen-environment-setup/zh.html"
-            },
-            {
-                "name": "如何在黑莓平板系统中运行HelloWorld及测试项目",
-                "link": "v2/getting-started/setting-up-development-environments/blackberry-environment-setup/how-to-run-helloworld-and-tests-on-blackberry-tablet-OS/zh.html"
             },
             {
                 "name": "Cocos2d-x Console",
@@ -191,23 +163,6 @@
             {
                 "name": "Value",
                 "link": "v3/data-structure/value/zh.html"
-            },
-            {
-                "name": "2.0数据结构",
-                "link": "#",
-                "subheader": true
-            },
-            {
-                "name": "CCArray",
-                "link": "v2/basic-concepts/data-structure/array/zh.html"
-            },
-            {
-                "name": "CCDictionary",
-                "link": "v2/basic-concepts/data-structure/dictionary/zh.html"
-            },
-            {
-                "name": "CCString",
-                "link": "v2/basic-concepts/data-structure/string/zh.html"
             },
             {
                 "name": "声音",
@@ -334,35 +289,6 @@
             {
                 "name": "如何使用JNI(简要)",
                 "link": "v2/scripting-and-translating-between-programming-languages/for-c++-programmers/how-to-use-jni/zh.html"
-            },
-            {
-                "name": "Windows Phone 8: 通过浏览器控件添加支付宝",
-                "link": "v2/sdk-integration/wp8-webbrowser/zh.html"
-            },
-            {
-                "name": "Windows Phone 8: 如何集成第三方SDK",
-                "link": "v2/sdk-integration/wp8-thirdSDK/zh.html"
-            },
-            {
-                "name": "性能测试",
-                "link": "#",
-                "subheader": true
-            },
-            {
-                "name": "iOS设备Cocos2d-x 0.7.1性能测试",
-                "link": "v2/benchmark-reports/performace-test-of-cocos2d-x-071-on-iod-devices/zh.html"
-            },
-            {
-                "name": "Android设备Cocos2d-x性能测试",
-                "link": "v2/benchmark-reports/performance-test-of-cocos2d-x-on-android-devices/zh.html"
-            },
-            {
-                "name": "Android设备Edge版本性能测试",
-                "link": "v2/benchmark-reports/performance-test-of-edge-version-on-android-devices/zh.html"
-            },
-            {
-                "name": "iOS设备性能测试",
-                "link": "v2/benchmark-reports/performance-test-of-edge-version-on-ios-devices/zh.html"
             },
             {
                 "name": "虚拟现实VR",
