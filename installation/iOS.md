@@ -10,7 +10,7 @@ __.zip__ from the [website](http://cocos2d-x.org/download) or by cloning our
 __There is no need to do both.__
 
 ### By downloading a .zip archive
-* Download Cocos2d-x and unzip it. (maybe: __~/__ or __~/Projects__ )
+Download Cocos2d-x and unzip it. (maybe: __~/__ or __~/Projects__ )
 
     ![](iOS-img/unzip.png "")
 
