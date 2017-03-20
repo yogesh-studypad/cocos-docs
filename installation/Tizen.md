@@ -76,6 +76,24 @@ Once everything is built __cpp-tests__ will run and you can experiment with it's
 
   ![](Tizen-img/cpp-tests.png "")
 
+## Compiling & Running with Command-line tool
+You also can compile & run your project on Tizen with `cocos` command. There are some arguments for the Tizen platform:
+| Argument | Available Value | Description |
+| ----|----|----|
+| --tizen-arch | x86, arm | Determines the architecture type for the rootstrap. Default is x86. (x86 is for simulators, and arm for devices) |
+| --tizen-profile | Path of signing profile | Set the profile path for signing. |
+| --tizen-sign | String | Set the profile name to use for signing. |
+| --tizen-strip | - | Determines whether to strip the native binary. |
+
+Sample commands:
+1. `cocos compile -s PROJECT_PATH -p tizen  -m release --tizen-arch arm --tizen-profile PROFILE_PATH --tizen-sign SIGN_STRING --tizen-strip`
+
+    Compile the project with arm architecture. A .tpk file will be generated.
+
+2. `cocos run -s PROJECT_PATH -p tizen --tizen-profile PROFILE_PATH --tizen-sign SIGN_STRING`
+
+    Run the project on Tizen simulator.(Notice that the Tizen simulator should be launched first)
+
 ## Starting a new project
 Once everything above works, you can start a new project! To do this, read our
 document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool/)**.
