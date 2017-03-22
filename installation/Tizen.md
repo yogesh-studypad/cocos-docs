@@ -88,11 +88,11 @@ You also can compile & run your project on Tizen with `cocos` command. There are
 Sample commands:
 1. `cocos compile -s PROJECT_PATH -p tizen  -m release --tizen-arch arm --tizen-profile PROFILE_PATH --tizen-sign SIGN_STRING --tizen-strip`
 
-    Compile the project with arm architecture. A .tpk file will be generated.
+    Compile the project for the ARM architecture. A .tpk file will be generated.
 
 2. `cocos run -s PROJECT_PATH -p tizen --tizen-profile PROFILE_PATH --tizen-sign SIGN_STRING`
 
-    Run the project on Tizen simulator.(Notice that the Tizen simulator should be launched first)
+    Launch the Tizen simulator and then run the project on the Tizen simulator. (Note: it is important to remember that the Tizen simulator must always be running in-order to run your project.)
 
 ## Starting a new project
 Once everything above works, you can start a new project! To do this, read our
