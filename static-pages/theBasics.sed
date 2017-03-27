@@ -1,4 +1,0 @@
-/{{REPLACE}}/{
-    r theBasics
-    d
-}

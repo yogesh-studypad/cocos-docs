@@ -1,4 +1,0 @@
-/{{REPLACE}}/{
-    r index
-    d
-}
