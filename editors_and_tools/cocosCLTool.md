@@ -297,4 +297,4 @@ __cocos__ has a number of unique options you can use to help build your games. T
 |__luacompile__| Encrypt the lua scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
 |__jscompile__| Encrypt the JavaScript scripts in your game. This is invoked once `cocos compile` is invoked with the `-m release` argument. Developers can invoke this manually for encrypting their scripts.|
 |__gen-simulator__| The simulator powers the  __preview__ function in Cocos Creator. |
-|__gen-templates__| is used for generating the binary templates you can use to get started on a project that uses the __pre-built libraries__. Binary templates are required by Cocos Bundle package and also Cocos Creator.|
+|__gen-templates__| is used for generating the binary templates you can use to get started on a project that uses the __pre-built libraries__. Binary templates are required by Cocos Bundle package and also Cocos Creator.
