@@ -30,6 +30,18 @@ Since cocos2d-x __v3.15__, you can use __Android Studio 2.3+__ to debug c++ code
 * you will see stack trace by __step 3__
 
     ![](Android-Studio-img/debug_cpp_tests.png "")
+    
+## Build for release mode
+
+You have to do two things to build for release mode:
+
+* change __Build Variant__ to release
+* set sign information in __gradle.properties__
+* for __lua projects__, if you want to encrypt lua codes, you should set encrypt information in __gradle.properties__ too
+
+    ![](Android-Studio-img/change_release_lua_tests.png "")
+    
+    ![](Android-Studio-img/sign_and_encrypt.png "")
 
 ## Installing new SDK versions and build tools
 * use the built in __SDK Manager__ to install the __SDK versions__ and __build tools__
