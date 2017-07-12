@@ -12,9 +12,27 @@ and you can even have __scene transitions__ with cool effects.
 ## Creating a Scene
 It is very easy to create a `Scene`
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 auto myScene = Scene::create();
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myScene = new cc.Scene();
+```
+  </div>
+
 
 ## Remember the Scene Graph?
 In __Chapter 2__  of this guide we learned about a __scene graph__ and how it affects
@@ -27,6 +45,14 @@ coordinate system__. This means that our _0,0_ coordinate is at the bottom left
 corner of the screen/display. When you start positioning your game elements this
 is where you should start your calculations from. Let's create a simple `Scene`
 and add a few elements to it:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 auto dirs = Director::getInstance();
@@ -45,6 +71,27 @@ sprite1->setPosition(Vec2(100, 100));
 myScene->addChild(sprite1);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var visibleSize = cc.director.getVisibleSize();
+
+var myScene = new cc.Scene();
+
+var label1 = new cc.LabelTTF("My Game", "Marker Felt.ttf", 36);
+label1.setPosition(cc.p(visibleSize.width / 2, visibleSize.height / 2));
+
+myScene.addChild(label1);
+
+var sprite1 = new cc.Sprite("mysprite.png");
+sprite1.setPosition(cc.p(100, 100));
+
+myScene.addChild(sprite1);
+```
+  </div>
+
 When we run this code we shall see a simple `Scene` that contains a `Label` and
 a `Sprite`. It doesn't do much but it's a start.
 
@@ -57,39 +104,131 @@ of ways to do __scene transitions__.
 There are many ways to transition through your __scenes__. Each has specific
 functionality. Let's go through them. Given:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 auto myScene = Scene::create();
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myScene = new cc.Scene();
+```
+  </div>
+
 __runWithScene()__ - use this for the first scene only. This is the way to start
 your games first `Scene`.
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 Director::getInstance()->runWithScene(myScene);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+cc.director.runScene(myScene);
+```
+  </div>
 __replaceScene()__ - replace a scene outright.
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 Director::getInstance()->replaceScene(myScene);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+cc.director.runScene(myScene);
+```
+  </div>
+
 __pushScene()__ - suspends the execution of the running scene, pushing it on the
 stack of suspended scenes. Only call this if there is a running scene.
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 Director::getInstance()->pushScene(myScene);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+cc.director.pushScene(myScene);
+```
+  </div>
+
 __popScene()__ - This scene will replace the running one. The running scene will
 be deleted. Only call this if there is a running scene.
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 Director::getInstance()->popScene(myScene);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+cc.director.popScene(myScene);
+```
+  </div>
+
 ### Transition Scenes with effects
 You can add visual effects to your `Scene` transitions
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 auto myScene = Scene::create();
@@ -103,6 +242,23 @@ Director::getInstance()->replaceScene(TransitionFlipX::create(2, myScene));
 // Transition Slide In
 Director::getInstance()->replaceScene(TransitionSlideInT::create(1, myScene) );
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myScene = new cc.Scene();
+
+// Transition Fade
+cc.director.runScene(
+  new cc.TransitionFade(0.5, myScene, new cc.Color(0, 255, 255))
+);
+
+// Transition Slide In
+cc.director.runScene(new cc.TransitionSlideInT(1, myScene));
+```
+  </div>
 
 <!---### Converting between coordinate systems
 
