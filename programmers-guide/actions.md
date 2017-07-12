@@ -33,11 +33,11 @@ mySprite2->runAction(moveBy);
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
 // Move sprite to position 50,10 in 2 seconds.
-var moveTo = new cc.MoveTo(2, cc._p(50, 10));
+var moveTo = new cc.MoveTo(2, cc.p(50, 10));
 mySprite1.runAction(moveTo);
 
 // Move sprite 20 points to right in 2 seconds
-var moveBy = new cc.MoveBy(2, cc._p(20,0));
+var moveBy = new cc.MoveBy(2, cc.p(20,0));
 mySprite2.runAction(moveBy);
 ```
 
@@ -86,16 +86,16 @@ mySprite->runAction(seq);
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
 var mySprite = new cc.Sprite(res.mysprite_png);
-mySprite.setPosition(cc._p(200, 256));
+mySprite.setPosition(cc.p(200, 256));
 
 // MoveBy - lets move the sprite by 500 on the x axis over 2 seconds
 // MoveBy is relative - since x = 200 + 200 move = x is now 400 after the move
-var moveBy = new cc.MoveBy(2, cc._p(500, mySprite.y));
+var moveBy = new cc.MoveBy(2, cc.p(500, mySprite.y));
 
 // MoveTo - lets move the new sprite to 300 x 256 over 2 seconds
 // MoveTo is absolute - The sprite gets moved to 300 x 256 regardless of
 // where it is located now.
-var moveTo = new cc.MoveTo(2, cc._p(300, mySprite.y));
+var moveTo = new cc.MoveTo(2, cc.p(300, mySprite.y));
 
 // Delay - create a small delay
 var delay = new cc.DelayTime(1);
@@ -148,12 +148,12 @@ mySprite->runAction(moveBy);
 var mySprite = new cc.Sprite(res.mysprite_png);
 
 // Move a sprite to a specific location over 2 seconds.
-var moveTo = new cc.MoveTo(2, cc._p(50, 0));
+var moveTo = new cc.MoveTo(2, cc.p(50, 0));
 
 mySprite.runAction(moveTo);
 
 // Move a sprite 50 pixels to the right, and 0 pixels to the top over 2 seconds.
-var moveBy = new cc.MoveBy(2, cc._p(50, 0));
+var moveBy = new cc.MoveBy(2, cc.p(50, 0));
 
 mySprite.runAction(moveBy);
 ```
@@ -493,7 +493,30 @@ mySprite->runAction(RepeatForever::create(seq1));
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+var mySprite = new cc.Sprite("mysprite.png");
 
+// create a MoveBy Action to where we want the sprite to drop from.
+var moveToY = cc.director.getVisibleSize().height - 
+    this.sprite.getContentSize().height;
+
+var move = new cc.MoveBy(2, cc.p(200, moveToY));
+var moveBack = move.reverse();
+
+// create a BounceIn Ease Action
+var moveEaseIn = new cc.EaseBounceIn(move.clone());
+
+// create a delay that is run in between sequence events
+var delay = new cc.DelayTime(0.25);
+
+// create a BounceIn Back Action
+var moveEaseInBack = new cc.EaseBounceIn(moveBack.clone());
+
+// create the sequence of actions, in the order we want to run them
+var seq1 = new cc.Sequence(moveEaseIn, delay, moveEaseInBack,
+    delay.clone());
+
+// run the sequence and repeat forever.
+mySprite.runAction(new cc.RepeatForever(seq1));
 ```
 
   </div>
@@ -551,7 +574,28 @@ mySprite->runAction(seq);
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+// create sprite
+var mySprite = new cc.Sprite("mysprite.png");
 
+// create a few actions.
+var jump = new cc.JumpBy(0.5, cc.p(0, 0), 100, 1);
+
+var rotate = new cc.RotateTo(2.0f, 10);
+
+// create a few callbacks
+var callbackJump = new cc.CallFunc(function(){
+    cc.log("Jumped!");
+});
+
+var callbackRotate = new cc.CallFunc(function(){
+    cc.log("Rotated!");
+});
+
+// create a sequence with the actions and callbacks
+var seq = new cc.Sequence(jump, callbackJump, rotate, callbackRotate);
+
+// run it
+mySprite.runAction(seq);
 ```
 
   </div>
@@ -600,7 +644,10 @@ auto fadeTo = FadeTo::create(2.0f, 120.0f);
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+var mySprite = new cc.Sprite("mysprite.png");
 
+var moveBy = new cc.MoveBy(10, cc.p(400, 100));
+var fadeTo = new cc.FadeTo(2.0, 120.0);
 ```
 
   </div>
@@ -628,7 +675,9 @@ mySprite->runAction(mySpawn);
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
-
+// running the above Actions with Spawn.
+var mySpawn = new cc.Spawn(moveBy, fadeTo);
+mySprite.runAction(mySpawn);
 ```
 
   </div>
@@ -656,7 +705,9 @@ mySprite->runAction(fadeTo);
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
-
+// running the above Actions with consecutive runAction() statements.
+mySprite.runAction(moveBy);
+mySprite.runAction(fadeTo);
 ```
 
   </div>
@@ -700,7 +751,22 @@ mySprite->runAction(seq);
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+// create a Sprite
+var mySprite = new cc.Sprite("mysprite.png");
 
+// create a few Actions
+var moveBy = new cc.MoveBy(10, cc.p(400, 100));
+var fadeTo = new cc.FadeTo(2.0, 120.0);
+var scaleBy = new cc.ScaleBy(2.0, 3.0);
+
+// create a Spawn to use
+var mySpawn = new cc.Spawn(scaleBy, fadeTo);
+
+// tie everything together in a sequence
+var seq = new cc.Sequence(moveBy, mySpawn, moveBy);
+
+// run it
+mySprite.runAction(seq);
 ```
 
   </div>
@@ -738,7 +804,7 @@ MoveBy::create(10, Vec2(400,100));
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
-
+new cc.MoveBy(10, cc.p(400, 100));
 ```
 
   </div>
@@ -768,7 +834,7 @@ MoveBy::create(10, Vec2(400,100));
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
-
+new cc.MoveBy(10, cc.p(400, 100));
 ```
 
   </div>
@@ -812,7 +878,19 @@ enemySprite->runAction(moveBy); // oops, this will not be unique!
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+// create our Sprites
+var heroSprite = new cc.Sprite("herosprite.png");
+var enemySprite = new cc.Sprite("enemysprite.png");
 
+// create an Action
+var moveBy = new cc.MoveBy(10, cc.p(400, 100));
+
+// run it on our hero
+heroSprite.runAction(moveBy);
+
+// run it on our enemy
+enemySprite.runAction(moveBy); // oops, this will not be unique!
+// uses the Actions current internal state as a starting point.
 ```
 
   </div>
@@ -849,7 +927,18 @@ enemySprite->runAction(moveBy->clone()); // correct! This will be unique
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+// create our Sprites
+var heroSprite = new cc.Sprite("herosprite.png");
+var enemySprite = new cc.Sprite("enemysprite.png");
 
+// create an Action
+var moveBy = new cc.MoveBy(10, cc.p(400, 100));
+
+// run it on our hero
+heroSprite.runAction(moveBy);
+
+// run it on our enemy
+enemySprite.runAction(moveBy.clone()); // correct! This will be unique
 ```
 
   </div>
@@ -883,7 +972,8 @@ mySprite->runAction(mySpawn->reverse());
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
-
+// reverse a sequence, spawn or action
+mySprite.runAction(mySpawn.reverse());
 ```
 
   </div>
@@ -930,7 +1020,26 @@ newSprite2->runAction(sequence->reverse());
 
 <!-- insert any language specific wording here, i.e language specific to C++ or JavaScript -->
 ```javascript
+// create a Sprite
+var mySprite = new cc.Sprite("mysprite.png");
+mySprite.setPosition(50, 56);
 
+// create a few Actions
+var moveBy = new cc.MoveBy(2.0, cc.p(500,0));
+var scaleBy = new cc.ScaleBy(2.0, 2.0);
+var delay = new cc.DelayTime(2.0);
+
+// create a sequence
+var delaySequence = new cc.Sequence(delay, delay.clone(), delay.clone(),
+delay.clone());
+
+var sequence = new cc.Sequence(moveBy, delay, scaleBy, delaySequence);
+
+// run it
+mySprite.runAction(sequence);
+
+// reverse it
+mySprite.runAction(sequence.reverse());
 ```
 
   </div>
