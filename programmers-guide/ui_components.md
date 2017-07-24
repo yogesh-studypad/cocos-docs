@@ -30,9 +30,26 @@ representation of each character in __.png__ format. If you are using a tool lik
 __Glyph Designer__ these files are created automatically for you. Creating a
 `Label` object from a __bitmap font__:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 auto myLabel = Label::createWithBMFont("bitmapRed.fnt", "Your Text");
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myLabel = new cc.LabelBMFont("Your Text", "bitmapRed.fnt");
+```
+  </div>
 
 ![](ui_components-img/LabelBMFont.png "")
 
@@ -49,9 +66,26 @@ create one you need to specify a __.ttf__ font file name, text string and a size
 Unlike `BMFont`, `TTF` can render size changes without the need for a separate
 font files. Example, using a __true type font__:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 auto myLabel = Label::createWithTTF("Your Text", "Marker Felt.ttf", 24);
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myLabel = new cc.LabelTTF("Your Text", "Marker Felt.ttf", 24);
+```
+  </div>
 
 ![](ui_components-img/LabelTTF.png "")
 
@@ -106,6 +140,14 @@ and __glow__. You can apply one or more effects to a `Label` object easily:
 
 Label with a __shadow__ effect:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 
@@ -113,9 +155,30 @@ auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 myLabel->enableShadow();
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myLabel = new cc.LabelTTF("Your Text", "Marker Felt.ttf", 24);
+
+// shadow effect is supported by all Label types
+myLabel.enableShadow(new cc.Color(100, 100, 100), {x: 2, y: 2});
+```
+  </div>
+
+
 ![](ui_components-img/LabelWithShadow.png "")
 
 Label with a __outline__ effect:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
@@ -124,9 +187,29 @@ auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 myLabel->enableOutline(Color4B::WHITE, 1));
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myLabel = new cc.LabelTTF("Your Text", "Marker Felt.ttf", 24);
+
+// outline effect is TTF only, specify the outline color desired
+myLabel.enableStroke(new cc.Color(255, 255, 255), 1);
+```
+  </div>
+
 ![](ui_components-img/LabelWithOutline.png "")
 
 Label with a __glow__ effect:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
@@ -135,6 +218,15 @@ auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 myLabel->enableGlow(Color4B::YELLOW);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myLabel = new cc.LabelTTF("Your Text", "Marker Felt.ttf", 24);
+myLabel.enableShadow(cc.color.YELLOW, {x: 0, y: 0}, 6);
+```
+  </div>
 ![](ui_components-img/LabelWithGlow.png "")
 
 ## Menu and Menu Items
@@ -145,9 +237,26 @@ _About_, but could also contain other `Menu` objects for a nested menu system.
 A `Menu` object is a special type of `Node` object. You can create an  empty
 `Menu` object as a place holder for your __menu items__:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 auto myMenu = Menu::create();
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var myMenu = new cc.Menu();
+```
+  </div>
 
 As we described options above of _Play_, _Quit_, _Settings_ and
 _About_, these are your __menu items__. A `Menu` without __menu items__ makes little
@@ -157,6 +266,14 @@ have two possible states, a __normal__ and a __selected__ state. When you tap or
 on the __menu item__ a __callback__ is triggered. You can think of this as a chain
 reaction. You tap/click the __menu item__ and it runs the code you specified. A
 `Menu` can have just a single item or many items.
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 // creating a menu with a single item
@@ -169,7 +286,31 @@ auto menu = Menu::create(closeItem, NULL);
 this->addChild(menu, 1);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+// creating a menu with a single item
+
+// create a menu item by specifying images
+var closeItem = new cc.MenuItemImage("CloseNormal.png", "CloseSelected.png",
+  new cc.CallFunc(HelloWorld.closeButtonCallback.bind(HelloWorld));
+
+var menu = new cc.Menu(closeItem);
+this.addChild(menu, 1);
+```
+  </div>
+
 A menu can also be created by using a __vector__ of `MenuItem` objects:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 // creating a Menu from a Vector of items
@@ -186,6 +327,26 @@ auto menu = Menu::createWithArray(MenuItems);
 this->addChild(menu, 1);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+// creating a Menu from a Array of items
+var menuItems = [];
+
+var closeItem = new cc.MenuItemImage("CloseNormal.png", "CloseSelected.png",
+  new cc.CallFunc(HelloWorld.closeButtonCallback.bind(HelloWorld));
+
+menuItems.push(closeItem);
+
+/* repeat for as many menu items as needed */
+
+var menu = new cc.Menu(menuItems);
+this.addChild(menu, 1);
+```
+  </div>
+
 If you run the sample code for this chapter you will see a `Menu` containing
 `Label` objects for `MenuItems`:
 
@@ -199,6 +360,14 @@ __Lambdas__ are also evaluated at runtime instead of compile time.
 
 A simple __lambda__:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 // create a simple Hello World lambda
 auto func = [] () { cout << "Hello World"; };
@@ -207,14 +376,49 @@ auto func = [] () { cout << "Hello World"; };
 func();
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+// create a simple Hello World lambda
+function hello() {
+  console.log("Hello World");
+}
+
+// now call it someplace in code
+hello();
+```
+  </div>
+
 Using a __lambda__ as a `MenuItem` callback:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 auto closeItem = MenuItemImage::create("CloseNormal.png", "CloseSelected.png",
 [&](Ref* sender){
-	// your code here
+  // your code here
 });
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var closeItem = new cc.MenuItemImage("CloseNormal.png", "CloseSelected.png",
+function() {
+  // your code here
+});
+```
+  </div>
 
 ## Buttons
 I doubt that we need to explain buttons much. We all know them as those things
@@ -225,28 +429,66 @@ A `Button` has a __normal__ and __selected__ state. The appearance of the `Butto
 change based upon it's state. Creating a `Button` and defining its __callback__
 is simple:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 #include "ui/CocosGUI.h"
 
-auto button = Button::create("normal_image.png", "selected_image.png", "disabled_image.png");
+auto button = Button::create("normal_image.png", "selected_image.png",
+"disabled_image.png");
 
 button->setTitleText("Button Text");
 
 button->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
-		switch (type)
-		{
-				case ui::Widget::TouchEventType::BEGAN:
-						break;
-				case ui::Widget::TouchEventType::ENDED:
-						std::cout << "Button 1 clicked" << std::endl;
-						break;
-				default:
-						break;
-		}
+    switch (type)
+    {
+        case ui::Widget::TouchEventType::BEGAN:
+            break;
+        case ui::Widget::TouchEventType::ENDED:
+            std::cout << "Button 1 clicked" << std::endl;
+            break;
+        default:
+            break;
+    }
 });
 
 this->addChild(button);
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var button = new ccui.Button("normal_image.png", "selected_image.png",
+  "disabled_image.png");
+
+button.setTitleText("Button Text");
+
+button.addTouchEventListener(function(sender, type){
+    switch (type)
+    {
+        case ccui.Widget.TOUCH_BEGAN:
+            break;
+        case ccui.Widget.TOUCH_MOVED:
+            break;
+        case ccui.Widget.TOUCH_ENDED:
+            cc.log("Button 1 clicked");
+            break;
+        default:
+            break;
+    }
+});
+
+this.addChild(button);
+```
+  </div>
 
 As you can see in the above example we specify a _.png_ image for each of the
 possible states the button can be in. A `Button` is made up of 3 graphics that
@@ -268,6 +510,14 @@ permits the user to make this type of choice. There are 5 different __states__ a
 `Checkbox` can have: __normal__, __selected__ and __disabled__. It is simple to create
 a `CheckBox`:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 #include "ui/CocosGUI.h"
 
@@ -278,20 +528,50 @@ auto checkbox = CheckBox::create("check_box_normal.png",
                                  "check_box_active_disable.png");
 
 checkbox->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
-		switch (type)
-		{
-				case ui::Widget::TouchEventType::BEGAN:
-						break;
-				case ui::Widget::TouchEventType::ENDED:
-						std::cout << "checkbox 1 clicked" << std::endl;
-						break;
-				default:
-						break;
-		}
+    switch (type)
+    {
+        case ui::Widget::TouchEventType::BEGAN:
+            break;
+        case ui::Widget::TouchEventType::ENDED:
+            std::cout << "checkbox 1 clicked" << std::endl;
+            break;
+        default:
+            break;
+    }
 });
 
 this->addChild(checkbox);
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var checkbox = new ccui.CheckBox("check_box_normal.png",
+                                 "check_box_normal_press.png",
+                                 "check_box_active.png",
+                                 "check_box_normal_disable.png",
+                                 "check_box_active_disable.png");
+
+checkbox.addTouchEventListener(function(sender, type){
+    switch (type)
+    {
+        case ccui.Widget.TOUCH_BEGAN:
+            break;
+        case ccui.Widget.TOUCH_MOVED:
+            break;
+        case ccui.Widget.TOUCH_ENDED:
+            cc.log("Checkbox 1 clicked");
+            break;
+        default:
+            break;
+    }
+});
+
+this.addChild(checkbox);
+```
+  </div>
 
 As you can see in the above example we specify a _.png_ image for each of the
 possible states the `Checkbox` can be in. Since there are 5 possible states that
@@ -313,6 +593,14 @@ content it needed? It probably showed you a bar, filling in as it made progress
 accomplishing its task. This is often referred to as a __progress bar__, __status bar__
 or a __loading bar__. Creating a `LoadingBar`:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 #include "ui/CocosGUI.h"
 
@@ -324,10 +612,32 @@ loadingBar->setDirection(LoadingBar::Direction::RIGHT);
 this->addChild(loadingBar);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var loadingBar = new ccui.LoadingBar("LoadingBarFile.png");
+
+// set the direction of the loading bars progress
+loadingBar.setDirection(ccui.LoadingBar.TYPE_RIGHT);
+
+this.addChild(loadingBar);
+```
+  </div>
+
 In the above example a __loading bar__ is created and we set the direction it
 should fill towards as progress is made. In this case to the right direction.
 However, you probably need to change the percentage of the `LoadingBar`. This is
 easily done:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 #include "ui/CocosGUI.h"
@@ -344,6 +654,24 @@ loadingBar->setPercent(35);
 this->addChild(loadingBar);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var loadingBar = new ccui.LoadingBar("LoadingBarFile.png");
+loadingBar->setDirection(ccui.LoadingBar.TYPE_RIGHT);
+
+// something happened, change the percentage of the loading bar
+loadingBar.setPercent(25);
+
+// more things happened, change the percentage again.
+loadingBar.setPercent(35);
+
+this.addChild(loadingBar);
+```
+  </div>
+
 As you can see in the above example we specify a _.png_ image for the `LoadingBar`
 objects texture:
 
@@ -358,29 +686,68 @@ Sometimes it is necessary to change a value slightly. Perhaps you have a charact
 and you want to allow the player to adjust the strength of attacking an enemy.
 A `Slider` allows users to set a value by moving an indicator. To create a `Slider`:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 #include "ui/CocosGUI.h"
 
 auto slider = Slider::create();
 slider->loadBarTexture("Slider_Back.png"); // what the slider looks like
-slider->loadSlidBallTextures("SliderNode_Normal.png", "SliderNode_Press.png", "SliderNode_Disable.png");
+slider->loadSlidBallTextures("SliderNode_Normal.png", "SliderNode_Press.png",
+"SliderNode_Disable.png");
 slider->loadProgressBarTexture("Slider_PressBar.png");
 
 slider->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
-		switch (type)
-		{
-				case ui::Widget::TouchEventType::BEGAN:
-						break;
-				case ui::Widget::TouchEventType::ENDED:
-						std::cout << "slider moved" << std::endl;
-						break;
-				default:
-						break;
-		}
+    switch (type)
+    {
+        case ui::Widget::TouchEventType::BEGAN:
+            break;
+        case ui::Widget::TouchEventType::ENDED:
+            std::cout << "slider moved" << std::endl;
+            break;
+        default:
+            break;
+    }
 });
 
 this->addChild(slider);
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var slider = new ccui.Slider();
+slider.loadBarTexture("Slider_Back.png"); // what the slider looks like
+slider.loadSlidBallTextures("SliderNode_Normal.png", "SliderNode_Press.png",
+  "SliderNode_Disable.png");
+slider.loadProgressBarTexture("Slider_PressBar.png");
+
+slider.addTouchEventListener(function(sender, type){
+    switch (type)
+    {
+        case ccui.Widget.TOUCH_BEGAN:
+            break;
+        case ccui.Widget.TOUCH_MOVED:
+            break;
+        case ccui.Widget.TOUCH_ENDED:
+            cc.log("Slider Moved");
+            break;
+        default:
+            break;
+    }
+});
+
+this->addChild(slider);
+```
+  </div>
 
 As you can see in the above example we specify a _.png_ image for each of the
 possible states the slider can be in. A `Slider` is made up of 5 graphics that
@@ -400,17 +767,40 @@ main character? Where would they type it into? Yes, a __text field__, of course.
 A `TextField` widget is used for inputting text. It supports touch event, focus,
 percent positioning and percent content size. To create a `TextField` widget:
 
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
+
 ```cpp
 #include "ui/CocosGUI.h"
 
 auto textField = TextField::create("","Arial",30);
 
 textField->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
-				std::cout << "editing a TextField" << std::endl;
+        std::cout << "editing a TextField" << std::endl;
 });
 
 this->addChild(textField);
 ```
+
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var textField = new ccui.TextField("","Arial",30);
+
+textField.addTouchEventListener(function(sender, type){
+        cc.log("editing a TextField");
+});
+
+this.addChild(textField);
+```
+  </div>
 
 In this example a `TextField` is created and a __callback__ specified.
 
@@ -418,6 +808,14 @@ In this example a `TextField` is created and a __callback__ specified.
 like the user to enter a secret password? Do you need to limit the number of
 characters a user can input? `TextField` objects have this all built-it and much
 more! Let's take a look at an example:
+
+<div class="langs">
+  <ul>
+    <li><a href="#" id="tab-cpp">C++</a></li>
+    <li><a href="#" id="tab-js">Javascript</a></li>
+  </ul>
+</div>
+  <div class="tab-cpp tab_content">
 
 ```cpp
 #include "ui/CocosGUI.h"
@@ -431,12 +829,33 @@ textField->setPasswordEnabled(true);
 textField->setMaxLength(10);
 
 textField->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
-				std::cout << "editing a TextField" << std::endl;
+        std::cout << "editing a TextField" << std::endl;
 });
 
 this->addChild(textField);
 ```
 
+  </div>
+
+  <div class="tab-js tab_content">
+
+```javascript
+var textField = new ccui.TextField("","Arial",30);
+
+// make this TextField password enabled
+textField.setPasswordEnabled(true);
+
+// set the maximum number of characters the user can enter for this TextField
+textField.setMaxLength(10);
+textField.setMaxLengthEnabled(true);
+
+textField.addTouchEventListener(function(sender, type) {
+        cc.log("editing a TextField");
+});
+
+this.addChild(textField);
+```
+  </div>
 On screen a `TextField` might look like this:
 
 ![](ui_components-img/TextField_example.png "")
